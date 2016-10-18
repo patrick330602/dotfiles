@@ -99,3 +99,4 @@ export SCONSIFY_PASSWORD=Patrick3306@A_1
 export NVM_DIR="/home/patrick/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 neofetch
+ranger
