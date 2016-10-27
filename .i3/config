@@ -24,19 +24,29 @@ font pango:monospace 22
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
+set $tag1 ""
+set $tag2 ""
+set $tag3 ""
+set $tag4 "Recording"
+
 # set gap
-gaps outer 30 
-gaps inner 20
+workspace $tag2 gaps outer 50
+workspace $tag2 gaps inner 20
+
 # use Mouse+Mod1 to drag floating windows to their wanted position
 floating_modifier Mod1
 
 # hide window title
 #for_window [class="^.*"] border pixel 0
-for_window [class="Gnome-terminal"] border pixel 0
-for_window [workspace="3"] floating enable
+#for_window [class="Gnome-terminal"] border pixel 0
+#for_window [class="Zathura"] border 0
+for_window [class="Firefox"] border pixel 0
+for_window [workspace=$tag2] border pixel 4
+for_window [workspace=$tag1] floating enable
+for_window [workspace=$tag3] floating disable
 #for_window [class="Gnome-terminal"] floating enable move absolute position 850 px 625 px 
 # start a terminal
-bindsym Mod1+Return exec gnome-terminal --window-with-profile=daily-i3
+bindsym Mod1+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym Mod1+Shift+q kill
@@ -45,10 +55,10 @@ bindsym Mod1+Shift+q kill
 bindsym Mod1+l exec i3lock -c 000000 -n
 
 # app launcher
-bindsym Super_L exec rofi -show run -terminal gnome-terminal -run-command "zsh -i -c '{cmd}'"  -lines 3 -eh 2 -width 40 -font monospace\ 20 -padding 200 -opacity "90" -bw 0 -bc "#282828" -bg "#282828" -fg "#888888" -hlbg "#282828" -hlfg "#ffffff"
+bindsym Super_L exec rofi -show run -terminal gnome-terminal -run-command "zsh -i -c '{cmd}'" -lines 3 -eh 2 -width 40 -font monospace\ 20 -padding 200 -opacity "90" -bw 0 -bc "#303641" -bg "#303641" -fg "#b3bdcb" -hlbg "#303641" -hlfg "#ffffff"
 
 # screenshot
-bindsym Print exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Pictures/'
+bindsym Print exec scrot '%Y-%m-%d-%T_$wx$h_scrot.png' -e 'mv $f ~/Pictures/' && notify-send SCROT "Screenshot Captured."
 
 # start dmenu (a program launcher)
 bindsym Mod1+d exec dmenu_run
@@ -87,8 +97,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #d
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play
@@ -120,31 +130,33 @@ bindsym Mod1+Shift+minus move scratchpad
 # If there are multiple scratchpad windows, this command cycles through them.
 bindsym Mod1+minus scratchpad show
 
+
 # switch to workspace
-bindsym Mod1+1 workspace 1
-bindsym Mod1+2 workspace 2
-bindsym Mod1+3 workspace 3
-bindsym Mod1+4 workspace 4
+bindsym Mod1+1 workspace $tag1
+bindsym Mod1+2 workspace $tag2
+bindsym Mod1+3 workspace $tag3
+bindsym Mod1+4 workspace $tag4
 bindsym Mod1+5 workspace 5
 bindsym Mod1+6 workspace 6
 bindsym Mod1+7 workspace 7
 
 
 # move focused container to workspace
-bindsym Mod1+Shift+1 move container to workspace 1
-bindsym Mod1+Shift+2 move container to workspace 2
-bindsym Mod1+Shift+3 move container to workspace 3
-bindsym Mod1+Shift+4 move container to workspace 4
+bindsym Mod1+Shift+1 move container to workspace $tag1
+bindsym Mod1+Shift+2 move container to workspace $tag2
+bindsym Mod1+Shift+3 move container to workspace $tag3
+bindsym Mod1+Shift+4 move container to workspace $tag4
 bindsym Mod1+Shift+5 move container to workspace 5
 bindsym Mod1+Shift+6 move container to workspace 6
 bindsym Mod1+Shift+7 move container to workspace 7
 
-for_window [class="Code"] move to workspace 3
-assign [class="Google-chrome"] 3
-for_window [class="Spotify"] move to workspace 3
-assign [class="Thunderbird"] 3
-for_window [class="Typora"] move to workspace 3
-assign [class="Nautilus"] 3
+#for_window [class="Code"] move to workspace 3
+#assign [class="Google-chrome"] 3
+for_window [class="Spotify"] move to workspace $tag3
+assign [class="obs"] $tag4
+#assign [class="Thunderbird"] 3
+#for_window [class="Typora"] move to workspace 3
+#assign [class="Nautilus"] 3
 
 # reload the configuration file
 bindsym Mod1+Shift+c reload
@@ -179,12 +191,12 @@ bindsym Mod1+r mode "resize"
 bar {
         #i3bar_command ~/.i3/lemonbar/i3_lemonbar.py
 	i3bar_command i3bar -t
-	#tray_output none
+	tray_output none
 	colors {
 			# Whole color settings
-			background #22222200
-			statusline #cccccc
-			separator  #666666
+			background #303641a0
+			statusline #b3bdcb
+			separator  #b3bdcb
 			# Type             border  background font
 	 		focused_workspace  #333333 #5f676a #ffffff
 			active_workspace   #333333 #5f676a #ffffff
@@ -192,7 +204,7 @@ bar {
 			urgent_workspace   #333333 #5f676a #ffffff
 		}
 	# i3bar position
-	position top
+	#position top
 	# Using custom i3status.conf
 	status_command i3blocks
 	# status_command i3status -c /home/patrick/.i3/i3status.conf
@@ -208,8 +220,8 @@ client.placeholder      #303641 #303641 #b3bdcb #303641   #303641
 
 exec gnome-settings-daemon
 exec --no-startup-id dbus-launch dunst
-exec compton -b
+exec compton -b --config ~/.compton.conf
 exec --no-startup-id nm-applet
-exec --no-startup-id /opt/extras.ubuntu.com/pushbullet-indicator/bin/pushbullet-indicator
-exec --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/sky.jpg
-exec --no-startup-id i3-msg 'workspace 1; exec gnome-terminal --window-with-profile=daily-i3-startup'
+#exec --no-startup-id /opt/extras.ubuntu.com/pushbullet-indicator/bin/pushbullet-indicator
+exec --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/forest.jpg
+#exec --no-startup-id i3-msg 'workspace 1; exec gnome-terminal --window-with-profile=daily-i3-startup'

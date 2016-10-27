@@ -1,0 +1,7 @@
+[user]
+	email = wotingwu@live.com
+	name = Patrick J. Wu
+[push]
+	default = simple
+[alias]
+	yolo = !git add -A && git commit -m \"$(curl -s whatthecommit.com/index.txt)\"
