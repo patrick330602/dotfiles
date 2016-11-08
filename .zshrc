@@ -83,8 +83,8 @@ eval "$(thefuck --alias)"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias cdclass='cd ~/Documents/COMP2011/'
-alias cdlab='cd ~/Documents/COMP2011/_lab'
+alias cdclass='cd ~/Desktop/COMP2011/'
+alias cdlab='cd ~/Desktop/COMP2011/_lab'
 alias gitpswd='cat ~/Documents/git-ubuntu.txt | xclip -selection c'
 alias push='gitpswd && git push'
 alias fetch='gitpswd && git fetch'

@@ -1,9 +1,10 @@
 set number
+let g:airline_theme="simple"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 " Always show statusline
 set laststatus=2
-
+nnoremap <silent> <F5> :NERDTree<CR>
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
 set t_Co=256
 set nocompatible              " be iMproved, required
@@ -26,6 +27,9 @@ Plugin 'vim-airline/vim-airline'
 
 Plugin 'vim-airline/vim-airline-themes'
 
+Plugin 'scrooloose/nerdtree'
+
+Plugin 'vim-scripts/Conque-GDB'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required

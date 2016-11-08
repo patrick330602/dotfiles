@@ -24,26 +24,23 @@ font pango:monospace 22
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 
-set $tag1 ""
-set $tag2 ""
-set $tag3 ""
-set $tag4 "Recording"
+set $tag1 "1 "
+set $tag2 "2 "
+set $tag3 "3 "
+set $tag6 "6 "
+set $tag4 "4 "
+set $tag5 "5 "
+set $tagR "Recording"
 
 # set gap
-workspace $tag2 gaps outer 50
-workspace $tag2 gaps inner 20
-
+gaps outer 40
+gaps inner 20
+workspace $tag3 gaps inner 0
 # use Mouse+Mod1 to drag floating windows to their wanted position
 floating_modifier Mod1
 
 # hide window title
-#for_window [class="^.*"] border pixel 0
-#for_window [class="Gnome-terminal"] border pixel 0
-#for_window [class="Zathura"] border 0
-for_window [class="Firefox"] border pixel 0
-for_window [workspace=$tag2] border pixel 4
-for_window [workspace=$tag1] floating enable
-for_window [workspace=$tag3] floating disable
+for_window [class="^.*"] border pixel 0
 #for_window [class="Gnome-terminal"] floating enable move absolute position 850 px 625 px 
 # start a terminal
 bindsym Mod1+Return exec i3-sensible-terminal
@@ -136,26 +133,27 @@ bindsym Mod1+1 workspace $tag1
 bindsym Mod1+2 workspace $tag2
 bindsym Mod1+3 workspace $tag3
 bindsym Mod1+4 workspace $tag4
-bindsym Mod1+5 workspace 5
-bindsym Mod1+6 workspace 6
+bindsym Mod1+5 workspace $tag5
+bindsym Mod1+6 workspace $tag6
 bindsym Mod1+7 workspace 7
-
+bindsym Mod1+0 workspace $tagR
 
 # move focused container to workspace
 bindsym Mod1+Shift+1 move container to workspace $tag1
 bindsym Mod1+Shift+2 move container to workspace $tag2
 bindsym Mod1+Shift+3 move container to workspace $tag3
 bindsym Mod1+Shift+4 move container to workspace $tag4
-bindsym Mod1+Shift+5 move container to workspace 5
-bindsym Mod1+Shift+6 move container to workspace 6
+bindsym Mod1+Shift+5 move container to workspace $tag5
+bindsym Mod1+Shift+6 move container to workspace $tag6
 bindsym Mod1+Shift+7 move container to workspace 7
 
-#for_window [class="Code"] move to workspace 3
-#assign [class="Google-chrome"] 3
-for_window [class="Spotify"] move to workspace $tag3
-assign [class="obs"] $tag4
-#assign [class="Thunderbird"] 3
-#for_window [class="Typora"] move to workspace 3
+for_window [class="Code"] move to workspace $tag3
+assign [class="Google-chrome"] $tag2
+#assign [class="Firefox"] $tag2
+for_window [class="Spotify"] move to workspace $tag6
+assign [class="obs"] $tagR
+assign [class="Thunderbird"] $tag5
+for_window [class="Typora"] move to workspace $tag4
 #assign [class="Nautilus"] 3
 
 # reload the configuration file
@@ -204,7 +202,7 @@ bar {
 			urgent_workspace   #333333 #5f676a #ffffff
 		}
 	# i3bar position
-	#position top
+	position top
 	# Using custom i3status.conf
 	status_command i3blocks
 	# status_command i3status -c /home/patrick/.i3/i3status.conf
@@ -223,5 +221,5 @@ exec --no-startup-id dbus-launch dunst
 exec compton -b --config ~/.compton.conf
 exec --no-startup-id nm-applet
 #exec --no-startup-id /opt/extras.ubuntu.com/pushbullet-indicator/bin/pushbullet-indicator
-exec --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/forest.jpg
+exec --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/rail.jpg
 #exec --no-startup-id i3-msg 'workspace 1; exec gnome-terminal --window-with-profile=daily-i3-startup'
