@@ -83,19 +83,24 @@ eval "$(thefuck --alias)"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias cdclass='cd ~/Desktop/COMP2011/'
-alias cdlab='cd ~/Desktop/COMP2011/_lab'
-alias gitpswd='cat ~/Documents/git-ubuntu.txt | xclip -selection c'
-alias push='gitpswd && git push'
-alias fetch='gitpswd && git fetch'
-alias pull='gitpswd && git pull'
-alias amend='git add . && git commit --amend'
+
+#COMP2011
+alias cdc1='cd ~/Documents/COMP2011/'
+alias cdl1='cd ~/Documents/COMP2011/_lab'
+alias cdh1='cd ~/Documents/COMP2011/_homework'
+#Git
+alias gps='cat ~/Documents/git-ubuntu.txt | xclip -selection c'
+alias push='gps && gp'
+alias fetch='gps && gf'
+alias pull='gps && gl'
+#shorts
 alias shutdown='shutdown -h now'
 alias spotify-nogui='/home/patrick/sconsify -username="wotingwu@live.com"'
 alias show-de='xdotool key ctrl+super+d'
 alias spotify='spotify --force-device-scale-factor=2'
 alias google-chrome='google-chrome --force-device-scale-factor=2'
-export SCONSIFY_PASSWORD=Patrick3306@A_1
+alias brainfuck='/home/patrick/Documents/brainfucked/brainfuck/build/brainfuck'
+alias wechat="/home/patrick/electronic-wechat-linux-x64/electronic-wechat"
 export NVM_DIR="/home/patrick/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
+#cat ~/ascii

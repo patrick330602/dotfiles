@@ -6,5 +6,6 @@
 
 # invoke global X session script
 . /etc/X11/Xsession
+awesome
 xrandr --dpi 96
 start-pulseaudio-x11
