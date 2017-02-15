@@ -1,7 +1,11 @@
 set number
+syntax on
+let g:airline#extensions#tabline#enabled = 1
 " Always show statusline
 set laststatus=2
 nnoremap <silent> <F5> :NERDTree<CR>
+nnoremap <silent> <F4> :bnext<CR>
+nnoremap <silent> <F3> :bprev<CR>
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
 set t_Co=256
 set nocompatible              " be iMproved, required
@@ -27,6 +31,10 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree'
 
 Plugin 'vim-scripts/Conque-GDB'
+
+Plugin 'sheerun/vim-polyglot'
+
+Plugin 'tomasr/molokai'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
