@@ -1,0 +1,24 @@
+[user]
+	email = wotingwu@live.com
+	name = Patrick J. Wu
+[push]
+	default = simple
+[alias]
+	yolo = !git add -A && git commit -m \"$(curl -s whatthecommit.com/index.txt)\"
+	cb = checkout -b
+	bd = branch -d
+	c = checkout
+	m = merge
+	s = status -s
+	p = push
+	po = push --set-upstream origin master
+	l = pull
+	io = pull origin master
+	f = fetch
+	repo = remote -v
+	rr = remote rm origin
+	ra = remote add origin
+	ca = !git add -A && git commit -m
+[gui]
+	fontui = -family \"DejaVu Sans\" -size 12 -weight normal -slant roman -underline 0 -overstrike 0
+	fontdiff = -family \"DejaVu Sans Mono\" -size 24 -weight normal -slant roman -underline 0 -overstrike 0
