@@ -1,0 +1,1736 @@
+{
+   "Bytes": {
+      "message": "%s Bytes"
+   },
+   "KB": {
+      "message": "%s KB"
+   },
+   "MB": {
+      "message": "%s MB"
+   },
+   "aborted": {
+      "message": "Afgebroken"
+   },
+   "about": {
+      "message": "Over"
+   },
+   "about_alpha_intro": {
+      "message": "Dit is een alfaversie."
+   },
+   "about_beta_intro": {
+      "message": "Dit is een bètaversie."
+   },
+   "about_conversion_support": {
+      "message": "Als u een geregistreerde gebruiker bent en hulp nodig hebt bij het converteren van mediabestanden of bij uw licentie, stuur dan een e-mailbericht naar het adres dat u hebt ontvangen toen u uw licentie kocht."
+   },
+   "about_go_howto": {
+      "message": "Hoe de add-on gebruikt moet worden"
+   },
+   "about_go_support": {
+      "message": "Naar de ondersteuningspagina"
+   },
+   "about_help": {
+      "message": "Als u hulp nodig hebt bij het gebruik van Video DownloadHelper, kijk dan op onderstaande koppeling."
+   },
+   "about_qr": {
+      "message": "Bestand aangemaakt"
+   },
+   "about_support": {
+      "message": "Als u ondersteuning nodig hebt bij Video DownloadHelper, kijk dan op onderstaande koppeling."
+   },
+   "about_vdh": {
+      "message": "Over Video DownloadHelper"
+   },
+   "action_abort_description": {
+      "message": "Lopende actie afbreken"
+   },
+   "action_abort_title": {
+      "message": "Afbreken"
+   },
+   "action_as_default": {
+      "message": "Deze actie standaard gebruiken"
+   },
+   "action_avplay_description": {
+      "message": "De video afspelen met de in het conversieprogramma ingebouwde speler"
+   },
+   "action_avplay_title": {
+      "message": "Afspelen"
+   },
+   "action_blacklist_description": {
+      "message": "Treffers van deze bron activeren de add-on niet"
+   },
+   "action_blacklist_title": {
+      "message": "Aan zwarte lijst toevoegen"
+   },
+   "action_cannot_abort": {
+      "message": "Actie kan niet worden afgebroken"
+   },
+   "action_convert_description": {
+      "message": "Een reeds gedownload bestand converteren"
+   },
+   "action_convert_title": {
+      "message": "Lokaal bestand converteren"
+   },
+   "action_copyurl_description": {
+      "message": "De media-URL naar het klembord kopiëren"
+   },
+   "action_copyurl_title": {
+      "message": "URL kopiëren"
+   },
+   "action_deletehit_description": {
+      "message": "Treffer uit huidige lijst verwijderen"
+   },
+   "action_deletehit_title": {
+      "message": "Verwijderen"
+   },
+   "action_details_description": {
+      "message": "Details over de treffer weergeven"
+   },
+   "action_details_title": {
+      "message": "Details"
+   },
+   "action_download_description": {
+      "message": "Het bestand naar uw harde schijf downloaden"
+   },
+   "action_download_title": {
+      "message": "Downloaden"
+   },
+   "action_downloadconvert_description": {
+      "message": "Media downloaden en naar een andere opmaak converteren"
+   },
+   "action_downloadconvert_title": {
+      "message": "Downloaden en converteren"
+   },
+   "action_maskeddownload_description": {
+      "message": "Video naar een versleuteld bestand downloaden"
+   },
+   "action_maskeddownload_title": {
+      "message": "Gemaskeerde download"
+   },
+   "action_noyt_description": {
+      "message": "Over video’s van YouTube opnemen"
+   },
+   "action_noyt_title": {
+      "message": "YouTube-waarschuwing"
+   },
+   "action_openlocalcontainer_description": {
+      "message": "Map met lokaal mediabestand openen"
+   },
+   "action_openlocalcontainer_title": {
+      "message": "Map openen"
+   },
+   "action_openlocalfile_description": {
+      "message": "Lokaal mediabestand openen"
+   },
+   "action_openlocalfile_title": {
+      "message": "Media openen"
+   },
+   "action_pin_description": {
+      "message": "Treffer blijvend maken"
+   },
+   "action_pin_title": {
+      "message": "Vastzetten"
+   },
+   "action_quickdownload_description": {
+      "message": "Downloaden zonder om doelmap te vragen"
+   },
+   "action_quickdownload_title": {
+      "message": "Snel downloaden"
+   },
+   "action_record_description": {
+      "message": "Starten met opnemen stream"
+   },
+   "action_record_title": {
+      "message": "Opnemen"
+   },
+   "action_scraprecord_description": {
+      "message": "Opname van scherm starten"
+   },
+   "action_scraprecord_title": {
+      "message": "Opnemen"
+   },
+   "action_scrapsnapshot_description": {
+      "message": "Stilstaand beeld van applet opnemen"
+   },
+   "action_scrapsnapshot_title": {
+      "message": "Snapshot nemen"
+   },
+   "action_scrapstoprecord_description": {
+      "message": "Opname van scherm stoppen"
+   },
+   "action_scrapstoprecord_title": {
+      "message": "Opname stoppen"
+   },
+   "action_social_description": {
+      "message": "De media op sociale netwerken delen"
+   },
+   "action_social_title": {
+      "message": "Sociaal delen"
+   },
+   "action_stoprecord_description": {
+      "message": "Stoppen met opnemen stream"
+   },
+   "action_stoprecord_title": {
+      "message": "Opname stoppen"
+   },
+   "action_stream_no_capture_description": {
+      "message": "Speciale videostreams opslaan"
+   },
+   "action_stream_no_capture_title": {
+      "message": "Opslagwaarschuwing"
+   },
+   "actions": {
+      "message": "Acties"
+   },
+   "adaptative": {
+      "message": "Adaptief %s"
+   },
+   "add_to_blacklist": {
+      "message": "Aan zwarte lijst toevoegen"
+   },
+   "add_to_blacklist_help": {
+      "message": "Video’s vanaf of aangeleverd door het/de geselecteerde domein(en) worden genegeerd"
+   },
+   "adp_hide": {
+      "message": "ADP-varianten niet in downloadlijst weergeven"
+   },
+   "adp_variants": {
+      "message": "Adaptieve varianten"
+   },
+   "advanced": {
+      "message": "Geavanceerd"
+   },
+   "aggregating___": {
+      "message": "Samenvoegen…"
+   },
+   "all_actions": {
+      "message": "Alle acties"
+   },
+   "analyze_page": {
+      "message": "Pagina analyseren"
+   },
+   "any_domain": {
+      "message": "elk domein"
+   },
+   "any_format": {
+      "message": "elke opmaak"
+   },
+   "appearance": {
+      "message": "Weergave"
+   },
+   "audio_only": {
+      "message": "Alleen audio"
+   },
+   "auto_pin_description": {
+      "message": "Treffer vastzetten na downloaden."
+   },
+   "auto_pin_title": {
+      "message": "Automatisch vastzetten"
+   },
+   "avplay_converter_required": {
+      "message": "Deze actie speelt de video af op de in het conversieprogramma ingebouwde speler, maar er is geen conversieprogramma gevonden"
+   },
+   "avplay_enabled": {
+      "message": "Speler ingeschakeld"
+   },
+   "avplay_player_missing_text": {
+      "message": "Het conversieprogramma is geïnstalleerd, maar de geassocieerde videospeler is niet gevonden. Wellicht moet u het conversieprogramma opnieuw installeren"
+   },
+   "avplay_player_missing_title": {
+      "message": "Ontbrekende speler"
+   },
+   "back": {
+      "message": "Terug"
+   },
+   "behavior": {
+      "message": "Gedrag"
+   },
+   "blacklist": {
+      "message": "Zwarte lijst"
+   },
+   "blacklist_domains": {
+      "message": "Domeinen op zwarte lijst"
+   },
+   "blacklist_enable_description": {
+      "message": "Voorkomt dat sommige websites media-herkenning activeren."
+   },
+   "blacklist_enable_title": {
+      "message": "Zwarte lijst inschakelen"
+   },
+   "blacklist_selected": {
+      "message": "Zwarte lijst geselecteerd"
+   },
+   "cancel": {
+      "message": "Annuleren"
+   },
+   "capture_gallery": {
+      "message": "Galerij opnames"
+   },
+   "change_storage_directory": {
+      "message": "Opslagmap wijzigen"
+   },
+   "checking_converter___": {
+      "message": "Conversie controleren…"
+   },
+   "checking_converter_license___": {
+      "message": "Conversielicentie controleren…"
+   },
+   "chrome_ignore_yt": {
+      "message": "YouTube-video’s niet meer detecteren"
+   },
+   "chrome_ignore_yt2": {
+      "message": "YouTube-video’s negeren"
+   },
+   "chrome_install_firefox": {
+      "message": "Firefox installeren"
+   },
+   "chrome_install_fx_vdh": {
+      "message": "Video DownloadHelper voor Firefox"
+   },
+   "chrome_noyt_text": {
+      "message": "Helaas staat de Chrome Web Store extensies voor het downloaden van YouTube-video’s niet, dus we hebben deze functie moeten verwijderen."
+   },
+   "chrome_noyt_text2": {
+      "message": "U kunt Video DownloadHelper gebruiken om YouTube-video’s te downloaden op de Firefox-versie."
+   },
+   "chrome_stream_no_capture": {
+      "message": "Helaas biedt deze browser niet de noodzakelijke API’s om dit type stream te downloaden."
+   },
+   "chrome_stream_no_capture2": {
+      "message": "Overweeg in plaats hiervan Video DownloadHelper op Firefox te gebruiken."
+   },
+   "chrome_stream_no_capture_hide": {
+      "message": "Streams die niet kunnen worden opgeslagen niet weergeven"
+   },
+   "chrome_stream_no_capture_title": {
+      "message": "Kan stream niet opslaan"
+   },
+   "chrome_warning_yt": {
+      "message": "Waarschuwing over Chrome-extensies en YouTube."
+   },
+   "chunk_about_to_be_saved": {
+      "message": "Opgedeelde media ‘%s’ wordt straks opgeslagen en geconverteerd naar"
+   },
+   "chunk_assemble_and_convert": {
+      "message": "Samenstellen en converteren"
+   },
+   "chunk_assemble_native": {
+      "message": "Conversieprogramma niet gebruiken voor samenstellen"
+   },
+   "chunk_assemble_native_warn": {
+      "message": "Het doelbestand wordt gemaakt door delen samen te voegen. Merk op dat het resultaat mogelijk niet goed op uw systeem wordt afgespeeld."
+   },
+   "chunk_assemble_only": {
+      "message": "Alleen samenstellen"
+   },
+   "chunk_converter_assemble": {
+      "message": "U hebt aangevraagd dat het bestand wordt samengesteld door het conversieprogramma."
+   },
+   "chunk_converter_assemble_convert": {
+      "message": "U hebt aangevraagd dat het bestand wordt samengesteld door het conversieprogramma en vervolgens wordt geconverteerd."
+   },
+   "chunk_converter_convert": {
+      "message": "U hebt aangevraagd dat het bestand wordt geconverteerd."
+   },
+   "chunk_initial_period": {
+      "message": "Initiële duur gedeelte (seconden)"
+   },
+   "chunk_missing_conv_native_assemble_only": {
+      "message": "Er is echter geen conversieprogramma op uw systeem aangetroffen. Het bestand wordt aangemaakt door eenvoudigweg de delen aan elkaar te plakken."
+   },
+   "chunk_period_factor": {
+      "message": "Time-outduur-factor (%)"
+   },
+   "chunk_save": {
+      "message": "Opgedeelde media opslaan"
+   },
+   "chunk_target": {
+      "message": "in map “%s”"
+   },
+   "chunks_concurrent_downloads": {
+      "message": "Gelijktijdige deeldownloads"
+   },
+   "chunks_enabled": {
+      "message": "Deelstreamen ingeschakeld"
+   },
+   "chunks_prefetch_count": {
+      "message": "Aantal vooruitgeladen delen"
+   },
+   "chunks_title": {
+      "message": "Deelstreamen"
+   },
+   "clear_hits": {
+      "message": "Treffers wissen"
+   },
+   "clear_logs": {
+      "message": "Logbestanden wissen"
+   },
+   "cmenu_mode": {
+      "message": "Modus contextmenu"
+   },
+   "cmenu_mode_all": {
+      "message": "Alle acties weergeven"
+   },
+   "cmenu_mode_both": {
+      "message": "Zowel snelle als alle acties"
+   },
+   "cmenu_mode_none": {
+      "message": "Niets weergeven"
+   },
+   "cmenu_mode_quick": {
+      "message": "Standaardactie starten"
+   },
+   "companion_default_op": {
+      "message": "Standaardactie bijbehorend programma"
+   },
+   "companion_enable": {
+      "message": "Knop bijbehorend programma inschakelen"
+   },
+   "config_conversion_rules": {
+      "message": "Conversieregels instellen"
+   },
+   "congratulations": {
+      "message": "Gefeliciteerd!"
+   },
+   "context_menu": {
+      "message": "Contextmenu gebruiken"
+   },
+   "continue": {
+      "message": "Doorgaan"
+   },
+   "convconf_2passes": {
+      "message": "2 passages"
+   },
+   "convconf_ac": {
+      "message": "Audiokanalen"
+   },
+   "convconf_acnone": {
+      "message": "Geen"
+   },
+   "convconf_acodec": {
+      "message": "Audiocodec"
+   },
+   "convconf_aspect": {
+      "message": "Beeldverhouding"
+   },
+   "convconf_audiobitrate": {
+      "message": "Audiobitrate"
+   },
+   "convconf_audiofreq": {
+      "message": "Audiofrequentie"
+   },
+   "convconf_audioonly": {
+      "message": "Alleen audio"
+   },
+   "convconf_bitrate": {
+      "message": "Bitrate"
+   },
+   "convconf_container": {
+      "message": "Opmaak"
+   },
+   "convconf_duplicate": {
+      "message": "Duplicaat"
+   },
+   "convconf_ext": {
+      "message": "Bestandsextensie uitvoer"
+   },
+   "convconf_extra": {
+      "message": "Extra parameters"
+   },
+   "convconf_level": {
+      "message": "Niveau"
+   },
+   "convconf_mono": {
+      "message": "Mono"
+   },
+   "convconf_new": {
+      "message": "Nieuw"
+   },
+   "convconf_preset": {
+      "message": "Vooringesteld"
+   },
+   "convconf_profilev": {
+      "message": "Videoprofiel"
+   },
+   "convconf_rate": {
+      "message": "Framerate"
+   },
+   "convconf_readonly": {
+      "message": "Deze standaardconfiguratie is alleen-lezen. Kopieer dit om aanpassingen te doen."
+   },
+   "convconf_remove": {
+      "message": "Verwijderen"
+   },
+   "convconf_reset": {
+      "message": "Alles herinitialiseren"
+   },
+   "convconf_reset_confirm": {
+      "message": "Dit verwijdert al uw aangepaste configuraties"
+   },
+   "convconf_size": {
+      "message": "Framegrootte"
+   },
+   "convconf_size_help": {
+      "message": "\u003Cwidth>x\u003Cheight>"
+   },
+   "convconf_stereo": {
+      "message": "Stereo"
+   },
+   "convconf_target": {
+      "message": "Doel"
+   },
+   "convconf_target_help": {
+      "message": "Voorinstellingen"
+   },
+   "convconf_tune": {
+      "message": "Afstemmen"
+   },
+   "convconf_vcodec": {
+      "message": "Videocodec"
+   },
+   "convconf_videobitrate": {
+      "message": "Video-bitrate"
+   },
+   "conversion": {
+      "message": "Conversie"
+   },
+   "conversion_output": {
+      "message": "Uitvoer"
+   },
+   "conversion_outputs": {
+      "message": "Conversieuitvoer"
+   },
+   "conversion_rule": {
+      "message": "Regel"
+   },
+   "conversion_rules": {
+      "message": "Regels"
+   },
+   "convert": {
+      "message": "Converteren"
+   },
+   "convert_format_from_domain": {
+      "message": "%1s van %2s naar %3s converteren"
+   },
+   "convert_local_files": {
+      "message": "Lokale bestanden converteren"
+   },
+   "converter": {
+      "message": "Conversie"
+   },
+   "converter_edit_output": {
+      "message": "Uitvoer bewerken"
+   },
+   "converter_failed_execution": {
+      "message": "Conversie mislukt"
+   },
+   "converter_installed": {
+      "message": "Conversie geïnstalleerd"
+   },
+   "converter_license": {
+      "message": "Conversielicentie"
+   },
+   "converter_license_blocked": {
+      "message": "Uw licentie is geblokkeerd"
+   },
+   "converter_license_locked": {
+      "message": "Uw licentie dient opnieuw gevalideerd te worden"
+   },
+   "converter_license_locked_mail": {
+      "message": "Er is een e-mailbericht verzonden naar “%s”. Dit bevat een koppeling om uw licentie vrij te geven. Na bezoek aan deze koppeling dient u mogelijk opnieuw een hervalidatie aan te vragen. Indien u het e-mailbericht niet ontvangt, controleer dan uw ongewenste post of spam."
+   },
+   "converter_license_ready": {
+      "message": "Geregistreerde conversielicentie"
+   },
+   "converter_missing": {
+      "message": "Ontbrekend conversieprogramma"
+   },
+   "converter_needed": {
+      "message": "Voor deze handeling dient u een conversieprogramma op uw systeem te installeren."
+   },
+   "converter_needed_aggregate": {
+      "message": "Voor deze handeling dient u een conversieprogramma op uw systeem te installeren om de video- en audiostromen samen te voegen."
+   },
+   "converter_needed_aggregate_why": {
+      "message": "Waarom heb ik een conversieprogramma nodig?"
+   },
+   "converter_needed_local": {
+      "message": "Om lokale media te converteren hebt u een conversieprogramma op uw systeem nodig."
+   },
+   "converter_needs_reg": {
+      "message": "Registratie nodig"
+   },
+   "converter_not_available": {
+      "message": "Conversieprogramma niet beschikbaar"
+   },
+   "converter_not_installed": {
+      "message": "Conversieprogramma niet geïnstalleerd"
+   },
+   "converter_path": {
+      "message": "Pad naar conversieprogramma"
+   },
+   "converter_reg_audio": {
+      "message": "U hebt, expliciet of via een automatische conversieregel, het genereren van een mediabestand met alleen geluid aangevraagd. Hiervoor hebt u een geregistreerd conversieprogramma nodig."
+   },
+   "converter_requested_unavail": {
+      "message": "Het conversieprogramma is nodig voor deze handeling, maar dit is niet beschikbaar."
+   },
+   "converter_required": {
+      "message": "Conversieprogramma nodig"
+   },
+   "converter_threads": {
+      "message": "Conversiediscussies"
+   },
+   "converter_tune_h264": {
+      "message": "H264-tuning in aggregatie afdwingen"
+   },
+   "converter_update_version": {
+      "message": "Conversieprogramma bijwerken naar versie %s"
+   },
+   "converting___": {
+      "message": "Converteren…"
+   },
+   "copy_of": {
+      "message": "Kopie van %s"
+   },
+   "copy_to_clipboard": {
+      "message": "Naar klembord kopiëren"
+   },
+   "could_not_download": {
+      "message": "“%s” kan niet worden gedownload"
+   },
+   "cphelper_addon": {
+      "message": "CouponsHelper Addon"
+   },
+   "cphelper_description": {
+      "message": "The right coupon at the right time: do not miss discounts when shopping online ..."
+   },
+   "custom_output": {
+      "message": "Aangepaste uitvoeropmaak"
+   },
+   "dash_enabled": {
+      "message": "DASH ingeschakeld"
+   },
+   "dash_hide_m4s": {
+      "message": ".m4s-bestanden niet in downloadlijst weergeven"
+   },
+   "dash_streaming": {
+      "message": "DASH-streamen"
+   },
+   "define_vdh_smartname": {
+      "message": "DownloadHelper slimme naam"
+   },
+   "defining_smartname": {
+      "message": "Slimme naam definiëren"
+   },
+   "defining_smartname_help": {
+      "message": "Met deze functie kunt u een naam voor een video genereren op basis van de pagina waarvan deze afkomstig is. Als de geselecteerde tekst te veel tekens bevat, probeer dan slechts enkele tekens uit de paginatitel te selecteren."
+   },
+   "details_parenthesis": {
+      "message": "(Details)"
+   },
+   "detect_extensions": {
+      "message": "Extensies detecteren"
+   },
+   "display_mode_compact": {
+      "message": "Compact"
+   },
+   "display_mode_label": {
+      "message": "Weergave hoofdpaneel"
+   },
+   "display_mode_mozilla": {
+      "message": "Mozilla"
+   },
+   "display_mode_normal": {
+      "message": "Normaal"
+   },
+   "dlconv_and_saved_to": {
+      "message": "en opgeslagen naar “%s”"
+   },
+   "dlconv_back": {
+      "message": "Terug"
+   },
+   "dlconv_change_directory": {
+      "message": "Uitvoermap wijzigen"
+   },
+   "dlconv_convert": {
+      "message": "Converteren"
+   },
+   "dlconv_download_and_convert": {
+      "message": "Downloaden en converteren"
+   },
+   "dlconv_download_only": {
+      "message": "Alleen downloaden"
+   },
+   "dlconv_n_will_be_converted": {
+      "message": "%s bestanden worden geconverteerd naar:"
+   },
+   "dlconv_output_details": {
+      "message": "Uitvoerdetails instellen"
+   },
+   "dlconv_rename": {
+      "message": "Vragen om bestand te hernoemen"
+   },
+   "dlconv_will_be_converted": {
+      "message": "“%s” wordt geconverteerd naar:"
+   },
+   "do_no_convert_format_from_domain": {
+      "message": "%1s van %2s niet converteren"
+   },
+   "domain": {
+      "message": "Domein"
+   },
+   "donate": {
+      "message": "Doneren"
+   },
+   "donate_vdh": {
+      "message": "Help Video DownloadHelper"
+   },
+   "download_canceled": {
+      "message": "Download geannuleerd."
+   },
+   "download_controlled_max_description": {
+      "message": "Beheerst het aantal door de add-on gegenereerde gelijktijdige downloads om wat bandbreedte te besparen."
+   },
+   "download_controlled_max_title": {
+      "message": "Maximaal aantal downloads"
+   },
+   "download_controlled_max_title2": {
+      "message": "Maximaal aantal gelijktijdige downloads"
+   },
+   "download_retries": {
+      "message": "Aantal downloadpogingen"
+   },
+   "download_retry_delay": {
+      "message": "Vertraging tussen herhaalde downloadpogingen (ms)"
+   },
+   "download_selected_link": {
+      "message": "Geselecteerde mediakoppeling downloaden"
+   },
+   "download_selected_links": {
+      "message": "Geselecteerde mediakoppelingen downloaden"
+   },
+   "downloaded_as": {
+      "message": "Gedownload als %s"
+   },
+   "downloading___": {
+      "message": "Downloaden…"
+   },
+   "downloads_hook_headers": {
+      "message": "Downloadheaders haken"
+   },
+   "empty_downloaded_file": {
+      "message": "Het gedownloade bestand voor “%s” is leeg. Media is mogelijk beschermd."
+   },
+   "error_cannot_create_target_directory": {
+      "message": "Kan doelmap %s niet aanmaken. Controleer beschikbare ruimte en toegangsrechten"
+   },
+   "error_cannot_create_target_file": {
+      "message": "Kan doelbestand %s niet maken. Controleer beschikbare ruimte en toegang"
+   },
+   "error_nohome": {
+      "message": "Basismap bestaat niet"
+   },
+   "errors": {
+      "message": "Fouten"
+   },
+   "explain_qr1": {
+      "message": "U zult zien dat de resulterende video een watermerk in de hoek heeft."
+   },
+   "explain_qr2": {
+      "message": "Dit is omdat de conversiefunctie niet is geregistreerd."
+   },
+   "extension": {
+      "message": "Extensie"
+   },
+   "f4f_enabled": {
+      "message": "F4F ingeschakeld"
+   },
+   "f4f_prefetch": {
+      "message": "F4F-prefetchelementen"
+   },
+   "f4f_streaming": {
+      "message": "F4F streamen"
+   },
+   "failed_aggregating": {
+      "message": "Samenvoegen “%s” mislukt"
+   },
+   "failed_assembling": {
+      "message": "Samenstellen mislukt"
+   },
+   "failed_conversion": {
+      "message": "Conversie mislukt"
+   },
+   "failed_converting": {
+      "message": "Conversie “%s” mislukt"
+   },
+   "failed_getting_info": {
+      "message": "Info ophalen van “%s” mislukt"
+   },
+   "file_ext_change": {
+      "message": "Bestandsextensie gewijzigd"
+   },
+   "file_ext_change_text": {
+      "message": "U hebt de bestandsextensie gewijzigd van “.%1s” in “.%2s”. Dit kan problemen veroorzaken bij het afspelen van het bestand."
+   },
+   "file_generated": {
+      "message": "Het bestand “%s” is aangemaakt."
+   },
+   "file_not_exists": {
+      "message": "Bestand “%s” bestaat niet"
+   },
+   "file_not_readable": {
+      "message": "Bestand “%s” is onleesbaar"
+   },
+   "file_ready": {
+      "message": "“%s” is nu klaar"
+   },
+   "files_to_convert": {
+      "message": "Te converteren bestanden"
+   },
+   "finalizing___": {
+      "message": "Voltooien…"
+   },
+   "flv_streaming": {
+      "message": "FLV streamen"
+   },
+   "force_default_storage_directory": {
+      "message": "%1s: standaard opslagmap instellen op “%2s”"
+   },
+   "from_domain": {
+      "message": "Van %s"
+   },
+   "gallery": {
+      "message": "Galerij"
+   },
+   "gallery_auto_detect": {
+      "message": "Automatisch detecteren"
+   },
+   "gallery_auto_detect_warning": {
+      "message": "Automatisch detecteren van de galerij kan een negatieve impact op de prestaties van de browser hebben"
+   },
+   "gallery_capture": {
+      "message": "Galerij opnames"
+   },
+   "gallery_capture_images": {
+      "message": "Ingebedde afbeeldingen detecteren"
+   },
+   "gallery_capture_links": {
+      "message": "Koppelingen naar media detecteren"
+   },
+   "gallery_files_types": {
+      "message": "%s-bestanden"
+   },
+   "gallery_from_domain": {
+      "message": "Galerij van %s"
+   },
+   "gallery_index_prefix": {
+      "message": "Bestandsnamen vooraf laten gaan door incrementele index"
+   },
+   "gallery_links": {
+      "message": "Galerij-koppelingen"
+   },
+   "gallery_links_from_domain": {
+      "message": "Koppelingen van %s"
+   },
+   "gallery_max_hits": {
+      "message": "Maximaal aantal te overwegen koppelingen"
+   },
+   "gallery_min_hits": {
+      "message": "Minimaal aantal koppelingen per galerij"
+   },
+   "gallery_min_img_size": {
+      "message": "Minimale afbeeldingsgrootte"
+   },
+   "general": {
+      "message": "Algemeen"
+   },
+   "get_conversion_license": {
+      "message": "Licentie voor conversieprogramma verkrijgen"
+   },
+   "get_converter_license": {
+      "message": "Een licentie verkrijgen"
+   },
+   "get_converter_license_key": {
+      "message": "Een licentiesleutel verkrijgen"
+   },
+   "help_vdh": {
+      "message": "Help Video DownloadHelper"
+   },
+   "hit_details": {
+      "message": "Trefferdetails"
+   },
+   "hit_go_to_tab": {
+      "message": "Naar tabblad"
+   },
+   "hits_animation_description": {
+      "message": "Animeert treffers wanneer deze worden gewijzigd in de lijsten."
+   },
+   "hits_animation_title": {
+      "message": "Trefferanimatie"
+   },
+   "hits_goto_tab": {
+      "message": "Naar-tabblad-koppeling weergeven"
+   },
+   "hls_download_as_m2ts": {
+      "message": "HLS-streams als M2TS downloaden"
+   },
+   "hls_enabled": {
+      "message": "HLS ingeschakeld"
+   },
+   "hls_streaming": {
+      "message": "HLS-streamen"
+   },
+   "hotkey_clear_hits": {
+      "message": "Treffers wissen"
+   },
+   "hotkey_convert_local": {
+      "message": "Lokale bestanden converteren"
+   },
+   "hotkey_default": {
+      "message": "Standaardactie"
+   },
+   "hotkey_detect_gallery": {
+      "message": "Galerijen detecteren"
+   },
+   "hotkey_open_companion": {
+      "message": "Menu bijbehorend programma openen"
+   },
+   "hotkey_supported_sites": {
+      "message": "Ondersteunde websites"
+   },
+   "hotkey_toggle_scrap": {
+      "message": "Schermopname wisselen"
+   },
+   "hotkeys": {
+      "message": "Sneltoetsen"
+   },
+   "icon_activation_description": {
+      "message": "Wanneer het werkbalkpictogram moet worden geactiveerd."
+   },
+   "icon_activation_mode_anytab": {
+      "message": "Treffer van elk tabblad"
+   },
+   "icon_activation_mode_currenttab": {
+      "message": "Treffer van huidig tabblad"
+   },
+   "icon_activation_title": {
+      "message": "Pictogramactivatie"
+   },
+   "icon_animation_description": {
+      "message": "Of het pictogram animeert als treffers actief zijn."
+   },
+   "icon_animation_title": {
+      "message": "Pictogramanimatie"
+   },
+   "icon_badge_activetab": {
+      "message": "Media van actief tabblad"
+   },
+   "icon_badge_anytab": {
+      "message": "Media van elk tabblad"
+   },
+   "icon_badge_description": {
+      "message": "Weergave werkbalkpictogrambadge."
+   },
+   "icon_badge_error_description": {
+      "message": "Werkbalkpictogram-badgefouten, indien aanwezig, in volgorde van prioriteit."
+   },
+   "icon_badge_error_title": {
+      "message": "Weergave badgefouten"
+   },
+   "icon_badge_mixed": {
+      "message": "Gemengd"
+   },
+   "icon_badge_none": {
+      "message": "Geen"
+   },
+   "icon_badge_pinned": {
+      "message": "Vastgezette treffers"
+   },
+   "icon_badge_tasks": {
+      "message": "Lopende taken"
+   },
+   "icon_badge_title": {
+      "message": "Pictogrambadge"
+   },
+   "icon_dropdown_description": {
+      "message": "Uitklapdriehoek op pictogram weergeven."
+   },
+   "icon_dropdown_title": {
+      "message": "Uitklapmarkering pictogram"
+   },
+   "ignore_embedded": {
+      "message": "Ingebedde video’s negeren"
+   },
+   "ignore_protected": {
+      "message": "Beschermde varianten negeren"
+   },
+   "in_current_tab": {
+      "message": "In huidig tabblad"
+   },
+   "in_other_tab": {
+      "message": "In overige tabbladen"
+   },
+   "install_converter": {
+      "message": "Conversieprogramma installeren"
+   },
+   "jocly_addon": {
+      "message": "Firefox-add-on Jocly"
+   },
+   "jocly_description": {
+      "message": "Meer dan 100 HTML5-bordspellen tegen de computer of live, in volledige 3D videochatten met opponenten…"
+   },
+   "licence_text1": {
+      "message": "Enkele goede redenen om uw conversieprogramma te registreren:"
+   },
+   "licence_text2": {
+      "message": "De licentie voor het conversieprogramma betreft een eenmalig bedrag zonder vervaldatum, behalve voor de gratis ondersteuning die geldt voor één jaar na de datum van aankoop."
+   },
+   "license_key": {
+      "message": "Licentiesleutel"
+   },
+   "license_point1": {
+      "message": "Geconverteerde/samengevoegde video’s bevatten geen watermerk"
+   },
+   "license_point2": {
+      "message": "U kunt video’s rechtstreeks naar mp3-audiobestanden converteren"
+   },
+   "license_point3": {
+      "message": "U hebt toegang tot ondersteuning voor de conversiefunctie"
+   },
+   "license_point4": {
+      "message": "U houdt Video DownloadHelper levend"
+   },
+   "links_list": {
+      "message": "Lijst koppelingen"
+   },
+   "locale_credits": {
+      "message": "Nederlandse vertaling door %s"
+   },
+   "locale_credits_translators": {
+      "message": "markh van BanelZilla.org"
+   },
+   "locale_credits_urls": {
+      "message": "http://www.babelzilla.org"
+   },
+   "log_details": {
+      "message": "Logdetails"
+   },
+   "logs": {
+      "message": "Logboeken"
+   },
+   "make_donation": {
+      "message": "Een donatie doen"
+   },
+   "masked_change_password": {
+      "message": "Wachtwoord wijzigen"
+   },
+   "masked_close": {
+      "message": "Sluiten"
+   },
+   "masked_default_password": {
+      "message": "Gemaskeerde download met standaardwachtwoord"
+   },
+   "masked_enabled": {
+      "message": "Gemaskeerde download ingeschakeld"
+   },
+   "masked_info_descr1": {
+      "message": "De gemaskeerde download zorgt ervoor dat het gedownloade materiaal alleen in versleutelde vorm op uw computer wordt opgeslagen."
+   },
+   "masked_info_descr2": {
+      "message": "Klik op de knop Meer voor meer informatie over de aangemaakte versleutelde bestanden."
+   },
+   "masked_info_title": {
+      "message": "Gemaskeerde download"
+   },
+   "masked_more": {
+      "message": "Meer"
+   },
+   "masked_save_password": {
+      "message": "Wachtwoord opslaan"
+   },
+   "max_hits_per_source": {
+      "message": "Maximaal aantal treffers van dezelfde bron"
+   },
+   "max_panel_width_description": {
+      "message": "Maximale breedte van elk add-onpaneel"
+   },
+   "max_panel_width_title": {
+      "message": "Maximale paneelbreedte"
+   },
+   "media": {
+      "message": "Media"
+   },
+   "mediaweight_min_size_description": {
+      "message": "Treffers onder deze grootte negeren."
+   },
+   "mediaweight_min_size_title": {
+      "message": "Minimale grootte"
+   },
+   "mediaweight_min_size_title2": {
+      "message": "Treffers negeren indien kleiner dan"
+   },
+   "mediaweight_threshold_description": {
+      "message": "Media gedwongen detecteren boven deze grootte."
+   },
+   "mediaweight_threshold_title": {
+      "message": "Drempel grootte"
+   },
+   "mediaweight_threshold_title2": {
+      "message": "Gedwongen detectie indien groter dan"
+   },
+   "min_panel_width_description": {
+      "message": "Minimale breedte van elk add-onpaneel"
+   },
+   "min_panel_width_title": {
+      "message": "Minimale paneelbreedte"
+   },
+   "more___": {
+      "message": "Meer…"
+   },
+   "mp2t_streaming": {
+      "message": "MP2T-streamen"
+   },
+   "mp2t_title": {
+      "message": "MP2T-streaming"
+   },
+   "mpegts_hide_ts": {
+      "message": ".ts-bestanden niet in downloadlijst weergeven"
+   },
+   "network_filter_out_description": {
+      "message": "Reguliere expressie om bepaalde media-URL’s te negeren."
+   },
+   "network_filter_out_title": {
+      "message": "Netwerkfilteren"
+   },
+   "network_probe_description": {
+      "message": "Netwerkverkeer scannen om treffers te detecteren."
+   },
+   "network_probe_title": {
+      "message": "Netwerkscan"
+   },
+   "new_rule": {
+      "message": "Nieuwe regel"
+   },
+   "no_download_to_abort": {
+      "message": "Geen download om af te breken"
+   },
+   "no_license_to_check": {
+      "message": "Geen licentie om te controleren"
+   },
+   "no_media_current_tab": {
+      "message": "Geen te verwerken media in het huidige tabblad"
+   },
+   "no_media_to_process": {
+      "message": "Geen media om te verwerken"
+   },
+   "no_media_to_process_descr": {
+      "message": "Klik afspelen op de video om te helpen bestanden te detecteren…"
+   },
+   "no_private_notification": {
+      "message": "Geen notificatie voor privétreffers"
+   },
+   "not_again_3months": {
+      "message": "Val me de komende drie maanden niet meer lastig"
+   },
+   "not_implemented_yet": {
+      "message": "Nog niet geïmplementeerd"
+   },
+   "not_see_again": {
+      "message": "Dat bericht niet meer zien"
+   },
+   "notify_ready": {
+      "message": "Bericht na verwerking"
+   },
+   "number_type": {
+      "message": "%1s %2s"
+   },
+   "operations": {
+      "message": "Uitvoeringen"
+   },
+   "options": {
+      "message": "Opties"
+   },
+   "order_by_video_quality": {
+      "message": "Sorteren op videokwaliteit"
+   },
+   "organize_videos": {
+      "message": "Video’s ordenen"
+   },
+   "orphan": {
+      "message": "Verweesd"
+   },
+   "orphan_expiration_description": {
+      "message": "Time-out in seconden voordat verweesde treffers worden verwijderd."
+   },
+   "orphan_expiration_title": {
+      "message": "Time-out vervallen verweesd"
+   },
+   "orphan_expiration_title2": {
+      "message": "Time-out vervallen verweesd (seconden)"
+   },
+   "other_products": {
+      "message": "Van dezelfde ontwikkelaars"
+   },
+   "output": {
+      "message": "Uitvoer"
+   },
+   "panels_astab_settings": {
+      "message": "Instellingen als een tabblad weergeven"
+   },
+   "panels_astab_sites": {
+      "message": "Websites als een tabblad weergeven"
+   },
+   "pinned": {
+      "message": "Vastgezet"
+   },
+   "prompt_select_storage_dir": {
+      "message": "Selecteer opslagmap"
+   },
+   "prompt_target_dir": {
+      "message": "Doelmap"
+   },
+   "purchase_license": {
+      "message": "Een conversielicentie aanschaffen"
+   },
+   "qualities_max_description": {
+      "message": "Maximum aantal weergegeven varianten voor dezelfde video."
+   },
+   "qualities_max_title": {
+      "message": "Max. varianten"
+   },
+   "quality_medium": {
+      "message": "Gemiddeld"
+   },
+   "quality_small": {
+      "message": "Laag"
+   },
+   "queued___": {
+      "message": "In wachtrij…"
+   },
+   "recheck_converter": {
+      "message": "Conversieprogramma opnieuw controleren"
+   },
+   "register_converter": {
+      "message": "Conversieprogramma registreren"
+   },
+   "register_existing_license": {
+      "message": "Een bestaande licentie registreren"
+   },
+   "registered_email": {
+      "message": "E-mailadres"
+   },
+   "registered_key": {
+      "message": "Sleutel"
+   },
+   "registered_name": {
+      "message": "Naam"
+   },
+   "req_donate": {
+      "message": "Zou u overwegen de ontwikkeling te steunen en een klein bedrag te doneren?"
+   },
+   "req_review": {
+      "message": "Zou u als alternatief een mooie beoordeling op de Mozilla-add-ons-website willen schrijven?"
+   },
+   "req_review_link": {
+      "message": "Een beoordeling over Video DownloadHelper schrijven"
+   },
+   "reset_converter_rules": {
+      "message": "Regels herinitialiseren"
+   },
+   "reset_variants": {
+      "message": "Varianten herinitialiseren"
+   },
+   "revalidate_license": {
+      "message": "Licentie hervalideren"
+   },
+   "rule_converter_unavail": {
+      "message": "Er moet een automatische conversie worden toegepast op “%s”, maar er is geen conversieprogramma op uw systeem aanwezig. De media worden niet geconverteerd."
+   },
+   "running": {
+      "message": "Lopend"
+   },
+   "safe_mode": {
+      "message": "Veilige modus"
+   },
+   "safe_mode_confirm": {
+      "message": "Ja, ik wil echt de veilige modus activeren"
+   },
+   "safe_mode_confirm_description": {
+      "message": "We willen er zeker van zijn dat u hebt begrepen dat u de veilige modus niet kunt verlaten."
+   },
+   "safe_mode_description": {
+      "message": "In de veilige modus laat de Video DownloadHelper-website (en alleen deze website!) niets zien dat niet door de hele familie mag worden gezien."
+   },
+   "safe_mode_description2": {
+      "message": "Het instellen van de veilige modus is definitief en er is geen manier om deze modus te verlaten."
+   },
+   "safe_mode_set": {
+      "message": "Veilige modus instellen"
+   },
+   "save": {
+      "message": "Opslaan"
+   },
+   "save_transient_storagedirectory": {
+      "message": "Blijvend opslaan"
+   },
+   "scrap_8x8_align": {
+      "message": "8x8 uitlijning"
+   },
+   "scrap_8x8_align_cut": {
+      "message": "Knippen"
+   },
+   "scrap_8x8_align_extend": {
+      "message": "Verlengen"
+   },
+   "scrap_applet_selector": {
+      "message": "Applet-selectie"
+   },
+   "scrap_applet_start_not_see_again": {
+      "message": "Dit bericht niet weergeven bij starten applet-opname"
+   },
+   "scrap_auto_detect": {
+      "message": "Autodetectie applets"
+   },
+   "scrap_auto_detect_warning": {
+      "message": "Autodetectie van applets kan een negatieve impact op de prestaties van de browser hebben"
+   },
+   "scrap_capture_statistics": {
+      "message": "Opnamestatistieken"
+   },
+   "scrap_change_target": {
+      "message": "Doelbestand wijzigen"
+   },
+   "scrap_convert": {
+      "message": "Schermopname converteren"
+   },
+   "scrap_converter_required": {
+      "message": "Schermopname vereist een conversieprogramma om een video te genereren."
+   },
+   "scrap_description": {
+      "message": "Een video van alles in het browservenster maken."
+   },
+   "scrap_description2": {
+      "message": "Als uw computer te langzaam is mist u enkele frames. Probeer het browservenster en/of de framerate te reduceren."
+   },
+   "scrap_description3": {
+      "message": "Audio wordt niet opgenomen. U dient het tabblad actief te houden om afbeeldingen te vernieuwen."
+   },
+   "scrap_description4": {
+      "message": "Een video maken van wat er in een browservenster gebeurt."
+   },
+   "scrap_description5": {
+      "message": "Als uw computer te langzaam is mist u enkele frames. Probeer de framerate te reduceren."
+   },
+   "scrap_do_not_display_start_panel": {
+      "message": "Paneel niet weergeven bij starten opname"
+   },
+   "scrap_enabled": {
+      "message": "Schermopname inschakelen"
+   },
+   "scrap_error": {
+      "message": "Fout bij schermopname"
+   },
+   "scrap_file_saved_as": {
+      "message": "De opgenomen video wordt opgeslagen als %s"
+   },
+   "scrap_min_applet_size": {
+      "message": "Minimale grootte om applet te overwegen"
+   },
+   "scrap_mouse_always": {
+      "message": "Altijd"
+   },
+   "scrap_mouse_halo_color": {
+      "message": "Halo-kleur"
+   },
+   "scrap_mouse_halo_radius": {
+      "message": "Halo-radius"
+   },
+   "scrap_mouse_halo_transparency": {
+      "message": "Halo-transparantie (%)"
+   },
+   "scrap_mouse_metakey": {
+      "message": "Wanneer SHIFT-toets wordt ingedrukt"
+   },
+   "scrap_mouse_never": {
+      "message": "Nooit"
+   },
+   "scrap_mouse_not_metakey": {
+      "message": "Wanneer SHIFT-toets niet wordt ingedrukt"
+   },
+   "scrap_mouse_pointer_size": {
+      "message": "Aanwijsgrootte"
+   },
+   "scrap_mouse_title": {
+      "message": "Muisopname"
+   },
+   "scrap_no_converter": {
+      "message": "Er is geen conversieprogramma op uw systeem gevonden en dit is nodig om de schermvideo te maken."
+   },
+   "scrap_open_container": {
+      "message": "Map openen"
+   },
+   "scrap_open_file": {
+      "message": "Video openen"
+   },
+   "scrap_port": {
+      "message": "Conversiepoort"
+   },
+   "scrap_rate": {
+      "message": "Opnamesnelheid (frames/seconde)"
+   },
+   "scrap_screen_capture": {
+      "message": "Schermopname"
+   },
+   "scrap_screen_capture_from_domain": {
+      "message": "Schermopname van %s"
+   },
+   "scrap_start": {
+      "message": "SCRAP starten"
+   },
+   "scrap_start_capture": {
+      "message": "Opname starten"
+   },
+   "scrap_start_long": {
+      "message": "Opname surfsessie starten"
+   },
+   "scrap_start_scrap_long": {
+      "message": "Vensteropname starten"
+   },
+   "scrap_stats_captured_frames": {
+      "message": "%1s frames opgenomen, %2s overgeslagen, %3s gemist"
+   },
+   "scrap_stats_captured_size": {
+      "message": "Opgenomen framegrootte %s"
+   },
+   "scrap_stats_duration": {
+      "message": "Duur %s seconden"
+   },
+   "scrap_stats_original_size": {
+      "message": "Oorspronkelijke framegrootte %s"
+   },
+   "scrap_stats_saved_frames": {
+      "message": "%1s frames opgeslagen, %2s verloren"
+   },
+   "scrap_stop": {
+      "message": "SCRAP stoppen"
+   },
+   "scrap_stop_long": {
+      "message": "Stop capturing browsing session"
+   },
+   "scrap_stop_scrap_long": {
+      "message": "Vensteropname stoppen"
+   },
+   "scrap_success": {
+      "message": "Succesvolle schermopname"
+   },
+   "scrap_successfully_saved_as": {
+      "message": "Bestand ‘%s’ is succesvol opgeslagen"
+   },
+   "scrap_title": {
+      "message": "Schermopname"
+   },
+   "selected_text": {
+      "message": "Geselecteerde tekst"
+   },
+   "settings": {
+      "message": "Instellingen"
+   },
+   "settings_title": {
+      "message": "Video DownloadHelper configureren"
+   },
+   "shortcut_icons": {
+      "message": "Pictogrammen snelkoppelingen weergeven"
+   },
+   "shortcut_icons_dropdown": {
+      "message": "Sneltoetspictogrammen en dropdown"
+   },
+   "show_in_toolsmenu": {
+      "message": "Besturing in menu Extra weergeven"
+   },
+   "site_comments": {
+      "message": "Opmerkingen"
+   },
+   "site_date": {
+      "message": "Toegevoegd"
+   },
+   "site_interest": {
+      "message": "Interesse"
+   },
+   "site_name": {
+      "message": "Websitenaam"
+   },
+   "site_rating": {
+      "message": "Waardering"
+   },
+   "smartname_delay": {
+      "message": "Vertraging benamen opname (ms)"
+   },
+   "smartname_regexp": {
+      "message": "Reguliere expressie"
+   },
+   "smartnamer_all_domains": {
+      "message": "Alle domeinen"
+   },
+   "smartnamer_by_default": {
+      "message": "Standaard"
+   },
+   "smartnamer_enabled_description": {
+      "message": "Naam op basis van paginainformatie maken"
+   },
+   "smartnamer_enabled_title": {
+      "message": "Slimme namen inschakelen"
+   },
+   "smartnamer_fname_maxlen_description": {
+      "message": "Zorgt ervoor dat aangemaakte namen deze grootte niet overschrijden."
+   },
+   "smartnamer_fname_maxlen_title": {
+      "message": "Maximale lengte bestandsnaam"
+   },
+   "smartnamer_fname_spaces_description": {
+      "message": "Wat te doen met spaties in bestandsnamen."
+   },
+   "smartnamer_fname_spaces_hyphen": {
+      "message": "Vervangen door streepje"
+   },
+   "smartnamer_fname_spaces_keep": {
+      "message": "Behouden"
+   },
+   "smartnamer_fname_spaces_remove": {
+      "message": "Verwijderen"
+   },
+   "smartnamer_fname_spaces_title": {
+      "message": "Spaties in bestandsnamen"
+   },
+   "smartnamer_fname_spaces_underscore": {
+      "message": "Vervangen door liggende streepjes"
+   },
+   "smartnamer_get_name_from_header_url": {
+      "message": "Naam afleiden van documentheader/URL"
+   },
+   "smartnamer_get_name_from_page_content": {
+      "message": "Naam afleiden van pagina-inhoud"
+   },
+   "smartnamer_get_name_from_page_title": {
+      "message": "Naam afleiden van paginatitel"
+   },
+   "smartnamer_get_obfuscated_name": {
+      "message": "Versluierde naam gebruiken"
+   },
+   "smartnamer_header_url": {
+      "message": "Header/URL"
+   },
+   "smartnamer_index": {
+      "message": "Huidige index"
+   },
+   "smartnamer_naming": {
+      "message": "Benamingsmethode"
+   },
+   "smartnamer_obfuscated": {
+      "message": "Versluierd"
+   },
+   "smartnamer_page_content": {
+      "message": "Pagina-inhoud"
+   },
+   "smartnamer_page_title": {
+      "message": "Paginatitel"
+   },
+   "smartnames": {
+      "message": "Slimme namen"
+   },
+   "smartnames_domains": {
+      "message": "Domeinen slimme namen"
+   },
+   "storage_directory": {
+      "message": "Opslagmap"
+   },
+   "storage_directory_error": {
+      "message": "Opslagmap-fout “%s”: standaardmap %s wordt gebruikt"
+   },
+   "storage_directory_not_defined": {
+      "message": "Opslagmap niet opgegeven: standaardmap %s wordt gebruikt"
+   },
+   "storage_directory_not_directory": {
+      "message": "Opslagmap %s is geen map"
+   },
+   "storage_directory_not_exist": {
+      "message": "Opslagmap %s bestaat niet"
+   },
+   "storage_directory_not_writable": {
+      "message": "Opslagmap %s is niet beschrijfbaar"
+   },
+   "storage_last_dir": {
+      "message": "Standaardopslaglocatie van de browser gebruiken"
+   },
+   "supported_sites": {
+      "message": "Ondersteunde websites"
+   },
+   "supported_vp9": {
+      "message": "VP9-codec ondersteund"
+   },
+   "tbmode_comp": {
+      "message": "Alleen bijbehorende knop"
+   },
+   "tbmode_label": {
+      "message": "Modus werkbalkknop"
+   },
+   "tbmode_main": {
+      "message": "Alleen hoofdknop"
+   },
+   "tbmode_maincomp": {
+      "message": "Hoofd- en bijbehorende knoppen"
+   },
+   "tbsn_enabled": {
+      "message": "Facebook-helper"
+   },
+   "tbts_enabled": {
+      "message": "Twitter-helper"
+   },
+   "tbvv_enabled": {
+      "message": "Vine-helper"
+   },
+   "tell_me_more": {
+      "message": "Meer hierover"
+   },
+   "thumbnail_direct_gif": {
+      "message": "Miniaturen in GIF-opmaak gebruiken"
+   },
+   "thumbnail_from_meta": {
+      "message": "Videominiaturen van paginameta"
+   },
+   "thumbnail_tumblr_mp4": {
+      "message": "Tumbl-helper"
+   },
+   "title_mode": {
+      "message": "Lange titels hoofdpaneel"
+   },
+   "title_mode_ellipsis_left": {
+      "message": "Ellipsis links"
+   },
+   "title_mode_ellipsis_right": {
+      "message": "Ellipsis rechts"
+   },
+   "title_mode_multiline": {
+      "message": "Over meerdere regels"
+   },
+   "title_save_file": {
+      "message": "Bestand opslaan"
+   },
+   "top_main_panel": {
+      "message": "Bovenzijde hoofdpaneel"
+   },
+   "tpsr_concurrent_captures": {
+      "message": "Gelijktijdige opnames"
+   },
+   "tpsr_convert": {
+      "message": "Aangemaakte video’s converteren."
+   },
+   "tpsr_convert_format": {
+      "message": "De uitvoeropmaak definiëren."
+   },
+   "tpsr_description": {
+      "message": "Deze modus neemt live videostreams op van Twitter Periscope terwijl ze verschijnen. Het is beter om het geluid uit te schakelen om geluidsverstoring te vermijden."
+   },
+   "tpsr_do_not_convert": {
+      "message": "Resulterende video’s niet converteren."
+   },
+   "tpsr_duration_timeout": {
+      "message": "Maximale duur streamopname (seconden)"
+   },
+   "tpsr_enabled": {
+      "message": "Ingeschakeld"
+   },
+   "tpsr_no_converter": {
+      "message": "U hebt geen conversieprogramma geïnstalleerd op uw systeem. Als workaround zal de add-on gedownloade delen aan elkaar plakken, maar de resulterende bestanden spelen mogelijk niet goed af."
+   },
+   "tpsr_search_help": {
+      "message": "U kunt het zoekveld leeg laten, maar dan neemt u alles wat live gaat op."
+   },
+   "tpsr_search_periscope": {
+      "message": "Periscope doorzoeken"
+   },
+   "tpsr_search_terms": {
+      "message": "Zoektrefwoorden"
+   },
+   "tpsr_start_par": {
+      "message": "PAR starten"
+   },
+   "tpsr_start_par_long": {
+      "message": "Periscope automatisch opnemen starten"
+   },
+   "tpsr_start_recording": {
+      "message": "Starten"
+   },
+   "tpsr_start_timeout": {
+      "message": "Time-out aanvang stream (seconden)"
+   },
+   "tpsr_stop_par": {
+      "message": "PAR stoppen"
+   },
+   "tpsr_stop_par_long": {
+      "message": "Periscope automatisch opnemen stoppen"
+   },
+   "tpsr_title": {
+      "message": "Periscope Auto-Recorder"
+   },
+   "transient_storagedirectory": {
+      "message": "De opslagmap is vanuit een privévenster aangepast en wordt bij de volgende sessie teruggezet."
+   },
+   "ui_adp_grey": {
+      "message": "ADP-varianten kleuren"
+   },
+   "ui_adp_tag": {
+      "message": "ADP-varianten labellen"
+   },
+   "undefined_output": {
+      "message": "ongedefinieerde uitvoer"
+   },
+   "unregistered": {
+      "message": "Ongeregistreerd"
+   },
+   "unsupported_vp9": {
+      "message": "VP9-codec niet ondersteund"
+   },
+   "using_browser_default": {
+      "message": "Browserstandaard wordt gebruikt"
+   },
+   "validate_license": {
+      "message": "Licentie registreren"
+   },
+   "variants": {
+      "message": "Varianten"
+   },
+   "vdh_notification": {
+      "message": "Video DownloadHelper"
+   },
+   "vdh_settings": {
+      "message": "Video DownloadHelper-instellingen"
+   },
+   "version": {
+      "message": "Versie %s"
+   },
+   "video": {
+      "message": "Video"
+   },
+   "video_downloadhelper": {
+      "message": "Video DownloadHelper"
+   },
+   "video_downloadhelper_plus": {
+      "message": "Video DownloadHelper +"
+   },
+   "video_only": {
+      "message": "Alleen video"
+   },
+   "video_qualities": {
+      "message": "Videokwaliteiten"
+   },
+   "visit_site": {
+      "message": "Website bezoeken"
+   },
+   "xpath_expr": {
+      "message": "XPath-expressie"
+   },
+   "you_downloaded_n_videos": {
+      "message": "U hebt zojuist met succes uw %se bestand met Video DownloadHelper gedownload."
+   }
+}

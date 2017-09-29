@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/home/patrick/electronic-wechat/dist/electronic-wechat-linux-x64/electronic-wechat
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_HK]=WeChat
+Name=WeChat
+Comment[en_HK]=
+Comment=

@@ -1,0 +1,1736 @@
+{
+   "Bytes": {
+      "message": "%s Byte"
+   },
+   "KB": {
+      "message": "%s KB"
+   },
+   "MB": {
+      "message": "%s MB"
+   },
+   "aborted": {
+      "message": "Afbrudt"
+   },
+   "about": {
+      "message": "Om"
+   },
+   "about_alpha_intro": {
+      "message": "Dette er en alfa-version."
+   },
+   "about_beta_intro": {
+      "message": "Dette er en beta-version."
+   },
+   "about_conversion_support": {
+      "message": "Hvis du er en registreret bruger, og har brug for hjælp til konvertering af mediefiler eller din licens, send en mail til adressen du fik opgivet, da du købte din licens."
+   },
+   "about_go_howto": {
+      "message": "Sådan bruges tilføjelsen"
+   },
+   "about_go_support": {
+      "message": "Gå til supportsiden"
+   },
+   "about_help": {
+      "message": "Hvis du har brug for hjælp til brugen af Video DownloadHelper, tjek linket nedenunder."
+   },
+   "about_qr": {
+      "message": "Fil genereret"
+   },
+   "about_support": {
+      "message": "Hvis du har brug for support til Video DownloadHelper, klik på linket nedenunder."
+   },
+   "about_vdh": {
+      "message": "Om Video DownloadHelper"
+   },
+   "action_abort_description": {
+      "message": "Afbryd igangværende handling"
+   },
+   "action_abort_title": {
+      "message": "Afbryd"
+   },
+   "action_as_default": {
+      "message": "Brug denne handling som standard"
+   },
+   "action_avplay_description": {
+      "message": "Afspil videoen med konverterens indbyggede afspiller"
+   },
+   "action_avplay_title": {
+      "message": "Afspil"
+   },
+   "action_blacklist_description": {
+      "message": "Fund fra denne kilde aktiverer ikke tilføjelsen"
+   },
+   "action_blacklist_title": {
+      "message": "Føj til den sorte liste"
+   },
+   "action_cannot_abort": {
+      "message": "Handling kan ikke afbrydes"
+   },
+   "action_convert_description": {
+      "message": "Konverter en fil, der allerede er blevet hentet"
+   },
+   "action_convert_title": {
+      "message": "Konverter lokal fil"
+   },
+   "action_copyurl_description": {
+      "message": "Kopier medie-URL'en til udklipsholderen"
+   },
+   "action_copyurl_title": {
+      "message": "Kopier URL"
+   },
+   "action_deletehit_description": {
+      "message": "Slet fund fra den pågældende liste"
+   },
+   "action_deletehit_title": {
+      "message": "Slet"
+   },
+   "action_details_description": {
+      "message": "Vis detaljer om fundet"
+   },
+   "action_details_title": {
+      "message": "Detaljer"
+   },
+   "action_download_description": {
+      "message": "Download filen til din harddisk"
+   },
+   "action_download_title": {
+      "message": "Download"
+   },
+   "action_downloadconvert_description": {
+      "message": "Download medie og konverter til et andet format"
+   },
+   "action_downloadconvert_title": {
+      "message": "Download & konverter"
+   },
+   "action_maskeddownload_description": {
+      "message": "Download video som en krypteret fil"
+   },
+   "action_maskeddownload_title": {
+      "message": "Maskeret download"
+   },
+   "action_noyt_description": {
+      "message": "Om indfangning af videoer fra YouTube"
+   },
+   "action_noyt_title": {
+      "message": "YouTube-advarsel"
+   },
+   "action_openlocalcontainer_description": {
+      "message": "Åbn mappe, der indeholder lokal mediefil"
+   },
+   "action_openlocalcontainer_title": {
+      "message": "Åbn mappe"
+   },
+   "action_openlocalfile_description": {
+      "message": "Åbn lokal mediefil"
+   },
+   "action_openlocalfile_title": {
+      "message": "Åbn medie"
+   },
+   "action_pin_description": {
+      "message": "Gør fundet blivende"
+   },
+   "action_pin_title": {
+      "message": "Fastgør"
+   },
+   "action_quickdownload_description": {
+      "message": "Download uden at spørge om destination"
+   },
+   "action_quickdownload_title": {
+      "message": "Kvik-download"
+   },
+   "action_record_description": {
+      "message": "Start optagelse af strøm"
+   },
+   "action_record_title": {
+      "message": "Optag"
+   },
+   "action_scraprecord_description": {
+      "message": "Start optagelse af skærmen"
+   },
+   "action_scraprecord_title": {
+      "message": "Optag"
+   },
+   "action_scrapsnapshot_description": {
+      "message": "Tag et stillbillede af apletten"
+   },
+   "action_scrapsnapshot_title": {
+      "message": "Tag et billede"
+   },
+   "action_scrapstoprecord_description": {
+      "message": "Stop optagelse af skærmen"
+   },
+   "action_scrapstoprecord_title": {
+      "message": "Stop optagelse"
+   },
+   "action_social_description": {
+      "message": "Del mediet på sociale netværk"
+   },
+   "action_social_title": {
+      "message": "Social deling"
+   },
+   "action_stoprecord_description": {
+      "message": "Stop optagelse af strøm"
+   },
+   "action_stoprecord_title": {
+      "message": "Stop optagning"
+   },
+   "action_stream_no_capture_description": {
+      "message": "Om at gemme specielle videostrømme"
+   },
+   "action_stream_no_capture_title": {
+      "message": "Advarsel om at gemme"
+   },
+   "actions": {
+      "message": "Handlinger"
+   },
+   "adaptative": {
+      "message": "Tilpasningsbare %s"
+   },
+   "add_to_blacklist": {
+      "message": "Føj til den sorte liste"
+   },
+   "add_to_blacklist_help": {
+      "message": "Videoer der stammer fra eller leveres af af det valgte domæne bliver ignoreret"
+   },
+   "adp_hide": {
+      "message": "Vis ikke ADP-varianter i download-listen"
+   },
+   "adp_variants": {
+      "message": "Tilpasningsbare varianter"
+   },
+   "advanced": {
+      "message": "Avanceret"
+   },
+   "aggregating___": {
+      "message": "Samler..."
+   },
+   "all_actions": {
+      "message": "Alle handlinger"
+   },
+   "analyze_page": {
+      "message": "Analyser side"
+   },
+   "any_domain": {
+      "message": "alle domæner"
+   },
+   "any_format": {
+      "message": "alle formater"
+   },
+   "appearance": {
+      "message": "Udseende"
+   },
+   "audio_only": {
+      "message": "Kun lyd"
+   },
+   "auto_pin_description": {
+      "message": "Fastgør fund efter download."
+   },
+   "auto_pin_title": {
+      "message": "Fastgør automatisk"
+   },
+   "avplay_converter_required": {
+      "message": "Denne handling afspiller videoen med konverterens indbyggede afspiller, men ingen konverter blev fundet"
+   },
+   "avplay_enabled": {
+      "message": "Afspiller aktiveret"
+   },
+   "avplay_player_missing_text": {
+      "message": "Det se ud som om konverteren er installeret, tilhørende videoafspiller er ikke blevet fundet. Du vil måske geninstallere konverteren"
+   },
+   "avplay_player_missing_title": {
+      "message": "Manglende afspiller"
+   },
+   "back": {
+      "message": "Tilbage"
+   },
+   "behavior": {
+      "message": "Opførsel"
+   },
+   "blacklist": {
+      "message": "Sort liste"
+   },
+   "blacklist_domains": {
+      "message": "Sortlist domæner"
+   },
+   "blacklist_enable_description": {
+      "message": "Forhindrer nogle websteder i at aktivere mediegenkendelse."
+   },
+   "blacklist_enable_title": {
+      "message": "Aktiver sortliste"
+   },
+   "blacklist_selected": {
+      "message": "Sortliste valgt"
+   },
+   "cancel": {
+      "message": "Annuller"
+   },
+   "capture_gallery": {
+      "message": "Indfang galleri"
+   },
+   "change_storage_directory": {
+      "message": "Skift opbevaringsmappe"
+   },
+   "checking_converter___": {
+      "message": "Kontrollerer konverter ..."
+   },
+   "checking_converter_license___": {
+      "message": "Kontrollerer konverterlicens ..."
+   },
+   "chrome_ignore_yt": {
+      "message": "Detekter ikke længere YouTube-videoer"
+   },
+   "chrome_ignore_yt2": {
+      "message": "Ignorer YouTube-videoer"
+   },
+   "chrome_install_firefox": {
+      "message": "Installer Firefox"
+   },
+   "chrome_install_fx_vdh": {
+      "message": "Video DownloadHelper til Firefox"
+   },
+   "chrome_noyt_text": {
+      "message": "Chrome Web Store tillader desværre ikke udvidelser til downloading af YouTube-videoer, så vi har fjernet denne funktion."
+   },
+   "chrome_noyt_text2": {
+      "message": "Du kan bruge Video DownloadHelper til at downloade YouTube-videoer på Firefox-versionen."
+   },
+   "chrome_stream_no_capture": {
+      "message": "Denne browser indeholder desværre ikke de nødvendige API'er til at downloade denne type strømme."
+   },
+   "chrome_stream_no_capture2": {
+      "message": "Overvej at bruge Video DownloadHelper på Firefox i stedet for."
+   },
+   "chrome_stream_no_capture_hide": {
+      "message": "Vis ikke strømme, der ikke kan gemmes"
+   },
+   "chrome_stream_no_capture_title": {
+      "message": "Kunne ikke gemme strøm"
+   },
+   "chrome_warning_yt": {
+      "message": "Advarsel om udvidelser til Chrome og YouTube"
+   },
+   "chunk_about_to_be_saved": {
+      "message": "Opdelt medie '%s' er ved at blive gemt og konverteret til"
+   },
+   "chunk_assemble_and_convert": {
+      "message": "Saml og konverter"
+   },
+   "chunk_assemble_native": {
+      "message": "Brug ikke konverter til samling"
+   },
+   "chunk_assemble_native_warn": {
+      "message": "Målfilen vil blive oprettet ved at sammenkæde segmenter. Bemærk, at resultatet afspilles måske ikke så godt på dit system."
+   },
+   "chunk_assemble_only": {
+      "message": "Saml kun"
+   },
+   "chunk_converter_assemble": {
+      "message": "Du ønskede, at slutfilen skulle samles med konverteren."
+   },
+   "chunk_converter_assemble_convert": {
+      "message": "Du ønskede, at slutfilen skulle samles med konverteren, og så konverteres."
+   },
+   "chunk_converter_convert": {
+      "message": "Du ønskede, at slutfilen skulle konverteres."
+   },
+   "chunk_initial_period": {
+      "message": "Indledende stykkes varighed (sekunder)"
+   },
+   "chunk_missing_conv_native_assemble_only": {
+      "message": "Men Ingen konverter blev fundet på dit system. Den genererede fil vil blive oprettet ved simpel sammenkædning af segmenter."
+   },
+   "chunk_period_factor": {
+      "message": "Varighedsfaktor for timeout (%)"
+   },
+   "chunk_save": {
+      "message": "Gemmer opdelt medie"
+   },
+   "chunk_target": {
+      "message": "i mappen \"%s\""
+   },
+   "chunks_concurrent_downloads": {
+      "message": "Samtidige downloads af segmenter"
+   },
+   "chunks_enabled": {
+      "message": "Streaming af segmenter aktiveret"
+   },
+   "chunks_prefetch_count": {
+      "message": "Hent på forhånd segment-antal"
+   },
+   "chunks_title": {
+      "message": "Streaming af segmenter"
+   },
+   "clear_hits": {
+      "message": "Ryd fund"
+   },
+   "clear_logs": {
+      "message": "Ryd logs"
+   },
+   "cmenu_mode": {
+      "message": "Genvejsmener"
+   },
+   "cmenu_mode_all": {
+      "message": "Vis alle handlinger"
+   },
+   "cmenu_mode_both": {
+      "message": "Både Kvik og Alle handlinger"
+   },
+   "cmenu_mode_none": {
+      "message": "Vis ikke nogen"
+   },
+   "cmenu_mode_quick": {
+      "message": "Start standardhandling"
+   },
+   "companion_default_op": {
+      "message": "Standardhandling for ledsager"
+   },
+   "companion_enable": {
+      "message": "Aktiver ledsagerikon"
+   },
+   "config_conversion_rules": {
+      "message": "Opret konverteringsregler"
+   },
+   "congratulations": {
+      "message": "Tillykke !"
+   },
+   "context_menu": {
+      "message": "Brug genvejsmenu"
+   },
+   "continue": {
+      "message": "Fortsæt"
+   },
+   "convconf_2passes": {
+      "message": "2 gennemløb"
+   },
+   "convconf_ac": {
+      "message": "Lydkanaler"
+   },
+   "convconf_acnone": {
+      "message": "Ingen"
+   },
+   "convconf_acodec": {
+      "message": "Lyd-codec"
+   },
+   "convconf_aspect": {
+      "message": "Størrelsesforhold"
+   },
+   "convconf_audiobitrate": {
+      "message": "Lydbitrate"
+   },
+   "convconf_audiofreq": {
+      "message": "Lydfrekvens"
+   },
+   "convconf_audioonly": {
+      "message": "Kun lyd"
+   },
+   "convconf_bitrate": {
+      "message": "Bitrate"
+   },
+   "convconf_container": {
+      "message": "Format"
+   },
+   "convconf_duplicate": {
+      "message": "Dupliker"
+   },
+   "convconf_ext": {
+      "message": "Filendelse på output-fil"
+   },
+   "convconf_extra": {
+      "message": "Ekstra parametre"
+   },
+   "convconf_level": {
+      "message": "Niveau"
+   },
+   "convconf_mono": {
+      "message": "Mono"
+   },
+   "convconf_new": {
+      "message": "Ny"
+   },
+   "convconf_preset": {
+      "message": "Forvalg"
+   },
+   "convconf_profilev": {
+      "message": "Videoprofil"
+   },
+   "convconf_rate": {
+      "message": "Billedrate"
+   },
+   "convconf_readonly": {
+      "message": "Denne standardopsætning er skrivebeskyttet. Dupliker den for at lave ændringer."
+   },
+   "convconf_remove": {
+      "message": "Fjern"
+   },
+   "convconf_reset": {
+      "message": "Nulstil alle"
+   },
+   "convconf_reset_confirm": {
+      "message": "Dette vil fjerne alle dine tilpassede indstillinger"
+   },
+   "convconf_size": {
+      "message": "Billedstørrelse"
+   },
+   "convconf_size_help": {
+      "message": "\u003Cwidth>x\u003Cheight>"
+   },
+   "convconf_stereo": {
+      "message": "Stereo"
+   },
+   "convconf_target": {
+      "message": "Mål"
+   },
+   "convconf_target_help": {
+      "message": "Forvalgte indstillinger"
+   },
+   "convconf_tune": {
+      "message": "Juster"
+   },
+   "convconf_vcodec": {
+      "message": "Video-codec"
+   },
+   "convconf_videobitrate": {
+      "message": "Videobitrate"
+   },
+   "conversion": {
+      "message": "Konvertering"
+   },
+   "conversion_output": {
+      "message": "Output"
+   },
+   "conversion_outputs": {
+      "message": "Konverterings-outputs"
+   },
+   "conversion_rule": {
+      "message": "Regel"
+   },
+   "conversion_rules": {
+      "message": "Regler"
+   },
+   "convert": {
+      "message": "Konverter"
+   },
+   "convert_format_from_domain": {
+      "message": "Konverter %1s fra %2s til %3s"
+   },
+   "convert_local_files": {
+      "message": "Konverter lokal fil"
+   },
+   "converter": {
+      "message": "Konverter"
+   },
+   "converter_edit_output": {
+      "message": "Rediger output"
+   },
+   "converter_failed_execution": {
+      "message": "Udførelse af konvertering mislykkedes"
+   },
+   "converter_installed": {
+      "message": "Konverter installeret"
+   },
+   "converter_license": {
+      "message": "Konverterlicens"
+   },
+   "converter_license_blocked": {
+      "message": "Din licens er blevet blokeret"
+   },
+   "converter_license_locked": {
+      "message": "Din licens skal fornys"
+   },
+   "converter_license_locked_mail": {
+      "message": "En mail er blevet sendt til \"%s\". Den indeholder et link til en side, som skal besøges for at låse licensen op. Når du har besøgt siden, kan det være nødvendigt at bede om fornyelse af licensen igen. Hvis du ikke har modtaget mailen, kontroller din spam-mappe."
+   },
+   "converter_license_ready": {
+      "message": "Registeret konverterlicens"
+   },
+   "converter_missing": {
+      "message": "Manglende konverter"
+   },
+   "converter_needed": {
+      "message": "Denne handling kræver, at der er installeret en konverter på dit system."
+   },
+   "converter_needed_aggregate": {
+      "message": "Denne handling kræver, at der er installeret en konverter på dit system til at samle video- og lydstrømmene."
+   },
+   "converter_needed_aggregate_why": {
+      "message": "Hvorfor er det nødvendigt med en konverter ?"
+   },
+   "converter_needed_local": {
+      "message": "Konvertering af lokal mediefil kræver, at der er installeret en konverter på dit system."
+   },
+   "converter_needs_reg": {
+      "message": "Registrering nødvendig"
+   },
+   "converter_not_available": {
+      "message": "Konverter ikke tilgængelig"
+   },
+   "converter_not_installed": {
+      "message": "Konverter ikke installeret"
+   },
+   "converter_path": {
+      "message": "Sti til konverter"
+   },
+   "converter_reg_audio": {
+      "message": "Du har, enten udtrykkeligt eller fra en automatisk konverteringsregel, bedt om generering af en mediefil kun med lyd. Dette kræver en registreret konverter."
+   },
+   "converter_requested_unavail": {
+      "message": "Konverteren er nødvendig til denne handling, men den er ikke tilgængelig."
+   },
+   "converter_required": {
+      "message": "Konverter nødvendig"
+   },
+   "converter_threads": {
+      "message": "Konverteringstråde"
+   },
+   "converter_tune_h264": {
+      "message": "Tving H264-tuning i aggregering"
+   },
+   "converter_update_version": {
+      "message": "Opdater konverter til version %s"
+   },
+   "converting___": {
+      "message": "Konverterer..."
+   },
+   "copy_of": {
+      "message": "Kopi af %s"
+   },
+   "copy_to_clipboard": {
+      "message": "Kopier til udklipsholder"
+   },
+   "could_not_download": {
+      "message": "\"%s\" kunne ikke downloades"
+   },
+   "cphelper_addon": {
+      "message": "CouponsHelper Addon"
+   },
+   "cphelper_description": {
+      "message": "The right coupon at the right time: do not miss discounts when shopping online ..."
+   },
+   "custom_output": {
+      "message": "Tilpas output-format"
+   },
+   "dash_enabled": {
+      "message": "DASH aktiveret"
+   },
+   "dash_hide_m4s": {
+      "message": "Vis ikke .m4s-punkter i download-listen"
+   },
+   "dash_streaming": {
+      "message": "DASH-streaming"
+   },
+   "define_vdh_smartname": {
+      "message": "DownloadHelper Smart navngivning"
+   },
+   "defining_smartname": {
+      "message": "Definering af smarte navne"
+   },
+   "defining_smartname_help": {
+      "message": "Denne funktion giver mulighed for, at generere et navn til en video ud fra tekst på siden der indeholder videoen. Hvis den markerede tekst indeholder for mange tegn, så prøv at vælge nogle få tegn fra titlen på siden."
+   },
+   "details_parenthesis": {
+      "message": "(Detaljer)"
+   },
+   "detect_extensions": {
+      "message": "Detekter filendelser"
+   },
+   "display_mode_compact": {
+      "message": "Kompakt"
+   },
+   "display_mode_label": {
+      "message": "Visning af hovedpanel"
+   },
+   "display_mode_mozilla": {
+      "message": "Mozilla"
+   },
+   "display_mode_normal": {
+      "message": "Normal"
+   },
+   "dlconv_and_saved_to": {
+      "message": "og gem som \"%s\""
+   },
+   "dlconv_back": {
+      "message": "Tilbage"
+   },
+   "dlconv_change_directory": {
+      "message": "Skift output-mappe"
+   },
+   "dlconv_convert": {
+      "message": "Konverter"
+   },
+   "dlconv_download_and_convert": {
+      "message": "Download & konverter"
+   },
+   "dlconv_download_only": {
+      "message": "Download kun"
+   },
+   "dlconv_n_will_be_converted": {
+      "message": "%s filer vil blive konverteret til:"
+   },
+   "dlconv_output_details": {
+      "message": "Indstil output-detaljer"
+   },
+   "dlconv_rename": {
+      "message": "Spørg om fil skal omdøbes"
+   },
+   "dlconv_will_be_converted": {
+      "message": "\"%s\" vil blive konverteret til:"
+   },
+   "do_no_convert_format_from_domain": {
+      "message": "Konverter ikke %1s fra %2s"
+   },
+   "domain": {
+      "message": "Domæne"
+   },
+   "donate": {
+      "message": "Doner"
+   },
+   "donate_vdh": {
+      "message": "Hjælp Video DownloadHelper"
+   },
+   "download_canceled": {
+      "message": "Download annulleret."
+   },
+   "download_controlled_max_description": {
+      "message": "Styrer antallet af samtidige downloads genereret af tilføjelsen, for at bevare noget af båndbredden."
+   },
+   "download_controlled_max_title": {
+      "message": "Maks. downloads"
+   },
+   "download_controlled_max_title2": {
+      "message": "Maks. samtidige downloads"
+   },
+   "download_retries": {
+      "message": "Antal download-forsøg"
+   },
+   "download_retry_delay": {
+      "message": "Tid mellem download-forsøg (ms)"
+   },
+   "download_selected_link": {
+      "message": "Download valgte medielink"
+   },
+   "download_selected_links": {
+      "message": "Download valgte medielinks"
+   },
+   "downloaded_as": {
+      "message": "Downloaded som %s"
+   },
+   "downloading___": {
+      "message": "Downloader..."
+   },
+   "downloads_hook_headers": {
+      "message": "Fasthold download headers"
+   },
+   "empty_downloaded_file": {
+      "message": "Filen downloaded til \"%s\" er tom. Mediet kan være beskyttet."
+   },
+   "error_cannot_create_target_directory": {
+      "message": "Kan ikke oprette destinationsmappen %s. Kontroller om der er plads nok og om du har de nødvendige tilladelser."
+   },
+   "error_cannot_create_target_file": {
+      "message": "Kan ikke oprette destinationsfilen %s. Kontroller tilgængelig plads og tilladelser"
+   },
+   "error_nohome": {
+      "message": "Hjemmemappe eksisterer ikke"
+   },
+   "errors": {
+      "message": "Fejl"
+   },
+   "explain_qr1": {
+      "message": "Du vil bemærke, at den færdige video indeholder et vandmærke i hjørnet."
+   },
+   "explain_qr2": {
+      "message": "Det er fordi, konverteringsfunktionen ikke er blevet registreret."
+   },
+   "extension": {
+      "message": "Filendelse"
+   },
+   "f4f_enabled": {
+      "message": "F4F aktiveret"
+   },
+   "f4f_prefetch": {
+      "message": "F4F prefetch-segmenter"
+   },
+   "f4f_streaming": {
+      "message": "F4F-streaming"
+   },
+   "failed_aggregating": {
+      "message": "Samling af \"%s\" mislykkedes"
+   },
+   "failed_assembling": {
+      "message": "Samling mislykkedes"
+   },
+   "failed_conversion": {
+      "message": "Konvertering mislykkedes"
+   },
+   "failed_converting": {
+      "message": "Konvertering af \"%s\" mislykkedes"
+   },
+   "failed_getting_info": {
+      "message": "Kunne ikke hente info fra \"%s\""
+   },
+   "file_ext_change": {
+      "message": "Filendelse ændret"
+   },
+   "file_ext_change_text": {
+      "message": "Du har ændret filens endelse fra \".%1s\" til \".%2s\". Dette kan forårsage problemer med at afspille filen."
+   },
+   "file_generated": {
+      "message": "Filen \"%s\" er blevet genereret."
+   },
+   "file_not_exists": {
+      "message": "Filen \"%s\" eksisterer ikke"
+   },
+   "file_not_readable": {
+      "message": "Filen \"%s\" kan ikke læses"
+   },
+   "file_ready": {
+      "message": "\"%s\" er nu klar"
+   },
+   "files_to_convert": {
+      "message": "Filer der skal konverteres"
+   },
+   "finalizing___": {
+      "message": "Færdiggør…"
+   },
+   "flv_streaming": {
+      "message": "FLV-streaming"
+   },
+   "force_default_storage_directory": {
+      "message": "%1s: sæt standardopbevaringsmappe til \"%2s\""
+   },
+   "from_domain": {
+      "message": "Fra %s"
+   },
+   "gallery": {
+      "message": "Galleri"
+   },
+   "gallery_auto_detect": {
+      "message": "Detekter automatisk"
+   },
+   "gallery_auto_detect_warning": {
+      "message": "Auto-detektering kan have en negativ effekt på browserens ydelse"
+   },
+   "gallery_capture": {
+      "message": "Galleri-indfangning"
+   },
+   "gallery_capture_images": {
+      "message": "Detekter indlejrede billeder"
+   },
+   "gallery_capture_links": {
+      "message": "Detekter links til medier"
+   },
+   "gallery_files_types": {
+      "message": "%s filer"
+   },
+   "gallery_from_domain": {
+      "message": "Galleri fra %s"
+   },
+   "gallery_index_prefix": {
+      "message": "Præfiks filnavne med trinvis indeks"
+   },
+   "gallery_links": {
+      "message": "Gallerilinks"
+   },
+   "gallery_links_from_domain": {
+      "message": "Links fra %s"
+   },
+   "gallery_max_hits": {
+      "message": "Maks. links at overveje"
+   },
+   "gallery_min_hits": {
+      "message": "Min. links per galleri"
+   },
+   "gallery_min_img_size": {
+      "message": "Minimum billedstørrelse"
+   },
+   "general": {
+      "message": "Generelt"
+   },
+   "get_conversion_license": {
+      "message": "Få en konverterlicens"
+   },
+   "get_converter_license": {
+      "message": "Få en licens"
+   },
+   "get_converter_license_key": {
+      "message": "Få en licensnøgle"
+   },
+   "help_vdh": {
+      "message": "Hjælp Video DownloadHelper"
+   },
+   "hit_details": {
+      "message": "Detaljer om fund"
+   },
+   "hit_go_to_tab": {
+      "message": "Gå til faneblad"
+   },
+   "hits_animation_description": {
+      "message": "Animerer fund, når de ændres i listerne."
+   },
+   "hits_animation_title": {
+      "message": "Animation ved fund"
+   },
+   "hits_goto_tab": {
+      "message": "Vis Gå-til-faneblad-handle"
+   },
+   "hls_download_as_m2ts": {
+      "message": "Download HLS-streams som M2TS"
+   },
+   "hls_enabled": {
+      "message": "HLS aktiveret"
+   },
+   "hls_streaming": {
+      "message": "HLS-streaming"
+   },
+   "hotkey_clear_hits": {
+      "message": "Ryd fund"
+   },
+   "hotkey_convert_local": {
+      "message": "Konverter lokale filer"
+   },
+   "hotkey_default": {
+      "message": "Standardhandling"
+   },
+   "hotkey_detect_gallery": {
+      "message": "Detekter gallerier"
+   },
+   "hotkey_open_companion": {
+      "message": "Åbn ledsagermenu"
+   },
+   "hotkey_supported_sites": {
+      "message": "Understøttede websteder"
+   },
+   "hotkey_toggle_scrap": {
+      "message": "Slå skærm-indfangning til/fra"
+   },
+   "hotkeys": {
+      "message": "Tastaturgenveje"
+   },
+   "icon_activation_description": {
+      "message": "Hvornår ikonet på værktøjslinjen aktiveres."
+   },
+   "icon_activation_mode_anytab": {
+      "message": "Fund fra alle faneblade"
+   },
+   "icon_activation_mode_currenttab": {
+      "message": "Fund i aktuelle faneblad"
+   },
+   "icon_activation_title": {
+      "message": "Aktivering af ikon"
+   },
+   "icon_animation_description": {
+      "message": "Om ikonet animeres, når nogle fund er aktive."
+   },
+   "icon_animation_title": {
+      "message": "Animeret ikon"
+   },
+   "icon_badge_activetab": {
+      "message": "Medier fra aktivt faneblad"
+   },
+   "icon_badge_anytab": {
+      "message": "Medier fra alle faneblade"
+   },
+   "icon_badge_description": {
+      "message": "Visning af skilt på værktøjslinjeikon."
+   },
+   "icon_badge_error_description": {
+      "message": "Skilt på værktøjslinjeikon, der viser evt. fejl i prioriteret rækkefølge."
+   },
+   "icon_badge_error_title": {
+      "message": "Skilt til fejlvisning"
+   },
+   "icon_badge_mixed": {
+      "message": "Blandet"
+   },
+   "icon_badge_none": {
+      "message": "Ingen"
+   },
+   "icon_badge_pinned": {
+      "message": "Fastgjorte fund"
+   },
+   "icon_badge_tasks": {
+      "message": "Kørende opgaver"
+   },
+   "icon_badge_title": {
+      "message": "Ikonskilt"
+   },
+   "icon_dropdown_description": {
+      "message": "Vis pil på rullelisteikon."
+   },
+   "icon_dropdown_title": {
+      "message": "Ikon på rulleliste"
+   },
+   "ignore_embedded": {
+      "message": "Ignorer indlejrede videoer"
+   },
+   "ignore_protected": {
+      "message": "Ignorer beskyttede varianter"
+   },
+   "in_current_tab": {
+      "message": "I aktuelle faneblad"
+   },
+   "in_other_tab": {
+      "message": "I andre faneblade"
+   },
+   "install_converter": {
+      "message": "Installer konverter"
+   },
+   "jocly_addon": {
+      "message": "Tilføjelsen Jocly Firefox"
+   },
+   "jocly_description": {
+      "message": "Mere end 100 HTML-brætspil mod computeren eller live, i fuld 3D og med video-chat med modspillerene"
+   },
+   "licence_text1": {
+      "message": "Nogle gode grunde til at registrere din konverter:"
+   },
+   "licence_text2": {
+      "message": "Konverterlicensen udløber aldrig, bortset fra den gratis support, der er tilgængelig i et år fra købsdatoen."
+   },
+   "license_key": {
+      "message": "Licensnøgle"
+   },
+   "license_point1": {
+      "message": "Konverterede/samlede videoer indeholder ikke et vandmærke"
+   },
+   "license_point2": {
+      "message": "Du vil kunne konvertere videoer direkte til mp3-lydfiler"
+   },
+   "license_point3": {
+      "message": "Du vil få adgang til support til konverteringsfunktionen"
+   },
+   "license_point4": {
+      "message": "Du vil holde Video DownloadHelper i live"
+   },
+   "links_list": {
+      "message": "Liste med links"
+   },
+   "locale_credits": {
+      "message": "Dansk oversættelse af Joergen"
+   },
+   "locale_credits_translators": {
+      "message": "!"
+   },
+   "locale_credits_urls": {
+      "message": "!"
+   },
+   "log_details": {
+      "message": "Log-detaljer"
+   },
+   "logs": {
+      "message": "Logfiler"
+   },
+   "make_donation": {
+      "message": "Giv en donation"
+   },
+   "masked_change_password": {
+      "message": "Skift adgangskode"
+   },
+   "masked_close": {
+      "message": "Luk"
+   },
+   "masked_default_password": {
+      "message": "Maskeret download med standard-adgangskode"
+   },
+   "masked_enabled": {
+      "message": "Maskeret download aktiveret"
+   },
+   "masked_info_descr1": {
+      "message": "Den maskerede download-handling sikrer, at det downloadede materiale kun findes i krypteret form på din computer."
+   },
+   "masked_info_descr2": {
+      "message": "Klik på knappen Mere, hvis du vil vide, hvordan du håndterer genererede krypterede filer."
+   },
+   "masked_info_title": {
+      "message": "Maskeret download"
+   },
+   "masked_more": {
+      "message": "Mere"
+   },
+   "masked_save_password": {
+      "message": "Gem adgangskode"
+   },
+   "max_hits_per_source": {
+      "message": "Maks. elementer fra samme kilde"
+   },
+   "max_panel_width_description": {
+      "message": "Maks. bredde på alle paneler"
+   },
+   "max_panel_width_title": {
+      "message": "Panelbredde maks."
+   },
+   "media": {
+      "message": "Medie"
+   },
+   "mediaweight_min_size_description": {
+      "message": "Ignorer fund under denne størrelse."
+   },
+   "mediaweight_min_size_title": {
+      "message": "Minimumstørrelse"
+   },
+   "mediaweight_min_size_title2": {
+      "message": "Ignorer fund under størrelse"
+   },
+   "mediaweight_threshold_description": {
+      "message": "Gennemtving sporing af medie større end denne størrelse."
+   },
+   "mediaweight_threshold_title": {
+      "message": "Størrelsesgrænse"
+   },
+   "mediaweight_threshold_title2": {
+      "message": "Gennemtving sporing over størrelse"
+   },
+   "min_panel_width_description": {
+      "message": "Min. bredde på alle paneler"
+   },
+   "min_panel_width_title": {
+      "message": "Panelbredde min."
+   },
+   "more___": {
+      "message": "Flere..."
+   },
+   "mp2t_streaming": {
+      "message": "MP2T-streaming"
+   },
+   "mp2t_title": {
+      "message": "MP2T-streaming"
+   },
+   "mpegts_hide_ts": {
+      "message": "Vis ikke .ts-punkter på download-listen"
+   },
+   "network_filter_out_description": {
+      "message": "Regulært udtryk til at ignorere nogle medie-urls."
+   },
+   "network_filter_out_title": {
+      "message": "Netværksfilter"
+   },
+   "network_probe_description": {
+      "message": "Skan netværkstrafik efter fund."
+   },
+   "network_probe_title": {
+      "message": "Netværksprobe"
+   },
+   "new_rule": {
+      "message": "Ny regel"
+   },
+   "no_download_to_abort": {
+      "message": "Intet download at afbryde"
+   },
+   "no_license_to_check": {
+      "message": "Ingen licens at kontrollere"
+   },
+   "no_media_current_tab": {
+      "message": "Intet medie at behandle i det pågældende faneblad"
+   },
+   "no_media_to_process": {
+      "message": "Intet medie at behandle"
+   },
+   "no_media_to_process_descr": {
+      "message": "Klik Afspil på video for at hjælpe med at detektere filer…"
+   },
+   "no_private_notification": {
+      "message": "Ingen besked om private fund"
+   },
+   "not_again_3months": {
+      "message": "Gener mig ikke igen i de næste 3 måneder"
+   },
+   "not_implemented_yet": {
+      "message": "Ikke implementeret endnu"
+   },
+   "not_see_again": {
+      "message": "Vis ikke den meddelelse igen"
+   },
+   "notify_ready": {
+      "message": "Giv besked, når behandlet"
+   },
+   "number_type": {
+      "message": "%1s %2s"
+   },
+   "operations": {
+      "message": "Handlinger"
+   },
+   "options": {
+      "message": "Indstillinger"
+   },
+   "order_by_video_quality": {
+      "message": "Sorter efter videokvalitet"
+   },
+   "organize_videos": {
+      "message": "Organiser videoer"
+   },
+   "orphan": {
+      "message": "Forældreløs"
+   },
+   "orphan_expiration_description": {
+      "message": "Timeout i sekunder inden forældreløst fund fjernes."
+   },
+   "orphan_expiration_title": {
+      "message": "Udløbstid for forældreløs"
+   },
+   "orphan_expiration_title2": {
+      "message": "Udløbstid for forældreløs (sekunder)"
+   },
+   "other_products": {
+      "message": "Fra de samme udviklere"
+   },
+   "output": {
+      "message": "Output"
+   },
+   "panels_astab_settings": {
+      "message": "Åbn indstillinger i et faneblad"
+   },
+   "panels_astab_sites": {
+      "message": "Åbn websteder i et faneblad"
+   },
+   "pinned": {
+      "message": "Fastgjort"
+   },
+   "prompt_select_storage_dir": {
+      "message": "Vælg opbevaringsmappe"
+   },
+   "prompt_target_dir": {
+      "message": "Destinationsmappe"
+   },
+   "purchase_license": {
+      "message": "Køb en konverteringslicens"
+   },
+   "qualities_max_description": {
+      "message": "Maks. antal viste varianter af samme video."
+   },
+   "qualities_max_title": {
+      "message": "Maks. varianter"
+   },
+   "quality_medium": {
+      "message": "Medium"
+   },
+   "quality_small": {
+      "message": "Lav"
+   },
+   "queued___": {
+      "message": "I kø..."
+   },
+   "recheck_converter": {
+      "message": "Kontroller konverter igen"
+   },
+   "register_converter": {
+      "message": "Registrer konverter"
+   },
+   "register_existing_license": {
+      "message": "Registrer en eksisterende licens"
+   },
+   "registered_email": {
+      "message": "Mailadresse"
+   },
+   "registered_key": {
+      "message": "Nøgle"
+   },
+   "registered_name": {
+      "message": "Navn"
+   },
+   "req_donate": {
+      "message": "Vil du overveje, at støtte udviklingen og donere lidt ?"
+   },
+   "req_review": {
+      "message": "Vil du have noget imod, at skrive en pæn anmeldelse på Mozillas websted med tilføjelser?"
+   },
+   "req_review_link": {
+      "message": "Skriv en anmeldelse af Video DownloadHelper"
+   },
+   "reset_converter_rules": {
+      "message": "Nulstil regler"
+   },
+   "reset_variants": {
+      "message": "Nulstil varianter"
+   },
+   "revalidate_license": {
+      "message": "Forny licens"
+   },
+   "rule_converter_unavail": {
+      "message": "Der skal foretages en automatisk konvertering på \"%s\", men, der er ingen konverter tilgængelig på dit system. Mediet vil ikke blive konverteret."
+   },
+   "running": {
+      "message": "Kører"
+   },
+   "safe_mode": {
+      "message": "Sikker tilstand"
+   },
+   "safe_mode_confirm": {
+      "message": "Ja, jeg vil aktivere sikker tilstand"
+   },
+   "safe_mode_confirm_description": {
+      "message": "Vi vil være helt sikker på, at du forstod, at der ikke er nogen vej tilbage fra sikker tilstand."
+   },
+   "safe_mode_description": {
+      "message": "Aktivering af sikker tilstand sikrer, at Video DownloadHelpers websted (og kun det websted!) ikke viser noget, som ikke kan ses af hele familien."
+   },
+   "safe_mode_description2": {
+      "message": "Sikker tilstand er endegyldig. Det er ikke muligt, at forlade denne tilstand."
+   },
+   "safe_mode_set": {
+      "message": "Sæt sikker tilstand"
+   },
+   "save": {
+      "message": "Gem"
+   },
+   "save_transient_storagedirectory": {
+      "message": "Gem permanent"
+   },
+   "scrap_8x8_align": {
+      "message": "8x8 tilpasset"
+   },
+   "scrap_8x8_align_cut": {
+      "message": "Klip"
+   },
+   "scrap_8x8_align_extend": {
+      "message": "Udvid"
+   },
+   "scrap_applet_selector": {
+      "message": "Applet-vælger"
+   },
+   "scrap_applet_start_not_see_again": {
+      "message": "Vis ikke denne meddelelse ved start af applet-indfangning"
+   },
+   "scrap_auto_detect": {
+      "message": "Auto-detekter applet"
+   },
+   "scrap_auto_detect_warning": {
+      "message": "Auto-detektion af applet kan have negativ indvirkning på browserens ydelse"
+   },
+   "scrap_capture_statistics": {
+      "message": "Indfangningsstatistik"
+   },
+   "scrap_change_target": {
+      "message": "Skift målfil"
+   },
+   "scrap_convert": {
+      "message": "Konverter skærm-indfanget video"
+   },
+   "scrap_converter_required": {
+      "message": "Skærm-indfangning kræver en konverter til at generere en video."
+   },
+   "scrap_description": {
+      "message": "Generer en video fra hvad der sker i hele browservinduet."
+   },
+   "scrap_description2": {
+      "message": "Din computer er for langsom, du vil gå glip af nogle billeder. Gør browservinduet mindre og/eller reducer billedraten."
+   },
+   "scrap_description3": {
+      "message": "Ingen lyd bliver indfanget. Fanebladet skal være aktivt så billederne opdateres."
+   },
+   "scrap_description4": {
+      "message": "Generer en video af, hvad der sker i et område af browservinduet."
+   },
+   "scrap_description5": {
+      "message": "Hvis din computer er for langsom, vil du gå glip af nogle billeder. Prøv at reducere billedraten."
+   },
+   "scrap_do_not_display_start_panel": {
+      "message": "Vis ikke panel ved indfangningsstart"
+   },
+   "scrap_enabled": {
+      "message": "Aktiver skærm-indfangning"
+   },
+   "scrap_error": {
+      "message": "Fejl ved skærm-indfangning"
+   },
+   "scrap_file_saved_as": {
+      "message": "Den indfangede video vil blive gemt som %s"
+   },
+   "scrap_min_applet_size": {
+      "message": "Min. størrelse for at være en applet"
+   },
+   "scrap_mouse_always": {
+      "message": "Altid"
+   },
+   "scrap_mouse_halo_color": {
+      "message": "Farve på ring"
+   },
+   "scrap_mouse_halo_radius": {
+      "message": "Radius på ring"
+   },
+   "scrap_mouse_halo_transparency": {
+      "message": "Gennemsigtighed på ring (%)"
+   },
+   "scrap_mouse_metakey": {
+      "message": "Når der trykkes på Skift-tasten"
+   },
+   "scrap_mouse_never": {
+      "message": "Aldrig"
+   },
+   "scrap_mouse_not_metakey": {
+      "message": "Når der ikke trykkes på Skift-tasten"
+   },
+   "scrap_mouse_pointer_size": {
+      "message": "Markørstørrelse"
+   },
+   "scrap_mouse_title": {
+      "message": "Optagelse af markør"
+   },
+   "scrap_no_converter": {
+      "message": "Der blev ikke fundet nogen konverter på dit system. Den er nødvendig for at generere den skærm-indfangne video."
+   },
+   "scrap_open_container": {
+      "message": "Åbn hentningsmappe"
+   },
+   "scrap_open_file": {
+      "message": "Åbn video"
+   },
+   "scrap_port": {
+      "message": "Konverterport"
+   },
+   "scrap_rate": {
+      "message": "Indfangningsrate (billeder/sekund)"
+   },
+   "scrap_screen_capture": {
+      "message": "Skærm-indfangning"
+   },
+   "scrap_screen_capture_from_domain": {
+      "message": "Skærm-indfangning fra %s"
+   },
+   "scrap_start": {
+      "message": "Start SCRAP"
+   },
+   "scrap_start_capture": {
+      "message": "Start indfangning"
+   },
+   "scrap_start_long": {
+      "message": "Start indfangning af browsing-session"
+   },
+   "scrap_start_scrap_long": {
+      "message": "Start vinduesoptagelse"
+   },
+   "scrap_stats_captured_frames": {
+      "message": "%1s billeder indfanget, %2s sprunget over, %3s tabt"
+   },
+   "scrap_stats_captured_size": {
+      "message": "Indfanget billedstørrelse %s"
+   },
+   "scrap_stats_duration": {
+      "message": "Varighed %s sekunder"
+   },
+   "scrap_stats_original_size": {
+      "message": "Oprindelig billedstørrelse %s"
+   },
+   "scrap_stats_saved_frames": {
+      "message": "%1s billeder gemt, %2s tabt"
+   },
+   "scrap_stop": {
+      "message": "Stop SCRAP"
+   },
+   "scrap_stop_long": {
+      "message": "Stop capturing browsing session"
+   },
+   "scrap_stop_scrap_long": {
+      "message": "Stop vinduesoptagelse"
+   },
+   "scrap_success": {
+      "message": "Skærm-indfangning lykkedes"
+   },
+   "scrap_successfully_saved_as": {
+      "message": "Filen \"%s\" er blevet gemt"
+   },
+   "scrap_title": {
+      "message": "Skærm-indfangning"
+   },
+   "selected_text": {
+      "message": "Markeret tekst"
+   },
+   "settings": {
+      "message": "Indstillinger"
+   },
+   "settings_title": {
+      "message": "Indstil Video DownloadHelper"
+   },
+   "shortcut_icons": {
+      "message": "Vis genvejsikoner"
+   },
+   "shortcut_icons_dropdown": {
+      "message": "Genvejsikoner og rullemenu"
+   },
+   "show_in_toolsmenu": {
+      "message": "Vis funktioner i menuen Funktioner"
+   },
+   "site_comments": {
+      "message": "Kommentarer"
+   },
+   "site_date": {
+      "message": "Tilføjet"
+   },
+   "site_interest": {
+      "message": "Interesse"
+   },
+   "site_name": {
+      "message": "Websteds navn"
+   },
+   "site_rating": {
+      "message": "Bedømmelse"
+   },
+   "smartname_delay": {
+      "message": "Forsink indfangning af navn (ms)"
+   },
+   "smartname_regexp": {
+      "message": "Regulært udtryk"
+   },
+   "smartnamer_all_domains": {
+      "message": "Alle domæner"
+   },
+   "smartnamer_by_default": {
+      "message": "Som standard"
+   },
+   "smartnamer_enabled_description": {
+      "message": "Opret navn fra info på siden"
+   },
+   "smartnamer_enabled_title": {
+      "message": "Aktiver Smart navngivning"
+   },
+   "smartnamer_fname_maxlen_description": {
+      "message": "Sikrer, at genererede filnavne ikke overstiger denne størrelse."
+   },
+   "smartnamer_fname_maxlen_title": {
+      "message": "Maks. længde på filnavn"
+   },
+   "smartnamer_fname_spaces_description": {
+      "message": "Hvad der gøres med mellemrum i filnavne."
+   },
+   "smartnamer_fname_spaces_hyphen": {
+      "message": "Erstat med bindestreger"
+   },
+   "smartnamer_fname_spaces_keep": {
+      "message": "Behold"
+   },
+   "smartnamer_fname_spaces_remove": {
+      "message": "Fjern"
+   },
+   "smartnamer_fname_spaces_title": {
+      "message": "Mellemrum i filnavne"
+   },
+   "smartnamer_fname_spaces_underscore": {
+      "message": "Erstat med understreger"
+   },
+   "smartnamer_get_name_from_header_url": {
+      "message": "Hent navn fra dokument-header/URL"
+   },
+   "smartnamer_get_name_from_page_content": {
+      "message": "Hent navn fra sideindhold"
+   },
+   "smartnamer_get_name_from_page_title": {
+      "message": "Hent navn fra sidetitel"
+   },
+   "smartnamer_get_obfuscated_name": {
+      "message": "Brug obfuskeret navn"
+   },
+   "smartnamer_header_url": {
+      "message": "Header/URL"
+   },
+   "smartnamer_index": {
+      "message": "Pågældende indeks"
+   },
+   "smartnamer_naming": {
+      "message": "Navngivningsmetode"
+   },
+   "smartnamer_obfuscated": {
+      "message": "Obfuskeret"
+   },
+   "smartnamer_page_content": {
+      "message": "Sideindhold"
+   },
+   "smartnamer_page_title": {
+      "message": "Sidetitel"
+   },
+   "smartnames": {
+      "message": "Smarte navne"
+   },
+   "smartnames_domains": {
+      "message": "Smart navne-domæner"
+   },
+   "storage_directory": {
+      "message": "Opbevaringsmappe"
+   },
+   "storage_directory_error": {
+      "message": "Fejl med opbevaringsmappe \"%s\": bruger standardmappe %s"
+   },
+   "storage_directory_not_defined": {
+      "message": "Opbevaringsmappe er ikke angivet: bruger standardmappe %s"
+   },
+   "storage_directory_not_directory": {
+      "message": "Opbevaringsmappen %s er ikke en mappe"
+   },
+   "storage_directory_not_exist": {
+      "message": "Opbevaringsmappen %s eksisterer ikke"
+   },
+   "storage_directory_not_writable": {
+      "message": "Opbevaringsmappen %s er ikke skrivebar"
+   },
+   "storage_last_dir": {
+      "message": "Brug browserens standardopbevaringsmappe"
+   },
+   "supported_sites": {
+      "message": "Understøttede websteder"
+   },
+   "supported_vp9": {
+      "message": "VP9-codec understøttet"
+   },
+   "tbmode_comp": {
+      "message": "Kun ledsagerknap"
+   },
+   "tbmode_label": {
+      "message": "Værktøjsknapper"
+   },
+   "tbmode_main": {
+      "message": "Kun hovedknap"
+   },
+   "tbmode_maincomp": {
+      "message": "Hoved- og ledsagerknap"
+   },
+   "tbsn_enabled": {
+      "message": "Facebook-hjælper"
+   },
+   "tbts_enabled": {
+      "message": "Twitter-hjælper"
+   },
+   "tbvv_enabled": {
+      "message": "Vine-hjælper"
+   },
+   "tell_me_more": {
+      "message": "Forklar mere om den"
+   },
+   "thumbnail_direct_gif": {
+      "message": "Brug GIF-miniaturer"
+   },
+   "thumbnail_from_meta": {
+      "message": "Video-miniaturer fra sides metadata"
+   },
+   "thumbnail_tumblr_mp4": {
+      "message": "Tumblr-hjælper"
+   },
+   "title_mode": {
+      "message": "Lange titler i hovedpanel"
+   },
+   "title_mode_ellipsis_left": {
+      "message": "Prikker til venstre"
+   },
+   "title_mode_ellipsis_right": {
+      "message": "Prikker til højre"
+   },
+   "title_mode_multiline": {
+      "message": "Over flere linjer"
+   },
+   "title_save_file": {
+      "message": "Gem fil"
+   },
+   "top_main_panel": {
+      "message": "Øverst i hovedpanel"
+   },
+   "tpsr_concurrent_captures": {
+      "message": "Samtidige indfangninger"
+   },
+   "tpsr_convert": {
+      "message": "Konverter de genererede videoer."
+   },
+   "tpsr_convert_format": {
+      "message": "Angiv output-formatet."
+   },
+   "tpsr_description": {
+      "message": "Denne tilstand indfanger direkte videostrømme fra Twitter Periscope efterhånden som de dukker op. Det er bedst at slå lyden fra, for at undgå irriterende lyde."
+   },
+   "tpsr_do_not_convert": {
+      "message": "Konverter ikke slutvideoerne."
+   },
+   "tpsr_duration_timeout": {
+      "message": "Maks. varighed af indfangning af strøm (sekunder)"
+   },
+   "tpsr_enabled": {
+      "message": "Aktiveret"
+   },
+   "tpsr_no_converter": {
+      "message": "Du har ingen konverter installeret på dit system. Som en alternativ løsning, vil tilføjelsen sammenkæde downloadede dele, men resultatet er måske ikke det bedste."
+   },
+   "tpsr_search_help": {
+      "message": "Du kan lade søgefeltet være tomt, men du vil tilfældigt indfange, hvad der sendes direkte."
+   },
+   "tpsr_search_periscope": {
+      "message": "Søg i Periscope"
+   },
+   "tpsr_search_terms": {
+      "message": "Søgeord"
+   },
+   "tpsr_start_par": {
+      "message": "Start PAR"
+   },
+   "tpsr_start_par_long": {
+      "message": "Start Periscope auto-optagelse"
+   },
+   "tpsr_start_recording": {
+      "message": "Start"
+   },
+   "tpsr_start_timeout": {
+      "message": "Timeout for strømstart (sekunder)"
+   },
+   "tpsr_stop_par": {
+      "message": "Stop PAR"
+   },
+   "tpsr_stop_par_long": {
+      "message": "Stop Periscope auto-optagelse"
+   },
+   "tpsr_title": {
+      "message": "Periscope auto-optager"
+   },
+   "transient_storagedirectory": {
+      "message": "Opbevaringsmappen er blevet ændret fra en privat vindue, og vil blive nulstillet ved næste session."
+   },
+   "ui_adp_grey": {
+      "message": "Farvelæg ADP-varianter"
+   },
+   "ui_adp_tag": {
+      "message": "Mærk ADP-varianter"
+   },
+   "undefined_output": {
+      "message": "udfineret output"
+   },
+   "unregistered": {
+      "message": "Ikke registreret"
+   },
+   "unsupported_vp9": {
+      "message": "VP9-codec ikke understøttet"
+   },
+   "using_browser_default": {
+      "message": "Bruger browserstandard"
+   },
+   "validate_license": {
+      "message": "Registrer licens"
+   },
+   "variants": {
+      "message": "Varianter"
+   },
+   "vdh_notification": {
+      "message": "Video DownloadHelper"
+   },
+   "vdh_settings": {
+      "message": "Video DownloadHelper-indstillinger"
+   },
+   "version": {
+      "message": "Version %s"
+   },
+   "video": {
+      "message": "Video"
+   },
+   "video_downloadhelper": {
+      "message": "Video DownloadHelper"
+   },
+   "video_downloadhelper_plus": {
+      "message": "Video DownloadHelper +"
+   },
+   "video_only": {
+      "message": "Kun video"
+   },
+   "video_qualities": {
+      "message": "Videokvaliteter"
+   },
+   "visit_site": {
+      "message": "Besøg websted"
+   },
+   "xpath_expr": {
+      "message": "XPath-udtryk"
+   },
+   "you_downloaded_n_videos": {
+      "message": "Du har lige downloaded din %. fil med Video DownloadHelper."
+   }
+}

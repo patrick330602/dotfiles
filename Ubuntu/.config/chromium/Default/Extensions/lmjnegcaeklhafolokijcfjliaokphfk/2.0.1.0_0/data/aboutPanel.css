@@ -1,0 +1,47 @@
+
+#content {
+	background-color: White;
+}
+
+.vdh-about-content {
+	padding: 8px;
+}
+
+.vdh-about-version {
+	font-weight: bold;
+	margin: 6px 0;
+}
+
+.vdh-about-version {
+	margin: 6px 0;
+}
+
+a {
+    -moz-text-decoration-color: -moz-use-text-color;
+    -moz-text-decoration-line: none;
+    -moz-text-decoration-style: solid;
+    color: #337ab7;
+}
+
+a:focus, a:hover {
+    -moz-text-decoration-line: underline;
+}
+
+a:active, a:hover {
+	outline-color: -moz-use-text-color;
+	outline-style: none;
+	outline-width: 0;
+}
+
+.vdh-about-links {
+	margin: 6px 0 12px 0;
+	text-align: center;
+}
+
+.vdh-about-seealso {
+	font-weight: bold;
+}
+
+.vdh-locale-credits {
+	margin-bottom: 12px;
+}

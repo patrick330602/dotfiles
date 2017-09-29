@@ -1,0 +1,1736 @@
+{
+   "Bytes": {
+      "message": "%s B"
+   },
+   "KB": {
+      "message": "%s kB"
+   },
+   "MB": {
+      "message": "%s MB"
+   },
+   "aborted": {
+      "message": "Prekinjeno"
+   },
+   "about": {
+      "message": "O dodatku"
+   },
+   "about_alpha_intro": {
+      "message": "To je alfa verzija."
+   },
+   "about_beta_intro": {
+      "message": "To je beta verzija."
+   },
+   "about_conversion_support": {
+      "message": "Če ste registriran uporabnik in potrebujete pomoč pri pretvarjanju predstavnih datotek ali svoji licenci, pošljite pošto na naslov, ki vam ji bil sporočen ob nakupu licence."
+   },
+   "about_go_howto": {
+      "message": "Kako uporabljati dodatek"
+   },
+   "about_go_support": {
+      "message": "Pojdi na stran za podporo"
+   },
+   "about_help": {
+      "message": "Če potrebujete pomoč pri uporabi Video DownloadHelperja, obiščite spodnjo povezavo."
+   },
+   "about_qr": {
+      "message": "Datoteka ustvarjena"
+   },
+   "about_support": {
+      "message": "Če potrebujete podporo pri dodatku Video DownloadHelper, kliknite na spodnjo povezavo."
+   },
+   "about_vdh": {
+      "message": "O Video DownloadHelperju"
+   },
+   "action_abort_description": {
+      "message": "Prekini dejanje, ki se izvaja"
+   },
+   "action_abort_title": {
+      "message": "Prekini"
+   },
+   "action_as_default": {
+      "message": "Uporabi to dejanje za privzeto"
+   },
+   "action_avplay_description": {
+      "message": "Predvajaj videoposnetek z izvirnim pregledovalnikom pretvornika"
+   },
+   "action_avplay_title": {
+      "message": "Predvajaj"
+   },
+   "action_blacklist_description": {
+      "message": "Zadetki iz tega vira ne omogočijo dodatka"
+   },
+   "action_blacklist_title": {
+      "message": "Dodaj na črni seznam"
+   },
+   "action_cannot_abort": {
+      "message": "Dejanja ni mogoče prekiniti"
+   },
+   "action_convert_description": {
+      "message": "Pretvori že preneseno datoteko"
+   },
+   "action_convert_title": {
+      "message": "Pretvori lokalno datoteko"
+   },
+   "action_copyurl_description": {
+      "message": "Kopiraj povezavo do predstavnosti na odložišče"
+   },
+   "action_copyurl_title": {
+      "message": "Kopiraj povezavo"
+   },
+   "action_deletehit_description": {
+      "message": "Izbriši zadetek s trenutnega seznama"
+   },
+   "action_deletehit_title": {
+      "message": "Izbriši"
+   },
+   "action_details_description": {
+      "message": "Prikaži podrobnosti o zadetku"
+   },
+   "action_details_title": {
+      "message": "Podrobnosti"
+   },
+   "action_download_description": {
+      "message": "Prenesi datoteko na trdi disk"
+   },
+   "action_download_title": {
+      "message": "Prenesi"
+   },
+   "action_downloadconvert_description": {
+      "message": "Prenesi predstavnost in jo pretvori v drugo obliko"
+   },
+   "action_downloadconvert_title": {
+      "message": "Prenesi in pretvori"
+   },
+   "action_maskeddownload_description": {
+      "message": "Prenesi videoposnetek v šifrirano datoteko"
+   },
+   "action_maskeddownload_title": {
+      "message": "Zamaskiran prenos"
+   },
+   "action_noyt_description": {
+      "message": "O zajemanju videoposnetkov iz strani Youtube"
+   },
+   "action_noyt_title": {
+      "message": "Opozorilo YouTube"
+   },
+   "action_openlocalcontainer_description": {
+      "message": "Odpri mapo z lokalnimi predstavnimi datotekami"
+   },
+   "action_openlocalcontainer_title": {
+      "message": "Odpri mapo"
+   },
+   "action_openlocalfile_description": {
+      "message": "Odpri lokalno predstavno datoteko"
+   },
+   "action_openlocalfile_title": {
+      "message": "Odpri predstavnost"
+   },
+   "action_pin_description": {
+      "message": "Napravi zadetek vztrajen"
+   },
+   "action_pin_title": {
+      "message": "Pripni"
+   },
+   "action_quickdownload_description": {
+      "message": "Prenesi brez spraševanja za mesto prenosa"
+   },
+   "action_quickdownload_title": {
+      "message": "Hitri prenos"
+   },
+   "action_record_description": {
+      "message": "Začni snemanje pretoka"
+   },
+   "action_record_title": {
+      "message": "Snemaj"
+   },
+   "action_scraprecord_description": {
+      "message": "Začni snemati zaslon"
+   },
+   "action_scraprecord_title": {
+      "message": "Snemaj"
+   },
+   "action_scrapsnapshot_description": {
+      "message": "Zajemi sliko apleta"
+   },
+   "action_scrapsnapshot_title": {
+      "message": "Zajemi sliko"
+   },
+   "action_scrapstoprecord_description": {
+      "message": "Ustavi snemanje zaslona"
+   },
+   "action_scrapstoprecord_title": {
+      "message": "Ustavi snemanje"
+   },
+   "action_social_description": {
+      "message": "Deli predstavnost na družbenih omrežjih"
+   },
+   "action_social_title": {
+      "message": "Deli družbeno"
+   },
+   "action_stoprecord_description": {
+      "message": "Ustavi snemanje pretoka"
+   },
+   "action_stoprecord_title": {
+      "message": "Ustavi snemanje"
+   },
+   "action_stream_no_capture_description": {
+      "message": "About saving special video streams"
+   },
+   "action_stream_no_capture_title": {
+      "message": "Save warning"
+   },
+   "actions": {
+      "message": "Dejanja"
+   },
+   "adaptative": {
+      "message": "Prilagodljivi %s"
+   },
+   "add_to_blacklist": {
+      "message": "Dodaj na črni seznam"
+   },
+   "add_to_blacklist_help": {
+      "message": "Videoposnetki, ki izvirajo ali se nahajajo na izbrani domeni, bodo prezrti"
+   },
+   "adp_hide": {
+      "message": "Ne prikaži različic ADP na seznamu prenosov"
+   },
+   "adp_variants": {
+      "message": "Načini prilagajanja"
+   },
+   "advanced": {
+      "message": "Napredno"
+   },
+   "aggregating___": {
+      "message": "Združevanje ..."
+   },
+   "all_actions": {
+      "message": "Vsa dejanja"
+   },
+   "analyze_page": {
+      "message": "Analiziraj stran"
+   },
+   "any_domain": {
+      "message": "vse domene"
+   },
+   "any_format": {
+      "message": "vse oblike"
+   },
+   "appearance": {
+      "message": "Videz"
+   },
+   "audio_only": {
+      "message": "Samo zvok"
+   },
+   "auto_pin_description": {
+      "message": "Pripni zadetek po prenosu."
+   },
+   "auto_pin_title": {
+      "message": "Pripni samodejno"
+   },
+   "avplay_converter_required": {
+      "message": "To dejanje predvaja videoposnetek z izvirnim pregledovalnikom pretvornika, vendar pretvornika ni bilo najdenega"
+   },
+   "avplay_enabled": {
+      "message": "Predvajalnik omogočen"
+   },
+   "avplay_player_missing_text": {
+      "message": "Videti je, da je pretvornik nameščen, vendar pripadajočega videopredvajalnika ni bilo najdenega. Morda boste morali na novo namestiti pretvornik"
+   },
+   "avplay_player_missing_title": {
+      "message": "Manjkajoči predvajalnik"
+   },
+   "back": {
+      "message": "Nazaj"
+   },
+   "behavior": {
+      "message": "Vedenje"
+   },
+   "blacklist": {
+      "message": "Črni seznam"
+   },
+   "blacklist_domains": {
+      "message": "Domene na črnem seznamu"
+   },
+   "blacklist_enable_description": {
+      "message": "Prepreči nekaterim stranem zaznavanje predstavnosti."
+   },
+   "blacklist_enable_title": {
+      "message": "Omogoči črni seznam"
+   },
+   "blacklist_selected": {
+      "message": "Črni seznam izbran"
+   },
+   "cancel": {
+      "message": "Prekliči"
+   },
+   "capture_gallery": {
+      "message": "Galerija zajemov"
+   },
+   "change_storage_directory": {
+      "message": "Zamenjaj mapo za prenos"
+   },
+   "checking_converter___": {
+      "message": "Preverjanje licence pretvornika ..."
+   },
+   "checking_converter_license___": {
+      "message": "Preverjanje licence pretvornika ..."
+   },
+   "chrome_ignore_yt": {
+      "message": "Ne zaznaj več videoposnetkov YouTube"
+   },
+   "chrome_ignore_yt2": {
+      "message": "Prezri videoposnetke YouTube"
+   },
+   "chrome_install_firefox": {
+      "message": "Namesti Firefox"
+   },
+   "chrome_install_fx_vdh": {
+      "message": "Video DownloadHelper za Firefox"
+   },
+   "chrome_noyt_text": {
+      "message": "Na žalost spletna trgovina za Chrome ne dovoli razširitev za prenos videoposnetkov YouTube, tako da smo morali odstraniti to značilnost."
+   },
+   "chrome_noyt_text2": {
+      "message": "Za prenos videoposnetkov YouTube lahko uporabite različico razširitve Video DownloadHelper za Firefox."
+   },
+   "chrome_stream_no_capture": {
+      "message": "Unfortunately, this browser does not provide the necessary APIs to download this type of stream. We are working at providing a solution, please try again later."
+   },
+   "chrome_stream_no_capture2": {
+      "message": "For now, consider using Video DownloadHelper on Firefox instead."
+   },
+   "chrome_stream_no_capture_hide": {
+      "message": "Do not show streams that cannot be saved"
+   },
+   "chrome_stream_no_capture_title": {
+      "message": "Unable to save stream"
+   },
+   "chrome_warning_yt": {
+      "message": "Opozorilo o razširitvah Chrome in YouTube"
+   },
+   "chunk_about_to_be_saved": {
+      "message": "Predstavnost po delih '%s' se bo pravkar posnela in pretvorila v"
+   },
+   "chunk_assemble_and_convert": {
+      "message": "Sestavi in pretvori"
+   },
+   "chunk_assemble_native": {
+      "message": "Sestavi z spajanjem"
+   },
+   "chunk_assemble_native_warn": {
+      "message": "Ciljna datoteka bo ustvarjena z spajanjem delov. Upoštevajte, da se rezultat morda ne bo pravilno predvajal na vašem sistemu."
+   },
+   "chunk_assemble_only": {
+      "message": "Samo sestavi"
+   },
+   "chunk_converter_assemble": {
+      "message": "Zahtevali ste, da se nastala datoteka sestavi s pretvornikom."
+   },
+   "chunk_converter_assemble_convert": {
+      "message": "Zahtevali ste, da se nastala datoteka sestavi s pretvornikom in se potem pretvori."
+   },
+   "chunk_converter_convert": {
+      "message": "Zahtevali ste, da se nastala datoteka pretvori."
+   },
+   "chunk_initial_period": {
+      "message": "Začetno obdobje trajanja dela (sek.)"
+   },
+   "chunk_missing_conv_native_assemble_only": {
+      "message": "Toda na vašem sistemu ni bilo mogoče najti pretvornika. Ustvarjena datoteka bo enostavno ustvarjena s spajanjem delov."
+   },
+   "chunk_period_factor": {
+      "message": "Faktor trajanja časovne omejitve (%)"
+   },
+   "chunk_save": {
+      "message": "Shranjevanje delov predstavnosti"
+   },
+   "chunk_target": {
+      "message": "v mapo \"%s\""
+   },
+   "chunks_concurrent_downloads": {
+      "message": "Sočasni prenosi delov"
+   },
+   "chunks_enabled": {
+      "message": "Pretakanje po delih omogočeno"
+   },
+   "chunks_prefetch_count": {
+      "message": "Število delov za vnaprejšnje pridobivanje"
+   },
+   "chunks_title": {
+      "message": "Pretakanje po delih"
+   },
+   "clear_hits": {
+      "message": "Počisti zadetke"
+   },
+   "clear_logs": {
+      "message": "Clear logs"
+   },
+   "cmenu_mode": {
+      "message": "Način vsebinskega menija"
+   },
+   "cmenu_mode_all": {
+      "message": "Prikaži vsa dejanja"
+   },
+   "cmenu_mode_both": {
+      "message": "Hitra in vsa dejanja"
+   },
+   "cmenu_mode_none": {
+      "message": "Ne prikaži ničesar"
+   },
+   "cmenu_mode_quick": {
+      "message": "Zaženi privzeto dejanje"
+   },
+   "companion_default_op": {
+      "message": "Privzeto opravilo pomočnika"
+   },
+   "companion_enable": {
+      "message": "Omogoči gumb pomočnika"
+   },
+   "config_conversion_rules": {
+      "message": "Nastavi pravila pretvorbe"
+   },
+   "congratulations": {
+      "message": "Čestitke!"
+   },
+   "context_menu": {
+      "message": "Uporabi vsebinski meni"
+   },
+   "continue": {
+      "message": "Nadaljuj"
+   },
+   "convconf_2passes": {
+      "message": "2 prehoda"
+   },
+   "convconf_ac": {
+      "message": "Zvočni kanali"
+   },
+   "convconf_acnone": {
+      "message": "Brez"
+   },
+   "convconf_acodec": {
+      "message": "Zvočno kodiranje"
+   },
+   "convconf_aspect": {
+      "message": "Razmerje prikaza"
+   },
+   "convconf_audiobitrate": {
+      "message": "Zvočna bitna hitrost"
+   },
+   "convconf_audiofreq": {
+      "message": "Zvočna frekvenca"
+   },
+   "convconf_audioonly": {
+      "message": "Samo zvok"
+   },
+   "convconf_bitrate": {
+      "message": "Bitna hitrost"
+   },
+   "convconf_container": {
+      "message": "Oblika"
+   },
+   "convconf_duplicate": {
+      "message": "Dvojnik"
+   },
+   "convconf_ext": {
+      "message": "Končnica izvožene datoteke"
+   },
+   "convconf_extra": {
+      "message": "Dodatni parametri"
+   },
+   "convconf_level": {
+      "message": "Raven"
+   },
+   "convconf_mono": {
+      "message": "Mono"
+   },
+   "convconf_new": {
+      "message": "Nov"
+   },
+   "convconf_preset": {
+      "message": "Prednastavljen"
+   },
+   "convconf_profilev": {
+      "message": "Profil slike"
+   },
+   "convconf_rate": {
+      "message": "Hitrost sličic"
+   },
+   "convconf_readonly": {
+      "message": "Privzeta nastavitev je samo za branje. Naredi dvojnik za spreminjanje."
+   },
+   "convconf_remove": {
+      "message": "Odstrani"
+   },
+   "convconf_reset": {
+      "message": "Ponastavi vse"
+   },
+   "convconf_reset_confirm": {
+      "message": "To bo odstranilo vse vaše nastavitve po meri"
+   },
+   "convconf_size": {
+      "message": "Velikost slike"
+   },
+   "convconf_size_help": {
+      "message": "\u003Cširina>x\u003Cvišina>"
+   },
+   "convconf_stereo": {
+      "message": "Stereo"
+   },
+   "convconf_target": {
+      "message": "Cilj"
+   },
+   "convconf_target_help": {
+      "message": "Prednastavljene vrednosti"
+   },
+   "convconf_tune": {
+      "message": "Naravnaj"
+   },
+   "convconf_vcodec": {
+      "message": "Kodek slike"
+   },
+   "convconf_videobitrate": {
+      "message": "Bitna hitrost slike"
+   },
+   "conversion": {
+      "message": "Pretvarjanje"
+   },
+   "conversion_output": {
+      "message": "Izhod"
+   },
+   "conversion_outputs": {
+      "message": "Izhodi pretvarjanja"
+   },
+   "conversion_rule": {
+      "message": "Pravilo"
+   },
+   "conversion_rules": {
+      "message": "Pravila"
+   },
+   "convert": {
+      "message": "Pretvori"
+   },
+   "convert_format_from_domain": {
+      "message": "Pretvori %1s iz %2s v %3s"
+   },
+   "convert_local_files": {
+      "message": "Pretvori lokalne datoteke"
+   },
+   "converter": {
+      "message": "Pretvornik"
+   },
+   "converter_edit_output": {
+      "message": "Uredi izhod"
+   },
+   "converter_failed_execution": {
+      "message": "Spodletelo izvajanje pretvornika"
+   },
+   "converter_installed": {
+      "message": "Pretvornik nameščen"
+   },
+   "converter_license": {
+      "message": "Licenca pretvornika"
+   },
+   "converter_license_blocked": {
+      "message": "Vaša licenca je blokirana"
+   },
+   "converter_license_locked": {
+      "message": "Veljavnost vaše licence je treba ponovno preveriti"
+   },
+   "converter_license_locked_mail": {
+      "message": "Na \"%s\" je bila poslana e-pošta. Vsebuje povezavo, ki jo je treba obiskati ob odklepanju licence. Po obisku povezave je treba ponovno zahtevati preverjanje veljavnosti. Če te e-pošte niste prejeli, preverite svojo mapo za neželeno pošto."
+   },
+   "converter_license_ready": {
+      "message": "Registriraj licenco pretvornika"
+   },
+   "converter_missing": {
+      "message": "Manjka pretvornik"
+   },
+   "converter_needed": {
+      "message": "Ta operacija potrebuje nameščen pretvornik na vašem sistemu."
+   },
+   "converter_needed_aggregate": {
+      "message": "Ta operacija potrebuje nameščen pretvornik na vašem sistemu, da lahko združite sliko in zvok."
+   },
+   "converter_needed_aggregate_why": {
+      "message": "Zakaj potrebujem pretvornik?"
+   },
+   "converter_needed_local": {
+      "message": "Za pretvarjanje lokalnih datotek potrebujete pretvornik nameščen na vašem sistemu."
+   },
+   "converter_needs_reg": {
+      "message": "Potrebna registracija"
+   },
+   "converter_not_available": {
+      "message": "Pretvornik ni na voljo"
+   },
+   "converter_not_installed": {
+      "message": "Pretvornik ni nameščen"
+   },
+   "converter_path": {
+      "message": "Mapa s pretvornikom"
+   },
+   "converter_reg_audio": {
+      "message": "Zahtevali ste, izrecno ali iz pravila za samodejno pretvorbo, ustvarjanje predstavne datoteke samo z zvokom. To zahteva registriran pretvornik."
+   },
+   "converter_requested_unavail": {
+      "message": "Pretvornik je zahtevan za to opravilo, vendar ni na voljo."
+   },
+   "converter_required": {
+      "message": "Pretvornik je zahtevan"
+   },
+   "converter_threads": {
+      "message": "Niti pretvorbe"
+   },
+   "converter_tune_h264": {
+      "message": "V združevanju vsili naravnanje H264"
+   },
+   "converter_update_version": {
+      "message": "Posodobi pretvornik na verzijo %s"
+   },
+   "converting___": {
+      "message": "Pretvarjanje ..."
+   },
+   "copy_of": {
+      "message": "Kopija od %s"
+   },
+   "copy_to_clipboard": {
+      "message": "Kopiraj na odložišče"
+   },
+   "could_not_download": {
+      "message": "\"%s\" se ne da prenesti"
+   },
+   "cphelper_addon": {
+      "message": "CouponsHelper Addon"
+   },
+   "cphelper_description": {
+      "message": "The right coupon at the right time: do not miss discounts when shopping online ..."
+   },
+   "custom_output": {
+      "message": "Izbrana oblika izvoza"
+   },
+   "dash_enabled": {
+      "message": "DASH omogočen"
+   },
+   "dash_hide_m4s": {
+      "message": "Ne prikaži vnosov .m4s na seznamu prenosov"
+   },
+   "dash_streaming": {
+      "message": "Pretakanje DASH"
+   },
+   "define_vdh_smartname": {
+      "message": "Pametno ime DownloadHelper"
+   },
+   "defining_smartname": {
+      "message": "Določi privzeto ime"
+   },
+   "defining_smartname_help": {
+      "message": "Ta značilnost omogoča ustvarjanje imena za videoposnetek iz vsebujoče strani. Če izbrano besedilo prikazuje preveč znakov, jih iz naziva strani poskusite izbrati samo nekaj."
+   },
+   "details_parenthesis": {
+      "message": "(podrobnosti)"
+   },
+   "detect_extensions": {
+      "message": "Zaznaj končnice"
+   },
+   "display_mode_compact": {
+      "message": "Strni"
+   },
+   "display_mode_label": {
+      "message": "Prikaz glavne plošče"
+   },
+   "display_mode_mozilla": {
+      "message": "Mozilla"
+   },
+   "display_mode_normal": {
+      "message": "Običajno"
+   },
+   "dlconv_and_saved_to": {
+      "message": "in shranjeno v \"%s\""
+   },
+   "dlconv_back": {
+      "message": "Nazaj"
+   },
+   "dlconv_change_directory": {
+      "message": "Zamenjaj izhodno mapo"
+   },
+   "dlconv_convert": {
+      "message": "Pretvori"
+   },
+   "dlconv_download_and_convert": {
+      "message": "Prenesi in pretvori"
+   },
+   "dlconv_download_only": {
+      "message": "Samo prenesi"
+   },
+   "dlconv_n_will_be_converted": {
+      "message": "%s datotek bo pretvorjenih v:"
+   },
+   "dlconv_output_details": {
+      "message": "Nastavi izhodne nastavitve"
+   },
+   "dlconv_rename": {
+      "message": "Vprašaj za spremembo imena datoteke"
+   },
+   "dlconv_will_be_converted": {
+      "message": "\"%s\" bo pretvorjen v:"
+   },
+   "do_no_convert_format_from_domain": {
+      "message": "Ne pretvori %1s iz %2s"
+   },
+   "domain": {
+      "message": "Domena"
+   },
+   "donate": {
+      "message": "Prispevaj"
+   },
+   "donate_vdh": {
+      "message": "Pomagajte dodatku Video DownloadHelper"
+   },
+   "download_canceled": {
+      "message": "Prenos preklican."
+   },
+   "download_controlled_max_description": {
+      "message": "Nadzira število sočasnih prenosov, ki so jih ustvarili dodatki, da ohranijo nekaj pasovne širine."
+   },
+   "download_controlled_max_title": {
+      "message": "Največje št. prenosov"
+   },
+   "download_controlled_max_title2": {
+      "message": "Največje št. vzporednih prenosov"
+   },
+   "download_retries": {
+      "message": "Število ponovnih poskusov prenašanja"
+   },
+   "download_retry_delay": {
+      "message": "Delay between download retries (ms)"
+   },
+   "download_selected_link": {
+      "message": "Prenesi izbrano povezavo predstavnosti"
+   },
+   "download_selected_links": {
+      "message": "Prenesi izbrane povezave predstavnosti"
+   },
+   "downloaded_as": {
+      "message": "Prenesen kot %s"
+   },
+   "downloading___": {
+      "message": "Prenašanje ..."
+   },
+   "downloads_hook_headers": {
+      "message": "Zajemi glave prenosa"
+   },
+   "empty_downloaded_file": {
+      "message": "Prenesena datoteka \"%s\" je prazna. Predstavnost je morda zaščitena."
+   },
+   "error_cannot_create_target_directory": {
+      "message": "Ciljne mape %s ni mogoče ustvariti. Preverite razpoložljiv prostor in dovoljenja."
+   },
+   "error_cannot_create_target_file": {
+      "message": "Ciljne datoteke %s ni mogoče ustvariti. Preverite razpoložljiv prostor in dovoljenja."
+   },
+   "error_nohome": {
+      "message": "Domača mapa ne obstaja"
+   },
+   "errors": {
+      "message": "Napake"
+   },
+   "explain_qr1": {
+      "message": "Opazili boste, da nastali videoposnetek v kotu vsebuje vodni žig."
+   },
+   "explain_qr2": {
+      "message": "To je zaradi tega, ker značilnost pretvarjanja ni bila registrirana."
+   },
+   "extension": {
+      "message": "Razširitev"
+   },
+   "f4f_enabled": {
+      "message": "F4F omogočen"
+   },
+   "f4f_prefetch": {
+      "message": "Odseki za vnaprejšnje pridobivanje F4F"
+   },
+   "f4f_streaming": {
+      "message": "Pretakanje F4F"
+   },
+   "failed_aggregating": {
+      "message": "Združevanje \"%s\" je spodletelo"
+   },
+   "failed_assembling": {
+      "message": "Sestavljanje je spodletelo"
+   },
+   "failed_conversion": {
+      "message": "Pretvarjanje je spodletelo"
+   },
+   "failed_converting": {
+      "message": "Pretvarjanje \"%s\" je spodletelo"
+   },
+   "failed_getting_info": {
+      "message": "Pridobivanje podatkov iz \"%s\" je spodletelo"
+   },
+   "file_ext_change": {
+      "message": "Končnica datoteke je bila spremenjena"
+   },
+   "file_ext_change_text": {
+      "message": "Končnico datoteke ste spremenili iz \".%1s\" v \".%2s\". To lahko pri predvajanju datoteke povzroči težave."
+   },
+   "file_generated": {
+      "message": "Datoteka \"%s\" je bil ustvarjena."
+   },
+   "file_not_exists": {
+      "message": "Datoteka \"%s\" ne obstaja"
+   },
+   "file_not_readable": {
+      "message": "Datoteka \"%s\" ni berljiva"
+   },
+   "file_ready": {
+      "message": "\"%s\" je sedaj pripravljen"
+   },
+   "files_to_convert": {
+      "message": "Datoteke za pretvarjanje"
+   },
+   "finalizing___": {
+      "message": "Končevanje ..."
+   },
+   "flv_streaming": {
+      "message": "Pretakanje FLV"
+   },
+   "force_default_storage_directory": {
+      "message": "%1s: nastavi privzeto mapo za shranjevanje na \"%2s\""
+   },
+   "from_domain": {
+      "message": "Iz %s"
+   },
+   "gallery": {
+      "message": "Galerija"
+   },
+   "gallery_auto_detect": {
+      "message": "Samodejno zaznaj"
+   },
+   "gallery_auto_detect_warning": {
+      "message": "Samodejno zaznavanje galerije ima lahko negativni vpliv na zmogljivosti brskalnika"
+   },
+   "gallery_capture": {
+      "message": "Zajem galerije"
+   },
+   "gallery_capture_images": {
+      "message": "Zaznaj vdelane slike"
+   },
+   "gallery_capture_links": {
+      "message": "Zaznaj povezave do predstavnosti"
+   },
+   "gallery_files_types": {
+      "message": "%s datotek"
+   },
+   "gallery_from_domain": {
+      "message": "Galerija iz %s"
+   },
+   "gallery_index_prefix": {
+      "message": "Predpni imena datotek z številom prirastka"
+   },
+   "gallery_links": {
+      "message": "Povezave galerije"
+   },
+   "gallery_links_from_domain": {
+      "message": "Povezave iz %s"
+   },
+   "gallery_max_hits": {
+      "message": "Največje št. povezav za obravnavo"
+   },
+   "gallery_min_hits": {
+      "message": "Najmanjše št. povezav na galerijo"
+   },
+   "gallery_min_img_size": {
+      "message": "Najmanjša velikost slike"
+   },
+   "general": {
+      "message": "Splošno"
+   },
+   "get_conversion_license": {
+      "message": "Prejmi licenco za pretvorbo"
+   },
+   "get_converter_license": {
+      "message": "Prejmi licenco"
+   },
+   "get_converter_license_key": {
+      "message": "Prejmi licenčni ključ"
+   },
+   "help_vdh": {
+      "message": "Pomagajte dodatku Video DownloadHelper"
+   },
+   "hit_details": {
+      "message": "Podrobnosti zadetkov"
+   },
+   "hit_go_to_tab": {
+      "message": "Pojdi na zavihek"
+   },
+   "hits_animation_description": {
+      "message": "Animira zadetke ob spremembi na seznamu."
+   },
+   "hits_animation_title": {
+      "message": "Animacija zadetkov"
+   },
+   "hits_goto_tab": {
+      "message": "Prikaži ročnik Pojdi na zavihek"
+   },
+   "hls_download_as_m2ts": {
+      "message": "Prenesi pretoke HLS kot M2TS"
+   },
+   "hls_enabled": {
+      "message": "HLS omogočen"
+   },
+   "hls_streaming": {
+      "message": "Pretakanje HLS"
+   },
+   "hotkey_clear_hits": {
+      "message": "Počisti zadetke"
+   },
+   "hotkey_convert_local": {
+      "message": "Pretvori lokalne datoteke"
+   },
+   "hotkey_default": {
+      "message": "Privzeto dejanje"
+   },
+   "hotkey_detect_gallery": {
+      "message": "Zaznaj galerije"
+   },
+   "hotkey_open_companion": {
+      "message": "Odpri meni pomočnika"
+   },
+   "hotkey_supported_sites": {
+      "message": "Podprte datoteke"
+   },
+   "hotkey_toggle_scrap": {
+      "message": "Preklopi zajem zaslona"
+   },
+   "hotkeys": {
+      "message": "Hitre tipke"
+   },
+   "icon_activation_description": {
+      "message": "Kdaj omogočiti ikono orodne vrstice."
+   },
+   "icon_activation_mode_anytab": {
+      "message": "Zadetek iz kateregakoli zavihka"
+   },
+   "icon_activation_mode_currenttab": {
+      "message": "Zadetek iz trenutnega zavihka"
+   },
+   "icon_activation_title": {
+      "message": "Omogočanje ikone"
+   },
+   "icon_animation_description": {
+      "message": "Ali naj se ikona animira, ko so zadetki dejavni."
+   },
+   "icon_animation_title": {
+      "message": "Animacija ikon"
+   },
+   "icon_badge_activetab": {
+      "message": "Predstavnost iz dejavnega zavihka"
+   },
+   "icon_badge_anytab": {
+      "message": "Predstavnost iz kateregakoli zavihka"
+   },
+   "icon_badge_description": {
+      "message": "Prikaz značke ikone orodne vrstice."
+   },
+   "icon_badge_error_description": {
+      "message": "Značka ikone orodne vrstice prikazuje napake, če so v prednosti."
+   },
+   "icon_badge_error_title": {
+      "message": "Prikaz napak značke"
+   },
+   "icon_badge_mixed": {
+      "message": "Mešano"
+   },
+   "icon_badge_none": {
+      "message": "Brez"
+   },
+   "icon_badge_pinned": {
+      "message": "Pripeti zadetki"
+   },
+   "icon_badge_tasks": {
+      "message": "Izvajajoča se opravila"
+   },
+   "icon_badge_title": {
+      "message": "Značka ikone"
+   },
+   "icon_dropdown_description": {
+      "message": "Na ikoni prikaži spustni trikotnik."
+   },
+   "icon_dropdown_title": {
+      "message": "Spustna oznaka ikone"
+   },
+   "ignore_embedded": {
+      "message": "Prezri vdelane videoposnetke"
+   },
+   "ignore_protected": {
+      "message": "Prezri zaščitene različice"
+   },
+   "in_current_tab": {
+      "message": "v trenutnem zavihku"
+   },
+   "in_other_tab": {
+      "message": "v drugih zavihkih"
+   },
+   "install_converter": {
+      "message": "Namesti pretvornik"
+   },
+   "jocly_addon": {
+      "message": "Firefoxov dodatek Jocly"
+   },
+   "jocly_description": {
+      "message": "Preko 100 namiznih iger HTML5 proti računalniku ali v živo v polnem 3D z videoklepetom z nasprotniki ..."
+   },
+   "licence_text1": {
+      "message": "Nekaj dobrih razlogov za registracijo svojega pretvornika:"
+   },
+   "licence_text2": {
+      "message": "Licenciranje pretvornika je enkratno plačilo brez časovne omejitve, razen brezplačne podpore, ki je na voljo za eno leto po nakupu."
+   },
+   "license_key": {
+      "message": "Licenčni ključ"
+   },
+   "license_point1": {
+      "message": "Pretvorjeni/združeni videoposnetki ne bodo vsebovali vodnega žiga"
+   },
+   "license_point2": {
+      "message": "Lahko boste pretvarjali videoposnetke neposredno v datoteke mp3"
+   },
+   "license_point3": {
+      "message": "Imeli boste dostop do podpore za pretvarjanje"
+   },
+   "license_point4": {
+      "message": "Video DownloadHelper boste ohranili živega"
+   },
+   "links_list": {
+      "message": "Seznam povezav"
+   },
+   "locale_credits": {
+      "message": "Angleški prevod: %s"
+   },
+   "locale_credits_translators": {
+      "message": "!"
+   },
+   "locale_credits_urls": {
+      "message": "!"
+   },
+   "log_details": {
+      "message": "Podrobnosti dnevnika"
+   },
+   "logs": {
+      "message": "Dnevniki"
+   },
+   "make_donation": {
+      "message": "Prispevaj"
+   },
+   "masked_change_password": {
+      "message": "Spremeni geslo"
+   },
+   "masked_close": {
+      "message": "Zapri"
+   },
+   "masked_default_password": {
+      "message": "Maskiran prenos z uporabo privzetega gesla"
+   },
+   "masked_enabled": {
+      "message": "Maskiran prenos omogočen"
+   },
+   "masked_info_descr1": {
+      "message": "Maskiran prenos zagotovi, da so preneseni podatki shranjeni samo v šifrirani obliki na vašem računalniku."
+   },
+   "masked_info_descr2": {
+      "message": "Za več o ravnanju z ustvarjenimi šifriranimi datotekami kliknite na gumb Več."
+   },
+   "masked_info_title": {
+      "message": "Maskiran prenos"
+   },
+   "masked_more": {
+      "message": "Več"
+   },
+   "masked_save_password": {
+      "message": "Shrani geslo"
+   },
+   "max_hits_per_source": {
+      "message": "Največje št. vnosov iz istega vira"
+   },
+   "max_panel_width_description": {
+      "message": "Največja širina vsake plošče dodatka"
+   },
+   "max_panel_width_title": {
+      "message": "Največja širina plošče"
+   },
+   "media": {
+      "message": "Predstavnost"
+   },
+   "mediaweight_min_size_description": {
+      "message": "Prezri zadetke pod to velikostjo."
+   },
+   "mediaweight_min_size_title": {
+      "message": "Najmanjša velikost"
+   },
+   "mediaweight_min_size_title2": {
+      "message": "Prezri zadetke pod to velikostjo"
+   },
+   "mediaweight_threshold_description": {
+      "message": "Vsili zaznavanje predstavnosti nad to velikostjo."
+   },
+   "mediaweight_threshold_title": {
+      "message": "Prag velikosti"
+   },
+   "mediaweight_threshold_title2": {
+      "message": "Vsili zaznavanje nad velikostjo"
+   },
+   "min_panel_width_description": {
+      "message": "Najmanjša širina vsake plošče dodatka"
+   },
+   "min_panel_width_title": {
+      "message": "Najmanjša širina plošče"
+   },
+   "more___": {
+      "message": "Več ..."
+   },
+   "mp2t_streaming": {
+      "message": "Pretakanje MP2T"
+   },
+   "mp2t_title": {
+      "message": "Pretakanje MP2T"
+   },
+   "mpegts_hide_ts": {
+      "message": "Ne prikaži vnosov .ts na seznamu prenosov"
+   },
+   "network_filter_out_description": {
+      "message": "Običajni izraz za preziranje nekaterih URL-jev predstavnosti."
+   },
+   "network_filter_out_title": {
+      "message": "Izhodni filter omrežja"
+   },
+   "network_probe_description": {
+      "message": "Preišči omrežni promet za zaznavanje zadetkov."
+   },
+   "network_probe_title": {
+      "message": "Omrežno zaznavanje"
+   },
+   "new_rule": {
+      "message": "Novo pravilo"
+   },
+   "no_download_to_abort": {
+      "message": "Ni prenosa za prekinitev"
+   },
+   "no_license_to_check": {
+      "message": "Ni licence za preverjanje"
+   },
+   "no_media_current_tab": {
+      "message": "No media to process in the current tab"
+   },
+   "no_media_to_process": {
+      "message": "Ni predstavnosti za obdelavo"
+   },
+   "no_media_to_process_descr": {
+      "message": "Click play on video to help detect files…"
+   },
+   "no_private_notification": {
+      "message": "Brez obvestila za zasebne zadetke"
+   },
+   "not_again_3months": {
+      "message": "Ne nadleguj me s tem za 3 mesece"
+   },
+   "not_implemented_yet": {
+      "message": "Še ni vgrajeno"
+   },
+   "not_see_again": {
+      "message": "Ne prikaži tega sporočila več"
+   },
+   "notify_ready": {
+      "message": "Obvesti me, ko je obdelano"
+   },
+   "number_type": {
+      "message": "%1s %2s"
+   },
+   "operations": {
+      "message": "Opravila"
+   },
+   "options": {
+      "message": "Možnosti"
+   },
+   "order_by_video_quality": {
+      "message": "Razvrsti po kakovosti slike"
+   },
+   "organize_videos": {
+      "message": "Organize videos"
+   },
+   "orphan": {
+      "message": "Opuščeno"
+   },
+   "orphan_expiration_description": {
+      "message": "Časovni potek v sekundah pred odstranitvijo opuščenih zadetkov."
+   },
+   "orphan_expiration_title": {
+      "message": "Časovni potek opuščenih"
+   },
+   "orphan_expiration_title2": {
+      "message": "Časovni potek opuščenih (sek.)"
+   },
+   "other_products": {
+      "message": "Od istih razvijalcev"
+   },
+   "output": {
+      "message": "Izhod"
+   },
+   "panels_astab_settings": {
+      "message": "Odpri nastavitve v zavihku"
+   },
+   "panels_astab_sites": {
+      "message": "Odpri strani v zavihkih"
+   },
+   "pinned": {
+      "message": "Pripeto"
+   },
+   "prompt_select_storage_dir": {
+      "message": "Izberite mapo za shranjevanje"
+   },
+   "prompt_target_dir": {
+      "message": "Ciljna mapa"
+   },
+   "purchase_license": {
+      "message": "Kupi licenco za pretvorbo"
+   },
+   "qualities_max_description": {
+      "message": "Največje število prikazanih različic istega videoposnetka."
+   },
+   "qualities_max_title": {
+      "message": "Največje št. različic"
+   },
+   "quality_medium": {
+      "message": "Srednje"
+   },
+   "quality_small": {
+      "message": "Nizko"
+   },
+   "queued___": {
+      "message": "V čakalni vrsti ..."
+   },
+   "recheck_converter": {
+      "message": "Ponovno preveri pretvornik"
+   },
+   "register_converter": {
+      "message": "Registriraj pretvornik"
+   },
+   "register_existing_license": {
+      "message": "Registriraj obstoječo licenco"
+   },
+   "registered_email": {
+      "message": "E-pošta"
+   },
+   "registered_key": {
+      "message": "Ključ"
+   },
+   "registered_name": {
+      "message": "Ime"
+   },
+   "req_donate": {
+      "message": "Ali bi radi podprli razvoj in prispevali nekaj malega?"
+   },
+   "req_review": {
+      "message": "Po drugi strani ali bi imeli kaj proti pisanju prijazne ocene na strani Mozillinih dodatkov?"
+   },
+   "req_review_link": {
+      "message": "Napiši oceno o razširitvi Video DownloadHelper"
+   },
+   "reset_converter_rules": {
+      "message": "Ponastavi pravila"
+   },
+   "reset_variants": {
+      "message": "Ponastavi verzije"
+   },
+   "revalidate_license": {
+      "message": "Ponovno preveri veljavnost licence"
+   },
+   "rule_converter_unavail": {
+      "message": "Za \"%s\" je predvidena samodejna pretvorba, toda na vašem sistemu ni pretvornika. Predstavnost ne bo pretvorjena."
+   },
+   "running": {
+      "message": "V izvajanju"
+   },
+   "safe_mode": {
+      "message": "Varni način"
+   },
+   "safe_mode_confirm": {
+      "message": "Da, želim omogočiti varni način"
+   },
+   "safe_mode_confirm_description": {
+      "message": "Prepričajte se, da razumete, da iz varnega načina ni izhoda."
+   },
+   "safe_mode_description": {
+      "message": "Omogočanje varnega načina zagotovi, da bo spletna stran Video DownloadHelper (in samo ta stran!) prikazala samo vsebino, ki jo lahko vidi cela družina."
+   },
+   "safe_mode_description2": {
+      "message": "Nastavitev varnega načina je končna in iz tega načina ni izhoda."
+   },
+   "safe_mode_set": {
+      "message": "Nastavi varni način"
+   },
+   "save": {
+      "message": "Shrani"
+   },
+   "save_transient_storagedirectory": {
+      "message": "Shrani trajno"
+   },
+   "scrap_8x8_align": {
+      "message": "Poravnava 8x8"
+   },
+   "scrap_8x8_align_cut": {
+      "message": "Izreži"
+   },
+   "scrap_8x8_align_extend": {
+      "message": "Razširi"
+   },
+   "scrap_applet_selector": {
+      "message": "Izbirnik apletov"
+   },
+   "scrap_applet_start_not_see_again": {
+      "message": "Ne prikaži tega sporočila ob začetku zajema apletov"
+   },
+   "scrap_auto_detect": {
+      "message": "Samodejno zaznavanje apletov"
+   },
+   "scrap_auto_detect_warning": {
+      "message": "Samodejno zaznavanje apletov ima lahko negativni vpliv na zmogljivost brskalnika"
+   },
+   "scrap_capture_statistics": {
+      "message": "Statistika zajemov"
+   },
+   "scrap_change_target": {
+      "message": "Spremeni ciljno datoteko"
+   },
+   "scrap_convert": {
+      "message": "Pretvori videoposnetek zajema zaslona"
+   },
+   "scrap_converter_required": {
+      "message": "Zajem zaslona za ustvarjanje videoposnetka zahteva pretvornik."
+   },
+   "scrap_description": {
+      "message": "Ustvarite videoposnetek iz dogajanja v celotnem oknu brskalnika."
+   },
+   "scrap_description2": {
+      "message": "Če je vaš računalnik prepočasen, boste izgubili nekaj sličic. Poskusite zmanjšati velikost okna brskalnika in/ali hitrost sličic."
+   },
+   "scrap_description3": {
+      "message": "Zvok ne bo zajet. Za osvežitev slik morate zavihek ohraniti dejaven."
+   },
+   "scrap_description4": {
+      "message": "Ustvarite videoposnetek iz dogajanja v območju okna brskalnika."
+   },
+   "scrap_description5": {
+      "message": "Če je vaš računalnik prepočasen, boste izgubili nekaj sličic. Poskusite zmanjšati hitrost sličic."
+   },
+   "scrap_do_not_display_start_panel": {
+      "message": "Ne prikaži plošče ob začetku zajema"
+   },
+   "scrap_enabled": {
+      "message": "Omogoči zajem zaslona"
+   },
+   "scrap_error": {
+      "message": "Napaka pri zajemu zaslona"
+   },
+   "scrap_file_saved_as": {
+      "message": "Zajeti videoposnetek bo shranjen kot %s"
+   },
+   "scrap_min_applet_size": {
+      "message": "Najmanjša velikost za uporabo apleta"
+   },
+   "scrap_mouse_always": {
+      "message": "Vedno"
+   },
+   "scrap_mouse_halo_color": {
+      "message": "Barva Halo"
+   },
+   "scrap_mouse_halo_radius": {
+      "message": "Polmer Halo"
+   },
+   "scrap_mouse_halo_transparency": {
+      "message": "Prosojnost Halo (%)"
+   },
+   "scrap_mouse_metakey": {
+      "message": "Ko je SHIFT pritisnjen"
+   },
+   "scrap_mouse_never": {
+      "message": "Nikoli"
+   },
+   "scrap_mouse_not_metakey": {
+      "message": "Ko SHIFT ni pritisnjen"
+   },
+   "scrap_mouse_pointer_size": {
+      "message": "Velikost kazalca"
+   },
+   "scrap_mouse_title": {
+      "message": "Snemanje miške"
+   },
+   "scrap_no_converter": {
+      "message": "Na vašem sistemu ni bilo najdenega pretvornika in potrebno je ustvariti videoposnetek zaslona."
+   },
+   "scrap_open_container": {
+      "message": "Odpri vsebujočo mapo"
+   },
+   "scrap_open_file": {
+      "message": "Odpri videoposnetek"
+   },
+   "scrap_port": {
+      "message": "Vrata pretvornika"
+   },
+   "scrap_rate": {
+      "message": "Hitrost zajema (sl./s)"
+   },
+   "scrap_screen_capture": {
+      "message": "Zajem zaslona"
+   },
+   "scrap_screen_capture_from_domain": {
+      "message": "Zajem zaslona iz %s"
+   },
+   "scrap_start": {
+      "message": "Začni SCRAP"
+   },
+   "scrap_start_capture": {
+      "message": "Začni zajem"
+   },
+   "scrap_start_long": {
+      "message": "Začni zajemati sejo brskalnika"
+   },
+   "scrap_start_scrap_long": {
+      "message": "Začni snemanje okna"
+   },
+   "scrap_stats_captured_frames": {
+      "message": "Zajetih je bilo %1s sličic, preskočenih %2s, zgrešenih %3s"
+   },
+   "scrap_stats_captured_size": {
+      "message": "Velikost zajetih sličic %s"
+   },
+   "scrap_stats_duration": {
+      "message": "Trajanje %s sekund"
+   },
+   "scrap_stats_original_size": {
+      "message": "Izvirna velikost sličic %s"
+   },
+   "scrap_stats_saved_frames": {
+      "message": "%1s sličic je bil shranjenih, %2s izgubljnih"
+   },
+   "scrap_stop": {
+      "message": "Ustavi SCRAP"
+   },
+   "scrap_stop_long": {
+      "message": "Stop capturing browsing session"
+   },
+   "scrap_stop_scrap_long": {
+      "message": "Ustavi snemanje okna"
+   },
+   "scrap_success": {
+      "message": "Uspešen zajem zaslona"
+   },
+   "scrap_successfully_saved_as": {
+      "message": "Datoteka \"%s\" je bila uspešno shranjena"
+   },
+   "scrap_title": {
+      "message": "Zajem zaslona"
+   },
+   "selected_text": {
+      "message": "Izbrano besedilo"
+   },
+   "settings": {
+      "message": "Nastavitve"
+   },
+   "settings_title": {
+      "message": "Nastavi Video DownloadHelper"
+   },
+   "shortcut_icons": {
+      "message": "Prikaži ikone bližnjic"
+   },
+   "shortcut_icons_dropdown": {
+      "message": "Ikone bližnjic in spustni seznam"
+   },
+   "show_in_toolsmenu": {
+      "message": "Prikaži nadzornike v meniju Orodja"
+   },
+   "site_comments": {
+      "message": "Pripombe"
+   },
+   "site_date": {
+      "message": "Dodano"
+   },
+   "site_interest": {
+      "message": "Zanimanje"
+   },
+   "site_name": {
+      "message": "Ime strani"
+   },
+   "site_rating": {
+      "message": "Ocena"
+   },
+   "smartname_delay": {
+      "message": "Zakasnitev poimenovanja zajema (ms)"
+   },
+   "smartname_regexp": {
+      "message": "Običajni izraz"
+   },
+   "smartnamer_all_domains": {
+      "message": "Dodaj domene"
+   },
+   "smartnamer_by_default": {
+      "message": "Privzeto"
+   },
+   "smartnamer_enabled_description": {
+      "message": "Ustvari ime iz podatkov na strani"
+   },
+   "smartnamer_enabled_title": {
+      "message": "Omogoči pametna imena"
+   },
+   "smartnamer_fname_maxlen_description": {
+      "message": "Zagotovi, da ustvarjena imena ne presežejo te velikosti."
+   },
+   "smartnamer_fname_maxlen_title": {
+      "message": "Največja dolžina imena datotek"
+   },
+   "smartnamer_fname_spaces_description": {
+      "message": "Kaj narediti s presledki v imenih datotek."
+   },
+   "smartnamer_fname_spaces_hyphen": {
+      "message": "Nadomesti z vezaji"
+   },
+   "smartnamer_fname_spaces_keep": {
+      "message": "Ohrani"
+   },
+   "smartnamer_fname_spaces_remove": {
+      "message": "Odstrani"
+   },
+   "smartnamer_fname_spaces_title": {
+      "message": "Presledki imen datotek"
+   },
+   "smartnamer_fname_spaces_underscore": {
+      "message": "Nadomesti s podčrtaji"
+   },
+   "smartnamer_get_name_from_header_url": {
+      "message": "Prejmi ime iz glave/URL-ja dokumenta"
+   },
+   "smartnamer_get_name_from_page_content": {
+      "message": "Prejmi ime iz vsebine strani"
+   },
+   "smartnamer_get_name_from_page_title": {
+      "message": "Prejmi ime iz naziva strani"
+   },
+   "smartnamer_get_obfuscated_name": {
+      "message": "Uporabi zamaskirano ime"
+   },
+   "smartnamer_header_url": {
+      "message": "Glava/URL"
+   },
+   "smartnamer_index": {
+      "message": "Trenutno kazalo"
+   },
+   "smartnamer_naming": {
+      "message": "Metoda poimenovanja"
+   },
+   "smartnamer_obfuscated": {
+      "message": "Zamaskirano"
+   },
+   "smartnamer_page_content": {
+      "message": "Vsebina strani"
+   },
+   "smartnamer_page_title": {
+      "message": "Naziv strani"
+   },
+   "smartnames": {
+      "message": "Pametna imena"
+   },
+   "smartnames_domains": {
+      "message": "Domene pametnih imen"
+   },
+   "storage_directory": {
+      "message": "Mapa za shranjevanje"
+   },
+   "storage_directory_error": {
+      "message": "Napaka mape za shranjevanje \"%s\": uporaba privzete mape %s"
+   },
+   "storage_directory_not_defined": {
+      "message": "Mapa za shranjevanje ni določena: uporaba privzete mape %s"
+   },
+   "storage_directory_not_directory": {
+      "message": "Mapa za shranjevanje %s ni mapa"
+   },
+   "storage_directory_not_exist": {
+      "message": "Mapa za shranjevanje %s ne obstaja"
+   },
+   "storage_directory_not_writable": {
+      "message": "Mapa za shranjevanje %s ni zapisljiva"
+   },
+   "storage_last_dir": {
+      "message": "Uporabi privzeto brskalnikovo mapo za shranjevanje"
+   },
+   "supported_sites": {
+      "message": "Podprte strani"
+   },
+   "supported_vp9": {
+      "message": "Kodek VP8 podprt"
+   },
+   "tbmode_comp": {
+      "message": "Samo gumb pomočnika"
+   },
+   "tbmode_label": {
+      "message": "Način orodne vrstice"
+   },
+   "tbmode_main": {
+      "message": "Samo glavni gumb"
+   },
+   "tbmode_maincomp": {
+      "message": "Glavni gumb in gumb pomočnika"
+   },
+   "tbsn_enabled": {
+      "message": "Facebook helper"
+   },
+   "tbts_enabled": {
+      "message": "Twitter helper"
+   },
+   "tbvv_enabled": {
+      "message": "Vine helper"
+   },
+   "tell_me_more": {
+      "message": "Povej več o tem"
+   },
+   "thumbnail_direct_gif": {
+      "message": "Use GIF thumbnails"
+   },
+   "thumbnail_from_meta": {
+      "message": "Video thumbnails from page meta"
+   },
+   "thumbnail_tumblr_mp4": {
+      "message": "Tumblr helper"
+   },
+   "title_mode": {
+      "message": "Dolgi nazivi glavne plošče"
+   },
+   "title_mode_ellipsis_left": {
+      "message": "Tropičje na levi"
+   },
+   "title_mode_ellipsis_right": {
+      "message": "Tropičje na desni"
+   },
+   "title_mode_multiline": {
+      "message": "Preko več vrstic"
+   },
+   "title_save_file": {
+      "message": "Shrani datoteko"
+   },
+   "top_main_panel": {
+      "message": "Vrh glavne plošče"
+   },
+   "tpsr_concurrent_captures": {
+      "message": "Sočasni zajemi"
+   },
+   "tpsr_convert": {
+      "message": "Pretvori ustvarjene videoposnetke."
+   },
+   "tpsr_convert_format": {
+      "message": "Določi izhodno obliko."
+   },
+   "tpsr_description": {
+      "message": "Ta način zajame pretoke videoposnetkov v živo iz storitve Twitter Periscope, kot so prikazani. Bolje je izklopiti zvok, da se izognete nadležnemu zvoku."
+   },
+   "tpsr_do_not_convert": {
+      "message": "Ne pretvori nastalih videoposnetkov."
+   },
+   "tpsr_duration_timeout": {
+      "message": "Najdaljše trajanje zajema pretoka (sekunde)"
+   },
+   "tpsr_enabled": {
+      "message": "Omogočeno"
+   },
+   "tpsr_no_converter": {
+      "message": "Na vašem sistemu nimate nameščenega pretvornika. Za zaobidenje tega bo dodatek spojil prenesene dele, vendar se nastale datoteke morda ne bodo dobro predvajale."
+   },
+   "tpsr_search_help": {
+      "message": "Iskalno polje lahko pustite prazno, vendar boste naključno zajeli vse 'v živo'."
+   },
+   "tpsr_search_periscope": {
+      "message": "Išči po Periscopu"
+   },
+   "tpsr_search_terms": {
+      "message": "Iskalni izrazi"
+   },
+   "tpsr_start_par": {
+      "message": "Začni PAR"
+   },
+   "tpsr_start_par_long": {
+      "message": "Začni samodejno snemanje Periscope (PAR)"
+   },
+   "tpsr_start_recording": {
+      "message": "Začni"
+   },
+   "tpsr_start_timeout": {
+      "message": "Časovna omejitev začetka pretoka (sek.)"
+   },
+   "tpsr_stop_par": {
+      "message": "Ustavi PAR"
+   },
+   "tpsr_stop_par_long": {
+      "message": "Ustavi samodejno snemanje Periscope (PAR)"
+   },
+   "tpsr_title": {
+      "message": "Samodejni snemalnik Periscope"
+   },
+   "transient_storagedirectory": {
+      "message": "Mapa za shranjevanje je bila spremenjena iz zasebnega okna in bo ponastavljena ob naslednji seji."
+   },
+   "ui_adp_grey": {
+      "message": "Obarvaj različice ADP"
+   },
+   "ui_adp_tag": {
+      "message": "Označi različice ADP"
+   },
+   "undefined_output": {
+      "message": "nedoločen izhod"
+   },
+   "unregistered": {
+      "message": "Neregistriran"
+   },
+   "unsupported_vp9": {
+      "message": "Kodek VP9 ni podprt"
+   },
+   "using_browser_default": {
+      "message": "Uporaba brskalnikovega privzetega"
+   },
+   "validate_license": {
+      "message": "Registriraj licenco"
+   },
+   "variants": {
+      "message": "Različice"
+   },
+   "vdh_notification": {
+      "message": "Video DownloadHelper"
+   },
+   "vdh_settings": {
+      "message": "Nastavitve Video DownloadHelper"
+   },
+   "version": {
+      "message": "Verzija %s"
+   },
+   "video": {
+      "message": "Videoposnetek"
+   },
+   "video_downloadhelper": {
+      "message": "Video DownloadHelper"
+   },
+   "video_downloadhelper_plus": {
+      "message": "Video DownloadHelper +"
+   },
+   "video_only": {
+      "message": "Samo videoposnetki"
+   },
+   "video_qualities": {
+      "message": "Kakovosti slike"
+   },
+   "visit_site": {
+      "message": "Obišči spletno stran"
+   },
+   "xpath_expr": {
+      "message": "Izraz XPath"
+   },
+   "you_downloaded_n_videos": {
+      "message": "Z Video DownloadHelperjem ste uspešno prenesli %s. datoteko."
+   }
+}

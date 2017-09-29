@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <title>Screen Capture Result</title>
+        <link rel="stylesheet" href="../fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+        <link rel="stylesheet" href="capture.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1 class="left">
+                    Full Page Screen Capture
+                    <!-- <small id="header-msg"></small> -->
+                </h1>
+
+                <div class="right">
+                    <a class="left btn btn-trash img-btn" href="#"
+                       id="btn-trash" title="Delete image">
+                        <span class="pe-7s-trash"></span>
+                        <span class="sr-only">Delete image</span>
+                    </a>
+
+                    <a class="left btn btn-expand img-btn" href="#"
+                       id="btn-expand" title="View raw image">
+                        <span class="pe-7s-expand1"></span>
+                        <span class="sr-only">View raw image</span>
+                    </a>
+
+                    <a class="left btn btn-download img-btn" href="#"
+                       id="btn-download" title="Download image">
+                        <span class="pe-7s-download"></span>
+                        <span class="sr-only">Download</span>
+                    </a>
+
+                    <a class="left btn btn-history" href="#"
+                       id="btn-history" title="View captures">
+                        <span class="pe-7s-timer"></span>
+                        <span class="sr-only">History</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div id="content">
+            <div id="wrap">
+                <div id="main-info" class="section">
+                    <p>
+                        The best and safest way to capture a screenshot of an entire web page.
+                    </p>
+                </div>
+
+                <div id="image" class="can-zoom-in section"></div>
+
+                <div class="history section" id="history">
+                </div>
+
+                <div class="error-wrap section" id="error-wrap">
+                    <div class="error" id="error">
+                        <a class="close" href="#">
+                            <span class="pe-7s-close"></span>
+                            <span class="sr-only">Close</span>
+                        </a>
+                        <h3 id="error-title"></h3>
+                        <p id="error-body"></p>
+                        <div class="clr">
+                            <button class="close">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../filesystem.js"></script>
+        <script src="capture.js"></script>
+    </body>
+</html>

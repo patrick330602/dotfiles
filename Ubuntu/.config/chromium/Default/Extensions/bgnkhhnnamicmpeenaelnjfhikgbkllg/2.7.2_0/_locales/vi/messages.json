@@ -1,0 +1,698 @@
+{
+   "abp_subscribe_confirm_enable": {
+      "message": "Adguard: bạn muốn kích hoạt đăng ký $1?"
+   },
+   "abp_subscribe_confirm_import": {
+      "message": "Adguard: bạn muốn nhập quy tắc từ $1 vào bộ lọc của người dùng?"
+   },
+   "abp_subscribe_confirm_import_finished_text": {
+      "message": "Adguard đã kết thúc nhập quy tắc vào bộ lọc của người dùng. Số quy tắc đã nhập: $1"
+   },
+   "abp_subscribe_confirm_import_finished_title": {
+      "message": "Đã kết thúc nhập thành công"
+   },
+   "adguard_product_mac": {
+      "message": "Adguard cho Mac"
+   },
+   "adguard_product_windows": {
+      "message": "Adguard cho Windows"
+   },
+   "alert_popup_filter_enabled_text": {
+      "message": "«$1» đã được tự động kích hoạt."
+   },
+   "alert_popup_filter_enabled_title": {
+      "message": "Tự kích hoạt bộ lọc"
+   },
+   "assistant_another_element": {
+      "message": "Chọn yếu tố khác"
+   },
+   "assistant_apply_rule_to_all_sites": {
+      "message": "Áp dụng quy tắc này cho&nbsp;mọi website"
+   },
+   "assistant_block": {
+      "message": "Chặn"
+   },
+   "assistant_block_by_reference": {
+      "message": "Chặn yếu tố theo&nbsp;url"
+   },
+   "assistant_block_element": {
+      "message": "Chặn yếu tố"
+   },
+   "assistant_block_element_explain": {
+      "message": "Cài đặt quy tắc chặn yếu tố"
+   },
+   "assistant_block_similar": {
+      "message": "Chặn các yếu tố tương tự"
+   },
+   "assistant_extended_settings": {
+      "message": "Cài đặt nâng cao"
+   },
+   "assistant_preview": {
+      "message": "Xem trước"
+   },
+   "assistant_preview_end": {
+      "message": "Kết thúc xem trước"
+   },
+   "assistant_preview_header": {
+      "message": "Chặn yếu tố - Xem trước"
+   },
+   "assistant_preview_header_info": {
+      "message": "Xem trang hiển thị thế nào trước khi xác nhận chặn."
+   },
+   "assistant_preview_start": {
+      "message": "Xem trước"
+   },
+   "assistant_select_element": {
+      "message": "Chế độ lựa chọn"
+   },
+   "assistant_select_element_cancel": {
+      "message": "Huỷ"
+   },
+   "assistant_select_element_ext": {
+      "message": "Bấm vào&nbsp;yếu tố bất kỳ&nbsp;trên trang"
+   },
+   "assistant_slider_explain": {
+      "message": "Dùng thanh trượt để&nbsp;thay đổi kích cỡ&nbsp;yếu tố&nbsp;bị chặn theo&nbsp;quy tắc này:"
+   },
+   "assistant_slider_if_hide": {
+      "message": "Bộ lọc sẽ bao gồm một&nbsp;quy tắc chặn yếu tố đã chọn"
+   },
+   "assistant_slider_max": {
+      "message": "LỚN HƠN"
+   },
+   "assistant_slider_min": {
+      "message": "NHỎ HƠN"
+   },
+   "context_abuse_site": {
+      "message": "Gửi phàn nàn về website này..."
+   },
+   "context_ads_has_been_removed": {
+      "message": "Quảng cáo đã được loại khỏi trang này"
+   },
+   "context_ads_has_been_removed_by_adguard": {
+      "message": "Được bảo vệ bởi $1"
+   },
+   "context_antibanner": {
+      "message": "Bộ chặn quảng cáo"
+   },
+   "context_block_site_ads": {
+      "message": "Chặn quảng cáo trên website này..."
+   },
+   "context_block_site_element": {
+      "message": "Chặn yếu tố..."
+   },
+   "context_block_site_image": {
+      "message": "Adguard: Chặn hình ảnh..."
+   },
+   "context_disable_protection": {
+      "message": "Tạm dừng bảo vệ của Adguard"
+   },
+   "context_enable_protection": {
+      "message": "Tiếp tục bảo vệ của Adguard"
+   },
+   "context_general_settings": {
+      "message": "Cài đặt tổng quát"
+   },
+   "context_miscellaneous_settings": {
+      "message": "Khác"
+   },
+   "context_open_log": {
+      "message": "Nhật ký lọc..."
+   },
+   "context_open_settings": {
+      "message": "Cài đặt Adguard..."
+   },
+   "context_safebrowsing": {
+      "message": "Bảo vệ duyệt web"
+   },
+   "context_security_report": {
+      "message": "Mở một báo cáo bảo mật website..."
+   },
+   "context_site_exception": {
+      "message": "Website này nằm trong danh sách loại trừ"
+   },
+   "context_site_filtering_disabled": {
+      "message": "Adguard không thể hoạt động trên tên miền này"
+   },
+   "context_site_filtering_off": {
+      "message": "Vô hiệu lọc trên website này"
+   },
+   "context_site_filtering_on": {
+      "message": "Kích hoạt lọc trên website này"
+   },
+   "context_site_protection_disabled": {
+      "message": "Đã tạm dừng bảo vệ của Adguard"
+   },
+   "context_update_antibanner_filters": {
+      "message": "Kiểm tra cập nhật bộ lọc"
+   },
+   "context_userfilter": {
+      "message": "Bộ lọc của người dùng"
+   },
+   "context_whitelist": {
+      "message": "Danh sách được cho phép"
+   },
+   "description": {
+      "message": "Unmatched adblock extension against advertising and pop-ups. Blocks ads on Facebook, Youtube and all other websites."
+   },
+   "description_blocked": {
+      "message": "Ads blocked on this page: $1"
+   },
+   "filter_download_ads_malware": {
+      "message": "90% virus&nbsp;và phần mềm độc hại được&nbsp;phân phối\u003Cbr/>qua những mạng quảng cáo&nbsp;vô nguyên tắc."
+   },
+   "filter_download_do_you_know": {
+      "message": "Bạn có biết?"
+   },
+   "filter_download_loading": {
+      "message": "Hãy chờ trong khi tải&nbsp;cơ sở dữ liệu bộ lọc..."
+   },
+   "filter_download_rules": {
+      "message": "Trung bình&nbsp;chúng tôi&nbsp;thêm hơn 100&nbsp;quy tắc lọc quảng cáo mỗi tuần."
+   },
+   "filter_download_sb_sites": {
+      "message": "Cơ sở dữ liệu về lừa đảo và nguy hiểm của Adguard\u003Cbr/>chứa hơn 1&nbsp;triệu website."
+   },
+   "filter_download_title": {
+      "message": "Đang tải&nbsp;cơ sở dữ liệu bộ lọc..."
+   },
+   "filtering_clear_tab_events": {
+      "message": "Xoá"
+   },
+   "filtering_log_in_whitelist": {
+      "message": "Trang đã được thêm vào danh sách được cho phép"
+   },
+   "filtering_log_search_string": {
+      "message": "Nhập chuỗi tìm kiếm"
+   },
+   "filtering_log_tab": {
+      "message": "Thẻ:"
+   },
+   "filtering_log_title": {
+      "message": "Nhật ký lọc"
+   },
+   "filtering_modal_add_rule": {
+      "message": "Thêm quy tắc"
+   },
+   "filtering_modal_add_title": {
+      "message": "Thêm quy tắc"
+   },
+   "filtering_modal_apply_domains": {
+      "message": "Áp dụng quy tắc với mọi website"
+   },
+   "filtering_modal_block": {
+      "message": "Chặn"
+   },
+   "filtering_modal_exception_title": {
+      "message": "Thêm loại trừ"
+   },
+   "filtering_modal_filter": {
+      "message": "Bộ lọc:"
+   },
+   "filtering_modal_important": {
+      "message": "Give a higher priority to the rule"
+   },
+   "filtering_modal_info_title": {
+      "message": "Chi tiết yêu cầu"
+   },
+   "filtering_modal_match_case": {
+      "message": "Cân nhắc trường hợp"
+   },
+   "filtering_modal_open_in_new_tab": {
+      "message": "Mở trong thẻ mới"
+   },
+   "filtering_modal_options": {
+      "message": "Tuỳ chọn"
+   },
+   "filtering_modal_patterns": {
+      "message": "Mẫu"
+   },
+   "filtering_modal_remove_user": {
+      "message": "Xoá khỏi bộ lọc của người dùng"
+   },
+   "filtering_modal_remove_whitelist": {
+      "message": "Xoá khỏi bộ lọc danh sách được cho phép"
+   },
+   "filtering_modal_rule": {
+      "message": "Quy tắc:"
+   },
+   "filtering_modal_rule_text": {
+      "message": "Đoạn quy tắc"
+   },
+   "filtering_modal_source": {
+      "message": "Nguồn:"
+   },
+   "filtering_modal_third_party": {
+      "message": "Chỉ áp dụng với yêu cầu của bên thứ ba"
+   },
+   "filtering_modal_type": {
+      "message": "Loại:"
+   },
+   "filtering_modal_unblock": {
+      "message": "Bỏ chặn"
+   },
+   "filtering_refresh_tab": {
+      "message": "Làm mới trang"
+   },
+   "filtering_table_empty_row": {
+      "message": "Trang nhật ký trống. \u003Ca href='#' class='reloadTab'>Tải lại trang\u003C/a> để xem nhật ký."
+   },
+   "filtering_table_rule": {
+      "message": "Quy tắc lọc"
+   },
+   "filtering_table_source": {
+      "message": "Nguồn"
+   },
+   "filtering_table_type": {
+      "message": "Loại"
+   },
+   "filtering_type_all": {
+      "message": "Tất cả"
+   },
+   "name": {
+      "message": "Adguard AdBlocker"
+   },
+   "options_allow_acceptable_ads": {
+      "message": "Cho phép các quảng cáo có thể chấp nhận được\u003Ca target='_blank' href='https://kb.adguard.com/general/search-ads-and-self-promotion?utm_source=extension&aid=16593' class='sp-table-row-info'>Tìm hiểu thêm\u003C/a>"
+   },
+   "options_antibanner": {
+      "message": "Trình Chặn&nbsp;Quảng cáo"
+   },
+   "options_antibanner_info": {
+      "message": "Số quy tắc bộ lọc: $1"
+   },
+   "options_antibanner_list_empty": {
+      "message": "Danh sách bộ lọc&nbsp;trống. \u003Ca class='spl-user-descr-link editAntiBannerFilters' href='#'>Thêm bộ lọc mới\u003C/a>?"
+   },
+   "options_blog": {
+      "message": "Blog"
+   },
+   "options_blog_link": {
+      "message": "https://adguard.com/en/blog/?utm_source=extension&aid=16593"
+   },
+   "options_collect_hit_stats": {
+      "message": "Gửi thống kê sử dụng&nbsp;bộ lọc quảng cáo\u003Ca target='_blank' href='https://adguard.com/filter-rules-statistics.html?utm_source=extension&aid=16593' class='sp-table-row-info'>Tìm hiểu thêm\u003C/a>"
+   },
+   "options_content_blocker_overlimit": {
+      "message": "Đã kích hoạt quá nhiều quy tắc bộ lọc. Safari không thể dùng hơn 5000 quy tắc."
+   },
+   "options_do_you_like": {
+      "message": "Bạn&nbsp;có thích Adguard?"
+   },
+   "options_download_adguard": {
+      "message": "Tải phiên bản đầy đủ"
+   },
+   "options_edit_antibanner_filters": {
+      "message": "Tất cả các bộ lọc"
+   },
+   "options_enable_autodetect_filter": {
+      "message": "Tự động kích hoạt những bộ lọc phù hợp nhất"
+   },
+   "options_feedback": {
+      "message": "Liên hệ với&nbsp;chúng tôi"
+   },
+   "options_filter_version": {
+      "message": "Phiên bản $1. Cập nhật vào $2 lúc $3."
+   },
+   "options_footer_like_us": {
+      "message": "Đánh&nbsp;giá!"
+   },
+   "options_forum": {
+      "message": "Diễn đàn"
+   },
+   "options_general_settings": {
+      "message": "Cài đặt Tổng quát"
+   },
+   "options_like_us": {
+      "message": "Thích Adguard? Hãy&nbsp;đánh giá!"
+   },
+   "options_miscellaneous_settings": {
+      "message": "Khác"
+   },
+   "options_modal_cancel": {
+      "message": "Huỷ"
+   },
+   "options_modal_edit": {
+      "message": "Danh sách bộ lọc"
+   },
+   "options_modal_homepage": {
+      "message": "Trang chủ"
+   },
+   "options_modal_save": {
+      "message": "Lưu thay đổi"
+   },
+   "options_open_changelog": {
+      "message": "Nhật ký thay đổi"
+   },
+   "options_open_log": {
+      "message": "Nhật ký lọc"
+   },
+   "options_popup_update_error": {
+      "message": "Không thể tải cập nhật, Hãy thử lại sau."
+   },
+   "options_popup_update_not_found": {
+      "message": "Không tìm thấy cập nhật"
+   },
+   "options_popup_update_title": {
+      "message": "Cập nhật các bộ lọc thành công"
+   },
+   "options_popup_update_updated": {
+      "message": "\"$1\" được cập nhật lên phiên bản $2"
+   },
+   "options_reset_stats": {
+      "message": "Đặt lại thống kê"
+   },
+   "options_reset_stats_done": {
+      "message": "Thống kê đã được đặt lại"
+   },
+   "options_safebrowsing": {
+      "message": "Bảo vệ duyệt web"
+   },
+   "options_safebrowsing_enabled": {
+      "message": "Bảo vệ chống lừa đảo và phần mềm độc hại\u003Ca target='_blank' href='https://adguard.com/how-malware-blocked.html?utm_source=extension&aid=16593' class='sp-table-row-info'>Tìm hiểu thêm về tính năng&nbsp;này\u003C/a>"
+   },
+   "options_safebrowsing_help": {
+      "message": "Giúp&nbsp;chúng tôi phát triển&nbsp;các bộ lọc Bảo vệ duyệt web\u003Cspan class='sp-table-row-info'>Gửi thông tin liên quan đến bảo mật ẩn danh\u003C/span>"
+   },
+   "options_searchlist_empty": {
+      "message": "Không tìm thấy"
+   },
+   "options_settings": {
+      "message": "Cài đặt Adguard"
+   },
+   "options_show_adguard_full_version": {
+      "message": "Hiện thông tin trên&nbsp;phiên bản Adguard đầy đủ"
+   },
+   "options_show_blocked_ads_count": {
+      "message": "Cho biết số&nbsp;quảng cáo bị chặn trên&nbsp;biểu tượng của phần mở rộng Adguard"
+   },
+   "options_show_context_menu": {
+      "message": "Thêm Adguard vào&nbsp;menu ngữ cảnh của trình duyệt"
+   },
+   "options_site": {
+      "message": "Website chính thức"
+   },
+   "options_too_many_filters_selected": {
+      "message": "Bạn có quá nhiều đăng ký bộ lọc. Việc này có thể&nbsp;làm chậm tốc độ duyệt web đáng kể"
+   },
+   "options_update_antibanner_filters": {
+      "message": "Kiểm tra cập nhật bộ lọc"
+   },
+   "options_use_optimized_filters": {
+      "message": "Dùng bộ lọc được tối ưu\u003Cspan class='sp-table-row-info'>Danh sách bộ lọc nhẹ cho thiết bị di động\u003C/span>"
+   },
+   "options_userfilter": {
+      "message": "Bộ lọc của người dùng"
+   },
+   "options_userfilter_add_rule": {
+      "message": "Thêm quy tắc mới"
+   },
+   "options_userfilter_clear": {
+      "message": "Xoá"
+   },
+   "options_userfilter_clear_confirm": {
+      "message": "Xoá bộ lọc của người dùng sẽ loại bỏ tất cả các quy tắc. Bạn thật sự muốn xoá bộ lọc của người dùng?"
+   },
+   "options_userfilter_description": {
+      "message": "Bạn có thể tự thêm quy tắc vào&nbsp;bộ lọc này. Tuỳ chọn này&nbsp;được đề xuất cho người dùng đã quen với HTML/CSS. Xem thêm \u003Ca class='spl-user-descr-link' href='https://adguard.com/filterrules.html?utm_source=extension&aid=16593' target='_blank'>hướng dẫn quy tắc bộ lọc\u003C/a> để&nbsp;tìm hiểu cách&nbsp;tự viết bộ lọc."
+   },
+   "options_userfilter_export": {
+      "message": "Xuất"
+   },
+   "options_userfilter_import": {
+      "message": "Nhập"
+   },
+   "options_userfilter_search": {
+      "message": "Tìm trong&nbsp;bộ lọc của người dùng"
+   },
+   "options_userfilter_search_placeholder": {
+      "message": "Nhập chuỗi tìm kiếm"
+   },
+   "options_userlist_empty": {
+      "message": "Bộ lọc của người dùng trống. \u003Ca class='spl-user-descr-link addUserFilter' href='#'>Thêm quy tắc mới\u003C/a>?"
+   },
+   "options_whitelist": {
+      "message": "Danh sách được cho phép"
+   },
+   "options_whitelist_add_domain": {
+      "message": "Thêm website"
+   },
+   "options_whitelist_description": {
+      "message": "Adguard không lọc website trong danh sách được cho phép."
+   },
+   "options_whitelist_empty": {
+      "message": "Danh sách được cho phép trống. \u003Ca class='spl-user-descr-link addWhiteListFilter' href='#'>Thêm website\u003C/a> nào đó vào danh sách được cho phép?"
+   },
+   "options_whitelist_inverse": {
+      "message": "Đảo ngược danh sách được cho phép\u003Cspan class='sp-table-row-info'>Bỏ chặn quảng cáo ở mọi nơi \u003Ci>trừ\u003C/i> danh sách được cho phép\u003C/span>"
+   },
+   "options_whitelist_search": {
+      "message": "Tìm trong&nbsp;danh sách được cho phép"
+   },
+   "options_whitelist_search_placeholder": {
+      "message": "Nhập chuỗi tìm kiếm"
+   },
+   "options_whitelistfilter_clear_confirm": {
+      "message": "Xoá danh sách được cho phép sẽ loại bỏ tất cả các quy tắc. Bạn thật sự muốn xoá danh sách được cho phép?"
+   },
+   "popup_abuse_problem": {
+      "message": "Submit a&nbsp;complaint"
+   },
+   "popup_abuse_site": {
+      "message": "Gửi&nbsp;phàn nàn về&nbsp;website này"
+   },
+   "popup_adguard_android": {
+      "message": "Adguard cho Android"
+   },
+   "popup_adguard_footer_integration": {
+      "message": "\u003Ca href='http://adguard.com/adguard-adblock-browser-extension/integration-mode.html#integration-mode' class='openLink' target='_blank'>Chế độ tích hợp\u003C/a> của Adguard đang hoạt động"
+   },
+   "popup_adguard_ios": {
+      "message": "Adguard cho iOS"
+   },
+   "popup_adguard_mac": {
+      "message": "Adguard cho Mac"
+   },
+   "popup_adguard_other_os": {
+      "message": "Cho nền tảng khác:"
+   },
+   "popup_adguard_windows": {
+      "message": "Adguard cho Windows"
+   },
+   "popup_ads_has_been_removed": {
+      "message": "Quảng cáo đã được loại khỏi trang này"
+   },
+   "popup_ads_has_been_removed_by_adguard": {
+      "message": "Được bảo vệ bởi $1"
+   },
+   "popup_block_site_ads": {
+      "message": "Chặn quảng cáo&nbsp;trên&nbsp;website này"
+   },
+   "popup_block_site_ads_android": {
+      "message": "Chặn quảng cáo trên website này"
+   },
+   "popup_disable_protection": {
+      "message": "Tạm dừng bảo vệ của Adguard"
+   },
+   "popup_enable_protection": {
+      "message": "Tiếp tục bảo vệ của Adguard"
+   },
+   "popup_feedback_cancel": {
+      "message": "Huỷ"
+   },
+   "popup_feedback_comment": {
+      "message": "Bình luận"
+   },
+   "popup_feedback_empty_option": {
+      "message": "Chọn một nguyên nhân phàn nàn"
+   },
+   "popup_feedback_malware_option": {
+      "message": "Nghi ngờ lừa đảo"
+   },
+   "popup_feedback_miss_ads_option": {
+      "message": "Quảng cáo&nbsp;bị bỏ sót"
+   },
+   "popup_feedback_option_is_empty": {
+      "message": "Bạn phải chọn một&nbsp;lý do cho phàn nàn!"
+   },
+   "popup_feedback_other_option": {
+      "message": "Khác"
+   },
+   "popup_feedback_send": {
+      "message": "Gửi&nbsp;phàn nàn"
+   },
+   "popup_feedback_wrong_block_option": {
+      "message": "Hiển thị website bị biến dạng"
+   },
+   "popup_filtering_log_icon_title": {
+      "message": "Mở nhật ký lọc..."
+   },
+   "popup_in_white_list_android": {
+      "message": "Trong danh sách được cho phép"
+   },
+   "popup_open_log_android": {
+      "message": "Nhật ký lọc"
+   },
+   "popup_open_settings": {
+      "message": "Cài đặt Adguard"
+   },
+   "popup_security_report": {
+      "message": "Báo cáo bảo mật website"
+   },
+   "popup_security_report_android": {
+      "message": "Báo cáo bảo mật"
+   },
+   "popup_site_exception": {
+      "message": "Website này&nbsp;nằm trong&nbsp;danh sách loại trừ"
+   },
+   "popup_site_exception_info": {
+      "message": "Tính năng lọc&nbsp;bị vô hiệu, vì nó&nbsp;có thể xung đột với hoạt động của website này."
+   },
+   "popup_site_filtering_disabled": {
+      "message": "Adguard không thể hoạt động trên&nbsp;tên miền này"
+   },
+   "popup_site_filtering_state": {
+      "message": "Bảo vệ trên website này"
+   },
+   "popup_site_protection_disabled": {
+      "message": "Đã tạm dừng bảo vệ của Adguard"
+   },
+   "popup_site_protection_disabled_android": {
+      "message": "Bảo vệ bị tạm dừng"
+   },
+   "popup_tab_blocked": {
+      "message": "Đã chặn: $1"
+   },
+   "popup_tab_blocked_all": {
+      "message": "Tổng: $1"
+   },
+   "popup_what_wrong_site": {
+      "message": "Có gì không đúng&nbsp;với website?"
+   },
+   "release_notes_title": {
+      "message": "Adguard Extension updated!"
+   },
+   "release_notes_whats_new": {
+      "message": "What's new in&nbsp;this version?"
+   },
+   "sb_adguard_blocked": {
+      "message": "Adguard đã chặn truy cập vào&nbsp;trang này"
+   },
+   "sb_go_back": {
+      "message": "Quay lại"
+   },
+   "sb_goto_site": {
+      "message": "Cứ truy cập"
+   },
+   "sb_main_title": {
+      "message": "Cảnh báo! Có thể&nbsp;không an toàn!"
+   },
+   "sb_malware_description": {
+      "message": "Adguard đã phát hiện rằng phần mềm độc hại có thể&nbsp;được cài đặt trên máy tính của bạn nếu&nbsp;bạn truy cập. Nếu&nbsp;bạn đã truy cập trang này trong&nbsp;quá khứ hoặc&nbsp;bạn tin tưởng trang này,&nbsp;thì&nbsp;có thể nó vừa&nbsp;bị tin tặc&nbsp;xâm nhập. Chúng&nbsp;tôi đề nghị bạn&nbsp;không truy cập hoặc&nbsp;thử lại lúc khác."
+   },
+   "sb_malware_site": {
+      "message": "Trang web này tại&nbsp;\u003Cstrong>$1\u003C/strong> đã được báo là&nbsp;trang nguy hiểm và bị chặn&nbsp;theo tuỳ chọn bảo mật của bạn."
+   },
+   "sb_more_actions": {
+      "message": "Nâng cao"
+   },
+   "sb_phishing_description": {
+      "message": "Adguard đã phát hiện rằng trang này có lẽ là&nbsp;một&nbsp;trang giả mạo hoặc&nbsp;mô phỏng&nbsp;website khác, được thiết kế để&nbsp;lừa người dùng chia sẻ thông tin cá nhân hoặc&nbsp;thông tin tài chính. Nhập thông tin bất kỳ vào&nbsp;trang này có thể dẫn đến&nbsp;bị trộm cắp danh tính hoặc&nbsp;quấy rối."
+   },
+   "sb_phishing_site": {
+      "message": "Trang web này tại&nbsp;\u003Cstrong>$1\u003C/strong>, đã được báo cáo là&nbsp;một&nbsp;trang lừa đảo và bị chặn&nbsp;theo tuỳ chọn bảo mật của bạn."
+   },
+   "sb_site_report": {
+      "message": "Thông tin thêm"
+   },
+   "sb_title": {
+      "message": "Cảnh báo! Có thể&nbsp;không an toàn!"
+   },
+   "short_name": {
+      "message": "Adguard AdBlocker"
+   },
+   "thankyou_compare_any_browser": {
+      "message": "Chặn quảng cáo trong mọi trình duyệt"
+   },
+   "thankyou_compare_blocked": {
+      "message": "Chặn quảng cáo"
+   },
+   "thankyou_compare_ext_blocking": {
+      "message": "Bị hạn chế theo khả năng phần mở rộng của trình duyệt"
+   },
+   "thankyou_compare_ext_title": {
+      "message": "Phần mở rộng Adguard"
+   },
+   "thankyou_compare_full_blocking": {
+      "message": "Toàn diện"
+   },
+   "thankyou_compare_full_title": {
+      "message": "Adguard cho Windows"
+   },
+   "thankyou_compare_full_title_mac": {
+      "message": "Adguard cho Mac"
+   },
+   "thankyou_compare_increase": {
+      "message": "Giảm thời gian tải trang"
+   },
+   "thankyou_compare_parent": {
+      "message": "Quản lý của phụ huynh"
+   },
+   "thankyou_compare_safebrowsing": {
+      "message": "Bảo vệ khỏi những website lừa đảo và nguy hiểm"
+   },
+   "thankyou_compare_safebrowsing_attack": {
+      "message": "Bảo vệ chống tấn công lừa đảo"
+   },
+   "thankyou_compare_support": {
+      "message": "Hỗ trợ kỹ thuật"
+   },
+   "thankyou_compare_traffic": {
+      "message": "Tiết kiệm lưu lượng Internet"
+   },
+   "thankyou_download": {
+      "message": "Tải Adguard"
+   },
+   "thankyou_enjoy": {
+      "message": "Tận hưởng&nbsp;nhiều&nbsp;website mà không có quảng cáo phiền phức, những bộ đếm theo dõi từng bước di chuyển của bạn và nhiều mối nguy hiểm như&nbsp;virus hoặc&nbsp;lừa đảo chỉ đang chờ bạn&nbsp;bị&nbsp;biến thành con mồi."
+   },
+   "thankyou_help_in_development": {
+      "message": "Tham gia&nbsp;phát triển&nbsp;các bộ lọc của Adguard"
+   },
+   "thankyou_help_in_development_description": {
+      "message": "Gửi thống kê ẩn danh về các hoạt động của&nbsp;các bộ lọc quảng cáo&nbsp;Adguard,&nbsp;cũng như những&nbsp;website mà Adguard xác định là&nbsp;nghi ngờ. \u003Cspan class='warn-message'>Không đề xuất trên&nbsp;các máy tính chậm.\u003C/span>"
+   },
+   "thankyou_installed": {
+      "message": "ĐÃ CÀI ĐẶT"
+   },
+   "thankyou_setup_filter": {
+      "message": "Tuỳ biến tuỳ chọn lọc của bạn"
+   },
+   "thankyou_setup_safebrowsing_description": {
+      "message": "Mô-đun bảo vệ duyệt web bảo vệ bạn khỏi những website nguy hiểm và lừa đảo. Mô-đun dùng \u003Ca target='blank' href='http://adguard.com/how-malware-blocked.html'>một dịch vụ web đặc biệt\u003C/a> để kiểm tra website bạn truy cập."
+   },
+   "thankyou_setup_safebrowsing_title": {
+      "message": "Bảo vệ khỏi những website lừa đảo và nguy hiểm"
+   },
+   "thankyou_title": {
+      "message": "Cảm ơn bạn đã cài đặt Adguard!"
+   },
+   "thankyou_tracking_social_filter_description": {
+      "message": "Adguard có thể loại bỏ những widget mạng xã hội khỏi trang web. Ví dụ như nút \"Thích\" - theo dõi hoạt động của bạn."
+   },
+   "thankyou_tracking_social_filter_title": {
+      "message": "Bộ lọc widget mạng xã hội"
+   },
+   "thankyou_tracking_spyware_filter_description": {
+      "message": "Hàng nghìn&nbsp;công ty Internet đang theo dõi hoạt động của bạn, Với Adguard, bạn có thể&nbsp;dễ dàng được bảo vệ khỏi hành vi dọ thám này."
+   },
+   "thankyou_tracking_spyware_filter_title": {
+      "message": "Một&nbsp;bộ lọc tất cả các bộ đệm và hệ thống phân tích đã biết"
+   },
+   "thankyou_want_full_protection": {
+      "message": "Muốn&nbsp;thử bảo vệ toàn diện? Hãy tải Adguard cho Windows!"
+   },
+   "thankyou_want_full_protection_mac": {
+      "message": "Muốn&nbsp;thử bảo vệ toàn diện? Hãy tải Adguard cho Mac!"
+   }
+}

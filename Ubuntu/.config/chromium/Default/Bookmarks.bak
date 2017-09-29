@@ -1,0 +1,1306 @@
+{
+   "checksum": "b858f1405cdbc8087fbe4496ab59d689",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13150897899739460",
+            "id": "6",
+            "name": "Homepage",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "http://garage.patrickwu.cf/747c1a59f739f6356420f6164a9a2b16/"
+         }, {
+            "children": [ {
+               "date_added": "13147781590166301",
+               "id": "85",
+               "name": "Learn C++ Concepts with Visual Studio and the WSL | Visual C++ Team Blog",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://blogs.msdn.microsoft.com/vcblog/2017/02/22/learn-c-concepts-with-visual-studio-and-the-wsl/"
+            }, {
+               "date_added": "13150897899937789",
+               "id": "86",
+               "name": "A short history of chatbots and artificial intelligence | VentureBeat | Bots | by Nicolas Bayerque, Gone",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://venturebeat.com/2016/08/15/a-short-history-of-chatbots-and-artificial-intelligence/"
+            }, {
+               "date_added": "13150897899937838",
+               "id": "87",
+               "name": "Solving Google Treasure Hunt Puzzle 4: Prime Numbers - good coders code, great coders reuse",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.catonmat.net/blog/solving-google-treasure-hunt-prime-number-problem-four/"
+            }, {
+               "children": [ {
+                  "date_added": "13150897899940885",
+                  "id": "150",
+                  "name": "机器学习--Logistic回归计算过程的推导 - ligang_csdn的博客 - CSDN博客",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://blog.csdn.net/ligang_csdn/article/details/53838743"
+               }, {
+                  "date_added": "13150897899940940",
+                  "id": "151",
+                  "name": "【机器学习算法系列之二】浅析Logistic Regression | 听见下雨的声音",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://chenrudan.github.io/blog/2016/01/09/logisticregression.html"
+               }, {
+                  "date_added": "13150897899940996",
+                  "id": "152",
+                  "name": "逻辑回归模型(Logistic Regression, LR)基础 - 文墨 - 博客园",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://www.cnblogs.com/sparkwen/p/3441197.html"
+               }, {
+                  "date_added": "13150897899941044",
+                  "id": "153",
+                  "name": "逻辑回归算法的原理及实现(LR)",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://bluewhale.cc/2016-05-18/logistic-regression.html"
+               }, {
+                  "date_added": "13145629292463032",
+                  "id": "154",
+                  "name": "Sigmoid function - Wikipedia",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://en.wikipedia.org/wiki/Sigmoid_function"
+               }, {
+                  "date_added": "13150897899941125",
+                  "id": "155",
+                  "name": "Logistic回归原理及公式推导 - AriesSurfer的专栏 - CSDN博客",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://blog.csdn.net/ariessurfer/article/details/41310525"
+               }, {
+                  "date_added": "13150897899941178",
+                  "id": "156",
+                  "name": "最小二乘法 - 维基百科，自由的百科全书",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://zh.wikipedia.org/wiki/%E6%9C%80%E5%B0%8F%E4%BA%8C%E4%B9%98%E6%B3%95"
+               }, {
+                  "date_added": "13150897899941233",
+                  "id": "157",
+                  "name": "線性回歸 - 维基百科，自由的百科全书",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://zh.wikipedia.org/wiki/%E7%B7%9A%E6%80%A7%E5%9B%9E%E6%AD%B8#.E6.9C.80.E5.B0.8F.E4.BA.8C.E4.B9.98.E6.B3.95.E5.88.86.E6.9E.90"
+               }, {
+                  "date_added": "13150897899941295",
+                  "id": "158",
+                  "name": "朴素贝叶斯分类器 - 小硒---代码无疆 - CSDN博客",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://blog.csdn.net/u011067360/article/details/22890465"
+               }, {
+                  "date_added": "13150897899941348",
+                  "id": "159",
+                  "name": "Decision tree examples",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://people.brunel.ac.uk/~mastjjb/jeb/or/decmore.html"
+               }, {
+                  "date_added": "13150897899941384",
+                  "id": "160",
+                  "name": "机器学习 - 文章 - 伯乐在线",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://blog.jobbole.com/tag/machinelearning/"
+               }, {
+                  "date_added": "13150897899941425",
+                  "id": "161",
+                  "name": "9 个超酷的深度学习案例 - 文章 - 伯乐在线",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://blog.jobbole.com/110144/"
+               }, {
+                  "date_added": "13150897899941470",
+                  "id": "162",
+                  "name": "ML 工程师需了解的 10 大算法 - 文章 - 伯乐在线",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://blog.jobbole.com/104457/"
+               }, {
+                  "date_added": "13150897899941519",
+                  "id": "163",
+                  "name": "机器学习经典算法详解及Python实现–CART分类决策树、回归树和模型树 | 数盟社区",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://dataunion.org/5771.html"
+               }, {
+                  "date_added": "13150897899941575",
+                  "id": "164",
+                  "name": "最好的Python机器学习库-CSDN.NET",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://www.csdn.net/article/2015-12-10/2826435"
+               }, {
+                  "date_added": "13150897899941617",
+                  "id": "165",
+                  "name": "利用Python，四步掌握机器学习 - Python - 伯乐在线",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://python.jobbole.com/84326/"
+               }, {
+                  "date_added": "13150897899941663",
+                  "id": "166",
+                  "name": "ID3算法 python_百度搜索",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://www.baidu.com/s?wd=ID3%E7%AE%97%E6%B3%95%20python&rsv_spt=1&rsv_iqid=0x9e8bede200000223&issp=1&f=8&rsv_bp=1&rsv_idx=2&ie=utf-8&rqlang=cn&tn=baiduhome_pg&rsv_enter=0&inputT=7101&rsv_t=5664Euudc44DDt1UxEMveSP%2Br6eNa0GErgRXg7jqvwMfxhgnkJfOgTaCHaRpqIO9DPVq&oq=cart%25E7%25AE%2597%25E6%25B3%2595%2520python&rsv_pq=a7588899000011c7&rsv_sug3=64&rsv_sug1=22&rsv_sug7=100&rsv_sug4=7752"
+               }, {
+                  "date_added": "13150897899941754",
+                  "id": "167",
+                  "name": "[置顶] ID3算法的python实现 - 爱生活，爱编程 - 博客园",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://www.cnblogs.com/snake-hand/p/3167777.html"
+               }, {
+                  "date_added": "13150897899941809",
+                  "id": "168",
+                  "name": "决策树之ID3算法实现(python) - pi9nc的专栏 - 博客频道 - CSDN.NET",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://blog.csdn.net/pi9nc/article/details/12197119"
+               }, {
+                  "date_added": "13150897899941861",
+                  "id": "169",
+                  "name": "如何实现并应用决策树算法？ | Whatbeg's blog",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://whatbeg.com/2016/04/23/decisiontree.html#"
+               }, {
+                  "date_added": "13150897899941906",
+                  "id": "170",
+                  "name": "机器学习 - 第2页/共5页 - 文章 - 伯乐在线",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://blog.jobbole.com/tag/machinelearning/page/2/"
+               }, {
+                  "date_added": "13150897899941953",
+                  "id": "171",
+                  "name": "ID3算法的原理及实现（Python） - ♂♂♂stridehuan♂♂♂ - 博客频道 - CSDN.NET",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://blog.csdn.net/u012822866/article/details/42419471"
+               }, {
+                  "date_added": "13150897899942002",
+                  "id": "172",
+                  "name": "机器学习经典算法详解及Python实现--决策树（Decision Tree） - Adan - 博客频道 - CSDN.NET",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://blog.csdn.net/suipingsp/article/details/41927247"
+               }, {
+                  "date_added": "13145363623563522",
+                  "id": "173",
+                  "name": "支持向量机 · Scikit-learn 使用手册中文版",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://xacecask2.gitbooks.io/scikit-learn-user-guide-chinese-version/content/sec1.4.html"
+               }, {
+                  "date_added": "13145898709897903",
+                  "id": "174",
+                  "name": "从零开始：用Python搭建神经网络",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://python.freelycode.com/contribution/detail/300"
+               }, {
+                  "date_added": "13145536706536492",
+                  "id": "175",
+                  "name": "人工神經網絡 - 維基百科，自由的百科全書",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://zh.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C"
+               }, {
+                  "date_added": "13145951318998194",
+                  "id": "176",
+                  "name": "可能是史上最全的机器学习和Python（包括数学）速查表",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://mp.weixin.qq.com/s?__biz=MzI4NjYwMjcxOQ==&mid=2247484157&idx=1&sn=2efcdaf89d213f00dcfe0c32a7e63b41&chksm=ebdb264ddcacaf5b0ba0b0ce3c31bb9ffebb1278b1df9580d4c5c8a01006ac971c3ed0a05935#rd"
+               }, {
+                  "date_added": "13146225187935792",
+                  "id": "177",
+                  "name": "常用的机器学习算法比较？ - 知乎",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://www.zhihu.com/question/27306416"
+               }, {
+                  "date_added": "13146225521663051",
+                  "id": "178",
+                  "name": "机器学习算法比较 | D.W's Notes - Machine Learning",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://www.csuldw.com/2016/02/26/2016-02-26-choosing-a-machine-learning-classifier/"
+               }, {
+                  "date_added": "13146055089959578",
+                  "id": "179",
+                  "name": "A Neural Network in 11 lines of Python (Part 1) - i am trask",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://iamtrask.github.io/2015/07/12/basic-python-network/"
+               }, {
+                  "date_added": "13145704951723691",
+                  "id": "180",
+                  "name": "UCI Machine Learning Repository",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://archive.ics.uci.edu/ml/index.php"
+               }, {
+                  "date_added": "13145940907316176",
+                  "id": "181",
+                  "name": "The Neural Network Zoo - The Asimov Institute",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://www.asimovinstitute.org/neural-network-zoo/"
+               }, {
+                  "date_added": "13146115653132545",
+                  "id": "182",
+                  "name": "Deep Learning",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://www.deeplearningbook.org/"
+               } ],
+               "date_added": "13150897899937885",
+               "date_modified": "13150897899942002",
+               "id": "88",
+               "name": "algorithm",
+               "sync_transaction_version": "1",
+               "type": "folder"
+            }, {
+               "children": [ {
+                  "date_added": "13150897899940445",
+                  "id": "141",
+                  "name": "Create Floating Back to Top Button with jQuery | HTML-TUTS.com",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://html-tuts.com/back-to-top-button-jquery/"
+               }, {
+                  "date_added": "13144920245569691",
+                  "id": "142",
+                  "name": "MathJax basic tutorial and quick reference - Mathematics Meta Stack Exchange",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference"
+               }, {
+                  "date_added": "13150897899940535",
+                  "id": "143",
+                  "name": "《Docker —— 從入門到實踐­》正體中文版 · GitBook",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://www.gitbook.com/book/philipzheng/docker_practice/details"
+               }, {
+                  "date_added": "13150897899940588",
+                  "id": "144",
+                  "name": "ASP 程式下載",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://www.mayzi.com/mayzi/index5/00/htm/asp.htm"
+               }, {
+                  "date_added": "13150897899940630",
+                  "id": "145",
+                  "name": "通过WordPress HTTP API 获取json内容并解析 _WordPress智库",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://www.wpzhiku.com/get-json-content-var-wordpress-http-api/"
+               }, {
+                  "date_added": "13150897899940684",
+                  "id": "146",
+                  "name": "制作Hexo主题详细教程（1） | Geekaholic",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://blog.geekaholic.cn/2017/02/22/%E5%88%B6%E4%BD%9CHexo%E4%B8%BB%E9%A2%98%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B%EF%BC%881%EF%BC%89/"
+               }, {
+                  "date_added": "13146125434559573",
+                  "id": "147",
+                  "name": "HTML5 UP! Responsive HTML5 and CSS3 Site Templates",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://html5up.net/"
+               }, {
+                  "date_added": "13147676340029157",
+                  "id": "148",
+                  "name": "How to build a random quote generator with JavaScript and HTML, for absolute beginners",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://medium.freecodecamp.org/creating-a-bare-bones-quote-generator-with-javascript-and-html-for-absolute-beginners-5264e1725f08#.tur7k44pq"
+               }, {
+                  "date_added": "13150897899940836",
+                  "id": "149",
+                  "name": "HTML & CSS Examples of Material Design in Action",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://speckyboy.com/html-css-examples-of-material-design-in-action/"
+               } ],
+               "date_added": "13150897899937889",
+               "date_modified": "13150897899940836",
+               "id": "89",
+               "name": "web",
+               "sync_transaction_version": "1",
+               "type": "folder"
+            }, {
+               "children": [ {
+                  "date_added": "13150734763898034",
+                  "id": "132",
+                  "name": "How to Install GoLang (Go Programming Language) in Linux",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://www.tecmint.com/install-go-in-linux/"
+               }, {
+                  "date_added": "13150897899940098",
+                  "id": "133",
+                  "name": "WineQQ | 清风的网络空间",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://phpcj.org/wineqq/"
+               }, {
+                  "date_added": "13150897899940136",
+                  "id": "134",
+                  "name": "installed ruby using apt-get install ruby 2.0.0 succeeded but not using correct ruby version - Stack Overflow",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://stackoverflow.com/questions/18541695/installed-ruby-using-apt-get-install-ruby-2-0-0-succeeded-but-not-using-correct"
+               }, {
+                  "date_added": "13150897899940192",
+                  "id": "135",
+                  "name": "Arch-Anywhere",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://arch-anywhere.org/#"
+               }, {
+                  "date_added": "13150897899940223",
+                  "id": "136",
+                  "name": "2720px-Linux_Distribution_Timeline.svg.png (2720×11872)",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Linux_Distribution_Timeline.svg/2720px-Linux_Distribution_Timeline.svg.png"
+               }, {
+                  "date_added": "13145969349260162",
+                  "id": "137",
+                  "name": "https://eureka.ykyuen.info/2009/12/28/opensuse-build-a-rpm-package/",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://eureka.ykyuen.info/2009/12/28/opensuse-build-a-rpm-package/"
+               }, {
+                  "date_added": "13150734763898586",
+                  "id": "138",
+                  "name": "HOWTO: Build debian packages for simple shell scripts - Packagecloud Blog",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://blog.packagecloud.io/eng/2016/12/15/howto-build-debian-package-containing-simple-shell-scripts/"
+               }, {
+                  "date_added": "13150897899940365",
+                  "id": "139",
+                  "name": "Variables",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_02.html"
+               }, {
+                  "date_added": "13150734763898783",
+                  "id": "140",
+                  "name": "Tutorial - Write a Shell in C • Stephen Brennan",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://brennan.io/2015/01/16/write-a-shell-in-c/"
+               } ],
+               "date_added": "13150897899937893",
+               "date_modified": "13150897899940365",
+               "id": "90",
+               "name": "linux",
+               "sync_transaction_version": "1",
+               "type": "folder"
+            }, {
+               "children": [ {
+                  "date_added": "13150897899939288",
+                  "id": "117",
+                  "name": "Windows Developer Day - Creators Update - Windows app development",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://developer.microsoft.com/en-us/windows/projects/campaigns/windows-developer-day"
+               }, {
+                  "date_added": "13150897899939349",
+                  "id": "118",
+                  "name": "Segoe MDL2 Assets - Cheatsheet",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://modernicons.io/segoe-mdl2/cheatsheet/"
+               }, {
+                  "date_added": "13150897899939384",
+                  "id": "119",
+                  "name": "Visually Located - Creating a behavior to control the new StatusBar (SystemTray) in Windows Phone 8.1 XAML apps",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://www.visuallylocated.com/post/2014/04/08/Creating-a-behavior-to-control-the-new-StatusBar-(SystemTray)-in-Windows-Phone-81-XAML-apps.aspx"
+               }, {
+                  "date_added": "13150897899939443",
+                  "id": "120",
+                  "name": "json2csharp - generate c# classes from json",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://json2csharp.com/"
+               }, {
+                  "date_added": "13150897899939476",
+                  "id": "121",
+                  "name": "Windows 推送通知服务 (WNS) 概述（Windows 运行时应用） (Windows)",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://msdn.microsoft.com/library/windows/apps/hh913756.aspx"
+               }, {
+                  "date_added": "13150897899939526",
+                  "id": "122",
+                  "name": "Launch Feedback Hub from your app",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://msdn.microsoft.com/windows/uwp/monetize/launch-feedback-hub-from-your-app"
+               }, {
+                  "date_added": "13150897899939565",
+                  "id": "123",
+                  "name": "Parsing JSON In UWP App (Without JSON.NET) - Windows 10 Universal Apps",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://www.c-sharpcorner.com/UploadFile/5c2d70/parsing-json-in-uwp-app-without-json-net-windows-10-univ/"
+               }, {
+                  "date_added": "13150897899939616",
+                  "id": "124",
+                  "name": "Visually Located | Setting the device wallpaper in Windows Universal Apps",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://visuallylocated.com/post/2015/07/29/Setting-the-device-wallpaper-in-Windows-Universal-Apps.aspx"
+               }, {
+                  "date_added": "13150897899939663",
+                  "id": "125",
+                  "name": "How to achieve global keyboard shortcuts in UWP apps",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://juniperphoton.net/2015/12/04/how-to-achieve-global-keyboard-shortcuts-in-uwp-apps-2/"
+               }, {
+                  "date_added": "13144843484387328",
+                  "id": "126",
+                  "name": "拉格朗日对偶 | 数据挖掘十大算法详解",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://wizardforcel.gitbooks.io/dm-algo-top10/content/svm-2.html"
+               }, {
+                  "date_added": "13147954125901641",
+                  "id": "127",
+                  "name": "Read XML File In Windows 10 Universal App",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://www.c-sharpcorner.com/article/read-xml-file-in-windows-10-universal-app/"
+               }, {
+                  "date_added": "13147934690765567",
+                  "id": "128",
+                  "name": "Color - UWP app developer | Microsoft Docs",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://docs.microsoft.com/en-us/windows/uwp/style/color"
+               }, {
+                  "date_added": "13146910447273182",
+                  "id": "129",
+                  "name": "[UWP][XAML] Copy & Paste from webview content works only with keyboard shortcuts (not with mouse or touch)",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://social.msdn.microsoft.com/Forums/en-US/933a5525-4f35-4295-a5ab-3a0199fa0749/uwpxaml-copy-paste-from-webview-content-works-only-with-keyboard-shortcuts-not-with-mouse-or?forum=wpdevelop"
+               }, {
+                  "date_added": "13146931160374938",
+                  "id": "130",
+                  "name": "DEP0700 Another user has already installed a packaged version of this app. An unpackaged version cannot replace this.",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://social.msdn.microsoft.com/Forums/en-US/fec6f4bb-79a0-4036-a36f-4ebbfa254544/dep0700-another-user-has-already-installed-a-packaged-version-of-this-app-an-unpackaged-version?forum=toolsforwinapps"
+               }, {
+                  "date_added": "13147003164925009",
+                  "id": "131",
+                  "name": "UWP app with Systray extension | Insights into the Universal Windows Platform",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://stefanwick.com/2017/06/24/uwp-app-with-systray-extension/"
+               } ],
+               "date_added": "13150897899937897",
+               "date_modified": "13150897899939663",
+               "id": "91",
+               "name": "uwp",
+               "sync_transaction_version": "1",
+               "type": "folder"
+            }, {
+               "children": [ {
+                  "date_added": "13150897899938461",
+                  "id": "103",
+                  "name": "ShareManager_20120528_v1.3.rar-[压缩包]–华为网盘-资源共享-文件备份-免费网络硬盘",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://dl.vmall.com/c0izladjyv"
+               }, {
+                  "date_added": "13150897899938522",
+                  "id": "104",
+                  "name": "Wcf for wp8 连接数据库，读写数据库，显示数据库数据（二） - luquanmingren - 博客园",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://www.cnblogs.com/luquanmingren/p/3408608.html"
+               }, {
+                  "date_added": "13150897899938582",
+                  "id": "105",
+                  "name": "新手入门 - Windows Phone 8.1 开发 视频学习地址-WP开发实例教程 - 手机版 - Powered by Discuz!",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://www.coolxap.com/thread-304938-1-1.html#396263-tsina-1-19589-82100692bc44848658d4a4919b0da4a4"
+               }, {
+                  "date_added": "13150897899938655",
+                  "id": "106",
+                  "name": "Windows Phone开发—菜鸟笔记之“应用中的设置文件与存储（ListPicker）”-Windows Phone-第七城市",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://m.baidu.com/from=0/bd_page_type=1/ssid=0/uid=0/pu=osname%40wphone%2Csz%401321_480%2Cta%40utouch_3_8.0_4_10.0/baiduid=CD83D619DA9D845383D44E15E47DFAFF/w=0_10_listpicker+%E8%AE%BE%E7%BD%AE/t=wap/l=3/tc?ref=www_utouch&lid=9953171498743145468&order=3&vit=osres&tj=www_normal_3_0_10&m=8&dict=21&sec=40421&di=464f1658cf15698b&bdenc=1&nsrc=IlPT2AEptyoA_yixCFOxXnANedT62v3IEQGG_zpQRXSxo9jpnQDxHt2sYzqqAp7FE-_wdoTQsR9CwXSu0VAn8B21r_pqcDFbliG"
+               }, {
+                  "date_added": "13150897899938769",
+                  "id": "107",
+                  "name": "Windows Phone实用开发技巧（1）：保存图片及加载图片 - Alexis - 博客园",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://www.cnblogs.com/alexis/archive/2011/05/26/2052319.html"
+               }, {
+                  "date_added": "13150897899938826",
+                  "id": "108",
+                  "name": "为Windows Phone 8 应用程序增加NFC近场通信功能的一些提示 - WinEcos-Windows移动生态社区！",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://winecos.com/?/m/question/1668"
+               }, {
+                  "date_added": "13150897899938884",
+                  "id": "109",
+                  "name": "Windows Phone 8.1 (Silverlight) vs Windows Phone 8.1",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://firstfloorsoftware.com/Media/DiffLists/Windows%20Phone%208.1%20(Silverlight)-vs-Windows%20Phone%208.1.html"
+               }, {
+                  "date_added": "13150897899938932",
+                  "id": "110",
+                  "name": "URI Association Schemes List - Nokia Developer Wiki",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://developer.nokia.com/community/wiki/URI_Association_Schemes_List"
+               }, {
+                  "date_added": "13150897899938971",
+                  "id": "111",
+                  "name": "Facebook Scrumptious tutorial for Windows Phone",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://facebooksdk.net/docs/phone/tutorial/"
+               }, {
+                  "date_added": "13150897899939006",
+                  "id": "112",
+                  "name": "alexiscn-social_share · GitHub",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://github.com/alexiscn/social_share"
+               }, {
+                  "date_added": "13150897899939042",
+                  "id": "113",
+                  "name": "Windows Phone 7 取得 WCF 資料服務 - kylin- 點部落",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://www.dotblogs.com.tw/kylin/archive/2010/08/28/17467.aspx"
+               }, {
+                  "date_added": "13150897899939093",
+                  "id": "114",
+                  "name": "《深入浅出：Windows Phone 8.1应用开发（ 清华开发者书库）》(林政)【摘要 书评 试读】- 京东图书",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://item.jd.com/11553015.html"
+               }, {
+                  "date_added": "13150897899939157",
+                  "id": "115",
+                  "name": "[原创]MIX11大会WP7主题演讲中文字幕版—在线播放—优酷网，视频高清在线观看",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://v.youku.com/v_show/id_XMjYxNTMyNzI4.html"
+               }, {
+                  "date_added": "13150897899939223",
+                  "id": "116",
+                  "name": "（Windows Phone7）人人网分享和新浪微博分享的整合封装 - 费尔南多 - 博客园",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "http://www.cnblogs.com/crazystars/archive/2012/05/15/2502024.html"
+               } ],
+               "date_added": "13150897899937900",
+               "date_modified": "13150897899939223",
+               "id": "92",
+               "name": "wp",
+               "sync_transaction_version": "1",
+               "type": "folder"
+            }, {
+               "date_added": "13145988151460253",
+               "id": "93",
+               "name": "rpmbuild - What is the minimum I have to do to create an RPM file? - Stack Overflow",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://stackoverflow.com/questions/880227/what-is-the-minimum-i-have-to-do-to-create-an-rpm-file"
+            }, {
+               "date_added": "13146038190413230",
+               "id": "94",
+               "name": "Installing Metasploit in Ubuntu and Debian",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.darkoperator.com/installing-metasploit-in-ubunt/"
+            }, {
+               "date_added": "13146055086171168",
+               "id": "96",
+               "name": "Neural Networks",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.doc.ic.ac.uk/~nd/surprise_96/journal/vol4/cs11/report.html"
+            }, {
+               "date_added": "13146115647155069",
+               "id": "97",
+               "name": "IguanaTex - A Free Latex Add-In for PowerPoint",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.jonathanleroux.org/software/iguanatex/"
+            }, {
+               "date_added": "13146124570102338",
+               "id": "98",
+               "name": "Typewriter Effect | CSS-Tricks",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://css-tricks.com/snippets/css/typewriter-effect/"
+            }, {
+               "date_added": "13146289401726800",
+               "id": "99",
+               "name": "dota2-api/heroes.json at master · kronusme/dota2-api",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://github.com/kronusme/dota2-api/blob/master/data/heroes.json"
+            }, {
+               "date_added": "13147283596497775",
+               "id": "100",
+               "name": "python - Reconstructing absolute urls from relative urls on a page - Stack Overflow",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://stackoverflow.com/questions/9718541/reconstructing-absolute-urls-from-relative-urls-on-a-page"
+            }, {
+               "date_added": "13147781570897357",
+               "id": "101",
+               "name": "Targeting the Windows Subsystem for Linux from Visual Studio | Visual C++ Team Blog",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://blogs.msdn.microsoft.com/vcblog/2017/02/08/targeting-windows-subsystem-for-linux-from-visual-studio/"
+            }, {
+               "date_added": "13147781525534343",
+               "id": "102",
+               "name": "Drop Down Menu in HTML/CSS with 3 Levels Deep | HTML-TUTS.com",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://html-tuts.com/drop-down-menu-html-css-3-levels-deep/"
+            } ],
+            "date_added": "13150897899752442",
+            "date_modified": "13150897899937838",
+            "id": "7",
+            "name": "Dev",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13150897899936714",
+               "id": "62",
+               "name": "Unsplash | Free High-Resolution Photos",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://unsplash.com/?photo=5brvJbR1Pn8"
+            }, {
+               "date_added": "13150897899936749",
+               "id": "63",
+               "name": "1939-1948上海工人斗争的几个瞬间",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "read:http://blog.sina.com.cn/s/blog_13d3628a40102vu5b.html"
+            }, {
+               "date_added": "13150897899936797",
+               "id": "64",
+               "name": "best way to get live stream from tetha s · Development · Forums | RICOH THETA Developers",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://developers.theta360.com/en/forums/viewtopic.php?f=4&t=190"
+            }, {
+               "date_added": "13150897899936845",
+               "id": "65",
+               "name": "Custom Photoshop CS6 Splashscreen [PSD], wwValue. Design, free psd, Icons, vectors. Website templates. Wordpress optimization",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.wwvalue.com/design/ps/custom-photoshop-cs6-splashscreen-psd.html"
+            }, {
+               "date_added": "13150897899936894",
+               "id": "66",
+               "name": "LaTeX Templates » Beamer Presentation",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.latextemplates.com/template/beamer-presentation"
+            }, {
+               "date_added": "13150897899936932",
+               "id": "67",
+               "name": "合法化資源與中國工人的行動主義 1957年上海“工潮”再研究 - 中國學術期刊網絡出版總庫",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://big5.oversea.cnki.net/kcms/detail/detail.aspx?filename=SHEH201201011&DBName=cjfqtotal&dbcode=cjfq&uid=WEEvREcwSlJHSldSdnQ1ZStpNGUxQURiLzIwWGo5UUFyaDBhd0lRVi92ZVlYUW1aQ3JKOEY0U3Q0dytYbmxuY25nPT0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4IQMovwHtwkF4VYPoHbKxJw!!"
+            }, {
+               "date_added": "13150897899937026",
+               "id": "68",
+               "name": "shanghai labor movement",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://p8090-lbcnbksy.ust.hk.lib.ezproxy.ust.hk/bksy_mirror/searchResultDetails.do?basedataId=32516307&needFr=false"
+            }, {
+               "date_added": "13150897899937070",
+               "id": "69",
+               "name": "math2111 - Roly_LiLuo",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://sites.google.com/site/rolyliluo/home/math2111"
+            }, {
+               "date_added": "13150897899937104",
+               "id": "70",
+               "name": "virtualbox - Why Virtual Box won't give me option to create 64 bits guests? - Super User",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://superuser.com/questions/668006/why-virtual-box-wont-give-me-option-to-create-64-bits-guests"
+            }, {
+               "date_added": "13150897899937155",
+               "id": "71",
+               "name": "中国大陆网络语言列表 - 维基百科，自由的百科全书",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E7%BD%91%E7%BB%9C%E8%AF%AD%E8%A8%80%E5%88%97%E8%A1%A8"
+            }, {
+               "date_added": "13150897899937224",
+               "id": "72",
+               "name": "签证知识 | Hootenku's Travel Guide Blog",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://hootenku.azurewebsites.net/category/visa-knowledge/"
+            }, {
+               "date_added": "13150897899937265",
+               "id": "73",
+               "name": "iCal Event Maker - create icalendar (.ics) to share your events",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://apps.marudot.com/ical/"
+            }, {
+               "date_added": "13150897899937301",
+               "id": "74",
+               "name": "A fortunate place | The secrets and truth inside Chungking Mansions",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://multimedia.scmp.com/chungking-mansions/"
+            }, {
+               "date_added": "13150897899937340",
+               "id": "75",
+               "name": "Rendez-vous",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://pastel.diplomatie.gouv.fr/rdvinternet/html-3.04.03/frameset/frameset.html?lcid=1&sgid=125&suid=2&rdv=HKG20161030010006"
+            }, {
+               "date_added": "13150897899937386",
+               "id": "76",
+               "name": "Root Nexus 6 on Android 7.0 NBD90Z Nougat Factory Image [How To] - Tutorial / Guide",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.teamandroid.com/2016/10/05/root-nexus-6-android-7-0-nbd90z-nougat-official-factory-image/"
+            }, {
+               "date_added": "13150897899937438",
+               "id": "77",
+               "name": "Linux_Distribution_Timeline.svg.png (PNG Image, 2720 × 11872 pixels) - Scaled (7%)",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Linux_Distribution_Timeline.svg/2720px-Linux_Distribution_Timeline.svg.png"
+            }, {
+               "date_added": "13150897899937489",
+               "id": "78",
+               "name": "Introduction  |  Google for Education  |  Google Developers",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://developers.google.com/edu/c++/"
+            }, {
+               "date_added": "13150897899937524",
+               "id": "79",
+               "name": "About | Papyros",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://papyros.io/about/index.html"
+            }, {
+               "date_added": "13150897899937555",
+               "id": "80",
+               "name": "The Computer History Simulation Project",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://simh.trailing-edge.com/"
+            }, {
+               "date_added": "13150897899937587",
+               "id": "81",
+               "name": "LFS Project Homepage",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.linuxfromscratch.org/lfs/"
+            }, {
+               "date_added": "13150897899937618",
+               "id": "82",
+               "name": "Game of GitHub",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://glebbahmutov.com/game-of-github/"
+            }, {
+               "date_added": "13144930107526591",
+               "id": "83",
+               "name": "WINDOWS93",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.windows93.net/"
+            }, {
+               "date_added": "13147781545395159",
+               "id": "84",
+               "name": "The (updated) history of Android | Ars Technica",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://arstechnica.com/gadgets/2016/10/building-android-a-40000-word-history-of-googles-mobile-os/"
+            }, {
+               "date_added": "13146048886017002",
+               "id": "95",
+               "name": "[TV] Avatar: The Legend of Korra S01 S02 S03 S04 [1080p] BluRay FLAC [x264] [27.95GB] : megalinks",
+               "sync_transaction_version": "2",
+               "type": "url",
+               "url": "https://www.reddit.com/r/megalinks/comments/6p8nj1/tv_avatar_the_legend_of_korra_s01_s02_s03_s04/"
+            } ],
+            "date_added": "13150897899752571",
+            "date_modified": "13150898397117703",
+            "id": "8",
+            "name": "Resources",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13150734763889996",
+               "id": "33",
+               "name": "ProcessOn - Diagrams",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.processon.com/diagrams"
+            }, {
+               "date_added": "13150897899935729",
+               "id": "34",
+               "name": "Untitled Bookmark",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.hsbc.com.hk/1/2/home"
+            }, {
+               "date_added": "13150734763890104",
+               "id": "35",
+               "name": "Untitled Bookmark",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://xiumi.us/#/studio/papers"
+            }, {
+               "date_added": "13150897899935793",
+               "id": "36",
+               "name": "Untitled Bookmark",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://webcat.hkpl.gov.hk/"
+            }, {
+               "date_added": "13150897899935823",
+               "id": "37",
+               "name": "Untitled Bookmark",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://webdemo.myscript.com/views/math.html#/demo/equation"
+            }, {
+               "date_added": "13150897899935856",
+               "id": "38",
+               "name": "Untitled Bookmark",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.clarityenglish.com/area1/RoadToIELTS2/Start-AC.php?prefix=HKUST"
+            }, {
+               "date_added": "13150897899935894",
+               "id": "39",
+               "name": "Cube Escape Series - by Rusty Lake",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.cubeescape.com/"
+            }, {
+               "date_added": "13150897899935925",
+               "id": "40",
+               "name": "C64.COM - To Protect and Preserve",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.c64.com/"
+            }, {
+               "date_added": "13150897899935976",
+               "id": "41",
+               "name": "Free eBooks at Planet eBook - 80+ Classic Novels and Literature",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.planetebook.com/"
+            }, {
+               "date_added": "13150897899936013",
+               "id": "42",
+               "name": "Free HD Stock Video Footage at Videezy.com",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.videezy.com/browse"
+            }, {
+               "date_added": "13150897899936045",
+               "id": "43",
+               "name": "Project Gutenberg Australia",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://gutenberg.net.au/"
+            }, {
+               "date_added": "13150897899936075",
+               "id": "44",
+               "name": "QR Code Generator",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.the-qrcode-generator.com/"
+            }, {
+               "date_added": "13150734763890593",
+               "id": "45",
+               "name": "RegExr: Learn, Build, & Test RegEx",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://regexr.com/"
+            }, {
+               "date_added": "13150897899936137",
+               "id": "46",
+               "name": "The Useless Web",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.theuselessweb.com/"
+            }, {
+               "date_added": "13150897899936167",
+               "id": "47",
+               "name": "Untitled Bookmark",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.cdbao.net/portal.php"
+            }, {
+               "date_added": "13150897899936197",
+               "id": "48",
+               "name": "Top released games - itch.io",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://itch.io/games/released"
+            }, {
+               "date_added": "13150897899936230",
+               "id": "49",
+               "name": "Weird or Confusing",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://weirdorconfusing.com/"
+            }, {
+               "date_added": "13150897899936260",
+               "id": "50",
+               "name": "ZEN PENCILS – Cartoon quotes from inspirational folks",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://zenpencils.com/"
+            }, {
+               "date_added": "13150897899936301",
+               "id": "51",
+               "name": "CodeMirror",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://codemirror.net/index.html"
+            }, {
+               "date_added": "13150897899936329",
+               "id": "52",
+               "name": "Home  WinWorld",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://winworldpc.com/"
+            }, {
+               "date_added": "13150897899936356",
+               "id": "53",
+               "name": "Untitled Bookmark",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://mcpedl.com/category/mods/addons/"
+            }, {
+               "date_added": "13150897899936386",
+               "id": "54",
+               "name": "Unsplash | High-Resolution Photos",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://unsplash.com/"
+            }, {
+               "date_added": "13150897899936415",
+               "id": "55",
+               "name": "Study in Hong Kong",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.studyinhongkong.edu.hk/en/"
+            }, {
+               "date_added": "13150897899936448",
+               "id": "56",
+               "name": "週刊VOCALOIDとUTAUランキング ‐ niconico動畫：Q",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.nicovideo.jp/tag/%E9%80%B1%E5%88%8AVOCALOID%E3%81%A8UTAU%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0?sort=n&order=d"
+            }, {
+               "date_added": "13150897899936509",
+               "id": "57",
+               "name": "iss",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.ishadowsocks.org/"
+            }, {
+               "date_added": "13150897899936537",
+               "id": "58",
+               "name": "开放平台 - 微信",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://open.weixin.qq.com/"
+            }, {
+               "date_added": "13150897899936584",
+               "id": "59",
+               "name": "Patrick's Notebook - Microsoft OneNote Online",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://onedrive.live.com/edit.aspx?resid=5A5CB7695279F204!1629&cid=5a5cb7695279f204&app=OneNote"
+            }, {
+               "date_added": "13150897899936626",
+               "id": "60",
+               "name": "The Floyd-Warshall Algorithm",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www-m9.ma.tum.de/graph-algorithms/spp-floyd-warshall/index_en.html"
+            }, {
+               "date_added": "13147543273461547",
+               "id": "61",
+               "name": "Plus Minus | Algorithms Question | HackerRank",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.hackerrank.com/challenges/plus-minus?h_r=next-challenge&h_v=zen"
+            } ],
+            "date_added": "13150897899752771",
+            "date_modified": "13150897899936626",
+            "id": "9",
+            "name": "Sites",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13150897899932326",
+               "id": "14",
+               "name": "我的简历 | Tencent 校园招聘",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://join.qq.com/preview.php#"
+            }, {
+               "date_added": "13150897899933381",
+               "id": "15",
+               "name": "Talent Pool Platform",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://talent.hkstp.org/Search/Index"
+            }, {
+               "date_added": "13150734763888679",
+               "id": "16",
+               "name": "40張超可愛海狗照片證明為什麼「海狗會被稱為海狗」！",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.teepr.com/503401/jonhsieh/40%E5%BC%B5%E6%9C%83%E6%95%99%E5%A4%A7%E5%AE%B6%E7%82%BA%E4%BB%80%E9%BA%BC%E6%B5%B7%E7%8B%97%E6%9C%83%E8%A2%AB%E7%A8%B1%E7%82%BA%E6%B5%B7%E7%8B%97%E7%9A%84%E5%8E%9F%E5%9B%A0/"
+            }, {
+               "date_added": "13144920245552610",
+               "id": "17",
+               "name": "39 Things Only People Who Live In Hong Kong Will Understand",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.buzzfeed.com/daves4/things-only-people-who-live-in-hong-kong-will-understand"
+            }, {
+               "date_added": "13150897899934733",
+               "id": "18",
+               "name": "core/release-notes/download-archives at master · dotnet/core",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://github.com/dotnet/core/tree/master/release-notes/download-archives"
+            }, {
+               "date_added": "13150897899934790",
+               "id": "19",
+               "name": "多多猫插件开发指南 - 知乎专栏",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://zhuanlan.zhihu.com/p/25259467"
+            }, {
+               "date_added": "13150734763889078",
+               "id": "20",
+               "name": "Windows 10 - Desktop - .www | GMUNK",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.gmunk.com/Windows-10-Desktop"
+            }, {
+               "date_added": "13150734763889142",
+               "id": "21",
+               "name": "Internship Main Page",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://e-advising1.seng.ust.hk/cgi-bin/internship/index.php"
+            }, {
+               "date_added": "13147672203123721",
+               "id": "22",
+               "name": "Why I left Mac for Windows: Apple has given up - Charged",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://char.gd/blog/2017/why-i-left-mac-for-windows-apple-has-given-up"
+            }, {
+               "date_added": "13147781723719281",
+               "id": "23",
+               "name": "粉刺處理全攻略！A 酸、杜鵑花酸、杏仁酸跟果酸你分得清楚嗎？ - PanSci 泛科學",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://pansci.asia/archives/105418"
+            }, {
+               "date_added": "13147417287087054",
+               "id": "24",
+               "name": "Common Greek and Latin Prefixes",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.englishhints.com/latin-prefixes.html"
+            }, {
+               "date_added": "13147417292322800",
+               "id": "25",
+               "name": "The Heartbreak That May Have Inspired the Telegraph",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://news.nationalgeographic.com/2016/04/160426-samuel-morse-wife-lucretia-telegraph-invention/"
+            }, {
+               "date_added": "13147417412123222",
+               "id": "26",
+               "name": "Latest Stories",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.nationalgeographic.com/latest-stories/"
+            }, {
+               "date_added": "13147417418933025",
+               "id": "27",
+               "name": "Archaeology | Smithsonian",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.smithsonianmag.com/history/archaeology/"
+            }, {
+               "date_added": "13147781702523115",
+               "id": "28",
+               "name": "Google 提供七款專業級濾鏡外掛免費下載，支援 Photoshop、Lightroom - 就是教不落",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://steachs.com/archives/18993"
+            }, {
+               "date_added": "13147781506721528",
+               "id": "29",
+               "name": "How to find out which app is using your webcam on Windows | Windows Central",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.windowscentral.com/how-see-which-apps-are-using-your-webcam"
+            }, {
+               "date_added": "13147781479075310",
+               "id": "30",
+               "name": "The Hulking, Retro Computers That Made Way for Your iPhone | WIRED",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.wired.com/2016/05/james-ball-guide-to-computing/"
+            }, {
+               "date_added": "13149801414907357",
+               "id": "31",
+               "name": "【動画･SE付】 リズム天国GIGA MIX 完全版 【108曲アレンジメドレー】 - ニコニコ動画",
+               "sync_transaction_version": "5",
+               "type": "url",
+               "url": "http://www.nicovideo.jp/watch/sm27676041"
+            }, {
+               "date_added": "13149828081019957",
+               "id": "32",
+               "name": "O RLY Parody Book Generator for Slack",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://dev.to/rly"
+            }, {
+               "date_added": "13150956659264714",
+               "id": "185",
+               "name": "12 Amazing Terminal Based Games for Linux Enthusiasts",
+               "sync_transaction_version": "10",
+               "type": "url",
+               "url": "https://www.tecmint.com/best-linux-terminal-console-games/"
+            }, {
+               "date_added": "13151089612638760",
+               "id": "191",
+               "meta_info": {
+                  "last_visited_desktop": "13151089612644210"
+               },
+               "name": "[APB-514] Naked Cosplay 05 -SD- Starring Sonoda Mion : JavDownloadCenter",
+               "sync_transaction_version": "19",
+               "type": "url",
+               "url": "https://www.reddit.com/r/JavDownloadCenter/comments/6zvhzd/apb514_naked_cosplay_05_sd_starring_sonoda_mion/"
+            }, {
+               "date_added": "13151089624996392",
+               "id": "192",
+               "meta_info": {
+                  "last_visited_desktop": "13151089634706269"
+               },
+               "name": "[SNIS-991] My Grades Are So Bad That I'm Spending The Day Tied Up Again -SD- Starring Aika Yumeno : JavDownloadCenter",
+               "sync_transaction_version": "19",
+               "type": "url",
+               "url": "https://www.reddit.com/r/JavDownloadCenter/comments/6znoue/snis991_my_grades_are_so_bad_that_im_spending_the/"
+            } ],
+            "date_added": "13150897899752949",
+            "date_modified": "13151089624996392",
+            "id": "10",
+            "name": "Reading List",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "date_added": "13148704355063807",
+            "id": "11",
+            "name": "UWP DevKit Insiders Program",
+            "sync_transaction_version": "17",
+            "type": "url",
+            "url": "https://onedrive.live.com/edit.aspx?cid=5a5cb7695279f204&page=view&resid=5A5CB7695279F204!917623&parId=5A5CB7695279F204!107&app=Excel&wacqt=mru"
+         }, {
+            "date_added": "13148793931458859",
+            "id": "12",
+            "name": "我的问卷 - 问卷星（免费版）",
+            "sync_transaction_version": "18",
+            "type": "url",
+            "url": "https://www.sojump.com/newwjx/manage/myquestionnaires.aspx"
+         }, {
+            "date_added": "13149832070530362",
+            "id": "13",
+            "name": "Install on WSL - ArchWiki",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://wiki.archlinux.org/index.php/Install_on_WSL"
+         } ],
+         "date_added": "13150897815753174",
+         "date_modified": "13150897899739460",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13150897815753181",
+         "date_modified": "0",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "sync_transaction_version": "19",
+      "synced": {
+         "children": [  ],
+         "date_added": "13150897815753182",
+         "date_modified": "0",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

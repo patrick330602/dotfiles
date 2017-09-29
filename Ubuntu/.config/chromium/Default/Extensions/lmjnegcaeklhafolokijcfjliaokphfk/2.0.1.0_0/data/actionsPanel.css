@@ -1,0 +1,61 @@
+.action {
+	border: 1px outset #888;
+	min-height: 40px;
+	margin: 0px;
+	padding: 4px;
+	border-radius: 4px;
+	position: relative;
+	background-color: #eee;
+}
+
+.action:hover {
+	background-color: #1F80E0;
+	color:white;
+}
+
+.action:active {
+	border: 1px inset #888;
+}
+
+.actions-title {
+	font-size: 14pt;
+	font-weight: bold;
+	padding: 8px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	background: #000;
+	color: white;	
+}
+
+.action-details {
+	text-align: left;
+}
+
+.action-details > div {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.action-title {
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+.action-descr {
+	font-size: 8pt;
+	text-decoration: italic;
+}
+
+.action-thumbnail {
+	width: 40px;
+	text-align: left;
+}
+
+.action-thumbnail > img {
+	width: 32px;
+}
+.action:hover .action-thumbnail > img{	
+	filter: invert(100%);
+}

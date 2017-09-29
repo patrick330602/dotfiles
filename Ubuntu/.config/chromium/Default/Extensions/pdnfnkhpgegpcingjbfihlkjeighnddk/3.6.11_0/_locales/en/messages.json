@@ -1,0 +1,56 @@
+{
+   "description": {
+      "message": "Helps users access their web services while travelling outside mainland China."
+   },
+   "donation_url": {
+      "message": "https://www.uku.im/index.html"
+   },
+   "faq": {
+      "message": "If you have encountered any issue, please refer to \u003Ca href=\"http://uku.im/faq\" target=\"_blank\">the FAQ\u003C/a>."
+   },
+   "feedback": {
+      "message": "If you have any questions, please don't hesitate to \u003Ca href=\"http://uku.im/feedback\" target=\"_blank\">contact us\u003C/a>."
+   },
+   "mode_lite": {
+      "message": "Lite"
+   },
+   "mode_lite_description": {
+      "message": "Applies to \u003Cabbr id=\"tooltip\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"For example, Bilibili\">only few websites\u003C/abbr>, but can work with other proxy settings or software."
+   },
+   "mode_normal": {
+      "message": "Standard"
+   },
+   "mode_normal_description": {
+      "message": "\u003Cstrong>Recommended\u003C/strong>. Fast, and applicable to most websites."
+   },
+   "mode_off": {
+      "message": "Off"
+   },
+   "mode_off_description": {
+      "message": "Disables all Unblock Youku functionalities."
+   },
+   "mode_select": {
+      "message": "Select Operation Mode"
+   },
+   "popup_title": {
+      "message": "Configure Unblock Youku"
+   },
+   "rating": {
+      "message": "If you find this extension helpful, \u003Ca href=\"http://uku.im/reviews\" target=\"_blank\">please help us to rate it\u003C/a>."
+   },
+   "sharing": {
+      "message": "Welcome to share it via"
+   },
+   "social_title": {
+      "message": "Please Follow Us"
+   },
+   "support_button": {
+      "message": "\u003Ci class=\"fa fa-heart\" aria-hidden=\"true\">\u003C/i> Please Support Us"
+   },
+   "support_message": {
+      "message": "Please support us to make Unblock Youku better."
+   },
+   "support_title": {
+      "message": "We Need Your Support"
+   }
+}

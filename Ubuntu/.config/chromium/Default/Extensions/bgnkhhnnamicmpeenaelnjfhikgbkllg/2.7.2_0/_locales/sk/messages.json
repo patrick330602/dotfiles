@@ -1,0 +1,698 @@
+{
+   "abp_subscribe_confirm_enable": {
+      "message": "Adguard: chcete povoliť odoberanie $1?"
+   },
+   "abp_subscribe_confirm_import": {
+      "message": "Adguard: chcete importovať pravidlá z $1 do Vášho filtra?"
+   },
+   "abp_subscribe_confirm_import_finished_text": {
+      "message": "Adguard ukončil import pravidiel do používateľského filtra. Počet importovaných pravidiel: $1"
+   },
+   "abp_subscribe_confirm_import_finished_title": {
+      "message": "Import bol úspešne ukončený"
+   },
+   "adguard_product_mac": {
+      "message": "Adguard pre Mac"
+   },
+   "adguard_product_windows": {
+      "message": "Adguard pre Windows"
+   },
+   "alert_popup_filter_enabled_text": {
+      "message": "«$1» bol aktivovaný automaticky"
+   },
+   "alert_popup_filter_enabled_title": {
+      "message": "Automatická aktivácia filtrov"
+   },
+   "assistant_another_element": {
+      "message": "Vybrať iný prvok"
+   },
+   "assistant_apply_rule_to_all_sites": {
+      "message": "Aplikovať toto pravidlo na&nbsp;každú stránku"
+   },
+   "assistant_block": {
+      "message": "Blokovať"
+   },
+   "assistant_block_by_reference": {
+      "message": "Blokovať prvok podľa&nbsp;URL"
+   },
+   "assistant_block_element": {
+      "message": "Blokovať prvok"
+   },
+   "assistant_block_element_explain": {
+      "message": "Nastavenie pravidla blokovania prvku"
+   },
+   "assistant_block_similar": {
+      "message": "Blokovať podobné prvky"
+   },
+   "assistant_extended_settings": {
+      "message": "Pokročilé nastavenia..."
+   },
+   "assistant_preview": {
+      "message": "Náhľad"
+   },
+   "assistant_preview_end": {
+      "message": "Ukončiť náhľad"
+   },
+   "assistant_preview_header": {
+      "message": "Blokovaný prvok - náhľad"
+   },
+   "assistant_preview_header_info": {
+      "message": "Blokovaný prvok - náhľad"
+   },
+   "assistant_preview_start": {
+      "message": "Náhľad"
+   },
+   "assistant_select_element": {
+      "message": "Výberový mód"
+   },
+   "assistant_select_element_cancel": {
+      "message": "Zrušiť"
+   },
+   "assistant_select_element_ext": {
+      "message": "Kliknite na&nbsp;ľubovoľný prvok&nbsp;stránky"
+   },
+   "assistant_slider_explain": {
+      "message": "Použiť posuvný ukazovateľ na zmenu veľkosti prvku, ktorý má byť blokovaný podľa tohto pravidla:"
+   },
+   "assistant_slider_if_hide": {
+      "message": "Filter bude obsahovať pravidlo, ktoré blokuje zvolené prvky"
+   },
+   "assistant_slider_max": {
+      "message": "VÄČŠÍ"
+   },
+   "assistant_slider_min": {
+      "message": "MENŠÍ"
+   },
+   "context_abuse_site": {
+      "message": "Podať sťažnosť na túto stránku..."
+   },
+   "context_ads_has_been_removed": {
+      "message": "Reklamy boli z tejto stránky odstránené"
+   },
+   "context_ads_has_been_removed_by_adguard": {
+      "message": "Chránené pomocou $1"
+   },
+   "context_antibanner": {
+      "message": "Blokovač reklamy"
+   },
+   "context_block_site_ads": {
+      "message": "Blokovať reklamy na tejto stránke..."
+   },
+   "context_block_site_element": {
+      "message": "Blokovanie prvku..."
+   },
+   "context_block_site_image": {
+      "message": "Adguard: Blokovanie obrázku..."
+   },
+   "context_disable_protection": {
+      "message": "Pozastaviť ochranu Adguard"
+   },
+   "context_enable_protection": {
+      "message": "Opätovne povoliť ochranu Adguard"
+   },
+   "context_general_settings": {
+      "message": "Všeobecné nastavenia"
+   },
+   "context_miscellaneous_settings": {
+      "message": "Rôzne"
+   },
+   "context_open_log": {
+      "message": "Denník filtrácie..."
+   },
+   "context_open_settings": {
+      "message": "Nastavenia Adguard..."
+   },
+   "context_safebrowsing": {
+      "message": "Bezpečnosť prehliadania"
+   },
+   "context_security_report": {
+      "message": "Otvoriť bezpečnostnú správu o stránke..."
+   },
+   "context_site_exception": {
+      "message": "Táto stránka má výnimku"
+   },
+   "context_site_filtering_disabled": {
+      "message": "Adguard nemôže pracovať na tejto doméne"
+   },
+   "context_site_filtering_off": {
+      "message": "Zablokovať filtráciu na tejto stránke"
+   },
+   "context_site_filtering_on": {
+      "message": "Povoliť filtráciu na tejto stránke"
+   },
+   "context_site_protection_disabled": {
+      "message": "Ochrana Adguard je pozastavená"
+   },
+   "context_update_antibanner_filters": {
+      "message": "Skontrolovať aktualizácie filtrov"
+   },
+   "context_userfilter": {
+      "message": "Používateľský filter"
+   },
+   "context_whitelist": {
+      "message": "Biela listina"
+   },
+   "description": {
+      "message": "Jedinečné rozšírenie blokovania reklamy a vyskakujúcich okien. Blokuje reklamy na Facebook, YouTube a všetkých ďalších stránkach."
+   },
+   "description_blocked": {
+      "message": "Blokovaných reklám na tejto stránke: $1"
+   },
+   "filter_download_ads_malware": {
+      "message": "90% vírusov a škodlivého softvéru sa distribuuje\u003Cbr/>cez bezohľadné reklamné siete."
+   },
+   "filter_download_do_you_know": {
+      "message": "Vedeli ste?"
+   },
+   "filter_download_loading": {
+      "message": "Počkajte prosím pokým sa zavedie databáza filtrov..."
+   },
+   "filter_download_rules": {
+      "message": "Každý týždeň pridávame priemerne viac ako 100 nových filtračných pravidiel."
+   },
+   "filter_download_sb_sites": {
+      "message": "Adguard databáza podvodných a škodlivých stránok\u003Cbr/>obsahuje viac ako milión záznamov."
+   },
+   "filter_download_title": {
+      "message": "Zavádza sa databáza filtrov..."
+   },
+   "filtering_clear_tab_events": {
+      "message": "Vymazať"
+   },
+   "filtering_log_in_whitelist": {
+      "message": "Stránka je na bielej listine"
+   },
+   "filtering_log_search_string": {
+      "message": "Vložiť hľadaný reťazec"
+   },
+   "filtering_log_tab": {
+      "message": "Tabuľka:"
+   },
+   "filtering_log_title": {
+      "message": "Denník filtrácie"
+   },
+   "filtering_modal_add_rule": {
+      "message": "Pridať pravidlo"
+   },
+   "filtering_modal_add_title": {
+      "message": "Pridávanie pravidla"
+   },
+   "filtering_modal_apply_domains": {
+      "message": "Použiť pravidlo na všetky stránky"
+   },
+   "filtering_modal_block": {
+      "message": "Blokovať"
+   },
+   "filtering_modal_exception_title": {
+      "message": "Pridať výnimku"
+   },
+   "filtering_modal_filter": {
+      "message": "Filter:"
+   },
+   "filtering_modal_important": {
+      "message": "Dať vyššiu prioritu pravidlu"
+   },
+   "filtering_modal_info_title": {
+      "message": "Podrobnosti požiadavky"
+   },
+   "filtering_modal_match_case": {
+      "message": "Zvážte tento prípad"
+   },
+   "filtering_modal_open_in_new_tab": {
+      "message": "Otvoriť v novej tabuľke"
+   },
+   "filtering_modal_options": {
+      "message": "Voľby"
+   },
+   "filtering_modal_patterns": {
+      "message": "Vzorce"
+   },
+   "filtering_modal_remove_user": {
+      "message": "Odstrániť z používateľských filtrov"
+   },
+   "filtering_modal_remove_whitelist": {
+      "message": "Odstrániť z bielej listiny"
+   },
+   "filtering_modal_rule": {
+      "message": "Pravidlo:"
+   },
+   "filtering_modal_rule_text": {
+      "message": "Text pravidla"
+   },
+   "filtering_modal_source": {
+      "message": "Zdroj:"
+   },
+   "filtering_modal_third_party": {
+      "message": "Použiť len na požiadavky tretích strán"
+   },
+   "filtering_modal_type": {
+      "message": "Typ:"
+   },
+   "filtering_modal_unblock": {
+      "message": "Odblokovať"
+   },
+   "filtering_refresh_tab": {
+      "message": "Obnoviť"
+   },
+   "filtering_table_empty_row": {
+      "message": "Denník pre túto stránku je prázdny. \u003Ca href='#' class='reloadTab'>Obnoviť stránku\u003C/a> pre zobrazenie denníka."
+   },
+   "filtering_table_rule": {
+      "message": "Filtračné pravidlo"
+   },
+   "filtering_table_source": {
+      "message": "Zdroj"
+   },
+   "filtering_table_type": {
+      "message": "Typ"
+   },
+   "filtering_type_all": {
+      "message": "Všetko"
+   },
+   "name": {
+      "message": "Adguard blokovač reklamy"
+   },
+   "options_allow_acceptable_ads": {
+      "message": "Povoliť akceptovateľné reklamy\u003Ca target='_blank' href='https://kb.adguard.com/general/search-ads-and-self-promotion?utm_source=extension&aid=16593' class='sp-table-row-info'>Viac informácií\u003C/a>"
+   },
+   "options_antibanner": {
+      "message": "Blokovač&nbsp;reklamy"
+   },
+   "options_antibanner_info": {
+      "message": "Počet filtrovacích kritérií: $1"
+   },
+   "options_antibanner_list_empty": {
+      "message": "Zoznam filtrov je prázdny. \u003Ca class='spl-user-descr-link editAntiBannerFilters' href='#'>Pridať nový filter\u003C/a>?"
+   },
+   "options_blog": {
+      "message": "Adguard blog"
+   },
+   "options_blog_link": {
+      "message": "https://adguard.com/en/blog/?utm_source=extension&aid=16593"
+   },
+   "options_collect_hit_stats": {
+      "message": "Poslať štatistiku o využití filtrov\u003Ca target='_blank' href='https://adguard.com/filter-rules-statistics.html?utm_source=extension&aid=16593' class='sp-table-row-info'>Pozrite si viac o téme\u003C/a>"
+   },
+   "options_content_blocker_overlimit": {
+      "message": "Je povolených príliš veľa filtrov. Safari môže spracovať maximálne 50 000 kritérií."
+   },
+   "options_do_you_like": {
+      "message": "Páči sa Vám Adguard?"
+   },
+   "options_download_adguard": {
+      "message": "Stiahnuť plnú verziu"
+   },
+   "options_edit_antibanner_filters": {
+      "message": "Všetky filtre"
+   },
+   "options_enable_autodetect_filter": {
+      "message": "Aktivovať najvhodnejšie filtre automaticky"
+   },
+   "options_feedback": {
+      "message": "Kontaktujte nás"
+   },
+   "options_filter_version": {
+      "message": "Verzia $1. Posledná aktualizácia: $2 o $3."
+   },
+   "options_footer_like_us": {
+      "message": "Ohodnoťte&nbsp;ho!"
+   },
+   "options_forum": {
+      "message": "Adguard fórum"
+   },
+   "options_general_settings": {
+      "message": "Všeobecné nastavenia"
+   },
+   "options_like_us": {
+      "message": "Páči sa Vám Adguard? Ohodnoťte&nbsp;ho!"
+   },
+   "options_miscellaneous_settings": {
+      "message": "Rôzne"
+   },
+   "options_modal_cancel": {
+      "message": "Zrušiť"
+   },
+   "options_modal_edit": {
+      "message": "Zoznam filtrov"
+   },
+   "options_modal_homepage": {
+      "message": "Domovská stránka"
+   },
+   "options_modal_save": {
+      "message": "Uložiť zmeny"
+   },
+   "options_open_changelog": {
+      "message": "Zoznam zmien"
+   },
+   "options_open_log": {
+      "message": "Denník filtrácie..."
+   },
+   "options_popup_update_error": {
+      "message": "Zlyhanie pri preberaní aktualizácií. Skúste prosím zopakovať neskôr."
+   },
+   "options_popup_update_not_found": {
+      "message": "Neboli nájdené žiadne aktualizácie"
+   },
+   "options_popup_update_title": {
+      "message": "Filtre boli úspešne aktualizované"
+   },
+   "options_popup_update_updated": {
+      "message": "\"$1\" bol aktualizovaný na verziu $2"
+   },
+   "options_reset_stats": {
+      "message": "Vynulovať štatistiku"
+   },
+   "options_reset_stats_done": {
+      "message": "Štatistika bola vynulovaná"
+   },
+   "options_safebrowsing": {
+      "message": "Bezpečnosť prehliadania"
+   },
+   "options_safebrowsing_enabled": {
+      "message": "Ochrana proti podvodným a škodlivým stránkam\u003Ca target='_blank' href='https://adguard.com/how-malware-blocked.html?utm_source=extension&aid=16593' class='sp-table-row-info'>Pozrite si viac o téme\u003C/a>"
+   },
+   "options_safebrowsing_help": {
+      "message": "Pomôžte nám s vývojom filtrov pre bezpečné prehliadanie\u003Cspan class='sp-table-row-info'>Posielajte anonymné informácie týkajúce sa bezpečnosti\u003C/span>"
+   },
+   "options_searchlist_empty": {
+      "message": "Nič sa nenašlo"
+   },
+   "options_settings": {
+      "message": "Nastavenia Adguard"
+   },
+   "options_show_adguard_full_version": {
+      "message": "Zobraziť informáciu o&nbsp;plnej verzii Adguard"
+   },
+   "options_show_blocked_ads_count": {
+      "message": "Zobrazovať počet&nbsp;blokovaných reklám na&nbsp;rozšírenej ikone Adguard"
+   },
+   "options_show_context_menu": {
+      "message": "Pridať položku Adguard do kontextovej ponuky prehliadača"
+   },
+   "options_site": {
+      "message": "Oficiálna domovská stránka"
+   },
+   "options_too_many_filters_selected": {
+      "message": "Pre odoberanie ste zvolili príliš veľa filtrov, čo môže spôsobiť značné spomalenie prehliadania internetových stránok."
+   },
+   "options_update_antibanner_filters": {
+      "message": "Skontrolovať aktualizácie filtrov"
+   },
+   "options_use_optimized_filters": {
+      "message": "Použite optimalizované filtre\u003Cspan class='sp-table-row-info'>Jednoduché zoznamy filtrov optimalizované pre mobilné zariadenia\u003C/span>"
+   },
+   "options_userfilter": {
+      "message": "Používateľský filter"
+   },
+   "options_userfilter_add_rule": {
+      "message": "Pridať nové pravidlo"
+   },
+   "options_userfilter_clear": {
+      "message": "Vymazať"
+   },
+   "options_userfilter_clear_confirm": {
+      "message": "Vymazanie používateľského filtra odstráni všetky jeho pravidlá. Naozaj chcete vymazať používateľský filter?"
+   },
+   "options_userfilter_description": {
+      "message": "K tomuto filtru môžete pridať Vaše vlastné pravidlá. Táto voľba je odporúčaná len pre skúsených používateľov so znalosťou HTML/CSS. Pozrite si \u003Ca class='spl-user-descr-link' href='https://adguard.com/filterrules.html?utm_source=extension&aid=16593' target='_blank'>príručku filtračných pravidiel\u003C/a> pre získanie informácií o tom, ako písať vlastné filtračné pravidlá."
+   },
+   "options_userfilter_export": {
+      "message": "Export"
+   },
+   "options_userfilter_import": {
+      "message": "Import"
+   },
+   "options_userfilter_search": {
+      "message": "Vyhľadávať v&nbsp;používateľskom filtri"
+   },
+   "options_userfilter_search_placeholder": {
+      "message": "Vložiť hľadaný reťazec"
+   },
+   "options_userlist_empty": {
+      "message": "Používateľský filter je prázdny. \u003Ca class='spl-user-descr-link addUserFilter' href='#'>Pridať nové filtračné pravidlo\u003C/a>?"
+   },
+   "options_whitelist": {
+      "message": "Biela listina"
+   },
+   "options_whitelist_add_domain": {
+      "message": "Pridať internetovú stránku"
+   },
+   "options_whitelist_description": {
+      "message": "Adguard nefiltruje internetové stránky z bielej listiny."
+   },
+   "options_whitelist_empty": {
+      "message": "Biely zoznam je prázdny. \u003Ca class='spl-user-descr-link addWhiteListFilter' href='#'>Pridať nejakú internetovú stránku\u003C/a> do bielej listiny?"
+   },
+   "options_whitelist_inverse": {
+      "message": "Invertovať bielu listinu\u003Cspan class='sp-table-row-info'>Odblokovať reklamy všade \u003Ci>okrem\u003C/i> bielej listiny\u003C/span>"
+   },
+   "options_whitelist_search": {
+      "message": "Vyhľadávať v bielej listine"
+   },
+   "options_whitelist_search_placeholder": {
+      "message": "Vložiť hľadaný reťazec"
+   },
+   "options_whitelistfilter_clear_confirm": {
+      "message": "Vymazanie bielej listiny odstráni všetky pravidlá. Naozaj chcete vymazať bielu listinu?"
+   },
+   "popup_abuse_problem": {
+      "message": "Poslať sťažnosť"
+   },
+   "popup_abuse_site": {
+      "message": "Podať&nbsp;sťažnosť na&nbsp;túto stránku"
+   },
+   "popup_adguard_android": {
+      "message": "Adguard pre Android"
+   },
+   "popup_adguard_footer_integration": {
+      "message": "Adguard \u003Ca href='http://adguard.com/adguard-adblock-browser-extension/integration-mode.html#integration-mode' class='openLink' target='_blank'>integrálny mód\u003C/a> je aktívny"
+   },
+   "popup_adguard_ios": {
+      "message": "Adguard pre iOS"
+   },
+   "popup_adguard_mac": {
+      "message": "Adguard pre Mac"
+   },
+   "popup_adguard_other_os": {
+      "message": "Iné verzie Adguard:"
+   },
+   "popup_adguard_windows": {
+      "message": "Adguard pre Windows"
+   },
+   "popup_ads_has_been_removed": {
+      "message": "Reklamy boli z tejto stránky odstránené"
+   },
+   "popup_ads_has_been_removed_by_adguard": {
+      "message": "Chránené pomocou $1"
+   },
+   "popup_block_site_ads": {
+      "message": "Blokovať reklamy na tejto stránke"
+   },
+   "popup_block_site_ads_android": {
+      "message": "Blokovať reklamu na stránke"
+   },
+   "popup_disable_protection": {
+      "message": "Pozastaviť ochranu Adguard"
+   },
+   "popup_enable_protection": {
+      "message": "Opätovne povoliť ochranu Adguard"
+   },
+   "popup_feedback_cancel": {
+      "message": "Zrušiť"
+   },
+   "popup_feedback_comment": {
+      "message": "Komentár"
+   },
+   "popup_feedback_empty_option": {
+      "message": "Zvoľte dôvod sťažnosti"
+   },
+   "popup_feedback_malware_option": {
+      "message": "Podozrenie na podvod"
+   },
+   "popup_feedback_miss_ads_option": {
+      "message": "Reklama&nbsp;bola preskočená"
+   },
+   "popup_feedback_option_is_empty": {
+      "message": "Musíte zvoliť&nbsp;dôvod Vašej žiadosti!"
+   },
+   "popup_feedback_other_option": {
+      "message": "Iné"
+   },
+   "popup_feedback_send": {
+      "message": "Podať&nbsp;sťažnosť"
+   },
+   "popup_feedback_wrong_block_option": {
+      "message": "Zobrazenie stránky je nečitateľné"
+   },
+   "popup_filtering_log_icon_title": {
+      "message": "Otvára sa denník filtrácie"
+   },
+   "popup_in_white_list_android": {
+      "message": "Na bielej listine"
+   },
+   "popup_open_log_android": {
+      "message": "Denník filtrácie"
+   },
+   "popup_open_settings": {
+      "message": "Nastavenia Adguard"
+   },
+   "popup_security_report": {
+      "message": "Bezpečnostná správa o stránke"
+   },
+   "popup_security_report_android": {
+      "message": "Bezpečnostná správa"
+   },
+   "popup_site_exception": {
+      "message": "Táto stránka&nbsp;má&nbsp;výnimku"
+   },
+   "popup_site_exception_info": {
+      "message": "Filtrácia je&nbsp;blokovaná, pretože&nbsp;môže interferovať s prácou stránky."
+   },
+   "popup_site_filtering_disabled": {
+      "message": "Adguard nemôže pracovať na&nbsp;tejto doméne"
+   },
+   "popup_site_filtering_state": {
+      "message": "Ochrana na tejto stránke"
+   },
+   "popup_site_protection_disabled": {
+      "message": "Ochrana Adguard je pozastavená"
+   },
+   "popup_site_protection_disabled_android": {
+      "message": "Ochrana je pozastavená"
+   },
+   "popup_tab_blocked": {
+      "message": "Blokovaných: $1"
+   },
+   "popup_tab_blocked_all": {
+      "message": "Celkovo: $1"
+   },
+   "popup_what_wrong_site": {
+      "message": "Čo je&nbsp;problematické na tejto stránke?"
+   },
+   "release_notes_title": {
+      "message": "Rozšírenie Adguard bolo aktualizované!"
+   },
+   "release_notes_whats_new": {
+      "message": "Čo je nové v tejto verzii?"
+   },
+   "sb_adguard_blocked": {
+      "message": "Adguard zablokoval prístup k&nbsp;tejto stránke"
+   },
+   "sb_go_back": {
+      "message": "Vrátiť sa"
+   },
+   "sb_goto_site": {
+      "message": "Aj tak spracovať"
+   },
+   "sb_main_title": {
+      "message": "Varovanie! Môže byť&nbsp;nebezpečné!"
+   },
+   "sb_malware_description": {
+      "message": "Adguard zistil, že na Váš počítač môže byť&nbsp;nainštalovaný škodlivý softvér, ak&nbsp;budete pokračovať. Ak&nbsp;ste túto stránku navštívili v&nbsp;minulosti alebo&nbsp;jej dôverujete, &nbsp;pravdepodobne&nbsp;bola&nbsp;len nedávno kompromitovaná&nbsp;nejakým&nbsp;hackerom. Odporúčame&nbsp;Vám&nbsp;nepokračovať alebo&nbsp;skúsiť znova neskôr."
+   },
+   "sb_malware_site": {
+      "message": "Táto stránka bola na&nbsp;\u003Cstrong>$1\u003C/strong> nahlásená ako&nbsp;škodlivá&nbsp;a bola zablokovaná na&nbsp;základe Vašich bezpečnostných preferencií."
+   },
+   "sb_more_actions": {
+      "message": "Pokročilé"
+   },
+   "sb_phishing_description": {
+      "message": "Adguard zistil, že táto stránka môže byť&nbsp;nejakým&nbsp;podvrhom alebo&nbsp;imitáciou&nbsp;inej stránky, čo je&nbsp;trik používaný k tomu, aby používateľ poskytol svoje osobné alebo&nbsp;finančné informácie. Zadanie ľubovoľných osobných informácií na&nbsp;tejto stránke môže viesť k&nbsp;odcudzeniu Vašej identity alebo&nbsp;inému zneužitiu."
+   },
+   "sb_phishing_site": {
+      "message": "Táto stránka bola na&nbsp;\u003Cstrong>$1\u003C/strong> nahlásená ako&nbsp;podvodná&nbsp;a bola zablokovaná na&nbsp;základe Vašich bezpečnostných preferencií."
+   },
+   "sb_site_report": {
+      "message": "Viac informácií"
+   },
+   "sb_title": {
+      "message": "Varovanie! Môže byť&nbsp;nebezpečné!"
+   },
+   "short_name": {
+      "message": "Adguard blokovač reklamy"
+   },
+   "thankyou_compare_any_browser": {
+      "message": "Blokuje reklamu na všetkých prehliadačoch"
+   },
+   "thankyou_compare_blocked": {
+      "message": "Blokovanie reklamy"
+   },
+   "thankyou_compare_ext_blocking": {
+      "message": "Obmedzené vzhľadom na schopnosti rozšírenia prehliadača"
+   },
+   "thankyou_compare_ext_title": {
+      "message": "Rozšírenie Adguard"
+   },
+   "thankyou_compare_full_blocking": {
+      "message": "Úplná"
+   },
+   "thankyou_compare_full_title": {
+      "message": "Adguard pre Windows"
+   },
+   "thankyou_compare_full_title_mac": {
+      "message": "Adguard pre Mac"
+   },
+   "thankyou_compare_increase": {
+      "message": "Skracuje čas načítania stránok"
+   },
+   "thankyou_compare_parent": {
+      "message": "Rodičovská kontrola"
+   },
+   "thankyou_compare_safebrowsing": {
+      "message": "Ochrana proti podvodným a škodlivým stránkam."
+   },
+   "thankyou_compare_safebrowsing_attack": {
+      "message": "Ochrana proti útokom podvodníkov"
+   },
+   "thankyou_compare_support": {
+      "message": "Technická podpora"
+   },
+   "thankyou_compare_traffic": {
+      "message": "Šetrí internetovú komunikáciu"
+   },
+   "thankyou_download": {
+      "message": "Stiahnuť Adguard"
+   },
+   "thankyou_enjoy": {
+      "message": "Vychutnávajte si široký výber stránok bez dotieravej reklamy a počítadiel, ktoré sledujú každý Váš pohyb a množstvo hrozieb, ako napr. vírusy alebo podvody, ktoré len čakajú na to, aby Vás okradli."
+   },
+   "thankyou_help_in_development": {
+      "message": "Zúčastniť sa vývoja filtrov Adguard"
+   },
+   "thankyou_help_in_development_description": {
+      "message": "Zaslať anonymnú štatistiku o práci filtrov Adguard a stránkach, ktoré Adguard identifikuje ako podozrivé. \u003Cspan class='warn-message'>Neodporúča sa na pomalých počítačoch.\u003C/span>"
+   },
+   "thankyou_installed": {
+      "message": "INŠTALOVANÉ"
+   },
+   "thankyou_setup_filter": {
+      "message": "Prispôsobte Vaše filtračné voľby"
+   },
+   "thankyou_setup_safebrowsing_description": {
+      "message": "Modul bezpečného prehliadania Vás ochraňuje pred podvodnými a škodlivými stránkami. Tento modul používa \u003Ca target='blank' href='http://adguard.com/how-malware-blocked.html'>špeciálnu službu\u003C/a> pre kontrolu stránok, ktoré navštevujete."
+   },
+   "thankyou_setup_safebrowsing_title": {
+      "message": "Ochrana proti podvodným a škodlivým stránkam."
+   },
+   "thankyou_title": {
+      "message": "Ďakujem za inštaláciu Adguard!"
+   },
+   "thankyou_tracking_social_filter_description": {
+      "message": "Adguard môže zo stránok odstrániť prvky sociálnych sietí. Napr. tlačidlo \"Like\", ktoré sleduje Vaše akcie."
+   },
+   "thankyou_tracking_social_filter_title": {
+      "message": "Filter prvkov sociálnych sietí"
+   },
+   "thankyou_tracking_spyware_filter_description": {
+      "message": "Stovky internetových firiem špehujú Vašu aktivitu. Pomocou Adguard sa môžete pred takýmto špehovaním ľahko ochrániť."
+   },
+   "thankyou_tracking_spyware_filter_title": {
+      "message": "Filter pre všetky známe počítadlá a analytické systémy."
+   },
+   "thankyou_want_full_protection": {
+      "message": "Chcete vyskúšať úplnú ochranu? Stiahnite si Adguard pre Windows!"
+   },
+   "thankyou_want_full_protection_mac": {
+      "message": "Chcete vyskúšať úplnú ochranu? Stiahnite si Adguard pre Mac!"
+   }
+}

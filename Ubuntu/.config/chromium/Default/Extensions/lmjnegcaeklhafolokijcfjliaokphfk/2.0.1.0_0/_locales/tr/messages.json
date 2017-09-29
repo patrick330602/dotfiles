@@ -1,0 +1,1736 @@
+{
+   "Bytes": {
+      "message": "%s Byte"
+   },
+   "KB": {
+      "message": "%s KB"
+   },
+   "MB": {
+      "message": "%s MB"
+   },
+   "aborted": {
+      "message": "Durduruldu"
+   },
+   "about": {
+      "message": "Hakkında"
+   },
+   "about_alpha_intro": {
+      "message": "Bu bir alfa sürümü."
+   },
+   "about_beta_intro": {
+      "message": "Bu bir beta sürümü."
+   },
+   "about_conversion_support": {
+      "message": "Kayıtlı bir kullanıcıysanız ve medya dosyalarını dönüştürmede ya da lisansınızla ilgili yardıma gereksinim duyuyorsanız, lütfen lisansınızı aldığınızda size verilen e-posta adresine mesaj gönderin."
+   },
+   "about_go_howto": {
+      "message": "Eklentiyi nasıl kullanırsınız"
+   },
+   "about_go_support": {
+      "message": "Destek sayfasına gidin"
+   },
+   "about_help": {
+      "message": "Video DownloadHelper kullanımında yardıma gereksinim duyuyorsanız aşağıdaki bağlantıyı işaretleyin."
+   },
+   "about_qr": {
+      "message": "Üretilen dosya"
+   },
+   "about_support": {
+      "message": "Video DownloadHelper kullanımında desteğe gereksinim duyuyorsanız aşağıdaki bağlantıyı işaretleyin."
+   },
+   "about_vdh": {
+      "message": "Video DownloadHelper hakkında"
+   },
+   "action_abort_description": {
+      "message": "Süren eylemi durdurun"
+   },
+   "action_abort_title": {
+      "message": "Durdur"
+   },
+   "action_as_default": {
+      "message": "Bu eylemi varsayılan olarak kullanın"
+   },
+   "action_avplay_description": {
+      "message": "Videoyu dönüştürücünün bildik göstericisiyle oynat"
+   },
+   "action_avplay_title": {
+      "message": "Oynat"
+   },
+   "action_blacklist_description": {
+      "message": "Bu kaynaktaki sayımlar eklentiyi etkinleştirmiyor"
+   },
+   "action_blacklist_title": {
+      "message": "Kara listeye ekle"
+   },
+   "action_cannot_abort": {
+      "message": "Eylen durdurulamaz"
+   },
+   "action_convert_description": {
+      "message": "Zaten indirilmiş dosyayı dönüştür"
+   },
+   "action_convert_title": {
+      "message": "Yerel dosyayı dönüştür"
+   },
+   "action_copyurl_description": {
+      "message": "Medya URL'sini panoya kopyala"
+   },
+   "action_copyurl_title": {
+      "message": "URL'yi kopyala"
+   },
+   "action_deletehit_description": {
+      "message": "Sayımı güncel listeden sil"
+   },
+   "action_deletehit_title": {
+      "message": "Sil"
+   },
+   "action_details_description": {
+      "message": "Sayımla ilgili ayrıntıları göster"
+   },
+   "action_details_title": {
+      "message": "Ayrıntılar"
+   },
+   "action_download_description": {
+      "message": "Dosyayı sabit diskinize indirin"
+   },
+   "action_download_title": {
+      "message": "İndir"
+   },
+   "action_downloadconvert_description": {
+      "message": "Medyayı indir ve diğer formata dönüştür"
+   },
+   "action_downloadconvert_title": {
+      "message": "İndir ve Dönüştür"
+   },
+   "action_maskeddownload_description": {
+      "message": "Videoyu şifreli dosyaya indir"
+   },
+   "action_maskeddownload_title": {
+      "message": "Maskeli indirme"
+   },
+   "action_noyt_description": {
+      "message": "YouTube'dan video yakalarken"
+   },
+   "action_noyt_title": {
+      "message": "YouTube uyarısı"
+   },
+   "action_openlocalcontainer_description": {
+      "message": "Yerel medya dosyasını içeren klasörü aç"
+   },
+   "action_openlocalcontainer_title": {
+      "message": "Klasörü aç"
+   },
+   "action_openlocalfile_description": {
+      "message": "Yerel medya dosyasını aç"
+   },
+   "action_openlocalfile_title": {
+      "message": "Medyayı aç"
+   },
+   "action_pin_description": {
+      "message": "Sayımı kalıcı yap"
+   },
+   "action_pin_title": {
+      "message": "Sabitle"
+   },
+   "action_quickdownload_description": {
+      "message": "Hedef sorulmadan indir"
+   },
+   "action_quickdownload_title": {
+      "message": "Hızlı indir"
+   },
+   "action_record_description": {
+      "message": "Akış kaydını başlat"
+   },
+   "action_record_title": {
+      "message": "Kaydet"
+   },
+   "action_scraprecord_description": {
+      "message": "Ekrandan kaydetmeye başla"
+   },
+   "action_scraprecord_title": {
+      "message": "Kaydet"
+   },
+   "action_scrapsnapshot_description": {
+      "message": "Uygulamacığın fotoğrafını çek"
+   },
+   "action_scrapsnapshot_title": {
+      "message": "Şipşak foto çek"
+   },
+   "action_scrapstoprecord_description": {
+      "message": "Ekrandan kaydetmeyi durdur"
+   },
+   "action_scrapstoprecord_title": {
+      "message": "Kaydı durdur"
+   },
+   "action_social_description": {
+      "message": "Medyayı sosyal ağlarda paylaş"
+   },
+   "action_social_title": {
+      "message": "Sosyal paylaşım"
+   },
+   "action_stoprecord_description": {
+      "message": "Akış kaydını durdur"
+   },
+   "action_stoprecord_title": {
+      "message": "Kaydı Durdur"
+   },
+   "action_stream_no_capture_description": {
+      "message": "Özel video akışlarını kaydetme hakkında"
+   },
+   "action_stream_no_capture_title": {
+      "message": "Kaydetme uyarısı"
+   },
+   "actions": {
+      "message": "Eylemler"
+   },
+   "adaptative": {
+      "message": "Uyarlamalı %s"
+   },
+   "add_to_blacklist": {
+      "message": "Karalisteye ekle"
+   },
+   "add_to_blacklist_help": {
+      "message": "Seçili alanadlarından servis edilen ya da gelen vidyolar yok sayılacak"
+   },
+   "adp_hide": {
+      "message": "İndirilecekler listesinde ADP değişkelerini gösterme"
+   },
+   "adp_variants": {
+      "message": "Uyarlamalı değişke"
+   },
+   "advanced": {
+      "message": "İleri"
+   },
+   "aggregating___": {
+      "message": "Kümeleme..."
+   },
+   "all_actions": {
+      "message": "Tüm eylemler"
+   },
+   "analyze_page": {
+      "message": "Sayfayı incele"
+   },
+   "any_domain": {
+      "message": "herhangi bir alanadı"
+   },
+   "any_format": {
+      "message": "herhangi bir format"
+   },
+   "appearance": {
+      "message": "Görünüm"
+   },
+   "audio_only": {
+      "message": "Yalnızca ses"
+   },
+   "auto_pin_description": {
+      "message": "İndirdikten sonra sayımı sabitle."
+   },
+   "auto_pin_title": {
+      "message": "Otomatik Sabitle"
+   },
+   "avplay_converter_required": {
+      "message": "Bu eylem videoyu dönüştürücünün bildik göstericisiyle oynatır ancak bir dönüştürücü bulunamadı"
+   },
+   "avplay_enabled": {
+      "message": "Oynatıcı etkinleştirildi"
+   },
+   "avplay_player_missing_text": {
+      "message": "Dönüştürücü kurulmuş gözüküyor ancak ilgili video oynatıcı bulunamadı. Dönüştürücüyü yeniden kurmak isteyebilirsiniz."
+   },
+   "avplay_player_missing_title": {
+      "message": "Oynatıcı eksik"
+   },
+   "back": {
+      "message": "Geri"
+   },
+   "behavior": {
+      "message": "Davranış"
+   },
+   "blacklist": {
+      "message": "Kara liste"
+   },
+   "blacklist_domains": {
+      "message": "Kara listedeki alanadları"
+   },
+   "blacklist_enable_description": {
+      "message": "Bazı sitelerin medya tanımlamasını etkinleştirmesini engelle."
+   },
+   "blacklist_enable_title": {
+      "message": "Kara listesyi etkinleştir"
+   },
+   "blacklist_selected": {
+      "message": "Kara liste seçildi"
+   },
+   "cancel": {
+      "message": "Vazgeç"
+   },
+   "capture_gallery": {
+      "message": "Yakalama galerisi"
+   },
+   "change_storage_directory": {
+      "message": "Saklama klasörünü değiştir"
+   },
+   "checking_converter___": {
+      "message": "Dönüştürücü denetleniyor ..."
+   },
+   "checking_converter_license___": {
+      "message": "Dönüştürme lisansı denetleniyor ..."
+   },
+   "chrome_ignore_yt": {
+      "message": "YouTube videolarını artık algılama"
+   },
+   "chrome_ignore_yt2": {
+      "message": "YouTube videoları yoksay"
+   },
+   "chrome_install_firefox": {
+      "message": "Firefox kur"
+   },
+   "chrome_install_fx_vdh": {
+      "message": "Firefox için Video DownloadHelper"
+   },
+   "chrome_noyt_text": {
+      "message": "Ne yazık ki Chrome Web Store, eklentilerin YouTube videolarını indirmesine izin vermiyor. Bu yüzden bu özelliği kaldırmak zorunda kaldık."
+   },
+   "chrome_noyt_text2": {
+      "message": "Video DownloadHelper'ın Firefox sürümünü kullanarak YouTube videolarını indirebilirsiniz."
+   },
+   "chrome_stream_no_capture": {
+      "message": "Ne yazık ki bu ağ gezgini, bu tür vido akışını indirmek için gerekli API'leri sağlamıyor."
+   },
+   "chrome_stream_no_capture2": {
+      "message": "Firefox'taki Video DownloadHelper'ı kullanmayı düşünebilirsiniz."
+   },
+   "chrome_stream_no_capture_hide": {
+      "message": "Kaydedilemeyecek akışları gösterme"
+   },
+   "chrome_stream_no_capture_title": {
+      "message": "Akış kaydedilemedi"
+   },
+   "chrome_warning_yt": {
+      "message": "Chrome eklentileri ve YouTube ile ilgili uyarı"
+   },
+   "chunk_about_to_be_saved": {
+      "message": "Medya yığını '%s' kaydedilip şuna dönüştürülmek üzere:"
+   },
+   "chunk_assemble_and_convert": {
+      "message": "Birleştir ve dönüştür"
+   },
+   "chunk_assemble_native": {
+      "message": "Birleştirirken dönüştürücü kullanma"
+   },
+   "chunk_assemble_native_warn": {
+      "message": "Hedef dosya, yığınların peş peşe birleştirilmesiyle oluşturulacak. Unutmayın ki son ürün, sisteminizde düzgün oynatılamayabilir."
+   },
+   "chunk_assemble_only": {
+      "message": "Yalnızca birleştir"
+   },
+   "chunk_converter_assemble": {
+      "message": "Üretilecek dosyanın dönüştürücüyle birlikte birleştirilmesini istediniz."
+   },
+   "chunk_converter_assemble_convert": {
+      "message": "Üretilecek dosyanın dönüştürücüyle birlikte birleştirildikten sonra dönüştürülmesini istediniz."
+   },
+   "chunk_converter_convert": {
+      "message": "Üretilecek dosyanın dönüştürülmesini istediniz."
+   },
+   "chunk_initial_period": {
+      "message": "İlk öbek süre dönemi (saniye)"
+   },
+   "chunk_missing_conv_native_assemble_only": {
+      "message": "Ancak sisteminizde hiç dönüştürücü bulunamadı. Dosya, yığınların peş peşe eklenmesiyle üretilecektir."
+   },
+   "chunk_period_factor": {
+      "message": "Zaman aşımı süre değeri (%)"
+   },
+   "chunk_save": {
+      "message": "Yığın medya kaydediliyor"
+   },
+   "chunk_target": {
+      "message": "\"%s\" klasörüne"
+   },
+   "chunks_concurrent_downloads": {
+      "message": "Eşzamanlı indirilenler yığını"
+   },
+   "chunks_enabled": {
+      "message": "Yığınlı akış etkin"
+   },
+   "chunks_prefetch_count": {
+      "message": "Önden indirilecek yığın sayısı"
+   },
+   "chunks_title": {
+      "message": "Yığınlı akış"
+   },
+   "clear_hits": {
+      "message": "Sayımları temizle"
+   },
+   "clear_logs": {
+      "message": "Sistem günlüğünü temizle"
+   },
+   "cmenu_mode": {
+      "message": "İçerik menüsü kipi"
+   },
+   "cmenu_mode_all": {
+      "message": "Tüm eylemleri göster"
+   },
+   "cmenu_mode_both": {
+      "message": "Hem hızlı hem de tüm eylemler"
+   },
+   "cmenu_mode_none": {
+      "message": "Hiçbirini gösterme"
+   },
+   "cmenu_mode_quick": {
+      "message": "Varsayılan eylemi başlat"
+   },
+   "companion_default_op": {
+      "message": "Arkadaş için varsayılan eylem"
+   },
+   "companion_enable": {
+      "message": "Arkadaş tuşunu etkinleştir"
+   },
+   "config_conversion_rules": {
+      "message": "Dönüştürme kurallarını yapılandır"
+   },
+   "congratulations": {
+      "message": "Tebrikler!"
+   },
+   "context_menu": {
+      "message": "İçerik menüsünü kullan"
+   },
+   "continue": {
+      "message": "Devam"
+   },
+   "convconf_2passes": {
+      "message": "2 geçiş"
+   },
+   "convconf_ac": {
+      "message": "Ses kanalları"
+   },
+   "convconf_acnone": {
+      "message": "Yok"
+   },
+   "convconf_acodec": {
+      "message": "Ses kodlayıcı"
+   },
+   "convconf_aspect": {
+      "message": "En-boy oranı"
+   },
+   "convconf_audiobitrate": {
+      "message": "Ses bit-hızı"
+   },
+   "convconf_audiofreq": {
+      "message": "Ses frekansı"
+   },
+   "convconf_audioonly": {
+      "message": "Yalnızca ses"
+   },
+   "convconf_bitrate": {
+      "message": "Bit-hızı"
+   },
+   "convconf_container": {
+      "message": "Biçim"
+   },
+   "convconf_duplicate": {
+      "message": "Çoğalt"
+   },
+   "convconf_ext": {
+      "message": "Çıktı dosyası uzantısı"
+   },
+   "convconf_extra": {
+      "message": "Ek öğeler"
+   },
+   "convconf_level": {
+      "message": "Düzey"
+   },
+   "convconf_mono": {
+      "message": "Mono"
+   },
+   "convconf_new": {
+      "message": "Yeni"
+   },
+   "convconf_preset": {
+      "message": "Önayarlı"
+   },
+   "convconf_profilev": {
+      "message": "Video profili"
+   },
+   "convconf_rate": {
+      "message": "Kare hızı"
+   },
+   "convconf_readonly": {
+      "message": "Bu varsayılan yapılandırma salt-okunur. Kopyalarak düzenleme yapın."
+   },
+   "convconf_remove": {
+      "message": "Çıkart"
+   },
+   "convconf_reset": {
+      "message": "Tümünü sıfırla"
+   },
+   "convconf_reset_confirm": {
+      "message": "Bu özel yapılandırmalarınızın hepsini kaldıracak"
+   },
+   "convconf_size": {
+      "message": "Kare boyu"
+   },
+   "convconf_size_help": {
+      "message": "\u003Cen>x\u003Cboy>"
+   },
+   "convconf_stereo": {
+      "message": "Stereo"
+   },
+   "convconf_target": {
+      "message": "Hedef"
+   },
+   "convconf_target_help": {
+      "message": "Yapılandırma önayarları"
+   },
+   "convconf_tune": {
+      "message": "Ayarla"
+   },
+   "convconf_vcodec": {
+      "message": "Video kodlayıcı"
+   },
+   "convconf_videobitrate": {
+      "message": "Vidyo bit-hızı"
+   },
+   "conversion": {
+      "message": "Dönüştürme"
+   },
+   "conversion_output": {
+      "message": "Çıkış"
+   },
+   "conversion_outputs": {
+      "message": "Dönüştürme çıktıları"
+   },
+   "conversion_rule": {
+      "message": "Kural"
+   },
+   "conversion_rules": {
+      "message": "Kurallar"
+   },
+   "convert": {
+      "message": "Dönüştür"
+   },
+   "convert_format_from_domain": {
+      "message": "%1s'i, %2s'den %3s'e dönüştür"
+   },
+   "convert_local_files": {
+      "message": "Yerel dosyaları dönüştür"
+   },
+   "converter": {
+      "message": "Dönüştürücü"
+   },
+   "converter_edit_output": {
+      "message": "Çıktıyı düzenle"
+   },
+   "converter_failed_execution": {
+      "message": "Dönüştürücü yürütmesi başarısız"
+   },
+   "converter_installed": {
+      "message": "Dönüştürücü kuruldu"
+   },
+   "converter_license": {
+      "message": "Dönüştürücü lisansı"
+   },
+   "converter_license_blocked": {
+      "message": "Lisansınız engellendi"
+   },
+   "converter_license_locked": {
+      "message": "Lisansınız yeniden doğrulanmalı"
+   },
+   "converter_license_locked_mail": {
+      "message": "\"%s\"e bir e-posta gönderildi. İçinde lisans kilidini açmak için gidilecek bir bağlantı var. Bağlantıya gittikten sonra yeniden doğrulama isteyebilirsiniz. Bu e-postayı almadıysanız lütfen spam kutunuza bakın."
+   },
+   "converter_license_ready": {
+      "message": "Kayıtlı dönüştürücü lisansı"
+   },
+   "converter_missing": {
+      "message": "Dönüştürücü eksik"
+   },
+   "converter_needed": {
+      "message": "Bu işlem için sisteminizde bir dönüştürücü kurulmalı."
+   },
+   "converter_needed_aggregate": {
+      "message": "Video ve ses akışını kümelendirme işlemi için sisteminizde bir dönüştürücü kurulmalı."
+   },
+   "converter_needed_aggregate_why": {
+      "message": "Neden bir dönüştürücü gerekli?"
+   },
+   "converter_needed_local": {
+      "message": "Yerel medya dosyasını dönüştürmek için sisteminizde bir dönüştürücü kurulmalı."
+   },
+   "converter_needs_reg": {
+      "message": "Kayıtlı olmak gerekir"
+   },
+   "converter_not_available": {
+      "message": "Dönüştürücü yok"
+   },
+   "converter_not_installed": {
+      "message": "Dönüştürücü kurulu değil"
+   },
+   "converter_path": {
+      "message": "Dönüştürücü yolu"
+   },
+   "converter_reg_audio": {
+      "message": "Açıkça ya da otomatik dönüştürücü kuralıyla yalnızca ses medya dosyası üretilmesini istediniz. Bunun için kayıtlı bir dönüştürücü gerekir."
+   },
+   "converter_requested_unavail": {
+      "message": "Bu işlem için dönüştürücü gerekiyor ancak dönüştürücü yok."
+   },
+   "converter_required": {
+      "message": "Dönüştürücü gerekiyor"
+   },
+   "converter_threads": {
+      "message": "Dönüştürme dizileri"
+   },
+   "converter_tune_h264": {
+      "message": "Birleştirirken H264 depolamasını zorla"
+   },
+   "converter_update_version": {
+      "message": "Dönüştürücüyü %s sürümüne güncelle"
+   },
+   "converting___": {
+      "message": "Dönüştürüyor..."
+   },
+   "copy_of": {
+      "message": "%s'nin kopyası"
+   },
+   "copy_to_clipboard": {
+      "message": "Panoya kopyala"
+   },
+   "could_not_download": {
+      "message": "\"%s\" indirilemedi"
+   },
+   "cphelper_addon": {
+      "message": "CouponsHelper Addon"
+   },
+   "cphelper_description": {
+      "message": "The right coupon at the right time: do not miss discounts when shopping online ..."
+   },
+   "custom_output": {
+      "message": "Özel çıktı biçimi"
+   },
+   "dash_enabled": {
+      "message": "DASH etkin"
+   },
+   "dash_hide_m4s": {
+      "message": "İndirilenler listesinde .m4s girişlerini gösterme"
+   },
+   "dash_streaming": {
+      "message": "DASH akışı"
+   },
+   "define_vdh_smartname": {
+      "message": "DownloadHelper akıllı adlandırması"
+   },
+   "defining_smartname": {
+      "message": "Akıllı adlandırma tanımlaması"
+   },
+   "defining_smartname_help": {
+      "message": "Videonun bulunduğu sayfadan video adı üretilmesi özelliği. Seçili metin çok harfliyse sayfadaki başlık harflarında birkaçını seçmeyi deneyin."
+   },
+   "details_parenthesis": {
+      "message": "(Ayrıntılar)"
+   },
+   "detect_extensions": {
+      "message": "Uzantıları algıla"
+   },
+   "display_mode_compact": {
+      "message": "Sıkı"
+   },
+   "display_mode_label": {
+      "message": "Ana panel görünümü"
+   },
+   "display_mode_mozilla": {
+      "message": "Mozilla"
+   },
+   "display_mode_normal": {
+      "message": "Normal"
+   },
+   "dlconv_and_saved_to": {
+      "message": "ve \"%s\"e kaydedildi"
+   },
+   "dlconv_back": {
+      "message": "Geri"
+   },
+   "dlconv_change_directory": {
+      "message": "Çıktı klasörünü değiştir"
+   },
+   "dlconv_convert": {
+      "message": "Dönüştür"
+   },
+   "dlconv_download_and_convert": {
+      "message": "İndir ve Dönüştür"
+   },
+   "dlconv_download_only": {
+      "message": "Yalnızca indir"
+   },
+   "dlconv_n_will_be_converted": {
+      "message": "%s dosya buna dönüştürülecek:"
+   },
+   "dlconv_output_details": {
+      "message": "Çıktı ayrıntılarını ayarla"
+   },
+   "dlconv_rename": {
+      "message": "Dosyayı yeniden adlandırmak için sor"
+   },
+   "dlconv_will_be_converted": {
+      "message": "\"%s\" buna dönüştürülecek:"
+   },
+   "do_no_convert_format_from_domain": {
+      "message": "%1s'i %2s'e dönüştürme"
+   },
+   "domain": {
+      "message": "Alanadı"
+   },
+   "donate": {
+      "message": "Bağış yap"
+   },
+   "donate_vdh": {
+      "message": "Video DownloadHelper'a yardım et"
+   },
+   "download_canceled": {
+      "message": "İndirme iptal edildi."
+   },
+   "download_controlled_max_description": {
+      "message": "Ağ-genişliğini korumak için eklentinin ürettiği aynı anda çalışan indirme işlemlerinin sayısını denetler."
+   },
+   "download_controlled_max_title": {
+      "message": "İndirme üst sınırı"
+   },
+   "download_controlled_max_title2": {
+      "message": "Aynı anda indirme üst sınırı"
+   },
+   "download_retries": {
+      "message": "İndirme denemelerinin sayısı"
+   },
+   "download_retry_delay": {
+      "message": "İndirme denemeleri arasındaki gecikme (ms)"
+   },
+   "download_selected_link": {
+      "message": "Seçili medya bağlantısını indir"
+   },
+   "download_selected_links": {
+      "message": "Seçili medya bağlantılarını indir"
+   },
+   "downloaded_as": {
+      "message": "%s olarak indirildi"
+   },
+   "downloading___": {
+      "message": "İndiriliyor..."
+   },
+   "downloads_hook_headers": {
+      "message": "İndirme başlıklarına takıl"
+   },
+   "empty_downloaded_file": {
+      "message": "\"%s\" için indirilen dosya boş. Medya korunuyor olabilir."
+   },
+   "error_cannot_create_target_directory": {
+      "message": "Hedef klasörü %s yaratılamadı. Lütfen yer ve izinlerin uygunuluğunu denetleyin"
+   },
+   "error_cannot_create_target_file": {
+      "message": "\"%s\" hedef dosyası üretilemedi. Lütfen, yer ve izin uygunluğunu denetleyin"
+   },
+   "error_nohome": {
+      "message": "Ana klasör yok"
+   },
+   "errors": {
+      "message": "Hatalar"
+   },
+   "explain_qr1": {
+      "message": "Üretilen videonun köşesinde filigran içerdiğine dikkat edin."
+   },
+   "explain_qr2": {
+      "message": "Bir ADP değişkesi seçtiyseniz ya da dönüştürme özelliği kayıtsızsa bu gözlenir."
+   },
+   "extension": {
+      "message": "Uzantı"
+   },
+   "f4f_enabled": {
+      "message": "F4F etkinleştirildi"
+   },
+   "f4f_prefetch": {
+      "message": "F4F için parçaları önden al"
+   },
+   "f4f_streaming": {
+      "message": "F4F akışı"
+   },
+   "failed_aggregating": {
+      "message": "\"%s\"nin kümelenmesi başarısız"
+   },
+   "failed_assembling": {
+      "message": "Birleştirme başarısız"
+   },
+   "failed_conversion": {
+      "message": "Dönüştürme başarısız"
+   },
+   "failed_converting": {
+      "message": "\"%s\" dönüştürmesi başarısız"
+   },
+   "failed_getting_info": {
+      "message": "\"%s\"den bilgi toplanması başarısız"
+   },
+   "file_ext_change": {
+      "message": "Dosya uzantısı değişti"
+   },
+   "file_ext_change_text": {
+      "message": "Dosyanın uzantısını \".%1s\"den \".%2s\"e değiştirdiniz. Bu dosyanın oynatılmasında sorun yaratabilir."
+   },
+   "file_generated": {
+      "message": "\"%s\" dosyası üretildi."
+   },
+   "file_not_exists": {
+      "message": "\"%s\" dosyası yok"
+   },
+   "file_not_readable": {
+      "message": "\"%s\" dosyası okunamıyor"
+   },
+   "file_ready": {
+      "message": "\"%s\" şimdi hazır"
+   },
+   "files_to_convert": {
+      "message": "Dönüştürülecek dosyalar"
+   },
+   "finalizing___": {
+      "message": "Bitiriliyor..."
+   },
+   "flv_streaming": {
+      "message": "FLV akışı"
+   },
+   "force_default_storage_directory": {
+      "message": "%2s: varsayılan saklama klasörünü \"%2s\" yap"
+   },
+   "from_domain": {
+      "message": "%s'den"
+   },
+   "gallery": {
+      "message": "Galeri"
+   },
+   "gallery_auto_detect": {
+      "message": "Oto-algıla"
+   },
+   "gallery_auto_detect_warning": {
+      "message": "Galeri oto-algılaması, ağ-gezgininin performansında ters etkiye neden olabilir"
+   },
+   "gallery_capture": {
+      "message": "Galeri yakalama"
+   },
+   "gallery_capture_images": {
+      "message": "Gömülü görüntüleri algıla"
+   },
+   "gallery_capture_links": {
+      "message": "Medya bağlantılarını algıla"
+   },
+   "gallery_files_types": {
+      "message": "%s dosya"
+   },
+   "gallery_from_domain": {
+      "message": "%s adresindeki galeri"
+   },
+   "gallery_index_prefix": {
+      "message": "Dosya adlarına sıralı önek dizini ekle"
+   },
+   "gallery_links": {
+      "message": "Galeri bağlantıları"
+   },
+   "gallery_links_from_domain": {
+      "message": "%s adresindeki bağlantılar"
+   },
+   "gallery_max_hits": {
+      "message": "Sayılacak en çok bağlantı"
+   },
+   "gallery_min_hits": {
+      "message": "Her galeri için en az bağlantı"
+   },
+   "gallery_min_img_size": {
+      "message": "En düşük görüntü boyu"
+   },
+   "general": {
+      "message": "Genel"
+   },
+   "get_conversion_license": {
+      "message": "Dönüştürücü lisansı al"
+   },
+   "get_converter_license": {
+      "message": "Lisans al"
+   },
+   "get_converter_license_key": {
+      "message": "Lisans anahtarı al"
+   },
+   "help_vdh": {
+      "message": "Video DownloadHelper'a yardım et"
+   },
+   "hit_details": {
+      "message": "Sayım Ayrıntıları"
+   },
+   "hit_go_to_tab": {
+      "message": "Sekmeye git"
+   },
+   "hits_animation_description": {
+      "message": "Listelerde değiştiğinde sayımları hareketli yap"
+   },
+   "hits_animation_title": {
+      "message": "Sayım hareketlendirmesi"
+   },
+   "hits_goto_tab": {
+      "message": "Sekmeye Git uygulamasını göster"
+   },
+   "hls_download_as_m2ts": {
+      "message": "HLS akışını M2TS olarak indir"
+   },
+   "hls_enabled": {
+      "message": "HLS etkin"
+   },
+   "hls_streaming": {
+      "message": "HLS akışı"
+   },
+   "hotkey_clear_hits": {
+      "message": "Sayımları temizle"
+   },
+   "hotkey_convert_local": {
+      "message": "Yerl dosyaları dönüştür"
+   },
+   "hotkey_default": {
+      "message": "Varsayılan eylem"
+   },
+   "hotkey_detect_gallery": {
+      "message": "Galerileri algıla"
+   },
+   "hotkey_open_companion": {
+      "message": "Arkadaş menüsünü aç"
+   },
+   "hotkey_supported_sites": {
+      "message": "Desteklenen siteler"
+   },
+   "hotkey_toggle_scrap": {
+      "message": "Ekran yakalamayı değiştir"
+   },
+   "hotkeys": {
+      "message": "Kısa yol tuşları"
+   },
+   "icon_activation_description": {
+      "message": "Araç çubuğu simgesinin etkinleştirme zamanı."
+   },
+   "icon_activation_mode_anytab": {
+      "message": "Herhangi bir sekmeden sayım"
+   },
+   "icon_activation_mode_currenttab": {
+      "message": "Güncel sekmeden sayım"
+   },
+   "icon_activation_title": {
+      "message": "Simge etkinleştirmesi"
+   },
+   "icon_animation_description": {
+      "message": "Bazı sayımlar etkinken simgeler hareketlensin mi."
+   },
+   "icon_animation_title": {
+      "message": "Simge hareketlendirmesi"
+   },
+   "icon_badge_activetab": {
+      "message": "Etkin sekmeden medya"
+   },
+   "icon_badge_anytab": {
+      "message": "Herhangi bir sekmeden medya"
+   },
+   "icon_badge_description": {
+      "message": "Araç çubuğu simge kimliği gösterimi."
+   },
+   "icon_badge_error_description": {
+      "message": "Araç çubuğu kimlik gösterimi hataları; öncelikle varsa."
+   },
+   "icon_badge_error_title": {
+      "message": "Kimlik hata gösterimi"
+   },
+   "icon_badge_mixed": {
+      "message": "Karışık"
+   },
+   "icon_badge_none": {
+      "message": "Yok"
+   },
+   "icon_badge_pinned": {
+      "message": "Sabitlenmiş sayımlar"
+   },
+   "icon_badge_tasks": {
+      "message": "Çalışan görevler"
+   },
+   "icon_badge_title": {
+      "message": "Simge kimliği"
+   },
+   "icon_dropdown_description": {
+      "message": "Aşağı üçgen simgesini göster"
+   },
+   "icon_dropdown_title": {
+      "message": "Aşağı gösteren simge"
+   },
+   "ignore_embedded": {
+      "message": "Gömülü videoları yoksay"
+   },
+   "ignore_protected": {
+      "message": "Korunmuş değişikleri yok say"
+   },
+   "in_current_tab": {
+      "message": "Güncel sekmede"
+   },
+   "in_other_tab": {
+      "message": "Diğer sekmelerde"
+   },
+   "install_converter": {
+      "message": "Dönüştürücü kur"
+   },
+   "jocly_addon": {
+      "message": "Jocly Firefox Eklentisi"
+   },
+   "jocly_description": {
+      "message": "Bilgisayara karşı ya da çevrimiçi, üç boyutlu ve video görüşmeli rakiplerle, yüzden fazla HTML5 kutu oyunu..."
+   },
+   "licence_text1": {
+      "message": "Dönüştürücünü kayıt etmek için bir kaç iyi gerekçe:"
+   },
+   "licence_text2": {
+      "message": "Dönüştürücü lisansı tarih sınırsız ve bir kereliğinedir. Ücretsiz destek ise lisans alındıktan sonra bir yıllıktır."
+   },
+   "license_key": {
+      "message": "Lisans anahtarı"
+   },
+   "license_point1": {
+      "message": "Dönüştürülen/Kümelenen videolar filigran içermez"
+   },
+   "license_point2": {
+      "message": "Videoları doğrudan mp3 ses dosyalarına dönüştürebileceksiniz"
+   },
+   "license_point3": {
+      "message": "Dönüştürücü özelliği için desteğe erişeceksiniz"
+   },
+   "license_point4": {
+      "message": "Video DownloadHelper'ı ayakta tutacaksınız"
+   },
+   "links_list": {
+      "message": "Bağlantı listesi"
+   },
+   "locale_credits": {
+      "message": "Türkçe çeviri %s"
+   },
+   "locale_credits_translators": {
+      "message": "alfapegasi"
+   },
+   "locale_credits_urls": {
+      "message": "!"
+   },
+   "log_details": {
+      "message": "Log ayrıntıları"
+   },
+   "logs": {
+      "message": "Loglar"
+   },
+   "make_donation": {
+      "message": "Bağış yap"
+   },
+   "masked_change_password": {
+      "message": "Şifreyi değiştir"
+   },
+   "masked_close": {
+      "message": "Kapat"
+   },
+   "masked_default_password": {
+      "message": "Varsayılan şifreyle maskeli indirme"
+   },
+   "masked_enabled": {
+      "message": "Maskeli indirme etkinleştirildi"
+   },
+   "masked_info_descr1": {
+      "message": "Maskeli indirme eylemi indirilenlerin bilgisayarınızda şifreli saklanmasını garanti eder."
+   },
+   "masked_info_descr2": {
+      "message": "Üretilen şifreli dosyalarla nasıl çalışacağını anlamak için Ayrıntı tuşuna basın."
+   },
+   "masked_info_title": {
+      "message": "Maskeli İndirme"
+   },
+   "masked_more": {
+      "message": "Ayrıntı"
+   },
+   "masked_save_password": {
+      "message": "Şifreyi sakla"
+   },
+   "max_hits_per_source": {
+      "message": "Aynı kaynaktan gelenler için üst sınır"
+   },
+   "max_panel_width_description": {
+      "message": "Eklentinin her bir panel genişliği için üst sınır"
+   },
+   "max_panel_width_title": {
+      "message": "Panel genişliği üst sınırı"
+   },
+   "media": {
+      "message": "Medya"
+   },
+   "mediaweight_min_size_description": {
+      "message": "Bundan küçüm sayımları yok say."
+   },
+   "mediaweight_min_size_title": {
+      "message": "En küçük boyut"
+   },
+   "mediaweight_min_size_title2": {
+      "message": "Bu boyuttan küçük sayımları yok say"
+   },
+   "mediaweight_threshold_description": {
+      "message": "Bu boyuttan büyük medya algılamasını zorla."
+   },
+   "mediaweight_threshold_title": {
+      "message": "Boyut eşiği"
+   },
+   "mediaweight_threshold_title2": {
+      "message": "Bu boyuttan büyüklerin algılanmasını zorla."
+   },
+   "min_panel_width_description": {
+      "message": "Eklentinin her bir panel genişliği için alt sınır"
+   },
+   "min_panel_width_title": {
+      "message": "Panel genişliği alt sınırı"
+   },
+   "more___": {
+      "message": "Daha fazlası..."
+   },
+   "mp2t_streaming": {
+      "message": "MP2T akışı"
+   },
+   "mp2t_title": {
+      "message": "MP2T akışı"
+   },
+   "mpegts_hide_ts": {
+      "message": "İndirilenler listesinde .ts girişlerini gösterme"
+   },
+   "network_filter_out_description": {
+      "message": "Bazı medya URL'lerini yok saymak için kurallı ifade"
+   },
+   "network_filter_out_title": {
+      "message": "Ağ süzgeci"
+   },
+   "network_probe_description": {
+      "message": "Sayımları algılamak için ağ trafiğini tara."
+   },
+   "network_probe_title": {
+      "message": "Ağ sondası"
+   },
+   "new_rule": {
+      "message": "Yeni kural"
+   },
+   "no_download_to_abort": {
+      "message": "İptal edilecek indirme yok"
+   },
+   "no_license_to_check": {
+      "message": "Denetlenecek lisans yok"
+   },
+   "no_media_current_tab": {
+      "message": "Güncel sekmede işlenecek medya yok"
+   },
+   "no_media_to_process": {
+      "message": "İşlenecek medya yok"
+   },
+   "no_media_to_process_descr": {
+      "message": "Dosyaları bulmak için video'da oynata tıklayın..."
+   },
+   "no_private_notification": {
+      "message": "Özel sayımlar için uyarı verilmez"
+   },
+   "not_again_3months": {
+      "message": "Beni bununla 3 aylığına bir daha uğraştırma"
+   },
+   "not_implemented_yet": {
+      "message": "Henüz uygulamada değil"
+   },
+   "not_see_again": {
+      "message": "Bu mesajı bir daha gösterme"
+   },
+   "notify_ready": {
+      "message": "İşlendiğinde bildir"
+   },
+   "number_type": {
+      "message": "%1s %2s"
+   },
+   "operations": {
+      "message": "İşlemler"
+   },
+   "options": {
+      "message": "Seçenekler"
+   },
+   "order_by_video_quality": {
+      "message": "Video kalitesiyle ısmarla"
+   },
+   "organize_videos": {
+      "message": "Videoları düzenle"
+   },
+   "orphan": {
+      "message": "Yetim"
+   },
+   "orphan_expiration_description": {
+      "message": "Yetim sayımları kaldırmadan önceki zaman aşımı."
+   },
+   "orphan_expiration_title": {
+      "message": "Yetim sonlanma zaman aşımı"
+   },
+   "orphan_expiration_title2": {
+      "message": "Yetim sonlanma zaman aşımı (saniye)"
+   },
+   "other_products": {
+      "message": "Aynı geliştiricilerden"
+   },
+   "output": {
+      "message": "Çıktı"
+   },
+   "panels_astab_settings": {
+      "message": "Ayarları sekmede aç"
+   },
+   "panels_astab_sites": {
+      "message": "Sitleri sekmede aç"
+   },
+   "pinned": {
+      "message": "Sabitlendi"
+   },
+   "prompt_select_storage_dir": {
+      "message": "Saklama klasörünü seç"
+   },
+   "prompt_target_dir": {
+      "message": "Hedef klasör"
+   },
+   "purchase_license": {
+      "message": "Dönüştürücü lisansı satın al"
+   },
+   "qualities_max_description": {
+      "message": "Aynı video için gösterilecek en çok değişke"
+   },
+   "qualities_max_title": {
+      "message": "Değişke üst sınırı"
+   },
+   "quality_medium": {
+      "message": "Ortam"
+   },
+   "quality_small": {
+      "message": "Düşük"
+   },
+   "queued___": {
+      "message": "Sırada..."
+   },
+   "recheck_converter": {
+      "message": "Dönüştürücüye yeniden bak"
+   },
+   "register_converter": {
+      "message": "Dönüştürücüyü kaydet"
+   },
+   "register_existing_license": {
+      "message": "Var olan lisansı kaydet"
+   },
+   "registered_email": {
+      "message": "E-posta"
+   },
+   "registered_key": {
+      "message": "Anahtar"
+   },
+   "registered_name": {
+      "message": "Ad"
+   },
+   "req_donate": {
+      "message": "Geliştirmeyi desteklemeyi ve biraz bağış yapmayı düşünür müsün?"
+   },
+   "req_review": {
+      "message": "Seçenek olarak, Mozilla eklenti sitesinde güzel bir yorum yazmak ister misiniz?"
+   },
+   "req_review_link": {
+      "message": "Video DownloadHelper hakkında yorum yazar mısınız"
+   },
+   "reset_converter_rules": {
+      "message": "Kuralları sıfırla"
+   },
+   "reset_variants": {
+      "message": "Değişkenleri sıfırla"
+   },
+   "revalidate_license": {
+      "message": "Lisansı yeniden doğrula"
+   },
+   "rule_converter_unavail": {
+      "message": "\"%s\" için otomatik dönüştürücü uygulanacak. Ancak sisteminizde hiç uygun dönüştürücü yok. Medya dönüştürülemiyor."
+   },
+   "running": {
+      "message": "Çalışıyor"
+   },
+   "safe_mode": {
+      "message": "Güvenli kip"
+   },
+   "safe_mode_confirm": {
+      "message": "Evet, güvenli kipi gerçekten etkinleştirmek istiyorum"
+   },
+   "safe_mode_confirm_description": {
+      "message": "Güvenli kipten çıkış olmadığını anladığınızdan emin olmak zorundayız."
+   },
+   "safe_mode_description": {
+      "message": "Güvenli kipini etkinleştirdiğinizde tüm ailenizin görmemesi gereken birşeyi Video DownloadHelper ağ sayfası (ve yalnızca bu sayfa!) göstermeyeceğinden emin olursunuz."
+   },
+   "safe_mode_description2": {
+      "message": "Güvenli kipi ayarlamak kesindir ve bu kipten çıkmak için başka bir yol yoktur."
+   },
+   "safe_mode_set": {
+      "message": "Güvenli kipini ayarla"
+   },
+   "save": {
+      "message": "Kaydet"
+   },
+   "save_transient_storagedirectory": {
+      "message": "Kalıcı kaydet"
+   },
+   "scrap_8x8_align": {
+      "message": "8x8 sıralama"
+   },
+   "scrap_8x8_align_cut": {
+      "message": "Kes"
+   },
+   "scrap_8x8_align_extend": {
+      "message": "Genişlet"
+   },
+   "scrap_applet_selector": {
+      "message": "Uygulamacık seçici"
+   },
+   "scrap_applet_start_not_see_again": {
+      "message": "Uygulamacık yakalama başlangıcında bu mesajı gösterme"
+   },
+   "scrap_auto_detect": {
+      "message": "Otomatik uygulamacık algılama"
+   },
+   "scrap_auto_detect_warning": {
+      "message": "Otomatik uygulamacık algılaması ağ gezgini performansını ters etkileyebilir"
+   },
+   "scrap_capture_statistics": {
+      "message": "Yakalama istatistikleri"
+   },
+   "scrap_change_target": {
+      "message": "Hedef dosyayı değiştir"
+   },
+   "scrap_convert": {
+      "message": "Ekran yakalama videosunu dönüştür"
+   },
+   "scrap_converter_required": {
+      "message": "Video üretilebilmesi için ekran yakalamanın dönüştürücü gereksinimi var."
+   },
+   "scrap_description": {
+      "message": "Tüm ağ gezgini penceresinde olan herşeyden bir video üret."
+   },
+   "scrap_description2": {
+      "message": "Bilgisayarın çok yavaşsa bazı kareleri kaçıracaksınız. Ya ağ gezgini pencere boyunu ya da kare hızını azaltmayı deneyin."
+   },
+   "scrap_description3": {
+      "message": "Hiç ses yakalanmayacak. Resimlerin güncellenmesi için sekmeyi sürekli etkin bırakın."
+   },
+   "scrap_description4": {
+      "message": "Ağ gezgini penceresindeki bir bölgede olan herşeyden bir video üret."
+   },
+   "scrap_description5": {
+      "message": "Bilgisayarın çok yavaşsa bazı kareleri kaçıracaksınız. Kare hızını azaltmayı deneyin."
+   },
+   "scrap_do_not_display_start_panel": {
+      "message": "Yakalama başladığında paneli gösterme"
+   },
+   "scrap_enabled": {
+      "message": "Ekran yakalamayı etkinleştir"
+   },
+   "scrap_error": {
+      "message": "Ekran yakalama hatası"
+   },
+   "scrap_file_saved_as": {
+      "message": "Yakalanan video %s olarak kaydedilecek"
+   },
+   "scrap_min_applet_size": {
+      "message": "En düşük uygulamacık sayılma boyu"
+   },
+   "scrap_mouse_always": {
+      "message": "Her zaman"
+   },
+   "scrap_mouse_halo_color": {
+      "message": "Hale rengi"
+   },
+   "scrap_mouse_halo_radius": {
+      "message": "Hale yarıçapı"
+   },
+   "scrap_mouse_halo_transparency": {
+      "message": "Hale geçirgenliği (%)"
+   },
+   "scrap_mouse_metakey": {
+      "message": "SHIFT basıldığında"
+   },
+   "scrap_mouse_never": {
+      "message": "Hiçbir zaman"
+   },
+   "scrap_mouse_not_metakey": {
+      "message": "SHIFT basılmadığında"
+   },
+   "scrap_mouse_pointer_size": {
+      "message": "İşaret boyu"
+   },
+   "scrap_mouse_title": {
+      "message": "Fare kaydetme"
+   },
+   "scrap_no_converter": {
+      "message": "Sisteminizde dönüştürücü bulunamadı. Dönüştürücü, ekran yakalama videosunu üretmek için gereklidir."
+   },
+   "scrap_open_container": {
+      "message": "İçeren klasörü aç"
+   },
+   "scrap_open_file": {
+      "message": "Video aç"
+   },
+   "scrap_port": {
+      "message": "Dönüştürücü bağlantı kapısı"
+   },
+   "scrap_rate": {
+      "message": "Yakalama hızı (kare/saniye)"
+   },
+   "scrap_screen_capture": {
+      "message": "Ekran yakalama"
+   },
+   "scrap_screen_capture_from_domain": {
+      "message": "%s ekranı yakalanıyor"
+   },
+   "scrap_start": {
+      "message": "SCRAP başlat"
+   },
+   "scrap_start_capture": {
+      "message": "Yakalamayı başlat"
+   },
+   "scrap_start_long": {
+      "message": "İzlenen oturumu yakalamaya başla"
+   },
+   "scrap_start_scrap_long": {
+      "message": "Pencere kaydetmeyi başlat"
+   },
+   "scrap_stats_captured_frames": {
+      "message": "%1s kare yakalandı, %2s atlandı, %3s kaçtı"
+   },
+   "scrap_stats_captured_size": {
+      "message": "Yakalanan kare boyu %s"
+   },
+   "scrap_stats_duration": {
+      "message": "Süre %s saniye"
+   },
+   "scrap_stats_original_size": {
+      "message": "Özgün kare boyu %s"
+   },
+   "scrap_stats_saved_frames": {
+      "message": "%1s kare kaydedildi, %2s kayboldu"
+   },
+   "scrap_stop": {
+      "message": "SCRAP durdur"
+   },
+   "scrap_stop_long": {
+      "message": "Stop capturing browsing session"
+   },
+   "scrap_stop_scrap_long": {
+      "message": "Pencere kaydetmeyi durdur"
+   },
+   "scrap_success": {
+      "message": "Ekran yakalama başarılı"
+   },
+   "scrap_successfully_saved_as": {
+      "message": "\"%s\" dosyası başarıyla kaydedildi"
+   },
+   "scrap_title": {
+      "message": "Ekran yakalama"
+   },
+   "selected_text": {
+      "message": "Seçili metin"
+   },
+   "settings": {
+      "message": "Ayarlar"
+   },
+   "settings_title": {
+      "message": "Video DownloadHelper yapılandır"
+   },
+   "shortcut_icons": {
+      "message": "Kısayol simgelerini göster"
+   },
+   "shortcut_icons_dropdown": {
+      "message": "Kısayol simgeleri ve açılırliste"
+   },
+   "show_in_toolsmenu": {
+      "message": "Araçlar menüsünde denetimleri göster"
+   },
+   "site_comments": {
+      "message": "Yorumlar"
+   },
+   "site_date": {
+      "message": "Eklendi"
+   },
+   "site_interest": {
+      "message": "İlgilendiğiniz"
+   },
+   "site_name": {
+      "message": "Site adı"
+   },
+   "site_rating": {
+      "message": "Derece"
+   },
+   "smartname_delay": {
+      "message": "Adlandırma yakalama geciktirmesi (ms)"
+   },
+   "smartname_regexp": {
+      "message": "Kurallı ifadeler"
+   },
+   "smartnamer_all_domains": {
+      "message": "Tüm alan-adları"
+   },
+   "smartnamer_by_default": {
+      "message": "Varsayılan olarak"
+   },
+   "smartnamer_enabled_description": {
+      "message": "Sayfadaki bilgiden ad türet"
+   },
+   "smartnamer_enabled_title": {
+      "message": "Akıllı adlandırmayı etkinleştir"
+   },
+   "smartnamer_fname_maxlen_description": {
+      "message": "Üretilen dosya adlarının bu uzunluğu geçmemesini sağlar."
+   },
+   "smartnamer_fname_maxlen_title": {
+      "message": "Dosya adı uzunluğu üst sınırı"
+   },
+   "smartnamer_fname_spaces_description": {
+      "message": "Dosya adlarında boşluk varsa ne yapılsın."
+   },
+   "smartnamer_fname_spaces_hyphen": {
+      "message": "Tire ile değiştir"
+   },
+   "smartnamer_fname_spaces_keep": {
+      "message": "Sakla"
+   },
+   "smartnamer_fname_spaces_remove": {
+      "message": "Kaldır"
+   },
+   "smartnamer_fname_spaces_title": {
+      "message": "Dosya adlarında boşluk"
+   },
+   "smartnamer_fname_spaces_underscore": {
+      "message": "Alt-çizgi ile değiştir"
+   },
+   "smartnamer_get_name_from_header_url": {
+      "message": "Adı, belgenin başlığından/URL'sinden getir"
+   },
+   "smartnamer_get_name_from_page_content": {
+      "message": "Adı, sayfa içeriğinden getir"
+   },
+   "smartnamer_get_name_from_page_title": {
+      "message": "Adı, sayfa başlığından getir"
+   },
+   "smartnamer_get_obfuscated_name": {
+      "message": "Gizlenmiş ad kullan"
+   },
+   "smartnamer_header_url": {
+      "message": "Başlık/URL"
+   },
+   "smartnamer_index": {
+      "message": "Güncel dizin"
+   },
+   "smartnamer_naming": {
+      "message": "Adlandırma yöntemi"
+   },
+   "smartnamer_obfuscated": {
+      "message": "Gizlenmiş"
+   },
+   "smartnamer_page_content": {
+      "message": "Sayfa içeriği"
+   },
+   "smartnamer_page_title": {
+      "message": "Sayfa başlığı"
+   },
+   "smartnames": {
+      "message": "Akıllı adlandırma"
+   },
+   "smartnames_domains": {
+      "message": "Akıllı adlandırma alanadları"
+   },
+   "storage_directory": {
+      "message": "Saklama klasörü"
+   },
+   "storage_directory_error": {
+      "message": "Saklama klasörü hatası \"%s\": varsayılan %s klasörü kullanılıyor"
+   },
+   "storage_directory_not_defined": {
+      "message": "Saklama klasörünü tanımlanmadı: varsayılan %s klasörü kullanılıyor"
+   },
+   "storage_directory_not_directory": {
+      "message": "Saklama klasörü %s klasör değil"
+   },
+   "storage_directory_not_exist": {
+      "message": "Saklama klasörü %s yok"
+   },
+   "storage_directory_not_writable": {
+      "message": "Saklama klösürü %s yazılabilir değil"
+   },
+   "storage_last_dir": {
+      "message": "Ağ gezgininin öntanımlı saklama klasörünü kullan"
+   },
+   "supported_sites": {
+      "message": "Desteklenen siteler"
+   },
+   "supported_vp9": {
+      "message": "VP9 kodlayıcı destekleniyor"
+   },
+   "tbmode_comp": {
+      "message": "Yalnızca yardımcı tuş"
+   },
+   "tbmode_label": {
+      "message": "Araç çubuğunda tuş kipi"
+   },
+   "tbmode_main": {
+      "message": "Yalnızca ana tuş"
+   },
+   "tbmode_maincomp": {
+      "message": "Ana ve yardımcı tuşlar"
+   },
+   "tbsn_enabled": {
+      "message": "Facebook yardımcısı"
+   },
+   "tbts_enabled": {
+      "message": "Twitter yardımcısı"
+   },
+   "tbvv_enabled": {
+      "message": "Vine yardımcısı"
+   },
+   "tell_me_more": {
+      "message": "Bununla ilgili daha çok bilgi ver"
+   },
+   "thumbnail_direct_gif": {
+      "message": "GIF mini resimlerini kullan"
+   },
+   "thumbnail_from_meta": {
+      "message": "Meta sayfasından video mini resimleri"
+   },
+   "thumbnail_tumblr_mp4": {
+      "message": "Tumblr yardımcısı"
+   },
+   "title_mode": {
+      "message": "Ana panoda uzun başlıklar"
+   },
+   "title_mode_ellipsis_left": {
+      "message": "Üç nokta solda"
+   },
+   "title_mode_ellipsis_right": {
+      "message": "Üç nokta sağda"
+   },
+   "title_mode_multiline": {
+      "message": "Bir kaç satıra yaygın"
+   },
+   "title_save_file": {
+      "message": "Dosyayı kaydet"
+   },
+   "top_main_panel": {
+      "message": "Ana panelin üstü"
+   },
+   "tpsr_concurrent_captures": {
+      "message": "Eşzamanlı yakalamalar"
+   },
+   "tpsr_convert": {
+      "message": "Üretilen video'ları dönüştür."
+   },
+   "tpsr_convert_format": {
+      "message": "Çıktı yapısını tanımla."
+   },
+   "tpsr_description": {
+      "message": "Twitter Periscope'dan canlı video akışları geldikçe bu yöntemle, bu akışlar yakalanır. Ses rahatsızlığı vermemesi için sesi kapatmanız iyi olur."
+   },
+   "tpsr_do_not_convert": {
+      "message": "Üretilen video'ları dönüştürme."
+   },
+   "tpsr_duration_timeout": {
+      "message": "En uzun akış yakalama süresi (saniye)"
+   },
+   "tpsr_enabled": {
+      "message": "Etkinleştirildi"
+   },
+   "tpsr_no_converter": {
+      "message": "Sisteminizde hiç dönüştürücü kurulmamış. Geçici çözüm için eklenti indirilen yığınları peş peşe ekleyecek. Ancak üretilen dosyalar doğru oynatılamayabilir."
+   },
+   "tpsr_search_help": {
+      "message": "Arama alanını boş bırakabilirsiniz. Ancak, canlı olarak, rasgele ne gelirse onu yakalarsınız."
+   },
+   "tpsr_search_periscope": {
+      "message": "Periscope'da ara"
+   },
+   "tpsr_search_terms": {
+      "message": "Terimleri Ara"
+   },
+   "tpsr_start_par": {
+      "message": "PAR'ı başlat"
+   },
+   "tpsr_start_par_long": {
+      "message": "Periscope'un otomatik-kaydet özelliğini başlat"
+   },
+   "tpsr_start_recording": {
+      "message": "Başlat"
+   },
+   "tpsr_start_timeout": {
+      "message": "Akış başlatma zaman aşımı (saniye)"
+   },
+   "tpsr_stop_par": {
+      "message": "PAR'ı durdur"
+   },
+   "tpsr_stop_par_long": {
+      "message": "Periscope'un otomatik-kaydet özelliğini durdur"
+   },
+   "tpsr_title": {
+      "message": "Periscope Otomatik-Kaydedici"
+   },
+   "transient_storagedirectory": {
+      "message": "Depolama klasörü özel bir pencerede güncellendi ve bir sonraki oturumda sıfırlanacak."
+   },
+   "ui_adp_grey": {
+      "message": "ADP değişkelerini sönükleştir"
+   },
+   "ui_adp_tag": {
+      "message": "ADS değişkelerini işaretle"
+   },
+   "undefined_output": {
+      "message": "tanımsız çıktı"
+   },
+   "unregistered": {
+      "message": "Kayıtsız"
+   },
+   "unsupported_vp9": {
+      "message": "VP9 kodlayıcı desteklenmiyor"
+   },
+   "using_browser_default": {
+      "message": "Ağ gezgininin öntanımlı değerini kullan"
+   },
+   "validate_license": {
+      "message": "Lisansı kaydet"
+   },
+   "variants": {
+      "message": "Değişkeler"
+   },
+   "vdh_notification": {
+      "message": "Video DownloadHelper"
+   },
+   "vdh_settings": {
+      "message": "Video DownloadHelper ayarları"
+   },
+   "version": {
+      "message": "Sürüm %s"
+   },
+   "video": {
+      "message": "Video"
+   },
+   "video_downloadhelper": {
+      "message": "Video DownloadHelper"
+   },
+   "video_downloadhelper_plus": {
+      "message": "Video DownloadHelper +"
+   },
+   "video_only": {
+      "message": "Yalnızca video"
+   },
+   "video_qualities": {
+      "message": "Video kalitesi"
+   },
+   "visit_site": {
+      "message": "Siteye git"
+   },
+   "xpath_expr": {
+      "message": "XPath ifadesi"
+   },
+   "you_downloaded_n_videos": {
+      "message": "Şu anda %s adedinci dosyayı Video DownloadHelper ile başarıyla indirdin."
+   }
+}

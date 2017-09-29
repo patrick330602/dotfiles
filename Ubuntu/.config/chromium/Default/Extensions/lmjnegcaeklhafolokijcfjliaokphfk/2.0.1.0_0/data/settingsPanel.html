@@ -1,0 +1,469 @@
+<html ng-app="VDH" ng-controller="VDHSettingsCtrl">
+	<head>
+		<link href="lib/bootstrap/bootstrap.min.css" type="text/css" rel="stylesheet">
+		<link href="lib/angular-csp.css" type="text/css" rel="stylesheet">
+	    <meta charset="UTF-8">
+		<link href="commonPanel.css" type="text/css" rel="stylesheet">
+		<link href="settingsPanel.css" type="text/css" rel="stylesheet">
+		<title vdh-l10n="vdh-settings"></title>
+		<script src="lib/angular.min.js"></script>
+		<script src="lib/angular-animate.min.js"></script>
+		<script src="commonPanel.js"></script>
+		<script src="settingsPanel.js"></script>
+    </head>
+	<body ng-cloak ng-show="checkSize()">
+		<div id="content">
+			<div class="vdh-panel-title" vdh-l10n="vdh-settings"></div>
+			<ul class="nav nav-tabs">
+  				<li role="presentation" 
+  					ng-class="{active:tabs.current=='home'}"
+  					ng-click="tabs.current='home'">
+  					<a data-toggle="tab"><img src="images/icon-home-64.png"/></a>
+  				</li>
+  				<li role="presentation" 
+  					ng-class="{active:tabs.current=='appearance'}"
+  					ng-click="tabs.current='appearance'">
+  					<a vdh-l10n="appearance" data-toggle="tab"></a>
+  				</li>
+  				<li role="presentation" 
+  					ng-class="{active:tabs.current=='behavior'}"
+  					ng-click="tabs.current='behavior'">
+  					<a vdh-l10n="behavior" data-toggle="tab"></a>
+  				</li>
+  				<li role="presentation">
+  					<div class="vdh-dropdown">
+  						<div>
+		  					<select class="vdh-settings-select" ng-model="tabs.dropdown">
+		  						<option value="more" vdh-l10n="more..."></option>
+		  						<option value="smartnames" vdh-l10n="smartnames"></option>  						
+		  						<option value="blacklist" vdh-l10n="blacklist"></option>  						
+		  					</select>
+		  				</div>
+  					</div>
+  				</li>
+
+			</ul>
+			<div>
+				<div ng-show="tabs.current=='home'" class="tab-pane">
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="help-vdh"></div>
+						<div><a ng-click="donation()" vdh-l10n="make-donation"></a></div>
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="other-products"></div>
+						<div ng-click="gotoCphelper()" vdh-cphelper-ad></div>
+					</div>
+				</div>
+				<div ng-show="tabs.current=='appearance'" class="tab-pane">
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="display-mode.label"></div>
+						<select ng-options="m.mode as m.text for m in displayModes" ng-model="prefs['display']"></select>
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="icon-activation_title"></div>
+						<select ng-options="m.mode as m.text for m in activationModes" ng-model="prefs['icon-activation']"></select>
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="icon-badge_title"></div>
+						<select ng-options="m.mode as m.text for m in badgeModes" ng-model="prefs['icon-badge']"></select>
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="icon-badge-error_title"></div>
+						<input type="checkbox" ng-model="prefs['icon-badge-error']"> 
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="hits-animation_title"></div>
+						<input type="checkbox" ng-model="prefs['hits-animation']"> 
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="top-main-panel"></div>
+						<select ng-options="m.mode as m.text for m in topMainModes" ng-model="prefs['main-top']"></select>
+					</div>					
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="title.mode"></div>
+						<select ng-options="m.mode as m.text for m in titleModes" ng-model="prefs['title.mode']"></select>
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="hits-goto-tab"></div>
+						<input type="checkbox" ng-model="prefs['hits-goto-tab']"> 
+					</div>
+				</div>
+				<div ng-show="tabs.current=='behavior'" class="tab-pane">
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="download.controlled.max_title2"></div>
+						<input type="number" ng-model="prefs['download.controlled.max']" style="width: 40px;"> 
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="auto-pin_title"></div>
+						<input type="checkbox" ng-model="prefs['auto-pin']"> 
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="chrome.ignore-yt2"></div>
+						<input type="checkbox" ng-model="prefs['chrome.noyt.enabled']"> 
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="notify-ready"></div>
+						<input type="checkbox" ng-model="prefs['notify-ready']"> 
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="no-private-notification"></div>
+						<input type="checkbox" ng-model="prefs['no-private-notification']"> 
+					</div>
+
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="tbsn.enabled"></div>
+						<input type="checkbox" ng-model="prefs['tbsn.enabled']">
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="tbts.enabled"></div>
+						<input type="checkbox" ng-model="prefs['tbts.enabled']">
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="tbvv.enabled"></div>
+						<input type="checkbox" ng-model="prefs['tbvv.enabled']">
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="thumbnail.tumblr-mp4"></div>
+						<input type="checkbox" ng-model="prefs['thumbnail.tumblr-mp4']">
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="thumbnail.from-meta"></div>
+						<input type="checkbox" ng-model="prefs['thumbnail.from-meta']">
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="thumbnail.direct-gif"></div>
+						<input type="checkbox" ng-model="prefs['thumbnail.direct-gif']">
+					</div>
+
+					<div ng-show="prefs['advanced-settings']">
+						<div class="vdh-settings-row">
+							<div class="vdh-settings-label" vdh-l10n="mediaweight-threshold_title2"></div>
+							<input type="number" ng-model="prefs['mediaweight-threshold']" style="width: 80px;"> 
+						</div>
+						<div class="vdh-settings-row">
+							<div class="vdh-settings-label" vdh-l10n="mediaweight-min-size_title2"></div>
+							<input type="number" ng-model="prefs['mediaweight-min-size']" style="width: 80px;"> 
+						</div>
+						<div class="vdh-settings-row">
+							<div class="vdh-settings-label" vdh-l10n="max-hits-per-source"></div>
+							<input type="number" ng-model="prefs['max-hits-per-source']" style="width: 40px;"> 
+						</div>
+						<div class="vdh-settings-row">
+							<div class="vdh-settings-label" vdh-l10n="orphan-expiration_title2"></div>
+							<input type="number" ng-model="prefs['orphan-expiration']" style="width: 40px;"> 
+						</div>
+						<div class="vdh-settings-row">
+							<div class="vdh-settings-label" vdh-l10n="network-filter-out_title"></div>
+							<input type="text" ng-model="prefs['network-filter-out']" style="width: 200px;"> 
+						</div>
+						<div class="vdh-settings-row">
+							<div class="vdh-settings-label" vdh-l10n="smartnamer.fname.maxlen_title"></div>
+							<input type="number" ng-model="prefs['smartnamer.fname.maxlen']" style="width: 40px;"> 
+						</div>
+						<div class="vdh-settings-row">
+							<div class="vdh-settings-label" vdh-l10n="smartnamer.fname.spaces_title"></div>
+							<select ng-options="m.mode as m.text for m in spacesModes" ng-model="prefs['smartnamer.fname.spaces']"></select>
+						</div>
+						<div class="vdh-settings-row">
+							<div class="vdh-settings-label" vdh-l10n="detect-extensions"></div>
+							<div vdh-list-editor="{order:false,remove:true,add:true}" ng-model="mediaExtensions" style="max-width:150px;height:120px;"></div>
+						</div>
+					</div>
+				</div>
+				<div ng-show="tabs.current=='qualities'" class="tab-pane">
+					<div class="vdh-settings-category" vdh-l10n="video-qualities"></div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="qualities-max_title"></div>
+						<input type="number" ng-model="prefs['qualities-max']" style="width: 40px;"> 						
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="ignore-protected"></div>
+						<input type="checkbox" ng-model="prefs['ignore-protected']"> 
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="ui.adp.grey"></div>
+						<input type="checkbox" ng-model="prefs['ui.adp.grey']"> 
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="ui.adp.tag"></div>
+						<input type="checkbox" ng-model="prefs['ui.adp.tag']"> 
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="variants"></div>
+						<div><a ng-click="resetVariants()" vdh-l10n="reset-variants"></a></div>
+						<div vdh-list-editor="{order:true,remove:false,enabled:'enabled',label:'label'}" ng-model="variants"></div>
+					</div>
+					<div ng-show="prefs['advanced-settings']">
+						<div class="vdh-settings-row">
+							<div class="vdh-settings-label" vdh-l10n="adp-variants"></div>
+							<div vdh-list-editor="{order:true,remove:false,label:'label'}" ng-model="adpVariants"></div>
+							<div><a ng-click="orderAdaptativeVariants()" vdh-l10n="order-by-video-quality"></a></div>
+						</div>
+					</div>
+				</div>
+				<div ng-show="tabs.current=='smartnames'" class="tab-pane">
+					<div class="vdh-settings-category" vdh-l10n="smartnames"></div>
+					<div ng-show="!currentSmartname.value">
+						<div class="vdh-settings-row">
+							<div class="vdh-settings-label" vdh-l10n="smartnamer.enabled_title"></div>
+							<input type="checkbox" ng-model="prefs['smartnamer.enabled']"> 
+						</div>
+						<div class="vdh-settings-row">
+							<div class="vdh-settings-label" vdh-l10n="smartnamer.by-default"></div>
+							<select ng-options="m.mode as m.text for m in smModes" ng-model="prefs['smartnamer.defMode']"></select>
+						</div>
+						<div class="vdh-settings-row">
+							<div class="vdh-settings-label" vdh-l10n="smartnames-domains"></div>
+							<div vdh-list-editor="{order:false,remove:true,edit:'editSmartname(list[options.selected])',label:'label',add:'addSmartname'}" 
+								ng-model="smartnames"></div>
+						</div>
+					</div>
+					<div ng-show="currentSmartname.value">
+						<div class="vdh-settings-category"></div>
+						<a ng-click="currentSmartname.value=null">
+							{{_('smartnamer.all-domains')}}</a> 
+							&gt; {{currentSmartname.value.domain}}
+						<br/>
+						<div class="vdh-settings-row">
+							<div class="vdh-settings-label" vdh-l10n="smartnamer.naming"></div>
+							<select ng-options="m.mode as m.text for m in smModes" ng-model="currentSmartname.value.mode"></select>
+						</div>
+						<div class="vdh-settings-row" ng-show="currentSmartname.value.mode=='page-content' || currentSmartname.value.mode=='page-title'">
+							<div class="vdh-settings-label" vdh-l10n="smartname-regexp"></div>
+							<input type="text" ng-model="currentSmartname.value.regexp" style="width: 120px;"> 						
+						</div>
+						<div class="vdh-settings-row" ng-show="currentSmartname.value.mode=='page-content'">
+							<div class="vdh-settings-label" vdh-l10n="xpath-expr"></div>
+							<input type="text" ng-model="currentSmartname.value.xpath" style="width: 200px;"> 						
+						</div>
+						<div class="vdh-settings-row" ng-show="currentSmartname.value.mode=='page-content' || currentSmartname.value.mode=='page-title'">
+							<div class="vdh-settings-label" vdh-l10n="smartname.delay"></div>
+							<input type="number" ng-model="currentSmartname.value.delay" style="width: 50px;"> 						
+						</div>
+					</div>
+				</div>
+				<div ng-show="tabs.current=='blacklist'" class="tab-pane">
+					<div class="vdh-settings-category" vdh-l10n="blacklist"></div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="blacklist-enable_title"></div>
+						<input type="checkbox" ng-model="prefs['blacklist-enable']"> 
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="blacklist-domains"></div>
+						<div vdh-list-editor="{order:false,remove:true,add:true}" ng-model="blacklist"></div>
+					</div>
+				</div>
+				<div ng-show="tabs.current=='gallery'" class="tab-pane">
+					<div class="vdh-settings-category" vdh-l10n="gallery-capture"></div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="gallery-capture-images"></div>
+						<input type="checkbox" ng-model="prefs['medialink-scan-images']"> 
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="gallery-capture-links"></div>
+						<input type="checkbox" ng-model="prefs['medialink-scan-links']"> 
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="gallery-max-hits"></div>
+						<input type="number" ng-model="prefs['medialink-max-hits']" style="width: 40px;"> 						
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="gallery-min-hits"></div>
+						<input type="number" ng-model="prefs['medialink-min-files-per-group']" style="width: 40px;"> 						
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="gallery-min-img-size"></div>
+						<input type="number" ng-model="prefs['medialink-min-img-size']" style="width: 40px;"> 						
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="gallery-index-prefix"></div>
+						<input type="checkbox" ng-model="prefs['medialink-index-prefix']"/>
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="gallery-auto-detect"></div>
+						<input type="checkbox" ng-model="prefs['medialink-auto-detect']"/>
+						<div ng-show="prefs['medialink-auto-detect']"><em vdh-l10n="gallery-auto-detect-warning"></em></div> 
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="detect-extensions"></div>
+						<div vdh-list-editor="{order:false,remove:true,add:true}" ng-model="medialinkExtensions" style="max-width:150px;height:120px;"></div>
+					</div>
+				</div>
+				<div ng-show="tabs.current=='hotkeys'" class="tab-pane">
+					<div class="vdh-settings-category" vdh-l10n="hotkeys"></div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="hotkey-default"></div>
+						<div vdh-hotkey ng-model="prefs['hotkey.default']"></div>
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="hotkey-open-companion"></div>
+						<div vdh-hotkey ng-model="prefs['hotkey.opencompanion']"></div>
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="hotkey-detect-gallery"></div>
+						<div vdh-hotkey ng-model="prefs['hotkey.detect-gallery']"></div>
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="hotkey-clear-hits"></div>
+						<div vdh-hotkey ng-model="prefs['hotkey.clear-hits']"></div>
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="hotkey-supported-sites"></div>
+						<div vdh-hotkey ng-model="prefs['hotkey.supported-sites']"></div>
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="hotkey-convert-local"></div>
+						<div vdh-hotkey ng-model="prefs['hotkey.convert-local']"></div>
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="hotkey-toggle-scrap"></div>
+						<div vdh-hotkey ng-model="prefs['hotkey.toggle-scrap']"></div>
+					</div>
+					<br/>
+				</div>
+				<div ng-show="tabs.current=='scrap'" class="tab-pane">
+					<div class="vdh-settings-category" vdh-l10n="scrap.title"></div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="scrap.enabled"></div>
+						<input type="checkbox" ng-model="prefs['scrap.enabled']"> 
+					</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="scrap.auto-detect"></div>
+						<input type="checkbox" ng-model="prefs['scrap.auto-detect']"/>
+						<div ng-show="prefs['scrap.auto-detect']"><em vdh-l10n="scrap-auto-detect-warning"></em></div> 
+					</div>
+					<div class="vdh-settings-row">
+	  					<div class="vdh-settings-label" vdh-l10n="scrap.rate"></div>
+						<input type="number" ng-model="prefs['scrap.rate']" style="width: 40px;"> 
+	  				</div>
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="scrap.mouse.title"></div>
+						<select ng-options="m.mode as m.text for m in scrapMouseModes"
+							ng-model="prefs['scrap.mouse']"></select>
+					</div>
+	  				<div class="vdh-settings-row" ng-show="prefs['advanced-settings']">
+	  					<div class="vdh-settings-label" vdh-l10n="scrap.8x8-align"></div>
+						<select ng-options="m.mode as m.text for m in scrapAlignModes"
+							ng-model="prefs['scrap.8x8-align']"></select>
+	  				</div>
+	  				<div class="vdh-settings-row">
+	  					<div class="vdh-settings-label" vdh-l10n="scrap.mouse.halo.radius"></div>
+						<input type="number" ng-model="prefs['scrap.mouse.halo.radius']" style="width: 60px;" 
+							ng-disabled="prefs['scrap.mouse']=='never'"> 
+	  				</div>
+	  				<div class="vdh-settings-row">
+	  					<div class="vdh-settings-label" vdh-l10n="scrap.mouse.halo.color"></div>
+						<input type="text" ng-model="prefs['scrap.mouse.halo.color']" style="width: 80px;"
+							ng-disabled="prefs['scrap.mouse']=='never'"> 
+	  				</div>
+	  				<div class="vdh-settings-row">
+	  					<div class="vdh-settings-label" vdh-l10n="scrap.mouse.halo.transparency"></div>
+						<input type="number" ng-model="prefs['scrap.mouse.halo.transparency']" style="width: 60px;"
+							ng-disabled="prefs['scrap.mouse']=='never'"> 
+	  				</div>
+	  				<div class="vdh-settings-row">
+	  					<div class="vdh-settings-label" vdh-l10n="scrap.mouse.pointer.size"></div>
+						<input type="number" ng-model="prefs['scrap.mouse.pointer.size']" style="width: 60px;"
+							ng-disabled="prefs['scrap.mouse']=='never'"> 
+	  				</div>
+					<div class="vdh-settings-row" ng-show="prefs['advanced-settings']">
+						<div class="vdh-settings-label" vdh-l10n="scrap.applet-selector"></div>
+						<input type="text" ng-model="prefs['scrap.applet-selector']" style="width: 200px;"> 
+					</div>
+					<div class="vdh-settings-row">
+  						<div class="vdh-settings-label" vdh-l10n="scrap.min-applet-size"></div>
+						<input type="number" ng-model="prefs['scrap.min-applet-size']" style="width: 60px;"> 
+  					</div>
+	  				<div class="vdh-settings-row" ng-show="prefs['advanced-settings']">
+	  					<div class="vdh-settings-label" vdh-l10n="scrap.port"></div>
+						<input type="number" ng-model="prefs['scrap.port']" style="width: 60px;"> 
+	  				</div>
+					<div class="vdh-settings-row" ng-show="prefs['advanced-settings']">
+						<div class="vdh-settings-label" vdh-l10n="scrap.do-not-display-start-panel"></div>
+						<input type="checkbox" ng-model="prefs['scrap.applet-start-not-see-again']"/>
+					</div>
+					<br/>
+				</div>
+				<div ng-show="tabs.current=='chunks'" class="tab-pane">
+					<div class="vdh-settings-row">
+						<div class="vdh-settings-label" vdh-l10n="chunks.enabled"></div>
+						<input type="checkbox" ng-model="prefs['chunks.enabled']"> 
+					</div>				
+					<div ng-show="prefs['chunks.enabled'] && prefs['advanced-settings']">
+						<div class="vdh-settings-row">
+		  					<div class="vdh-settings-label" vdh-l10n="chunks.prefetch-count"></div>
+							<input type="number" ng-model="prefs['chunks.prefetch-count']" style="width: 40px;"> 
+		  				</div>
+						<div class="vdh-settings-row">
+		  					<div class="vdh-settings-label" vdh-l10n="chunks.concurrent-downloads"></div>
+							<input type="number" ng-model="prefs['chunks.concurrent-downloads']" style="width: 40px;"> 
+		  				</div>
+	  				</div>
+					<br/>
+					<div ng-show="prefs['chunks.enabled']">
+						<div class="vdh-settings-category" vdh-l10n="f4f-streaming"></div>
+						<div class="vdh-settings-row">
+							<div class="vdh-settings-label" vdh-l10n="f4f.enabled"></div>
+							<input type="checkbox" ng-model="prefs['f4f.enabled']"> 
+						</div>
+						<br/>
+						
+						<div class="vdh-settings-category" vdh-l10n="dash-streaming"></div>
+						<div class="vdh-settings-row">
+							<div class="vdh-settings-label" vdh-l10n="dash.enabled"></div>
+							<input type="checkbox" ng-model="prefs['dash.enabled']"> 
+						</div>
+						<div ng-show="prefs['dash.enabled'] && prefs['advanced-settings']">
+							<div class="vdh-settings-row">
+			  					<div class="vdh-settings-label" vdh-l10n="dash.hide-m4s"></div>
+								<input type="checkbox" ng-model="prefs['dash.hide-m4s']"> 
+			  				</div>
+		  				</div>
+		  				<br/>
+		  				
+						<div class="vdh-settings-category" vdh-l10n="hls-streaming"></div>
+						<div class="vdh-settings-row">
+							<div class="vdh-settings-label" vdh-l10n="hls.enabled"></div>
+							<input type="checkbox" ng-model="prefs['hls.enabled']"> 
+						</div>
+						<div ng-show="prefs['hls.enabled'] && prefs['advanced-settings']">
+							<div class="vdh-settings-row">
+			  					<div class="vdh-settings-label" vdh-l10n="mpegts.hide-ts"></div>
+								<input type="checkbox" ng-model="prefs['mpegts.hide-ts']"> 
+			  				</div>
+							<div class="vdh-settings-row">
+			  					<div class="vdh-settings-label" vdh-l10n="hls.download-as-m2ts"></div>
+								<input type="checkbox" ng-model="prefs['hls.download-as-m2ts']">
+			  				</div>
+		  				</div>
+		  				<br/>
+						<div ng-show="prefs['hls.enabled']">
+							<div class="vdh-settings-category" vdh-l10n="tpsr.title"></div>
+							<div class="vdh-settings-row">
+								<div class="vdh-settings-label" vdh-l10n="tpsr.enabled"></div>
+								<input type="checkbox" ng-model="prefs['tpsr.enabled']"> 
+							</div>
+			  				<div class="vdh-settings-row">
+			  					<div class="vdh-settings-label" vdh-l10n="tpsr.concurrent-captures"></div>
+								<input type="number" ng-model="prefs['tpsr.concurrent-captures']" style="width: 40px;"> 
+			  				</div>
+			  				<div class="vdh-settings-row" ng-show="prefs['advanced-settings']">
+			  					<div class="vdh-settings-label" vdh-l10n="tpsr.start-timeout"></div>
+								<input type="number" ng-model="prefs['tpsr.start-timeout']" style="width: 60px;"> 
+			  				</div>
+						</div>		  				
+						<br/>					
+	  				</div>
+				</div>
+
+				<div ng-show="tabs.current=='conversion'" class="tab-pane">
+					<div converter-settings></div>
+				</div>
+			</div>
+			<div class="vdh-advanced">
+				<input id="checkbox1" type="checkbox" ng-model="prefs['advanced-settings']"/> <label for="checkbox1" vdh-l10n="advanced"></label>
+			</div>
+			
+		</div>
+	</body>
+</html>

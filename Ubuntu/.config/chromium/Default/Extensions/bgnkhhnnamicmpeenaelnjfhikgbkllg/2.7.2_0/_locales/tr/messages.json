@@ -1,0 +1,698 @@
+{
+   "abp_subscribe_confirm_enable": {
+      "message": "Adguard: $1 aboneliğini aktifleştimek istiyor musunuz?"
+   },
+   "abp_subscribe_confirm_import": {
+      "message": "Adguard: Kullanıcı filtrenize, $1 kurallarını aktarmak ister misiniz?"
+   },
+   "abp_subscribe_confirm_import_finished_text": {
+      "message": "Adguard, kullanıcı filtresine kuralları aktarma işlemini tamamladı. Aktarılan kural sayısı: $1"
+   },
+   "abp_subscribe_confirm_import_finished_title": {
+      "message": "İçe aktarma işlemi başarıyla tamamlandı"
+   },
+   "adguard_product_mac": {
+      "message": "Mac için Adguard"
+   },
+   "adguard_product_windows": {
+      "message": "Windows için Adguard"
+   },
+   "alert_popup_filter_enabled_text": {
+      "message": "«$1» otomatik olarak etkinleştirildi"
+   },
+   "alert_popup_filter_enabled_title": {
+      "message": "Filtre otomatik etkinleştirildi"
+   },
+   "assistant_another_element": {
+      "message": "Farklı bir öge seç"
+   },
+   "assistant_apply_rule_to_all_sites": {
+      "message": "Bu kuralı tüm web sitelerinde uygula"
+   },
+   "assistant_block": {
+      "message": "Engelle"
+   },
+   "assistant_block_by_reference": {
+      "message": "URL'ye göre öğe engelle"
+   },
+   "assistant_block_element": {
+      "message": "Öğeyi engelle"
+   },
+   "assistant_block_element_explain": {
+      "message": "Öğe engelleme kural yapılandırması"
+   },
+   "assistant_block_similar": {
+      "message": "Benzer öğeleri engelle"
+   },
+   "assistant_extended_settings": {
+      "message": "Gelişmiş ayarlar"
+   },
+   "assistant_preview": {
+      "message": "Önizleme"
+   },
+   "assistant_preview_end": {
+      "message": "Önizlemeyi bitir"
+   },
+   "assistant_preview_header": {
+      "message": "Öge engelle - Önizleme"
+   },
+   "assistant_preview_header_info": {
+      "message": "Engellemeyi onaylamadan önce sayfanın nasıl görüneceğine bir bakın."
+   },
+   "assistant_preview_start": {
+      "message": "Önizleme"
+   },
+   "assistant_select_element": {
+      "message": "Seçim modu"
+   },
+   "assistant_select_element_cancel": {
+      "message": "İptal"
+   },
+   "assistant_select_element_ext": {
+      "message": "Sayfadaki herhangi bir ögeye tıklayın"
+   },
+   "assistant_slider_explain": {
+      "message": "Bu kural tarafından engellenecek öğenin boyutunu değiştirmek için kayar düğmeyi kullanın:"
+   },
+   "assistant_slider_if_hide": {
+      "message": "Filtre, seçilen öğeyi engelleyen bir kuralı içerecektir"
+   },
+   "assistant_slider_max": {
+      "message": "DAHA BÜYÜK"
+   },
+   "assistant_slider_min": {
+      "message": "DAHA KÜÇÜK"
+   },
+   "context_abuse_site": {
+      "message": "Bu websitesi hakkında bir şikayette bulun..."
+   },
+   "context_ads_has_been_removed": {
+      "message": "Reklamlar bu sayfadan kaldırıldı"
+   },
+   "context_ads_has_been_removed_by_adguard": {
+      "message": "$1 tarafından korunuyor"
+   },
+   "context_antibanner": {
+      "message": "Reklam engelleyici"
+   },
+   "context_block_site_ads": {
+      "message": "Bu sitede reklam engelle..."
+   },
+   "context_block_site_element": {
+      "message": "Öge engelle..."
+   },
+   "context_block_site_image": {
+      "message": "Adguard: Görüntü engelle..."
+   },
+   "context_disable_protection": {
+      "message": "Adguard korumasını durdur"
+   },
+   "context_enable_protection": {
+      "message": "Adguard korumasını sürdür"
+   },
+   "context_general_settings": {
+      "message": "Genel Ayarlar"
+   },
+   "context_miscellaneous_settings": {
+      "message": "Diğer"
+   },
+   "context_open_log": {
+      "message": "Filtre kayıt günlüğü..."
+   },
+   "context_open_settings": {
+      "message": "Adguard ayarları..."
+   },
+   "context_safebrowsing": {
+      "message": "İnternette gezinme güvenliği"
+   },
+   "context_security_report": {
+      "message": "Sitenin güvenlik raporunu aç..."
+   },
+   "context_site_exception": {
+      "message": "Bu site istisnalar listesindedir"
+   },
+   "context_site_filtering_disabled": {
+      "message": "Adguard bu alan adında çalışamaz"
+   },
+   "context_site_filtering_off": {
+      "message": "Bu sitede filtrelemeyi kapatmak için tıklayın"
+   },
+   "context_site_filtering_on": {
+      "message": "Bu sitede filtrelemeyi etkinleştirmek için tıklayın"
+   },
+   "context_site_protection_disabled": {
+      "message": "Adguard koruması duraklatıldı"
+   },
+   "context_update_antibanner_filters": {
+      "message": "Filtreleri güncelle"
+   },
+   "context_userfilter": {
+      "message": "Kullanıcı filtresi"
+   },
+   "context_whitelist": {
+      "message": "Beyazliste"
+   },
+   "description": {
+      "message": "Benzersiz reklam engelleyici uzantı. Facebook, Youtube ve diğer tüm web sitelerindeki reklamları engeller."
+   },
+   "description_blocked": {
+      "message": "Bu sayfada engellenen reklamlar: $1"
+   },
+   "filter_download_ads_malware": {
+      "message": "Virüs ve kötü amaçlı yazılımların %90'ı düzgün olmayan reklam ağları ile dağıtılmaktadır.\u003Cbr/>"
+   },
+   "filter_download_do_you_know": {
+      "message": "Bunu biliyor musunuz?"
+   },
+   "filter_download_loading": {
+      "message": "Filtre veritabanları yüklenirken lütfen bekleyin..."
+   },
+   "filter_download_rules": {
+      "message": "Ortalama olarak her hafta 100'ün üzerinde reklam filtresi eklenmektedir."
+   },
+   "filter_download_sb_sites": {
+      "message": "Adguard kimlik hırsızlığı ve kötü amaçlı yazılım veritabanında 1 milyondan fazla websitesi bulunmaktadır.\u003Cbr/>"
+   },
+   "filter_download_title": {
+      "message": "Filtre veritabanları yükleniyor..."
+   },
+   "filtering_clear_tab_events": {
+      "message": "Temizle"
+   },
+   "filtering_log_in_whitelist": {
+      "message": "Site beyazlisteye eklendi"
+   },
+   "filtering_log_search_string": {
+      "message": "Arama ifadesini gir"
+   },
+   "filtering_log_tab": {
+      "message": "Sekme:"
+   },
+   "filtering_log_title": {
+      "message": "Filtre kayıt günlüğü"
+   },
+   "filtering_modal_add_rule": {
+      "message": "Bir kural ekle"
+   },
+   "filtering_modal_add_title": {
+      "message": "Kural ekleme"
+   },
+   "filtering_modal_apply_domains": {
+      "message": "Tüm web sitelerinde bu kuralı uygula"
+   },
+   "filtering_modal_block": {
+      "message": "Engelle"
+   },
+   "filtering_modal_exception_title": {
+      "message": "Bir istisna ekle"
+   },
+   "filtering_modal_filter": {
+      "message": "Filtre:"
+   },
+   "filtering_modal_important": {
+      "message": "Give a higher priority to the rule"
+   },
+   "filtering_modal_info_title": {
+      "message": "Engelleme ile ilgili bilgiler"
+   },
+   "filtering_modal_match_case": {
+      "message": "Harfe duyarlı"
+   },
+   "filtering_modal_open_in_new_tab": {
+      "message": "Yeni bir sekmede aç"
+   },
+   "filtering_modal_options": {
+      "message": "Seçenekler"
+   },
+   "filtering_modal_patterns": {
+      "message": "Düzenler"
+   },
+   "filtering_modal_remove_user": {
+      "message": "Kullanıcı filtresinden kaldır"
+   },
+   "filtering_modal_remove_whitelist": {
+      "message": "Beyazlisteden kaldır"
+   },
+   "filtering_modal_rule": {
+      "message": "Kural:"
+   },
+   "filtering_modal_rule_text": {
+      "message": "Kural metni"
+   },
+   "filtering_modal_source": {
+      "message": "Kaynak:"
+   },
+   "filtering_modal_third_party": {
+      "message": "Sadece 3. partiden gelen isteklere uygula"
+   },
+   "filtering_modal_type": {
+      "message": "Tip:"
+   },
+   "filtering_modal_unblock": {
+      "message": "Engeli kaldır"
+   },
+   "filtering_refresh_tab": {
+      "message": "Sayfayı yenile"
+   },
+   "filtering_table_empty_row": {
+      "message": "Bu sayfanın günlüğü boş. Günlüğü görmek için \u003Ca href='#' class='reloadTab'>sayfayı yenileyin\u003C/a>."
+   },
+   "filtering_table_rule": {
+      "message": "Filtreleme kural"
+   },
+   "filtering_table_source": {
+      "message": "Kaynak"
+   },
+   "filtering_table_type": {
+      "message": "Tip"
+   },
+   "filtering_type_all": {
+      "message": "Tüm"
+   },
+   "name": {
+      "message": "Adguard Reklam Engelleyici"
+   },
+   "options_allow_acceptable_ads": {
+      "message": "Arama reklamlarına ve sitelerin kendi tanıtımlarına izin ver\u003Ca target='_blank' href='https://kb.adguard.com/general/search-ads-and-self-promotion?utm_source=extension&aid=16593' class='sp-table-row-info'>Bu konuda daha fazla bilgi alın\u003C/a>"
+   },
+   "options_antibanner": {
+      "message": "Reklam Engelleyici"
+   },
+   "options_antibanner_info": {
+      "message": "Filtre kuralları sayısı: $1"
+   },
+   "options_antibanner_list_empty": {
+      "message": "Filtre listesi boş. \u003Ca class='spl-user-descr-link editAntiBannerFilters' href='#'>Yeni filtre ekle\u003C/a>?"
+   },
+   "options_blog": {
+      "message": "Adguard Blogu"
+   },
+   "options_blog_link": {
+      "message": "https://adguard.com/en/blog/?utm_source=extension&aid=16593"
+   },
+   "options_collect_hit_stats": {
+      "message": "Filtre kullanımı ile ilgili istatistikleri gönderin \u003Ca target='_blank' href='https://adguard.com/filter-rules-statistics.html?utm_source=extension&aid=16593' class='sp-table-row-info'>Bu konuda daha fazla bilgi alın\u003C/a>"
+   },
+   "options_content_blocker_overlimit": {
+      "message": "Çok fazla filtre seçildi. Safari 50000'den fazla kural kullanamaz."
+   },
+   "options_do_you_like": {
+      "message": "Adguard'ı beğendiniz mi?"
+   },
+   "options_download_adguard": {
+      "message": "Tam sürümü indir"
+   },
+   "options_edit_antibanner_filters": {
+      "message": "Tüm filtreler"
+   },
+   "options_enable_autodetect_filter": {
+      "message": "En uygun filtreleri otomatik olarak etkinleştir"
+   },
+   "options_feedback": {
+      "message": "Bize Ulaşın"
+   },
+   "options_filter_version": {
+      "message": "Sürüm $1. Son güncelleme $2 $3."
+   },
+   "options_footer_like_us": {
+      "message": "Değerlendirin!"
+   },
+   "options_forum": {
+      "message": "Adguard Forumu"
+   },
+   "options_general_settings": {
+      "message": "Genel Ayarlar"
+   },
+   "options_like_us": {
+      "message": "Adguard'ı beğendiniz mi? Değerlendirin!"
+   },
+   "options_miscellaneous_settings": {
+      "message": "Diğer"
+   },
+   "options_modal_cancel": {
+      "message": "İptal"
+   },
+   "options_modal_edit": {
+      "message": "Filtrelerin listesi"
+   },
+   "options_modal_homepage": {
+      "message": "Anasayfa"
+   },
+   "options_modal_save": {
+      "message": "Değişiklikleri kaydet"
+   },
+   "options_open_changelog": {
+      "message": "Değişikliklerin listesi"
+   },
+   "options_open_log": {
+      "message": "Filtre kayıt günlüğü"
+   },
+   "options_popup_update_error": {
+      "message": "Güncelleştirme başarısız oldu. Lütfen sonra tekrar deneyin."
+   },
+   "options_popup_update_not_found": {
+      "message": "Güncelleme bulunamadı!"
+   },
+   "options_popup_update_title": {
+      "message": "Filtreler başarıyla güncellendi"
+   },
+   "options_popup_update_updated": {
+      "message": "\"$1\" sürümüne güncellendi $2"
+   },
+   "options_reset_stats": {
+      "message": "İstatistikleri sıfırla"
+   },
+   "options_reset_stats_done": {
+      "message": "İstatistikler sıfırlandı"
+   },
+   "options_safebrowsing": {
+      "message": "İnternette gezinme güvenliği"
+   },
+   "options_safebrowsing_enabled": {
+      "message": "Kimlik hırsızlığı ve zararlı yazılım koruması\u003Ca target='_blank' href='https://adguard.com/how-malware-blocked.html?utm_source=extension&aid=16593' class='sp-table-row-info'>Hakkında daha fazla öğrenin&nbsp;\u003C/a>"
+   },
+   "options_safebrowsing_help": {
+      "message": "Kimlik hırsızlığı engelleme gelişiminde bize yardım edin.\u003Cspan class='sp-table-row-info'>Güvenlikle ilgili anonim bilgiler gönderin.\u003C/span>"
+   },
+   "options_searchlist_empty": {
+      "message": "Hiçbir şey bulunamadı"
+   },
+   "options_settings": {
+      "message": "Adguard Ayarları"
+   },
+   "options_show_adguard_full_version": {
+      "message": "Adguard tam sürüm bilgilerini göster"
+   },
+   "options_show_blocked_ads_count": {
+      "message": "Adguard simgesinde engellenmiş reklam sayısını göster"
+   },
+   "options_show_context_menu": {
+      "message": "Sağtık menüsüne Adguard'ı ekle"
+   },
+   "options_site": {
+      "message": "Resmi Web Sitesi"
+   },
+   "options_too_many_filters_selected": {
+      "message": "Çok sayıda filtre seçtiniz. Bu önemli ölçüde internette gezinme hızınızı yavaşlatabilir."
+   },
+   "options_update_antibanner_filters": {
+      "message": "Filtreleri güncelle"
+   },
+   "options_use_optimized_filters": {
+      "message": "İyileştirilmiştir filtreleri kullan\u003Cspan class='sp-table-row-info'>Hafif filtre listeleri, mobil cihazlar için iyileştirilmiştir\u003C/span>"
+   },
+   "options_userfilter": {
+      "message": "Kullanıcı filtresi"
+   },
+   "options_userfilter_add_rule": {
+      "message": "Yeni kural ekle"
+   },
+   "options_userfilter_clear": {
+      "message": "Temizle"
+   },
+   "options_userfilter_clear_confirm": {
+      "message": "Kullanıcı filtresinizi temizlemek tüm kurallarınızı siler. Tüm filtrelerinizi gerçekten silmek istiyor musunuz?"
+   },
+   "options_userfilter_description": {
+      "message": "Bu filtreye kendi kurallarınızı ekleyebilirsiniz. Bu seçenek HTML/CSS kodları hakkında bilgisi olan gelişmiş kullanıcılar için tavsiye edilir. Kendi filtre kurallarınızı yazmayı öğrenmek için bu bölümünü okuyun. \u003Ca class='spl-user-descr-link' href='https://adguard.com/filterrules.html?utm_source=extension&aid=16593' target='_blank'>filtre kuralları öğreticisi\u003C/a>"
+   },
+   "options_userfilter_export": {
+      "message": "Dışa aktar"
+   },
+   "options_userfilter_import": {
+      "message": "İçe aktar"
+   },
+   "options_userfilter_search": {
+      "message": "Kullanıcı filtresinde ara"
+   },
+   "options_userfilter_search_placeholder": {
+      "message": "Arama ifadesini gir"
+   },
+   "options_userlist_empty": {
+      "message": "Kullanıcı listesi boş. \u003Ca class='spl-user-descr-link addUserFilter' href='#'>Yeni filtre kuralı ekle?\u003C/a>?"
+   },
+   "options_whitelist": {
+      "message": "Beyazliste"
+   },
+   "options_whitelist_add_domain": {
+      "message": "Web sitesi ekle"
+   },
+   "options_whitelist_description": {
+      "message": "Adguard, beyazlistedeki websitelerinde reklamları engellemez."
+   },
+   "options_whitelist_empty": {
+      "message": "Beyazliste boş. \u003Ca class='spl-user-descr-link addhiteListFilter' href='#'>Herhangi bir siteyi\u003C/a> beyazlisteye ekle?"
+   },
+   "options_whitelist_inverse": {
+      "message": "Beyazlisteyi ters çevir\u003Cspan class='sp-table-row-info'>Reklamları beyazliste \u003Ci>haricinde\u003C/i> engelleme\u003C/span>"
+   },
+   "options_whitelist_search": {
+      "message": "Beyaz listede ara"
+   },
+   "options_whitelist_search_placeholder": {
+      "message": "Arama ifadesini gir"
+   },
+   "options_whitelistfilter_clear_confirm": {
+      "message": "Beyaz listeyi temizlemek tüm kuralları siler. Beyaz listeyi gerçekten temizlemek istiyor musunuz?"
+   },
+   "popup_abuse_problem": {
+      "message": "Şikayet gönder"
+   },
+   "popup_abuse_site": {
+      "message": "Bu site hakkında bir şikayette bulun"
+   },
+   "popup_adguard_android": {
+      "message": "Android için Adguard"
+   },
+   "popup_adguard_footer_integration": {
+      "message": "Adguard \u003Ca href='http://adguard.com/adguard-adblock-browser-extension/integration-mode.html#integration-mode' class='openLink' target='_blank'> tümleşik modda \u003C/a> çalışıyor"
+   },
+   "popup_adguard_ios": {
+      "message": "IOS için Adguard"
+   },
+   "popup_adguard_mac": {
+      "message": "Mac için Adguard"
+   },
+   "popup_adguard_other_os": {
+      "message": "Adguard tüm sürümleri:"
+   },
+   "popup_adguard_windows": {
+      "message": "Windows için Adguard"
+   },
+   "popup_ads_has_been_removed": {
+      "message": "Reklamlar bu sayfadan kaldırıldı"
+   },
+   "popup_ads_has_been_removed_by_adguard": {
+      "message": "$1 tarafından korunuyor"
+   },
+   "popup_block_site_ads": {
+      "message": "Bu sitede reklamları engelle"
+   },
+   "popup_block_site_ads_android": {
+      "message": "Bu web sitesinde reklam engelle"
+   },
+   "popup_disable_protection": {
+      "message": "Adguard korumasını durdur"
+   },
+   "popup_enable_protection": {
+      "message": "Adguard korumasını sürdür"
+   },
+   "popup_feedback_cancel": {
+      "message": "İptal"
+   },
+   "popup_feedback_comment": {
+      "message": "Yorumlarınızı yazın.."
+   },
+   "popup_feedback_empty_option": {
+      "message": "Şikayet nedenini seçin"
+   },
+   "popup_feedback_malware_option": {
+      "message": "Kimlik hırsızlığı şüphesi"
+   },
+   "popup_feedback_miss_ads_option": {
+      "message": "Reklamlar bu sitede engellenmedi"
+   },
+   "popup_feedback_option_is_empty": {
+      "message": "Şikayetiniz için bir neden seçmelisiniz!"
+   },
+   "popup_feedback_other_option": {
+      "message": "Diğer"
+   },
+   "popup_feedback_send": {
+      "message": "Şikayet gönder"
+   },
+   "popup_feedback_wrong_block_option": {
+      "message": "Bu site bozuk görüntüleniyor"
+   },
+   "popup_filtering_log_icon_title": {
+      "message": "Filtre günlüğünü aç..."
+   },
+   "popup_in_white_list_android": {
+      "message": "Beyaz listede"
+   },
+   "popup_open_log_android": {
+      "message": "Filtre kayıt günlüğü"
+   },
+   "popup_open_settings": {
+      "message": "Adguard ayarları"
+   },
+   "popup_security_report": {
+      "message": "Sitenin güvenlik raporu"
+   },
+   "popup_security_report_android": {
+      "message": "Güvenlik raporu"
+   },
+   "popup_site_exception": {
+      "message": "Bu site istisnalar listesindedir."
+   },
+   "popup_site_exception_info": {
+      "message": "Filtreleme devre dışı bırakıldı, çünkü filtrelemek bu web sitesinin çalışmasına engel olabilir."
+   },
+   "popup_site_filtering_disabled": {
+      "message": "Adguard bu alan adında çalışamaz"
+   },
+   "popup_site_filtering_state": {
+      "message": "Bu web sitesindeki koruma"
+   },
+   "popup_site_protection_disabled": {
+      "message": "Adguard koruması duraklatıldı"
+   },
+   "popup_site_protection_disabled_android": {
+      "message": "Koruma duraklatıldı"
+   },
+   "popup_tab_blocked": {
+      "message": "Engellenen: $1"
+   },
+   "popup_tab_blocked_all": {
+      "message": "Toplam: $1"
+   },
+   "popup_what_wrong_site": {
+      "message": "Web sitesinin ne sorunu var?"
+   },
+   "release_notes_title": {
+      "message": "Adguard uzantısı güncellendi!"
+   },
+   "release_notes_whats_new": {
+      "message": "Bu sürümdeki yenilikler neler?"
+   },
+   "sb_adguard_blocked": {
+      "message": "Adguard bu sayfaya erişimi engelledi"
+   },
+   "sb_go_back": {
+      "message": "Geri git"
+   },
+   "sb_goto_site": {
+      "message": "Yine de devam et"
+   },
+   "sb_main_title": {
+      "message": "Uyarı! Tehlikeli&nbsp;olabilir!"
+   },
+   "sb_malware_description": {
+      "message": "Adguard, devam ederseniz bilgisayarınıza kötü amaçlı yazılım kurulabileceğini algıladı. Geçmişte bu siteyi ziyaret ettiyseniz, bilgisayarınız kısa bir süre önce bir bilgisayar korsanı tarafından ele geçirilmiş olabilir. Devam etmemenizi tavsiye ediyoruz."
+   },
+   "sb_malware_site": {
+      "message": "Bu web sitesi \u003Cstrong>$1\u003C/strong>, kötü amaçlı bir sayfa olarak bildirilmiştir güvenlik tercihlerinize bağlı olarak engellenmiştir."
+   },
+   "sb_more_actions": {
+      "message": "Gelişmiş"
+   },
+   "sb_phishing_description": {
+      "message": "Adguard bu sayfanın kullanıcıların kişisel ya da mâli bilgilerini çalmak üzere tasarlanmış başka bir web sitesinin taklidi görünümünde olduğunu algıladı. Bu sayfada herhangi bir kişisel bilgi girmeniz kimlik hırsızlığına ya da farklı diğer kötüye kullanımlara neden olabilir."
+   },
+   "sb_phishing_site": {
+      "message": "Bu web sitesi \u003Cstrong>$1\u003C/strong>, kimlik hırsızlığı amaçlı hazırlanmış bir sayfa olarak bildirilmiştir güvenlik tercihlerinize bağlı olarak engellenmiştir."
+   },
+   "sb_site_report": {
+      "message": "Daha fazla bilgi"
+   },
+   "sb_title": {
+      "message": "Uyarı! Tehlikeli&nbsp;olabilir!"
+   },
+   "short_name": {
+      "message": "Adguard Reklam Engelleyici"
+   },
+   "thankyou_compare_any_browser": {
+      "message": "Tüm tarayıcılarda reklamları engeller"
+   },
+   "thankyou_compare_blocked": {
+      "message": "Reklam engelleme"
+   },
+   "thankyou_compare_ext_blocking": {
+      "message": "Tarayıcı eklentisinin yetenekleri kısıtlıdır"
+   },
+   "thankyou_compare_ext_title": {
+      "message": "Adguard Eklentisi"
+   },
+   "thankyou_compare_full_blocking": {
+      "message": "Tam"
+   },
+   "thankyou_compare_full_title": {
+      "message": "Windows için Adguard"
+   },
+   "thankyou_compare_full_title_mac": {
+      "message": "Mac için Adguard"
+   },
+   "thankyou_compare_increase": {
+      "message": "Sayfalar daha hızlı açılır"
+   },
+   "thankyou_compare_parent": {
+      "message": "Ebeveyn kontrolü"
+   },
+   "thankyou_compare_safebrowsing": {
+      "message": "Kimlik hırsızlığına ve zararlı web sitelerine karşı koruma"
+   },
+   "thankyou_compare_safebrowsing_attack": {
+      "message": "Kimlik hırsızlığı saldırılarına karşı koruma"
+   },
+   "thankyou_compare_support": {
+      "message": "Teknik destek"
+   },
+   "thankyou_compare_traffic": {
+      "message": "Internet trafiğinden tasarruf yapmanızı sağlar"
+   },
+   "thankyou_download": {
+      "message": "Adguard'ı İndir"
+   },
+   "thankyou_enjoy": {
+      "message": "Rahatsız edici reklamlar, her hareketinizi takip eden sayaçlar ve sizi avlamak için bekleyen virüs ya da sahte görünümlü siteler olmadan internetin tadını çıkarın."
+   },
+   "thankyou_help_in_development": {
+      "message": "Adguard'ın süzgeçleri geliştirmesine katkıda bulunun"
+   },
+   "thankyou_help_in_development_description": {
+      "message": "Reklam filtrelerin çalışması ve Adguard tarafından şüpheli olarak belirlenen web siteleri hakkında anonim istatistikler gönder. \u003Cspan class='warn-message'>Yavaş bilgisayarlarda önerilmez.\u003C/span>"
+   },
+   "thankyou_installed": {
+      "message": "KURULDU"
+   },
+   "thankyou_setup_filter": {
+      "message": "Filtreleme seçeneklerinizi özelleştirin"
+   },
+   "thankyou_setup_safebrowsing_description": {
+      "message": "Tarayıcı koruma modülü sizi kimlik hırsızlığı sitelerinden ve kötü amaçlı yazılım yayan sitelerden korur. Bu modül \u003Ca target='blank' href='http://adguard.com/how-malware-blocked.html'>özel bir web servisi\u003C/a> kullanarak ziyaret ettiğiniz siteleri kontrol eder."
+   },
+   "thankyou_setup_safebrowsing_title": {
+      "message": "Kimlik hırsızlığına ve kötü amaçlı web sitelerine karşı koruma"
+   },
+   "thankyou_title": {
+      "message": "Adguard'ı kurduğunuz için teşekkür ederiz!"
+   },
+   "thankyou_tracking_social_filter_description": {
+      "message": "Adguard, web sayfalarından sosyal ağ widget'lerini kaldırabilir. Örneğin eylemlerinizi takip eden \"Beğen\" düğmeleri."
+   },
+   "thankyou_tracking_social_filter_title": {
+      "message": "Sosyal ağ düğmeleri filtresi"
+   },
+   "thankyou_tracking_spyware_filter_description": {
+      "message": "Yüzlerce internet şirketi siz gezinirken her hareketinizi takip ediyor. Adguard ile bu casusluklara karşı kolayca korunabilirsiniz."
+   },
+   "thankyou_tracking_spyware_filter_title": {
+      "message": "Bilinen tüm sayaç ve analiz sistemleri için filtre"
+   },
+   "thankyou_want_full_protection": {
+      "message": "Tam korumayı denemek ister misiniz?&nbsp; Windows için Adguard İndirin!"
+   },
+   "thankyou_want_full_protection_mac": {
+      "message": "Tam korumayı denemek ister misiniz?&nbsp; Mac için Adguard İndirin!"
+   }
+}

@@ -1,0 +1,14 @@
+
+.ld-text {
+	padding: 6px;
+	font-weight: bold;
+}
+
+.ld-details {
+	border: 1px inset #222;
+	background-color: #fff;
+	font-family: "Courier New", Courier, monospace;
+	padding: 4px;
+	max-height: 300px;
+	overflow: auto;
+}

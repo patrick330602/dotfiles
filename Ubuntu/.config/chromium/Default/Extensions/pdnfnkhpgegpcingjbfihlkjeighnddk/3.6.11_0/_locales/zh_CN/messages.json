@@ -1,0 +1,56 @@
+{
+   "description": {
+      "message": "帮助海外华人解除优酷、土豆等网站的访问限制（大陆用户无需安装此扩展）"
+   },
+   "donation_url": {
+      "message": "https://www.uku.im/index.html"
+   },
+   "faq": {
+      "message": "如果您在使用过程中遇到任何问题，\u003Ca href=\"http://uku.im/faq\" target=\"_blank\">请查看 FAQ\u003C/a>"
+   },
+   "feedback": {
+      "message": "如遇到问题或有任何建议，\u003Ca href=\"http://uku.im/feedback\" target=\"_blank\">欢迎联系我们\u003C/a>"
+   },
+   "mode_lite": {
+      "message": "精简模式"
+   },
+   "mode_lite_description": {
+      "message": "仅对\u003Cabbr id=\"tooltip\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"例如 Bilibili\">个别网站\u003C/abbr>起效，但可与其它代理程序同时使用"
+   },
+   "mode_normal": {
+      "message": "标准模式"
+   },
+   "mode_normal_description": {
+      "message": "\u003Cstrong>推荐使用\u003C/strong>。连接速度较快，支持网站数量最多"
+   },
+   "mode_off": {
+      "message": "关闭模式"
+   },
+   "mode_off_description": {
+      "message": "关闭 Unblock Youku 所有功能"
+   },
+   "mode_select": {
+      "message": "程序运行模式"
+   },
+   "popup_title": {
+      "message": "Unblock Youku 设置"
+   },
+   "rating": {
+      "message": "如您觉得这个扩展好用，\u003Ca href=\"http://uku.im/reviews\" target=\"_blank\">请帮我们打分\u003C/a>"
+   },
+   "sharing": {
+      "message": "欢迎分享至"
+   },
+   "social_title": {
+      "message": "欢迎关注我们"
+   },
+   "support_button": {
+      "message": "\u003Ci class=\"fa fa-heart\" aria-hidden=\"true\">\u003C/i> 请支持我们"
+   },
+   "support_message": {
+      "message": "请帮助 Unblock Youku 长久稳定和免费地运行下去"
+   },
+   "support_title": {
+      "message": "我们需要您的支持"
+   }
+}

@@ -1,0 +1,1736 @@
+{
+   "Bytes": {
+      "message": "%s байта"
+   },
+   "KB": {
+      "message": "%s KB"
+   },
+   "MB": {
+      "message": "%s MB"
+   },
+   "aborted": {
+      "message": "Прекратени"
+   },
+   "about": {
+      "message": "Относно"
+   },
+   "about_alpha_intro": {
+      "message": "Това е завършена версия"
+   },
+   "about_beta_intro": {
+      "message": "Това е тестова версия"
+   },
+   "about_conversion_support": {
+      "message": "Ако сте регистриран потребител и се нуждаете от помощ с конвертирането на файлове или с лиценза, моля изпратете e-mail на адреса даден Ви, когато сте заплатили лиценза."
+   },
+   "about_go_howto": {
+      "message": "Как да ползвате този add-on"
+   },
+   "about_go_support": {
+      "message": "Отидете на страницата за поддръжка"
+   },
+   "about_help": {
+      "message": "Ако се нуждаете от помощ с употребата на Video DownloadHelper, кликнете на линка по-долу"
+   },
+   "about_qr": {
+      "message": "Файлът е генериран"
+   },
+   "about_support": {
+      "message": "Ако се нуждаете от поддръжка относно Video DownloadHelper, моля кликнете на линка по-долу."
+   },
+   "about_vdh": {
+      "message": "Относно Video DownloadHelper"
+   },
+   "action_abort_description": {
+      "message": "Прекъсни изпълняваната задача"
+   },
+   "action_abort_title": {
+      "message": "Прекъсни"
+   },
+   "action_as_default": {
+      "message": "Използвайте това действие по подразбиране."
+   },
+   "action_avplay_description": {
+      "message": "Play the video with the converter's native viewer"
+   },
+   "action_avplay_title": {
+      "message": "Play"
+   },
+   "action_blacklist_description": {
+      "message": "Попадения от източника не активират addon-а"
+   },
+   "action_blacklist_title": {
+      "message": "Добави в черния списък"
+   },
+   "action_cannot_abort": {
+      "message": "Действието не може да бъде прекъснато"
+   },
+   "action_convert_description": {
+      "message": "Конвертирай файловете, които вече са свалени"
+   },
+   "action_convert_title": {
+      "message": "Конвертирай текущия файл"
+   },
+   "action_copyurl_description": {
+      "message": "Копирай адреса до медията в клипборда"
+   },
+   "action_copyurl_title": {
+      "message": "Копирай URL"
+   },
+   "action_deletehit_description": {
+      "message": "Изтрий попаденията от текущия списък"
+   },
+   "action_deletehit_title": {
+      "message": "Изтрий"
+   },
+   "action_details_description": {
+      "message": "Покажи детайли за попадението"
+   },
+   "action_details_title": {
+      "message": "Детайли"
+   },
+   "action_download_description": {
+      "message": "Сваляне на файла на твърдия диск"
+   },
+   "action_download_title": {
+      "message": "Сваляне"
+   },
+   "action_downloadconvert_description": {
+      "message": "Свали медията и я конвертирай до друг формат"
+   },
+   "action_downloadconvert_title": {
+      "message": "Свали и конвертирай"
+   },
+   "action_maskeddownload_description": {
+      "message": "Download video to an encrypted file"
+   },
+   "action_maskeddownload_title": {
+      "message": "Masked download"
+   },
+   "action_noyt_description": {
+      "message": "Относно прихващането на видео от YouTube"
+   },
+   "action_noyt_title": {
+      "message": "YouTube предупреждение"
+   },
+   "action_openlocalcontainer_description": {
+      "message": "Отвори папката съдържаща медия файла"
+   },
+   "action_openlocalcontainer_title": {
+      "message": "Отвори папката"
+   },
+   "action_openlocalfile_description": {
+      "message": "Отвори текущия медия файл"
+   },
+   "action_openlocalfile_title": {
+      "message": "Отвори медията"
+   },
+   "action_pin_description": {
+      "message": "Направи попаденията постоянни"
+   },
+   "action_pin_title": {
+      "message": "Закачи"
+   },
+   "action_quickdownload_description": {
+      "message": "Сваляне без питане за дестинацията"
+   },
+   "action_quickdownload_title": {
+      "message": "Бързо сваляне"
+   },
+   "action_record_description": {
+      "message": "Стартирай записа на стрийм"
+   },
+   "action_record_title": {
+      "message": "Запиши"
+   },
+   "action_scraprecord_description": {
+      "message": "Започни записването от екрана"
+   },
+   "action_scraprecord_title": {
+      "message": "Запис"
+   },
+   "action_scrapsnapshot_description": {
+      "message": "Вземете неподвижно изображение на аплета"
+   },
+   "action_scrapsnapshot_title": {
+      "message": "Запиши снимка на екрана"
+   },
+   "action_scrapstoprecord_description": {
+      "message": "Спри записа от екрана"
+   },
+   "action_scrapstoprecord_title": {
+      "message": "Спри записа"
+   },
+   "action_social_description": {
+      "message": "Сподели медията в социалните мрежи"
+   },
+   "action_social_title": {
+      "message": "Споделян в социалните мрежи"
+   },
+   "action_stoprecord_description": {
+      "message": "Спри записвания стрийм"
+   },
+   "action_stoprecord_title": {
+      "message": "Спри записа"
+   },
+   "action_stream_no_capture_description": {
+      "message": "About saving special video streams"
+   },
+   "action_stream_no_capture_title": {
+      "message": "Save warning"
+   },
+   "actions": {
+      "message": "Действия"
+   },
+   "adaptative": {
+      "message": "Адаптивно %s"
+   },
+   "add_to_blacklist": {
+      "message": "Добави в черния списък"
+   },
+   "add_to_blacklist_help": {
+      "message": "Клипове с произход/обслужвани от избраните домейни ще бъдат игнорирани"
+   },
+   "adp_hide": {
+      "message": "Do not show ADP variants in download list"
+   },
+   "adp_variants": {
+      "message": "Адаптивни варианти"
+   },
+   "advanced": {
+      "message": "Допълнително"
+   },
+   "aggregating___": {
+      "message": "Струпване..."
+   },
+   "all_actions": {
+      "message": "Всички дейтсвия"
+   },
+   "analyze_page": {
+      "message": "Анализирай страницата"
+   },
+   "any_domain": {
+      "message": "всеки домейн"
+   },
+   "any_format": {
+      "message": "всеки формат"
+   },
+   "appearance": {
+      "message": "Изглед"
+   },
+   "audio_only": {
+      "message": "Само аудио."
+   },
+   "auto_pin_description": {
+      "message": "Закачи попаденията след сваляне"
+   },
+   "auto_pin_title": {
+      "message": "Автоматично закачане"
+   },
+   "avplay_converter_required": {
+      "message": "This action plays the video with the converter's native viewer but no converter has been found"
+   },
+   "avplay_enabled": {
+      "message": "Player enabled"
+   },
+   "avplay_player_missing_text": {
+      "message": "The converter seems to be installed but the associated video player has not been found. You may want to reinstall the converter"
+   },
+   "avplay_player_missing_title": {
+      "message": "Missing player"
+   },
+   "back": {
+      "message": "Обратно"
+   },
+   "behavior": {
+      "message": "Поведение"
+   },
+   "blacklist": {
+      "message": "Черен списък"
+   },
+   "blacklist_domains": {
+      "message": "Домейни в черния списък"
+   },
+   "blacklist_enable_description": {
+      "message": "Предотврати някой сайтове да активират разпознаването на медия"
+   },
+   "blacklist_enable_title": {
+      "message": "Активирай черния списък"
+   },
+   "blacklist_selected": {
+      "message": "Селектиран черен списък"
+   },
+   "cancel": {
+      "message": "Отказ"
+   },
+   "capture_gallery": {
+      "message": "Галерия с прихванати"
+   },
+   "change_storage_directory": {
+      "message": "Промени папката за съхранение"
+   },
+   "checking_converter___": {
+      "message": "Проверка на конвертора..."
+   },
+   "checking_converter_license___": {
+      "message": "Проверка лиценза на конвертора..."
+   },
+   "chrome_ignore_yt": {
+      "message": "Не засичай YouTube видео повече"
+   },
+   "chrome_ignore_yt2": {
+      "message": "Игнорирай YouTube видео файловете"
+   },
+   "chrome_install_firefox": {
+      "message": "Инсталирайте Firefox"
+   },
+   "chrome_install_fx_vdh": {
+      "message": "Video DownloadHelper за Firefox"
+   },
+   "chrome_noyt_text": {
+      "message": "За съжаление Chrome Web Store не позволява разширения за сваляне на YouTube видео, така че се наложи да премахнем тази опция."
+   },
+   "chrome_noyt_text2": {
+      "message": "Може да ползвате Video DownloadHelper за сваляне на YouTube видео във Firefox версията."
+   },
+   "chrome_stream_no_capture": {
+      "message": "Unfortunately, this browser does not provide the necessary APIs to download this type of stream. We are working at providing a solution, please try again later."
+   },
+   "chrome_stream_no_capture2": {
+      "message": "For now, consider using Video DownloadHelper on Firefox instead."
+   },
+   "chrome_stream_no_capture_hide": {
+      "message": "Do not show streams that cannot be saved"
+   },
+   "chrome_stream_no_capture_title": {
+      "message": "Unable to save stream"
+   },
+   "chrome_warning_yt": {
+      "message": "Предупреждение при Chrome разширения и YouTube"
+   },
+   "chunk_about_to_be_saved": {
+      "message": "Чънк медията '%s' се отнася до записа и конвертирането до"
+   },
+   "chunk_assemble_and_convert": {
+      "message": "Сглоби и конвертирай"
+   },
+   "chunk_assemble_native": {
+      "message": "Сглобяване"
+   },
+   "chunk_assemble_native_warn": {
+      "message": "Целевият файл ще бъде създаден от сглобяването на чънкове. Обърнете внимание, че крайния резултат може да не се възпроизвежда коректно."
+   },
+   "chunk_assemble_only": {
+      "message": "Само сглоби"
+   },
+   "chunk_converter_assemble": {
+      "message": "задали сте получения файл да бъде сглобен с конвертор"
+   },
+   "chunk_converter_assemble_convert": {
+      "message": "Задали сте получения файл да се образува от сглобяване с конвертор"
+   },
+   "chunk_converter_convert": {
+      "message": "задали сте получения файл да бъде конвертиран."
+   },
+   "chunk_initial_period": {
+      "message": "Първоначална продължителност на парче (секунди)"
+   },
+   "chunk_missing_conv_native_assemble_only": {
+      "message": "Не беше открит конвертор в системата Ви. Генерирания файл ще бъде сглобен от чънкове."
+   },
+   "chunk_period_factor": {
+      "message": "Фактор за времева продължителност (%)"
+   },
+   "chunk_save": {
+      "message": "Запазване на чънк медийни файлове"
+   },
+   "chunk_target": {
+      "message": "в папка \"%s\""
+   },
+   "chunks_concurrent_downloads": {
+      "message": "Concurrent chunk downloads"
+   },
+   "chunks_enabled": {
+      "message": "Chunked streaming enabled"
+   },
+   "chunks_prefetch_count": {
+      "message": "Prefetch chunks count"
+   },
+   "chunks_title": {
+      "message": "Chunked streaming"
+   },
+   "clear_hits": {
+      "message": "Изчисти попаденията"
+   },
+   "clear_logs": {
+      "message": "Clear logs"
+   },
+   "cmenu_mode": {
+      "message": "Режим на контекстно ниво"
+   },
+   "cmenu_mode_all": {
+      "message": "Покажи всички действия"
+   },
+   "cmenu_mode_both": {
+      "message": "Едновременно бързо и всички действия"
+   },
+   "cmenu_mode_none": {
+      "message": "повече не показвай"
+   },
+   "cmenu_mode_quick": {
+      "message": "Стартирай действието по подразбиране"
+   },
+   "companion_default_op": {
+      "message": "Съпътстващи операции по подразбиране"
+   },
+   "companion_enable": {
+      "message": "Активирай съпътстващ бутон"
+   },
+   "config_conversion_rules": {
+      "message": "Конфигуриране правилата при конвертиране"
+   },
+   "congratulations": {
+      "message": "Поздравления!"
+   },
+   "context_menu": {
+      "message": "Използвай контекстно меню"
+   },
+   "continue": {
+      "message": "Продължи"
+   },
+   "convconf_2passes": {
+      "message": "2 паса"
+   },
+   "convconf_ac": {
+      "message": "Аудио канали"
+   },
+   "convconf_acnone": {
+      "message": "Нищо"
+   },
+   "convconf_acodec": {
+      "message": "Аудио кодек"
+   },
+   "convconf_aspect": {
+      "message": "Пропорции"
+   },
+   "convconf_audiobitrate": {
+      "message": "Аудио битрейт"
+   },
+   "convconf_audiofreq": {
+      "message": "Аудио честота"
+   },
+   "convconf_audioonly": {
+      "message": "Само аудио"
+   },
+   "convconf_bitrate": {
+      "message": "Битрейт"
+   },
+   "convconf_container": {
+      "message": "Формат"
+   },
+   "convconf_duplicate": {
+      "message": "Дублиране"
+   },
+   "convconf_ext": {
+      "message": "Изходно файлово разширение"
+   },
+   "convconf_extra": {
+      "message": "Допълнителни параметри"
+   },
+   "convconf_level": {
+      "message": "Ниво"
+   },
+   "convconf_mono": {
+      "message": "Моно"
+   },
+   "convconf_new": {
+      "message": "Нов"
+   },
+   "convconf_preset": {
+      "message": "Настройки"
+   },
+   "convconf_profilev": {
+      "message": "Видео профил"
+   },
+   "convconf_rate": {
+      "message": "Кадъра в секунда"
+   },
+   "convconf_readonly": {
+      "message": "настройката по подразбиране е само за четене. Копирайте, за да модифицирате."
+   },
+   "convconf_remove": {
+      "message": "Премахни"
+   },
+   "convconf_reset": {
+      "message": "Възстанови всичко"
+   },
+   "convconf_reset_confirm": {
+      "message": "Това ще премахне всичките Ви потребителски настройки"
+   },
+   "convconf_size": {
+      "message": "Размер на кадъра"
+   },
+   "convconf_size_help": {
+      "message": "\u003Cширочина>x\u003Cвисочина>"
+   },
+   "convconf_stereo": {
+      "message": "Стерео"
+   },
+   "convconf_target": {
+      "message": "Цел"
+   },
+   "convconf_target_help": {
+      "message": "Настройки за конфигурацията"
+   },
+   "convconf_tune": {
+      "message": "Мелодия"
+   },
+   "convconf_vcodec": {
+      "message": "Видео кодек"
+   },
+   "convconf_videobitrate": {
+      "message": "Видео битрейт"
+   },
+   "conversion": {
+      "message": "Конвертиране"
+   },
+   "conversion_output": {
+      "message": "Изходно"
+   },
+   "conversion_outputs": {
+      "message": "Изходна папка за конвертираното"
+   },
+   "conversion_rule": {
+      "message": "Правило"
+   },
+   "conversion_rules": {
+      "message": "Правила"
+   },
+   "convert": {
+      "message": "Конвертирай"
+   },
+   "convert_format_from_domain": {
+      "message": "Конвертирай %1s от %2s до %3s"
+   },
+   "convert_local_files": {
+      "message": "Конвертирай наличните файлове"
+   },
+   "converter": {
+      "message": "Конвертор"
+   },
+   "converter_edit_output": {
+      "message": "Редактирай продукта"
+   },
+   "converter_failed_execution": {
+      "message": "Неуспешно изпълнение на конвертора"
+   },
+   "converter_installed": {
+      "message": "Конвертора е инсталиран"
+   },
+   "converter_license": {
+      "message": "Лиценз на конвертора"
+   },
+   "converter_license_blocked": {
+      "message": "Вашият лиценз беше блокиран"
+   },
+   "converter_license_locked": {
+      "message": "Вашият лиценз се нуждае от презаверяване"
+   },
+   "converter_license_locked_mail": {
+      "message": "E-ail беше изпратен на \"%s\". Той съдържа линк, който е нужно да се последва за да се отключи лиценза. Може да изисква повторно валидиране. Ако не получите поща, моля проверете в спам кутията."
+   },
+   "converter_license_ready": {
+      "message": "Регистриран лиценз на конвертор"
+   },
+   "converter_missing": {
+      "message": "липсва конвертор"
+   },
+   "converter_needed": {
+      "message": "Тази операция се нуждае от инсталиран конвертор на Вашата система"
+   },
+   "converter_needed_aggregate": {
+      "message": "Тази операция се нуждае от конверто инсталиран на Вашата система за прихващане на видео и аудио стрийм"
+   },
+   "converter_needed_aggregate_why": {
+      "message": "Защо имам нужда от конвертор?"
+   },
+   "converter_needed_local": {
+      "message": "конвертирането на наличната медия изисква конвертор инсталиран на Вашата система"
+   },
+   "converter_needs_reg": {
+      "message": "Нужна е регистрация."
+   },
+   "converter_not_available": {
+      "message": "Converter not available"
+   },
+   "converter_not_installed": {
+      "message": "Няма инсталиран конвертор"
+   },
+   "converter_path": {
+      "message": "Местоположение на конвертираното"
+   },
+   "converter_reg_audio": {
+      "message": "You requested, either explicitely or from an automatic conversion rule, the generation of an audio-only media file. This requires a registered converter."
+   },
+   "converter_requested_unavail": {
+      "message": "Конверторът се изисква за тази операция, обаче не е наличен."
+   },
+   "converter_required": {
+      "message": "Изисква се конвертор"
+   },
+   "converter_threads": {
+      "message": "Бройки за конвертиране"
+   },
+   "converter_tune_h264": {
+      "message": "Принудително H264 струпване"
+   },
+   "converter_update_version": {
+      "message": "Update converter to version %s"
+   },
+   "converting___": {
+      "message": "Конвертиране..."
+   },
+   "copy_of": {
+      "message": "Копиране на %s"
+   },
+   "copy_to_clipboard": {
+      "message": "Копирай в клипборда"
+   },
+   "could_not_download": {
+      "message": "\"%s\" не може да бъде свален"
+   },
+   "cphelper_addon": {
+      "message": "CouponsHelper Addon"
+   },
+   "cphelper_description": {
+      "message": "The right coupon at the right time: do not miss discounts when shopping online ..."
+   },
+   "custom_output": {
+      "message": "Потребителски изходен формат"
+   },
+   "dash_enabled": {
+      "message": "DASH enabled"
+   },
+   "dash_hide_m4s": {
+      "message": "Do not show .m4s entries in download list"
+   },
+   "dash_streaming": {
+      "message": "DASH streaming"
+   },
+   "define_vdh_smartname": {
+      "message": "DownloadHelper име по подразбиране"
+   },
+   "defining_smartname": {
+      "message": "Избери име по подразбиране"
+   },
+   "defining_smartname_help": {
+      "message": "Тази функция позволява да се генерира име на видеото от страницата, която го съдържа. Ако избрания текст съдържа твърде много символи, опитайте да изберете само няколко от заглавието на страницата."
+   },
+   "details_parenthesis": {
+      "message": "(Детайли)"
+   },
+   "detect_extensions": {
+      "message": "Засечи разширенията"
+   },
+   "display_mode_compact": {
+      "message": "Компактно"
+   },
+   "display_mode_label": {
+      "message": "Главен дисплей панел"
+   },
+   "display_mode_mozilla": {
+      "message": "Mozilla"
+   },
+   "display_mode_normal": {
+      "message": "нормално"
+   },
+   "dlconv_and_saved_to": {
+      "message": "и записано в \"%s\""
+   },
+   "dlconv_back": {
+      "message": "Назад"
+   },
+   "dlconv_change_directory": {
+      "message": "Променете изходната папка"
+   },
+   "dlconv_convert": {
+      "message": "Конвертирай"
+   },
+   "dlconv_download_and_convert": {
+      "message": "Свали и конвертирай"
+   },
+   "dlconv_download_only": {
+      "message": "Свали"
+   },
+   "dlconv_n_will_be_converted": {
+      "message": "%s файла ще бъдат конвертирани в:"
+   },
+   "dlconv_output_details": {
+      "message": "Настройване на изходните детайли"
+   },
+   "dlconv_rename": {
+      "message": "Питай за преименуване на файла"
+   },
+   "dlconv_will_be_converted": {
+      "message": "\"%s\" ще бъде конвертиран до:"
+   },
+   "do_no_convert_format_from_domain": {
+      "message": "Не конвертирай %1s от %2s"
+   },
+   "domain": {
+      "message": "Домейн"
+   },
+   "donate": {
+      "message": "Дарение"
+   },
+   "donate_vdh": {
+      "message": "Video DownloadHelper помощ"
+   },
+   "download_canceled": {
+      "message": "свалянето отказано"
+   },
+   "download_controlled_max_description": {
+      "message": "Контролиране броя на едновременно сваляните файлове, за поддържане на свободен капацитет."
+   },
+   "download_controlled_max_title": {
+      "message": "Максимум сваляния"
+   },
+   "download_controlled_max_title2": {
+      "message": "Максимално текущи сваляния"
+   },
+   "download_retries": {
+      "message": "Number of download retries"
+   },
+   "download_retry_delay": {
+      "message": "Delay between download retries (ms)"
+   },
+   "download_selected_link": {
+      "message": "Свалете избрания линк към медия."
+   },
+   "download_selected_links": {
+      "message": "Свалете избраните линкове към медия."
+   },
+   "downloaded_as": {
+      "message": "Свалено като %s"
+   },
+   "downloading___": {
+      "message": "Сваляне..."
+   },
+   "downloads_hook_headers": {
+      "message": "Закачи сваляните заглавия"
+   },
+   "empty_downloaded_file": {
+      "message": "Сваленият файл от \"%s\" е празен. Медията вероятно е защитена."
+   },
+   "error_cannot_create_target_directory": {
+      "message": "Не може да създаде целевата папка %s. Моля, проверете наличното пространство и правата за запис."
+   },
+   "error_cannot_create_target_file": {
+      "message": "Не може да създаде целевия файл %s. Моля, проверете наличното пространство и правата за запис."
+   },
+   "error_nohome": {
+      "message": "Не е избрана папка по подразбиране."
+   },
+   "errors": {
+      "message": "Грешки"
+   },
+   "explain_qr1": {
+      "message": "Ще забележите, че видеото съдържа воден знак в ъгъла"
+   },
+   "explain_qr2": {
+      "message": "Това е защото сте ползвали ADP  вариант и конвертирането не е било регистрирано"
+   },
+   "extension": {
+      "message": "Разширение"
+   },
+   "f4f_enabled": {
+      "message": "F4F активирано"
+   },
+   "f4f_prefetch": {
+      "message": "F4F предварително извличане на сегменти"
+   },
+   "f4f_streaming": {
+      "message": "F4F стриймване"
+   },
+   "failed_aggregating": {
+      "message": "Провалено струпване \"%s\""
+   },
+   "failed_assembling": {
+      "message": "Провалено сглобяване"
+   },
+   "failed_conversion": {
+      "message": "Провалено конвертиране"
+   },
+   "failed_converting": {
+      "message": "Провалено конвертиране \"%s\""
+   },
+   "failed_getting_info": {
+      "message": "Провалено извличане на данни от \"%s\""
+   },
+   "file_ext_change": {
+      "message": "Промяна на файловото разширение"
+   },
+   "file_ext_change_text": {
+      "message": "Променихте файловото разширение на файла от \".%1s\" на \".%2s\". Това може да предизвика проблеми с възпроизвеждането му"
+   },
+   "file_generated": {
+      "message": "Файлът \"%s\" беше генериран"
+   },
+   "file_not_exists": {
+      "message": "Файлът \"%s\" не съществува"
+   },
+   "file_not_readable": {
+      "message": "Файлът \"%s\" не е за четен"
+   },
+   "file_ready": {
+      "message": "\"%s\" е вече готов"
+   },
+   "files_to_convert": {
+      "message": "Файлове за конвертиране"
+   },
+   "finalizing___": {
+      "message": "Finalizing..."
+   },
+   "flv_streaming": {
+      "message": "FLV стриймване"
+   },
+   "force_default_storage_directory": {
+      "message": "%1s: set default storage directory to \"%2s\""
+   },
+   "from_domain": {
+      "message": "От %s"
+   },
+   "gallery": {
+      "message": "Галерия"
+   },
+   "gallery_auto_detect": {
+      "message": "Автоматично засичане"
+   },
+   "gallery_auto_detect_warning": {
+      "message": "Автоматично засичане на галерията може да има негативно въздействие върху представянето на браузъра"
+   },
+   "gallery_capture": {
+      "message": "Галерия с прихванати"
+   },
+   "gallery_capture_images": {
+      "message": "Засечи вградените изображения"
+   },
+   "gallery_capture_links": {
+      "message": "Засечи линковете до медия"
+   },
+   "gallery_files_types": {
+      "message": "%s файлове"
+   },
+   "gallery_from_domain": {
+      "message": "Галерия от %s"
+   },
+   "gallery_index_prefix": {
+      "message": "Префикс към файловото име с частичен индекс"
+   },
+   "gallery_links": {
+      "message": "Линкове на галерията"
+   },
+   "gallery_links_from_domain": {
+      "message": "Линкове от %s"
+   },
+   "gallery_max_hits": {
+      "message": "Максимално линкове"
+   },
+   "gallery_min_hits": {
+      "message": "Минимум линкове за галерията"
+   },
+   "gallery_min_img_size": {
+      "message": "Минимален размер за изображение"
+   },
+   "general": {
+      "message": "Основно"
+   },
+   "get_conversion_license": {
+      "message": "Вземете регистрация за конвертирането"
+   },
+   "get_converter_license": {
+      "message": "Вземете лиценз"
+   },
+   "get_converter_license_key": {
+      "message": "Вземете лицензен ключ"
+   },
+   "help_vdh": {
+      "message": "Video DownloadHelper помощ"
+   },
+   "hit_details": {
+      "message": "Детайли на попадението."
+   },
+   "hit_go_to_tab": {
+      "message": "Отидете в таб"
+   },
+   "hits_animation_description": {
+      "message": "Анимирай попаденията когато се променят в списъците"
+   },
+   "hits_animation_title": {
+      "message": "Анимация на попаденията"
+   },
+   "hits_goto_tab": {
+      "message": "Покажи бутон за отваряне в таб"
+   },
+   "hls_download_as_m2ts": {
+      "message": "Download HLS streams as M2TS"
+   },
+   "hls_enabled": {
+      "message": "HLS enabled"
+   },
+   "hls_streaming": {
+      "message": "HLS streaming"
+   },
+   "hotkey_clear_hits": {
+      "message": "Изчисти попаденията"
+   },
+   "hotkey_convert_local": {
+      "message": "Конвертирай локалните файлове"
+   },
+   "hotkey_default": {
+      "message": "действие по подразбиране"
+   },
+   "hotkey_detect_gallery": {
+      "message": "Засечи галериите"
+   },
+   "hotkey_open_companion": {
+      "message": "Отвори съпътстващото меню"
+   },
+   "hotkey_supported_sites": {
+      "message": "Поддържани сайтове"
+   },
+   "hotkey_toggle_scrap": {
+      "message": "Прикрепи екранния запис"
+   },
+   "hotkeys": {
+      "message": "Бързи клавиши"
+   },
+   "icon_activation_description": {
+      "message": "кога да се активира иконата за лентата с инструменти"
+   },
+   "icon_activation_mode_anytab": {
+      "message": "Попадения от всеки таб"
+   },
+   "icon_activation_mode_currenttab": {
+      "message": "Попадение от текущия таб"
+   },
+   "icon_activation_title": {
+      "message": "Активиране на иконите"
+   },
+   "icon_animation_description": {
+      "message": "Дали иконата е анимирана, докато някой попадения са активни."
+   },
+   "icon_animation_title": {
+      "message": "Анимации на иконите"
+   },
+   "icon_badge_activetab": {
+      "message": "Медия от активния таб"
+   },
+   "icon_badge_anytab": {
+      "message": "Медия от всеки таб"
+   },
+   "icon_badge_description": {
+      "message": "Надпис на иконата в лентата с инструменти"
+   },
+   "icon_badge_error_description": {
+      "message": "Иконата в лентата с инструменти показва грешки, ако има такъв приоритет."
+   },
+   "icon_badge_error_title": {
+      "message": "Означи показаните грешки"
+   },
+   "icon_badge_mixed": {
+      "message": "Смесено"
+   },
+   "icon_badge_none": {
+      "message": "Няма"
+   },
+   "icon_badge_pinned": {
+      "message": "Pinned hits"
+   },
+   "icon_badge_tasks": {
+      "message": "Стартирани задачи"
+   },
+   "icon_badge_title": {
+      "message": "Надпис на иконата"
+   },
+   "icon_dropdown_description": {
+      "message": "Показвай падащо меню на иконата"
+   },
+   "icon_dropdown_title": {
+      "message": "Маркер за падащо меню на иконата"
+   },
+   "ignore_embedded": {
+      "message": "Игнорирай вградените видеа"
+   },
+   "ignore_protected": {
+      "message": "Игнорирай защитените варианти"
+   },
+   "in_current_tab": {
+      "message": "В текущия таб"
+   },
+   "in_other_tab": {
+      "message": "В други табове"
+   },
+   "install_converter": {
+      "message": "Инсталирай конвертор"
+   },
+   "jocly_addon": {
+      "message": "Jocly Firefox Addon"
+   },
+   "jocly_description": {
+      "message": "Над 100 HTML5 игри срещу компютъра или друг играч, в 3D режим и видео чат с опонентите ..."
+   },
+   "licence_text1": {
+      "message": "Някои добри причини за да регистрирате конвертора си:"
+   },
+   "licence_text2": {
+      "message": "Лицензът на конвертора е за еднократна безплатна употреба без срок, с изключение безплатната поддръжка след едногодишен абонамент."
+   },
+   "license_key": {
+      "message": "Лицензен ключ"
+   },
+   "license_point1": {
+      "message": "Конвертора няма да прихване водния знак"
+   },
+   "license_point2": {
+      "message": "Ще имате възмоожност да конвертирате видео директно в mp3 аудио файл"
+   },
+   "license_point3": {
+      "message": "Ще имате достъп до поддръжката за конвертирането"
+   },
+   "license_point4": {
+      "message": "Ще поддържате Video DownloadHelper наличен"
+   },
+   "links_list": {
+      "message": "Списък от линкове"
+   },
+   "locale_credits": {
+      "message": "Англиски превод от %s"
+   },
+   "locale_credits_translators": {
+      "message": "Kiril Yordanov Kirilov"
+   },
+   "locale_credits_urls": {
+      "message": "http://www.souhssz.com"
+   },
+   "log_details": {
+      "message": "Лог с детайли"
+   },
+   "logs": {
+      "message": "Логове"
+   },
+   "make_donation": {
+      "message": "Направете дарение"
+   },
+   "masked_change_password": {
+      "message": "Change password"
+   },
+   "masked_close": {
+      "message": "Close"
+   },
+   "masked_default_password": {
+      "message": "Masked download using default password"
+   },
+   "masked_enabled": {
+      "message": "Masked download enabled"
+   },
+   "masked_info_descr1": {
+      "message": "The masked download action ensures the downloaded material is only stored in encrypted form in your computer."
+   },
+   "masked_info_descr2": {
+      "message": "To know how to deal with the generated encrypted files, click the More button."
+   },
+   "masked_info_title": {
+      "message": "Masked Download"
+   },
+   "masked_more": {
+      "message": "More"
+   },
+   "masked_save_password": {
+      "message": "Save password"
+   },
+   "max_hits_per_source": {
+      "message": "Максимум връзки от същия източник"
+   },
+   "max_panel_width_description": {
+      "message": "Максимална широчина за всеки панел на addon"
+   },
+   "max_panel_width_title": {
+      "message": "Максимална широчина на панела"
+   },
+   "media": {
+      "message": "Медия"
+   },
+   "mediaweight_min_size_description": {
+      "message": "Пренебрегни попадения под указания размер"
+   },
+   "mediaweight_min_size_title": {
+      "message": "Минимален размер"
+   },
+   "mediaweight_min_size_title2": {
+      "message": "Пренебрегни попадения под указания размер"
+   },
+   "mediaweight_threshold_description": {
+      "message": "Принудително засичане на по-малък размер"
+   },
+   "mediaweight_threshold_title": {
+      "message": "Праг на размера"
+   },
+   "mediaweight_threshold_title2": {
+      "message": "Принудително засичане на по-голям размер"
+   },
+   "min_panel_width_description": {
+      "message": "Минимална широчина за всеки панел на addon"
+   },
+   "min_panel_width_title": {
+      "message": "Минимална ширина на панела"
+   },
+   "more___": {
+      "message": "Повече..."
+   },
+   "mp2t_streaming": {
+      "message": "MP2T streaming"
+   },
+   "mp2t_title": {
+      "message": "MP2T стриймване"
+   },
+   "mpegts_hide_ts": {
+      "message": "Do not show .ts entries in download list"
+   },
+   "network_filter_out_description": {
+      "message": "Обичаен изглед с игнориране на някой медия адреси"
+   },
+   "network_filter_out_title": {
+      "message": "Мрежови филтър"
+   },
+   "network_probe_description": {
+      "message": "Сканирай мрежовия трафик за откриване на попадения."
+   },
+   "network_probe_title": {
+      "message": "Мрежово проучване"
+   },
+   "new_rule": {
+      "message": "ново правило"
+   },
+   "no_download_to_abort": {
+      "message": "Няма сваляния за прекратяване"
+   },
+   "no_license_to_check": {
+      "message": "Без лиценз за проверка"
+   },
+   "no_media_current_tab": {
+      "message": "No media to process in the current tab"
+   },
+   "no_media_to_process": {
+      "message": "Няма медия за обработка"
+   },
+   "no_media_to_process_descr": {
+      "message": "Click play on video to help detect files…"
+   },
+   "no_private_notification": {
+      "message": "Без известия за лични попадения"
+   },
+   "not_again_3months": {
+      "message": "Не ме безпокойте с това в близките 3 месеца"
+   },
+   "not_implemented_yet": {
+      "message": "Още не е изпълнено."
+   },
+   "not_see_again": {
+      "message": "Не извеждай това съобщение повторно"
+   },
+   "notify_ready": {
+      "message": "Извести, когато обработиш"
+   },
+   "number_type": {
+      "message": "%1s %2s"
+   },
+   "operations": {
+      "message": "Операции"
+   },
+   "options": {
+      "message": "Опции"
+   },
+   "order_by_video_quality": {
+      "message": "Подреди според качество на видеото"
+   },
+   "organize_videos": {
+      "message": "Organize videos"
+   },
+   "orphan": {
+      "message": "Орфан"
+   },
+   "orphan_expiration_description": {
+      "message": "Изтичане на времето в секунди преди премахването на орфановите попадения"
+   },
+   "orphan_expiration_title": {
+      "message": "Орфаново изтичане на времето"
+   },
+   "orphan_expiration_title2": {
+      "message": "Орфаново изтичане на времето (секунди)"
+   },
+   "other_products": {
+      "message": "От същите разработчици"
+   },
+   "output": {
+      "message": "Продукт"
+   },
+   "panels_astab_settings": {
+      "message": "Отворете настройките като таб"
+   },
+   "panels_astab_sites": {
+      "message": "Отворете сайтовете като таб"
+   },
+   "pinned": {
+      "message": "Фиксирани"
+   },
+   "prompt_select_storage_dir": {
+      "message": "Изберете папка за съхраняване"
+   },
+   "prompt_target_dir": {
+      "message": "Целева папка"
+   },
+   "purchase_license": {
+      "message": "Закупете лиценз за конвертиране"
+   },
+   "qualities_max_description": {
+      "message": "Максимален брой на показани варианти за едно и също време"
+   },
+   "qualities_max_title": {
+      "message": "Максимални варианти"
+   },
+   "quality_medium": {
+      "message": "Средно"
+   },
+   "quality_small": {
+      "message": "ниско"
+   },
+   "queued___": {
+      "message": "На опашката..."
+   },
+   "recheck_converter": {
+      "message": "Повторна проверка на конвертора"
+   },
+   "register_converter": {
+      "message": "Register converter"
+   },
+   "register_existing_license": {
+      "message": "Регистрирайте съществуващ лиценз"
+   },
+   "registered_email": {
+      "message": "E-mail"
+   },
+   "registered_key": {
+      "message": "Ключ"
+   },
+   "registered_name": {
+      "message": "Име"
+   },
+   "req_donate": {
+      "message": "Бихте ли подкрепили разработването като направите дарение?"
+   },
+   "req_review": {
+      "message": "Евентуално, имате ли нещо против да напишете добър отзвук в сайта на Mozilla addon?"
+   },
+   "req_review_link": {
+      "message": "Напишете ревю за Video DownloadHelper"
+   },
+   "reset_converter_rules": {
+      "message": "Възстанови правилата по подразбиране"
+   },
+   "reset_variants": {
+      "message": "Нулиране на вариантите"
+   },
+   "revalidate_license": {
+      "message": "Презаверяване на лиценз"
+   },
+   "rule_converter_unavail": {
+      "message": "Автоматичното конвертиране ще бъде приложено към \"%s\", обаче не е наличен конвертор на Вашата система. Медията няма да се конвертира."
+   },
+   "running": {
+      "message": "Стартирани"
+   },
+   "safe_mode": {
+      "message": "Безопасен режим"
+   },
+   "safe_mode_confirm": {
+      "message": "Да, наистина искам да активирам безопасния режим"
+   },
+   "safe_mode_confirm_description": {
+      "message": "Ние наистина искаме да се уверим, единствения режим е безопасен"
+   },
+   "safe_mode_description": {
+      "message": "Активиране на защитния режим за Video DownloadHelper гарантира показването на уеб съдържание подходящо за цялото семейство."
+   },
+   "safe_mode_description2": {
+      "message": "Настрой защитния режим като постоянен и не бива да се излиза от него"
+   },
+   "safe_mode_set": {
+      "message": "настрой безопасен режим"
+   },
+   "save": {
+      "message": "Запиши"
+   },
+   "save_transient_storagedirectory": {
+      "message": "Запиши за постоянно"
+   },
+   "scrap_8x8_align": {
+      "message": "8x8 подравняване"
+   },
+   "scrap_8x8_align_cut": {
+      "message": "Изрежи"
+   },
+   "scrap_8x8_align_extend": {
+      "message": "Разшири"
+   },
+   "scrap_applet_selector": {
+      "message": "Аплетен селектор"
+   },
+   "scrap_applet_start_not_see_again": {
+      "message": "Не показвай това съобщение при стартиране на прихващането"
+   },
+   "scrap_auto_detect": {
+      "message": "Аплетно автоматично прихващане"
+   },
+   "scrap_auto_detect_warning": {
+      "message": "Автоматичното прихващане може да има негативно въздействие върху представянето на Вашия браузър"
+   },
+   "scrap_capture_statistics": {
+      "message": "Статистика за прихващането"
+   },
+   "scrap_change_target": {
+      "message": "промени целевия файл"
+   },
+   "scrap_convert": {
+      "message": "Конвертирай прихванатото от екрана видео"
+   },
+   "scrap_converter_required": {
+      "message": "Записа на прозореца изисква конвертора да генерира видео"
+   },
+   "scrap_description": {
+      "message": "Генерирай видео от целия прозорец на браузъра"
+   },
+   "scrap_description2": {
+      "message": "Ако компютърът Ви е прекалено слаб, може да пропуснете някой кадри. Опитайте да намалите прозореца на браузъра или кадрите в секунда."
+   },
+   "scrap_description3": {
+      "message": "Няма да се прихване аудио. Трябва да държите таба активен до рефрешване."
+   },
+   "scrap_description4": {
+      "message": "Генерирай виде от това, което се случва в региона на прозореца на браузъра."
+   },
+   "scrap_description5": {
+      "message": "Ако компютъра Ви е прекалено слаб, може да пропуснете някой кадри. Опитайте да намалите броя кадри в секунда"
+   },
+   "scrap_do_not_display_start_panel": {
+      "message": "не показвай панела при стартиране на прихващането"
+   },
+   "scrap_enabled": {
+      "message": "Включи стартиране на прихващането"
+   },
+   "scrap_error": {
+      "message": "Грешка при запис на прозореца"
+   },
+   "scrap_file_saved_as": {
+      "message": "Прихванатото видео ще бъде записано като %s"
+   },
+   "scrap_min_applet_size": {
+      "message": "Минимален размер отчитащ таблет"
+   },
+   "scrap_mouse_always": {
+      "message": "Винаги"
+   },
+   "scrap_mouse_halo_color": {
+      "message": "Цвят на ореола"
+   },
+   "scrap_mouse_halo_radius": {
+      "message": "Радиус на ореола"
+   },
+   "scrap_mouse_halo_transparency": {
+      "message": "Прозрачност на ореола (%)"
+   },
+   "scrap_mouse_metakey": {
+      "message": "При натиснат SHIFT клавиш"
+   },
+   "scrap_mouse_never": {
+      "message": "Никога"
+   },
+   "scrap_mouse_not_metakey": {
+      "message": "Когато не е натиснат SHIFT клавиша"
+   },
+   "scrap_mouse_pointer_size": {
+      "message": "Размер на показалеца"
+   },
+   "scrap_mouse_title": {
+      "message": "Записване на мишката"
+   },
+   "scrap_no_converter": {
+      "message": "Не беше открит конвертор на Вашата система и се налага да се генерира прихващането на екрана"
+   },
+   "scrap_open_container": {
+      "message": "Отвори съдържащата папка"
+   },
+   "scrap_open_file": {
+      "message": "Отвори видеото"
+   },
+   "scrap_port": {
+      "message": "Порт на конвертиране"
+   },
+   "scrap_rate": {
+      "message": "Кадри в секунди на прихващане"
+   },
+   "scrap_screen_capture": {
+      "message": "Прихващане на екрана"
+   },
+   "scrap_screen_capture_from_domain": {
+      "message": "Прихващане на екрана от %s"
+   },
+   "scrap_start": {
+      "message": "Стартирай SCRAP"
+   },
+   "scrap_start_capture": {
+      "message": "Стартирай прихващането"
+   },
+   "scrap_start_long": {
+      "message": "Стартирай прихващането на браузваната сесия"
+   },
+   "scrap_start_scrap_long": {
+      "message": "Стартирай записа на прозореца"
+   },
+   "scrap_stats_captured_frames": {
+      "message": "%1s прихванати кадри, %2s пропуснати, %3s липсващи"
+   },
+   "scrap_stats_captured_size": {
+      "message": "Прихванат размер на кадъра %s"
+   },
+   "scrap_stats_duration": {
+      "message": "Времетраене %s секунди"
+   },
+   "scrap_stats_original_size": {
+      "message": "Оригинален размер на кадъра %s"
+   },
+   "scrap_stats_saved_frames": {
+      "message": "%1s записани кадри, %2s изгубени"
+   },
+   "scrap_stop": {
+      "message": "Спри прихващането на браузваната сесия"
+   },
+   "scrap_stop_long": {
+      "message": "Stop capturing browsing session"
+   },
+   "scrap_stop_scrap_long": {
+      "message": "Спри записа на прозореца"
+   },
+   "scrap_success": {
+      "message": "успешно прихващане на екрана"
+   },
+   "scrap_successfully_saved_as": {
+      "message": "File \"%s\" has been successfully saved"
+   },
+   "scrap_title": {
+      "message": "Прихващане на екрана"
+   },
+   "selected_text": {
+      "message": "Селектиран текст"
+   },
+   "settings": {
+      "message": "Настройки"
+   },
+   "settings_title": {
+      "message": "Настройки на Video DownloadHelper"
+   },
+   "shortcut_icons": {
+      "message": "Покажи иконите на преките пътища"
+   },
+   "shortcut_icons_dropdown": {
+      "message": "Икони с преки пътища и падащи менюта"
+   },
+   "show_in_toolsmenu": {
+      "message": "Покажи контролите в менюто с инструменти"
+   },
+   "site_comments": {
+      "message": "Коментари"
+   },
+   "site_date": {
+      "message": "Добавен"
+   },
+   "site_interest": {
+      "message": "Интерес"
+   },
+   "site_name": {
+      "message": "Име на сайта"
+   },
+   "site_rating": {
+      "message": "Рейтинг"
+   },
+   "smartname_delay": {
+      "message": "Забавяне именоването на прихванатото (ms)"
+   },
+   "smartname_regexp": {
+      "message": "Нормален изглед"
+   },
+   "smartnamer_all_domains": {
+      "message": "Всички домейни"
+   },
+   "smartnamer_by_default": {
+      "message": "По дефиниция"
+   },
+   "smartnamer_enabled_description": {
+      "message": "Именовай според информацията в страницата"
+   },
+   "smartnamer_enabled_title": {
+      "message": "Включи именоването по подрабиране"
+   },
+   "smartnamer_fname_maxlen_description": {
+      "message": "Осигуряване генерираните имена на файлове да не надвишават този размер"
+   },
+   "smartnamer_fname_maxlen_title": {
+      "message": "Максимална дължина на файлово име"
+   },
+   "smartnamer_fname_spaces_description": {
+      "message": "Какво да се прави с интервалите във файловите имена"
+   },
+   "smartnamer_fname_spaces_hyphen": {
+      "message": "Замести с тирета"
+   },
+   "smartnamer_fname_spaces_keep": {
+      "message": "Запази"
+   },
+   "smartnamer_fname_spaces_remove": {
+      "message": "Премахни"
+   },
+   "smartnamer_fname_spaces_title": {
+      "message": "Интервали във файловите имена"
+   },
+   "smartnamer_fname_spaces_underscore": {
+      "message": "Замести с долни черти"
+   },
+   "smartnamer_get_name_from_header_url": {
+      "message": "Вземи име от хедъра или URL адрес"
+   },
+   "smartnamer_get_name_from_page_content": {
+      "message": "Вземи име от съдържанието на страницата"
+   },
+   "smartnamer_get_name_from_page_title": {
+      "message": "Вземи име от заглавието на страницата"
+   },
+   "smartnamer_get_obfuscated_name": {
+      "message": "Използвай завоалирано име"
+   },
+   "smartnamer_header_url": {
+      "message": "Хедър/URL"
+   },
+   "smartnamer_index": {
+      "message": "текущ индекс"
+   },
+   "smartnamer_naming": {
+      "message": "начин на именуване"
+   },
+   "smartnamer_obfuscated": {
+      "message": "завоалирано"
+   },
+   "smartnamer_page_content": {
+      "message": "Съдържание на страница"
+   },
+   "smartnamer_page_title": {
+      "message": "Заглавие на страницата"
+   },
+   "smartnames": {
+      "message": "Имена по подразбиране"
+   },
+   "smartnames_domains": {
+      "message": "Имена на домейни по подразбиране"
+   },
+   "storage_directory": {
+      "message": "Папка за съхранение"
+   },
+   "storage_directory_error": {
+      "message": "Storage directory error \"%s\": using default directory %s"
+   },
+   "storage_directory_not_defined": {
+      "message": "Папката за съхранение не е дефинирана: използване на папката по подразбиране"
+   },
+   "storage_directory_not_directory": {
+      "message": "Папката за съхранение не е папка"
+   },
+   "storage_directory_not_exist": {
+      "message": "Папката за съхранение не съществува"
+   },
+   "storage_directory_not_writable": {
+      "message": "Папката за съхранение не позволява пава за запис"
+   },
+   "storage_last_dir": {
+      "message": "Използвай папката по подразбиране на браузъра"
+   },
+   "supported_sites": {
+      "message": "Поддържани сайтове"
+   },
+   "supported_vp9": {
+      "message": "Кодек VP9 се поддържа"
+   },
+   "tbmode_comp": {
+      "message": "Само придружаващи бутони"
+   },
+   "tbmode_label": {
+      "message": "Режим на лента с инструменти"
+   },
+   "tbmode_main": {
+      "message": "Само главни бутони"
+   },
+   "tbmode_maincomp": {
+      "message": "Главни и придружаващи бутони"
+   },
+   "tbsn_enabled": {
+      "message": "Facebook helper"
+   },
+   "tbts_enabled": {
+      "message": "Twitter helper"
+   },
+   "tbvv_enabled": {
+      "message": "Vine helper"
+   },
+   "tell_me_more": {
+      "message": "Кажете ми повече за това"
+   },
+   "thumbnail_direct_gif": {
+      "message": "Use GIF thumbnails"
+   },
+   "thumbnail_from_meta": {
+      "message": "Video thumbnails from page meta"
+   },
+   "thumbnail_tumblr_mp4": {
+      "message": "Tumblr helper"
+   },
+   "title_mode": {
+      "message": "Главен панел за дълги заглавия"
+   },
+   "title_mode_ellipsis_left": {
+      "message": "Многоточие отляво"
+   },
+   "title_mode_ellipsis_right": {
+      "message": "Многоточие отдясно"
+   },
+   "title_mode_multiline": {
+      "message": "През няколко реда"
+   },
+   "title_save_file": {
+      "message": "Запиши файлът"
+   },
+   "top_main_panel": {
+      "message": "Начало на главния панел"
+   },
+   "tpsr_concurrent_captures": {
+      "message": "Едновременно прихващане"
+   },
+   "tpsr_convert": {
+      "message": "Конвертирай генерираните видео файлове"
+   },
+   "tpsr_convert_format": {
+      "message": "задай изходния формат"
+   },
+   "tpsr_description": {
+      "message": "Този метод прихващане на живо предаване от Twitter Periscope както изглежда. По-добре е да се изключи звука, за да се избегнат смущения."
+   },
+   "tpsr_do_not_convert": {
+      "message": "не конвертирай получения файл"
+   },
+   "tpsr_duration_timeout": {
+      "message": "Максимална продължителност на записвания стрийм (секунди)"
+   },
+   "tpsr_enabled": {
+      "message": "Включен"
+   },
+   "tpsr_no_converter": {
+      "message": "Нямате конвертор инсталиран на Вашата система. Като временно решение, добавката ще свързва изтеглените парчета, но получените файлове може да не се възпроизвеждат коректно."
+   },
+   "tpsr_search_help": {
+      "message": "Може да оставите непопълнено полето, но ще прихванете произволно каквото е на живо."
+   },
+   "tpsr_search_periscope": {
+      "message": "Търси Periscope"
+   },
+   "tpsr_search_terms": {
+      "message": "Търси условия"
+   },
+   "tpsr_start_par": {
+      "message": "Стартирай PAR"
+   },
+   "tpsr_start_par_long": {
+      "message": "стартирай автоматичния запис на Periscope"
+   },
+   "tpsr_start_recording": {
+      "message": "Старт"
+   },
+   "tpsr_start_timeout": {
+      "message": "Оставащо време до стрийма (секунди)"
+   },
+   "tpsr_stop_par": {
+      "message": "Спри PAR"
+   },
+   "tpsr_stop_par_long": {
+      "message": "Спри автоматичния запис на Periscope"
+   },
+   "tpsr_title": {
+      "message": "Автоматичния запис Periscope"
+   },
+   "transient_storagedirectory": {
+      "message": "папката за съхранение е била променена и ще бъде настроена при следващата сесия"
+   },
+   "ui_adp_grey": {
+      "message": "ADP варианти"
+   },
+   "ui_adp_tag": {
+      "message": "Отбележи ADP варианти"
+   },
+   "undefined_output": {
+      "message": "неопределен изходен формат"
+   },
+   "unregistered": {
+      "message": "Нерегистрирано"
+   },
+   "unsupported_vp9": {
+      "message": "Кодек VP9 не се поддържа"
+   },
+   "using_browser_default": {
+      "message": "Използване на браузъра по подразбиране"
+   },
+   "validate_license": {
+      "message": "Регистрационен лиценз"
+   },
+   "variants": {
+      "message": "Варианти"
+   },
+   "vdh_notification": {
+      "message": "Video DownloadHelper"
+   },
+   "vdh_settings": {
+      "message": "Видео DownloadHelper настройки"
+   },
+   "version": {
+      "message": "Версия %s"
+   },
+   "video": {
+      "message": "Видео"
+   },
+   "video_downloadhelper": {
+      "message": "Video DownloadHelper"
+   },
+   "video_downloadhelper_plus": {
+      "message": "Video DownloadHelper +"
+   },
+   "video_only": {
+      "message": "Само видео."
+   },
+   "video_qualities": {
+      "message": "Видео качества"
+   },
+   "visit_site": {
+      "message": "Посетете сайта"
+   },
+   "xpath_expr": {
+      "message": "XPath изглед"
+   },
+   "you_downloaded_n_videos": {
+      "message": "току що успешно свалихте Вашия %sth файл с Video DownloadHelper."
+   }
+}

@@ -1,0 +1,102 @@
+{
+   "adModeOff": {
+      "description": "Popup Button: ad_mode_off",
+      "message": "Enter AD Mode"
+   },
+   "adModeOn": {
+      "description": "Popup Button: ad_mode_on",
+      "message": "Leave AD Mode"
+   },
+   "extDescription": {
+      "description": "Extension: Description",
+      "message": "An extension for Bilibili that provides convenient features/shortcuts."
+   },
+   "extName": {
+      "description": "Extension: Name",
+      "message": "Bilibili Helper: Bilibili.com Auxiliary"
+   },
+   "extShortName": {
+      "description": "Extension: Short Name",
+      "message": "Bilibili Helper"
+   },
+   "followingUpdateMessage": {
+      "description": "Notification: Following Update Message",
+      "message": "Your bilibili followings updated (%n new)!\n%uploader just published '%title'!"
+   },
+   "goBili": {
+      "description": "Popup Button: go_bili",
+      "message": "Go to bilibili.com"
+   },
+   "goBiliLive": {
+      "description": "Popup Button: go_bili_live",
+      "message": "Go to Bilibili Live"
+   },
+   "goDynamic": {
+      "description": "Popup Button: go_dynamic",
+      "message": "Followings"
+   },
+   "goFavorite": {
+      "description": "Popup Button: go_favorite",
+      "message": "Favorites"
+   },
+   "goOption": {
+      "description": "Popup Button: go_option",
+      "message": "Options"
+   },
+   "goSubscription": {
+      "description": "Popup Button: go_subscription",
+      "message": "Subscriptions"
+   },
+   "goVideo": {
+      "description": "Popup Button: go_video",
+      "message": "GO!"
+   },
+   "nNewUpdate": {
+      "description": "Popup Button: new_update",
+      "message": " (%n New)"
+   },
+   "notLogged": {
+      "description": "Popup Button: not_logged",
+      "message": " (Please Login)"
+   },
+   "noticeficationExtensionUpdate": {
+      "description": "Notification: Extension Update",
+      "message": "Bilibili Helper just auto updated to v%v!"
+   },
+   "noticeficationNewFeatures": {
+      "description": "Notification: New Features",
+      "message": "What's New"
+   },
+   "noticeficationTitle": {
+      "description": "Notification: Title",
+      "message": "Bilibili Helper Notification"
+   },
+   "notificationGetTv": {
+      "description": "Noticefication: Get TV",
+      "message": "Attend it."
+   },
+   "notificationLiveOn": {
+      "description": "Noticefication: Live On",
+      "message": " is live-streaming!"
+   },
+   "notificationShowAll": {
+      "description": "Notification: Show All",
+      "message": "Show All"
+   },
+   "notificationWatch": {
+      "description": "Notification: Watch",
+      "message": "Watch"
+   },
+   "notificationWatchLater": {
+      "description": "Noticefication: Watch Later",
+      "message": "Watch Later"
+   },
+   "optionPage": {
+      "description": "Option Page: Title",
+      "message": "Options"
+   },
+   "searchBili": {
+      "description": "Context Menu: Title",
+      "message": "Search Bilibili for '%s'"
+   }
+}

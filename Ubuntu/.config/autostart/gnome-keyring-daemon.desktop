@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=gnome-keyring-daemon
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=gnome-keyring-daemon
+Name=gnome-keyring-daemon
+Comment[en_US]=
+Comment=

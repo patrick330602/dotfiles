@@ -1,0 +1,386 @@
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+}
+
+[ng-click] {
+	cursor: pointer;
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+.tab-pane {
+	background-color: #fff;
+	padding: 8px 6px 4px 6px;
+}
+
+.vdh-panel-title {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 4px;
+	padding: 2px 0;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	background-image:url(images/panel-header-bg.png);
+	background-position:left center;
+	background-repeat:no-repeat;
+	text-shadow:-1px 2px rgba(0,0,0,0.5);
+}
+
+.vdh-panel-title > div.vdh-buttons {
+	float: right;
+	margin: 2px 4px 2px 6px;
+}
+
+.vdh-panel-title > div.vdh-panel-button {
+	float: right;
+	margin: 2px 4px 2px 6px;
+}
+
+#content {
+	padding: 8px;
+}
+
+.vdh-panel-button {
+	width: 20px;
+	height: 20px;
+	padding: 2px;
+	border: 1px outset #808080;
+	border-radius: 3px;
+	display: inline-block;
+	background-color: #fff;
+}
+
+.vdh-panel-button > img {
+	width: 15px;
+	height: 15px;
+}
+
+.vdh-panel-button:hover  {
+	background-color: #1F80E0;
+}
+
+.vdh-panel-button:hover > img {
+	filter: invert(100%);
+}
+
+.vdh-panel-button:active {
+	border: 1px inset #808080;
+	background-color: #000000;
+}
+
+.vdh-panel-button.vdh-disabled {
+	background-color: #888;
+}
+.vdh-panel-button.vdh-disabled:hover  {
+	background-color: #888;
+	cursor: default;
+}
+.vdh-panel-button.vdh-disabled:hover > img {
+	filter: invert(0%);
+}
+.vdh-panel-button.vdh-disabled:active {
+	border: 1px outset #808080;
+	background-color: #888;
+}
+
+
+
+.vdh-container {
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+}
+
+.vdh-container > * {
+	display: table-row;
+}
+
+.vdh-container > * > * {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.vdh-fullsize {
+	width: 100%;
+	height: 100%;
+}
+
+.vdh-fullwidth {
+	width: 100%;
+}
+
+.vdh-fullheight {
+	height: 100%;
+}
+
+.vdh-scroller {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.vdh-scroller > div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+}
+
+.vdh-list-editor {
+	border: 1px inset #333;
+	width: 80%;
+	max-width: 400px;
+	height: 200px;
+}
+
+.vdh-list-editor .vdh-list-controls {
+	height: 30px;
+	border-top: 1px solid #333;
+	background-color: #ddd;
+}
+
+.vdh-list-editor .vdh-list-controls input {
+	margin: 5px 0 0 8px;
+}
+
+.vdh-list-editor .vdh-list-item {
+	/*
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	*/
+	text-align: left;
+	padding: 0 6px 0 6px;
+	font-size: 9pt;
+	border-bottom: 2px solid #fff;
+	background-color: #eee;
+}
+
+.vdh-list-editor .vdh-list-item.vdh-list-disabled {
+	color: #aaa;
+}
+
+.vdh-list-editor .vdh-list-item:hover {
+	background-color: #1F80E0;
+	color:white;
+}
+
+.vdh-list-editor .vdh-list-item.vdh-list-selected {
+	font-weight: bold;
+}
+
+.vdh-list-editor .vdh-add-string {
+	display: inline-block;
+}
+
+.vdh-list-editor .vdh-add-string input {
+	width: 80px;
+}
+
+.vdh-buttons {
+	margin-top: 8px;
+	text-align: right;
+}
+
+.vdh-panel-help {
+	margin: 0px 4px;
+	padding: 4px 0 4px 6px;
+	border-left: 1px solid #aaa;
+	font-style: italic;
+}
+
+.vdh-cve-header {
+	text-align: left;
+}
+
+.vdh-cve-header select {
+	width: 50%;
+	text-align: left;
+}
+
+.vdh-cve-header input {
+	width: 50%;
+	text-align: left;
+}
+
+.vdh-cve-links {
+	text-align: right;
+}
+
+.vdh-cve-row {
+	overflow: hidden;
+	min-height: 35px;
+	padding-top: 6px;
+}
+
+.vdh-cve-row > * {
+	float: right;
+	clear: right;
+}
+
+.vdh-cve-row > .vdh-cve-label {
+	float: left;
+}
+
+.vdh-cve-row select {
+	max-width: 200px;
+}
+
+.vdh-cve-help {
+	font-style: italic;	
+}
+
+.vdh-cve-disabled {
+   pointer-events: none;
+}
+
+.vdh-cve-editor {
+	position: relative;
+}
+
+.vdh-cve-mask {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(255,255,255,.5);
+}
+
+.vdh-cve-reset-confirm {
+	margin: 6px 0;
+	padding: 12px 8px;
+	background-color: #f88;
+}
+
+.vdh-cve-reset-confirm > div {
+	float: right;
+	display: inline-block;
+}
+
+.vdh-cve-reset-confirm div:first-child {
+	font-weight: bold;
+	float: none;
+}
+
+a.vdh-disabled {
+   pointer-events: none;
+   cursor: default;
+   color: #888;
+}
+
+.vdh-cve-readonly-warn {
+	font-weight: bold;
+	text-align: center;
+}
+
+.vdh-other-addon div {
+	text-align: right;
+	padding-right: 12px;
+	margin-top: 6px;
+}
+
+.vdh-other-addon:hover {
+	background-color: #1F80E0;
+	color: #fff;
+}
+
+.vdh-addon-title {
+	font-weight: bold;
+}
+
+.vdh-addon-description {
+	font-style: italic;
+}
+
+.vdh-addon-image-container {
+	width: 64px;
+	height: 64px;
+}
+
+.vdh-addon-image {
+	padding: 0;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.vdh-addon-image > img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity .8s;
+}
+
+.vdh-addon-image > img:first-child {
+	opacity: 1;
+}
+
+a.vdh-link {
+    -moz-text-decoration-color: -moz-use-text-color;
+    -moz-text-decoration-line: none;
+    -moz-text-decoration-style: solid;
+    color: #337ab7;
+}
+
+a.vdh-link:focus, a.vdh-link:hover {
+    -moz-text-decoration-line: underline;
+}
+
+a.vdh-link:active, a.vdh-link:hover {
+	outline-color: -moz-use-text-color;
+	outline-style: none;
+	outline-width: 0;
+}
+
+.vdh-dropdown > div {
+	background-image: url(images/select-bk.png);
+	background-repeat: no-repeat;
+	background-position: 80px 0px, center;
+	overflow: hidden;
+	width: 100px;
+}
+
+.vdh-dropdown > div select {
+	width: 120px;
+	padding-right: 20px;
+	background: transparent;
+	border: none;
+	font-size: 14px;
+	height: 29px;
+	color: #337AB7;
+	text-shadow: 0 0 0 #fff;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.vdh-dropdown select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}

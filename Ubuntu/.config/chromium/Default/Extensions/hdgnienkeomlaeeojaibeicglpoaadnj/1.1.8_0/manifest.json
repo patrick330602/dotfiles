@@ -1,0 +1,25 @@
+{
+   "author": "Nick Vogt",
+   "background": {
+      "persistent": false,
+      "scripts": [ "event.js" ]
+   },
+   "description": "Automatically deletes browsing history and optionally other browsing data.",
+   "icons": {
+      "128": "128.png",
+      "16": "16.png",
+      "32": "32.png",
+      "48": "48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5pcZuZv3gAe6AmVcP3cwbxWZpgmfkiqDhmqajS9NCM9fWywOkuOZ4GXqYdGU6g3k1WgY+ZYoVeXZfHrKFrvfVGAVtZ8MsN3NGF+IAOhjTYn9MKc28vjeiPNXgR/rbus0JArfrVmiHzWNipbrUVbFNuWHVnNEpQSxbQZomcfjVvBLB7Wwd7+XGBsUB02XyKcW5j9eWoJCFAdS52tlMwDDZDiQrPrYDQ/5BG3u93iVCZ9Q/VaQ5jNt4WAZPBjE89YeAC9haHnDp176evhjcOzKdm5TOibhmhPfnqR5V0pMetTVdNmZhx1hxKMASStpNpm9TW86+tkXMI2cPmkWjP8YjwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "21",
+   "name": "Auto History Wipe",
+   "offline_enabled": true,
+   "optional_permissions": [ "downloads", "contentSettings" ],
+   "options_page": "options.html",
+   "permissions": [ "storage", "browsingData" ],
+   "short_name": "Auto History Wipe",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.8"
+}

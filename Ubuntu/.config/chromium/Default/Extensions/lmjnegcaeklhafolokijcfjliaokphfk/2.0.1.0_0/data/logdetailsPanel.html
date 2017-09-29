@@ -1,0 +1,20 @@
+<html ng-app="VDH">
+	<head>
+		<link href="lib/bootstrap/bootstrap.min.css" type="text/css" rel="stylesheet">
+		<link href="lib/angular-csp.css" type="text/css" rel="stylesheet">
+	    <meta charset="UTF-8">
+		<link href="commonPanel.css" type="text/css" rel="stylesheet">
+		<link href="logdetailsPanel.css" type="text/css" rel="stylesheet">
+		<script src="lib/angular.min.js"></script>
+		<script src="lib/angular-animate.min.js"></script>
+		<script src="commonPanel.js"></script>
+		<script src="logdetailsPanel.js"></script>
+    </head>
+	<body ng-controller="VDHLogdetailsCtrl" ng-cloak ng-show="checkSize()">
+		<div id="content">
+			<div class="vdh-panel-title" vdh-l10n="log-details"></div>
+			<div class="ld-text">{{log.text}}</div>
+			<pre class="ld-details">{{log.details}}</pre>
+		</div>
+	</body>
+</html>

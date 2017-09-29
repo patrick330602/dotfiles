@@ -1,0 +1,36 @@
+<html ng-app="VDH">
+	<head>
+		<link href="lib/bootstrap/bootstrap.min.css" type="text/css" rel="stylesheet">
+		<link href="lib/angular-csp.css" type="text/css" rel="stylesheet">
+	    <meta charset="UTF-8">
+		<link href="commonPanel.css" type="text/css" rel="stylesheet">
+		<link href="detailsPanel.css" type="text/css" rel="stylesheet">
+		<script src="lib/angular.min.js"></script>
+		<script src="lib/angular-animate.min.js"></script>
+		<script src="commonPanel.js"></script>
+		<script src="detailsPanel.js"></script>
+    </head>
+	<body ng-controller="VDHDetailsCtrl" ng-cloak ng-show="checkSize()">
+		<div id="content">
+			<div class="vdh-panel-title" vdh-l10n="hit-details"></div>
+			<table>
+				<tr ng-repeat="(name,value) in hit | excludeUnderscoredKey" class="details-row" ng-click="selected.field = name">
+					<td class="details-name">{{name}}</td>
+					<td class="details-value">{{value}}</td>
+				</tr>
+			</table>
+			<div class="details-full" ng-show="selected.field">
+				<div class="details-full-name">{{selected.field}}</div>
+				<div class="details-full-value">{{hit[selected.field]}}</div>
+				<div class="vdh-buttons">
+					<a ng-click="copyToClipboard()" class="vdh-link"
+						ng-show="hit[selected.field]" 
+						vdh-l10n="copy-to-clipboard"></a>
+				</div>
+			</div>
+			<!--  
+			<div>{{hit}}</div>
+			-->
+		</div>
+	</body>
+</html>

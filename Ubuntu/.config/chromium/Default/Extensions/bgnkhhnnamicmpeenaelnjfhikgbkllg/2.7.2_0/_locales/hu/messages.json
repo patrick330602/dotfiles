@@ -1,0 +1,698 @@
+{
+   "abp_subscribe_confirm_enable": {
+      "message": "Adguard: szeretné engedélyezni az $1 előfizetést?"
+   },
+   "abp_subscribe_confirm_import": {
+      "message": "Adguard: szeretné importálni a szabályokat a $1 -ból az ön felhasználói szűrői közé?"
+   },
+   "abp_subscribe_confirm_import_finished_text": {
+      "message": "Az Adguard befelyezte a szabályok importálását a felhasználói szűrőkhöz.$1 szabály importálva."
+   },
+   "abp_subscribe_confirm_import_finished_title": {
+      "message": "Az importálás sikeres volt"
+   },
+   "adguard_product_mac": {
+      "message": "Adguard Mac-re"
+   },
+   "adguard_product_windows": {
+      "message": "Adguard Windows-ra"
+   },
+   "alert_popup_filter_enabled_text": {
+      "message": "«$1» automatikusan aktiválva"
+   },
+   "alert_popup_filter_enabled_title": {
+      "message": "A szűrők automatikus aktiválása"
+   },
+   "assistant_another_element": {
+      "message": "További elem kiválasztás"
+   },
+   "assistant_apply_rule_to_all_sites": {
+      "message": "Szabály alkalmazása&nbsp;minden oldalon"
+   },
+   "assistant_block": {
+      "message": "Blokkolás"
+   },
+   "assistant_block_by_reference": {
+      "message": "Elem blokkolása&nbsp;URL-el"
+   },
+   "assistant_block_element": {
+      "message": "Elem blokkolása"
+   },
+   "assistant_block_element_explain": {
+      "message": "Elem blokkolási szabályának létrehozása"
+   },
+   "assistant_block_similar": {
+      "message": "Hasonló elemek blokkolása"
+   },
+   "assistant_extended_settings": {
+      "message": "Haladó beállítások"
+   },
+   "assistant_preview": {
+      "message": "Előnézet"
+   },
+   "assistant_preview_end": {
+      "message": "Előnézet Befejezés"
+   },
+   "assistant_preview_header": {
+      "message": "Elem blokolása - Előnézet"
+   },
+   "assistant_preview_header_info": {
+      "message": "Nézze meg hogy fog kinézni az oldal, mielőtt  megerősítené a tiltást."
+   },
+   "assistant_preview_start": {
+      "message": "Előnézet"
+   },
+   "assistant_select_element": {
+      "message": "Kiválasztó mód"
+   },
+   "assistant_select_element_cancel": {
+      "message": "Mégsem"
+   },
+   "assistant_select_element_ext": {
+      "message": "Kattintson bármilyen&nbsp;elemre az&nbsp;oldalon"
+   },
+   "assistant_slider_explain": {
+      "message": "Használd a csúszkát,&nbsp;hogy a blokkolt elem nagyságát&nbsp;változtasd:"
+   },
+   "assistant_slider_if_hide": {
+      "message": "A szűrő tartalmazni fog egy szabályt ami&nbsp;a kiválasztott elemet fogja blokkolni"
+   },
+   "assistant_slider_max": {
+      "message": "NAGYOBB"
+   },
+   "assistant_slider_min": {
+      "message": "KISEBB"
+   },
+   "context_abuse_site": {
+      "message": "Panasz benyújtása az oldalról..."
+   },
+   "context_ads_has_been_removed": {
+      "message": "Hirdetések eltávolítva erről az oldalról"
+   },
+   "context_ads_has_been_removed_by_adguard": {
+      "message": "$1 által védve"
+   },
+   "context_antibanner": {
+      "message": "Hirdetés blokkoló"
+   },
+   "context_block_site_ads": {
+      "message": "Hirdetések blokkolása ezen az oldalon"
+   },
+   "context_block_site_element": {
+      "message": "Elem blokkolása..."
+   },
+   "context_block_site_image": {
+      "message": "Adguard: Kép blokkolása..."
+   },
+   "context_disable_protection": {
+      "message": "Adguard védelem szüneteltetése"
+   },
+   "context_enable_protection": {
+      "message": "Adguard védelem folytatása"
+   },
+   "context_general_settings": {
+      "message": "Általános beállítások"
+   },
+   "context_miscellaneous_settings": {
+      "message": "Továbbiak"
+   },
+   "context_open_log": {
+      "message": "Szűrési napló..."
+   },
+   "context_open_settings": {
+      "message": "Adguard beállítások"
+   },
+   "context_safebrowsing": {
+      "message": "Böngészési biztonság"
+   },
+   "context_security_report": {
+      "message": "Weboldal biztonsági jelentés megnyitása..."
+   },
+   "context_site_exception": {
+      "message": "Ez az oldal a kivételek között szerepel"
+   },
+   "context_site_filtering_disabled": {
+      "message": "Adguard nem tud futni ezen a domainen"
+   },
+   "context_site_filtering_off": {
+      "message": "Szűrés kikapcsolása ezen az oldalon"
+   },
+   "context_site_filtering_on": {
+      "message": "Szűrés bekapcsolása ezen az oldalon"
+   },
+   "context_site_protection_disabled": {
+      "message": "Adguard védelem szüneteltetve"
+   },
+   "context_update_antibanner_filters": {
+      "message": "Szűrő frissítések ellenőrzése"
+   },
+   "context_userfilter": {
+      "message": "Felhasználói szűrő"
+   },
+   "context_whitelist": {
+      "message": "Kivételek"
+   },
+   "description": {
+      "message": "Unmatched adblock extension against advertising and pop-ups. Blocks ads on Facebook, Youtube and all other websites."
+   },
+   "description_blocked": {
+      "message": "Hirdetés blokkolva ezen az oldalon:"
+   },
+   "filter_download_ads_malware": {
+      "message": "A vírusok&nbsp;és kártékony szoftverek&nbsp;90%-a\u003Cbr/>lelkiismeretlen hidetés&nbsp;hálozatokon keresztül terjed."
+   },
+   "filter_download_do_you_know": {
+      "message": "Tudta?"
+   },
+   "filter_download_loading": {
+      "message": "Kérem várjon míg a szűrők adatbázisa&nbsp;betölt..."
+   },
+   "filter_download_rules": {
+      "message": "Atlagosan&nbsp;több mint&nbsp;100&nbsp;hirdetés szűrő szabályt adunk hozzá hetente."
+   },
+   "filter_download_sb_sites": {
+      "message": "Az Adguard adathalász és kártékony helyek adatbázisa \u003Cbr/>több mint 1&nbsp;millió weboldalt tartalmaz."
+   },
+   "filter_download_title": {
+      "message": "A szűrők adatbázisa&nbsp;betölt..."
+   },
+   "filtering_clear_tab_events": {
+      "message": "Tisztít"
+   },
+   "filtering_log_in_whitelist": {
+      "message": "A weboldal a kivételek között szerepel"
+   },
+   "filtering_log_search_string": {
+      "message": "Keresett szöveg beírás"
+   },
+   "filtering_log_tab": {
+      "message": "Fül:"
+   },
+   "filtering_log_title": {
+      "message": "Szűrési napló"
+   },
+   "filtering_modal_add_rule": {
+      "message": "Szabály hozzáadása"
+   },
+   "filtering_modal_add_title": {
+      "message": "Szabály hozzáadása"
+   },
+   "filtering_modal_apply_domains": {
+      "message": "Szabály alkalmazása az összes webhelyre"
+   },
+   "filtering_modal_block": {
+      "message": "Tilt"
+   },
+   "filtering_modal_exception_title": {
+      "message": "Kivétel hozzáadása"
+   },
+   "filtering_modal_filter": {
+      "message": "Szűrő:"
+   },
+   "filtering_modal_important": {
+      "message": "Give a higher priority to the rule"
+   },
+   "filtering_modal_info_title": {
+      "message": "Kérés részletei"
+   },
+   "filtering_modal_match_case": {
+      "message": "Fontolja meg az esetet"
+   },
+   "filtering_modal_open_in_new_tab": {
+      "message": "Megnyitás új fülön"
+   },
+   "filtering_modal_options": {
+      "message": "Opciók"
+   },
+   "filtering_modal_patterns": {
+      "message": "Sablonok"
+   },
+   "filtering_modal_remove_user": {
+      "message": "Eltávolítás a felhasználói szűrők közül"
+   },
+   "filtering_modal_remove_whitelist": {
+      "message": "Eltávolítás a kivételek közül"
+   },
+   "filtering_modal_rule": {
+      "message": "Szabály:"
+   },
+   "filtering_modal_rule_text": {
+      "message": "Szabály szövege"
+   },
+   "filtering_modal_source": {
+      "message": "Forrás:"
+   },
+   "filtering_modal_third_party": {
+      "message": "Csak harmadik féltől származó kérésekre alkalmazza"
+   },
+   "filtering_modal_type": {
+      "message": "Típus:"
+   },
+   "filtering_modal_unblock": {
+      "message": "Engedélyez"
+   },
+   "filtering_refresh_tab": {
+      "message": "Oldal frissítése"
+   },
+   "filtering_table_empty_row": {
+      "message": "A napló ezen oldala ües. \u003Ca href='#' class='reloadTab'> Töltse újra az oldalt\u003C/a>, hogy lássa a logot."
+   },
+   "filtering_table_rule": {
+      "message": "Szűrési szabály"
+   },
+   "filtering_table_source": {
+      "message": "Forrás"
+   },
+   "filtering_table_type": {
+      "message": "Típus"
+   },
+   "filtering_type_all": {
+      "message": "Mind"
+   },
+   "name": {
+      "message": "Adguard Hirdetésblokkoló"
+   },
+   "options_allow_acceptable_ads": {
+      "message": "Nem tolakodó hirdetések engedélyezése\u003Ca target='_blank' href='https://kb.adguard.com/general/search-ads-and-self-promotion?utm_source=extension&aid=16593' class='sp-table-row-info'>Itt megtudhatod őket&nbsp;\u003C/a>"
+   },
+   "options_antibanner": {
+      "message": "Hirdetésblokkoló"
+   },
+   "options_antibanner_info": {
+      "message": "Szűrő szabályok száma: $1"
+   },
+   "options_antibanner_list_empty": {
+      "message": "Szűrőlista üres.\u003Ca class='spl-user-descr-link editAntiBannerFilters' href='#'> Szeretne hozzáadni\u003C/a>?"
+   },
+   "options_blog": {
+      "message": "Adguard Blog"
+   },
+   "options_blog_link": {
+      "message": "https://adguard.com/en/blog/?utm_source=extension&aid=16593"
+   },
+   "options_collect_hit_stats": {
+      "message": "Statisztika küldése a hirdetés szűrők használatáról\u003Ca target='_blank' href='https://adguard.com/filter-rules-statistics.html?utm_source=extension&aid=16593' class='sp-table-row-info'>Tudjon meg többet róla\u003C/a>"
+   },
+   "options_content_blocker_overlimit": {
+      "message": "Túl sok szűrő van engedélyezve. A Safari nem tud 50000-nél több szabályt használni."
+   },
+   "options_do_you_like": {
+      "message": "Szereti&nbsp;az Adguardot?"
+   },
+   "options_download_adguard": {
+      "message": "Teljes verzió Letöltése"
+   },
+   "options_edit_antibanner_filters": {
+      "message": "Minden szűrő"
+   },
+   "options_enable_autodetect_filter": {
+      "message": "A megfelelő szűrők automatikus aktiválása"
+   },
+   "options_feedback": {
+      "message": "Lépjen&nbsp;velünk&nbsp;kapcsolatva"
+   },
+   "options_filter_version": {
+      "message": "Verzió $1. Frissítve $2 $3."
+   },
+   "options_footer_like_us": {
+      "message": "Értékelje&nbsp;!"
+   },
+   "options_forum": {
+      "message": "Adguard Fórum"
+   },
+   "options_general_settings": {
+      "message": "Általános Beállítások"
+   },
+   "options_like_us": {
+      "message": "Kedveli az Adguardot? Értékelje&nbsp;!"
+   },
+   "options_miscellaneous_settings": {
+      "message": "Egyéb"
+   },
+   "options_modal_cancel": {
+      "message": "Mégsem"
+   },
+   "options_modal_edit": {
+      "message": "Szűrőlista"
+   },
+   "options_modal_homepage": {
+      "message": "Honlap"
+   },
+   "options_modal_save": {
+      "message": "Változások mentése"
+   },
+   "options_open_changelog": {
+      "message": "Változásnapló"
+   },
+   "options_open_log": {
+      "message": "Szűrési napló"
+   },
+   "options_popup_update_error": {
+      "message": "Nem sikerült a frissítés. Kérjük, próbálja meg később!"
+   },
+   "options_popup_update_not_found": {
+      "message": "Nem található frissítés"
+   },
+   "options_popup_update_title": {
+      "message": "Szűrők sikeresen frissítve"
+   },
+   "options_popup_update_updated": {
+      "message": "\"$1\" frissítve a $2 verzióra"
+   },
+   "options_reset_stats": {
+      "message": "Statisztikák visszaállítása"
+   },
+   "options_reset_stats_done": {
+      "message": "Statisztikák visszaállítva"
+   },
+   "options_safebrowsing": {
+      "message": "Böngészési biztonság"
+   },
+   "options_safebrowsing_enabled": {
+      "message": "Adathalászat és rosszindulatú kódok elleni védelem\u003Ca target='_blank' href='https://adguard.com/how-malware-blocked.html?utm_source=extension&aid=16593' class='sp-table-row-info'>Tudjon meg többet róla\u003C/a>"
+   },
+   "options_safebrowsing_help": {
+      "message": "Segítsen nekünk a Böngészési biztonság szűrőinek fejlesztésében\u003Cspan class='sp-table-row-info'>Biztonsággal kapcsolatos információ küldése név nélkül\u003C/span>"
+   },
+   "options_searchlist_empty": {
+      "message": "Semmit nem találtam"
+   },
+   "options_settings": {
+      "message": "Adguard beállítások"
+   },
+   "options_show_adguard_full_version": {
+      "message": "Információ megjelenítése a teljes verziós Adguardon"
+   },
+   "options_show_blocked_ads_count": {
+      "message": "A blokkolt hirdetések számának kijelzése az Adguard kiegészítő ikonján"
+   },
+   "options_show_context_menu": {
+      "message": "Adguard hozzáadása a böngésző helyi menüjéhez"
+   },
+   "options_site": {
+      "message": "Hivatalos Oldal"
+   },
+   "options_too_many_filters_selected": {
+      "message": "Túl sok szűrőt választottál ki. Ez lehet&nbsplassíthatja a böngészés sebességét."
+   },
+   "options_update_antibanner_filters": {
+      "message": "Szűrő frissítések elenőrzése"
+   },
+   "options_use_optimized_filters": {
+      "message": "Optimalizált szűrők használata\u003Cspan class='sp-table-row-info'>A szűrő listák mobileszközökre vannak optimalizálva\u003C/span>"
+   },
+   "options_userfilter": {
+      "message": "Felhasználói szűrő"
+   },
+   "options_userfilter_add_rule": {
+      "message": "Új szabály hozzáadása"
+   },
+   "options_userfilter_clear": {
+      "message": "Törlés"
+   },
+   "options_userfilter_clear_confirm": {
+      "message": "A felhasználói szűrő kiürítése minden szabályt töröl. Valóban kiüríti a felhasználói szűrőt?"
+   },
+   "options_userfilter_description": {
+      "message": "Saját szabályokat adhat hozzá ehhez a szűrőhöz. Ez a lehetőség haladó felhasználók részére ajánlott, akik jártasak HTML/CSS-ben. Olvassa el a \u003Ca class='spl-user-descr-link' href='https://adguard.com/filterrules.html?utm_source=extension&aid=16593' target='_blank'>szűrő szabályok segédletet\u003C/a> , hogy megtanuljon saját szűrő szabályokat írni."
+   },
+   "options_userfilter_export": {
+      "message": "Exportálás"
+   },
+   "options_userfilter_import": {
+      "message": "Importálás"
+   },
+   "options_userfilter_search": {
+      "message": "Keresés a felhasználói szűrőben"
+   },
+   "options_userfilter_search_placeholder": {
+      "message": "Adja meg a keresni kívánt kifejezést"
+   },
+   "options_userlist_empty": {
+      "message": "Felhasználói szűrő üres. \u003Ca class='spl-user-descr-link addUserFilter' href='#'>Hozzáad egy új szűrő szabályt\u003C/a>?"
+   },
+   "options_whitelist": {
+      "message": "Kivételek"
+   },
+   "options_whitelist_add_domain": {
+      "message": "Oldal hozzáadás"
+   },
+   "options_whitelist_description": {
+      "message": "Adguard nem szűri a kivételek listáján szereplő oldalakat"
+   },
+   "options_whitelist_empty": {
+      "message": "Kivétellista üres. \u003Ca class='spl-user-descr-link addWhiteListFilter' href='#'>Hozzá szeretne adni egy weboldalt\u003C/a> a kivétel listához?"
+   },
+   "options_whitelist_inverse": {
+      "message": "Inverz kivétel lista\u003Cspan class='sp-table-row-info'>Hirdetések blokkolása mindenhol, \u003Ci>kivéve azokat\u003C/i>, amelyek a kivétel listában szerepelnek.\u003C/span>"
+   },
+   "options_whitelist_search": {
+      "message": "Keresés a kivételek listájában"
+   },
+   "options_whitelist_search_placeholder": {
+      "message": "Adja meg a keresni kívánt kifejezést"
+   },
+   "options_whitelistfilter_clear_confirm": {
+      "message": "A kivételek listájának kiürítése minden szabályt töröl. Biztos benne, hogy kiüríti a kivételek listáját?"
+   },
+   "popup_abuse_problem": {
+      "message": "Submit a&nbsp;complaint"
+   },
+   "popup_abuse_site": {
+      "message": "Panasz benyújtása az oldalról"
+   },
+   "popup_adguard_android": {
+      "message": "Adguard Androidra"
+   },
+   "popup_adguard_footer_integration": {
+      "message": "Az Adguard \u003Ca href='http://adguard.com/adguard-adblock-browser-extension/integration-mode.html#integration-mode' class='openLink' target='_blank'>integráló mód\u003C/a> aktív"
+   },
+   "popup_adguard_ios": {
+      "message": "Adguard iOsre"
+   },
+   "popup_adguard_mac": {
+      "message": "Adguard Macre"
+   },
+   "popup_adguard_other_os": {
+      "message": "Egyéb Adguard verziók:"
+   },
+   "popup_adguard_windows": {
+      "message": "Adguard Windowsra"
+   },
+   "popup_ads_has_been_removed": {
+      "message": "Hirdetések eltávolítva erről az oldalról"
+   },
+   "popup_ads_has_been_removed_by_adguard": {
+      "message": "$1 által védve"
+   },
+   "popup_block_site_ads": {
+      "message": "Hirdetések blokkolása ezen az oldalon"
+   },
+   "popup_block_site_ads_android": {
+      "message": "Hirdetések blokkolása egy oldalon"
+   },
+   "popup_disable_protection": {
+      "message": "Adguard védelem szüneteltetése"
+   },
+   "popup_enable_protection": {
+      "message": "Adguard védelem folytatása"
+   },
+   "popup_feedback_cancel": {
+      "message": "Mégsem"
+   },
+   "popup_feedback_comment": {
+      "message": "Megjegyzés"
+   },
+   "popup_feedback_empty_option": {
+      "message": "Válassza ki a reklamáció okát"
+   },
+   "popup_feedback_malware_option": {
+      "message": "Adathalászat gyanú"
+   },
+   "popup_feedback_miss_ads_option": {
+      "message": "Kihagyott hirdetés"
+   },
+   "popup_feedback_option_is_empty": {
+      "message": "Válassza ki az okot a reklamáció benyújtásához!"
+   },
+   "popup_feedback_other_option": {
+      "message": "Egyéb"
+   },
+   "popup_feedback_send": {
+      "message": "Panasz benyújtása"
+   },
+   "popup_feedback_wrong_block_option": {
+      "message": "Oldalmegjelenítési rendellenességek"
+   },
+   "popup_filtering_log_icon_title": {
+      "message": "Szűrési napló megnyitása..."
+   },
+   "popup_in_white_list_android": {
+      "message": "Kivétel listában"
+   },
+   "popup_open_log_android": {
+      "message": "Szűrési napló"
+   },
+   "popup_open_settings": {
+      "message": "Adguard beállítások"
+   },
+   "popup_security_report": {
+      "message": "Weboldal biztonsági jelentés"
+   },
+   "popup_security_report_android": {
+      "message": "Biztonsági jelentés"
+   },
+   "popup_site_exception": {
+      "message": "Ez az oldal a kivételek között szerepel"
+   },
+   "popup_site_exception_info": {
+      "message": "Szűrés&nbsp;kikapcsolva, mert&nbsp;akadályozza az oldal működését."
+   },
+   "popup_site_filtering_disabled": {
+      "message": "Adguard nem tud futni ezen a domainen"
+   },
+   "popup_site_filtering_state": {
+      "message": "Védelem ezen a weboldalon"
+   },
+   "popup_site_protection_disabled": {
+      "message": "Adguard védelem szüneteltetve"
+   },
+   "popup_site_protection_disabled_android": {
+      "message": "Védelem szüneteltetve"
+   },
+   "popup_tab_blocked": {
+      "message": "Blokkolva: $1"
+   },
+   "popup_tab_blocked_all": {
+      "message": "Összesen: $1"
+   },
+   "popup_what_wrong_site": {
+      "message": "Mi a probléma a weboldallal?"
+   },
+   "release_notes_title": {
+      "message": "Adguard Beépülő frissült!"
+   },
+   "release_notes_whats_new": {
+      "message": "Mi változott ebben&nbsp;a verzióban?"
+   },
+   "sb_adguard_blocked": {
+      "message": "AZ Adguard letiltotta a&nbsp hozzáférést az oldalhoz"
+   },
+   "sb_go_back": {
+      "message": "Vissza"
+   },
+   "sb_goto_site": {
+      "message": "Mindenesetre folytatja"
+   },
+   "sb_main_title": {
+      "message": "Figyelem! Lehet&nbsp,hogy veszélyes!"
+   },
+   "sb_malware_description": {
+      "message": "Az Adguard úgy véli, hogy rosszindulatú szoftver fog&nbsp;települni a számítógépére,ha &nbsp;folytatja. Ha&nbsp;ön meglátogatta már ezt az oldalt&nbsp;a közelmúltban,vagy&nbsp;megbízik az oldalban, &nbsp;akkor&nbsp;lehetséges &nbsp;hogy &nbsp;a&nbsp;hacker támadás érte. &nbsp;Javasoljuk, hogy&nbsp;ne folytassa, vagy&nbsp;próbálja újra később."
+   },
+   "sb_malware_site": {
+      "message": "Ezt az oldalt &nbsp;\u003Cstrong>$1\u003C/strong>, jelentették mint &nbsp;a&nbsp;rosszindulatú, a hozzáférés zárolva, az&nbsp;ön biztonsági beállításai által."
+   },
+   "sb_more_actions": {
+      "message": "Haladó"
+   },
+   "sb_phishing_description": {
+      "message": "Az Adguard úgy véli, hogy ez az oldal&nbsp;egy&nbsp;másik oldal&nbsp;hamisítványa, ami a felhasználók személyes vagy pénzügyi adatainak kicsalása céljából készült.\nA személyes adatainak megosztása ezen az oldalon adatlopással, vagy egyéb visszaéléssel járhat."
+   },
+   "sb_phishing_site": {
+      "message": "Ezt az oldalt &nbsp;\u003Cstrong>$1\u003C/strong>, jelentették mint &nbsp;a&nbsp;adathalász, a hozzáférés zárolva , az&nbsp;ön biztonsági beállításai által."
+   },
+   "sb_site_report": {
+      "message": "További információk"
+   },
+   "sb_title": {
+      "message": "Figyelem! Kockázatos lehet!"
+   },
+   "short_name": {
+      "message": "Adguard Hirdetésblokkoló"
+   },
+   "thankyou_compare_any_browser": {
+      "message": "Reklámok blokkolása minden böngészőben"
+   },
+   "thankyou_compare_blocked": {
+      "message": "Hirdetés blokkolás"
+   },
+   "thankyou_compare_ext_blocking": {
+      "message": "Böngésző beépülő képessége által korlátozva"
+   },
+   "thankyou_compare_ext_title": {
+      "message": "Adguard Kiegészítő"
+   },
+   "thankyou_compare_full_blocking": {
+      "message": "Teljes"
+   },
+   "thankyou_compare_full_title": {
+      "message": "Adguard Windows-ra"
+   },
+   "thankyou_compare_full_title_mac": {
+      "message": "Adguard Mac-re"
+   },
+   "thankyou_compare_increase": {
+      "message": "Csökkenti az oldal letöltési idejét"
+   },
+   "thankyou_compare_parent": {
+      "message": "Szülői felügyelet"
+   },
+   "thankyou_compare_safebrowsing": {
+      "message": "Védelmet nyújt adathalász és kártékony oldalakkal szemben"
+   },
+   "thankyou_compare_safebrowsing_attack": {
+      "message": "Védelem adathalász támadásokkal szemben"
+   },
+   "thankyou_compare_support": {
+      "message": "Technikai támogatás"
+   },
+   "thankyou_compare_traffic": {
+      "message": "Sávszélességet takarít meg"
+   },
+   "thankyou_download": {
+      "message": "Adguard Letöltése"
+   },
+   "thankyou_enjoy": {
+      "message": "Élvezze&nbsp;a&nbsp;webhelyeket tolakodó hirdetések, számálók melyek minden lépését követik, és egyéb fenyegetések mint &nbsp;vírusok és&nbsp;átverések nélkül, melyek csak arra várnak hogy&nbsp;kárt tegyenek&nbsp;az ön készülékében."
+   },
+   "thankyou_help_in_development": {
+      "message": "Részvétel az&nbsp;Adguard szűrő fejlesztésében"
+   },
+   "thankyou_help_in_development_description": {
+      "message": "Névtelen statisztikai adatok küdése az&nbsp;Adguard által gyanúsnak ítélt oldalakról.\u003Cspan class='warn-message'>Ez nem ajánlott&nbsp;lassú számítógépeken.\u003C/span>"
+   },
+   "thankyou_installed": {
+      "message": "TELEPÍTVE"
+   },
+   "thankyou_setup_filter": {
+      "message": "Szabja személyre a szűrési beállításait"
+   },
+   "thankyou_setup_safebrowsing_description": {
+      "message": "A böngésző biztonsági modulja megóvja önt a kártékony és adathalász webhelyektől. A modul \u003Ca target='blank' href='http://adguard.com/how-malware-blocked.html'>egy különleges webes szolgáltatást használ,\u003C/a> hogy ellenőrizze a webhelyeket, melyeket látogat."
+   },
+   "thankyou_setup_safebrowsing_title": {
+      "message": "Védelem az adathalász és kártékony oldalakkal szemben"
+   },
+   "thankyou_title": {
+      "message": "Köszönjük, hogy az Adguardot telepítette!"
+   },
+   "thankyou_tracking_social_filter_description": {
+      "message": "Adguard eltudja távolítani a közösségi modulokat, mint a \"Like\" gombok melyek követik a tevékenységét."
+   },
+   "thankyou_tracking_social_filter_title": {
+      "message": "Közösségi oldalak moduljainak szűrése"
+   },
+   "thankyou_tracking_spyware_filter_description": {
+      "message": "Internetés cégek&nbsp;ezrei kémlelik minden lépését. Az Adguard segítségével&nbsp;könnyedén megóvhatja magát ezektől."
+   },
+   "thankyou_tracking_spyware_filter_title": {
+      "message": "Egy&nbsp;szűrő minden ismert számláló és analitikus rendszerre"
+   },
+   "thankyou_want_full_protection": {
+      "message": "Szeretnéd kipróbálni a teljes védelmet? Töltsd le a Adguard for Windows-t!"
+   },
+   "thankyou_want_full_protection_mac": {
+      "message": "Szeretnéd kipróbálni a teljes védelmet? Töltsd le a Adguard for Mac-t!"
+   }
+}

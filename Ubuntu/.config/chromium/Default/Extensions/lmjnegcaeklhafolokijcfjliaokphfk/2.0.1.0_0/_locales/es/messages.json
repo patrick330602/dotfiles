@@ -1,0 +1,1736 @@
+{
+   "Bytes": {
+      "message": "%s Bytes"
+   },
+   "KB": {
+      "message": "%s KB"
+   },
+   "MB": {
+      "message": "%s MB"
+   },
+   "aborted": {
+      "message": "Cancelado"
+   },
+   "about": {
+      "message": "Acerca de..."
+   },
+   "about_alpha_intro": {
+      "message": "Esta es una versión Alfa."
+   },
+   "about_beta_intro": {
+      "message": "Esta es una versión Beta."
+   },
+   "about_conversion_support": {
+      "message": "Si es un usuario registrado y necesita ayuda con la conversión o con su licencia, por favor, envíe un correo electrónico a la dirección que se le dio cuando adquirió su licencia."
+   },
+   "about_go_howto": {
+      "message": "Cómo usar el complemento"
+   },
+   "about_go_support": {
+      "message": "Ir a la página de ayuda"
+   },
+   "about_help": {
+      "message": "Si necesita ayuda para usar Video DownloadHelper, haga click el enlace siguiente."
+   },
+   "about_qr": {
+      "message": "Archivo generado."
+   },
+   "about_support": {
+      "message": "Si necesita ayuda acerca de Video DownloadHelper, haga click el enlace siguiente."
+   },
+   "about_vdh": {
+      "message": "Acerca de Video DownloadHelper"
+   },
+   "action_abort_description": {
+      "message": "Cancelar el proceso en marcha."
+   },
+   "action_abort_title": {
+      "message": "Cancelar"
+   },
+   "action_as_default": {
+      "message": "Usar esta acción por defecto."
+   },
+   "action_avplay_description": {
+      "message": "Reproducir el vídeo con el visor propio del conversor"
+   },
+   "action_avplay_title": {
+      "message": "Reproducir"
+   },
+   "action_blacklist_description": {
+      "message": "Los elementos de este origen no activan el complemento."
+   },
+   "action_blacklist_title": {
+      "message": "Añadir a la Lista Negra."
+   },
+   "action_cannot_abort": {
+      "message": "Este proceso no puede ser cancelado."
+   },
+   "action_convert_description": {
+      "message": "Convertir un archivo ya descargado"
+   },
+   "action_convert_title": {
+      "message": "Convertir archivo de su ordenador"
+   },
+   "action_copyurl_description": {
+      "message": "Copiar la dirección URL del archivo al Portapapeles."
+   },
+   "action_copyurl_title": {
+      "message": "Copiar la dirección URL."
+   },
+   "action_deletehit_description": {
+      "message": "Borrar el elemento de la lista activa"
+   },
+   "action_deletehit_title": {
+      "message": "Borrar"
+   },
+   "action_details_description": {
+      "message": "Mostrar detalles del elemento"
+   },
+   "action_details_title": {
+      "message": "Detalles"
+   },
+   "action_download_description": {
+      "message": "Descargar el archivo a su disco duro"
+   },
+   "action_download_title": {
+      "message": "Descargar"
+   },
+   "action_downloadconvert_description": {
+      "message": "Descargar el archivo y convertirlo a otro formato"
+   },
+   "action_downloadconvert_title": {
+      "message": "Descargar y Convertir"
+   },
+   "action_maskeddownload_description": {
+      "message": "Descargar el vídeo a un archivo encriptado"
+   },
+   "action_maskeddownload_title": {
+      "message": "Descarga enmascarada"
+   },
+   "action_noyt_description": {
+      "message": "Sobre la captura de vídeos de YouTube"
+   },
+   "action_noyt_title": {
+      "message": "Advertencia de YouTube"
+   },
+   "action_openlocalcontainer_description": {
+      "message": "Abrir la carpeta contenedora del archivo"
+   },
+   "action_openlocalcontainer_title": {
+      "message": "Abrir Carpeta"
+   },
+   "action_openlocalfile_description": {
+      "message": "Abrir el archivo multimedia local"
+   },
+   "action_openlocalfile_title": {
+      "message": "Abrir Multimedia"
+   },
+   "action_pin_description": {
+      "message": "Hacer el elemento persistente"
+   },
+   "action_pin_title": {
+      "message": "Fijar"
+   },
+   "action_quickdownload_description": {
+      "message": "Descargar sin preguntar la carpeta de destino"
+   },
+   "action_quickdownload_title": {
+      "message": "Descarga rápida"
+   },
+   "action_record_description": {
+      "message": "Comenzar a grabar el flujo de datos"
+   },
+   "action_record_title": {
+      "message": "Grabar"
+   },
+   "action_scraprecord_description": {
+      "message": "Comenzar a grabar de la pantalla"
+   },
+   "action_scraprecord_title": {
+      "message": "Grabar"
+   },
+   "action_scrapsnapshot_description": {
+      "message": "Tomar una foto fija de la aplicación"
+   },
+   "action_scrapsnapshot_title": {
+      "message": "Capturar la pantalla"
+   },
+   "action_scrapstoprecord_description": {
+      "message": "Parar la grabación de la pantalla"
+   },
+   "action_scrapstoprecord_title": {
+      "message": "Dejar de grabar"
+   },
+   "action_social_description": {
+      "message": "Compartir el archivo en redes sociales"
+   },
+   "action_social_title": {
+      "message": "Compartir"
+   },
+   "action_stoprecord_description": {
+      "message": "Parar la grabación del flujo de datos"
+   },
+   "action_stoprecord_title": {
+      "message": "Detener grabación"
+   },
+   "action_stream_no_capture_description": {
+      "message": "Guardado de algunos streams de video especiales"
+   },
+   "action_stream_no_capture_title": {
+      "message": "Aviso de error al archivar"
+   },
+   "actions": {
+      "message": "Acciones"
+   },
+   "adaptative": {
+      "message": "%s Adaptativo"
+   },
+   "add_to_blacklist": {
+      "message": "Añadir a la Lista Negra"
+   },
+   "add_to_blacklist_help": {
+      "message": "Los vídeos originados o almacenados en los siguientes dominios serán ignorados"
+   },
+   "adp_hide": {
+      "message": "No mostrar las variantes de ADP en la lista de descargas"
+   },
+   "adp_variants": {
+      "message": "Variantes adaptativas"
+   },
+   "advanced": {
+      "message": "Avanzado"
+   },
+   "aggregating___": {
+      "message": "Procesando..."
+   },
+   "all_actions": {
+      "message": "Todas las acciones"
+   },
+   "analyze_page": {
+      "message": "Analizar la página"
+   },
+   "any_domain": {
+      "message": "cualquier dominio"
+   },
+   "any_format": {
+      "message": "cualquier formato"
+   },
+   "appearance": {
+      "message": "Apariencia"
+   },
+   "audio_only": {
+      "message": "Sólo audio"
+   },
+   "auto_pin_description": {
+      "message": "Fijar elemento después de la descarga"
+   },
+   "auto_pin_title": {
+      "message": "Auto-fijado"
+   },
+   "avplay_converter_required": {
+      "message": "Esta acción reproduce el vídeo con el reproductor propio del conversor, pero no se ha encontrado el conversor."
+   },
+   "avplay_enabled": {
+      "message": "Reproductor activado"
+   },
+   "avplay_player_missing_text": {
+      "message": "El conversor está instalado, pero el reproductor asociado no se encuentra. Debería reinstalar el conversor."
+   },
+   "avplay_player_missing_title": {
+      "message": "No se encuentra el reproductor"
+   },
+   "back": {
+      "message": "Atrás"
+   },
+   "behavior": {
+      "message": "Comportamiento"
+   },
+   "blacklist": {
+      "message": "Lista Negra"
+   },
+   "blacklist_domains": {
+      "message": "Dominios en Lista Negra"
+   },
+   "blacklist_enable_description": {
+      "message": "Evitar que algunas páginas activen el reconocimiento de archivos multimedia."
+   },
+   "blacklist_enable_title": {
+      "message": "Activar la Lista Negra"
+   },
+   "blacklist_selected": {
+      "message": "Seleccionado para la Lista Negra"
+   },
+   "cancel": {
+      "message": "Cancelar"
+   },
+   "capture_gallery": {
+      "message": "Galería de imágenes"
+   },
+   "change_storage_directory": {
+      "message": "Cambiar la carpeta de almacenamiento"
+   },
+   "checking_converter___": {
+      "message": "Comprobando el convertidor..."
+   },
+   "checking_converter_license___": {
+      "message": "Comprobando la licencia del convertidor..."
+   },
+   "chrome_ignore_yt": {
+      "message": "No detectar vídeos de YouTube nunca más"
+   },
+   "chrome_ignore_yt2": {
+      "message": "Ignorar vídeos de YouTube"
+   },
+   "chrome_install_firefox": {
+      "message": "Instalar Firefox"
+   },
+   "chrome_install_fx_vdh": {
+      "message": "Video Downloadhelper para Firefox"
+   },
+   "chrome_noyt_text": {
+      "message": "Desgraciadamente la Chrome Web Store no permite extensiones para descargar vídeos de YouTube, así que hemos tenido que eliminar esta característica."
+   },
+   "chrome_noyt_text2": {
+      "message": "Puede usar Video Downloadhelper para descargar vídeos de YouTube en su versión para Firefox."
+   },
+   "chrome_stream_no_capture": {
+      "message": "Desgraciadamente este navegador no proporcional las API's necesarias para este tipo de flujo."
+   },
+   "chrome_stream_no_capture2": {
+      "message": "Pruebe a utilizar Video DownloadHelper con Firefox."
+   },
+   "chrome_stream_no_capture_hide": {
+      "message": "No mostrar streams de vídeo que no se puedan guardar"
+   },
+   "chrome_stream_no_capture_title": {
+      "message": "Imposible guardar el stream de vídeo."
+   },
+   "chrome_warning_yt": {
+      "message": "Advertencia sobre las extensiones de Chrome y YouTube."
+   },
+   "chunk_about_to_be_saved": {
+      "message": "El contenido fragmentado \"%s\" va a ser guardado y convertido a"
+   },
+   "chunk_assemble_and_convert": {
+      "message": "Ensamblar y convertir"
+   },
+   "chunk_assemble_native": {
+      "message": "No usar el Conversor para ensamblar"
+   },
+   "chunk_assemble_native_warn": {
+      "message": "El archivo de destino se creará ensamblando fragmentos. El resultado puede no funcionar correctamente en su equipo."
+   },
+   "chunk_assemble_only": {
+      "message": "Sólo ensamblar"
+   },
+   "chunk_converter_assemble": {
+      "message": "Ha solicitado que el Convertidor realice el ensamblaje."
+   },
+   "chunk_converter_assemble_convert": {
+      "message": "Ha solicitado que el Convertidor realice el ensamblaje y la conversión."
+   },
+   "chunk_converter_convert": {
+      "message": "Ha solicitado que el archivo resultante sea convertido."
+   },
+   "chunk_initial_period": {
+      "message": "Período de corte inicial (en segundos)"
+   },
+   "chunk_missing_conv_native_assemble_only": {
+      "message": "Sin embargo, no dispone de un convertidor en su equipo. El archivo se generará ensamblando los fragmentos."
+   },
+   "chunk_period_factor": {
+      "message": "Factor de duración del truncado (en %)"
+   },
+   "chunk_save": {
+      "message": "Guardando contenido multimedia fragmentado"
+   },
+   "chunk_target": {
+      "message": "en la carpeta \"%s\""
+   },
+   "chunks_concurrent_downloads": {
+      "message": "Descargas concurrentes cortadas"
+   },
+   "chunks_enabled": {
+      "message": "Permitir las descargas cortadas"
+   },
+   "chunks_prefetch_count": {
+      "message": "Contar los cortes precolocados"
+   },
+   "chunks_title": {
+      "message": "Descarga cortada"
+   },
+   "clear_hits": {
+      "message": "Limpiar los elementos"
+   },
+   "clear_logs": {
+      "message": "Limpiar regsitros"
+   },
+   "cmenu_mode": {
+      "message": "Modo de Menú del Botón Auxiliar"
+   },
+   "cmenu_mode_all": {
+      "message": "Mostrar todas las acciones"
+   },
+   "cmenu_mode_both": {
+      "message": "Acciones rápidas y todas las acciones"
+   },
+   "cmenu_mode_none": {
+      "message": "No mostrar ninguna"
+   },
+   "cmenu_mode_quick": {
+      "message": "Ejecutar la acción por defecto"
+   },
+   "companion_default_op": {
+      "message": "Acción por defecto para el Botón Auxiliar"
+   },
+   "companion_enable": {
+      "message": "Activar el Botón Auxiliar"
+   },
+   "config_conversion_rules": {
+      "message": "Configurar las reglas de conversión"
+   },
+   "congratulations": {
+      "message": "¡Enhorabuena!"
+   },
+   "context_menu": {
+      "message": "Use el menú contextual"
+   },
+   "continue": {
+      "message": "Continuar"
+   },
+   "convconf_2passes": {
+      "message": "2 pases"
+   },
+   "convconf_ac": {
+      "message": "Canales de Audio"
+   },
+   "convconf_acnone": {
+      "message": "Ninguno"
+   },
+   "convconf_acodec": {
+      "message": "Códec de Audio"
+   },
+   "convconf_aspect": {
+      "message": "Relación de Aspecto"
+   },
+   "convconf_audiobitrate": {
+      "message": "Tasa de muestreo de audio"
+   },
+   "convconf_audiofreq": {
+      "message": "Frecuencia de Audio"
+   },
+   "convconf_audioonly": {
+      "message": "Sólo Audio"
+   },
+   "convconf_bitrate": {
+      "message": "Tasa de muestreo"
+   },
+   "convconf_container": {
+      "message": "Formato"
+   },
+   "convconf_duplicate": {
+      "message": "Duplicar"
+   },
+   "convconf_ext": {
+      "message": "Extensión del archivo de salida"
+   },
+   "convconf_extra": {
+      "message": "Parámetros Extra"
+   },
+   "convconf_level": {
+      "message": "Nivel"
+   },
+   "convconf_mono": {
+      "message": "Mono"
+   },
+   "convconf_new": {
+      "message": "Nuevo"
+   },
+   "convconf_preset": {
+      "message": "Predeterminado"
+   },
+   "convconf_profilev": {
+      "message": "Perfil de Vídeo"
+   },
+   "convconf_rate": {
+      "message": "Tasa de imágenes por segundo"
+   },
+   "convconf_readonly": {
+      "message": "La configuración por defecto es de sólo lectura. Haga un duplicado para hacer modificaciones."
+   },
+   "convconf_remove": {
+      "message": "Borrar"
+   },
+   "convconf_reset": {
+      "message": "Borrar todo"
+   },
+   "convconf_reset_confirm": {
+      "message": "Esto borrará toda su configuración de usuario"
+   },
+   "convconf_size": {
+      "message": "Tamaño de la imagen"
+   },
+   "convconf_size_help": {
+      "message": "\u003Cancho> x \u003Calto>"
+   },
+   "convconf_stereo": {
+      "message": "Estéreo"
+   },
+   "convconf_target": {
+      "message": "Destino"
+   },
+   "convconf_target_help": {
+      "message": "Configuración predeterminada"
+   },
+   "convconf_tune": {
+      "message": "Tono"
+   },
+   "convconf_vcodec": {
+      "message": "Códec de Vídeo"
+   },
+   "convconf_videobitrate": {
+      "message": "Tasa de muestreo de vídeo"
+   },
+   "conversion": {
+      "message": "Conversión"
+   },
+   "conversion_output": {
+      "message": "Salida"
+   },
+   "conversion_outputs": {
+      "message": "Conversiones resultantes"
+   },
+   "conversion_rule": {
+      "message": "Regla"
+   },
+   "conversion_rules": {
+      "message": "Reglas"
+   },
+   "convert": {
+      "message": "Convertir"
+   },
+   "convert_format_from_domain": {
+      "message": "Convertir %1 desde %2s hasta %3s"
+   },
+   "convert_local_files": {
+      "message": "Convertir archivos locales"
+   },
+   "converter": {
+      "message": "Conversor"
+   },
+   "converter_edit_output": {
+      "message": "Editar la salida"
+   },
+   "converter_failed_execution": {
+      "message": "La conversión ha fallado"
+   },
+   "converter_installed": {
+      "message": "El Conversor está instalado"
+   },
+   "converter_license": {
+      "message": "Licencia del Conversor"
+   },
+   "converter_license_blocked": {
+      "message": "Su licencia ha sido bloqueada"
+   },
+   "converter_license_locked": {
+      "message": "Su licencia necesita ser reactivada"
+   },
+   "converter_license_locked_mail": {
+      "message": "Se ha enviado un correo a \"%s\". El mensaje contiene un enlace para desbloquear la licencia. Después de seguir el enlace, Vd. puede necesitar realizar una reactivación. Si no ha recibido este correo, por favor, compruebe su carpeta de correo basura."
+   },
+   "converter_license_ready": {
+      "message": "Licencia del Conversor registrada"
+   },
+   "converter_missing": {
+      "message": "Conversor no encontrado"
+   },
+   "converter_needed": {
+      "message": "Esta acción requiere un Conversor instalado en su equipo"
+   },
+   "converter_needed_aggregate": {
+      "message": "Esta acción requiere un Conversor instalado en su equipo para procesar los canales de Audio y Vídeo."
+   },
+   "converter_needed_aggregate_why": {
+      "message": "¿Por qué necesito un Conversor?"
+   },
+   "converter_needed_local": {
+      "message": "Para convertir archivos locales se necesita un Conversor instalado en su equipo."
+   },
+   "converter_needs_reg": {
+      "message": "Se requiere estar registrado"
+   },
+   "converter_not_available": {
+      "message": "El Conversor no está disponible"
+   },
+   "converter_not_installed": {
+      "message": "El Conversor no está instalado"
+   },
+   "converter_path": {
+      "message": "Ruta del Conversor"
+   },
+   "converter_reg_audio": {
+      "message": "Ha solicitado, bien explícitamente o bien por una regla automática de conversión, la generación de un archivo de audio. Esto requiere de un conversor registrado."
+   },
+   "converter_requested_unavail": {
+      "message": "Se necesita un conversor para esta operación, pero no está disponible."
+   },
+   "converter_required": {
+      "message": "Se requiere conversor"
+   },
+   "converter_threads": {
+      "message": "Conversiones en proceso"
+   },
+   "converter_tune_h264": {
+      "message": "Forzar los ajustes de H264 para el procesado"
+   },
+   "converter_update_version": {
+      "message": "Actualizar el Conversor a la versión %s"
+   },
+   "converting___": {
+      "message": "Convirtiendo..."
+   },
+   "copy_of": {
+      "message": "Copia de %s"
+   },
+   "copy_to_clipboard": {
+      "message": "Copiar al portapapeles"
+   },
+   "could_not_download": {
+      "message": "\"%s\" no ha podido ser descargado"
+   },
+   "cphelper_addon": {
+      "message": "CouponsHelper Addon"
+   },
+   "cphelper_description": {
+      "message": "The right coupon at the right time: do not miss discounts when shopping online ..."
+   },
+   "custom_output": {
+      "message": "Formato de salida personalizado"
+   },
+   "dash_enabled": {
+      "message": "DASH permitido"
+   },
+   "dash_hide_m4s": {
+      "message": "No mostrar archivos .m4s en la lista de descargas"
+   },
+   "dash_streaming": {
+      "message": "Descarga DASH"
+   },
+   "define_vdh_smartname": {
+      "message": "Nombre de archivo inteligente de DownloadHelper"
+   },
+   "defining_smartname": {
+      "message": "Definiendo el nombre de archivo inteligente"
+   },
+   "defining_smartname_help": {
+      "message": "Esta característica permite generar un nombre de archivo tomado de la página que lo contiene. Si el texto mostrado tiene demasiados caracteres, inténtelo seleccionando algunos del título de la página."
+   },
+   "details_parenthesis": {
+      "message": "(Detalles)"
+   },
+   "detect_extensions": {
+      "message": "Detectar extensiones"
+   },
+   "display_mode_compact": {
+      "message": "Compacto"
+   },
+   "display_mode_label": {
+      "message": "Modo del Panel Principal"
+   },
+   "display_mode_mozilla": {
+      "message": "Mozilla"
+   },
+   "display_mode_normal": {
+      "message": "Normal"
+   },
+   "dlconv_and_saved_to": {
+      "message": "y guardarlos como \"%s\""
+   },
+   "dlconv_back": {
+      "message": "Atrás"
+   },
+   "dlconv_change_directory": {
+      "message": "Cambiar la carpeta de salida"
+   },
+   "dlconv_convert": {
+      "message": "Convertir"
+   },
+   "dlconv_download_and_convert": {
+      "message": "Descargar y Convertir"
+   },
+   "dlconv_download_only": {
+      "message": "Sólo Descargar"
+   },
+   "dlconv_n_will_be_converted": {
+      "message": "Los archivos %s serán convertidos a:"
+   },
+   "dlconv_output_details": {
+      "message": "Configurar los detalles de salida"
+   },
+   "dlconv_rename": {
+      "message": "Muestra el archivo para renombrarlo"
+   },
+   "dlconv_will_be_converted": {
+      "message": "\"%s\" será convertido a:"
+   },
+   "do_no_convert_format_from_domain": {
+      "message": "No convertir %1s desde %2s"
+   },
+   "domain": {
+      "message": "Dominio"
+   },
+   "donate": {
+      "message": "Donar"
+   },
+   "donate_vdh": {
+      "message": "Ayuda a Video DownloadHelper"
+   },
+   "download_canceled": {
+      "message": "Descarga cancelada."
+   },
+   "download_controlled_max_description": {
+      "message": "Controla el número de descargas simultáneas generadas por el complemento para preservar una parte del ancho de banda."
+   },
+   "download_controlled_max_title": {
+      "message": "Número máximo de descargas"
+   },
+   "download_controlled_max_title2": {
+      "message": "Número máximo de descargas simultáneas"
+   },
+   "download_retries": {
+      "message": "Número de intentos de descarga"
+   },
+   "download_retry_delay": {
+      "message": "Tiempo de espera entre intentos de descarga (en milisegundos)"
+   },
+   "download_selected_link": {
+      "message": "Descarga el enlace de archivo seleccionado"
+   },
+   "download_selected_links": {
+      "message": "Descarga los enlaces de archivos seleccionados"
+   },
+   "downloaded_as": {
+      "message": "Descargado como %s"
+   },
+   "downloading___": {
+      "message": "Descargando..."
+   },
+   "downloads_hook_headers": {
+      "message": "Captar las cabeceras de descarga"
+   },
+   "empty_downloaded_file": {
+      "message": "El archivo descargado ·%s· está vacío. El contenido multimedia puede estar protegido."
+   },
+   "error_cannot_create_target_directory": {
+      "message": "No se ha podido crear la carpeta de destino. Compruebe el espacio disponible y los permisos de usuario."
+   },
+   "error_cannot_create_target_file": {
+      "message": "No se ha podido crear el archivo de destino. Compruebe el espacio disponible y los permisos de usuario."
+   },
+   "error_nohome": {
+      "message": "La carpeta de usuario no existe"
+   },
+   "errors": {
+      "message": "Errores"
+   },
+   "explain_qr1": {
+      "message": "Advertirá que el vídeo resultante tiene una marca de agua en la esquina."
+   },
+   "explain_qr2": {
+      "message": "Esto se debe a que la característica de conversión no ha sido registrada."
+   },
+   "extension": {
+      "message": "Extensión"
+   },
+   "f4f_enabled": {
+      "message": "F4F permitido"
+   },
+   "f4f_prefetch": {
+      "message": "Sementos F4F precolocados"
+   },
+   "f4f_streaming": {
+      "message": "Descarga F4F"
+   },
+   "failed_aggregating": {
+      "message": "Ha habido un fallo al procesar \"%s\""
+   },
+   "failed_assembling": {
+      "message": "Falló el ensamblado"
+   },
+   "failed_conversion": {
+      "message": "La conversión ha fallado"
+   },
+   "failed_converting": {
+      "message": "La conversión de \"%s\" ha fallado"
+   },
+   "failed_getting_info": {
+      "message": "No se ha podido obtener la información de \"%s\""
+   },
+   "file_ext_change": {
+      "message": "La extensión del archivo ha cambiado"
+   },
+   "file_ext_change_text": {
+      "message": "Ha cambiado la extensión del archivo de \".%1s\" a \".%2s\". Esto puede causar problemas a la hora de reproducirlo."
+   },
+   "file_generated": {
+      "message": "El archivo \"%s\" se ha generado."
+   },
+   "file_not_exists": {
+      "message": "El archivo \"%s\" no existe"
+   },
+   "file_not_readable": {
+      "message": "El archivo \"%s\" es ilegible"
+   },
+   "file_ready": {
+      "message": "\"%s\" está listo"
+   },
+   "files_to_convert": {
+      "message": "Archivos que se convertirán"
+   },
+   "finalizing___": {
+      "message": "Finalizando..."
+   },
+   "flv_streaming": {
+      "message": "Descarga FLV"
+   },
+   "force_default_storage_directory": {
+      "message": "%1s: establecer carpeta de almacenamiento por defecto en \"%2s\""
+   },
+   "from_domain": {
+      "message": "Desde %s"
+   },
+   "gallery": {
+      "message": "Galería"
+   },
+   "gallery_auto_detect": {
+      "message": "Auto-Detectar"
+   },
+   "gallery_auto_detect_warning": {
+      "message": "La auto-detección de miniaturas puede tener un impacto negativo en las prestaciones del navegador."
+   },
+   "gallery_capture": {
+      "message": "Captura de Imágenes"
+   },
+   "gallery_capture_images": {
+      "message": "Detectar imágenes contenidas"
+   },
+   "gallery_capture_links": {
+      "message": "Detectar enlaces a las miniaturas"
+   },
+   "gallery_files_types": {
+      "message": "Archivos %s"
+   },
+   "gallery_from_domain": {
+      "message": "Galería de %s"
+   },
+   "gallery_index_prefix": {
+      "message": "Nombrar archivos con prefijo incremental"
+   },
+   "gallery_links": {
+      "message": "Enlaces de galería"
+   },
+   "gallery_links_from_domain": {
+      "message": "Enlaces de %s"
+   },
+   "gallery_max_hits": {
+      "message": "Número máximo de enlaces a tener en cuenta"
+   },
+   "gallery_min_hits": {
+      "message": "Número mínimo de enlaces por galería"
+   },
+   "gallery_min_img_size": {
+      "message": "Tamaño mínimo de imagen"
+   },
+   "general": {
+      "message": "General"
+   },
+   "get_conversion_license": {
+      "message": "Adquirir una licencia de conversión"
+   },
+   "get_converter_license": {
+      "message": "Adquirir una licencia"
+   },
+   "get_converter_license_key": {
+      "message": "Adquirir una clave de licencia"
+   },
+   "help_vdh": {
+      "message": "Ayuda a Video DownloadHelper"
+   },
+   "hit_details": {
+      "message": "Detalles del elemento"
+   },
+   "hit_go_to_tab": {
+      "message": "Ir a la pestaña"
+   },
+   "hits_animation_description": {
+      "message": "Anima los elementos cuando haya cambios en la lista"
+   },
+   "hits_animation_title": {
+      "message": "Animación de los elementos"
+   },
+   "hits_goto_tab": {
+      "message": "Mostrar el controlador de pestañas"
+   },
+   "hls_download_as_m2ts": {
+      "message": "Descargar flujos HLS como M2TS"
+   },
+   "hls_enabled": {
+      "message": "HLS permitido"
+   },
+   "hls_streaming": {
+      "message": "Descarga HLS"
+   },
+   "hotkey_clear_hits": {
+      "message": "Borrar elementos"
+   },
+   "hotkey_convert_local": {
+      "message": "Convertir archivos locales"
+   },
+   "hotkey_default": {
+      "message": "Acción por defecto"
+   },
+   "hotkey_detect_gallery": {
+      "message": "Detectar miniaturas"
+   },
+   "hotkey_open_companion": {
+      "message": "Abrir el menú del sitio web"
+   },
+   "hotkey_supported_sites": {
+      "message": "Sitios soportados"
+   },
+   "hotkey_toggle_scrap": {
+      "message": "Cambiar a captura de pantalla"
+   },
+   "hotkeys": {
+      "message": "Teclas de Acceso Rápido"
+   },
+   "icon_activation_description": {
+      "message": "Cuándo activar el icono de la barra de herramientas"
+   },
+   "icon_activation_mode_anytab": {
+      "message": "Elementos de cualquier pestaña"
+   },
+   "icon_activation_mode_currenttab": {
+      "message": "Elementos de la pestaña actual"
+   },
+   "icon_activation_title": {
+      "message": "Activación del icono"
+   },
+   "icon_animation_description": {
+      "message": "Animación del icono cuando algunos elementos están activos"
+   },
+   "icon_animation_title": {
+      "message": "Animación del icono"
+   },
+   "icon_badge_activetab": {
+      "message": "Contenido multimedia de la pestaña actual"
+   },
+   "icon_badge_anytab": {
+      "message": "Contenido multimedia de todas las pestañas"
+   },
+   "icon_badge_description": {
+      "message": "Mostrar marcas en el icono"
+   },
+   "icon_badge_error_description": {
+      "message": "Una marca en el icono muestra errores cuando ocurren."
+   },
+   "icon_badge_error_title": {
+      "message": "Advertir de errores"
+   },
+   "icon_badge_mixed": {
+      "message": "Mostrar todas"
+   },
+   "icon_badge_none": {
+      "message": "No mostrar ninguna"
+   },
+   "icon_badge_pinned": {
+      "message": "Elementos fijados"
+   },
+   "icon_badge_tasks": {
+      "message": "Tareas en ejecución"
+   },
+   "icon_badge_title": {
+      "message": "Marca en el icono"
+   },
+   "icon_dropdown_description": {
+      "message": "Mostrar flecha de menú en el icono principal"
+   },
+   "icon_dropdown_title": {
+      "message": "Flecha de menú"
+   },
+   "ignore_embedded": {
+      "message": "Ignorar vídeos insertados"
+   },
+   "ignore_protected": {
+      "message": "Ignorar variantes protegidas"
+   },
+   "in_current_tab": {
+      "message": "En la pestaña actual"
+   },
+   "in_other_tab": {
+      "message": "En otras pestañas"
+   },
+   "install_converter": {
+      "message": "Instalar el Conversor"
+   },
+   "jocly_addon": {
+      "message": "Complemento Jocly para Firefox"
+   },
+   "jocly_description": {
+      "message": "Más de 100 juegos de mesa para jugar sólo o en línea, con vistas en 3D y con la posibilidad de chatear con los contrincantes"
+   },
+   "licence_text1": {
+      "message": "Algunas buenas razones para registrar su Conversor"
+   },
+   "licence_text2": {
+      "message": "La licencia del Conversor se abona en un único pago sin fecha de caducidad, excepto para el soporte gratuito que estará disponible durante un año a partir de la fecha de compra"
+   },
+   "license_key": {
+      "message": "Clave de licencia"
+   },
+   "license_point1": {
+      "message": "Los vídeos descargados y/o convertidos no tendrán marca de agua"
+   },
+   "license_point2": {
+      "message": "Podrá convertir vídeos directamente a archivos de audio MP3"
+   },
+   "license_point3": {
+      "message": "Tendrá acceso a soporte para la característica de conversión"
+   },
+   "license_point4": {
+      "message": "Nos ayudará a mantener vivo Video DownloadHelper"
+   },
+   "links_list": {
+      "message": "Lista de enlaces"
+   },
+   "locale_credits": {
+      "message": "Traducción al Español por %s"
+   },
+   "locale_credits_translators": {
+      "message": "Miguel SSM"
+   },
+   "locale_credits_urls": {
+      "message": "http://www.fotosycosas.es"
+   },
+   "log_details": {
+      "message": "Detalles de la Conversión"
+   },
+   "logs": {
+      "message": "Detalles"
+   },
+   "make_donation": {
+      "message": "Hacer una donación"
+   },
+   "masked_change_password": {
+      "message": "Cambiar la contraseña"
+   },
+   "masked_close": {
+      "message": "Cerrar"
+   },
+   "masked_default_password": {
+      "message": "Descarga enmascarada usando la contraseña por defecto"
+   },
+   "masked_enabled": {
+      "message": "Activada la descarga enmascarada"
+   },
+   "masked_info_descr1": {
+      "message": "La descarga enmascarada asegura que el material descargado se guarda en su ordenador en forma encriptada."
+   },
+   "masked_info_descr2": {
+      "message": "Para saber cómo manejar los archivos encriptados, pulse en el botón \"Más\"."
+   },
+   "masked_info_title": {
+      "message": "Descarga enmascarada"
+   },
+   "masked_more": {
+      "message": "Más"
+   },
+   "masked_save_password": {
+      "message": "Guardar la contraseña"
+   },
+   "max_hits_per_source": {
+      "message": "Número máximo de elementos de la misma página"
+   },
+   "max_panel_width_description": {
+      "message": "Anchura máxima de los paneles del complemento"
+   },
+   "max_panel_width_title": {
+      "message": "Máxima anchura del panel"
+   },
+   "media": {
+      "message": "Contenidos Multimedia"
+   },
+   "mediaweight_min_size_description": {
+      "message": "Ignorar elementos por debajo de este tamaño."
+   },
+   "mediaweight_min_size_title": {
+      "message": "Tamaño mínimo"
+   },
+   "mediaweight_min_size_title2": {
+      "message": "Ignorar elementos por debajo de este tamaño"
+   },
+   "mediaweight_threshold_description": {
+      "message": "Detectar siempre contenidos por encima de este tamaño."
+   },
+   "mediaweight_threshold_title": {
+      "message": "Tamaño umbral"
+   },
+   "mediaweight_threshold_title2": {
+      "message": "Detectar siempre por encima de"
+   },
+   "min_panel_width_description": {
+      "message": "Anchura mínima de los paneles del complemento"
+   },
+   "min_panel_width_title": {
+      "message": "Anchura mínima del panel"
+   },
+   "more___": {
+      "message": "Más..."
+   },
+   "mp2t_streaming": {
+      "message": "Descarga MP2T"
+   },
+   "mp2t_title": {
+      "message": "Streaming MP2T"
+   },
+   "mpegts_hide_ts": {
+      "message": "No mostrar los archivos .ts en la lista de descargas"
+   },
+   "network_filter_out_description": {
+      "message": "Ignorar URL's si contienen las expresiones:"
+   },
+   "network_filter_out_title": {
+      "message": "Filtrado de Red"
+   },
+   "network_probe_description": {
+      "message": "Escanear el tráfico de red para detectar elementos."
+   },
+   "network_probe_title": {
+      "message": "Examen de Red"
+   },
+   "new_rule": {
+      "message": "Nueva regla"
+   },
+   "no_download_to_abort": {
+      "message": "No hay descargas para cancelar"
+   },
+   "no_license_to_check": {
+      "message": "No hay licencia para comprobar"
+   },
+   "no_media_current_tab": {
+      "message": "No se encuentran archivos multimedia en esta pestaña."
+   },
+   "no_media_to_process": {
+      "message": "No hay contenido multimedia para ser procesado"
+   },
+   "no_media_to_process_descr": {
+      "message": "Haga click para reproducir el video para detectar archivos..."
+   },
+   "no_private_notification": {
+      "message": "No mostrar notificación para elementos privados"
+   },
+   "not_again_3months": {
+      "message": "No volver a mostrar esto hasta dentro de 3 meses"
+   },
+   "not_implemented_yet": {
+      "message": "No implementado todavía"
+   },
+   "not_see_again": {
+      "message": "No volver a mostrar este mensaje de nuevo"
+   },
+   "notify_ready": {
+      "message": "Notificar cuando esté procesado"
+   },
+   "number_type": {
+      "message": "%1s %2s"
+   },
+   "operations": {
+      "message": "Operaciones"
+   },
+   "options": {
+      "message": "Opciones"
+   },
+   "order_by_video_quality": {
+      "message": "Ordenar por calidad del vídeo"
+   },
+   "organize_videos": {
+      "message": "Organizar los videos"
+   },
+   "orphan": {
+      "message": "Sin origen"
+   },
+   "orphan_expiration_description": {
+      "message": "Tiempo límite antes de eliminar elementos sin origen (en segundos)."
+   },
+   "orphan_expiration_title": {
+      "message": "Tiempo límite de expiración"
+   },
+   "orphan_expiration_title2": {
+      "message": "Tiempo límite de expiración (en segundos)"
+   },
+   "other_products": {
+      "message": "De los mismos desarrolladores"
+   },
+   "output": {
+      "message": "Salida"
+   },
+   "panels_astab_settings": {
+      "message": "Abrir los Ajustes como una pestaña"
+   },
+   "panels_astab_sites": {
+      "message": "Abrir los sitios como una pestaña"
+   },
+   "pinned": {
+      "message": "Fijados"
+   },
+   "prompt_select_storage_dir": {
+      "message": "Seleccionar la carpeta de amacenamiento"
+   },
+   "prompt_target_dir": {
+      "message": "Carpeta de destino"
+   },
+   "purchase_license": {
+      "message": "Adquirir una licencia de conversión"
+   },
+   "qualities_max_description": {
+      "message": "Máximo número de variantes mostradas para el mismo vídeo."
+   },
+   "qualities_max_title": {
+      "message": "Máximo de variantes"
+   },
+   "quality_medium": {
+      "message": "Calidad Media"
+   },
+   "quality_small": {
+      "message": "Calidad Baja"
+   },
+   "queued___": {
+      "message": "En cola..."
+   },
+   "recheck_converter": {
+      "message": "Comprobar el Conversor"
+   },
+   "register_converter": {
+      "message": "Registrar el Conversor"
+   },
+   "register_existing_license": {
+      "message": "Registrar una licencia existente"
+   },
+   "registered_email": {
+      "message": "Correo electrónico"
+   },
+   "registered_key": {
+      "message": "Clave"
+   },
+   "registered_name": {
+      "message": "Nombre"
+   },
+   "req_donate": {
+      "message": "¿Consideraría apoyar el desarrollo y hacer una donación?"
+   },
+   "req_review": {
+      "message": "Sin embargo, ¿le importaría escribir una reseña en el Sitio Mozilla de Complementos?"
+   },
+   "req_review_link": {
+      "message": "Escriba una reseña sobre Video Downloadhelper"
+   },
+   "reset_converter_rules": {
+      "message": "Borrar reglas"
+   },
+   "reset_variants": {
+      "message": "Borrar variantes"
+   },
+   "revalidate_license": {
+      "message": "Revalidar la licencia"
+   },
+   "rule_converter_unavail": {
+      "message": "Ha solicitado una conversión de \"%s\", pero no hay ningún conversor disponible en su equipo. El contenido multimedia no será convertido."
+   },
+   "running": {
+      "message": "Acciones en marcha"
+   },
+   "safe_mode": {
+      "message": "Modo seguro"
+   },
+   "safe_mode_confirm": {
+      "message": "Sí, quiero activar el modo seguro"
+   },
+   "safe_mode_confirm_description": {
+      "message": "Queremos estar seguros de que ha comprendido que no hay vuelta atrás desde el Modo Seguro."
+   },
+   "safe_mode_description": {
+      "message": "La activación del Modo Seguro permite que el sitio web de Video DownloadHelper (y sólo este sitio) no mostrará ningún contenido que no pueda ser visto por toda la familia."
+   },
+   "safe_mode_description2": {
+      "message": "Establecer el Modo Seguro es definitivo y no hay modo de salir de él."
+   },
+   "safe_mode_set": {
+      "message": "Establecer el Modo Seguro"
+   },
+   "save": {
+      "message": "Guardar"
+   },
+   "save_transient_storagedirectory": {
+      "message": "Guardar definitivamente"
+   },
+   "scrap_8x8_align": {
+      "message": "Usar una rejilla de 8x8"
+   },
+   "scrap_8x8_align_cut": {
+      "message": "Cortar"
+   },
+   "scrap_8x8_align_extend": {
+      "message": "Extender"
+   },
+   "scrap_applet_selector": {
+      "message": "Selector de herramienta"
+   },
+   "scrap_applet_start_not_see_again": {
+      "message": "No volver a mostrar este mensaje"
+   },
+   "scrap_auto_detect": {
+      "message": "Herramienta de auto-detección"
+   },
+   "scrap_auto_detect_warning": {
+      "message": "La utilidad de auto-detección puede hacer más lenta la navegación"
+   },
+   "scrap_capture_statistics": {
+      "message": "Estadísticas de las capturas"
+   },
+   "scrap_change_target": {
+      "message": "Cambiar el archivo de destino"
+   },
+   "scrap_convert": {
+      "message": "Convertir a vídeo la captura de pantalla"
+   },
+   "scrap_converter_required": {
+      "message": "La captura de pantalla requiere un Conversor para generar el vídeo."
+   },
+   "scrap_description": {
+      "message": "Generar un vídeo a partir de lo que se visualiza en la ventana del navegador."
+   },
+   "scrap_description2": {
+      "message": "Si su equipo se ralentiza, puede perder algunas imágenes. Trate de reducir la ventana o la tasa de vídeo."
+   },
+   "scrap_description3": {
+      "message": "No se capturará audio. Debe mantener la pestaña activa para que las imágenes se refresquen."
+   },
+   "scrap_description4": {
+      "message": "Generar un vídeo a partir de lo que se visualiza en una zona de la ventana del navegador."
+   },
+   "scrap_description5": {
+      "message": "Si su equipo se ralentiza, puede perder algunas imágenes. Trate de reducir la tasa de vídeo."
+   },
+   "scrap_do_not_display_start_panel": {
+      "message": "No mostrar el panel al comienzo de la captura"
+   },
+   "scrap_enabled": {
+      "message": "Permitir la captura de pantalla"
+   },
+   "scrap_error": {
+      "message": "Error en la captura de pantalla"
+   },
+   "scrap_file_saved_as": {
+      "message": "El vídeo capturado se guardará como %s"
+   },
+   "scrap_min_applet_size": {
+      "message": "Tamaño mínimo para habilitar la captura"
+   },
+   "scrap_mouse_always": {
+      "message": "Siempre"
+   },
+   "scrap_mouse_halo_color": {
+      "message": "Color de sombra del puntero"
+   },
+   "scrap_mouse_halo_radius": {
+      "message": "Radio de la sombra"
+   },
+   "scrap_mouse_halo_transparency": {
+      "message": "Transparencia de la sombra (en %)"
+   },
+   "scrap_mouse_metakey": {
+      "message": "Cuando se pulsa MAYÜS"
+   },
+   "scrap_mouse_never": {
+      "message": "Nunca"
+   },
+   "scrap_mouse_not_metakey": {
+      "message": "Cuando no se pulsa MAYÚS"
+   },
+   "scrap_mouse_pointer_size": {
+      "message": "Tamaño del puntero"
+   },
+   "scrap_mouse_title": {
+      "message": "Grabar los movimientos del ratón"
+   },
+   "scrap_no_converter": {
+      "message": "No se ha encontrado un Conversor en su equipo, necesario para generar la captura de pantalla."
+   },
+   "scrap_open_container": {
+      "message": "Abrir la carpeta contenedora"
+   },
+   "scrap_open_file": {
+      "message": "Abrir el archivo de vídeo"
+   },
+   "scrap_port": {
+      "message": "Puerto del Conversor"
+   },
+   "scrap_rate": {
+      "message": "Tasa de vídeo (imágenes/segundo)"
+   },
+   "scrap_screen_capture": {
+      "message": "Captura de pantalla"
+   },
+   "scrap_screen_capture_from_domain": {
+      "message": "Captura de pantalla desde el sitio %s"
+   },
+   "scrap_start": {
+      "message": "Iniciar SCRAP"
+   },
+   "scrap_start_capture": {
+      "message": "Iniciar la captura"
+   },
+   "scrap_start_long": {
+      "message": "Comenzar a capturar la sesión de navegación"
+   },
+   "scrap_start_scrap_long": {
+      "message": "Iniciar la captura de la zona seleccionada"
+   },
+   "scrap_stats_captured_frames": {
+      "message": "%1s imágenes capturadas, %2s omitidas, %3s perdidas"
+   },
+   "scrap_stats_captured_size": {
+      "message": "Tamaño de las imágenes capturadas %s"
+   },
+   "scrap_stats_duration": {
+      "message": "Duración %s segundos"
+   },
+   "scrap_stats_original_size": {
+      "message": "Tamaño original de la imagen %s"
+   },
+   "scrap_stats_saved_frames": {
+      "message": "%1s imágenes guardadas, %2s perdidas"
+   },
+   "scrap_stop": {
+      "message": "Detener SCRAP"
+   },
+   "scrap_stop_long": {
+      "message": "Stop capturing browsing session"
+   },
+   "scrap_stop_scrap_long": {
+      "message": "Detener la grabación de la ventana"
+   },
+   "scrap_success": {
+      "message": "Captura de la ventana correcta"
+   },
+   "scrap_successfully_saved_as": {
+      "message": "El archivo\"%s\" se ha guardado correctamente"
+   },
+   "scrap_title": {
+      "message": "Captura de pantalla"
+   },
+   "selected_text": {
+      "message": "Texto seleccionado"
+   },
+   "settings": {
+      "message": "Preferencias"
+   },
+   "settings_title": {
+      "message": "Configurar Video DownloadHelper"
+   },
+   "shortcut_icons": {
+      "message": "Mostrar iconos de menú en la barra de título"
+   },
+   "shortcut_icons_dropdown": {
+      "message": "Iconos de atajos y menú desplegable"
+   },
+   "show_in_toolsmenu": {
+      "message": "Mostrar los controles en el menú de Herramientas"
+   },
+   "site_comments": {
+      "message": "Comentarios"
+   },
+   "site_date": {
+      "message": "Añadido"
+   },
+   "site_interest": {
+      "message": "Interés"
+   },
+   "site_name": {
+      "message": "Nombre del sitio"
+   },
+   "site_rating": {
+      "message": "Calificación"
+   },
+   "smartname_delay": {
+      "message": "Retardo de nombrado de la miniatura (en ms)"
+   },
+   "smartname_regexp": {
+      "message": "Expresión regular"
+   },
+   "smartnamer_all_domains": {
+      "message": "Todos los dominios"
+   },
+   "smartnamer_by_default": {
+      "message": "Por defecto"
+   },
+   "smartnamer_enabled_description": {
+      "message": "Crear el nombre desde la información de la página"
+   },
+   "smartnamer_enabled_title": {
+      "message": "Activar nombrado inteligente"
+   },
+   "smartnamer_fname_maxlen_description": {
+      "message": "Se asegura que los nombres automáticos no exceden esta longitud."
+   },
+   "smartnamer_fname_maxlen_title": {
+      "message": "Longitud máxima de nombre de archivo"
+   },
+   "smartnamer_fname_spaces_description": {
+      "message": "Qué hacer con los espacios en los nombres de archivo."
+   },
+   "smartnamer_fname_spaces_hyphen": {
+      "message": "Reemplazar espacios con guiones"
+   },
+   "smartnamer_fname_spaces_keep": {
+      "message": "Mantener espacios"
+   },
+   "smartnamer_fname_spaces_remove": {
+      "message": "Borrar espacios"
+   },
+   "smartnamer_fname_spaces_title": {
+      "message": "Espacios en los nombres de archivo"
+   },
+   "smartnamer_fname_spaces_underscore": {
+      "message": "Reemplazar espacios con guiones bajos"
+   },
+   "smartnamer_get_name_from_header_url": {
+      "message": "Buscar el nombre en la cabecera del documento o URL"
+   },
+   "smartnamer_get_name_from_page_content": {
+      "message": "Buscar el nombre en el contenido de la página"
+   },
+   "smartnamer_get_name_from_page_title": {
+      "message": "Buscar el nombre en el título de la página"
+   },
+   "smartnamer_get_obfuscated_name": {
+      "message": "Usar nombre aleatorio"
+   },
+   "smartnamer_header_url": {
+      "message": "Cabecera/URL"
+   },
+   "smartnamer_index": {
+      "message": "Índice actual"
+   },
+   "smartnamer_naming": {
+      "message": "Método de renombrado"
+   },
+   "smartnamer_obfuscated": {
+      "message": "Aleatorio"
+   },
+   "smartnamer_page_content": {
+      "message": "Contenido de la página"
+   },
+   "smartnamer_page_title": {
+      "message": "Título de la página"
+   },
+   "smartnames": {
+      "message": "Nombrado inteligente"
+   },
+   "smartnames_domains": {
+      "message": "Dominios para nombrado inteligente"
+   },
+   "storage_directory": {
+      "message": "Carpeta de almacenamiento"
+   },
+   "storage_directory_error": {
+      "message": "Error en la carpeta de almacenamiento \"%s\": se usa la carpeta por defecto %s"
+   },
+   "storage_directory_not_defined": {
+      "message": "Carpeta de almacenamiento no definida: se usa la carpeta por defecto %s"
+   },
+   "storage_directory_not_directory": {
+      "message": "La carpeta de almacenamiento %s no es una carpeta"
+   },
+   "storage_directory_not_exist": {
+      "message": "La carpeta de almacenamiento %s no existe"
+   },
+   "storage_directory_not_writable": {
+      "message": "No se puede escribir en la carpeta de almacenamiento %s"
+   },
+   "storage_last_dir": {
+      "message": "Usar la carpeta de almacenamiento por defecto del navegador"
+   },
+   "supported_sites": {
+      "message": "Sitios soportados"
+   },
+   "supported_vp9": {
+      "message": "Códec VP9 soportado"
+   },
+   "tbmode_comp": {
+      "message": "Sólo Botón Auxiliar"
+   },
+   "tbmode_label": {
+      "message": "Modo de botón en la barra de herramientas"
+   },
+   "tbmode_main": {
+      "message": "Sólo Botón Principal"
+   },
+   "tbmode_maincomp": {
+      "message": "Botón Principal y Botón Auxiliar"
+   },
+   "tbsn_enabled": {
+      "message": "Activar auxiliar para Facebook"
+   },
+   "tbts_enabled": {
+      "message": "Activar auxiliar para Twitter"
+   },
+   "tbvv_enabled": {
+      "message": "Activar auxiliar para Vine"
+   },
+   "tell_me_more": {
+      "message": "Explicar esto un poco más"
+   },
+   "thumbnail_direct_gif": {
+      "message": "Usar miniaturas en formato GIF"
+   },
+   "thumbnail_from_meta": {
+      "message": "Miniaturas desde meta-páginas"
+   },
+   "thumbnail_tumblr_mp4": {
+      "message": "Activar auxiliar para Tumblr"
+   },
+   "title_mode": {
+      "message": "Títulos largos en el Panel Principal"
+   },
+   "title_mode_ellipsis_left": {
+      "message": "Cortar por la izquierda"
+   },
+   "title_mode_ellipsis_right": {
+      "message": "Cortar por la derecha"
+   },
+   "title_mode_multiline": {
+      "message": "Utilizar varias líneas"
+   },
+   "title_save_file": {
+      "message": "Guardar archivo"
+   },
+   "top_main_panel": {
+      "message": "Parte de arriba del Panel Principal"
+   },
+   "tpsr_concurrent_captures": {
+      "message": "Capturas simultáneas"
+   },
+   "tpsr_convert": {
+      "message": "Convertir los vídeos generados."
+   },
+   "tpsr_convert_format": {
+      "message": "Definir el formato de salida."
+   },
+   "tpsr_description": {
+      "message": "Este modo captura los vídeos de Twitter Periscope tal cual aparecen. Es mejor eliminar el sonido para evitar problemas de audio."
+   },
+   "tpsr_do_not_convert": {
+      "message": "No convertir los vídeos resultantes."
+   },
+   "tpsr_duration_timeout": {
+      "message": "Duración máxima de captura de vídeo (en segundos)"
+   },
+   "tpsr_enabled": {
+      "message": "Activado"
+   },
+   "tpsr_no_converter": {
+      "message": "No dispone de convertidor instalado en su equipo. Como alternativa, el complemento ensamblará los fragmentos descargados, pero puede que el resultado no sea satisfactorio."
+   },
+   "tpsr_search_help": {
+      "message": "Puede dejar el campo de búsqueda vacío, pero se capturará cualquier elemento multimedia al azar."
+   },
+   "tpsr_search_periscope": {
+      "message": "Búsqueda en Periscope"
+   },
+   "tpsr_search_terms": {
+      "message": "Buscar por palabras"
+   },
+   "tpsr_start_par": {
+      "message": "Iniciar PAR"
+   },
+   "tpsr_start_par_long": {
+      "message": "Comenzar grabación automática en Periscope (PAR)"
+   },
+   "tpsr_start_recording": {
+      "message": "Grabar"
+   },
+   "tpsr_start_timeout": {
+      "message": "Tiempo de espera para el comienzo del vídeo (en segundos)"
+   },
+   "tpsr_stop_par": {
+      "message": "Detener PAR"
+   },
+   "tpsr_stop_par_long": {
+      "message": "Detener grabación automática en Periscope (PAR)"
+   },
+   "tpsr_title": {
+      "message": "Grabación automática en Periscope"
+   },
+   "transient_storagedirectory": {
+      "message": "La carpeta de almacenamiento ha sido modificada desde una ventana privada y será reestablecida en la siguiente sesión."
+   },
+   "ui_adp_grey": {
+      "message": "Probar variantes ADP"
+   },
+   "ui_adp_tag": {
+      "message": "Etiquetar variantes ADP"
+   },
+   "undefined_output": {
+      "message": "Salida indefinida"
+   },
+   "unregistered": {
+      "message": "No registrado"
+   },
+   "unsupported_vp9": {
+      "message": "Códec VP9 no soportado"
+   },
+   "using_browser_default": {
+      "message": "Usando los parámetros por defecto del navegador"
+   },
+   "validate_license": {
+      "message": "Registrar la licencia"
+   },
+   "variants": {
+      "message": "Variantes"
+   },
+   "vdh_notification": {
+      "message": "Video DownloadHelper"
+   },
+   "vdh_settings": {
+      "message": "Preferencias de Video DownloadHelper"
+   },
+   "version": {
+      "message": "Versión %s"
+   },
+   "video": {
+      "message": "Vídeo"
+   },
+   "video_downloadhelper": {
+      "message": "Video DownloadHelper"
+   },
+   "video_downloadhelper_plus": {
+      "message": "Video DownloadHelper +"
+   },
+   "video_only": {
+      "message": "Sólo vídeo"
+   },
+   "video_qualities": {
+      "message": "Calidades de vídeo"
+   },
+   "visit_site": {
+      "message": "Visita el sitio web"
+   },
+   "xpath_expr": {
+      "message": "Expresión para XPath"
+   },
+   "you_downloaded_n_videos": {
+      "message": "Ha descargado correctamente su %sº archivo con Video DownloadHelper."
+   }
+}

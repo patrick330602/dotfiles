@@ -1,0 +1,1736 @@
+{
+   "Bytes": {
+      "message": "%s bajtów"
+   },
+   "KB": {
+      "message": "%s KB"
+   },
+   "MB": {
+      "message": "%s MB"
+   },
+   "aborted": {
+      "message": "Przerwano"
+   },
+   "about": {
+      "message": "Informacje"
+   },
+   "about_alpha_intro": {
+      "message": "To jest wersja alfa."
+   },
+   "about_beta_intro": {
+      "message": "To jest wersja beta."
+   },
+   "about_conversion_support": {
+      "message": "Jeżeli jesteś zarejestrowanym użytkownikiem i potrzebujesz pomocy dotyczącej konwersji plików multimedialnych lub licencji, wyślij e-maila na adres, który został podany w chwili zakupu licencji."
+   },
+   "about_go_howto": {
+      "message": "Jak używać ten dodatek"
+   },
+   "about_go_support": {
+      "message": "Przejdź do strony pomocy"
+   },
+   "about_help": {
+      "message": "Jeśli potrzebujesz pomocy dotyczącej używania Video DownloadHelpera, kliknij poniższy odnośnik."
+   },
+   "about_qr": {
+      "message": "Plik został wygenerowany"
+   },
+   "about_support": {
+      "message": "Jeśli potrzebujesz pomocy dotyczącej Video DownloadHelpera, kliknij poniższy odnośnik."
+   },
+   "about_vdh": {
+      "message": "Video DownloadHelper – informacje"
+   },
+   "action_abort_description": {
+      "message": "Przerwij trwające działanie"
+   },
+   "action_abort_title": {
+      "message": "Przerwij"
+   },
+   "action_as_default": {
+      "message": "Stosuj to działanie jako domyślne"
+   },
+   "action_avplay_description": {
+      "message": "Odtwarza wideo w natywnym odtwarzaczu konwertera"
+   },
+   "action_avplay_title": {
+      "message": "Odtwórz"
+   },
+   "action_blacklist_description": {
+      "message": "Informacje z tego źródła nie aktywują dodatku"
+   },
+   "action_blacklist_title": {
+      "message": "Dodaj do listy zabronionych"
+   },
+   "action_cannot_abort": {
+      "message": "Działania nie można przerwać"
+   },
+   "action_convert_description": {
+      "message": "Konwertuj już pobrany plik"
+   },
+   "action_convert_title": {
+      "message": "Konwertuj lokalny plik"
+   },
+   "action_copyurl_description": {
+      "message": "Kopiuj do schowka adres URL pliku multimedialnego"
+   },
+   "action_copyurl_title": {
+      "message": "Kopiuj URL"
+   },
+   "action_deletehit_description": {
+      "message": "Usuń utwór z bieżącej listy"
+   },
+   "action_deletehit_title": {
+      "message": "Usuń"
+   },
+   "action_details_description": {
+      "message": "Wyświetl szczegóły dotyczące tego utworu"
+   },
+   "action_details_title": {
+      "message": "Szczegóły"
+   },
+   "action_download_description": {
+      "message": "Pobierz plik na dysk twardy"
+   },
+   "action_download_title": {
+      "message": "Pobierz"
+   },
+   "action_downloadconvert_description": {
+      "message": "Pobierz plik multimedialny i konwertuj go na inny format"
+   },
+   "action_downloadconvert_title": {
+      "message": "Pobieranie i konwersja"
+   },
+   "action_maskeddownload_description": {
+      "message": "Pobierz wideo do pliku zaszyfrowanego"
+   },
+   "action_maskeddownload_title": {
+      "message": "Pobieranie zamaskowane"
+   },
+   "action_noyt_description": {
+      "message": "Informacje o przechwytywaniu wideo z YouTube"
+   },
+   "action_noyt_title": {
+      "message": "Ostrzeżenie z YouTube"
+   },
+   "action_openlocalcontainer_description": {
+      "message": "Otwórz folder zawierający lokalne pliki multimedialne"
+   },
+   "action_openlocalcontainer_title": {
+      "message": "Otwórz folder"
+   },
+   "action_openlocalfile_description": {
+      "message": "Otwórz lokalny plik multimedialny"
+   },
+   "action_openlocalfile_title": {
+      "message": "Otwórz multimedium"
+   },
+   "action_pin_description": {
+      "message": "Przypnij utwór"
+   },
+   "action_pin_title": {
+      "message": "Przypnij"
+   },
+   "action_quickdownload_description": {
+      "message": "Pobierz bez pytania o folder docelowy"
+   },
+   "action_quickdownload_title": {
+      "message": "Szybkie pobieranie"
+   },
+   "action_record_description": {
+      "message": "Rozpocznij zapisywanie strumienia"
+   },
+   "action_record_title": {
+      "message": "Zapisz"
+   },
+   "action_scraprecord_description": {
+      "message": "Rozpocznij zapisywanie z ekranu"
+   },
+   "action_scraprecord_title": {
+      "message": "Zapisz"
+   },
+   "action_scrapsnapshot_description": {
+      "message": "Zrób zdjęcie apletu"
+   },
+   "action_scrapsnapshot_title": {
+      "message": "Zrób zdjęcie"
+   },
+   "action_scrapstoprecord_description": {
+      "message": "Zatrzymaj zapisywanie z ekranu"
+   },
+   "action_scrapstoprecord_title": {
+      "message": "Zatrzymaj zapisywanie"
+   },
+   "action_social_description": {
+      "message": "Udostępnij plik multimedialny w sieciach społecznościowych"
+   },
+   "action_social_title": {
+      "message": "Udostępnianie w sieciach społecznościowych"
+   },
+   "action_stoprecord_description": {
+      "message": "Zatrzymaj zapisywanie strumienia"
+   },
+   "action_stoprecord_title": {
+      "message": "Zatrzymaj zapisywanie"
+   },
+   "action_stream_no_capture_description": {
+      "message": "O zapisywaniu specjalnych strumieni wideo"
+   },
+   "action_stream_no_capture_title": {
+      "message": "Zapisz ostrzeżenie"
+   },
+   "actions": {
+      "message": "Działania"
+   },
+   "adaptative": {
+      "message": "Czynności"
+   },
+   "add_to_blacklist": {
+      "message": "Dodaj do listy zabronionych"
+   },
+   "add_to_blacklist_help": {
+      "message": "Filmy pochodzące z lub serwowane przez wybrane domeny będą pomijane"
+   },
+   "adp_hide": {
+      "message": "Nie wyświetlaj elementów typu ADP na liście pobierania"
+   },
+   "adp_variants": {
+      "message": "Warianty adaptacyjne"
+   },
+   "advanced": {
+      "message": "Zaawansowane"
+   },
+   "aggregating___": {
+      "message": "Sumowanie…"
+   },
+   "all_actions": {
+      "message": "Wszystkie czynności"
+   },
+   "analyze_page": {
+      "message": "Analizuj stronę"
+   },
+   "any_domain": {
+      "message": "dowolne domeny"
+   },
+   "any_format": {
+      "message": "w dowolnym formacie"
+   },
+   "appearance": {
+      "message": "Wygląd"
+   },
+   "audio_only": {
+      "message": "Tylko audio"
+   },
+   "auto_pin_description": {
+      "message": "Przypnij utwór po pobraniu."
+   },
+   "auto_pin_title": {
+      "message": "Automatyczne przypinanie"
+   },
+   "avplay_converter_required": {
+      "message": "Nie znaleziono natywnego konwertera"
+   },
+   "avplay_enabled": {
+      "message": "Odtwarzacz włączony"
+   },
+   "avplay_player_missing_text": {
+      "message": "Konwerter prawdopodobnie jest zainstalowany, ale nie znaleziono skojarzonego odtwarzacza wideo. Zainstaluj ponownie konwerter."
+   },
+   "avplay_player_missing_title": {
+      "message": "Nie ma odtwarzacza"
+   },
+   "back": {
+      "message": "Wróć"
+   },
+   "behavior": {
+      "message": "Zachowanie"
+   },
+   "blacklist": {
+      "message": "Lista zabronionych"
+   },
+   "blacklist_domains": {
+      "message": "Zabronione domeny"
+   },
+   "blacklist_enable_description": {
+      "message": "Zapobiega aktywowaniu rozpoznawania plików multimedialnych przez witryny."
+   },
+   "blacklist_enable_title": {
+      "message": "Aktywuj listę zabronionych"
+   },
+   "blacklist_selected": {
+      "message": "Wybrano listę zabronionych"
+   },
+   "cancel": {
+      "message": "Anuluj"
+   },
+   "capture_gallery": {
+      "message": "Galeria przechwyconych"
+   },
+   "change_storage_directory": {
+      "message": "Zmień katalog przechowywania"
+   },
+   "checking_converter___": {
+      "message": "Sprawdzanie konwertera…"
+   },
+   "checking_converter_license___": {
+      "message": "Sprawdzanie licencji konwertera…"
+   },
+   "chrome_ignore_yt": {
+      "message": "Nie wykrywaj filmów na YouTube"
+   },
+   "chrome_ignore_yt2": {
+      "message": "Ignoruj filmy na YouTube"
+   },
+   "chrome_install_firefox": {
+      "message": "Zainstaluj Firefoksa"
+   },
+   "chrome_install_fx_vdh": {
+      "message": "Video DownloadHelper dla Firefoksa"
+   },
+   "chrome_noyt_text": {
+      "message": "Sklep Chrome nie udostępnia rozszerzeń pobierających filmy z YouTube, więc musieliśmy usunąć tę funkcję."
+   },
+   "chrome_noyt_text2": {
+      "message": "Do pobierania filmów z YouTube za pomocą DownloadHelpera możesz używać przeglądarki Mozilla Firefox."
+   },
+   "chrome_stream_no_capture": {
+      "message": "Ta przeglądarka nie obsługuje pobierania tego typu strumienia."
+   },
+   "chrome_stream_no_capture2": {
+      "message": "Rozważ używanie Video DownloadHelpera w przeglądarce Firefox."
+   },
+   "chrome_stream_no_capture_hide": {
+      "message": "Nie pokazuj strumieni, których nie można zapisać"
+   },
+   "chrome_stream_no_capture_title": {
+      "message": "Brak możliwości zapisu strumienia"
+   },
+   "chrome_warning_yt": {
+      "message": "Ostrzeżenie dotyczące rozszerzeń dla przeglądarki Chrome i YouTube"
+   },
+   "chunk_about_to_be_saved": {
+      "message": "Rozczłonkowany plik multimedialny „%s” ma zostać zapisany i skonwertowany na"
+   },
+   "chunk_assemble_and_convert": {
+      "message": "Scalanie i konwersja"
+   },
+   "chunk_assemble_native": {
+      "message": "Scalanie poprzez łączenie"
+   },
+   "chunk_assemble_native_warn": {
+      "message": "Docelowy plik zostanie utworzony poprzez scalenie elementów. Plik może nie być odtwarzany prawidłowo w twoim systemie."
+   },
+   "chunk_assemble_only": {
+      "message": "Scal tylko"
+   },
+   "chunk_converter_assemble": {
+      "message": "Zażądano, aby plik wynikowy został scalony za pomocą konwertera."
+   },
+   "chunk_converter_assemble_convert": {
+      "message": "Zażądano, aby plik wynikowy został scalony i skonwertowany za pomocą konwertera."
+   },
+   "chunk_converter_convert": {
+      "message": "Zażądano, aby plik wynikowy został skonwertowany."
+   },
+   "chunk_initial_period": {
+      "message": "Opóźnienie początkowe (s)"
+   },
+   "chunk_missing_conv_native_assemble_only": {
+      "message": "W twoim systemie nie znaleziono konwertera. Plik zostanie tylko scalony."
+   },
+   "chunk_period_factor": {
+      "message": "Limit czasu (%)"
+   },
+   "chunk_save": {
+      "message": "Zapisywanie pakietowego pliku multimedialnego"
+   },
+   "chunk_target": {
+      "message": "w katalogu „%s”"
+   },
+   "chunks_concurrent_downloads": {
+      "message": "Jednoczesne pobieranie kawałków pliku"
+   },
+   "chunks_enabled": {
+      "message": "Strumieniowanie kawałków włączone"
+   },
+   "chunks_prefetch_count": {
+      "message": "Liczba wstępnie wczytywanych kawałków"
+   },
+   "chunks_title": {
+      "message": "Strumieniowanie kawałków"
+   },
+   "clear_hits": {
+      "message": "Wyczyść utwory"
+   },
+   "clear_logs": {
+      "message": "Wyczyść dane"
+   },
+   "cmenu_mode": {
+      "message": "Tryb menu kontekstowego"
+   },
+   "cmenu_mode_all": {
+      "message": "Pokaż wszystkie działania"
+   },
+   "cmenu_mode_both": {
+      "message": "Szybkie i wszystkie działania"
+   },
+   "cmenu_mode_none": {
+      "message": "Nie wyświetlaj żadnych"
+   },
+   "cmenu_mode_quick": {
+      "message": "Uruchom domyślne działanie"
+   },
+   "companion_default_op": {
+      "message": "Stowarzyszona domyślne działanie"
+   },
+   "companion_enable": {
+      "message": "Włącz stowarzyszony przycisk"
+   },
+   "config_conversion_rules": {
+      "message": "Konfiguruj reguły konwersji"
+   },
+   "congratulations": {
+      "message": "Gratulacje!"
+   },
+   "context_menu": {
+      "message": "Używaj menu kontekstowego"
+   },
+   "continue": {
+      "message": "Kontynuuj"
+   },
+   "convconf_2passes": {
+      "message": "2 przebiegi"
+   },
+   "convconf_ac": {
+      "message": "Kanały audio"
+   },
+   "convconf_acnone": {
+      "message": "Brak"
+   },
+   "convconf_acodec": {
+      "message": "Kodek audio"
+   },
+   "convconf_aspect": {
+      "message": "Proporcje obrazu"
+   },
+   "convconf_audiobitrate": {
+      "message": "Bitrate audio"
+   },
+   "convconf_audiofreq": {
+      "message": "Częstotliwość audio"
+   },
+   "convconf_audioonly": {
+      "message": "Tylko audio"
+   },
+   "convconf_bitrate": {
+      "message": "Bitrate"
+   },
+   "convconf_container": {
+      "message": "Format"
+   },
+   "convconf_duplicate": {
+      "message": "Duplikat"
+   },
+   "convconf_ext": {
+      "message": "Rozszerzenie pliku wyjściowego"
+   },
+   "convconf_extra": {
+      "message": "Dodatkowe parametry"
+   },
+   "convconf_level": {
+      "message": "Poziom"
+   },
+   "convconf_mono": {
+      "message": "Mono"
+   },
+   "convconf_new": {
+      "message": "Nowy"
+   },
+   "convconf_preset": {
+      "message": "Ustawienia domyślne"
+   },
+   "convconf_profilev": {
+      "message": "Profil wideo"
+   },
+   "convconf_rate": {
+      "message": "Klatek na sekundę"
+   },
+   "convconf_readonly": {
+      "message": "Ta domyślna konfiguracja jest tylko do odczytu. Powiel ją, by wprowadzać zmiany."
+   },
+   "convconf_remove": {
+      "message": "Usuń"
+   },
+   "convconf_reset": {
+      "message": "Resetuj wszystko"
+   },
+   "convconf_reset_confirm": {
+      "message": "Czynność ta spowoduje usunięcie wszystkich dokonanych zmian"
+   },
+   "convconf_size": {
+      "message": "Rozmiar klatki"
+   },
+   "convconf_size_help": {
+      "message": "\u003Cszerokość>x\u003Cwysokość>"
+   },
+   "convconf_stereo": {
+      "message": "Stereo"
+   },
+   "convconf_target": {
+      "message": "Format docelowy"
+   },
+   "convconf_target_help": {
+      "message": "Ustawienia konfiguracyjne"
+   },
+   "convconf_tune": {
+      "message": "Strojenie"
+   },
+   "convconf_vcodec": {
+      "message": "Kodek wideo"
+   },
+   "convconf_videobitrate": {
+      "message": "Bitrate wideo"
+   },
+   "conversion": {
+      "message": "Konwersja"
+   },
+   "conversion_output": {
+      "message": "Wyjście"
+   },
+   "conversion_outputs": {
+      "message": "Wyjścia konwersji"
+   },
+   "conversion_rule": {
+      "message": "Reguła"
+   },
+   "conversion_rules": {
+      "message": "Reguły"
+   },
+   "convert": {
+      "message": "Konwertuj"
+   },
+   "convert_format_from_domain": {
+      "message": "Konwertuj %1s z %2s do %3s"
+   },
+   "convert_local_files": {
+      "message": "Konwertuj lokalne pliki"
+   },
+   "converter": {
+      "message": "Konwerter"
+   },
+   "converter_edit_output": {
+      "message": "Edytuj wyjście"
+   },
+   "converter_failed_execution": {
+      "message": "Nie udało się uruchomić konwertera"
+   },
+   "converter_installed": {
+      "message": "Konwerter został zainstalowany"
+   },
+   "converter_license": {
+      "message": "Licencja konwertera"
+   },
+   "converter_license_blocked": {
+      "message": "Twoja licencja została zablokowana"
+   },
+   "converter_license_locked": {
+      "message": "Twoja licencja musi być ponownie potwierdzona"
+   },
+   "converter_license_locked_mail": {
+      "message": "W tej sprawie została wysłana wiadomość na adres „%s”. Aby odblokować licencję, należy kliknąć odnośnik znajdujący się w tej wiadomości – może wystąpić konieczność ponownego potwierdzenia licencji. Jeśli nie widzisz tej wiadomości w swojej skrzynce odbiorczej, sprawdź skrzynkę zawierającą niechciane wiadomości (spam)."
+   },
+   "converter_license_ready": {
+      "message": "Zarejestrowana licencja konwertera"
+   },
+   "converter_missing": {
+      "message": "Brak konwertera"
+   },
+   "converter_needed": {
+      "message": "Aby ta operacja została wykonana, w systemie musi być zainstalowany konwerter."
+   },
+   "converter_needed_aggregate": {
+      "message": "Aby zsumować strumienie wideo i audio, w systemie musi być zainstalowany konwerter."
+   },
+   "converter_needed_aggregate_why": {
+      "message": "Dlaczego musi być zainstalowany konwerter?"
+   },
+   "converter_needed_local": {
+      "message": "Aby skonwertować lokalne pliki multimedialne, w systemie musi być zainstalowany konwerter."
+   },
+   "converter_needs_reg": {
+      "message": "Wymagana jest rejestracja"
+   },
+   "converter_not_available": {
+      "message": "Konwerter jest niedostępny"
+   },
+   "converter_not_installed": {
+      "message": "Konwerter nie jest zainstalowany"
+   },
+   "converter_path": {
+      "message": "Ścieżka do konwertera"
+   },
+   "converter_reg_audio": {
+      "message": "Zażądano reguły automatycznej konwersji generującej tylko plik multimedialny audio. To działanie wymagana zarejestrowanego konwertera."
+   },
+   "converter_requested_unavail": {
+      "message": "Do wykonania tej operacji potrzebny jest konwertera, ale jest niedostępny."
+   },
+   "converter_required": {
+      "message": "Wymagany jest konwerter"
+   },
+   "converter_threads": {
+      "message": "Wątki konwersji"
+   },
+   "converter_tune_h264": {
+      "message": "Wymuś H264 podczas sumowania"
+   },
+   "converter_update_version": {
+      "message": "Aktualizuj konwerter do wersji %s"
+   },
+   "converting___": {
+      "message": "Konwertowanie…"
+   },
+   "copy_of": {
+      "message": "Kopia z %s"
+   },
+   "copy_to_clipboard": {
+      "message": "Kopiuj do schowka"
+   },
+   "could_not_download": {
+      "message": "Nie można pobrać „%s”"
+   },
+   "cphelper_addon": {
+      "message": "CouponsHelper Addon"
+   },
+   "cphelper_description": {
+      "message": "The right coupon at the right time: do not miss discounts when shopping online ..."
+   },
+   "custom_output": {
+      "message": "Własny format pliku wyjściowego"
+   },
+   "dash_enabled": {
+      "message": "DASH włączone"
+   },
+   "dash_hide_m4s": {
+      "message": "Nie wyświetlaj elementów typu .m4s na liście pobierania"
+   },
+   "dash_streaming": {
+      "message": "Strumieniowanie DASH"
+   },
+   "define_vdh_smartname": {
+      "message": "DownloadHelper – inteligentne nazwy"
+   },
+   "defining_smartname": {
+      "message": "Definiowanie inteligentnej nazwy"
+   },
+   "defining_smartname_help": {
+      "message": "Ta funkcja umożliwia generowanie nazwy filmu na podstawie strony, z której film pochodzi. Jeśli wybrany tekst zawiera za dużo znaków, wybierz tylko kilka znaków z tytułu strony."
+   },
+   "details_parenthesis": {
+      "message": "(Szczegóły)"
+   },
+   "detect_extensions": {
+      "message": "Wykryj rozszerzenia"
+   },
+   "display_mode_compact": {
+      "message": "Kompaktuj"
+   },
+   "display_mode_label": {
+      "message": "Wyświetlaj panel główny"
+   },
+   "display_mode_mozilla": {
+      "message": "Mozilla"
+   },
+   "display_mode_normal": {
+      "message": "Normalny"
+   },
+   "dlconv_and_saved_to": {
+      "message": "i zapisano do „%s”"
+   },
+   "dlconv_back": {
+      "message": "Wróć"
+   },
+   "dlconv_change_directory": {
+      "message": "Zmień katalog wyjścia"
+   },
+   "dlconv_convert": {
+      "message": "Konwertuj"
+   },
+   "dlconv_download_and_convert": {
+      "message": "Pobieranie i konwersja"
+   },
+   "dlconv_download_only": {
+      "message": "Tylko pobierz"
+   },
+   "dlconv_n_will_be_converted": {
+      "message": "%s pliki zostaną skonwertowane na:"
+   },
+   "dlconv_output_details": {
+      "message": "Skonfiguruj dane wyjściowe"
+   },
+   "dlconv_rename": {
+      "message": "Sugeruj zmianę nazwy"
+   },
+   "dlconv_will_be_converted": {
+      "message": "„%s” zostanie skonwertowany na:"
+   },
+   "do_no_convert_format_from_domain": {
+      "message": "Nie konwertuj %1s z %2s"
+   },
+   "domain": {
+      "message": "Domena"
+   },
+   "donate": {
+      "message": "Dotacja"
+   },
+   "donate_vdh": {
+      "message": "Video DownloadHelper – pomoc"
+   },
+   "download_canceled": {
+      "message": "Pobieranie zostało anulowane."
+   },
+   "download_controlled_max_description": {
+      "message": "Kontroluje liczbę generowanych przez dodatek jednoczesnych pobrań, by zachować odpowiednią przepustowość łącza."
+   },
+   "download_controlled_max_title": {
+      "message": "Maksymalna liczba pobrań"
+   },
+   "download_controlled_max_title2": {
+      "message": "Maksymalna liczba równoczesnych pobrań"
+   },
+   "download_retries": {
+      "message": "Liczba prób pobierania"
+   },
+   "download_retry_delay": {
+      "message": "Odstęp między próbami pobrania (ms)"
+   },
+   "download_selected_link": {
+      "message": "Pobierz wybrany odnośnik multimedium"
+   },
+   "download_selected_links": {
+      "message": "Pobierz wybrane odnośniki multimediów"
+   },
+   "downloaded_as": {
+      "message": "Pobrano jako %s"
+   },
+   "downloading___": {
+      "message": "Pobieranie…"
+   },
+   "downloads_hook_headers": {
+      "message": "Podpinaj nagłówki pobierania"
+   },
+   "empty_downloaded_file": {
+      "message": "Pobrany plik „%s” jest pusty. Prawdopodobnie jest zabezpieczony."
+   },
+   "error_cannot_create_target_directory": {
+      "message": "Nie można utworzyć katalogu docelowego %s. Sprawdź dostępność miejsca i uprawnienia."
+   },
+   "error_cannot_create_target_file": {
+      "message": "Nie można utworzyć pliku docelowego %s. Sprawdź dostępność miejsca i uprawnienia."
+   },
+   "error_nohome": {
+      "message": "Katalog domowy nie istnieje"
+   },
+   "errors": {
+      "message": "Błędy"
+   },
+   "explain_qr1": {
+      "message": "Będzie ukazywała się informacja, że skonwertowany film w rogu ekranu będzie zawierał znak wodny."
+   },
+   "explain_qr2": {
+      "message": "Jest to spowodowane tym, że funkcja konwersji nie została zarejestrowana."
+   },
+   "extension": {
+      "message": "Rozszerzenie"
+   },
+   "f4f_enabled": {
+      "message": "F4F włączone"
+   },
+   "f4f_prefetch": {
+      "message": "F4F – wstępne pobieranie segmentów"
+   },
+   "f4f_streaming": {
+      "message": "Strumieniowanie F4F"
+   },
+   "failed_aggregating": {
+      "message": "Nie udało się zsumować „%s”"
+   },
+   "failed_assembling": {
+      "message": "Scalanie nieudane"
+   },
+   "failed_conversion": {
+      "message": "Konwersja nieudana"
+   },
+   "failed_converting": {
+      "message": "Konwersja „%s” się nie powiodła"
+   },
+   "failed_getting_info": {
+      "message": "Nie udało się pobrać informacji z „%s”"
+   },
+   "file_ext_change": {
+      "message": "Zmieniono rozszerzenie pliku"
+   },
+   "file_ext_change_text": {
+      "message": "Zmieniono rozszerzenie pliku z „.%1s” na „.%2s”. Może być problem z odtwarzaniem pliku."
+   },
+   "file_generated": {
+      "message": "Plik „%s” został wygenerowany."
+   },
+   "file_not_exists": {
+      "message": "Plik „%s” nie istnieje"
+   },
+   "file_not_readable": {
+      "message": "Plik „%s” jest nieczytelny"
+   },
+   "file_ready": {
+      "message": "„%s” jest gotowy"
+   },
+   "files_to_convert": {
+      "message": "Pliki do konwersji"
+   },
+   "finalizing___": {
+      "message": "Finalizowanie…"
+   },
+   "flv_streaming": {
+      "message": "Strumieniowanie FLV"
+   },
+   "force_default_storage_directory": {
+      "message": "%1s: ustaw domyślny katalog przechowywania na „%2s”"
+   },
+   "from_domain": {
+      "message": "Z %s"
+   },
+   "gallery": {
+      "message": "Galeria"
+   },
+   "gallery_auto_detect": {
+      "message": "Automatyczne wykrywanie"
+   },
+   "gallery_auto_detect_warning": {
+      "message": "Funkcja automatycznego wykrywania galerii może mieć negatywny wpływ na wydajność przeglądarki"
+   },
+   "gallery_capture": {
+      "message": "Przechwytywania galerii"
+   },
+   "gallery_capture_images": {
+      "message": "Wykrywaj osadzone obrazki"
+   },
+   "gallery_capture_links": {
+      "message": "Wykrywaj odnośniki do multimediów"
+   },
+   "gallery_files_types": {
+      "message": "%s plików"
+   },
+   "gallery_from_domain": {
+      "message": "Galeria z %s"
+   },
+   "gallery_index_prefix": {
+      "message": "Poprzedzaj nazwy plików zwiększającym się indeksem"
+   },
+   "gallery_links": {
+      "message": "Odnośniki galerii"
+   },
+   "gallery_links_from_domain": {
+      "message": "Odnośniki z %s"
+   },
+   "gallery_max_hits": {
+      "message": "Maksymalna liczba odnośników"
+   },
+   "gallery_min_hits": {
+      "message": "Minimalna liczba odnośników w galerii"
+   },
+   "gallery_min_img_size": {
+      "message": "Minimalny rozmiar obrazka"
+   },
+   "general": {
+      "message": "Ogólne"
+   },
+   "get_conversion_license": {
+      "message": "Uzyskaj licencję konwersji"
+   },
+   "get_converter_license": {
+      "message": "Uzyskaj licencję"
+   },
+   "get_converter_license_key": {
+      "message": "Uzyskaj klucz licencji"
+   },
+   "help_vdh": {
+      "message": "Video DownloadHelper – pomoc"
+   },
+   "hit_details": {
+      "message": "Szczegóły trafienia"
+   },
+   "hit_go_to_tab": {
+      "message": "Przejdź do karty"
+   },
+   "hits_animation_description": {
+      "message": "Animuje pobrania, jeśli zostaną zmienione na liście."
+   },
+   "hits_animation_title": {
+      "message": "Animacja pobrań"
+   },
+   "hits_goto_tab": {
+      "message": "Wyświetlaj „Przejdź do karty”"
+   },
+   "hls_download_as_m2ts": {
+      "message": "Pobieraj strumienie HLS jako M2TS"
+   },
+   "hls_enabled": {
+      "message": "HLS włączone"
+   },
+   "hls_streaming": {
+      "message": "Strumieniowanie HLS"
+   },
+   "hotkey_clear_hits": {
+      "message": "Clear hits"
+   },
+   "hotkey_convert_local": {
+      "message": "Konwertowanie plików lokalnych"
+   },
+   "hotkey_default": {
+      "message": "Domyślne działanie"
+   },
+   "hotkey_detect_gallery": {
+      "message": "Wykryj galerie"
+   },
+   "hotkey_open_companion": {
+      "message": "Otwórz stowarzyszone menu"
+   },
+   "hotkey_supported_sites": {
+      "message": "Obsługiwane witryny"
+   },
+   "hotkey_toggle_scrap": {
+      "message": "Włącz/wyłącz przechwytywanie ekranu"
+   },
+   "hotkeys": {
+      "message": "Skróty klawiszowe"
+   },
+   "icon_activation_description": {
+      "message": "Kiedy należy aktywować ikonę na pasku narzędzi."
+   },
+   "icon_activation_mode_anytab": {
+      "message": "Trafienie z dowolnej karty"
+   },
+   "icon_activation_mode_currenttab": {
+      "message": "Trafienie z bieżącej karty"
+   },
+   "icon_activation_title": {
+      "message": "Aktywacja ikony"
+   },
+   "icon_animation_description": {
+      "message": "Animacja ikony, gdy niektóre przeboje są aktywne."
+   },
+   "icon_animation_title": {
+      "message": "Animacja ikony"
+   },
+   "icon_badge_activetab": {
+      "message": "Multimedia z aktywnej karty"
+   },
+   "icon_badge_anytab": {
+      "message": "Multimedia z dowolnej karty"
+   },
+   "icon_badge_description": {
+      "message": "Wyświetlaj przycisk na pasku narzędzi."
+   },
+   "icon_badge_error_description": {
+      "message": "Przycisk paska narzędzi wyświetla błędy, jeśli występują."
+   },
+   "icon_badge_error_title": {
+      "message": "Wyświetlaj błędy na przycisku"
+   },
+   "icon_badge_mixed": {
+      "message": "Mieszany"
+   },
+   "icon_badge_none": {
+      "message": "Brak"
+   },
+   "icon_badge_pinned": {
+      "message": "Przypięte hity"
+   },
+   "icon_badge_tasks": {
+      "message": "Uruchomione zadania"
+   },
+   "icon_badge_title": {
+      "message": "Ikona przycisku"
+   },
+   "icon_dropdown_description": {
+      "message": "Wyświetlaj trójkąt, jako ikonę rozwijania."
+   },
+   "icon_dropdown_title": {
+      "message": "Ikona rozwijania"
+   },
+   "ignore_embedded": {
+      "message": "Pomijaj osadzone widea"
+   },
+   "ignore_protected": {
+      "message": "Pomijaj zabezpieczone warianty"
+   },
+   "in_current_tab": {
+      "message": "W aktywnej karcie"
+   },
+   "in_other_tab": {
+      "message": "W innych kartach"
+   },
+   "install_converter": {
+      "message": "Zainstaluj konwerter"
+   },
+   "jocly_addon": {
+      "message": "Jocly – dodatek do Firefoksa"
+   },
+   "jocly_description": {
+      "message": "Ponad 100 gier planszowych w formacie HTML5 kontra komputer lub na żywo w formacie 3D z przeciwnikami, wykorzystując czat wideo…"
+   },
+   "licence_text1": {
+      "message": "Kilka powodów, by zarejestrować konwerter:"
+   },
+   "licence_text2": {
+      "message": "Licencja konwertera to jednorazowa opłata z wieczystym okresem ważności z wyjątkiem bezpłatnej pomocy, która jest świadczona przez okres jednego roku od daty zakupu."
+   },
+   "license_key": {
+      "message": "Klucz licencji"
+   },
+   "license_point1": {
+      "message": "Na skonwertowanych/scalonych wideach nie będzie wyświetlany znak wodny"
+   },
+   "license_point2": {
+      "message": "Możliwość bezpośredniej konwersji ścieżki dźwiękowej z pliku wideo do formatu mp3"
+   },
+   "license_point3": {
+      "message": "Dostęp do pomocy dla funkcji konwersji"
+   },
+   "license_point4": {
+      "message": "Pełna konserwacja i utrzymanie dodatku"
+   },
+   "links_list": {
+      "message": "Lista odnośników"
+   },
+   "locale_credits": {
+      "message": "Tłumaczenie na język polski: %s"
+   },
+   "locale_credits_translators": {
+      "message": "! NIE TŁUMACZ - informacja dla tłumaczy: Pozostaw znak ! na początku, aby ignorować podziękowania za tłumaczenie lub usuń znak ! i wstaw listę tłumaczy oddzielając poszczególne lokalizacje przecinkami"
+   },
+   "locale_credits_urls": {
+      "message": "! NIE TŁUMACZ - informacja dla tłumaczy: Pozostaw znak ! na początku, aby zabezpieczyć odnośniki skojarzone z tłumaczami lub usuń znak ! i wstaw listę URL-i oddzielając poszczególne adresy przecinkami. Niektóre adresy mogą pozostać puste, aby zabezpieczyć używanie klikalnych odnośników, ale przecinki są obowiązkowe."
+   },
+   "log_details": {
+      "message": "Szczegóły dziennika zdarzeń"
+   },
+   "logs": {
+      "message": "Dzienniki zdarzeń"
+   },
+   "make_donation": {
+      "message": "Przekaż dotację"
+   },
+   "masked_change_password": {
+      "message": "Zmień hasło"
+   },
+   "masked_close": {
+      "message": "Zamknij"
+   },
+   "masked_default_password": {
+      "message": "Pobieranie zamaskowane przy użyciu domyślnego hasła"
+   },
+   "masked_enabled": {
+      "message": "Pobieranie zamaskowane włączone"
+   },
+   "masked_info_descr1": {
+      "message": "Pobieranie zamaskowane oznacza, że pobierany materiał jest przechowywany na twoim komputerze tylko w formie zaszyfrowanej."
+   },
+   "masked_info_descr2": {
+      "message": "Aby dowiedzieć się, jak radzić sobie z wygenerowanymi zaszyfrowanymi plikami naciśnij przycisk Więcej."
+   },
+   "masked_info_title": {
+      "message": "Pobieranie zamaskowane"
+   },
+   "masked_more": {
+      "message": "Więcej"
+   },
+   "masked_save_password": {
+      "message": "Zapisz hasło"
+   },
+   "max_hits_per_source": {
+      "message": "Maksymalna liczba wpisów z tego samego źródła"
+   },
+   "max_panel_width_description": {
+      "message": "Maksymalna szerokość każdego panelu dodatku"
+   },
+   "max_panel_width_title": {
+      "message": "Maksymalna szerokość panelu"
+   },
+   "media": {
+      "message": "Media"
+   },
+   "mediaweight_min_size_description": {
+      "message": "Pomijaj pobrania poniżej tego rozmiaru."
+   },
+   "mediaweight_min_size_title": {
+      "message": "Minimalny rozmiar"
+   },
+   "mediaweight_min_size_title2": {
+      "message": "Pomijaj pobrania poniżej rozmiaru"
+   },
+   "mediaweight_threshold_description": {
+      "message": "Wymusza wykrywanie multimediów powyżej tej wielkości."
+   },
+   "mediaweight_threshold_title": {
+      "message": "Próg zadziałania"
+   },
+   "mediaweight_threshold_title2": {
+      "message": "Wymuszaj wykrywanie powyżej tej wielkości"
+   },
+   "min_panel_width_description": {
+      "message": "Minimalna szerokość panelu każdego dodatku"
+   },
+   "min_panel_width_title": {
+      "message": "Minimalna szerokość panelu"
+   },
+   "more___": {
+      "message": "Więcej…"
+   },
+   "mp2t_streaming": {
+      "message": "Strumieniowanie MO2T"
+   },
+   "mp2t_title": {
+      "message": "Strumieniowanie MP2T"
+   },
+   "mpegts_hide_ts": {
+      "message": "Nie wyświetlaj elementów typu .ts na liście pobierania"
+   },
+   "network_filter_out_description": {
+      "message": "Wyrażenia regularne do pomijania niektórych adresów URL multimediów."
+   },
+   "network_filter_out_title": {
+      "message": "Network filter out"
+   },
+   "network_probe_description": {
+      "message": "Skanuj ruch sieciowy w celu wykrycia trafienia."
+   },
+   "network_probe_title": {
+      "message": "Sonda sieci"
+   },
+   "new_rule": {
+      "message": "Nowa reguła"
+   },
+   "no_download_to_abort": {
+      "message": "Brak pobrań do usunięcia"
+   },
+   "no_license_to_check": {
+      "message": "Brak licencji do sprawdzenia"
+   },
+   "no_media_current_tab": {
+      "message": "Brak multimediów do przetwarzania na bieżącej karcie"
+   },
+   "no_media_to_process": {
+      "message": "Brak multimediów do przetwarzania"
+   },
+   "no_media_to_process_descr": {
+      "message": "Kliknij odtwarzanie, aby pomóc w rozpoznaniu plików…"
+   },
+   "no_private_notification": {
+      "message": "Brak powiadomienia dla prywatnych odsłon"
+   },
+   "not_again_3months": {
+      "message": "Nie przypominaj o tym przez 3 miesiące"
+   },
+   "not_implemented_yet": {
+      "message": "Jeszcze nie zaimplementowano"
+   },
+   "not_see_again": {
+      "message": "Nie wyświetlaj tej informacji ponownie"
+   },
+   "notify_ready": {
+      "message": "Powiadamiaj po przetworzeniu"
+   },
+   "number_type": {
+      "message": "%1s %2s"
+   },
+   "operations": {
+      "message": "Operacje"
+   },
+   "options": {
+      "message": "Opcje"
+   },
+   "order_by_video_quality": {
+      "message": "Kolejność według jakości wideo"
+   },
+   "organize_videos": {
+      "message": "Porządkuj widea"
+   },
+   "orphan": {
+      "message": "Osierocone"
+   },
+   "orphan_expiration_description": {
+      "message": "Czas wygaśnięcia w sekundach przed usunięciem osieroconych pobrań."
+   },
+   "orphan_expiration_title": {
+      "message": "Limit czasu wygaśnięcia osieroconych"
+   },
+   "orphan_expiration_title2": {
+      "message": "Limit czasu wygaśnięcia osieroconych (s)"
+   },
+   "other_products": {
+      "message": "Od tych samych twórców"
+   },
+   "output": {
+      "message": "Wyjście"
+   },
+   "panels_astab_settings": {
+      "message": "Otwórz ustawienia w karcie"
+   },
+   "panels_astab_sites": {
+      "message": "Otwórz witryny w karcie"
+   },
+   "pinned": {
+      "message": "Przypięte"
+   },
+   "prompt_select_storage_dir": {
+      "message": "Wybierz katalog przechowywania"
+   },
+   "prompt_target_dir": {
+      "message": "Katalog docelowy"
+   },
+   "purchase_license": {
+      "message": "Wykup licencję konwertera"
+   },
+   "qualities_max_description": {
+      "message": "Maksymalna liczba wyświetlanych wariantów dla tego samego filmu."
+   },
+   "qualities_max_title": {
+      "message": "Maksymalna liczba wariantów"
+   },
+   "quality_medium": {
+      "message": "Średnia"
+   },
+   "quality_small": {
+      "message": "Niska"
+   },
+   "queued___": {
+      "message": "Oczekujące…"
+   },
+   "recheck_converter": {
+      "message": "Sprawdź ponownie konwerter"
+   },
+   "register_converter": {
+      "message": "Zarejestruj konwerter"
+   },
+   "register_existing_license": {
+      "message": "Zarejestruj istniejącą licencję"
+   },
+   "registered_email": {
+      "message": "E-mail"
+   },
+   "registered_key": {
+      "message": "Klucz"
+   },
+   "registered_name": {
+      "message": "Nazwa"
+   },
+   "req_donate": {
+      "message": "Wspomóż dalszy rozwój dodatku poprzez dokonanie niewielkiej dotacji."
+   },
+   "req_review": {
+      "message": "Lub napisz wspaniałą recenzję na witrynie dodatków Mozilli."
+   },
+   "req_review_link": {
+      "message": "Napisz opinię o Video DownloadHelper"
+   },
+   "reset_converter_rules": {
+      "message": "Resetuj reguły"
+   },
+   "reset_variants": {
+      "message": "Resetuj warianty"
+   },
+   "revalidate_license": {
+      "message": "Odnów licencję"
+   },
+   "rule_converter_unavail": {
+      "message": "Dla pliku „%s” ma być zastosowana automatyczna konwersja, ale konwerter jest niedostępny. Plik multimedialny nie zostanie skonwertowany."
+   },
+   "running": {
+      "message": "Uruchamianie"
+   },
+   "safe_mode": {
+      "message": "Tryb bezpieczny"
+   },
+   "safe_mode_confirm": {
+      "message": "Tak, chcę uruchomić tryb bezpieczny."
+   },
+   "safe_mode_confirm_description": {
+      "message": "Chcemy upewnić się, że rozumiesz, że nie ma wyjścia z trybu bezpiecznego."
+   },
+   "safe_mode_description": {
+      "message": "Aktywacja trybu bezpiecznego zapewnia, że strona internetowa Video DownloadHelpera – i tylko ta strona – nie będzie wyświetlała niczego, co nie może być widziane przez całą rodzinę."
+   },
+   "safe_mode_description2": {
+      "message": "Ustawienie trybu bezpiecznego jest ostateczna i nie ma sposobu, aby wyjść z tego trybu."
+   },
+   "safe_mode_set": {
+      "message": "Ustaw tryb bezpieczny"
+   },
+   "save": {
+      "message": "Zapisz"
+   },
+   "save_transient_storagedirectory": {
+      "message": "Zapisz na stałe"
+   },
+   "scrap_8x8_align": {
+      "message": "Wyrównanie 8x8"
+   },
+   "scrap_8x8_align_cut": {
+      "message": "Przytnij"
+   },
+   "scrap_8x8_align_extend": {
+      "message": "Powiększ"
+   },
+   "scrap_applet_selector": {
+      "message": "Applet selektora"
+   },
+   "scrap_applet_start_not_see_again": {
+      "message": "Nie wyświetlaj tej informacji podczas uruchamiania apletu"
+   },
+   "scrap_auto_detect": {
+      "message": "Aplet automatycznego wykrywania"
+   },
+   "scrap_auto_detect_warning": {
+      "message": "Aplet automatycznego wykrywania może mieć negatywny wpływ na wydajność przeglądarki"
+   },
+   "scrap_capture_statistics": {
+      "message": "Statystyki przechwytywania"
+   },
+   "scrap_change_target": {
+      "message": "Zmień plik docelowy"
+   },
+   "scrap_convert": {
+      "message": "Konwersja wideo przechwytywania ekranu"
+   },
+   "scrap_converter_required": {
+      "message": "Przechwytywanie ekranu wymaga konwertera, by wygenerować wideo."
+   },
+   "scrap_description": {
+      "message": "Generowanie wideo z tego, co dzieje się w całym oknie przeglądarki."
+   },
+   "scrap_description2": {
+      "message": "Jeśli twój komputer jest wolno działa, może wystąpić pominięcie kilku klatek. Spróbuj zredukować rozmiar okna przeglądarki i/lub liczbę klatek."
+   },
+   "scrap_description3": {
+      "message": "Dźwięk nie zostanie przechwycony. Musisz zachować kartę aktywną, aby odświeżyć obrazki."
+   },
+   "scrap_description4": {
+      "message": "Generowanie wideo z tego, co się dzieje w części okna przeglądarki."
+   },
+   "scrap_description5": {
+      "message": "Jeśli twój komputer jest wolno działa, może wystąpić pominięcie kilku klatek. Spróbuj zredukować liczbę klatek."
+   },
+   "scrap_do_not_display_start_panel": {
+      "message": "Nie wyświetlaj panelu podczas uruchamiania przechwytywania"
+   },
+   "scrap_enabled": {
+      "message": "Włącz przechwytywanie ekranu"
+   },
+   "scrap_error": {
+      "message": "Błąd przechwytywania ekranu"
+   },
+   "scrap_file_saved_as": {
+      "message": "Przechwycone wideo zostanie zapisane w %s"
+   },
+   "scrap_min_applet_size": {
+      "message": "Minimalny rozmiar, aby wziąć pod uwagę aplet"
+   },
+   "scrap_mouse_always": {
+      "message": "Zawsze"
+   },
+   "scrap_mouse_halo_color": {
+      "message": "Kolor aureoli"
+   },
+   "scrap_mouse_halo_radius": {
+      "message": "Promień aureoli"
+   },
+   "scrap_mouse_halo_transparency": {
+      "message": "Przezroczystość aureoli(%)"
+   },
+   "scrap_mouse_metakey": {
+      "message": "Gdy klawisz Shift jest naciśnięty"
+   },
+   "scrap_mouse_never": {
+      "message": "Nigdy"
+   },
+   "scrap_mouse_not_metakey": {
+      "message": "Gdy klawisz Shift nie jest naciśnięty"
+   },
+   "scrap_mouse_pointer_size": {
+      "message": "Rozmiar wskaźnika"
+   },
+   "scrap_mouse_title": {
+      "message": "Zapisywanie myszy"
+   },
+   "scrap_no_converter": {
+      "message": "Brak konwertera. Jest on niezbędny do generowania wideo przechwytywania ekranu."
+   },
+   "scrap_open_container": {
+      "message": "Otwórz folder zapisu"
+   },
+   "scrap_open_file": {
+      "message": "Otwórz wideo"
+   },
+   "scrap_port": {
+      "message": "Port konwertera"
+   },
+   "scrap_rate": {
+      "message": "Szybkość przechwytywania (klatki/s)"
+   },
+   "scrap_screen_capture": {
+      "message": "Przechwytywanie ekranu"
+   },
+   "scrap_screen_capture_from_domain": {
+      "message": "Przechwyć ekran z %s"
+   },
+   "scrap_start": {
+      "message": "Uruchom SCRAP"
+   },
+   "scrap_start_capture": {
+      "message": "Rozpocznij przechwytywanie"
+   },
+   "scrap_start_long": {
+      "message": "Rozpocznij przechwytywanie sesji przeglądania"
+   },
+   "scrap_start_scrap_long": {
+      "message": "Rozpocznij zapisywanie okna"
+   },
+   "scrap_stats_captured_frames": {
+      "message": "Przechwycono %1s klatek, %2s pominięto, %3s nie odebrano"
+   },
+   "scrap_stats_captured_size": {
+      "message": "Rozmiar przechwyconej klatki %s"
+   },
+   "scrap_stats_duration": {
+      "message": "Czas trwania %s s"
+   },
+   "scrap_stats_original_size": {
+      "message": "Oryginalny rozmiar klatki %s"
+   },
+   "scrap_stats_saved_frames": {
+      "message": "%1s klatek zapisano, %2s zgubiono"
+   },
+   "scrap_stop": {
+      "message": "Zatrzymaj przechwytywanie sesji przeglądania"
+   },
+   "scrap_stop_long": {
+      "message": "Stop capturing browsing session"
+   },
+   "scrap_stop_scrap_long": {
+      "message": "Zatrzymaj zapisywanie okna"
+   },
+   "scrap_success": {
+      "message": "Przechwytywanie ekranu zakończone powodzeniem"
+   },
+   "scrap_successfully_saved_as": {
+      "message": "Plik „%s” został zapisany"
+   },
+   "scrap_title": {
+      "message": "Przechwytywanie ekranu"
+   },
+   "selected_text": {
+      "message": "Zaznaczony tekst"
+   },
+   "settings": {
+      "message": "Ustawienia"
+   },
+   "settings_title": {
+      "message": "Konfiguruj Video DownloadHelper"
+   },
+   "shortcut_icons": {
+      "message": "Wyświetlaj ikony skrótów klawiszowych"
+   },
+   "shortcut_icons_dropdown": {
+      "message": "Ikony skrótów i rozwijania"
+   },
+   "show_in_toolsmenu": {
+      "message": "Wyświetlaj elementy w menu Narzędzia"
+   },
+   "site_comments": {
+      "message": "Komentarze"
+   },
+   "site_date": {
+      "message": "Dodano"
+   },
+   "site_interest": {
+      "message": "Ciekawe"
+   },
+   "site_name": {
+      "message": "Nazwa witryny"
+   },
+   "site_rating": {
+      "message": "Ocena"
+   },
+   "smartname_delay": {
+      "message": "Opóźnienie nazewnictwa przechwytywania (ms)"
+   },
+   "smartname_regexp": {
+      "message": "Wyrażenie regularne"
+   },
+   "smartnamer_all_domains": {
+      "message": "Wszystkie domeny"
+   },
+   "smartnamer_by_default": {
+      "message": "Domyślna"
+   },
+   "smartnamer_enabled_description": {
+      "message": "Tworzy nazwę z informacji o stronie"
+   },
+   "smartnamer_enabled_title": {
+      "message": "Włącz inteligentne nazwy"
+   },
+   "smartnamer_fname_maxlen_description": {
+      "message": "Zapewnia nieprzekroczenie długości generowanej nazwy pliku"
+   },
+   "smartnamer_fname_maxlen_title": {
+      "message": "Maksymalna długość nazwy pliku"
+   },
+   "smartnamer_fname_spaces_description": {
+      "message": "Co zrobić z wolnymi miejscami w nazwach plików."
+   },
+   "smartnamer_fname_spaces_hyphen": {
+      "message": "Zamień na dywizy"
+   },
+   "smartnamer_fname_spaces_keep": {
+      "message": "Zachowaj"
+   },
+   "smartnamer_fname_spaces_remove": {
+      "message": "Usuń"
+   },
+   "smartnamer_fname_spaces_title": {
+      "message": "Wolne miejsca w nazwach plików"
+   },
+   "smartnamer_fname_spaces_underscore": {
+      "message": "Zamień na podkreślenia"
+   },
+   "smartnamer_get_name_from_header_url": {
+      "message": "Pobierz nazwę z nagłówka dokumentu/adresu URL"
+   },
+   "smartnamer_get_name_from_page_content": {
+      "message": "Pobierz nazwę z treści strony"
+   },
+   "smartnamer_get_name_from_page_title": {
+      "message": "Pobierz nazwę z tytułu strony"
+   },
+   "smartnamer_get_obfuscated_name": {
+      "message": "Użyj zamaskowanej nazwy"
+   },
+   "smartnamer_header_url": {
+      "message": "Nagłówek/URL"
+   },
+   "smartnamer_index": {
+      "message": "Obecny indeks"
+   },
+   "smartnamer_naming": {
+      "message": "Metoda nazywania"
+   },
+   "smartnamer_obfuscated": {
+      "message": "Zamaskowana"
+   },
+   "smartnamer_page_content": {
+      "message": "Treść strony"
+   },
+   "smartnamer_page_title": {
+      "message": "Tytuł strony"
+   },
+   "smartnames": {
+      "message": "Inteligentne nazwy"
+   },
+   "smartnames_domains": {
+      "message": "Domeny inteligentnych nazw"
+   },
+   "storage_directory": {
+      "message": "Katalog przechowywania"
+   },
+   "storage_directory_error": {
+      "message": "Błąd katalogu przechowywania „%s” – używany jest domyślny katalog %s"
+   },
+   "storage_directory_not_defined": {
+      "message": "Nie zdefiniowano katalogu przechowywania – używany jest domyślny katalog %s"
+   },
+   "storage_directory_not_directory": {
+      "message": "Element %s nie jest katalogiem"
+   },
+   "storage_directory_not_exist": {
+      "message": "Katalog %s nie istnieje"
+   },
+   "storage_directory_not_writable": {
+      "message": "Katalog %s nie jest zapisywalny"
+   },
+   "storage_last_dir": {
+      "message": "Używaj domyślnego katalogu zapisu przeglądarki"
+   },
+   "supported_sites": {
+      "message": "Obsługiwane witryny"
+   },
+   "supported_vp9": {
+      "message": "Obsługiwany kodek VP9"
+   },
+   "tbmode_comp": {
+      "message": "Tylko skojarzony przycisk"
+   },
+   "tbmode_label": {
+      "message": "Tryb przycisku paska narzędzi"
+   },
+   "tbmode_main": {
+      "message": "Tylko główny przycisk"
+   },
+   "tbmode_maincomp": {
+      "message": "Główny i skojarzony przycisk"
+   },
+   "tbsn_enabled": {
+      "message": "Pomoc Facebooka"
+   },
+   "tbts_enabled": {
+      "message": "Pomoc Twittera"
+   },
+   "tbvv_enabled": {
+      "message": "Pomoc Vine"
+   },
+   "tell_me_more": {
+      "message": "Powiedz więcej o tym"
+   },
+   "thumbnail_direct_gif": {
+      "message": "Użyj miniatury GIF"
+   },
+   "thumbnail_from_meta": {
+      "message": "Miniatury wideo z sekcji meta strony"
+   },
+   "thumbnail_tumblr_mp4": {
+      "message": "Pomoc Tumblr"
+   },
+   "title_mode": {
+      "message": "Długie tytuły panelu głównego"
+   },
+   "title_mode_ellipsis_left": {
+      "message": "Wielokropek po lewej stronie"
+   },
+   "title_mode_ellipsis_right": {
+      "message": "Wielokropek po prawej stronie"
+   },
+   "title_mode_multiline": {
+      "message": "W wielu wierszach"
+   },
+   "title_save_file": {
+      "message": "Zapisz plik"
+   },
+   "top_main_panel": {
+      "message": "Góra głównego panelu"
+   },
+   "tpsr_concurrent_captures": {
+      "message": "Równoczesne zrzuty"
+   },
+   "tpsr_convert": {
+      "message": "Konwersja generowanych wideo."
+   },
+   "tpsr_convert_format": {
+      "message": "Zdefiniuj wyjściowy format."
+   },
+   "tpsr_description": {
+      "message": "Tryb ten rejestruje widea na żywo z Twittera Periscope w momencie, gdy się pojawiają. Lepiej wyłączyć dźwięk, aby uniknąć dokuczliwego dźżwięku."
+   },
+   "tpsr_do_not_convert": {
+      "message": "Nie konwertuj wynikowych wideo."
+   },
+   "tpsr_duration_timeout": {
+      "message": "Maksymalny czas przechwytywania strumienia (sekundy)"
+   },
+   "tpsr_enabled": {
+      "message": "Włączono"
+   },
+   "tpsr_no_converter": {
+      "message": "Konwerter nie jest zainstalowany. Dodatek będzie łączyć pobrane fragmenty, ale pobrany w ten sposób plik może być odtwarzany niepoprawnie."
+   },
+   "tpsr_search_help": {
+      "message": "Można pozostawić pole wyszukiwania puste, ale przechwytywanie będzie następowało losowo – to, co w danej chwili będzie odtwarzane."
+   },
+   "tpsr_search_periscope": {
+      "message": "Przeszukuj Periscope"
+   },
+   "tpsr_search_terms": {
+      "message": "Przeszukuj Terms"
+   },
+   "tpsr_start_par": {
+      "message": "Uruchom PAR"
+   },
+   "tpsr_start_par_long": {
+      "message": "Uruchom automatyczny zapis Periscope"
+   },
+   "tpsr_start_recording": {
+      "message": "Uruchom"
+   },
+   "tpsr_start_timeout": {
+      "message": "Limit czasu uruchomienia strumienia (sekundy)"
+   },
+   "tpsr_stop_par": {
+      "message": "Zatrzymaj PAR"
+   },
+   "tpsr_stop_par_long": {
+      "message": "Zatrzymaj automatyczny zapis Periscope"
+   },
+   "tpsr_title": {
+      "message": "Automatyczny zapis Periscope"
+   },
+   "transient_storagedirectory": {
+      "message": "Katalog zapisu został zmodyfikowany z poziomu prywatnego okna i zostanie zresetowany podczas następnej sesji."
+   },
+   "ui_adp_grey": {
+      "message": "Warianty zabarwienia ADP"
+   },
+   "ui_adp_tag": {
+      "message": "Warianty tagu ADP"
+   },
+   "undefined_output": {
+      "message": "nie zdefiniowano formatu wyjściowego"
+   },
+   "unregistered": {
+      "message": "Niezarejestrowany"
+   },
+   "unsupported_vp9": {
+      "message": "Kodek VP9 nie jest obsługiwany"
+   },
+   "using_browser_default": {
+      "message": "Używanie domyślnej przeglądarki"
+   },
+   "validate_license": {
+      "message": "Zarejestruj licencję"
+   },
+   "variants": {
+      "message": "Warianty"
+   },
+   "vdh_notification": {
+      "message": "Video DownloadHelper"
+   },
+   "vdh_settings": {
+      "message": "Video DownloadHelper – ustawienia"
+   },
+   "version": {
+      "message": "Wersja %s"
+   },
+   "video": {
+      "message": "Wideo"
+   },
+   "video_downloadhelper": {
+      "message": "Video DownloadHelper"
+   },
+   "video_downloadhelper_plus": {
+      "message": "Video DownloadHelper +"
+   },
+   "video_only": {
+      "message": "Tylko wideo"
+   },
+   "video_qualities": {
+      "message": "Jakość wideo"
+   },
+   "visit_site": {
+      "message": "Przejdź na stronę"
+   },
+   "xpath_expr": {
+      "message": "Wyrażenie XPath"
+   },
+   "you_downloaded_n_videos": {
+      "message": "Za pomocą Video DownloadHelpera został pobrany %ty plik."
+   }
+}

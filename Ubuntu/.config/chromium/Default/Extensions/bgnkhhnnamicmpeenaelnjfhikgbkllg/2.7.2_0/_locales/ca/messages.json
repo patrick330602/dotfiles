@@ -1,0 +1,698 @@
+{
+   "abp_subscribe_confirm_enable": {
+      "message": "Adguard: voleu activar la subscripció a $1?"
+   },
+   "abp_subscribe_confirm_import": {
+      "message": "Adguard: Voleu importar les regles des de $1 al vostre filtre d'usuari?"
+   },
+   "abp_subscribe_confirm_import_finished_text": {
+      "message": "Adguard ha acabat la importació de les regles al filtre d'usuari. El nombre de regles importades: $1"
+   },
+   "abp_subscribe_confirm_import_finished_title": {
+      "message": "La importació s'ha realitzat correctament"
+   },
+   "adguard_product_mac": {
+      "message": "Adguard per Mac"
+   },
+   "adguard_product_windows": {
+      "message": "Adguard per Windows"
+   },
+   "alert_popup_filter_enabled_text": {
+      "message": "«$1» s'ha activat automaticament"
+   },
+   "alert_popup_filter_enabled_title": {
+      "message": "Auto-activació dels filtres"
+   },
+   "assistant_another_element": {
+      "message": "Seleccioneu un altre element"
+   },
+   "assistant_apply_rule_to_all_sites": {
+      "message": "Apliqueu aquesta regla a qualsevol pàgina web"
+   },
+   "assistant_block": {
+      "message": "Filtreu"
+   },
+   "assistant_block_by_reference": {
+      "message": "Filtreu l'element per la seva url"
+   },
+   "assistant_block_element": {
+      "message": "Bloquegeu l'element"
+   },
+   "assistant_block_element_explain": {
+      "message": "Configuració de les regles de filtratge de l'element"
+   },
+   "assistant_block_similar": {
+      "message": "Filtreu elements similars"
+   },
+   "assistant_extended_settings": {
+      "message": "Opcions avançades..."
+   },
+   "assistant_preview": {
+      "message": "Vista prèvia"
+   },
+   "assistant_preview_end": {
+      "message": "Tanqueu la vista prèvia"
+   },
+   "assistant_preview_header": {
+      "message": "Block element - Preview"
+   },
+   "assistant_preview_header_info": {
+      "message": "Check how the page will look like before confirming the block."
+   },
+   "assistant_preview_start": {
+      "message": "Vista prèvia"
+   },
+   "assistant_select_element": {
+      "message": "Mode de selecció"
+   },
+   "assistant_select_element_cancel": {
+      "message": "Anul·leu el mode de selecció"
+   },
+   "assistant_select_element_ext": {
+      "message": "Cliqueu a qualsevol element de pàgina o "
+   },
+   "assistant_slider_explain": {
+      "message": "Utilitzeu el control lliscant per canviar la mida de l'element que voleu filtrar amb aquesta regla:"
+   },
+   "assistant_slider_if_hide": {
+      "message": "El filtre contindrà una regla que bloquejarà l'element seleccionat"
+   },
+   "assistant_slider_max": {
+      "message": "MÉS GRAN"
+   },
+   "assistant_slider_min": {
+      "message": "MÉS PETIT"
+   },
+   "context_abuse_site": {
+      "message": "Envieu una reclamació sobre aquesta pàgina web..."
+   },
+   "context_ads_has_been_removed": {
+      "message": "El anuncis de publicitat s'han eliminat d'aquesta pàgina web"
+   },
+   "context_ads_has_been_removed_by_adguard": {
+      "message": "Protegits per $1"
+   },
+   "context_antibanner": {
+      "message": "Filtre de publicitat"
+   },
+   "context_block_site_ads": {
+      "message": "Filtreu els anuncis de publicitat en aquesta pàgina web..."
+   },
+   "context_block_site_element": {
+      "message": "Filtreu l'element..."
+   },
+   "context_block_site_image": {
+      "message": "Adguard: Filtreu la imatge"
+   },
+   "context_disable_protection": {
+      "message": "Atureu la protecció d'Adguard"
+   },
+   "context_enable_protection": {
+      "message": "Inicieu la protecció d'Adguard"
+   },
+   "context_general_settings": {
+      "message": "Opcions generals"
+   },
+   "context_miscellaneous_settings": {
+      "message": "Miscel·lanis"
+   },
+   "context_open_log": {
+      "message": "Registre del filtratge..."
+   },
+   "context_open_settings": {
+      "message": "Opcions d'Adguard..."
+   },
+   "context_safebrowsing": {
+      "message": "Seguretat a la navegació"
+   },
+   "context_security_report": {
+      "message": "Obriu l'informe de seguretat d'aquesta pàgina web..."
+   },
+   "context_site_exception": {
+      "message": "Aquesta pàgina web es troba a les excepcions"
+   },
+   "context_site_filtering_disabled": {
+      "message": "Adguard no pot funcionar en aquest domini"
+   },
+   "context_site_filtering_off": {
+      "message": "Desactiveu el filtratge en aquesta pàgina web"
+   },
+   "context_site_filtering_on": {
+      "message": "Activeu el filtratge en aquesta pàgina web"
+   },
+   "context_site_protection_disabled": {
+      "message": "La protecció d'Adguard està aturada"
+   },
+   "context_update_antibanner_filters": {
+      "message": "Busqueu actualitzacions per als filtres"
+   },
+   "context_userfilter": {
+      "message": "Filtre d'usuari"
+   },
+   "context_whitelist": {
+      "message": "Llista blanca"
+   },
+   "description": {
+      "message": "Unmatched adblock extension against advertising and pop-ups. Blocks ads on Facebook, Youtube and all other websites."
+   },
+   "description_blocked": {
+      "message": "Ads blocked on this page: $1"
+   },
+   "filter_download_ads_malware": {
+      "message": "El 90% dels virus i programari maliciós es distribueix\u003Cbr/>a través de xarxes de publicitat sense escrúpols."
+   },
+   "filter_download_do_you_know": {
+      "message": "Sabieu?"
+   },
+   "filter_download_loading": {
+      "message": "Si us plau espereu que la base de dades acabi de carregar..."
+   },
+   "filter_download_rules": {
+      "message": "De mitjana afegim unes 100 regles als filtres d'anuncis de publicitat cada setmana."
+   },
+   "filter_download_sb_sites": {
+      "message": "La base de dades de pesca electrònica i programari maliciós conté\u003Cbr/>més d'1 milió de pàgines web."
+   },
+   "filter_download_title": {
+      "message": "La base de dades de filtres s'està carregant..."
+   },
+   "filtering_clear_tab_events": {
+      "message": "Netejeu"
+   },
+   "filtering_log_in_whitelist": {
+      "message": "La pàgina web es troba a la llista blanca"
+   },
+   "filtering_log_search_string": {
+      "message": "Entreu la paraula a cercar"
+   },
+   "filtering_log_tab": {
+      "message": "Pestanya:"
+   },
+   "filtering_log_title": {
+      "message": "Registre del filtratge"
+   },
+   "filtering_modal_add_rule": {
+      "message": "Afegiu regla"
+   },
+   "filtering_modal_add_title": {
+      "message": "Procés d'afegir una regla"
+   },
+   "filtering_modal_apply_domains": {
+      "message": "Apliqueu la regla a totes les pàgines web"
+   },
+   "filtering_modal_block": {
+      "message": "Bloquejeu"
+   },
+   "filtering_modal_exception_title": {
+      "message": "Afegiu una excepció"
+   },
+   "filtering_modal_filter": {
+      "message": "Filtre:"
+   },
+   "filtering_modal_important": {
+      "message": "Give a higher priority to the rule"
+   },
+   "filtering_modal_info_title": {
+      "message": "Detalls de la petició"
+   },
+   "filtering_modal_match_case": {
+      "message": "Considereu el cas"
+   },
+   "filtering_modal_open_in_new_tab": {
+      "message": "Obriu en una nova pestanya"
+   },
+   "filtering_modal_options": {
+      "message": "Opcions"
+   },
+   "filtering_modal_patterns": {
+      "message": "Patrons"
+   },
+   "filtering_modal_remove_user": {
+      "message": "Elimineu-lo dels filtres d'usuari"
+   },
+   "filtering_modal_remove_whitelist": {
+      "message": "Elimineu-lo de la llista blanca de filtres"
+   },
+   "filtering_modal_rule": {
+      "message": "Regla:"
+   },
+   "filtering_modal_rule_text": {
+      "message": "Regla de text"
+   },
+   "filtering_modal_source": {
+      "message": "Font:"
+   },
+   "filtering_modal_third_party": {
+      "message": "Aplica només a les peticions de terceres parts"
+   },
+   "filtering_modal_type": {
+      "message": "Tipus:"
+   },
+   "filtering_modal_unblock": {
+      "message": "Desbloquejeu"
+   },
+   "filtering_refresh_tab": {
+      "message": "Refresqueu la pàgina web"
+   },
+   "filtering_table_empty_row": {
+      "message": "El registre per aquesta pàgina web es buit. \u003Ca href='#' class='reloadTab'>Refresca la pàgina web\u003C/a> per veure el registre."
+   },
+   "filtering_table_rule": {
+      "message": "Registre del filtratge"
+   },
+   "filtering_table_source": {
+      "message": "Font"
+   },
+   "filtering_table_type": {
+      "message": "Tipus"
+   },
+   "filtering_type_all": {
+      "message": "Tot"
+   },
+   "name": {
+      "message": "Filtre de publicitat d'Adguard"
+   },
+   "options_allow_acceptable_ads": {
+      "message": "Permeteu anuncis de publicitat acceptables\u003Ca target='_blank' href='https://kb.adguard.com/general/search-ads-and-self-promotion?utm_source=extension&aid=16593' class='sp-table-row-info'>Trobeu més informació sobre això\u003C/a>"
+   },
+   "options_antibanner": {
+      "message": "Filtre de publicitat"
+   },
+   "options_antibanner_info": {
+      "message": "Filtreu número de regles: $1"
+   },
+   "options_antibanner_list_empty": {
+      "message": "La llista de filtres està buida. \u003Ca class='spl-user-descr-link editAntiBannerFilters' href='#'>Afegiu un filtre nou\u003C/a>?"
+   },
+   "options_blog": {
+      "message": "El blog d'Adguard"
+   },
+   "options_blog_link": {
+      "message": "https://adguard.com/en/blog/?utm_source=extension&aid=16593"
+   },
+   "options_collect_hit_stats": {
+      "message": "Envieu estadístiques sobre l'ús dels filtres\u003Ca target='_blank' href='https://adguard.com/filter-rules-statistics.html?utm_source=extension&aid=16593' class='sp-table-row-info'>Trobeu més informació sobre això\u003C/a>"
+   },
+   "options_content_blocker_overlimit": {
+      "message": "Massa filtres habilitats. Safari no pot utilitzar més de 50.000 regles."
+   },
+   "options_do_you_like": {
+      "message": "Us agrada Adguard?"
+   },
+   "options_download_adguard": {
+      "message": "Descarregueu la versió completa"
+   },
+   "options_edit_antibanner_filters": {
+      "message": "Tots els filtres"
+   },
+   "options_enable_autodetect_filter": {
+      "message": "Activeu els filtres més adequats automàticament"
+   },
+   "options_feedback": {
+      "message": "Contacteu amb nosaltres"
+   },
+   "options_filter_version": {
+      "message": "Versió $1. Actualitzat el $2 a les $3."
+   },
+   "options_footer_like_us": {
+      "message": "Voteu-lo!"
+   },
+   "options_forum": {
+      "message": "El fòrum d'Adguard"
+   },
+   "options_general_settings": {
+      "message": "Opcions generals"
+   },
+   "options_like_us": {
+      "message": "Us agrada Adguard? Voteu-lo!"
+   },
+   "options_miscellaneous_settings": {
+      "message": "Miscel·lanis"
+   },
+   "options_modal_cancel": {
+      "message": "Anul·leu"
+   },
+   "options_modal_edit": {
+      "message": "Llista de filtres"
+   },
+   "options_modal_homepage": {
+      "message": "Pàgina d'inici"
+   },
+   "options_modal_save": {
+      "message": "Guardeu els canvis"
+   },
+   "options_open_changelog": {
+      "message": "Registre de canvis"
+   },
+   "options_open_log": {
+      "message": "Registre del filtratge"
+   },
+   "options_popup_update_error": {
+      "message": "Ha fallat l'actualització. Si us plau intenteu més tard."
+   },
+   "options_popup_update_not_found": {
+      "message": "No s'ha trobat cap actualització"
+   },
+   "options_popup_update_title": {
+      "message": "Els filtres s'han actualitzat corectament"
+   },
+   "options_popup_update_updated": {
+      "message": "\"$1\" s'ha actualitzat a la versió $2"
+   },
+   "options_reset_stats": {
+      "message": "Netegeu les estadístiques"
+   },
+   "options_reset_stats_done": {
+      "message": "Les estadístiques s'han netejat"
+   },
+   "options_safebrowsing": {
+      "message": "Seguretat a la navegació"
+   },
+   "options_safebrowsing_enabled": {
+      "message": "Protecció contra la pesca electrònica i el programari maliciós\u003Ca target='_blank' href='https://adguard.com/how-malware-blocked.html?utm_source=extension&aid=16593' class='sp-table-row-info'>Trobeu més informació sobre això\u003C/a>"
+   },
+   "options_safebrowsing_help": {
+      "message": "Ajudeu-nos en el desenvolupament dels filtres de seguretat a la navegació\u003Cspan class='sp-table-row-info'>Envieu-nos informació anonima sobre questions de seguretat\u003C/span>"
+   },
+   "options_searchlist_empty": {
+      "message": "No s'ha trobat res"
+   },
+   "options_settings": {
+      "message": "Opcions d'Adguard"
+   },
+   "options_show_adguard_full_version": {
+      "message": "Mostreu la informació a la versió completa d'Adguard"
+   },
+   "options_show_blocked_ads_count": {
+      "message": "Indiqueu a la icona el nombre d'anuncis de publicitat filtrats per l'extensió Adguard"
+   },
+   "options_show_context_menu": {
+      "message": "Afegiu l'element Adguard al menú contextual del navegador web"
+   },
+   "options_site": {
+      "message": "Pàgina web oficial"
+   },
+   "options_too_many_filters_selected": {
+      "message": "Heu seleccionat massa subscripcions a filtres. Això pot alentir la seva navegació per la web de manera significativa."
+   },
+   "options_update_antibanner_filters": {
+      "message": "Busqueu actualitzacions per els filtres"
+   },
+   "options_use_optimized_filters": {
+      "message": "Utilitzeu filtres optimitzats\u003Cspan class='sp-table-row-info'>Llistes de filtrat lleuger optimitzades per a dispositius mòbils\u003C/span>"
+   },
+   "options_userfilter": {
+      "message": "Utilitzeu el filtre"
+   },
+   "options_userfilter_add_rule": {
+      "message": "Afegiu regla nova"
+   },
+   "options_userfilter_clear": {
+      "message": "Netejeu"
+   },
+   "options_userfilter_clear_confirm": {
+      "message": "En netejar el filtre d'usuari s'eliminaran totes les regles. Realment voleu netejar el filtre d'usuari?"
+   },
+   "options_userfilter_description": {
+      "message": "Podeu afegir les vostres pròpies regles a aquest filtre. Aquesta opció està recomanada per els usuaris avançats acostumats amb el HTML/CSS. Llegiu \u003Ca class='spl-user-descr-link' href='https://adguard.com/filterrules.html?utm_source=extension&aid=16593' target='_blank'>el tutorial de les regles de filtratge\u003C/a> per aprendre com crear les vostres pròpies regles."
+   },
+   "options_userfilter_export": {
+      "message": "Exporteu"
+   },
+   "options_userfilter_import": {
+      "message": "Importeu"
+   },
+   "options_userfilter_search": {
+      "message": "Cerca en el filtre d'usuari"
+   },
+   "options_userfilter_search_placeholder": {
+      "message": "Entra la paraula a cercar"
+   },
+   "options_userlist_empty": {
+      "message": "El filtre d'usuari esta buit. \u003Ca class='spl-user-descr-link addUserFilter' href='#'>Afegiu una regla nova\u003C/a>?"
+   },
+   "options_whitelist": {
+      "message": "Llista blanca"
+   },
+   "options_whitelist_add_domain": {
+      "message": "Afegiu una pàgina web"
+   },
+   "options_whitelist_description": {
+      "message": "Adguard no filtra pàgines web que es troben a la llista blanca."
+   },
+   "options_whitelist_empty": {
+      "message": "La llista blanca està buida. \u003Ca class='spl-user-descr-link addWhiteListFilter' href='#'>Afegiu alguna pàgina web\u003C/a> a la llista blanca?"
+   },
+   "options_whitelist_inverse": {
+      "message": "Capgireu la llista blanca\u003Cspan class='sp-table-row-info'>Desbloquejeu els anuncis web de qualsevol lloc \u003Ci>excepte\u003C/i> els de la llista blanca\u003C/span>"
+   },
+   "options_whitelist_search": {
+      "message": "Cerca en la llista blanca"
+   },
+   "options_whitelist_search_placeholder": {
+      "message": "Entra la paraula a cercar"
+   },
+   "options_whitelistfilter_clear_confirm": {
+      "message": "Netejant la llista blanca s'eliminaran totes les regles. Esteu segurs que voleu netejar la llista blanca?"
+   },
+   "popup_abuse_problem": {
+      "message": "Submit a&nbsp;complaint"
+   },
+   "popup_abuse_site": {
+      "message": "Envieu una reclamació sobre aquesta pàgina web..."
+   },
+   "popup_adguard_android": {
+      "message": "Adguard per Android"
+   },
+   "popup_adguard_footer_integration": {
+      "message": "\u003Ca href='http://adguard.com/adguard-adblock-browser-extension/integration-mode.html#integration-mode' class='openLink' target='_blank'>El mode d'integració\u003C/a> d'Adguard està activat"
+   },
+   "popup_adguard_ios": {
+      "message": "Adguard per iOS"
+   },
+   "popup_adguard_mac": {
+      "message": "Adguard per Mac"
+   },
+   "popup_adguard_other_os": {
+      "message": "Versions d'Adguard"
+   },
+   "popup_adguard_windows": {
+      "message": "Adguard per Windows"
+   },
+   "popup_ads_has_been_removed": {
+      "message": "El anuncis de publicitat s'han eliminat d'aquesta pàgina web"
+   },
+   "popup_ads_has_been_removed_by_adguard": {
+      "message": "Protegits per $1"
+   },
+   "popup_block_site_ads": {
+      "message": "Filtreu els anuncis de publicitat en aquesta pàgina web..."
+   },
+   "popup_block_site_ads_android": {
+      "message": "Filtra els anuncis de publicitat en aquesta pàgina web"
+   },
+   "popup_disable_protection": {
+      "message": "Atureu la protecció Adguard"
+   },
+   "popup_enable_protection": {
+      "message": "Inicieu la protecció Adguard"
+   },
+   "popup_feedback_cancel": {
+      "message": "Anul·leu"
+   },
+   "popup_feedback_comment": {
+      "message": "Comentaris"
+   },
+   "popup_feedback_empty_option": {
+      "message": "Seleccioneu el motiu de la reclamació"
+   },
+   "popup_feedback_malware_option": {
+      "message": "Sospitada de pesca eslectònica"
+   },
+   "popup_feedback_miss_ads_option": {
+      "message": "Anunci de publicitat no filtrat"
+   },
+   "popup_feedback_option_is_empty": {
+      "message": "Heu de seleccionar un motiu per la vostra reclamació!"
+   },
+   "popup_feedback_other_option": {
+      "message": "Altres"
+   },
+   "popup_feedback_send": {
+      "message": "Envieu una reclamació"
+   },
+   "popup_feedback_wrong_block_option": {
+      "message": "Es mostra distorsionada"
+   },
+   "popup_filtering_log_icon_title": {
+      "message": "Obriu el registre de filtratge..."
+   },
+   "popup_in_white_list_android": {
+      "message": "en la llista blanca"
+   },
+   "popup_open_log_android": {
+      "message": "Registre del filtratge"
+   },
+   "popup_open_settings": {
+      "message": "Opcions d'Adguard"
+   },
+   "popup_security_report": {
+      "message": "Informa de seguretat de la pàgina web"
+   },
+   "popup_security_report_android": {
+      "message": "Informe de seguretat"
+   },
+   "popup_site_exception": {
+      "message": "Aquesta pàgina web es troba a les excepcions"
+   },
+   "popup_site_exception_info": {
+      "message": "El filtratge està dezactivat, perquè pot interferir amb el funcionament d'aquesta pàgina web."
+   },
+   "popup_site_filtering_disabled": {
+      "message": "Adguard no pot funcionar en aquest domini"
+   },
+   "popup_site_filtering_state": {
+      "message": "La protecció en aquesta pàgina web"
+   },
+   "popup_site_protection_disabled": {
+      "message": "La protecció d'Adguard està aturada"
+   },
+   "popup_site_protection_disabled_android": {
+      "message": "La protecció està aturada"
+   },
+   "popup_tab_blocked": {
+      "message": "Filtrats: $1"
+   },
+   "popup_tab_blocked_all": {
+      "message": "Total: $1"
+   },
+   "popup_what_wrong_site": {
+      "message": "Quin problema hi ha amb aquesta pàgina web?"
+   },
+   "release_notes_title": {
+      "message": "Adguard Extension updated!"
+   },
+   "release_notes_whats_new": {
+      "message": "What's new in&nbsp;this version?"
+   },
+   "sb_adguard_blocked": {
+      "message": "Adguard ha bloquejat l'accés a aquesta pàgina web"
+   },
+   "sb_go_back": {
+      "message": "Torna"
+   },
+   "sb_goto_site": {
+      "message": "Continua de totes maneres"
+   },
+   "sb_main_title": {
+      "message": "Avís! Pot ser insegur!"
+   },
+   "sb_malware_description": {
+      "message": "Adguard ha detectat que és possible que programari maliciós s'instal·li en el vostre ordinador si continueu. Si vareu visitar aquesta pàgina web en el pasat o confieu en aquesta pàgina web llavors és possible que aquesta ha sigut compromesa recentment per un hacker. Nosaltres us recomanem que no continueu o que proveu d'accedir més tard."
+   },
+   "sb_malware_site": {
+      "message": "Aquesta pàgina web a \u003Cstrong>$1\u003C/strong>, s'ha raportat com què conté programari maliciós i s'ha bloquejat segons les vostres preferències de seguretat."
+   },
+   "sb_more_actions": {
+      "message": "Avançat"
+   },
+   "sb_phishing_description": {
+      "message": "Adguard ha trobat que aquesta pàgina web pot ser una imitació o còpia d'un altra pàgina web, amb la intenció d'enganyar a l'usuari per compartir informació personal i financera. Enviar qualsevol informació personal a aquesta pàgina web pot resultar en un robatori d'identitat o algún altre abús."
+   },
+   "sb_phishing_site": {
+      "message": "Aquesta pàgina web a \u003Cstrong>$1\u003C/strong>, s'ha raportat com què conté pesca electrònica i s'ha bloquejat segones les vostres preferències de seguretat."
+   },
+   "sb_site_report": {
+      "message": "Més informació"
+   },
+   "sb_title": {
+      "message": "Avís! Pot ser insegur!"
+   },
+   "short_name": {
+      "message": "Filtre de publicitat d'Adguard"
+   },
+   "thankyou_compare_any_browser": {
+      "message": "Filtra els anuncis de publicitat a tots els navegadors web instal·lats"
+   },
+   "thankyou_compare_blocked": {
+      "message": "Filtratge d'anuncis de publicitat"
+   },
+   "thankyou_compare_ext_blocking": {
+      "message": "Limitat per les capacitats de les extensions per a navegadors web"
+   },
+   "thankyou_compare_ext_title": {
+      "message": "L'extensió Adguard"
+   },
+   "thankyou_compare_full_blocking": {
+      "message": "Total"
+   },
+   "thankyou_compare_full_title": {
+      "message": "Adguard per Windows"
+   },
+   "thankyou_compare_full_title_mac": {
+      "message": "Adguard per Mac"
+   },
+   "thankyou_compare_increase": {
+      "message": "Redueix el temps de carrega de les pagines web"
+   },
+   "thankyou_compare_parent": {
+      "message": "Control parental"
+   },
+   "thankyou_compare_safebrowsing": {
+      "message": "Protecció contra la pesca electrònica i les pagines web malicioses"
+   },
+   "thankyou_compare_safebrowsing_attack": {
+      "message": "Protecció contra els atacs de pesca electrònica"
+   },
+   "thankyou_compare_support": {
+      "message": "Servei tècnic"
+   },
+   "thankyou_compare_traffic": {
+      "message": "Estalvia ample de banda"
+   },
+   "thankyou_download": {
+      "message": "Descarregueu Adguard"
+   },
+   "thankyou_enjoy": {
+      "message": "Gaudiu de tot un conjunt de pàgines web sense anuncis de publicitat agressius, comptadors que supervisen qualsevol moviment a la xarxa i moltes altres amenaces com ara virus o estafes que esperen les seves víctimes."
+   },
+   "thankyou_help_in_development": {
+      "message": "Participeu en el desenvolupament dels filtres d'Adguard"
+   },
+   "thankyou_help_in_development_description": {
+      "message": "Envieu estadístiques anònimes sobre el funcionament dels filtres d'Adguard, com també de les pàgines web que Adguard identifica com a sospitoses. \u003Cspan class='warn-message'>No recomanat per els ordinadors lents.\u003C/span>"
+   },
+   "thankyou_installed": {
+      "message": "INSTAL·LAT"
+   },
+   "thankyou_setup_filter": {
+      "message": "Personalitzeu les vostres opcions de filtratge"
+   },
+   "thankyou_setup_safebrowsing_description": {
+      "message": "El mòdul de protecció a la navegació us protegeix de les pàgines web que contenen pesca electrònica i programari maliciós.  El mòdul fa servir\u003Ca target='blank' href='http://adguard.com/how-malware-blocked.html'>un servei especial\u003C/a>per comprovar les pàgines web que visiteu."
+   },
+   "thankyou_setup_safebrowsing_title": {
+      "message": "Protecció contra les pàgines web que contenen pesca electrònica i programari maliciós"
+   },
+   "thankyou_title": {
+      "message": "Gràcies per instal·lar Adguard."
+   },
+   "thankyou_tracking_social_filter_description": {
+      "message": "Aguard pot eliminar els widgets de les xarxes socials de les pàgines web. Per exemple, el botó \"Like\" que espia les vostres accions."
+   },
+   "thankyou_tracking_social_filter_title": {
+      "message": "Filtre per als widgets de les xarxes socials"
+   },
+   "thankyou_tracking_spyware_filter_description": {
+      "message": "Centenars de companyes espies les vostres accions a Internet. Amb Adguard podeu estar fàcilment protegits d'aquest tipus espionatge."
+   },
+   "thankyou_tracking_spyware_filter_title": {
+      "message": "Un filtre per tots els sistemes comptadors i analítics coneguts"
+   },
+   "thankyou_want_full_protection": {
+      "message": "Voleu provar la protecció completa? Descarregueu l'Adguard per Windows!"
+   },
+   "thankyou_want_full_protection_mac": {
+      "message": "Voleu provar la protecció completa? Descarregueu l'Adguard per Mac!"
+   }
+}

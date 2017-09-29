@@ -1,0 +1,25 @@
+{
+   "browser_action": {
+      "default_icon": "icon-999.png",
+      "default_popup": "popup.html"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "suggested_key": {
+            "default": "Alt+Shift+P"
+         }
+      }
+   },
+   "description": "Capture a screenshot of your current page in entirety and reliably—without requesting any extra permissions!",
+   "icons": {
+      "128": "icon128-999.png",
+      "16": "icon16-999.png",
+      "48": "icon48-999.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDb5HGR8sO9jYpfNylXdnXNSzoeHaAdsBOpy5hiYEulgI5SOnkg1Zc93AZIlGUIJBODr3P3PGq4oAoyNr42loQP/IEaCPLLYxvB4516SLoJgSTF4DOASLampO1b5ji7WPSxweur8sUYSz9BNYs6/Exdwdg+54JRWJ8IOo8WZMibXwIDAQAB",
+   "manifest_version": 2,
+   "name": "Full Page Screen Capture",
+   "permissions": [ "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.2"
+}

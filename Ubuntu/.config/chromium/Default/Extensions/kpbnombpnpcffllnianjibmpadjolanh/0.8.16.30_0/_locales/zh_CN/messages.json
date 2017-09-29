@@ -1,0 +1,102 @@
+{
+   "adModeOff": {
+      "description": "Popup Button: ad_mode_off",
+      "message": "进入点广告模式"
+   },
+   "adModeOn": {
+      "description": "Popup Button: ad_mode_on",
+      "message": "离开点广告模式"
+   },
+   "extDescription": {
+      "description": "Extension: Description",
+      "message": "哔哩哔哩弹幕网辅助扩展，拥有视频区和直播区的人性化功能"
+   },
+   "extName": {
+      "description": "Extension: Name",
+      "message": "哔哩哔哩助手：bilibili.com 综合辅助扩展"
+   },
+   "extShortName": {
+      "description": "Extension: Short Name",
+      "message": "哔哩哔哩助手"
+   },
+   "followingUpdateMessage": {
+      "description": "Noticefication: Following Update Message",
+      "message": "您的哔哩哔哩关注更新了(%n 个新动态)!\n%uploader 刚刚发布了「%title」!"
+   },
+   "goBili": {
+      "description": "Popup Button: go_bili",
+      "message": "一键前往bilibili.com"
+   },
+   "goBiliLive": {
+      "description": "Popup Button: go_bili_live",
+      "message": "一键前往Bilibili Live"
+   },
+   "goDynamic": {
+      "description": "Popup Button: go_dynamic",
+      "message": "我的关注"
+   },
+   "goFavorite": {
+      "description": "Popup Button: go_favorite",
+      "message": "我的收藏"
+   },
+   "goOption": {
+      "description": "Popup Button: go_option",
+      "message": "更多选项"
+   },
+   "goSubscription": {
+      "description": "Popup Button: go_subscription",
+      "message": "我订阅的"
+   },
+   "goVideo": {
+      "description": "Popup Button: go_video",
+      "message": "跳转"
+   },
+   "nNewUpdate": {
+      "description": "Popup Button: new_update",
+      "message": "(%n个更新)"
+   },
+   "notLogged": {
+      "description": "Popup Button: not_logged",
+      "message": "(未登录)"
+   },
+   "noticeficationExtensionUpdate": {
+      "description": "Noticefication: Extension Update",
+      "message": "哔哩哔哩助手已自动更新到 v%v!"
+   },
+   "noticeficationNewFeatures": {
+      "description": "Noticefication: New Features",
+      "message": "查看更新内容"
+   },
+   "noticeficationTitle": {
+      "description": "Noticefication: Title",
+      "message": "哔哩哔哩助手提醒"
+   },
+   "notificationGetTv": {
+      "description": "Noticefication: Get TV",
+      "message": "前往参加"
+   },
+   "notificationLiveOn": {
+      "description": "Noticefication: Live On",
+      "message": "开播啦"
+   },
+   "notificationShowAll": {
+      "description": "Noticefication: Show All",
+      "message": "显示全部"
+   },
+   "notificationWatch": {
+      "description": "Noticefication: Watch",
+      "message": "观看"
+   },
+   "notificationWatchLater": {
+      "description": "Noticefication: Watch Later",
+      "message": "稍后观看"
+   },
+   "optionPage": {
+      "description": "Option Page: Title",
+      "message": "选项页"
+   },
+   "searchBili": {
+      "description": "Context Menu: Title",
+      "message": "用 哔哩哔哩 搜索 “%s”"
+   }
+}

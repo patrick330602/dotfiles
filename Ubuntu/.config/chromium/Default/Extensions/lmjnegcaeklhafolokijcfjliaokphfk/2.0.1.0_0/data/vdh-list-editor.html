@@ -1,0 +1,37 @@
+<div class="vdh-container">
+	<div>
+		<div class="vdh-fullsize">
+			<div class="vdh-scroller">
+				<div>
+					<div ng-repeat="item in list" ng-click="selectIndex($index)"
+						class="vdh-list-item" 
+						ng-class="{'vdh-list-selected':$index==options.selected,'vdh-list-disabled':options.enabled &amp;&amp; list[$index][options.enabled]===false}">
+						{{options.label?item[options.label]:item}}</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div>
+		<div class="vdh-list-controls">
+			<div ng-show="options.order" vdh-panel-button="{image:'images/icon-down-64.png'}" 
+				ng-click="down()"
+				ng-class="{'vdh-disabled':options.selected&lt;0 || options.selected&gt;=list.length-1}"></div>
+			<div ng-show="options.order" vdh-panel-button="{image:'images/icon-up-64.png'}" 
+				ng-click="up()"
+				ng-class="{'vdh-disabled':options.selected&lt;1}"></div>
+			<div ng-show="options.remove" vdh-panel-button="{image:'images/icon-less-64.png'}"
+				ng-click="remove()"
+				ng-class="{'vdh-disabled':options.selected&lt;0}"></div>
+			<div ng-show="options.edit" vdh-panel-button="{image:'images/icon-action-details-64.png'}"
+				ng-click="edit()"
+				ng-class="{'vdh-disabled':options.selected&lt;0}"></div>
+			<div ng-show="addShown" class="vdh-add-string">
+				<input type="text" vdh-newline="add()"/>
+			</div>
+			<div ng-show="options.add" vdh-panel-button="{image:'images/icon-more-64.png'}"
+				ng-click="add()"></div>
+			<input type="checkbox" ng-show="options.enabled &amp;&amp; options.selected&gt;=0 &amp;&amp; list[options.selected][options.enabled]!==undefined"
+				ng-model="list[options.selected][options.enabled]"/>
+		</div>
+	</div>
+</div>

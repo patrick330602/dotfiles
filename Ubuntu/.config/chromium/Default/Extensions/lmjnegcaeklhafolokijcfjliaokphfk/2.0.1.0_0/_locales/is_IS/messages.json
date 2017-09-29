@@ -1,0 +1,1736 @@
+{
+        "video_downloadhelper": {
+                "message": "Video DownloadHelper"
+        },
+        "video_downloadhelper_plus": {
+                "message": "Video DownloadHelper +"
+        },
+        "settings": {
+                "message": "Stillingar"
+        },
+        "version": {
+                "message": "Útgáfa %s"
+        },
+        "vdh_settings": {
+                "message": "Stillingar fyrir VDH-niðurhalshjálp"
+        },
+        "appearance": {
+                "message": "Útlit"
+        },
+        "behavior": {
+                "message": "Hegðun"
+        },
+        "media": {
+                "message": "Margmiðlunargögn"
+        },
+        "video": {
+                "message": "Myndskeið"
+        },
+        "from_domain": {
+                "message": "Frá %s"
+        },
+        "no_media_to_process": {
+                "message": "Engin margmiðlunargögn til að vinna með"
+        },
+        "no_media_current_tab": {
+                "message": "Engin margmiðlunargögn til að vinna með í núverandi flipa"
+        },
+        "no_media_to_process_descr": {
+                "message": "Smelltu á afspilun á myndskeiði til að hjálpa við að finna skrár…"
+        },
+        "network_probe_title": {
+                "message": "Skönnun netkerfis"
+        },
+        "network_probe_description": {
+                "message": "Skanna netumferð til að finna samsvaranir."
+        },
+        "MB": {
+                "message": "%s MB"
+        },
+        "KB": {
+                "message": "%s KB"
+        },
+        "Bytes": {
+                "message": "%s bæti"
+        },
+        "error_nohome": {
+                "message": "Heimamappa er ekki til"
+        },
+        "title_save_file": {
+                "message": "Vista skrá"
+        },
+        "error_cannot_create_target_file": {
+                "message": "Ekki tókst að búa til frálagsskrána %s. Athugaðu hvort heimildir séu í lagi og nægilegt pláss"
+        },
+        "error_cannot_create_target_directory": {
+                "message": "Ekki tókst að búa til frálagsmöppuna %s. Athugaðu hvort heimildir séu í lagi og nægilegt pláss"
+        },
+        "action_as_default": {
+                "message": "Nota sjálfgefið þessa aðgerð"
+        },
+        "not_implemented_yet": {
+                "message": "Ekki útfært ennþá"
+        },
+        "audio_only": {
+                "message": "Einungis hljóð"
+        },
+        "video_only": {
+                "message": "Einungis myndskeið"
+        },
+        "quality_small": {
+                "message": "Lág"
+        },
+        "quality_medium": {
+                "message": "Miðlungs"
+        },
+        "hit_details": {
+                "message": "Nánar um samsvörun"
+        },
+        "define_vdh_smartname": {
+                "message": "Snjallnefni DownloadHelper"
+        },
+        "defining_smartname": {
+                "message": "Skilgreini snjallnefni"
+        },
+        "selected_text": {
+                "message": "Valinn texti"
+        },
+        "xpath_expr": {
+                "message": "XPath-segð"
+        },
+        "smartname_regexp": {
+                "message": "Regluleg segð"
+        },
+        "save": {
+                "message": "Vista"
+        },
+        "advanced": {
+                "message": "Nánar"
+        },
+        "general": {
+                "message": "Almennt"
+        },
+        "domain": {
+                "message": "Lén"
+        },
+        "about_vdh": {
+                "message": "Um Video DownloadHelper niðurhalshjálpina"
+        },
+        "icon_activation_mode_anytab": {
+                "message": "Samsvörun af hvaða flipa sem er"
+        },
+        "icon_activation_mode_currenttab": {
+                "message": "Samsvörun af þessum flipa"
+        },
+        "in_current_tab": {
+                "message": "Á þessum flipa"
+        },
+        "in_other_tab": {
+                "message": "Í öðrum flipum"
+        },
+        "orphan": {
+                "message": "Einstæðingar"
+        },
+        "pinned": {
+                "message": "Fest"
+        },
+        "running": {
+                "message": "Í gangi"
+        },
+        "more___": {
+                "message": "Meira..."
+        },
+        "video_qualities": {
+                "message": "Gæði myndskeiða"
+        },
+        "actions": {
+                "message": "Aðgerðir"
+        },
+        "variants": {
+                "message": "Tilbrigði"
+        },
+        "adp_variants": {
+                "message": "Aðlaganleg tilbrigði (ADP)"
+        },
+        "smartnames": {
+                "message": "Snjallnefni"
+        },
+        "smartnames_domains": {
+                "message": "Snjallnefni léna"
+        },
+        "adaptative": {
+                "message": "Aðlaganlegt %s"
+        },
+        "add_to_blacklist": {
+                "message": "Bæta á bannlista"
+        },
+        "add_to_blacklist_help": {
+                "message": "Myndskeið sem koma frá eða er miðlað af völdum lénum verða hunsuð"
+        },
+        "blacklist_selected": {
+                "message": "Valið á bannlista"
+        },
+        "blacklist": {
+                "message": "Bannlisti"
+        },
+        "blacklist_domains": {
+                "message": "Setja lén á bannlista"
+        },
+        "smartnamer_fname_spaces_keep": {
+                "message": "Halda"
+        },
+        "smartnamer_fname_spaces_remove": {
+                "message": "Fjarlægja"
+        },
+        "smartnamer_fname_spaces_hyphen": {
+                "message": "Skipta út fyrir bandstrik"
+        },
+        "smartnamer_fname_spaces_underscore": {
+                "message": "Skipta út fyrir lágstrik"
+        },
+        "order_by_video_quality": {
+                "message": "Raða eftir gæðum myndskeiða"
+        },
+        "defining_smartname_help": {
+                "message": "Þessi eiginleiki gerir kleift að útbúa heiti á myndskeið út frá síðunni sem innifelur myndskeiðið. Ef valinn texti inniheldur of marga stafi, veldu þá færri stafi úr titli síðunnar."
+        },
+        "icon_badge_none": {
+                "message": "Ekkert"
+        },
+        "icon_badge_tasks": {
+                "message": "Keyrandi verk"
+        },
+        "icon_badge_activetab": {
+                "message": "Margmiðlunargögn af virkum flipa"
+        },
+        "icon_badge_anytab": {
+                "message": "Margmiðlunargögn af hvaða flipa sem er"
+        },
+        "icon_badge_pinned": {
+                "message": "Festar samsvaranir"
+        },
+        "icon_badge_mixed": {
+                "message": "Blandað"
+        },
+        "errors": {
+                "message": "Villur"
+        },
+        "logs": {
+                "message": "Annálar"
+        },
+        "downloaded_as": {
+                "message": "Sótt sem %s"
+        },
+        "action_cannot_abort": {
+                "message": "Ekki er hægt að hætta við aðgerð"
+        },
+        "storage_directory": {
+                "message": "Geymslumappa"
+        },
+        "change_storage_directory": {
+                "message": "Skipta um geymslumöppu"
+        },
+        "storage_directory_not_exist": {
+                "message": "Geymslumappan %s er ekki til"
+        },
+        "storage_directory_not_writable": {
+                "message": "Geymslumappan %s er ekki skrifanleg"
+        },
+        "storage_directory_not_directory": {
+                "message": "Geymslumappan \"%s\" er ekki gild mappa"
+        },
+        "storage_directory_not_defined": {
+                "message": "Geymslumappa ekki skilgreind: nota sjálfgefnu möppuna %s"
+        },
+        "force_default_storage_directory": {
+                "message": "%1s: setja sjálfgefna geymslumöppu sem \"%2s\""
+        },
+        "storage_directory_error": {
+                "message": "Villa vegna geymslumöppu \"%s\": nota sjálfgefnu möppuna %s"
+        },
+        "no_download_to_abort": {
+                "message": "Ekkert niðurhal sem hægt er að hætta við"
+        },
+        "aborted": {
+                "message": "Hætt við"
+        },
+        "could_not_download": {
+                "message": "Ekki var hægt að sækja \"%s\""
+        },
+        "conversion": {
+                "message": "Umbreyting"
+        },
+        "converter_path": {
+                "message": "Slóð á umbreytiforrit"
+        },
+        "recheck_converter": {
+                "message": "Athuga aftur umbreytiforrit"
+        },
+        "converter_not_available": {
+                "message": "Umbreytiforrit ekki tiltækt"
+        },
+        "failed_aggregating": {
+                "message": "Mistókst að safna saman \"%s\""
+        },
+        "failed_converting": {
+                "message": "Mistókst að umbreyta \"%s\""
+        },
+        "failed_conversion": {
+                "message": "Umbreyting mistókst"
+        },
+        "failed_assembling": {
+                "message": "Samsetning mistókst"
+        },
+        "file_not_exists": {
+                "message": "Skráin \"%s\" er ekki til"
+        },
+        "file_not_readable": {
+                "message": "Skráin \"%s\" er ekki læsileg"
+        },
+        "details_parenthesis": {
+                "message": "(nánar)"
+        },
+        "log_details": {
+                "message": "Ítarlegt úr annál"
+        },
+        "converter_failed_execution": {
+                "message": "Mistókst að keyra umbreytiforrit"
+        },
+        "failed_getting_info": {
+                "message": "Mistókst að ná í upplýsingar frá \"%s\""
+        },
+        "downloading___": {
+                "message": "Sæki..."
+        },
+        "aggregating___": {
+                "message": "Safna saman..."
+        },
+        "converting___": {
+                "message": "Umbreyti..."
+        },
+        "queued___": {
+                "message": "Í biðröð..."
+        },
+        "finalizing___": {
+                "message": "Geng frá..."
+        },
+        "config_conversion_rules": {
+                "message": "Stilla reglur fyrir umbreytingu"
+        },
+        "any_format": {
+                "message": "hvaða snið sem er"
+        },
+        "any_domain": {
+                "message": "hvaða lén sem er"
+        },
+        "convert_format_from_domain": {
+                "message": "Umbreyta %1s úr %2s yfir í %3s"
+        },
+        "do_no_convert_format_from_domain": {
+                "message": "Ekki umbreyta %1s frá %2s"
+        },
+        "conversion_rules": {
+                "message": "Reglur"
+        },
+        "conversion_rule": {
+                "message": "Regla"
+        },
+        "new_rule": {
+                "message": "Ný regla"
+        },
+        "reset_converter_rules": {
+                "message": "Frumstilla reglur"
+        },
+        "convert": {
+                "message": "Umbreyta"
+        },
+        "extension": {
+                "message": "Skráarending"
+        },
+        "undefined_output": {
+                "message": "óskilgreint frálag"
+        },
+        "output": {
+                "message": "Frálag"
+        },
+        "converter_edit_output": {
+                "message": "Breyta frálagi"
+        },
+        "convconf_new": {
+                "message": "Nýtt"
+        },
+        "convconf_duplicate": {
+                "message": "Tvítaka"
+        },
+        "convconf_remove": {
+                "message": "Fjarlægja"
+        },
+        "convconf_reset": {
+                "message": "Frumstilla allt"
+        },
+        "convconf_container": {
+                "message": "Skráasnið"
+        },
+        "convconf_vcodec": {
+                "message": "Myndkóðunarlykill"
+        },
+        "convconf_acodec": {
+                "message": "Hljóðkóðunarlykill"
+        },
+        "convconf_bitrate": {
+                "message": "Bitahraði"
+        },
+        "convconf_videobitrate": {
+                "message": "Bitahraði myndmerkis"
+        },
+        "convconf_target": {
+                "message": "Útkoma"
+        },
+        "convconf_target_help": {
+                "message": "Forstillingar uppsetningar"
+        },
+        "convconf_rate": {
+                "message": "Rammatíðni"
+        },
+        "convconf_audiofreq": {
+                "message": "Hljóðtíðni"
+        },
+        "convconf_audiobitrate": {
+                "message": "Hljóð-bitahraði:"
+        },
+        "convconf_ac": {
+                "message": "Hljóðrásir"
+        },
+        "convconf_acnone": {
+                "message": "Ekkert"
+        },
+        "convconf_mono": {
+                "message": "Einóma"
+        },
+        "convconf_stereo": {
+                "message": "Víðóma"
+        },
+        "convconf_aspect": {
+                "message": "Stærðarhlutföll"
+        },
+        "convconf_size": {
+                "message": "Rammastærð"
+        },
+        "convconf_size_help": {
+                "message": "<breidd>x<hæð>"
+        },
+        "convconf_ext": {
+                "message": "Skráarending frálagsskrár"
+        },
+        "convconf_extra": {
+                "message": "Aukabreytur"
+        },
+        "convconf_preset": {
+                "message": "Forstilling"
+        },
+        "convconf_tune": {
+                "message": "Fínstilling"
+        },
+        "convconf_profilev": {
+                "message": "Sniðskrá myndskeiðs"
+        },
+        "convconf_level": {
+                "message": "Stig"
+        },
+        "convconf_2passes": {
+                "message": "2 umferðir"
+        },
+        "convconf_audioonly": {
+                "message": "Einungis hljóð"
+        },
+        "convconf_readonly": {
+                "message": "Sjálfgefna uppsetningin er skrifvarin. Gerðu afrit af henni til að gera breytingar."
+        },
+        "convconf_reset_confirm": {
+                "message": "Þetta mun fjarlægja allar sérsniðnar uppsetningar þínar"
+        },
+        "custom_output": {
+                "message": "Sérsniðin úttakssnið"
+        },
+        "copy_of": {
+                "message": "Afrit af %s"
+        },
+        "dlconv_will_be_converted": {
+                "message": "\"%s\" verður umbreytt í:"
+        },
+        "dlconv_n_will_be_converted": {
+                "message": "%s skrám verður umbreytt í:"
+        },
+        "dlconv_and_saved_to": {
+                "message": "og vistaðar í \"%s\""
+        },
+        "dlconv_output_details": {
+                "message": "Stilla frálag nánar"
+        },
+        "dlconv_back": {
+                "message": "Til baka"
+        },
+        "dlconv_change_directory": {
+                "message": "Skipta um úttaksmöppu"
+        },
+        "dlconv_convert": {
+                "message": "Umbreyta"
+        },
+        "dlconv_download_only": {
+                "message": "Einungis sækja"
+        },
+        "dlconv_download_and_convert": {
+                "message": "Sækja og umbreyta"
+        },
+        "dlconv_rename": {
+                "message": "Spyrja hvort eigi að endurnefna skrá"
+        },
+        "convert_local_files": {
+                "message": "Umbreyta staðværum skrám"
+        },
+        "prompt_select_storage_dir": {
+                "message": "Veldu geymslumöppu"
+        },
+        "conversion_output": {
+                "message": "Frálag"
+        },
+        "checking_converter___": {
+                "message": "Athuga umbreytingaforrit ..."
+        },
+        "checking_converter_license___": {
+                "message": "Athuga notkunarleyfi umbreytiforrits  ..."
+        },
+        "converter_installed": {
+                "message": "Umbreytiforrit er uppsett"
+        },
+        "converter_not_installed": {
+                "message": "Umbreytiforrit er ekki uppsett"
+        },
+        "converter_tune_h264": {
+                "message": "Þvinga fínstillingu H264 við samsöfnun"
+        },
+        "install_converter": {
+                "message": "Setja upp umbreytiforrit"
+        },
+        "unregistered": {
+                "message": "Óskráð"
+        },
+        "unsupported_vp9": {
+                "message": "VP9 kóðunarlykill ekki studdur"
+        },
+        "supported_vp9": {
+                "message": "VP9 kóðunarlykill er studdur"
+        },
+        "registered_name": {
+                "message": "Heiti"
+        },
+        "registered_email": {
+                "message": "Tölvupóstfang"
+        },
+        "registered_key": {
+                "message": "Lykill"
+        },
+        "no_license_to_check": {
+                "message": "Ekkert notkunarleyfi til að athuga"
+        },
+        "validate_license": {
+                "message": "Skrá notkunarleyfi"
+        },
+        "revalidate_license": {
+                "message": "Endurnýja notkunarleyfi"
+        },
+        "license_key": {
+                "message": "Lykill notkunarleyfis"
+        },
+        "converter": {
+                "message": "Umbreytiforrit"
+        },
+        "converter_license": {
+                "message": "Notkunarleyfi umbreytiforrits"
+        },
+        "converter_license_locked": {
+                "message": "Það þarf að endurnýja notkunarleyfið"
+        },
+        "converter_license_locked_mail": {
+                "message": "Tölvupóstur var sendur á \"%s\". Hann inniheldur veftengil sem þarf að heimsækja til að aflæsa notkunarleyfinu. Eftir að tengillinn hefur verið heimsóttur, er mögulegt að biðja þurfi um endurnýjun á notkunarleyfinu. Ef þú hefur ekki fengið þennan tölvupóst, athugaðu hvort hann hafi lent í ruslpósthólfunum þínum."
+        },
+        "converter_license_ready": {
+                "message": "Skráð notkunarleyfi umbreytiforrits"
+        },
+        "converter_license_blocked": {
+                "message": "Notkunarleyfið þitt hefur verið útilokað"
+        },
+        "get_converter_license_key": {
+                "message": "Fáðu lykil fyrir notkunarleyfi"
+        },
+        "get_converter_license": {
+                "message": "Fáðu notkunarleyfi"
+        },
+        "licence_text1": {
+                "message": "Nokkrar góðar ástæður fyrir því að skrá umbreytiforritið þitt:"
+        },
+        "licence_text2": {
+                "message": "Notkunarleyfi umbreytiforritsins er eins-skiptis gjald án tímamarka, nema hvað notendastuðningur býðst í eitt ár eftir dagsetningu kaupanna."
+        },
+        "license_point1": {
+                "message": "Umbreytt/samsett myndskeið innihalda ekki vatnsmerki"
+        },
+        "license_point2": {
+                "message": "Þú munt geta umbreytt myndskeiðum beint yfir í mp3 hljóðskrár"
+        },
+        "license_point3": {
+                "message": "Þú munt hafa aðgang að stuðningi við umbreytingareiginleikana"
+        },
+        "license_point4": {
+                "message": "Þú munt hjálpa til við að halda Video DownloadHelper gangandi"
+        },
+        "register_existing_license": {
+                "message": "Skrá notkunarleyfi sem þegar er til staðar"
+        },
+        "converter_needed": {
+                "message": "Þessi aðgerð krefst þess að umbreytiforrit sé uppsett á kerfinu þínu."
+        },
+        "converter_needed_aggregate": {
+                "message": "Þessi aðgerð krefst þess að umbreytiforrit sé uppsett á kerfinu þínu til að setja saman hljóð- og myndstreymi."
+        },
+        "converter_needed_local": {
+                "message": "Umbreyting skráa af tölvunni þinni krefst þess að umbreytiforrit sé uppsett á kerfinu þínu."
+        },
+        "converter_required": {
+                "message": "Umbreytiforrit nauðsynlegt"
+        },
+        "converter_missing": {
+                "message": "Umbreytingarforrit vantar"
+        },
+        "rule_converter_unavail": {
+                "message": "Beita á sjálfvirkri umbreytingu á \"%s\", hinsvegar er ekkert umbreytiforrit tiltækt á kerfinu þínu. Margmiðlunargögnunum verður ekki umbreytt."
+        },
+        "converter_requested_unavail": {
+                "message": "Umbreytiforritsins er krafist við þessa aðgerð, það er hinsvegar ekki tiltækt."
+        },
+        "converter_needs_reg": {
+                "message": "Skráningar er krafist"
+        },
+        "converter_reg_audio": {
+                "message": "Þú baðst, annað hvort sérstaklega eða með reglum fyrir sjálfvirka umbreytingu, um að útbúin væri margmiðlunarskrá sem inniheldur eingöngu hljóð. Þetta krefst skráðs umbreytiforrits."
+        },
+        "register_converter": {
+                "message": "Skrá umbreytiforrit"
+        },
+        "conversion_outputs": {
+                "message": "Frálög umbreytinga"
+        },
+        "converter_threads": {
+                "message": "Umbreytingarþræðir"
+        },
+        "empty_downloaded_file": {
+                "message": "Niðurhlaðin skrá \"%s\" er tóm. Margmiðlunargögnin gætu verið varin."
+        },
+        "download_selected_links": {
+                "message": "Sækja valdar slóðir á margmiðlunargögn"
+        },
+        "download_selected_link": {
+                "message": "Sækja valda slóð á margmiðlunargögn"
+        },
+        "detect_extensions": {
+                "message": "Skynja skráarendingar"
+        },
+        "help_vdh": {
+                "message": "Hjálpa Video DownloadHelper"
+        },
+        "make_donation": {
+                "message": "Senda styrk"
+        },
+        "purchase_license": {
+                "message": "Kaupa notkunarleyfi fyrir umbreytiforrit"
+        },
+        "other_products": {
+                "message": "Frá sama þróunarteymi"
+        },
+        "jocly_addon": {
+                "message": "Jocly Firefox-viðbótin"
+        },
+        "jocly_description": {
+                "message": "Yfir 100 HTML5 borðleikir gegn tölvunni eða öðrum spilurum, í fullri 3D-upplausn og myndspjalli við andstæðingana ..."
+        },
+        "cphelper_addon": {
+                "message": "CouponsHelper Addon"
+        },
+        "cphelper_description": {
+                "message": "The right coupon at the right time: do not miss discounts when shopping online ..."
+        },
+        "files_to_convert": {
+                "message": "Skrár sem á að umbreyta"
+        },
+        "safe_mode": {
+                "message": "Öryggishamur"
+        },
+        "safe_mode_description": {
+                "message": "Virkjun á öryggisham tryggir að vefsvæði Video DownloadHelper (og einungis það vefsvæði!) mun ekki birta neitt sem öll fjölskyldan má ekki sjá."
+        },
+        "safe_mode_description2": {
+                "message": "Stilling á öryggisham er endanleg og það er engin leið til að fara út úr þessum ham."
+        },
+        "cancel": {
+                "message": "Hætta við"
+        },
+        "safe_mode_set": {
+                "message": "Stilla öryggisham"
+        },
+        "safe_mode_confirm_description": {
+                "message": "Við viljum ganga úr skugga um að þú skiljir alveg að það er engin leið út úr öryggishamnum."
+        },
+        "safe_mode_confirm": {
+                "message": "Já, ég vil í alvörunni virkja öryggisham"
+        },
+        "supported_sites": {
+                "message": "Studd vefsvæði"
+        },
+        "site_name": {
+                "message": "Nafn vefsvæðis"
+        },
+        "site_interest": {
+                "message": "Áhugasvið"
+        },
+        "site_rating": {
+                "message": "Einkunn"
+        },
+        "site_comments": {
+                "message": "Athugasemdir"
+        },
+        "site_date": {
+                "message": "Bætt við"
+        },
+        "visit_site": {
+                "message": "Heimsækja vefsvæði"
+        },
+        "donate_vdh": {
+                "message": "Hjálpa Video DownloadHelper"
+        },
+        "congratulations": {
+                "message": "Til hamingju!"
+        },
+        "you_downloaded_n_videos": {
+                "message": "Þú varst að sækja skrá númer %sth með VDH-niðurhalshjálpinni."
+        },
+        "req_donate": {
+                "message": "Myndirðu íhuga að styðja við verkefnið og gefa einhverja smáupphæð ?"
+        },
+        "req_review": {
+                "message": "Nú, eða kannski skrifa skemmtilega umsögn á vefsvæðinu fyrir Mozilla viðbæturnar ?"
+        },
+        "req_review_link": {
+                "message": "Skrifa umsögn um VDH-niðurhalshjálpina"
+        },
+        "not_again_3months": {
+                "message": "Ekki ónáða mig aftur með þetta næstu 3 mánuðina"
+        },
+        "donate": {
+                "message": "Styrkja"
+        },
+        "shortcut_icons": {
+                "message": "Birta táknmyndir flýtileiða"
+        },
+        "about": {
+                "message": "Um hugbúnaðinn"
+        },
+        "clear_hits": {
+                "message": "Hreinsa samsvaranir"
+        },
+        "file_ready": {
+                "message": "\"%s\" er núna tilbúið"
+        },
+        "vdh_notification": {
+                "message": "Video DownloadHelper"
+        },
+        "notify_ready": {
+                "message": "Láta vita þegar vinnslu lýkur"
+        },
+        "no_private_notification": {
+                "message": "Engar tilkynningar fyrir einkasamsvaranir"
+        },
+        "about_support": {
+                "message": "Ef þú þarft stuðning við notkun Video DownloadHelper, smelltu á tengilinn hér fyrir neðan."
+        },
+        "about_go_support": {
+                "message": "Fara á stuðningssíðu"
+        },
+        "about_conversion_support": {
+                "message": "Ef þú ert skráður notandi og vantar hjálp við að umbreyta margmiðlunarskrám eða varðandi notkunarleyfið þitt, sendu þá póst á póstfangið sem þú fékkst uppgefið þegar þú keyptir notkunarleyfið þitt."
+        },
+        "about_go_howto": {
+                "message": "Hvernig á að nota viðbótina"
+        },
+        "about_help": {
+                "message": "Ef þú þarft hjálp við notkun Video DownloadHelper, smelltu á tengilinn hér fyrir neðan."
+        },
+        "max_hits_per_source": {
+                "message": "Hámarksfjöldi færslna frá sama aðila"
+        },
+        "converter_needed_aggregate_why": {
+                "message": "Hvers vegna þarf ég umbreytiforrit ?"
+        },
+        "reset_variants": {
+                "message": "Frumstilla tilbrigði"
+        },
+        "about_qr": {
+                "message": "Skrá útbúin"
+        },
+        "not_see_again": {
+                "message": "Ekki sýna þessi skilaboð aftur"
+        },
+        "file_generated": {
+                "message": "Skráin \"%s\" hefur verið útbúin."
+        },
+        "explain_qr1": {
+                "message": "Þú munt taka eftir því að myndskeiðið mun innifela vatnsmerki í horninu."
+        },
+        "explain_qr2": {
+                "message": "Þetta er af því þú valdir ADP-tilbrigði og umbreytingarforritið hefur ekki verið skráð."
+        },
+        "tell_me_more": {
+                "message": "Segðu mér meira um þetta"
+        },
+        "get_conversion_license": {
+                "message": "Fáðu notkunarleyfi fyrir umbreytiforrit"
+        },
+        "locale_credits": {
+                "message": "Þýðing úr ensku eftir %s"
+        },
+        "locale_credits_translators": {
+                "message": "Sveinn í Felli"
+        },
+        "locale_credits_urls": {
+                "message": "http://sv1.fellsnet.is/i18n/i18n.html"
+        },
+        "capture_gallery": {
+                "message": "Grípa myndasafn"
+        },
+        "gallery_capture": {
+                "message": "Samsöfnun á myndasafni"
+        },
+        "number_type": {
+                "message": "%1s %2s"
+        },
+        "gallery_files_types": {
+                "message": "%s skrár"
+        },
+        "gallery_from_domain": {
+                "message": "Myndasafn frá %s"
+        },
+        "gallery_links_from_domain": {
+                "message": "Tenglar frá %s"
+        },
+        "gallery": {
+                "message": "Myndasafn"
+        },
+        "gallery_links": {
+                "message": "Tenglar í myndasafni"
+        },
+        "gallery_capture_images": {
+                "message": "Finna ígræddar myndir"
+        },
+        "gallery_capture_links": {
+                "message": "Finna tengla á margmiðlunargögn"
+        },
+        "prompt_target_dir": {
+                "message": "Úttaksmappa"
+        },
+        "gallery_max_hits": {
+                "message": "Hámarksfjöldi tengla sem á að skoða"
+        },
+        "gallery_min_hits": {
+                "message": "Lágmarksfjöldi tengla í hverju myndasafni"
+        },
+        "gallery_min_img_size": {
+                "message": "Lágmarksstærð mynda"
+        },
+        "gallery_auto_detect": {
+                "message": "Skynja sjálfvirkt"
+        },
+        "gallery_auto_detect_warning": {
+                "message": "Sjálfvirk greining myndasafna getur haft neikvæð áhrif á afköst vafrans"
+        },
+        "gallery_index_prefix": {
+                "message": "Bæta stighækkandi raðnúmeri framan við skráaheiti"
+        },
+        "download_canceled": {
+                "message": "Hætt við niðurhal."
+        },
+        "cmenu_mode": {
+                "message": "Hamur samhengisvalmyndar"
+        },
+        "cmenu_mode_quick": {
+                "message": "Keyra sjálfgefna aðgerð"
+        },
+        "cmenu_mode_all": {
+                "message": "Birta allar aðgerðir"
+        },
+        "cmenu_mode_both": {
+                "message": "Bæði skyndi- og allar aðgerðir"
+        },
+        "cmenu_mode_none": {
+                "message": "Ekki birta neitt"
+        },
+        "context_menu": {
+                "message": "Nota samhengisvalmynd"
+        },
+        "companion_enable": {
+                "message": "Virkja hnapp í samhengisvalmynd"
+        },
+        "all_actions": {
+                "message": "Allar aðgerðir"
+        },
+        "options": {
+                "message": "Valkostir"
+        },
+        "companion_default_op": {
+                "message": "Sjálfgefin aðgerð í samhengisvalmynd"
+        },
+        "file_ext_change": {
+                "message": "Skráarendingu breytt"
+        },
+        "file_ext_change_text": {
+                "message": "Þú breyttir skráarendingunni úr \".%1s\" í \".%2s\". Þetta getur valdið vandamálum við að spila skrána."
+        },
+        "back": {
+                "message": "Til baka"
+        },
+        "continue": {
+                "message": "Halda áfram"
+        },
+        "ignore_embedded": {
+                "message": "Hunsa ígrædd (embedded) myndskeið"
+        },
+        "hotkeys": {
+                "message": "Flýtilyklar"
+        },
+        "hotkey_default": {
+                "message": "Sjálfgefin aðgerð"
+        },
+        "hotkey_open_companion": {
+                "message": "Opna samhengisvalmynd"
+        },
+        "hotkey_detect_gallery": {
+                "message": "Finna myndasöfn"
+        },
+        "hotkey_clear_hits": {
+                "message": "Hreinsa samsvaranir"
+        },
+        "hotkey_supported_sites": {
+                "message": "Studd vefsvæði"
+        },
+        "hotkey_convert_local": {
+                "message": "Umbreyta staðværum skrám"
+        },
+        "hotkey_toggle_scrap": {
+                "message": "Víxla skjáupptöku af/á"
+        },
+        "transient_storagedirectory": {
+                "message": "Geymslumöppunni hefur verið breytt úr einkaglugga og verður endurskilgreind í næstu setu."
+        },
+        "save_transient_storagedirectory": {
+                "message": "Vista endanlega"
+        },
+        "copy_to_clipboard": {
+                "message": "Afrita á klippispjald"
+        },
+        "ignore_protected": {
+                "message": "Hunsa varin tilbrigði"
+        },
+        "chunk_save": {
+                "message": "Vista knippi margmiðlunargagna"
+        },
+        "chunk_about_to_be_saved": {
+                "message": "Knippi margmiðlunargagna '%s' er í þann mund að verða vistað og umbreytt í"
+        },
+        "chunk_target": {
+                "message": "í möppunni \"%s\""
+        },
+        "chunk_assemble_only": {
+                "message": "Einungis setja saman"
+        },
+        "chunk_assemble_and_convert": {
+                "message": "Setja saman og umbreyta"
+        },
+        "chunk_assemble_native": {
+                "message": "Setja saman með samsöfnun"
+        },
+        "chunk_assemble_native_warn": {
+                "message": "Frálagsskráin verður útbúin með því að safna knippunum saman. Athugaðu að útkoman afspilast kannski ekki vel á kerfinu þínu."
+        },
+        "chunk_converter_assemble_convert": {
+                "message": "Þú baðst um að úttaksskráin yrði sett saman með umbreytiforritinu og henni síðan umbreytt."
+        },
+        "chunk_converter_assemble": {
+                "message": "Þú baðst um að úttaksskráin yrði sett saman með umbreytiforritinu."
+        },
+        "chunk_converter_convert": {
+                "message": "Þú baðst um að úttaksskránni yrði umbreytt."
+        },
+        "chunk_missing_conv_native_assemble_only": {
+                "message": "Hinsvegar fannst ekkert umbreytingarforrit á kerfinu þínu. Vélgerða skráin verður útbúin einfaldlega með því að safna knippunum saman."
+        },
+        "smartnamer_get_name_from_header_url": {
+                "message": "Ná í heiti úr haus skjals/URL-slóð"
+        },
+        "smartnamer_get_name_from_page_title": {
+                "message": "Ná í heiti úr titli síðu"
+        },
+        "smartnamer_get_name_from_page_content": {
+                "message": "Ná í heiti úr innihaldi síðu"
+        },
+        "smartnamer_get_obfuscated_name": {
+                "message": "Nota óskírt heiti"
+        },
+        "smartnamer_by_default": {
+                "message": "Sjálfgefið"
+        },
+        "smartnamer_all_domains": {
+                "message": "Öll lén"
+        },
+        "smartnamer_naming": {
+                "message": "Aðferð við nafngift"
+        },
+        "smartnamer_header_url": {
+                "message": "Haus/URL-slóð"
+        },
+        "smartnamer_page_title": {
+                "message": "Titill síðu"
+        },
+        "smartnamer_page_content": {
+                "message": "Innihald síðu"
+        },
+        "smartnamer_obfuscated": {
+                "message": "Óskírt"
+        },
+        "smartnamer_index": {
+                "message": "Núverandi vísir"
+        },
+        "tpsr_start_par": {
+                "message": "Hefja P-upptöku"
+        },
+        "tpsr_stop_par": {
+                "message": "Stöðva P-upptöku"
+        },
+        "tpsr_start_par_long": {
+                "message": "Hefja sjálfvirka upptöku af Periscope"
+        },
+        "tpsr_stop_par_long": {
+                "message": "Stöðva sjálfvirka upptöku af Periscope"
+        },
+        "tpsr_title": {
+                "message": "Sjálfvirk upptaka af Periscope"
+        },
+        "tpsr_description": {
+                "message": "Þessi hamur grípur bein streymi myndskeiða af Twitter Periscope jafnóðum og þau birtast. Það er betra að skrúfa niður í hljóðinu til að forðast ýmsar truflanir vegna þess."
+        },
+        "tpsr_start_recording": {
+                "message": "Byrja"
+        },
+        "tpsr_search_terms": {
+                "message": "Leitarorð"
+        },
+        "tpsr_search_periscope": {
+                "message": "Leita á Twitter Periscope"
+        },
+        "tpsr_search_help": {
+                "message": "Þú getur skilið leitarsvæðið eftir autt, en þá muntu grípa tilviljanakennt hvað það sem er í beinni útsendingu."
+        },
+        "tpsr_concurrent_captures": {
+                "message": "Samhliða upptökur"
+        },
+        "tpsr_start_timeout": {
+                "message": "Tímamörk á byrjun streymis (sekúndur)"
+        },
+        "tpsr_duration_timeout": {
+                "message": "Hámarkstímalengd upptöku streymis (sekúndur)"
+        },
+        "tpsr_no_converter": {
+                "message": "Þú ert ekki með neitt umbreytingarforrit á kerfinu þínu. Farið verður í kringum þetta þannig að viðbótin mun safna saman sóttum knippum, en ekki er víst að skrárnar sem verða þannig til afspilist rétt."
+        },
+        "tpsr_enabled": {
+                "message": "Sjálfvirk upptaka af Periscope virkjuð"
+        },
+        "tpsr_do_not_convert": {
+                "message": "Ekki umbreyta útbúnu myndskeiðunum."
+        },
+        "tpsr_convert_format": {
+                "message": "Skilgreindu snið frálagsins."
+        },
+        "tpsr_convert": {
+                "message": "Umbreyta útbúnu myndskeiðunum."
+        },
+        "analyze_page": {
+                "message": "Greina síðu"
+        },
+        "scrap_start": {
+                "message": "Ræsa skjáupptöku"
+        },
+        "scrap_stop": {
+                "message": "Hætta að grípa vafursetu"
+        },
+        "scrap_start_long": {
+                "message": "Byrja að grípa vafursetu"
+        },
+        "scrap_stop_long": {
+                "message": "Stop capturing browsing session"
+        },
+        "scrap_title": {
+                "message": "Skjáupptaka"
+        },
+        "scrap_description": {
+                "message": "Búðu til myndskeið úr því sem gerist í öllum forritsglugga vafrans."
+        },
+        "scrap_description2": {
+                "message": "Ef tölvan þín er of hægvirk, munu tapast einhverjir rammar. Prófaðu að minnka vafragluggann og/eða lækka rammatíðnina."
+        },
+        "scrap_description3": {
+                "message": "Ekkert hljóð verður tekið upp. Þú verður að halda flipanum virkum svo að hægt sé að endurlesa myndirnar."
+        },
+        "scrap_description4": {
+                "message": "Búðu til myndskeið úr því sem gerist í vinnsluglugga vafrans."
+        },
+        "scrap_description5": {
+                "message": "Ef tölvan þín er of hægvirk, munu tapast einhverjir rammar. Prófaðu að lækka rammatíðnina."
+        },
+        "scrap_start_capture": {
+                "message": "Hefja skjámyndatöku"
+        },
+        "scrap_rate": {
+                "message": "Griphraði (rammar/sekúndu)"
+        },
+        "scrap_no_converter": {
+                "message": "Ekkert umbreytiforrit fannst á kerfinu þínu, en það er nauðsynlegt til að útbúa skjámyndskeiðið."
+        },
+        "scrap_port": {
+                "message": "Gátt umbreytingarforrits"
+        },
+        "scrap_file_saved_as": {
+                "message": "Gripið myndskeið verður vistað sem %s"
+        },
+        "scrap_8x8_align": {
+                "message": "8x8 uppröðun"
+        },
+        "scrap_8x8_align_cut": {
+                "message": "Klippa"
+        },
+        "scrap_8x8_align_extend": {
+                "message": "Útvíkka"
+        },
+        "scrap_stats_original_size": {
+                "message": "Upprunaleg rammastærð %s"
+        },
+        "scrap_stats_captured_size": {
+                "message": "Tók upp rammastærðina %s"
+        },
+        "scrap_stats_captured_frames": {
+                "message": "%1s rammar vistaðir, %2s sleppt, %3s vantar"
+        },
+        "scrap_stats_saved_frames": {
+                "message": "%1s rammar vistaðir, %2s töpuðust"
+        },
+        "scrap_stats_duration": {
+                "message": "Tímalengd %s sekúndur"
+        },
+        "scrap_successfully_saved_as": {
+                "message": "Það tókst að vista skrána \"%s\""
+        },
+        "scrap_success": {
+                "message": "Skjáupptaka tókst"
+        },
+        "scrap_open_file": {
+                "message": "Opna myndskeið"
+        },
+        "scrap_mouse_title": {
+                "message": "Upptaka á músarbendli"
+        },
+        "scrap_mouse_never": {
+                "message": "Aldrei"
+        },
+        "scrap_mouse_always": {
+                "message": "Alltaf"
+        },
+        "scrap_mouse_metakey": {
+                "message": "Þegar ýtt er á SHIFT-lykilinn"
+        },
+        "scrap_mouse_not_metakey": {
+                "message": "Þegar ekki er ýtt á SHIFT-lykilinn"
+        },
+        "scrap_mouse_halo_radius": {
+                "message": "Radíus bendilskugga"
+        },
+        "scrap_mouse_halo_color": {
+                "message": "Litur bendilskugga"
+        },
+        "scrap_mouse_halo_transparency": {
+                "message": "Gegnsæi bendilskugga (%)"
+        },
+        "scrap_mouse_pointer_size": {
+                "message": "Stærð bendils"
+        },
+        "scrap_screen_capture": {
+                "message": "Skjáupptaka"
+        },
+        "scrap_screen_capture_from_domain": {
+                "message": "Skjáupptaka frá %s"
+        },
+        "scrap_applet_start_not_see_again": {
+                "message": "Ekki birta þessi skilaboð þegar upptaka á smáforriti hefst"
+        },
+        "scrap_do_not_display_start_panel": {
+                "message": "Ekki birta spjald þegar upptaka hefst"
+        },
+        "scrap_enabled": {
+                "message": "Virkja skjáupptöku"
+        },
+        "scrap_auto_detect_warning": {
+                "message": "Sjálfvirk greining smáforrita getur haft neikvæð áhrif á afköst vafrans"
+        },
+        "scrap_auto_detect": {
+                "message": "Sjálfvirk greining smáforrita"
+        },
+        "scrap_applet_selector": {
+                "message": "Veljari smáforrita"
+        },
+        "scrap_change_target": {
+                "message": "Skipta um frálagsskrá"
+        },
+        "scrap_convert": {
+                "message": "Umbreyta myndskeiði sem tekið hefur verið af skjá"
+        },
+        "scrap_capture_statistics": {
+                "message": "Tölfræði skjámyndatöku"
+        },
+        "scrap_open_container": {
+                "message": "Birta umlykjandi möppu"
+        },
+        "scrap_start_scrap_long": {
+                "message": "Hefja upptöku á glugga"
+        },
+        "scrap_stop_scrap_long": {
+                "message": "Stöðva upptöku á glugga"
+        },
+        "scrap_error": {
+                "message": "Villa við skjáupptöku"
+        },
+        "scrap_converter_required": {
+                "message": "Skjáupptaka krefst umbreytiforrits til að hægt sé að útbúa myndskeið."
+        },
+        "scrap_min_applet_size": {
+                "message": "Lágmarksstærð svo skilgreint sé sem smáforrit"
+        },
+        "mp2t_title": {
+                "message": "MP2T streymi"
+        },
+        "chunk_initial_period": {
+                "message": "Upphafleg tímalengd knippa (sekúndur)"
+        },
+        "chunk_period_factor": {
+                "message": "Stuðull fyrir tímalengd biðmarka (%)"
+        },
+        "show_in_toolsmenu": {
+                "message": "Birta stýringar í verkfæravalmynd"
+        },
+        "storage_last_dir": {
+                "message": "Nota sjálfgefna geymslumöppu vafrans"
+        },
+        "using_browser_default": {
+                "message": "Nota sjálfgefið vafrans"
+        },
+        "downloads_hook_headers": {
+                "message": "Húkka niðurhalshausa"
+        },
+        "operations": {
+                "message": "Aðgerðir"
+        },
+        "shortcut_icons_dropdown": {
+                "message": "Flýtilyklar táknmynda og fellilistar"
+        },
+        "links_list": {
+                "message": "Listi yfir tengla"
+        },
+        "top_main_panel": {
+                "message": "Efst á aðalspjaldi"
+        },
+        "download_retries": {
+                "message": "Fjöldi tilrauna við niðurhal"
+        },
+        "adp_hide": {
+                "message": "Ekki birta ADP-tilbrigði í niðurhalslista"
+        },
+        "tbmode_maincomp": {
+                "message": "Aðal og samhengisvalmyndarhnappar"
+        },
+        "tbmode_main": {
+                "message": "Einungis aðalhnappur"
+        },
+        "tbmode_comp": {
+                "message": "Einungis hnappur í samhengisvalmynd"
+        },
+        "tbmode_label": {
+                "message": "Hamur hnappa á verkfærastiku"
+        },
+        "display_mode_normal": {
+                "message": "Venjulegt"
+        },
+        "display_mode_compact": {
+                "message": "Þjappað"
+        },
+        "display_mode_label": {
+                "message": "Birting aðalspjalds"
+        },
+        "display_mode_mozilla": {
+                "message": "Mozilla"
+        },
+        "smartname_delay": {
+                "message": "Töf á nafnagripi (msek)"
+        },
+        "ui_adp_grey": {
+                "message": "Lita ADP-tilbrigði"
+        },
+        "ui_adp_tag": {
+                "message": "Merkja ADP-tilbrigði"
+        },
+        "download_retry_delay": {
+                "message": "Tími sem líður milli endurtekinna tilrauna til niðurhals (ms)"
+        },
+        "action_download_title": {
+                "message": "Niðurhal"
+        },
+        "action_download_description": {
+                "message": "Sækja og vista skrána á harða diskinn þinn"
+        },
+        "action_copyurl_title": {
+                "message": "Afrita slóð"
+        },
+        "action_copyurl_description": {
+                "message": "Afrita slóð margmiðlunargagnanna á klippispjaldið"
+        },
+        "action_blacklist_title": {
+                "message": "Bæta á svartan lista"
+        },
+        "action_blacklist_description": {
+                "message": "Samsvaranir frá þessum aðila virkja ekki viðbótina"
+        },
+        "action_quickdownload_title": {
+                "message": "Skyndiniðurhal"
+        },
+        "action_quickdownload_description": {
+                "message": "Sækja án þess að spyrja um úttaksmöppu"
+        },
+        "action_details_title": {
+                "message": "Nánar"
+        },
+        "action_details_description": {
+                "message": "Birta nánari upplýsingar um samsvörunina"
+        },
+        "action_social_title": {
+                "message": "Deiling á samfélagsmiðlum"
+        },
+        "action_social_description": {
+                "message": "Deila margmiðlunargögnunum á samfélagsmiðlum"
+        },
+        "action_downloadconvert_title": {
+                "message": "Sækja og umbreyta"
+        },
+        "action_downloadconvert_description": {
+                "message": "Sækja margmiðlunargögn og umbreyta á annað snið"
+        },
+        "action_deletehit_title": {
+                "message": "Eyða"
+        },
+        "action_deletehit_description": {
+                "message": "Eyða samsvörun af núverandi lista"
+        },
+        "action_openlocalfile_title": {
+                "message": "Opna margmiðlunargögn"
+        },
+        "action_openlocalfile_description": {
+                "message": "Opna margmiðlunargögn af þessari tölvu"
+        },
+        "action_openlocalcontainer_title": {
+                "message": "Opna möppu"
+        },
+        "action_openlocalcontainer_description": {
+                "message": "Opna möppu með staðværri gagnaskrá"
+        },
+        "action_pin_title": {
+                "message": "Festa"
+        },
+        "action_pin_description": {
+                "message": "Gera samsvörun fasta"
+        },
+        "action_abort_title": {
+                "message": "Hætta við"
+        },
+        "action_abort_description": {
+                "message": "Hætta við aðgerðina sem er í gangi"
+        },
+        "action_convert_title": {
+                "message": "Umbreyta staðværri skrá"
+        },
+        "action_convert_description": {
+                "message": "Umbreyta skrá sem þegar er búið að sækja"
+        },
+        "action_record_title": {
+                "message": "Upptaka"
+        },
+        "action_record_description": {
+                "message": "Hefja upptöku streymis"
+        },
+        "action_stoprecord_title": {
+                "message": "Stöðva upptöku"
+        },
+        "action_stoprecord_description": {
+                "message": "Stöðva upptöku streymis"
+        },
+        "action_scraprecord_title": {
+                "message": "Upptaka"
+        },
+        "action_scraprecord_description": {
+                "message": "Hefja upptöku af skjánum"
+        },
+        "action_scrapstoprecord_title": {
+                "message": "Stöðva upptöku"
+        },
+        "action_scrapstoprecord_description": {
+                "message": "Stöðva upptöku af skjánum"
+        },
+        "action_scrapsnapshot_title": {
+                "message": "Taka kyrrmynd"
+        },
+        "action_scrapsnapshot_description": {
+                "message": "Taktu kyrrmynd af smáforritinu"
+        },
+        "action_maskeddownload_title": {
+                "message": "Falið niðurhal"
+        },
+        "action_maskeddownload_description": {
+                "message": "Vista myndskeið í dulritaða skrá"
+        },
+        "download_controlled_max_title": {
+                "message": "Hámarksfjöldi niðurhala"
+        },
+        "download_controlled_max_title2": {
+                "message": "Hámarksfjöldi samtímis niðurhala"
+        },
+        "download_controlled_max_description": {
+                "message": "Stýrir fjölda þeirra niðurhala sem viðbótin útbýr og keyrir samhliða, til að spara bandbreidd."
+        },
+        "icon_animation_title": {
+                "message": "Hreyfingar táknmyndar"
+        },
+        "icon_animation_description": {
+                "message": "Hvort táknmyndin hreyfist þegar sumar samsvaranir eru virkar."
+        },
+        "icon_dropdown_title": {
+                "message": "Fellimerki á táknmynd"
+        },
+        "icon_dropdown_description": {
+                "message": "Birta þríhyrnt merki fyrir fellilista á táknmynd."
+        },
+        "icon_badge_title": {
+                "message": "Bakgrunnur táknmynda"
+        },
+        "icon_badge_description": {
+                "message": "Birting bakgrunns táknmynda á verkfærastiku."
+        },
+        "mediaweight_threshold_title": {
+                "message": "Stærðarmörk"
+        },
+        "mediaweight_threshold_title2": {
+                "message": "Þvinga til að finna stærra"
+        },
+        "mediaweight_threshold_description": {
+                "message": "Þvinga fram leit að skrám sem eru stærri en þetta."
+        },
+        "mediaweight_min_size_title": {
+                "message": "Lágmarksstærð"
+        },
+        "mediaweight_min_size_title2": {
+                "message": "Hunsa samsvaranir minni en"
+        },
+        "mediaweight_min_size_description": {
+                "message": "Hunsa samsvaranir undir þessari stærð."
+        },
+        "orphan_expiration_title": {
+                "message": "Tímamörk gildistíma einstæðinga"
+        },
+        "orphan_expiration_title2": {
+                "message": "Tímamörk gildistíma einstæðinga (sekúndur)"
+        },
+        "orphan_expiration_description": {
+                "message": "Biðtími í sekúndum áður en stakar samsvaranir eru fjarlægðar."
+        },
+        "icon_activation_title": {
+                "message": "Virkjun táknmyndar"
+        },
+        "icon_activation_description": {
+                "message": "Hvenær eigi að virkja táknmynd á verkfærastiku."
+        },
+        "qualities_max_title": {
+                "message": "Hámarksfjöldi tilbrigða"
+        },
+        "qualities_max_description": {
+                "message": "Hámarksfjöldi tilbrigða sem sýndar eru fyrir eitt og sama myndskeiðið."
+        },
+        "auto_pin_title": {
+                "message": "Sjálfvirk festing"
+        },
+        "auto_pin_description": {
+                "message": "Festa samsvörun eftir niðurhal."
+        },
+        "min_panel_width_title": {
+                "message": "Lágmarksbreidd spjalds"
+        },
+        "min_panel_width_description": {
+                "message": "Lágmarksbreidd hvers viðbótarspjalds"
+        },
+        "max_panel_width_title": {
+                "message": "Hámarksbreidd spjalds"
+        },
+        "max_panel_width_description": {
+                "message": "Hámarksbreidd hvers viðbótarspjalds"
+        },
+        "settings_title": {
+                "message": "Stilla VDH-niðurhalshjálpina"
+        },
+        "network_filter_out_title": {
+                "message": "Netkerfissía út"
+        },
+        "network_filter_out_description": {
+                "message": "Regluleg segð sem hunsar ákveðnar slóðir á margmiðlunargögn."
+        },
+        "blacklist_enable_title": {
+                "message": "Virkja bannlista"
+        },
+        "blacklist_enable_description": {
+                "message": "Koma í veg fyrir að sum vefsvæði virkji greiningu á margmiðlunargögnum."
+        },
+        "smartnamer_fname_maxlen_title": {
+                "message": "Hámarkslengd skráaheita"
+        },
+        "smartnamer_fname_maxlen_description": {
+                "message": "Tryggir að útbúin skráaheiti fari ekki yfir þessa lengd."
+        },
+        "smartnamer_fname_spaces_title": {
+                "message": "Bil í skráaheitum"
+        },
+        "smartnamer_fname_spaces_description": {
+                "message": "Hvað á að gera við bil í skráaheitum."
+        },
+        "icon_badge_error_title": {
+                "message": "Birting villu í bakgrunni táknmynda"
+        },
+        "icon_badge_error_description": {
+                "message": "Bakgrunnur táknmynda á verkfærastiku gefur til kynna villur ef einhverjar eru í forgangi."
+        },
+        "hits_animation_title": {
+                "message": "Hreyfing á samsvörunum"
+        },
+        "hits_animation_description": {
+                "message": "Hreyfir samsvaranir þegar þær hafa breyst á listunum."
+        },
+        "smartnamer_enabled_title": {
+                "message": "Virkja snjallnefni"
+        },
+        "smartnamer_enabled_description": {
+                "message": "Búa til nafn út frá upplýsingum á síðunni"
+        },
+        "f4f_streaming": {
+                "message": "F4F streymi"
+        },
+        "flv_streaming": {
+                "message": "FLV streymi"
+        },
+        "f4f_prefetch": {
+                "message": "Forsækja F4F búta"
+        },
+        "f4f_enabled": {
+                "message": "F4F virkt"
+        },
+        "panels_astab_settings": {
+                "message": "Opna stillingar sem flipa"
+        },
+        "panels_astab_sites": {
+                "message": "Opna vefsvæði sem flipa"
+        },
+        "title_mode": {
+                "message": "Langir titlar á aðalspjaldi"
+        },
+        "title_mode_ellipsis_right": {
+                "message": "Úrfellingarmerki til hægri"
+        },
+        "title_mode_ellipsis_left": {
+                "message": "Úrfellingarmerki til vinstri"
+        },
+        "title_mode_multiline": {
+                "message": "Yfir margar línur"
+        },
+        "hit_go_to_tab": {
+                "message": "Fara á flipa"
+        },
+        "hits_goto_tab": {
+                "message": "Birta Fara-á-flipa haldfang"
+        },
+        "mp2t_streaming": {
+                "message": "MP2T streymi"
+        },
+        "hls_streaming": {
+                "message": "HLS streymi"
+        },
+        "dash_streaming": {
+                "message": "DASH streymi"
+        },
+        "chunks_title": {
+                "message": "Streymi í knippum (chunked)"
+        },
+        "chunks_enabled": {
+                "message": "Streymi í knippum virkt"
+        },
+        "dash_enabled": {
+                "message": "DASH virkt"
+        },
+        "dash_hide_m4s": {
+                "message": "Ekki birta .m4s færslur í niðurhalslista"
+        },
+        "mpegts_hide_ts": {
+                "message": "Ekki birta .ts færslur í niðurhalslista"
+        },
+        "chunks_concurrent_downloads": {
+                "message": "Samtímis niðurhöluð knippi"
+        },
+        "hls_enabled": {
+                "message": "HLS virkt"
+        },
+        "chunks_prefetch_count": {
+                "message": "Fjöldi forsóttra knippa"
+        },
+        "converter_update_version": {
+                "message": "Uppfæra umbreytiforrit í útgáfu %s"
+        },
+        "masked_enabled": {
+                "message": "Falið niðurhal virkt"
+        },
+        "masked_default_password": {
+                "message": "Falið niðurhal með sjálfgefnu lykilorði"
+        },
+        "masked_change_password": {
+                "message": "Breyta lykilorði"
+        },
+        "masked_save_password": {
+                "message": "Vista lykilorð"
+        },
+        "masked_info_title": {
+                "message": "Falið niðurhal"
+        },
+        "masked_info_descr1": {
+                "message": "Falið niðurhal tryggir að sótt efni verður einungis geymt á dulrituðu formi á vélinni þinni."
+        },
+        "masked_info_descr2": {
+                "message": "Til að vita hvernig eigi að meðhöndla útbúnar dulritaðar skrár, smelltu á Meira-hnappinn"
+        },
+        "masked_close": {
+                "message": "Loka"
+        },
+        "masked_more": {
+                "message": "Meira"
+        },
+        "action_avplay_title": {
+                "message": "Afspilun"
+        },
+        "action_avplay_description": {
+                "message": "Spila myndskeiðið í innbyggðum skoðara umbreytiforritsins"
+        },
+        "avplay_converter_required": {
+                "message": "Þessi aðgerð spilar myndskeiðið í innbyggðum skoðara umbreytiforritsins, en ekkert umbreytiforrit fannst"
+        },
+        "avplay_player_missing_text": {
+                "message": "Umbreytiforritið lítur út fyrir að vera uppsett, en meðfylgjandi myndskeiðaskoðari fannst ekki. Þú gætir þurft að setja umbreytiforritið upp aftur"
+        },
+        "avplay_player_missing_title": {
+                "message": "Vantar spilara"
+        },
+        "avplay_enabled": {
+                "message": "Spilari virkur"
+        },
+        "hls_download_as_m2ts": {
+                "message": "Sækja HLS streymi sem M2TS"
+        },
+        "clear_logs": {
+                "message": "Hreinsa annála"
+        },
+        "tbsn_enabled": {
+                "message": "Hjálp fyrir Facebook"
+        },
+        "tbts_enabled": {
+                "message": "Hjálp fyrir Twitter"
+        },
+        "tbvv_enabled": {
+                "message": "Hjálp með Vine"
+        },
+        "thumbnail_tumblr_mp4": {
+                "message": "Hjálp fyrir Tumblr"
+        },
+        "thumbnail_from_meta": {
+                "message": "Smámyndir myndskeiða út frá lýsigögnum síðu"
+        },
+        "thumbnail_direct_gif": {
+                "message": "Nota GIF-smámyndir"
+        },
+        "about_alpha_intro": {
+                "message": "Þetta er alfa-útgáfa."
+        },
+        "about_beta_intro": {
+                "message": "Þetta er beta-útgáfa."
+        },
+        "organize_videos": {
+                "message": "Skipuleggja myndskeið"
+        },
+        "action_noyt_title": {
+                "message": "Aðvörun frá YouTube"
+        },
+        "action_noyt_description": {
+                "message": "Um veiðar á myndskeiðum af YouTube"
+        },
+        "chrome_warning_yt": {
+                "message": "Aðvörun vegna Chrome-viðbóta og YouTube"
+        },
+        "chrome_noyt_text": {
+                "message": "Því miður, leyfir Chrome Web Store ekki viðbætur sem sækja YouTube-myndskeið, þannig að við þurftum að fjarlægja þennan eiginleika."
+        },
+        "chrome_noyt_text2": {
+                "message": "Þú getur notað VDH-niðurhalshjálpina til að sækja YouTube-myndskeið með Firefox-útgáfunni."
+        },
+        "chrome_install_firefox": {
+                "message": "Setja upp Firefox"
+        },
+        "chrome_install_fx_vdh": {
+                "message": "Video DownloadHelper fyrir Firefox"
+        },
+        "chrome_ignore_yt": {
+                "message": "Ekki finna nein YouTube-myndskeið lengur"
+        },
+        "chrome_ignore_yt2": {
+                "message": "Hunsa YouTube-myndskeið"
+        },
+        "chrome_stream_no_capture": {
+                "message": "Því miður styður þessi vafri ekki nauðsynlegar API-skipanir svo hægt sé að sækja þetta streymi. Við erum að vinna að lausn á þessu, þú getur prófað aftur síðar."
+        },
+        "chrome_stream_no_capture2": {
+                "message": "Sem stendur skaltu íhuga að nota í staðinn Video DownloadHelper á Firefox."
+        },
+        "chrome_stream_no_capture_title": {
+                "message": "Tekst ekki að vista streymi"
+        },
+        "action_stream_no_capture_title": {
+                "message": "Aðvörun við vistun"
+        },
+        "action_stream_no_capture_description": {
+                "message": "Um að vista sérstök myndstreymi"
+        },
+        "chrome_stream_no_capture_hide": {
+                "message": "Ekki sýna streymi sem ekki er hægt að vista"
+        }
+}
