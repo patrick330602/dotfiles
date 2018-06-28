@@ -1,9 +1,0 @@
-[Data Source]
-DisplayName=UST.Class
-Enabled=true
-Parent=local-stub
-
-[Calendar]
-BackendName=local
-Color=#A8C2E1
-Selected=true

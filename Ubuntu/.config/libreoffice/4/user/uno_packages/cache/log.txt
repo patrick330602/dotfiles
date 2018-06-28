@@ -1,7 +1,0 @@
-###### Progress log entry 2017-09-27 17:33:34 ######
-Reinstalling all deployed packages...
-###### Progress log entry 2017-09-27 17:33:34 ######
-###### Progress log entry 2017-09-27 17:36:16 ######
-###### Progress log entry 2017-09-27 23:41:17 ######
-###### Progress log entry 2017-09-28 01:11:45 ######
-###### Progress log entry 2017-09-28 11:37:25 ######
