@@ -2,10 +2,10 @@
 
 dotfiles of my Windows 10 Linux Subsystems.
 
-- **ubuntu** - my major setup, using Ubuntu 18.04
-- **ubuntu1604** - my secondary setup, using Ubuntu 16.04(not the default Ubuntu one)
+- **common** - shared dotfiles
+- **ubuntu** - my major setup, using Ubuntu 18.04(mainly) and 16.04
 - **kali** - my setup for Kali Linux
 - **debian** - My setup for Debian
 - **suse** -My setup for suse
 
-> old dotfiles is now in unused branch.
+> old dotfiles is now in `unused` branch.
