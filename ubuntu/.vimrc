@@ -2,12 +2,13 @@ set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
+set term=screen-256color
 set number
 syntax on
 set autoindent
 set noexpandtab
+let g:airline_theme = 'powerlineish'
 let g:airline_powerline_fonts = 1
-" let g:airline_theme='sol'
 let g:airline#extensions#tabline#enabled = 1
 " Always show statusline
 set laststatus=2
@@ -45,6 +46,10 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vim-scripts/Conque-GDB'
 
 Plugin 'sheerun/vim-polyglot'
+
+Plugin 'tpope/vim-fugitive'
+
+Plugin 'valloric/youcompleteme'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
