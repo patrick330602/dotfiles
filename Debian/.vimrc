@@ -1,22 +1,18 @@
-set guioptions-=m  "remove menu bar
-set guioptions-=T  "remove toolbar
-set guioptions-=r  "remove right-hand scroll bar
-set guioptions-=L  "remove left-hand scroll bar
+set mouse=a
+let g:nerdtree_tabs_open_on_console_startup = 2
 set term=screen-256color
 set number
 syntax on
 set autoindent
 set noexpandtab
+set guifont=Firasia\ CL\ Retina
 let g:airline_theme = 'powerlineish'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 " Always show statusline
 set laststatus=2
 set pastetoggle=<F10>
-nnoremap <C-F1> :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>
-nnoremap <C-F2> :if &go=~#'T'<Bar>set go-=T<Bar>else<Bar>set go+=T<Bar>endif<CR>
-nnoremap <C-F3> :if &go=~#'r'<Bar>set go-=r<Bar>else<Bar>set go+=r<Bar>endif<CR>
-nnoremap <silent> <F5> :NERDTree<CR>
+nnoremap <silent> <F5> :NERDTreeTabsToggle<CR>
 nnoremap <silent> <F4> :bnext<CR>
 nnoremap <silent> <F3> :bprev<CR>
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
@@ -49,7 +45,7 @@ Plugin 'sheerun/vim-polyglot'
 
 Plugin 'tpope/vim-fugitive'
 
-Plugin 'valloric/youcompleteme'
+Bundle 'jistr/vim-nerdtree-tabs'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

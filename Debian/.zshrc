@@ -1,10 +1,3 @@
-# Tmux
-tmux attach &> /dev/null
-
-if [[ ! $TERM =~ screen ]] && [ -z $TMUX ]; then
-	exec tmux
-fi
-
 # Oh My Zsh
 export ZSH=/home/patrick/.oh-my-zsh
 ZSH_THEME="wsler"
@@ -14,7 +7,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Settings
 export DISPLAY=:0
-export GTK_THEME=Arc:dark
+export GTK_THEME=Arc
 export GDK_SCALE=2
 export PULSE_SERVER=tcp:127.0.0.1
 export GPG_TTY=$(tty)
@@ -23,7 +16,7 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 
 # Virtualenv
 #export VIRTUAL_ENV_DISABLE_PROMPT=1
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3 
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
 source /usr/local/bin/virtualenvwrapper.sh
@@ -31,7 +24,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 # Alias
 alias cls='clear && echo -en "\e[3J"'
 alias g="git"
-alias socks='ALL_PROXY=socks5://127.0.0.1:1080/ http_proxy=http://127.0.0.1:1080/ https_proxy=http://127.0.0.1:1080/ HTTP_PROXY=http://127.0.0.1:1080/ HTTPS_PROXY=http://127.0.0.1:1080/'
+alias socks='ALL_PROXY=socks5://127.0.0.1:1080/ http_proxy=http://rua:rua@27.0.0.1:1080/ https_proxy=http://rua:rua@127.0.0.1:1080/ HTTP_PROXY=http://rua:rua@127.0.0.1:1080/ HTTPS_PROXY=http://rua:rua@127.0.0.1:1080/'
 
 # Perl
 PATH="/home/patrick/perl5/bin${PATH:+:${PATH}}"; export PATH;
