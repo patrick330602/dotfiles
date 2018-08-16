@@ -1,4 +1,5 @@
 set mouse=a
+let g:polyglot_disabled = ['latex']
 let g:nerdtree_tabs_open_on_console_startup = 2
 set term=screen-256color
 set number
@@ -46,6 +47,8 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'tpope/vim-fugitive'
 
 Bundle 'jistr/vim-nerdtree-tabs'
+
+Plugin 'lervag/vimtex'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

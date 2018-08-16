@@ -7,7 +7,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Settings
 export DISPLAY=:0
-export GTK_THEME=Arc
+export GTK_THEME=Arc:dark
 export GDK_SCALE=2
 export PULSE_SERVER=tcp:127.0.0.1
 export GPG_TTY=$(tty)
@@ -25,7 +25,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 alias cls='clear && echo -en "\e[3J"'
 alias g="git"
 alias socks='ALL_PROXY=socks5://127.0.0.1:1080/ http_proxy=http://rua:rua@27.0.0.1:1080/ https_proxy=http://rua:rua@127.0.0.1:1080/ HTTP_PROXY=http://rua:rua@127.0.0.1:1080/ HTTPS_PROXY=http://rua:rua@127.0.0.1:1080/'
-
+alias nemo="nemo --no-desktop"
 # Perl
 PATH="/home/patrick/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/home/patrick/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
