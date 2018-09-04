@@ -6,8 +6,17 @@ set number
 syntax on
 set autoindent
 set noexpandtab
-set guifont=Firasia\ CL\ Retina
-let g:airline_theme = 'powerlineish'
+set guifont=Fira\ Code
+" Activate FOCUS mode with F12
+nmap <F12> :Goyo <bar> Limelight!!<CR>"
+
+" Change the cursor from block to i-beam in INSERT mode
+let &t_SI = "\e[5 q"
+let &t_EI = "\e[1 q"
+augroup myCmds
+  au!
+  autocmd VimEnter * silent !echo -ne "\e[1 q"
+augroup END
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 " Always show statusline
@@ -49,6 +58,12 @@ Plugin 'tpope/vim-fugitive'
 Bundle 'jistr/vim-nerdtree-tabs'
 
 Plugin 'lervag/vimtex'
+
+Plugin 'junegunn/goyo.vim'
+
+Plugin 'junegunn/limelight.vim'
+
+Plugin 'digitaltoad/vim-pug'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
