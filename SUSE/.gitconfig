@@ -1,0 +1,23 @@
+[user]
+	email = wotingwu@live.com
+	name = Patrick Wu
+	signingkey = 28AABD481C58C28D
+[push]
+	default = simple
+[alias]
+	yolo = !git add -A && git commit -m \"$(curl -s whatthecommit.com/index.txt)\"
+	cb = checkout -b
+	bd = branch -d
+	c = checkout
+	m = merge
+	s = status -s
+	p = push
+	ps = push --set-upstream origin
+	l = pull
+	io = pull origin master
+	f = fetch
+	repo = remote -v
+	rr = remote rm origin
+	ra = remote add origin
+	ca = !git add -A && git commit -S -m
+
