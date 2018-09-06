@@ -1,3 +1,7 @@
+# VTE Settings for Tilix
+if [[ $TILIX_ID ]]; then
+	source /etc/profile.d/vte.sh
+fi
 # Oh My Zsh
 export ZSH=/home/patrick/.oh-my-zsh
 ZSH_THEME="callmepk"
@@ -7,7 +11,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Settings
 export DISPLAY=:0
-export GTK_THEME=Arc
+export LIBGL_ALWAYS_INDIRECT=1
 export GDK_SCALE=2
 export PULSE_SERVER=tcp:127.0.0.1
 export GPG_TTY=$(tty)
