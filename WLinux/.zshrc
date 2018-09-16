@@ -1,10 +1,6 @@
-# VTE Settings for Tilix
-if [[ $TILIX_ID ]]; then
-	source /etc/profile.d/vte.sh
-fi
 # Oh My Zsh
 export ZSH=/home/patrick/.oh-my-zsh
-ZSH_THEME="callmepk"
+ZSH_THEME="spaceship"
 export UPDATE_ZSH_DAYS=7
 plugins=(ubuntu command-not-found zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
