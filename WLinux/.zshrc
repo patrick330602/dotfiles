@@ -1,6 +1,6 @@
 # Oh My Zsh
 export ZSH=/home/patrick/.oh-my-zsh
-ZSH_THEME="spaceship"
+ZSH_THEME="callmepk"
 export UPDATE_ZSH_DAYS=7
 plugins=(ubuntu command-not-found zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
