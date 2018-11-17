@@ -1,9 +1,7 @@
-# Oh My Zsh
-export ZSH=/home/patrick/.oh-my-zsh
-ZSH_THEME="callmepk"
-export UPDATE_ZSH_DAYS=7
-plugins=(ubuntu command-not-found zsh-autosuggestions zsh-syntax-highlighting)
-source $ZSH/oh-my-zsh.sh
+autoload -U promptinit; promptinit
+prompt spaceship
+SPACESHIP_CHAR_SYMBOL="δ "
+SPACESHIP_BATTERY_SHOW=false
 
 # Settings
 export DISPLAY=:0
@@ -13,13 +11,14 @@ export PULSE_SERVER=tcp:127.0.0.1
 export GPG_TTY=$(tty)
 export PATH="${HOME}/exec:$PATH"
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+export RTV_BROWSER='wslview'
 
 # Virtualenv
 #export VIRTUAL_ENV_DISABLE_PROMPT=1
-#export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-#export WORKON_HOME=$HOME/.virtualenvs
-#export PROJECT_HOME=$HOME/Devel
-#source /usr/local/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
 
 # Alias
 alias cls='clear && echo -en "\e[3J"'
