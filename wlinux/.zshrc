@@ -13,13 +13,6 @@ export PATH="${HOME}/exec:$PATH"
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 export RTV_BROWSER='wslview'
 
-# Virtualenv
-#export VIRTUAL_ENV_DISABLE_PROMPT=1
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Devel
-source /usr/local/bin/virtualenvwrapper.sh
-
 # Alias
 alias cls='clear && echo -en "\e[3J"'
 alias g="git"
