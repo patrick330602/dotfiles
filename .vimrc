@@ -1,1 +1,0 @@
-/home/patrick/dotfiles/wlinux/.vimrc
