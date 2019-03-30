@@ -112,22 +112,32 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Bash Powerline Shell
+function _update_ps1() {
+    PS1=$(powerline-shell $?)
+}
+
+if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
+
 # Personal Export
 export PULSE_SERVER=tcp:127.0.0.1
 export GPG_TTY=$(tty)
-export PATH="${HOME}/exec:$PATH"
+export PATH="${HOME}/exec:/home/linuxbrew/.linuxbrew/bin:$PATH"
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 export RTV_BROWSER='wslview'
 
 # Virtualenv
 #export VIRTUAL_ENV_DISABLE_PROMPT=1
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Devel
-source /usr/local/bin/virtualenvwrapper.sh
+#export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+#export WORKON_HOME=$HOME/.virtualenvs
+#export PROJECT_HOME=$HOME/Devel
+#source /usr/local/bin/virtualenvwrapper.sh
 
 # Alias
 alias cls='clear && echo -en "\e[3J"'
 alias g="git"
 alias socks='ALL_PROXY=socks5://127.0.0.1:1080/ http_proxy=http://rua:rua@27.0.0.1:1080/ https_proxy=http://rua:rua@127.0.0.1:1080/ HTTP_PROXY=http://rua:rua@127.0.0.1:1080/ HTTPS_PROXY=http://rua:rua@127.0.0.1:1080/'
-alias nemo="nemo --no-desktop"
+alias wsudo=" powershell.exe -NoProfile -NonInteractive -Command sudo.ps1"
+
