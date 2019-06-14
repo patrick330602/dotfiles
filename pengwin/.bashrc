@@ -112,14 +112,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Bash Powerline Shell
-function _update_ps1() {
-    PS1=$(powerline-shell $?)
+# Custom command_not_found
+function command_not_found_handle {
+	echo "literally no one but you pointing at \"$1\": Is this a command?"
+        return 127
 }
-
-if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
-    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-fi
 
 # Personal Export
 export PULSE_SERVER=tcp:127.0.0.1
@@ -140,4 +137,21 @@ alias cls='clear && echo -en "\e[3J"'
 alias g="git"
 alias socks='ALL_PROXY=socks5://127.0.0.1:1080/ http_proxy=http://rua:rua@27.0.0.1:1080/ https_proxy=http://rua:rua@127.0.0.1:1080/ HTTP_PROXY=http://rua:rua@127.0.0.1:1080/ HTTPS_PROXY=http://rua:rua@127.0.0.1:1080/'
 alias wsudo=" powershell.exe -NoProfile -NonInteractive -Command sudo.ps1"
+alias hvc="hvc.exe"
+alias pengwin-dev="wslview debian"
+alias winps="powershell.exe"
 
+# n
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+
+# git bash prompt
+if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
+    GIT_PROMPT_ONLY_IN_REPO=0
+    GIT_PROMPT_THEME=Patrick
+    source $HOME/.bash-git-prompt/gitprompt.sh
+fi
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+	eval "$(pyenv init -)"
+fi

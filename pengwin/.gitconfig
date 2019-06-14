@@ -20,4 +20,3 @@
 	rr = remote rm origin
 	ra = remote add origin
 	ca = !git add -A && git commit -S -m
-
