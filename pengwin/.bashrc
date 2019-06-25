@@ -119,6 +119,7 @@ function command_not_found_handle {
 }
 
 # Personal Export
+export DISPLAY=$(ipconfig.exe | grep -A 5 "vEthernet (WSL)" | grep "IPv4" | grep -Pom 1 "[0-9.]{7,15}"):0.0
 export PULSE_SERVER=tcp:127.0.0.1
 export GPG_TTY=$(tty)
 export PATH="${HOME}/exec:/home/linuxbrew/.linuxbrew/bin:$PATH"
