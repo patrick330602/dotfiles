@@ -1,8 +1,10 @@
 # dotfiles
 
-dotfiles for my Windows, WSL and other linux.
+dotfiles for my Windows, WSL and other linux distros.
 
-- **Pengwin** - Pengwin dotfiles.
-- **Windows** - Windows dotfiles.
+- **pengwin** - Pengwin (WSL) dotfiles.
+- **windows** - Windows dotfiles.
+- **alpine** - Alpine Linux (WSL) dotfiles.
+- **linux-mint** - Linux Mint dotfiles.
 
 > old dotfiles is now in `unused` branch.
