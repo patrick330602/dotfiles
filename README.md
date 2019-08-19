@@ -1,8 +1,8 @@
 # dotfiles
 
-dotfiles of my Windows 10 Linux Subsystems.
+dotfiles for my Windows, WSL and other linux.
 
-- **WLinux** - WLinux dotfiles.
+- **Pengwin** - Pengwin dotfiles.
 - **Windows** - Windows dotfiles.
 
 > old dotfiles is now in `unused` branch.
