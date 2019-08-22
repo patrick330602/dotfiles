@@ -11,10 +11,10 @@ function Start-Backup {
   git --git-dir=C:\Users\Patrick\dotfiles\.git --work-tree=C:\Users\Patrick\dotfiles fetch
   git --git-dir=C:\Users\Patrick\dotfiles\.git --work-tree=C:\Users\Patrick\dotfiles pull
   Write-Host "Backup dotfiles.." -ForegroundColor Green
-  Copy-Item "C:\Users\Patrick\.vimrc" -Destination "C:\Users\Patrick\dotfiles\windows"
-  Copy-Item "C:\Users\Patrick\.gitconfig" -Destination "C:\Users\Patrick\dotiles\windows"
+  Copy-Item "C:\Users\Patrick\_vimrc" -Destination "C:\Users\Patrick\dotfiles\windows"
+  Copy-Item "C:\Users\Patrick\.gitconfig" -Destination "C:\Users\Patrick\dotfiles\windows"
   Write-Host "Backup Powershell configuration..." -ForegroundColor Green
-  Copy-Item "C:\Users\Patrick\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1" -Destination C:\Users\Patrick\dotfiles\windows\WindowsPowerShell
+  Copy-Item "C:\Users\Patrick\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1" -Destination "C:\Users\Patrick\dotfiles\windows\WindowsPowerShell"
   Get-InstalledModule > C:\Users\Patrick\dotfiles\windows\WindowsPowerShell\installedmodules.txt
   Write-Host "Backup Windows Terminal configuration..." -ForegroundColor Green
   Copy-Item "C:\Users\Patrick\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\RoamingState\*" -Destination "C:\Users\Patrick\dotfiles\windows\WindowsTerminal" -Recurse
