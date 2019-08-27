@@ -15,7 +15,7 @@ function Start-Backup {
   Copy-Item "C:\Users\Patrick\.gitconfig" -Destination "C:\Users\Patrick\dotfiles\windows"
   Write-Host "Backup Powershell configuration..." -ForegroundColor Green
   Copy-Item "C:\Users\Patrick\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1" -Destination "C:\Users\Patrick\dotfiles\windows\WindowsPowerShell"
-  Get-InstalledModule > C:\Users\Patrick\dotfiles\windows\WindowsPowerShell\installedmodules.txt
+  Get-Module > C:\Users\Patrick\dotfiles\windows\WindowsPowerShell\installedmodules.txt
   Write-Host "Backup Windows Terminal configuration..." -ForegroundColor Green
   Copy-Item "C:\Users\Patrick\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\RoamingState\*" -Destination "C:\Users\Patrick\dotfiles\windows\WindowsTerminal" -Recurse
   $timestamp = Get-Date -Format o | ForEach-Object { $_ -replace ":", "." }
