@@ -1,8 +1,8 @@
 function Open-Profile {code $PROFILE}
 
-function Update-PatrickScoopBucket {C:\Projects\Git\pkscbk\bin\auto-pr.ps1 -p}
-function Invoke-PatrickScoopBucket {C:\Projects\Git\pkscbk\bin\checkver.ps1}
-function Open-PatrickScoopBucket {Set-Location C:\Projects\Git\pkscbk\}
+function Update-PatrickScoopBucket {C:\Users\Patrick\Git\pkscbk\bin\auto-pr.ps1 -p}
+function Invoke-PatrickScoopBucket {C:\Users\Patrick\Git\pkscbk\bin\checkver.ps1}
+function Open-PatrickScoopBucket {Set-Location C:\Users\Patrick\Git\pkscbk\}
 function Open-Website {Set-Location C:\Projects\Websites\blog}
 function Get-AllHistory {Get-Content (Get-PSReadlineOption).HistorySavePath}
 
