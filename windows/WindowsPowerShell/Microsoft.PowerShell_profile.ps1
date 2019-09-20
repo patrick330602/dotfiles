@@ -30,9 +30,25 @@ Import-Module Get-ChildItemColor
 Set-Alias l Get-ChildItemColor -option AllScope
 Set-Alias ls Get-ChildItemColorFormatWide -option AllScope
 
-Import-Module posh-git
-Import-Module oh-my-posh
+#Import-Module posh-git
+#Import-Module oh-my-posh
+# Set-Theme Honukai
+# $ThemeSettings.PromptSymbols.PromptIndicator = [char]::ConvertFromUtf32(0x03bb)
+Import-Module PowerLine
+Set-PowerLinePrompt -SetCurrentDirectory -RestoreVirtualTerminal -Timestamp -Colors "#00DDFF", "#0066FF"
 
+$Prompt = @(
+  { Get-Date -f "T" }
+  { $MyInvocation.HistoryId }
+  { Get-SegmentedPath }
+  { "`t" }
+  { Get-Elapsed }
+  { "`n" }
+  { Test-Success }
+  { New-PromptText { "λ" } -Bg White -EBg Red -Fg Black }
+)
 
-Set-Theme Honukai
-$ThemeSettings.PromptSymbols.PromptIndicator = [char]::ConvertFromUtf32(0x03bb)
+[PoshCode.Pansies.Entities]::ExtendedCharacters.ColorSeparator = [char]::ConvertFromUtf32(0xE0B0)
+[PoshCode.Pansies.Entities]::ExtendedCharacters.ReverseColorSeparator = [char]::ConvertFromUtf32(0xE0B2)
+[PoshCode.Pansies.Entities]::ExtendedCharacters.Separator = [char]::ConvertFromUtf32(0xE0B1)
+[PoshCode.Pansies.Entities]::ExtendedCharacters.ReverseSeparator = [char]::ConvertFromUtf32(0xE0B3)
