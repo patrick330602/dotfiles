@@ -38,14 +38,13 @@ Import-Module PowerLine
 Set-PowerLinePrompt -SetCurrentDirectory -RestoreVirtualTerminal -Timestamp -Colors "#00DDFF", "#0066FF"
 
 $Prompt = @(
-  { Get-Date -f "T" }
+  { echo " "; Get-Date -f "T"; echo " " }
   { $MyInvocation.HistoryId }
   { Get-SegmentedPath }
   { "`t" }
   { Get-Elapsed }
   { "`n" }
-  { Test-Success }
-  { New-PromptText { "λ" } -Bg White -EBg Red -Fg Black }
+  { New-PromptText { " "+[char]::ConvertFromUtf32(0xE70F)+" " } -Bg White -EBg Red -Fg Black -EFg White}
 )
 
 [PoshCode.Pansies.Entities]::ExtendedCharacters.ColorSeparator = [char]::ConvertFromUtf32(0xE0B0)
