@@ -1,4 +1,5 @@
 {
+    "$schema": "https://aka.ms/terminal-profiles-schema",
     "globals" : 
     {
         "alwaysShowTabs" : true,
@@ -329,8 +330,8 @@
             "commandline" : "wsl.exe -d Alpine",
             "cursorColor" : "#FFFFFF",
             "cursorShape" : "bar",
-            "fontFace" : "Consolas",
-            "fontSize" : 10,
+            "fontFace" : "Sarasa Mono T CL",
+            "fontSize" : 12,
             "guid" : "{1777cdf0-b2c4-5a63-a204-eb60f349ea7c}",
             "historySize" : 9001,
             "icon" : "ms-appdata:///local/ap.png",
@@ -339,6 +340,65 @@
             "snapOnInput" : true,
             "startingDirectory" : "%USERPROFILE%",
             "useAcrylic" : false
+        },
+        {
+            "acrylicOpacity" : 0.5,
+            "closeOnExit" : true,
+            "colorScheme" : "Campbell",
+            "commandline" : "wsl.exe -d Arch",
+            "cursorColor" : "#FFFFFF",
+            "cursorShape" : "bar",
+            "fontFace" : "Sarasa Mono T CL",
+            "fontSize" : 12,
+            "historySize" : 9001,
+            "padding" : "0, 0, 0, 0",
+            "icon" : "ms-appdata:///local/al.png",
+            "name" : "Arch Linux",
+            "snapOnInput" : true,
+            "startingDirectory" : "%USERPROFILE%",
+            "useAcrylic" : false
+        },
+        {
+            "guid": "{0110db4a-cf7b-5647-9a03-7232d80cd09e}",
+            "hidden": true,
+            "name": "openSUSE-Leap-15-1",
+            "source": "Windows.Terminal.Wsl"
+        },
+        {
+            "guid": "{46ca431a-3a87-5fb3-83cd-11ececc031d2}",
+            "hidden": true,
+            "name": "kali-linux",
+            "source": "Windows.Terminal.Wsl"
+        },
+        {
+            "guid": "{0cd3ffa6-df28-5801-92e3-7778802cafe8}",
+            "hidden": true,
+            "name": "WLE",
+            "source": "Windows.Terminal.Wsl"
+        },
+        {
+            "guid": "{d3f31bee-5823-5ed8-8e04-f31ed54f2cd9}",
+            "hidden": true,
+            "name": "fedoraremix",
+            "source": "Windows.Terminal.Wsl"
+        },
+        {
+            "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+            "hidden": true,
+            "name": "Ubuntu",
+            "source": "Windows.Terminal.Wsl"
+        },
+        {
+            "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+            "hidden": true,
+            "name": "Debian",
+            "source": "Windows.Terminal.Wsl"
+        },
+        {
+            "guid": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
+            "hidden": true,
+            "name": "Arch",
+            "source": "Windows.Terminal.Wsl"
         }
     ],
     "schemes" : 
