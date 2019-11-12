@@ -1,554 +1,178 @@
+
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "globals" : 
-    {
-        "alwaysShowTabs" : true,
-        "copyOnSelect" : false,
-        "defaultProfile" : "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-        "initialCols" : 120,
-        "initialRows" : 30,
-        "keybindings" : 
-        [
-            {
-                "command" : "closePane",
-                "keys" : 
-                [
-                    "ctrl+shift+w"
-                ]
-            },
-            {
-                "command" : "copy",
-                "keys" : 
-                [
-                    "ctrl+shift+c"
-                ]
-            },
-            {
-                "command" : "duplicateTab",
-                "keys" : 
-                [
-                    "ctrl+shift+d"
-                ]
-            },
-            {
-                "command" : "newTab",
-                "keys" : 
-                [
-                    "ctrl+shift+t"
-                ]
-            },
-            {
-                "command" : "newTabProfile0",
-                "keys" : 
-                [
-                    "ctrl+shift+1"
-                ]
-            },
-            {
-                "command" : "newTabProfile1",
-                "keys" : 
-                [
-                    "ctrl+shift+2"
-                ]
-            },
-            {
-                "command" : "newTabProfile2",
-                "keys" : 
-                [
-                    "ctrl+shift+3"
-                ]
-            },
-            {
-                "command" : "newTabProfile3",
-                "keys" : 
-                [
-                    "ctrl+shift+4"
-                ]
-            },
-            {
-                "command" : "newTabProfile4",
-                "keys" : 
-                [
-                    "ctrl+shift+5"
-                ]
-            },
-            {
-                "command" : "newTabProfile5",
-                "keys" : 
-                [
-                    "ctrl+shift+6"
-                ]
-            },
-            {
-                "command" : "newTabProfile6",
-                "keys" : 
-                [
-                    "ctrl+shift+7"
-                ]
-            },
-            {
-                "command" : "newTabProfile7",
-                "keys" : 
-                [
-                    "ctrl+shift+8"
-                ]
-            },
-            {
-                "command" : "newTabProfile8",
-                "keys" : 
-                [
-                    "ctrl+shift+9"
-                ]
-            },
-            {
-                "command" : "nextTab",
-                "keys" : 
-                [
-                    "ctrl+tab"
-                ]
-            },
-            {
-                "command" : "openNewTabDropdown",
-                "keys" : 
-                [
-                    "ctrl+shift+space"
-                ]
-            },
-            {
-                "command" : "openSettings",
-                "keys" : 
-                [
-                    "ctrl+,"
-                ]
-            },
-            {
-                "command" : "paste",
-                "keys" : 
-                [
-                    "ctrl+shift+v"
-                ]
-            },
-            {
-                "command" : "prevTab",
-                "keys" : 
-                [
-                    "ctrl+shift+tab"
-                ]
-            },
-            {
-                "command" : "scrollDown",
-                "keys" : 
-                [
-                    "ctrl+shift+down"
-                ]
-            },
-            {
-                "command" : "scrollDownPage",
-                "keys" : 
-                [
-                    "ctrl+shift+pgdn"
-                ]
-            },
-            {
-                "command" : "scrollUp",
-                "keys" : 
-                [
-                    "ctrl+shift+up"
-                ]
-            },
-            {
-                "command" : "scrollUpPage",
-                "keys" : 
-                [
-                    "ctrl+shift+pgup"
-                ]
-            },
-            {
-                "command" : "switchToTab0",
-                "keys" : 
-                [
-                    "ctrl+alt+1"
-                ]
-            },
-            {
-                "command" : "switchToTab1",
-                "keys" : 
-                [
-                    "ctrl+alt+2"
-                ]
-            },
-            {
-                "command" : "switchToTab2",
-                "keys" : 
-                [
-                    "ctrl+alt+3"
-                ]
-            },
-            {
-                "command" : "switchToTab3",
-                "keys" : 
-                [
-                    "ctrl+alt+4"
-                ]
-            },
-            {
-                "command" : "switchToTab4",
-                "keys" : 
-                [
-                    "ctrl+alt+5"
-                ]
-            },
-            {
-                "command" : "switchToTab5",
-                "keys" : 
-                [
-                    "ctrl+alt+6"
-                ]
-            },
-            {
-                "command" : "switchToTab6",
-                "keys" : 
-                [
-                    "ctrl+alt+7"
-                ]
-            },
-            {
-                "command" : "switchToTab7",
-                "keys" : 
-                [
-                    "ctrl+alt+8"
-                ]
-            },
-            {
-                "command" : "switchToTab8",
-                "keys" : 
-                [
-                    "ctrl+alt+9"
-                ]
-            }
-        ],
-        "requestedTheme" : "system",
-        "showTabsInTitlebar" : true,
-        "showTerminalTitleInTitlebar" : true,
-        "wordDelimiters" : " ./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}~?\u2502"
-    },
-    "profiles" : 
+    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "disabledProfileSources": ["Windows.Terminal.Wsl"],
+    "profiles":
     [
         {
-            "acrylicOpacity" : 0.5,
-            "background" : "#012456",
-            "closeOnExit" : true,
-            "colorScheme" : "Campbell",
-            "commandline" : "powershell.exe",
-            "cursorColor" : "#FFFFFF",
-            "cursorShape" : "bar",
-            "fontFace" : "DelugiaCode NF",
-            "fontSize" : 12,
-            "guid" : "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-            "historySize" : 9001,
-            "icon" : "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
-            "name" : "PowerShell",
-            "padding" : "0, 0, 0, 0",
-            "snapOnInput" : true,
-            "useAcrylic" : true
+            "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+            "name": "Windows PowerShell",
+            "colorScheme": "MaterialDark",
+            "commandline": "powershell.exe -nologo",
+            "acrylicOpacity": 0.7,
+            "fontFace": "Sarasa Mono T CL",
+            "useAcrylic": true,
+            "hidden": false
+        },
+        
+        {
+            "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+            "name": "DOS but not DOS",
+            "colorScheme": "MaterialDark",
+            "commandline": "cmd.exe",
+            "hidden": false
         },
         {
-            "acrylicOpacity" : 0.75,
-            "closeOnExit" : true,
-            "colorScheme" : "Campbell",
-            "commandline" : "cmd.exe",
-            "cursorColor" : "#FFFFFF",
-            "cursorShape" : "bar",
-            "fontFace" : "Cascadia Code",
-            "fontSize" : 12,
-            "guid" : "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-            "historySize" : 9001,
-            "icon" : "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
-            "name" : "Command Prompt",
-            "padding" : "0, 0, 0, 0",
-            "snapOnInput" : true,
-            "startingDirectory" : "%USERPROFILE%",
-            "useAcrylic" : true
-        },
-        {
-            "acrylicOpacity" : 0.59999999999999998,
-            "closeOnExit" : false,
-            "colorScheme" : "Vintage",
-            "commandline" : "Azure",
-            "connectionType" : "{d9fcfdfa-a479-412c-83b7-c5640e61cd62}",
-            "cursorColor" : "#FFFFFF",
-            "cursorShape" : "bar",
-            "fontFace" : "Sarasa Mono T CL",
-            "fontSize" : 12,
-            "guid" : "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-            "historySize" : 9001,
-            "icon" : "ms-appx:///ProfileIcons/{b453ae62-4e3d-5e58-b989-0a998ec441b8}.png",
-            "name" : "Azure Cloud Shell",
-            "padding" : "0, 0, 0, 0",
-            "snapOnInput" : true,
-            "useAcrylic" : true
-        },
-        {
-            "acrylicOpacity" : 0.75,
-            "closeOnExit" : true,
-            "colorScheme" : "Campbell",
-            "commandline" : "wsl.exe -d WLinux",
-            "cursorColor" : "#FFFFFF",
-            "cursorShape" : "bar",
-            "fontFace" : "Sarasa Mono T CL",
-            "fontSize" : 12,
-            "guid" : "{7f586916-8357-53d4-bb2b-ca96f639898a}",
-            "historySize" : 9001,
-            "icon" : "ms-appdata:///local/pengwin.png",
-            "name" : "Pengwin",
-            "padding" : "0, 0, 0, 0",
-            "snapOnInput" : true,
-            "startingDirectory" : "%USERPROFILE%",
-            "useAcrylic" : true
-        },
-        {
-            "acrylicOpacity" : 0.5,
-            "closeOnExit" : true,
-            "colorScheme" : "Ubuntu",
-            "commandline" : "wsl.exe -d Ubuntu",
-            "cursorColor" : "#FFFFFF",
-            "cursorShape" : "bar",
-            "fontFace" : "Sarasa Mono T CL",
-            "fontSize" : 12,
-            "guid" : "{6f9994f0-4403-5e85-9cce-98e5da3839bb}",
-            "historySize" : 9001,
+            "name":"Ubuntu 18.04 LTS",
+            "commandline": "wsl.exe -d Ubuntu-18.04",
             "icon" : "ms-appdata:///local/ubuntu.png",
-            "name" : "Ubuntu",
-            "padding" : "0, 0, 0, 0",
-            "snapOnInput" : true,
-            "useAcrylic" : true
+            "colorScheme": "MaterialDark",
+            "acrylicOpacity": 0.5,
+            "fontFace": "Sarasa Mono T CL",
+            "useAcrylic": true,            
+            "hidden": false
         },
         {
-            "acrylicOpacity" : 0.5,
-            "closeOnExit" : true,
-            "colorScheme" : "Campbell",
-            "commandline" : "wsl.exe -d Alpine",
-            "cursorColor" : "#FFFFFF",
-            "cursorShape" : "bar",
-            "fontFace" : "Sarasa Mono T CL",
-            "fontSize" : 12,
-            "guid" : "{1777cdf0-b2c4-5a63-a204-eb60f349ea7c}",
-            "historySize" : 9001,
+            "name":"Ubuntu 16.04 LTS",
+            "commandline": "wsl.exe -d Ubuntu-16.04",
+            "icon" : "ms-appdata:///local/ubuntu.png",
+            "colorScheme": "MaterialDark",
+            "acrylicOpacity": 0.5,
+            "fontFace": "Sarasa Mono T CL",
+            "useAcrylic": true,            
+            "hidden": false
+        },
+        {
+            "name":"Ubuntu 20.04 Dev Build",
+            "commandline": "wsl.exe -d ubuntu-focal",
+            "icon" : "ms-appdata:///local/ubuntu.png",
+            "colorScheme": "MaterialDark",
+            "acrylicOpacity": 0.5,
+            "fontFace": "Sarasa Mono T CL",
+            "useAcrylic": true,            
+            "hidden": false
+        },
+        {
+            "hidden": false,
+            "name": "Pengwin",
+            "commandline": "wsl.exe -d WLinux",
+            "icon" : "ms-appdata:///local/pengwin.png",
+            "colorScheme": "MaterialDark",
+            "acrylicOpacity": 0.5,
+            "fontFace": "Sarasa Mono T CL",
+            "useAcrylic": true
+        },
+        {
+            "hidden": false,
+            "name": "Alpine Linux",
+            "commandline": "wsl.exe -d Alpine",
             "icon" : "ms-appdata:///local/ap.png",
-            "name" : "Alpine Linux",
-            "padding" : "0, 0, 0, 0",
-            "snapOnInput" : true,
-            "startingDirectory" : "%USERPROFILE%",
-            "useAcrylic" : false
+            "colorScheme": "MaterialDark",
+            "acrylicOpacity": 0.5,
+            "fontFace": "Sarasa Mono T CL",
+            "useAcrylic": true
         },
         {
-            "acrylicOpacity" : 0.5,
-            "closeOnExit" : true,
-            "colorScheme" : "Campbell",
-            "commandline" : "wsl.exe -d Arch",
-            "cursorColor" : "#FFFFFF",
-            "cursorShape" : "bar",
-            "fontFace" : "Sarasa Mono T CL",
-            "fontSize" : 12,
-            "historySize" : 9001,
-            "padding" : "0, 0, 0, 0",
-            "icon" : "ms-appdata:///local/al.png",
-            "name" : "Arch Linux",
-            "snapOnInput" : true,
-            "startingDirectory" : "%USERPROFILE%",
-            "useAcrylic" : false
-        },
-        {
-            "guid": "{0110db4a-cf7b-5647-9a03-7232d80cd09e}",
+            "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
             "hidden": true,
-            "name": "openSUSE-Leap-15-1",
-            "source": "Windows.Terminal.Wsl"
+            "name": "Azure Cloud Shell",
+            "source": "Windows.Terminal.Azure"
         },
         {
-            "guid": "{46ca431a-3a87-5fb3-83cd-11ececc031d2}",
-            "hidden": true,
-            "name": "kali-linux",
-            "source": "Windows.Terminal.Wsl"
-        },
-        {
-            "guid": "{0cd3ffa6-df28-5801-92e3-7778802cafe8}",
-            "hidden": true,
-            "name": "WLE",
-            "source": "Windows.Terminal.Wsl"
-        },
-        {
-            "guid": "{d3f31bee-5823-5ed8-8e04-f31ed54f2cd9}",
-            "hidden": true,
-            "name": "fedoraremix",
-            "source": "Windows.Terminal.Wsl"
-        },
-        {
-            "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-            "hidden": true,
-            "name": "Ubuntu",
-            "source": "Windows.Terminal.Wsl"
-        },
-        {
-            "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
-            "hidden": true,
-            "name": "Debian",
-            "source": "Windows.Terminal.Wsl"
-        },
-        {
-            "guid": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
-            "hidden": true,
-            "name": "Arch",
-            "source": "Windows.Terminal.Wsl"
+            "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+            "hidden": false,
+            "name": "PowerShell Core",
+            "source": "Windows.Terminal.PowershellCore"
         }
     ],
-    "schemes" : 
-    [
-        {
-            "background" : "#0C0C0C",
-            "black" : "#0C0C0C",
-            "blue" : "#0037DA",
-            "brightBlack" : "#767676",
-            "brightBlue" : "#3B78FF",
-            "brightCyan" : "#61D6D6",
-            "brightGreen" : "#16C60C",
-            "brightPurple" : "#B4009E",
-            "brightRed" : "#E74856",
-            "brightWhite" : "#F2F2F2",
-            "brightYellow" : "#F9F1A5",
-            "cyan" : "#3A96DD",
-            "foreground" : "#CCCCCC",
-            "green" : "#13A10E",
-            "name" : "Campbell",
-            "purple" : "#881798",
-            "red" : "#C50F1F",
-            "white" : "#CCCCCC",
-            "yellow" : "#C19C00"
-        },
-        {
-            "background" : "#000000",
-            "black" : "#000000",
-            "blue" : "#000080",
-            "brightBlack" : "#808080",
-            "brightBlue" : "#0000FF",
-            "brightCyan" : "#00FFFF",
-            "brightGreen" : "#00FF00",
-            "brightPurple" : "#FF00FF",
-            "brightRed" : "#FF0000",
-            "brightWhite" : "#FFFFFF",
-            "brightYellow" : "#FFFF00",
-            "cyan" : "#008080",
-            "foreground" : "#C0C0C0",
-            "green" : "#008000",
-            "name" : "Vintage",
-            "purple" : "#800080",
-            "red" : "#800000",
-            "white" : "#C0C0C0",
-            "yellow" : "#808000"
-        },
-        {
-            "background" : "#282C34",
-            "black" : "#282C34",
-            "blue" : "#61AFEF",
-            "brightBlack" : "#5A6374",
-            "brightBlue" : "#61AFEF",
-            "brightCyan" : "#56B6C2",
-            "brightGreen" : "#98C379",
-            "brightPurple" : "#C678DD",
-            "brightRed" : "#E06C75",
-            "brightWhite" : "#DCDFE4",
-            "brightYellow" : "#E5C07B",
-            "cyan" : "#56B6C2",
-            "foreground" : "#DCDFE4",
-            "green" : "#98C379",
-            "name" : "One Half Dark",
-            "purple" : "#C678DD",
-            "red" : "#E06C75",
-            "white" : "#DCDFE4",
-            "yellow" : "#E5C07B"
-        },
-        {
-            "background" : "#FAFAFA",
-            "black" : "#383A42",
-            "blue" : "#0184BC",
-            "brightBlack" : "#4F525D",
-            "brightBlue" : "#61AFEF",
-            "brightCyan" : "#56B5C1",
-            "brightGreen" : "#98C379",
-            "brightPurple" : "#C577DD",
-            "brightRed" : "#DF6C75",
-            "brightWhite" : "#FFFFFF",
-            "brightYellow" : "#E4C07A",
-            "cyan" : "#0997B3",
-            "foreground" : "#383A42",
-            "green" : "#50A14F",
-            "name" : "One Half Light",
-            "purple" : "#A626A4",
-            "red" : "#E45649",
-            "white" : "#FAFAFA",
-            "yellow" : "#C18301"
-        },
-        {
-            "background" : "#002B36",
-            "black" : "#073642",
-            "blue" : "#268BD2",
-            "brightBlack" : "#002B36",
-            "brightBlue" : "#839496",
-            "brightCyan" : "#93A1A1",
-            "brightGreen" : "#586E75",
-            "brightPurple" : "#6C71C4",
-            "brightRed" : "#CB4B16",
-            "brightWhite" : "#FDF6E3",
-            "brightYellow" : "#657B83",
-            "cyan" : "#2AA198",
-            "foreground" : "#839496",
-            "green" : "#859900",
-            "name" : "Solarized Dark",
-            "purple" : "#D33682",
-            "red" : "#DC322F",
-            "white" : "#EEE8D5",
-            "yellow" : "#B58900"
-        },
-        {
-            "background" : "#FDF6E3",
-            "black" : "#073642",
-            "blue" : "#268BD2",
-            "brightBlack" : "#002B36",
-            "brightBlue" : "#839496",
-            "brightCyan" : "#93A1A1",
-            "brightGreen" : "#586E75",
-            "brightPurple" : "#6C71C4",
-            "brightRed" : "#CB4B16",
-            "brightWhite" : "#FDF6E3",
-            "brightYellow" : "#657B83",
-            "cyan" : "#2AA198",
-            "foreground" : "#657B83",
-            "green" : "#859900",
-            "name" : "Solarized Light",
-            "purple" : "#D33682",
-            "red" : "#DC322F",
-            "white" : "#EEE8D5",
-            "yellow" : "#B58900"
-        },
+
+    "schemes": [{
+        "name": "Material",
+        "black": "#212121",
+        "red": "#b7141f",
+        "green": "#457b24",
+        "yellow": "#f6981e",
+        "blue": "#134eb2",
+        "purple": "#560088",
+        "cyan": "#0e717c",
+        "white": "#efefef",
+        "brightBlack": "#424242",
+        "brightRed": "#e83b3f",
+        "brightGreen": "#7aba3a",
+        "brightYellow": "#ffea2e",
+        "brightBlue": "#54a4f3",
+        "brightPurple": "#aa4dbc",
+        "brightCyan": "#26bbd1",
+        "brightWhite": "#d9d9d9",
+        "background": "#eaeaea",
+        "foreground": "#232322"
+      },
 {
-  "name": "Ubuntu",
-  "black": "#2e3436",
-  "red": "#cc0000",
-  "green": "#4e9a06",
-  "yellow": "#c4a000",
-  "blue": "#3465a4",
-  "purple": "#75507b",
-  "cyan": "#06989a",
-  "white": "#d3d7cf",
-  "brightBlack": "#555753",
-  "brightRed": "#ef2929",
-  "brightGreen": "#8ae234",
-  "brightYellow": "#fce94f",
-  "brightBlue": "#729fcf",
-  "brightPurple": "#ad7fa8",
-  "brightCyan": "#34e2e2",
-  "brightWhite": "#eeeeec",
-  "background": "#300a24",
-  "foreground": "#eeeeec"
+  "name": "MaterialDark",
+  "black": "#212121",
+  "red": "#b7141f",
+  "green": "#457b24",
+  "yellow": "#f6981e",
+  "blue": "#134eb2",
+  "purple": "#560088",
+  "cyan": "#0e717c",
+  "white": "#efefef",
+  "brightBlack": "#424242",
+  "brightRed": "#e83b3f",
+  "brightGreen": "#7aba3a",
+  "brightYellow": "#ffea2e",
+  "brightBlue": "#54a4f3",
+  "brightPurple": "#aa4dbc",
+  "brightCyan": "#26bbd1",
+  "brightWhite": "#d9d9d9",
+  "background": "#232322",
+  "foreground": "#e5e5e5"
+}],
+    "keybindings": [
+{
+    "command" : "splitHorizontal",
+    "keys" : ["ctrl+shift+-"]
+},
+{
+    "command" : "splitVertical",
+    "keys" : ["ctrl+shift+="]
+},
+{
+    "command" : "moveFocusUp",
+    "keys" : ["ctrl+alt+up"]
+},
+{
+    "command" : "moveFocusDown",
+    "keys" : ["ctrl+alt+down"]
+},
+{
+    "command" : "moveFocusLeft",
+    "keys" : ["ctrl+alt+left"]
+},
+{
+    "command" : "moveFocusRight",
+    "keys" : ["ctrl+alt+right"]
+},
+{
+    "command" : "resizePaneUp",
+    "keys" : ["shift+alt+up"]
+},
+{
+    "command" : "resizePaneDown",
+    "keys" : ["shift+alt+down"]
+},
+{
+    "command" : "resizePaneLeft",
+    "keys" : ["shift+alt+left"]
+},
+{
+    "command" : "resizePaneRight",
+    "keys" : ["shift+alt+right"]
+},
+{
+    "command" : "closePane",
+    "keys" : ["ctrl+shift+w"]
 }
-    ]
+]
 }

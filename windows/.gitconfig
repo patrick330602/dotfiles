@@ -23,7 +23,7 @@
         ra = remote add origin
 	ca = !git add -A && git commit -S -m
 [gpg]
-	program = C:\\Users\\Patrick\\scoop\\apps\\gpg\\current\\bin\\gpg.exe
+	program = "C:\\Users\\Patrick Wu\\scoop\\apps\\gpg\\current\\bin\\gpg.exe"
 [credential]
 	helper = manager
 [filter "lfs"]
