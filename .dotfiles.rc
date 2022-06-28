@@ -1,0 +1,18 @@
+# shellcheck disable=SC2148
+# ignore SC2148 since this file is sourced by all shells
+
+# source common.rc
+# shellcheck disable=SC1091
+. "$HOME/.dotfiles/common.rc"
+
+# source mac.rc if it is a mac
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  # shellcheck disable=SC1091
+  . "$HOME/.dotfiles/mac.rc"
+fi
+
+# source linux.rc if it is linux
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+  # shellcheck disable=SC1091
+  . "$HOME/.dotfiles/linux.rc"
+fi

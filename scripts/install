@@ -1,0 +1,61 @@
+#!/bin/sh
+
+# install brew if not installed
+if test ! "$(which brew)"; then
+    echo "Installing Homebrew..."
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+    # source brew; if it is mac, also install coreutils and gnu-sed
+    case "$(uname -s)" in
+        Darwin*)
+            eval "$(/opt/homebrew/bin/brew shellenv)"
+            brew install coreutils gnu-sed starship zsh-syntax-highlighting
+            ;;
+        Linux*)
+            eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+            brew install starship
+            ;;
+    esac
+fi
+
+SED=$(which sed)
+case "$(uname -s)" in
+    Darwin*)
+        if test "$(which gsed)"; then
+            SED=$(which gsed)
+        fi
+    ;;
+esac
+
+git clone "git@git.wedotstud.io:patrick/dotfiles.git" "$HOME/.dotfiles" || {
+    # If SSH clone fails, try HTTPS
+    echo "SSH clone failed, trying with HTTPS..."
+    git clone "https://git.wedotstud.io/patrick/dotfiles.git" "$HOME/.dotfiles"
+}
+
+# insert into .bashrc or .zshrc if not already there
+if ! grep -q ". $HOME/.dotfiles/.dotfiles.rc" "$HOME/.bashrc"; then
+    # try to insert before the line "# Fig post block" or "# CodeWhisperer post block"
+    if grep -q "# Fig post block" "$HOME/.bashrc"; then
+        $SED -i "/# Fig post block/i . $HOME/.dotfiles/.dotfiles.rc" "$HOME/.bashrc"
+    elif grep -q "# CodeWhisperer post block" "$HOME/.bashrc"; then
+        $SED -i "/# CodeWhisperer post block/i . $HOME/.dotfiles/.dotfiles.rc" "$HOME/.bashrc"
+    else
+        # if neither of those lines exist, just append to the end of the file
+        echo ". $HOME/.dotfiles/.dotfiles.rc" >> "$HOME/.bashrc"
+    fi
+fi
+
+if ! grep -q ". $HOME/.dotfiles/.dotfiles.rc" "$HOME/.zshrc"; then
+    # try to insert before the line "# Fig post block" or "# CodeWhisperer post block"
+    if grep -q "# Fig post block" "$HOME/.zshrc"; then
+        $SED -i "/# Fig post block/i . $HOME/.dotfiles/.dotfiles.rc" "$HOME/.zshrc"
+    elif grep -q "# CodeWhisperer post block" "$HOME/.zshrc"; then
+        $SED -i "/# CodeWhisperer post block/i . $HOME/.dotfiles/.dotfiles.rc" "$HOME/.zshrc"
+    else
+        # if neither of those lines exist, just append to the end of the file
+        echo ". $HOME/.dotfiles/.dotfiles.rc" >> "$HOME/.zshrc"
+    fi
+fi
+
+PATH="$HOME/.dotfiles/bin:$PATH"

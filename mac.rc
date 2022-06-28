@@ -1,0 +1,56 @@
+# shellcheck disable=SC2148
+# ignore SC2148 since this file is sourced by all shells
+
+#export PATH="/Library/Developer/CommandLineTools/usr/bin:/usr/local/bin:/usr/local/sbin:$PATH:/usr/local/opt/coreutils/libexec/gnubin"
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH:/usr/local/opt/coreutils/libexec/gnubin"
+
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/openssl/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl/include"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
+
+if [ "$(arch)" = "arm64" ]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+else
+    eval "$(/usr/local/bin/brew shellenv)"
+fi
+
+# load only if running in zsh
+if [ -n "$ZSH_VERSION" ]; then
+  # load starship prompt if it is installed, else warn the user to install it
+    if [ -f /opt/homebrew/bin/starship ]; then
+        eval "$(starship init zsh)"
+    else
+        echo "starship is not installed. Install it with 'brew install starship'"
+    fi
+
+    # load zsh-syntax highlighting if it is installed, else warn the user to install it
+    if [ -f /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
+        source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+    else
+        echo "zsh-syntax-highlighting is not installed. Install it with 'brew install zsh-syntax-highlighting'"
+    fi
+fi
+
+# load only if running in bash
+if [ -n "${BASH_VERSINFO}" ]; then
+  # load starship prompt if it is installed, else warn the user to install it
+    if [ -f /opt/homebrew/bin/starship ]; then
+        eval "$(starship init bash)"
+    else
+        echo "starship is not installed. Install it with 'brew install starship'"
+    fi
+fi
+
+#alias
+
+alias unlock-librewolf="xattr -cr /Applications/LibreWolf.app"
+alias unlock-docker="security -v unlock-keychain ~/Library/Keychains/login.keychain-db"
+alias updateall="brew update && brew upgrade && brew cu -f -a -y && mas upgrade"

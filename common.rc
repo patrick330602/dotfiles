@@ -1,0 +1,7 @@
+# exports
+export GPG_TTY=$(tty)
+export PATH="$(PWD)/go/bin:$PATH"
+
+
+# alias
+alias dchdate="date +'%a, %d %b %Y %T %z'"

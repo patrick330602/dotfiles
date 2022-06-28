@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# Define the commands
+SED=$(which sed)
+case "$(uname -s)" in
+    Darwin*)
+        if test "$(which gsed)"; then
+            SED=$(which gsed)
+        fi
+    ;;
+esac
+
+# Remove cloned repository
+if [ -d "$HOME/.dotfiles" ]; then
+    echo "Removing cloned repository..."
+    rm -rf "$HOME/.dotfiles"
+fi
+
+# Remove source line from .bashrc and .zshrc
+if grep -q ". ~/.dotfiles/.dotfiles.rc" "$HOME/.bashrc"; then
+    echo "Removing source line from .bashrc..."
+    $SED -i '/. ~\/.dotfiles\/.dotfiles.rc/d' "$HOME/.bashrc"
+fi
+
+if grep -q ". ~/.dotfiles/.dotfiles.rc" "$HOME/.zshrc"; then
+    echo "Removing source line from .zshrc..."
+    $SED -i '/. ~\/.dotfiles\/.dotfiles.rc/d' "$HOME/.zshrc"
+fi
