@@ -16,13 +16,31 @@ if [ -d "$HOME/.dotfiles" ]; then
     rm -rf "$HOME/.dotfiles"
 fi
 
+escape_slashes() {
+    echo "$1" | $SED 's/\//\\\//g'
+}
+
+ESCAPED_HOME=$(escape_slashes "$HOME")
+
 # Remove source line from .bashrc and .zshrc
 if grep -q ". $HOME/.dotfiles/.dotfiles.rc" "$HOME/.bashrc"; then
     echo "Removing source line from .bashrc..."
-    $SED -i "/. $HOME\/.dotfiles\/.dotfiles.rc/d" "$HOME/.bashrc"
+    $SED -i "/. $ESCAPED_HOME\/.dotfiles\/.dotfiles.rc/d" "$HOME/.bashrc"
 fi
 
 if grep -q ". $HOME/.dotfiles/.dotfiles.rc" "$HOME/.zshrc"; then
     echo "Removing source line from .zshrc..."
-    $SED -i "/. $HOME\/.dotfiles\/.dotfiles.rc/d" "$HOME/.zshrc"
+    $SED -i "/. $ESCAPED_HOME\/.dotfiles\/.dotfiles.rc/d" "$HOME/.zshrc"
+fi
+
+# Remove nvim configuration
+if test -f "$HOME/.config/nvim/init.vim"; then
+    echo "Removing nvim configuration..."
+    rm "$HOME/.config/nvim/init.vim"
+fi
+
+# Remove vim-plug installation
+if test -f "$HOME/.local/share/nvim/site/autoload/plug.vim"; then
+    echo "Removing vim-plug installation..."
+    rm "$HOME/.local/share/nvim/site/autoload/plug.vim"
 fi

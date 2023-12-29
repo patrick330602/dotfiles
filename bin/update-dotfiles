@@ -11,4 +11,16 @@ if [ -d "$HOME/.dotfiles" ]; then
     cd -
 fi
 
+# install configuration nvim-config.vim to ~/.config/nvim/init.vim
+# backup existing init.vim if it exists
+if test -f "$HOME/.config/nvim/init.vim"; then
+    echo "Backing up existing nvim configuration..."
+    mv "$HOME/.config/nvim/init.vim" "$HOME/.config/nvim/init.vim.bak"
+fi
+echo "Updating nvim configuration..."
+mkdir -p "$HOME/.config/nvim"
+ln -s "$HOME/.dotfiles/nvim-config.vim" "$HOME/.config/nvim/init.vim"
+nvim +PlugClean +PlugUpdate +PlugUpgrade +qall +silent
+
+
 echo "Done! Please restart your shell."

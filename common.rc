@@ -5,3 +5,8 @@ export PATH="$HOME/go/bin:$PATH"
 
 # alias
 alias dchdate="date +'%a, %d %b %Y %T %z'"
+
+# if nvim is installed, alias vim to nvim
+if test "$(which nvim)"; then
+    alias vim="nvim"
+fi

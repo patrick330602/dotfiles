@@ -73,3 +73,43 @@ if ! grep -q ". $HOME/.dotfiles/.dotfiles.rc" "$HOME/.zshrc"; then
         echo ". $HOME/.dotfiles/.dotfiles.rc" >> "$HOME/.zshrc"
     fi
 fi
+
+# install neovim
+if ! test "$(which nvim)"; then
+    echo "Installing neovim..."
+    case "$(uname -s)" in
+        Darwin*)
+            brew install neovim
+            ;;
+        Linux*)
+            # if fedora, install from dnf
+            if test "$(which dnf)"; then
+                sudo dnf install -y neovim
+            # if ubuntu, install from apt
+            elif test "$(which apt)"; then
+                sudo apt install -y neovim
+            fi
+            ;;
+    esac
+fi
+
+# install vim-plug
+if ! test -f "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim; then
+    echo "Installing vim-plug..."
+    curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+fi
+
+# install configuration nvim-config.vim to ~/.config/nvim/init.vim
+# backup existing init.vim if it exists
+if test -f "$HOME/.config/nvim/init.vim"; then
+    echo "Backing up existing nvim configuration..."
+    mv "$HOME/.config/nvim/init.vim" "$HOME/.config/nvim/init.vim.bak"
+fi
+echo "Installing nvim configuration..."
+mkdir -p "$HOME/.config/nvim"
+ln -s "$HOME/.dotfiles/nvim-config.vim" "$HOME/.config/nvim/init.vim"
+
+nvim +PlugClean +PlugUpdate +PlugUpgrade +qall +silent
+
+echo "Done! Please restart your shell."
