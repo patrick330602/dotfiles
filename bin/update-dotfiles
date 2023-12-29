@@ -1,19 +1,5 @@
 #!/bin/sh
 
-# Define the commands
-SED=$(which sed)
-LN=$(which ln)
-case "$(uname -s)" in
-    Darwin*)
-        if test "$(which gsed)"; then
-            SED=$(which gsed)
-        fi
-        if test "$(which gln)"; then
-            LN=$(which gln)
-        fi
-    ;;
-esac
-
 # Update the repository
 if [ -d "$HOME/.dotfiles" ]; then
     echo "Updating repository..."
