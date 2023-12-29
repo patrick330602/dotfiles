@@ -18,3 +18,9 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   # shellcheck disable=SC1091
   . "$HOME/.dotfiles/linux.rc"
 fi
+
+# source .private.rc if it exists
+if [ -f "$HOME/.private.rc" ]; then
+  # shellcheck disable=SC1091
+  . "$HOME/.private.rc"
+fi
