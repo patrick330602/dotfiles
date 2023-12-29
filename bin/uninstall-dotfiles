@@ -17,12 +17,12 @@ if [ -d "$HOME/.dotfiles" ]; then
 fi
 
 # Remove source line from .bashrc and .zshrc
-if grep -q ". ~/.dotfiles/.dotfiles.rc" "$HOME/.bashrc"; then
+if grep -q ". $HOME/.dotfiles/.dotfiles.rc" "$HOME/.bashrc"; then
     echo "Removing source line from .bashrc..."
-    $SED -i '/. ~\/.dotfiles\/.dotfiles.rc/d' "$HOME/.bashrc"
+    $SED -i "/. $HOME\/.dotfiles\/.dotfiles.rc/d" "$HOME/.bashrc"
 fi
 
-if grep -q ". ~/.dotfiles/.dotfiles.rc" "$HOME/.zshrc"; then
+if grep -q ". $HOME/.dotfiles/.dotfiles.rc" "$HOME/.zshrc"; then
     echo "Removing source line from .zshrc..."
-    $SED -i '/. ~\/.dotfiles\/.dotfiles.rc/d' "$HOME/.zshrc"
+    $SED -i "/. $HOME\/.dotfiles\/.dotfiles.rc/d" "$HOME/.zshrc"
 fi
