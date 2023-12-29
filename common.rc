@@ -1,6 +1,6 @@
 # exports
 export GPG_TTY=$(tty)
-export PATH="$(PWD)/go/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
 
 
 # alias
