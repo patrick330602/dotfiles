@@ -1,6 +1,8 @@
 # shellcheck disable=SC2148
 # ignore SC2148 since this file is sourced by all shells
 
+PATH="$HOME/.dotfiles/bin:$PATH"
+
 # source common.rc
 # shellcheck disable=SC1091
 . "$HOME/.dotfiles/common.rc"

@@ -57,5 +57,3 @@ if ! grep -q ". $HOME/.dotfiles/.dotfiles.rc" "$HOME/.zshrc"; then
         echo ". $HOME/.dotfiles/.dotfiles.rc" >> "$HOME/.zshrc"
     fi
 fi
-
-PATH="$HOME/.dotfiles/bin:$PATH"
