@@ -18,6 +18,18 @@ if test ! "$(which brew)"; then
     esac
 fi
 
+# source brew; if it is mac, also install coreutils and gnu-sed
+case "$(uname -s)" in
+    Darwin*)
+        eval "$(/opt/homebrew/bin/brew shellenv)"
+        brew install coreutils gnu-sed starship zsh-syntax-highlighting
+        ;;
+    Linux*)
+        eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+        brew install starship
+        ;;
+esac
+
 SED=$(which sed)
 case "$(uname -s)" in
     Darwin*)
