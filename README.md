@@ -1,8 +1,10 @@
 # Dotfiles
 
-This repository contains my dotfiles. Feel free to use them; 
+This repository contains my dotfiles and can be installed automatically with `curl -sL https://pkwl.ink/dotfiles | bash`. it will:
+- install the dotfiles to `~/.dotfiles`;
+- install nvim, the configuration to `~/.config/nvim`, `vim-plug` and the plugins.
 
-- this script can be installed automatically with `curl -sL https://pkwl.ink/dotfiles | bash`. it will install the dotfiles to `~/.dotfiles`;
+
 - to update, run `update-dotfiles`;
 - to uninstall, run `uninstall-dotfiles`.
 

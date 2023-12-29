@@ -112,4 +112,5 @@ ln -s "$HOME/.dotfiles/nvim-config.vim" "$HOME/.config/nvim/init.vim"
 
 nvim +PlugClean +PlugUpdate +PlugUpgrade +qall +silent
 
+sleep 10
 echo "Done! Please restart your shell."
