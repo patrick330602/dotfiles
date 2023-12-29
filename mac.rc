@@ -34,7 +34,7 @@ if [ -n "$ZSH_VERSION" ]; then
 
     # load zsh-syntax highlighting if it is installed, else warn the user to install it
     if [ -f ${BASE_HOMEBREW_FOLDER}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
-        source ${BASE_HOMEBREW_FOLDER}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+        source "${BASE_HOMEBREW_FOLDER}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
     else
         echo "zsh-syntax-highlighting is not installed. Install it with 'brew install zsh-syntax-highlighting'"
     fi

@@ -18,6 +18,9 @@ esac
 if [ -d "$HOME/.dotfiles" ]; then
     echo "Updating repository..."
     cd "$HOME/.dotfiles"
+    # force pull to overwrite local commits
+    git fetch --all
+    git reset --hard origin/main
     git pull origin main
     cd -
 fi
