@@ -16,24 +16,25 @@ export LDFLAGS="-L/usr/local/opt/openssl/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl/include"
 export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 
+BASE_HOMEBREW_FOLDER=/usr/local
 if [ "$(arch)" = "arm64" ]; then
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-else
-    eval "$(/usr/local/bin/brew shellenv)"
+    BASE_HOMEBREW_FOLDER=/opt/homebrew
 fi
+
+eval "$(${BASE_HOMEBREW_FOLDER}/bin/brew shellenv)"
 
 # load only if running in zsh
 if [ -n "$ZSH_VERSION" ]; then
   # load starship prompt if it is installed, else warn the user to install it
-    if [ -f /opt/homebrew/bin/starship ]; then
+    if [ -f ${BASE_HOMEBREW_FOLDER}/bin/starship ]; then
         eval "$(starship init zsh)"
     else
         echo "starship is not installed. Install it with 'brew install starship'"
     fi
 
     # load zsh-syntax highlighting if it is installed, else warn the user to install it
-    if [ -f /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
-        source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+    if [ -f ${BASE_HOMEBREW_FOLDER}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
+        source ${BASE_HOMEBREW_FOLDER}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
     else
         echo "zsh-syntax-highlighting is not installed. Install it with 'brew install zsh-syntax-highlighting'"
     fi
@@ -42,7 +43,7 @@ fi
 # load only if running in bash
 if [ -n "${BASH_VERSINFO}" ]; then
   # load starship prompt if it is installed, else warn the user to install it
-    if [ -f /opt/homebrew/bin/starship ]; then
+    if [ -f ${BASE_HOMEBREW_FOLDER}/bin/starship ]; then
         eval "$(starship init bash)"
     else
         echo "starship is not installed. Install it with 'brew install starship'"
