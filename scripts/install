@@ -82,7 +82,7 @@ if test -f "$HOME/.config/starship.toml" && ! test -L "$HOME/.config/starship.to
 fi
 echo "Installing starship configuration..."
 mkdir -p "$HOME/.config"
-ln -s "$HOME/.dotfiles/starship-config.toml" "$HOME/.config/starship.toml"
+ln -s "$HOME/.dotfiles/starship.toml" "$HOME/.config/starship.toml"
 
 
 # install neovim
