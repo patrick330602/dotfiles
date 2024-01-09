@@ -74,6 +74,17 @@ if ! grep -q ". $HOME/.dotfiles/.dotfiles.rc" "$HOME/.zshrc"; then
     fi
 fi
 
+# install starship config
+# if starship config already exists and not symlinked, back it up
+if test -f "$HOME/.config/starship.toml" && ! test -L "$HOME/.config/starship.toml"; then
+    echo "Backing up existing starship configuration..."
+    mv "$HOME/.config/starship.toml" "$HOME/.config/starship.toml.bak"
+fi
+echo "Installing starship configuration..."
+mkdir -p "$HOME/.config"
+ln -s "$HOME/.dotfiles/starship-config.toml" "$HOME/.config/starship.toml"
+
+
 # install neovim
 if ! test "$(which nvim)"; then
     echo "Installing neovim..."

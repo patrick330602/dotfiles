@@ -33,6 +33,16 @@ if grep -q ". $HOME/.dotfiles/.dotfiles.rc" "$HOME/.zshrc"; then
     $SED -i "/. $ESCAPED_HOME\/.dotfiles\/.dotfiles.rc/d" "$HOME/.zshrc"
 fi
 
+# uninstall starship config
+if test -f "$HOME/.config/starship.toml"; then
+    echo "Removing starship configuration..."
+    rm "$HOME/.config/starship.toml"
+fi
+if test -f "$HOME/.config/starship.toml.bak"; then
+    echo "Restoring backed up starship configuration..."
+    mv "$HOME/.config/starship.toml.bak" "$HOME/.config/starship.toml"
+fi
+
 # Remove nvim configuration
 if test -f "$HOME/.config/nvim/init.vim"; then
     echo "Removing nvim configuration..."
