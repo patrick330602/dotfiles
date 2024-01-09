@@ -24,7 +24,7 @@ if test -f "$HOME/.config/starship.toml"; then
 else
     echo "Starship Config not found; Installing starship configuration..."
     mkdir -p "$HOME/.config"
-    ln -s "$HOME/.dotfiles/starshig.toml" "$HOME/.config/starship.toml"
+    ln -s "$HOME/.dotfiles/starship.toml" "$HOME/.config/starship.toml"
 fi
 
 
