@@ -1,7 +1,7 @@
 format = """
 [░▒▓](#a3aed2)\
 ${custom.system_icons}\
-$shell\
+${shell}\
 [](bg:#769ff0 fg:#a3aed2)\
 $directory\
 [](fg:#769ff0 bg:#394260)\
@@ -17,6 +17,14 @@ $php\
 $time\
 [ ](fg:#1d2230)\
 \n$character"""
+
+[shell]
+bash_indicator = ""
+zsh_indicator = "🚀"
+powershell_indicator = "󰨊"
+unknown_indicator = "ddd"
+format      = "[$indicator ](bg:#a3aed2 fg:#090c0c)"
+disabled    = false
 
 [directory]
 style = "fg:#e3e5e5 bg:#769ff0"
@@ -78,11 +86,3 @@ format      = "[ $output ](bg:#a3aed2 fg:#090c0c)"
 style       = "bg:#090c0c"
 shell       = ["bash", "--noprofile", "--norc"]
 when        = "true"
-
-[shell]
-bash_indicator = ""
-zsh_indicator = "🚀"
-powershell_indicator = "󰨊"
-format      = "[ $output ](bg:#a3aed2 fg:#090c0c)"
-style       = "bg:#090c0c"
-disabled    = false
