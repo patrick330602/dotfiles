@@ -80,5 +80,9 @@ shell       = ["bash", "--noprofile", "--norc"]
 when        = "true"
 
 [shell]
+bash_indicator = ""
+zsh_indicator = "🚀"
+powershell_indicator = "󰨊"
 format      = "[ $output ](bg:#a3aed2 fg:#090c0c)"
 style       = "bg:#090c0c"
+disabled    = false
