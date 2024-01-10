@@ -1,6 +1,7 @@
 format = """
 [░▒▓](#a3aed2)\
 ${custom.system_icons}\
+$shell\
 [](bg:#769ff0 fg:#a3aed2)\
 $directory\
 [](fg:#769ff0 bg:#394260)\
@@ -73,17 +74,11 @@ format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
 description = "Show system icons"
 command     = '([ $(uname -s) == "Darwin" ] && echo ) || ([ $(uname -s) == "Linux" ] && ([ -f /etc/fedora-release ] && echo  || [ -f /etc/lsb-release ] && grep -q "DISTRIB_ID=Ubuntu" /etc/lsb-release && echo  || echo ))'
 symbol      = ""
-format      = "[ $output${custom.zsh}${custom.bash} ](bg:#a3aed2 fg:#090c0c)"
+format      = "[ $output ](bg:#a3aed2 fg:#090c0c)"
 style       = "bg:#090c0c"
 shell       = ["bash", "--noprofile", "--norc"]
 when        = "true"
 
-[custom.zsh]
-command = "echo 🚀"
-when = """ test "$STARSHIP_SHELL" "==" "zsh" """
-format = "$output"
-
-[custom.bash]
-command = "echo " 
-when = """ test "$STARSHIP_SHELL" "==" "bash" """
-format = "$output"
+[shell]
+format      = "[ $output ](bg:#a3aed2 fg:#090c0c)"
+style       = "bg:#090c0c"
