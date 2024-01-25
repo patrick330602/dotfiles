@@ -32,12 +32,6 @@ format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
-[directory.substitutions]
-"Documents" = "󰈙 "
-"Downloads" = " "
-"Music" = " "
-"Pictures" = " "
-
 [git_branch]
 symbol = ""
 style = "bg:#394260"
@@ -50,12 +44,12 @@ format = '[[($all_status$ahead_behind )](fg:#769ff0 bg:#394260)]($style)'
 [nodejs]
 symbol = ""
 style = "bg:#212736"
-format = '[[ $symbol ${pyenv_prefix}(${version} )(\($virtualenv\) ) ](fg:#769ff0 bg:#212736)]($style)'
+format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
 
 [python]
 symbol = ""
 style = "bg:#212736"
-format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+format = '[[ $symbol ${pyenv_prefix}(${version} )(\($virtualenv\) ) ](fg:#769ff0 bg:#212736)]($style)'
 
 [rust]
 symbol = ""
@@ -76,7 +70,7 @@ format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
 disabled = false
 time_format = "%R" # Hour:Minute Format
 style = "bg:#1d2230"
-format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
+format = '[[ $time ](fg:#a0a9cb bg:#1d2230)]($style)'
 
 [custom.system_icons]
 description = "Show system icons"
