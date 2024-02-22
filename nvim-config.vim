@@ -50,7 +50,7 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 "vim-plug settings
 call plug#begin()
 
-Plug 'github/copilot.vim'
+"Plug 'github/copilot.vim'
 
 Plug 'godlygeek/tabular'
 
