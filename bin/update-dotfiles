@@ -11,6 +11,23 @@ if [ -d "$HOME/.dotfiles" ]; then
     cd -
 fi
 
+# install starship config
+# if starship config already exists and not symlinked, back it up
+if test -f "$HOME/.config/starship.toml"; then
+    if ! test -L "$HOME/.config/starship.toml"; then
+        echo "Not symlinked Starship Config; Backing up existing starship configuration..."
+        mv "$HOME/.config/starship.toml" "$HOME/.config/starship.toml.bak"
+        echo "Installing starship configuration..."
+        mkdir -p "$HOME/.config"
+        ln -s "$HOME/.dotfiles/starship.toml" "$HOME/.config/starship.toml"
+    fi
+else
+    echo "Starship Config not found; Installing starship configuration..."
+    mkdir -p "$HOME/.config"
+    ln -s "$HOME/.dotfiles/starship.toml" "$HOME/.config/starship.toml"
+fi
+
+
 # install configuration nvim-config.vim to ~/.config/nvim/init.vim
 # backup existing init.vim if it exists
 if test -f "$HOME/.config/nvim/init.vim"; then
