@@ -2,12 +2,12 @@
 
 # Update the repository
 if [ -d "$HOME/.dotfiles" ]; then
-    echo "Updating repository..."
+    echo "::Updating repository..."
     cd "$HOME/.dotfiles"
     # force pull to overwrite local commits
-    git fetch --all
-    git reset --hard origin/main
-    git pull origin main
+    git fetch --all -q
+    git reset --hard origin/main -q
+    git pull origin main -q
     cd -
 fi
 
@@ -15,14 +15,14 @@ fi
 # if starship config already exists and not symlinked, back it up
 if test -f "$HOME/.config/starship.toml"; then
     if ! test -L "$HOME/.config/starship.toml"; then
-        echo "Not symlinked Starship Config; Backing up existing starship configuration..."
+        echo "::Not symlinked Starship Config; Backing up existing starship configuration..."
         mv "$HOME/.config/starship.toml" "$HOME/.config/starship.toml.bak"
-        echo "Installing starship configuration..."
+        echo "::Installing starship configuration..."
         mkdir -p "$HOME/.config"
         ln -s "$HOME/.dotfiles/starship.toml" "$HOME/.config/starship.toml"
     fi
 else
-    echo "Starship Config not found; Installing starship configuration..."
+    echo "::Starship Config not found; Installing starship configuration..."
     mkdir -p "$HOME/.config"
     ln -s "$HOME/.dotfiles/starship.toml" "$HOME/.config/starship.toml"
 fi
@@ -31,13 +31,13 @@ fi
 # install configuration nvim-config.vim to ~/.config/nvim/init.vim
 # backup existing init.vim if it exists
 if test -f "$HOME/.config/nvim/init.vim"; then
-    echo "Backing up existing nvim configuration..."
+    echo "::Backing up existing nvim configuration..."
     mv "$HOME/.config/nvim/init.vim" "$HOME/.config/nvim/init.vim.bak"
 fi
-echo "Updating nvim configuration..."
+echo "::Updating nvim configuration..."
 mkdir -p "$HOME/.config/nvim"
 ln -s "$HOME/.dotfiles/nvim-config.vim" "$HOME/.config/nvim/init.vim"
 nvim +PlugClean +PlugUpdate +PlugUpgrade +qall +silent
 
 
-echo "Done! Please restart your shell."
+echo "::Done! Please restart your shell."
