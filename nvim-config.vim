@@ -24,6 +24,9 @@ set tabstop=4
 set shiftwidth=4
 set invlist
 
+"display settings
+set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
+
 "shortcut settings
 set pastetoggle=<F10>
 nnoremap <silent> <F4> :bnext<CR>
