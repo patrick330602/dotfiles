@@ -22,7 +22,6 @@ set mouse=a
 "tab settings
 set tabstop=4
 set shiftwidth=4
-set invlist
 
 "display settings
 set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
