@@ -53,5 +53,6 @@ fi
 #alias
 
 alias unlock-librewolf="xattr -cr /Applications/LibreWolf.app"
+alias unlock-chromium="xattr -cr /Applications/Chromium.app"
 alias unlock-docker="security -v unlock-keychain ~/Library/Keychains/login.keychain-db"
 alias updateall="brew update && brew upgrade && brew cu -f -a -y && mas upgrade"
