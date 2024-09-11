@@ -2,6 +2,7 @@
 
 This repository contains my dotfiles and can be installed automatically with `curl -sL https://pkwl.ink/dotfiles | bash`. it will:
 - install the dotfiles to `~/.dotfiles`;
+- install starship, the configuration to `~/.config/starship.toml`;
 - install nvim, the configuration to `~/.config/nvim`, `vim-plug` and the plugins.
 
 
