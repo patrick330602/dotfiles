@@ -3,12 +3,13 @@
 # Update the repository
 if [ -d "$HOME/.dotfiles" ]; then
     echo "::Updating repository..."
-    cd "$HOME/.dotfiles"
-    # force pull to overwrite local commits
-    git fetch --all -q
-    git reset --hard origin/main -q
-    git pull origin main -q
-    cd -
+    (
+        cd "$HOME/.dotfiles" || exit
+        # force pull to overwrite local commits
+        git fetch --all -q
+        git reset --hard origin/main -q
+        git pull origin main -q
+    )
 fi
 
 # install starship config
