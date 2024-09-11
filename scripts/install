@@ -1,41 +1,45 @@
 #!/bin/sh
 
-# install brew if not installed
-if test ! "$(which brew)"; then
-    echo "Installing Homebrew..."
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+CURR_OS=$(uname -s)
+echo "Please enter your password to pre-authorize sudo:"
+sudo -v
 
-    # source brew; if it is mac, also install coreutils and gnu-sed
-    case "$(uname -s)" in
-        Darwin*)
+# install brew if it is on mac and not installed
+case "$CURR_OS" in
+    Darwin*)
+        if test ! "$(which brew)"; then
+            echo "Installing Homebrew..."
+            /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+            # source brew; if it is mac, also install coreutils and gnu-sed
             BASE_HOMEBREW_FOLDER=/usr/local
             if [ "$(arch)" = "arm64" ]; then
                 BASE_HOMEBREW_FOLDER=/opt/homebrew
             fi
             eval "$(${BASE_HOMEBREW_FOLDER}/bin/brew shellenv)"
-            brew install coreutils gnu-sed starship zsh-syntax-highlighting
-            ;;
-        Linux*)
-            eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-            brew install starship
-            ;;
-    esac
-fi
+        fi
+        ;;
+esac
 
-# source brew; if it is mac, also install coreutils and gnu-sed
-case "$(uname -s)" in
+# install necessary packages
+echo "Installing necessary packages..."
+case "$CURR_OS" in
     Darwin*)
-        eval "$(/opt/homebrew/bin/brew shellenv)"
         brew install coreutils gnu-sed starship zsh-syntax-highlighting
         ;;
     Linux*)
-        eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-        brew install starship
+        # if fedora, install from dnf
+        if test "$(which dnf)"; then
+            sudo dnf copr enable atim/starship -y
+            sudo dnf install -y starship
+        else
+            curl -fsSL https://starship.rs/install.sh | sh -s -- -y
+        fi
         ;;
 esac
 
 SED=$(which sed)
-case "$(uname -s)" in
+case "$CURR_OS" in
     Darwin*)
         if test "$(which gsed)"; then
             SED=$(which gsed)
@@ -63,11 +67,13 @@ if ! grep -q ". $HOME/.dotfiles/.dotfiles.rc" "$HOME/.bashrc"; then
 fi
 
 if ! grep -q ". $HOME/.dotfiles/.dotfiles.rc" "$HOME/.zshrc"; then
-    # try to insert before the line "# Fig post block" or "# CodeWhisperer post block"
+    # try to insert before the line "# Fig post block" or "# CodeWhisperer post block" or "# Q post block"
     if grep -q "# Fig post block" "$HOME/.zshrc"; then
         $SED -i "/# Fig post block/i . $HOME/.dotfiles/.dotfiles.rc" "$HOME/.zshrc"
     elif grep -q "# CodeWhisperer post block" "$HOME/.zshrc"; then
         $SED -i "/# CodeWhisperer post block/i . $HOME/.dotfiles/.dotfiles.rc" "$HOME/.zshrc"
+    elif grep -q "# Q post block" "$HOME/.zshrc"; then
+        $SED -i "/# Q post block/i . $HOME/.dotfiles/.dotfiles.rc" "$HOME/.zshrc"
     else
         # if neither of those lines exist, just append to the end of the file
         echo ". $HOME/.dotfiles/.dotfiles.rc" >> "$HOME/.zshrc"
@@ -88,7 +94,7 @@ ln -s "$HOME/.dotfiles/starship.toml" "$HOME/.config/starship.toml"
 # install neovim
 if ! test "$(which nvim)"; then
     echo "Installing neovim..."
-    case "$(uname -s)" in
+    case "$CURR_OS" in
         Darwin*)
             brew install neovim
             ;;
