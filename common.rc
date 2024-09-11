@@ -2,9 +2,9 @@
 export GPG_TTY=$(tty)
 export PATH="$HOME/go/bin:$PATH"
 
-
 # alias
 alias dchdate="date +'%a, %d %b %Y %T %z'"
+alias sudocode='SUDO_EDITOR="$(which code) --wait" sudoedit'
 
 # if nvim is installed, alias vim to nvim
 if test "$(which nvim)"; then
