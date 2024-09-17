@@ -29,16 +29,19 @@ else
 fi
 
 
-# install configuration nvim-config.vim to ~/.config/nvim/init.vim
+# install configuration nvim-config.lua to ~/.config/nvim/init.lua
 # backup existing init.vim if it exists
 if test -f "$HOME/.config/nvim/init.vim"; then
-    echo "::Backing up existing nvim configuration..."
+    echo "::Backing up existing nvim configuration in vim format..."
     mv "$HOME/.config/nvim/init.vim" "$HOME/.config/nvim/init.vim.bak"
 fi
-echo "::Updating nvim configuration..."
+if test -f "$HOME/.config/nvim/init.lua"; then
+    echo "::Backing up existing nvim configuration in lua format..."
+    mv "$HOME/.config/nvim/init.lua" "$HOME/.config/nvim/init.lua.bak"
+fi
+echo "::Installing nvim configuration..."
 mkdir -p "$HOME/.config/nvim"
-ln -s "$HOME/.dotfiles/nvim-config.vim" "$HOME/.config/nvim/init.vim"
-nvim +PlugClean +PlugUpdate +PlugUpgrade +qall +silent
-
+ln -s "$HOME/.dotfiles/nvim-config.lua" "$HOME/.config/nvim/init.lua"
+nvim --headless "+Lazy! sync" +qa
 
 echo "::Done! Please restart your shell."

@@ -43,14 +43,22 @@ if test -f "$HOME/.config/starship.toml.bak"; then
     mv "$HOME/.config/starship.toml.bak" "$HOME/.config/starship.toml"
 fi
 
-# Remove nvim configuration
-if test -f "$HOME/.config/nvim/init.vim"; then
-    echo "Removing nvim configuration..."
-    rm "$HOME/.config/nvim/init.vim"
+# remove folder ~/.local/share/nvim/lazy if it exists
+if test -d "$HOME/.local/share/nvim/lazy"; then
+    echo "Removing lazy.nvim plugins..."
+    rm -rf "$HOME/.local/share/nvim/lazy"
+fi
+if test -d "$HOME/.local/state/nvim/lazy"; then
+    echo "Removing lazy.nvim state..."
+    rm -rf "$HOME/.local/state/nvim/lazy"
+fi
+if test -f "$HOME/.config/nvim/lazy-lock.json"; then
+    echo "Removing lazy-lock.json..."
+    rm -rf "$HOME/.config/nvim/lazy-lock.json"
 fi
 
-# Remove vim-plug installation
-if test -f "$HOME/.local/share/nvim/site/autoload/plug.vim"; then
-    echo "Removing vim-plug installation..."
-    rm "$HOME/.local/share/nvim/site/autoload/plug.vim"
+# Remove nvim configuration
+if test -f "$HOME/.config/nvim/init.lua"; then
+    echo "Removing nvim configuration..."
+    rm "$HOME/.config/nvim/init.lua"
 fi
