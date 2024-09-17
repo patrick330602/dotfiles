@@ -64,7 +64,7 @@ require("lazy").setup({
 		dependencies = "nvim-tree/nvim-web-devicons",
 		config = function()
 			require("tabby").setup({
-				preset = "active_wins_at_tail",
+				preset = "active_tab_with_wins",
 				option = {
 					theme = {
 						fill = "TabLineFill", -- tabline background
@@ -75,7 +75,7 @@ require("lazy").setup({
 						tail = "TabLine", -- tail element highlight
 					},
 					nerdfont = true, -- whether use nerdfont
-					lualine_theme = nil, -- lualine theme name
+					lualine_theme = "iceberg", -- lualine theme name
 					tab_name = {
 						name_fallback = function(tabid)
 							return tabid
@@ -84,6 +84,17 @@ require("lazy").setup({
 					buf_name = {
 						mode = "'unique'|'relative'|'tail'|'shorten'",
 					},
+				},
+			})
+		end,
+	},
+	{
+		"nvim-lualine/lualine.nvim",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+		config = function()
+			require("lualine").setup({
+				option = {
+					theme = "iceberg",
 				},
 			})
 		end,
