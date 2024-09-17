@@ -51,17 +51,16 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 
 "vim-plug settings
 call plug#begin()
-
 Plug 'github/copilot.vim'
-
 Plug 'godlygeek/tabular'
-
 Plug 'vim-airline/vim-airline'
-
 Plug 'vim-airline/vim-airline-themes'
-
 Plug 'tpope/vim-fugitive'
-
 Plug 'sbdchd/neoformat'
-
+Plug 'nvim-tree/nvim-web-devicons'
+Plug 'nvim-tree/nvim-tree.lua'
+Plug 'stevearc/dressing.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'rcarriga/nvim-notify'
+Plug 'chrisgrieser/nvim-tinygit'
 call plug#end()
