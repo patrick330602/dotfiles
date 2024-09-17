@@ -60,30 +60,13 @@ require("lazy").setup({
 	},
 	{
 		"nanozuki/tabby.nvim",
-		-- event = 'VimEnter', -- if you want lazy load, see below
 		dependencies = "nvim-tree/nvim-web-devicons",
 		config = function()
 			require("tabby").setup({
 				preset = "active_tab_with_wins",
 				option = {
-					theme = {
-						fill = "TabLineFill", -- tabline background
-						head = "TabLine", -- head element highlight
-						current_tab = "TabLineSel", -- current tab label highlight
-						tab = "TabLine", -- other tab label highlight
-						win = "TabLine", -- window highlight
-						tail = "TabLine", -- tail element highlight
-					},
 					nerdfont = true, -- whether use nerdfont
 					lualine_theme = "iceberg", -- lualine theme name
-					tab_name = {
-						name_fallback = function(tabid)
-							return tabid
-						end,
-					},
-					buf_name = {
-						mode = "'unique'|'relative'|'tail'|'shorten'",
-					},
 				},
 			})
 		end,
@@ -142,9 +125,7 @@ vim.opt.laststatus = 2
 vim.opt.mouse = "a"
 
 -- tab settings
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-
+vim.opt.showtabline = 2
 -- display settings
 vim.opt.listchars = { eol = "⏎", tab = "␉·", trail = "␠", nbsp = "⎵" }
 
