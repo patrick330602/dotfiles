@@ -10,3 +10,16 @@ alias sudocode='SUDO_EDITOR="$(which code) --wait" sudoedit'
 if test "$(which nvim)"; then
     alias vim="nvim"
 fi
+
+# if neovide/gnvim is installed, alias them to gvim
+if test "$(which neovide)"; then
+	alias gvim="neovide"
+elif test "$(which gnvim)"; then
+	alias gvim="gnvim"
+fi
+
+# if bat is installed, alias cat to bat
+if test "$(which bat)"; then
+	alias cat="bat"
+fi
+

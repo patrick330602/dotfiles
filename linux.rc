@@ -7,7 +7,12 @@ if [ -n "${BASH_VERSINFO}" ]; then
     if [ -f /usr/local/bin/starship ]; then
         eval "$(starship init bash)"
     else
-        echo "starship is not installed. Install it with 'brew install starship'"
+		if test "$(which dnf)"; then
+		  instructions="sudo dnf copr enable atim/starship && sudo dnf install starship"
+		else
+		  instructions="curl -fsSL https://starship.rs/install.sh | bash"
+
+        echo "starship is not installed. Install it with '$instructions'"
     fi
 fi
 
