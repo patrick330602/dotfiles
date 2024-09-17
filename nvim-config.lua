@@ -88,8 +88,6 @@ require("lazy").setup({
 			})
 		end,
 	},
-	{ "vim-airline/vim-airline" },
-	{ "vim-airline/vim-airline-themes" },
 	{ "tpope/vim-fugitive" },
 	{ "sbdchd/neoformat" },
 	{
@@ -171,12 +169,6 @@ if vim.fn.has("macunix") == 1 then
 end
 
 -- plugins settings
--- vim-airline settings
-vim.g.airline_powerline_fonts = 1
-vim.g.airline_theme = "minimalist"
-vim.g["airline#extensions#tabline#enabled"] = 1
-vim.g["airline#extensions#tabline#left_sep"] = " "
-vim.g["airline#extensions#tabline#left_alt_sep"] = "|"
 
 -- nvim-tree settings
 vim.g.loaded_netrw = 1
