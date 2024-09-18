@@ -4,9 +4,7 @@
 SED=$(which sed)
 case "$(uname -s)" in
     Darwin*)
-        if test "$(which gsed)"; then
-            SED=$(which gsed)
-        fi
+        SED=$(which gsed)
     ;;
 esac
 

@@ -7,19 +7,19 @@ alias dchdate="date +'%a, %d %b %Y %T %z'"
 alias sudocode='SUDO_EDITOR="$(which code) --wait" sudoedit'
 
 # if nvim is installed, alias vim to nvim
-if test "$(which nvim)"; then
+if command -v nvim >/dev/null 2>&1; then
     alias vim="nvim"
 fi
 
 # if neovide/gnvim is installed, alias them to gvim
-if test "$(which neovide)"; then
-	alias gvim="neovide"
-elif test "$(which gnvim)"; then
-	alias gvim="gnvim"
+if command -v neovide >/dev/null 2>&1; then
+    alias gvim="neovide"
+elif command -v gnvim >/dev/null 2>&1; then
+    alias gvim="gnvim"
 fi
 
 # if bat is installed, alias cat to bat
-if test "$(which bat)"; then
-	alias cat="bat"
+if command -v bat >/dev/null 2>&1; then
+    alias cat="bat"
 fi
 

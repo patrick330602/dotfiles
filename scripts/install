@@ -11,7 +11,6 @@ case "$CURR_OS" in
             echo "Installing Homebrew..."
             /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-            # source brew; if it is mac, also install coreutils and gnu-sed
             BASE_HOMEBREW_FOLDER=/usr/local
             if [ "$(arch)" = "arm64" ]; then
                 BASE_HOMEBREW_FOLDER=/opt/homebrew
@@ -41,9 +40,7 @@ esac
 SED=$(which sed)
 case "$CURR_OS" in
     Darwin*)
-        if test "$(which gsed)"; then
-            SED=$(which gsed)
-        fi
+        SED=$(which gsed)
     ;;
 esac
 
@@ -100,10 +97,10 @@ if ! test "$(which nvim)"; then
             ;;
         Linux*)
             # if fedora, install from dnf
-            if test "$(which dnf)"; then
+            if command -v dnf >/dev/null 2>&1; then
                 sudo dnf install -y neovim
-            # if ubuntu, install from apt
-            elif test "$(which apt)"; then
+            # if ubuntu/debian, install from apt
+            elif command -v apt >/dev/null 2>&1; then
                 sudo apt install -y neovim
             fi
             ;;
