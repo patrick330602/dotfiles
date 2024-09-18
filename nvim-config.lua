@@ -126,8 +126,6 @@ vim.opt.mouse = "a"
 
 -- tab settings
 vim.opt.showtabline = 2
--- display settings
-vim.opt.listchars = { eol = "⏎", tab = "␉·", trail = "␠", nbsp = "⎵" }
 
 -- shortcut settings
 vim.api.nvim_set_keymap("n", "<F4>", ":bnext<CR>", { noremap = true, silent = true })
