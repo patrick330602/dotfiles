@@ -74,7 +74,7 @@ format = '[[ $time ](fg:#a0a9cb bg:#1d2230)]($style)'
 
 [custom.system_icons]
 description = "Show system icons"
-command     = '([ $(uname -s) == "Darwin" ] && echo ) || ([ $(uname -s) == "Linux" ] && ([ -f /etc/fedora-release ] && echo  || [ -f /etc/lsb-release ] && grep -q "DISTRIB_ID=Ubuntu" /etc/lsb-release && echo  || echo ))'
+command     = '([ $(uname -s) == "Darwin" ] && echo ) || ([ $(uname -s) == "Linux" ] && ([ -f /etc/fedora-release ] && echo  || ([ -f /etc/lsb-release ] && grep -q "DISTRIB_ID=Ubuntu" /etc/lsb-release && echo  || echo )))'
 symbol      = ""
 format      = "[ $output ](bg:#a3aed2 fg:#090c0c)"
 style       = "bg:#090c0c"
