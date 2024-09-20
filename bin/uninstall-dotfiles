@@ -56,6 +56,10 @@ if test -f "$HOME/.config/nvim/lazy-lock.json"; then
 fi
 
 # Remove nvim configuration
+if test -d "$HOME/.config/nvim/lua/pdfs"; then
+    echo "Removing nvim configuration..."
+    rm -rf "$HOME/.config/nvim/lua/pdfs"
+fi
 if test -f "$HOME/.config/nvim/init.lua"; then
     echo "Removing nvim configuration..."
     rm "$HOME/.config/nvim/init.lua"

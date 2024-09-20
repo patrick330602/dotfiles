@@ -120,6 +120,7 @@ fi
 echo "Installing nvim configuration..."
 mkdir -p "$HOME/.config/nvim"
 ln -s "$HOME/.dotfiles/nvim-config.lua" "$HOME/.config/nvim/init.lua"
+ln -s "$HOME/.dotfiles/neovim" "$HOME/.config/nvim/lua/pdfs"
 nvim --headless "+Lazy! sync" +qa
 
 sleep 10
