@@ -101,15 +101,65 @@ require("lazy").setup({
 			"rcarriga/nvim-notify",
 		},
 	},
+	{ "mbbill/undotree" },
 	{
-		"nvimdev/dashboard-nvim",
-		event = "VimEnter",
+		"nvim-treesitter/nvim-treesitter",
+		build = ":TSUpdate",
 		config = function()
-			require("dashboard").setup({
-				-- config
+			local configs = require("nvim-treesitter.configs")
+
+			configs.setup({
+				ensure_installed = {
+					"bash",
+					"c",
+					"c_sharp",
+					"cpp",
+					"css",
+					"csv",
+					"dockerfile",
+					"git_config",
+					"go",
+					"json",
+					"make",
+					"nim",
+					"powershell",
+					"python",
+					"rust",
+					"toml",
+					"typescript",
+					"xml",
+					"yaml",
+					"lua",
+					"vim",
+					"vimdoc",
+					"javascript",
+					"html",
+				},
+				sync_install = false,
+				highlight = { enable = true },
+				indent = { enable = true },
 			})
 		end,
-		dependencies = { { "nvim-tree/nvim-web-devicons" } },
+	},
+	{
+		"lukas-reineke/indent-blankline.nvim",
+		main = "ibl",
+		---@module "ibl"
+		---@type ibl.config
+		opts = {},
+		config = function()
+			require("ibl").setup({})
+		end,
+	},
+	{
+		"amitds1997/remote-nvim.nvim",
+		version = "*", -- Pin to GitHub releases
+		dependencies = {
+			"nvim-lua/plenary.nvim", -- For standard functions
+			"MunifTanjim/nui.nvim", -- To build the plugin UI
+			"nvim-telescope/telescope.nvim", -- For picking b/w different remote methods
+		},
+		config = true,
 	},
 	{
 		"f-person/auto-dark-mode.nvim",
@@ -130,16 +180,38 @@ require("lazy").setup({
 vim.opt.encoding = "utf-8"
 
 -- general settings
-vim.opt.number = true
 vim.cmd("syntax on")
-vim.opt.autoindent = true
+vim.opt.nu = true
+vim.opt.relativenumber = true
 vim.opt.laststatus = 2
 vim.opt.mouse = "a"
+vim.opt.scrolloff = 4
+vim.opt.colorcolumn = "80"
 
 -- tab settings
 vim.opt.showtabline = 2
 
+-- indent settings
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.expandtab = true
+vim.opt.smartindent = true
+
+-- temp file settings
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undofile = true
+
+-- search settings
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
+
 -- shortcut settings
+vim.keymap.set("n", "<leader><F5>", vim.cmd.UndotreeToggle)
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.api.nvim_set_keymap("n", "<F4>", ":bnext<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<F3>", ":bprev<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-Left>", ":tabprevious<CR>", { noremap = true, silent = true })
