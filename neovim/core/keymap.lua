@@ -18,12 +18,6 @@ vim.api.nvim_set_keymap(
 	':execute "silent! tabmove " . (tabpagenr()+1)<CR>',
 	{ noremap = true, silent = true }
 )
-vim.keymap.set("n", "gc", function()
-	require("tinygit").smartCommit()
-end)
-vim.keymap.set("n", "gp", function()
-	require("tinygit").push()
-end)
 
 -- MacOS-specific settings
 if vim.fn.has("macunix") == 1 then
