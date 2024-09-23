@@ -1,7 +1,7 @@
 return {
 	{ "tpope/vim-fugitive" },
 	{
-		"SuperBo/fugit2.nvim",
+		"patrick330602/fugit2.nvim",
 		opts = {
 			width = 70,
 			external_diffview = true, -- tell fugit2 to use diffview.nvim instead of builtin implementation.
