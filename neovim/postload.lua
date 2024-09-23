@@ -25,3 +25,5 @@ vim.api.nvim_create_autocmd("TermOpen", {
   end
 })
 
+vim.opt.termguicolors = true
+
