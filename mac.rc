@@ -38,6 +38,8 @@ if [ -n "$ZSH_VERSION" ]; then
     else
         echo "zsh-syntax-highlighting is not installed. Install it with 'brew install zsh-syntax-highlighting'"
     fi
+
+    eval "$(atuin init zsh)"
 fi
 
 # load only if running in bash
@@ -48,6 +50,9 @@ if [ -n "${BASH_VERSINFO}" ]; then
     else
         echo "starship is not installed. Install it with 'brew install starship'"
     fi
+
+    source $HOME/.dotfiles/bash-preexec.sh
+    eval "$(atuin init bash)"
 fi
 
 #alias
