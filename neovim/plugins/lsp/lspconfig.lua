@@ -85,6 +85,37 @@ return {
             capabilities = capabilities,
           })
         end,
+        ["rust_analyzer"] = function()
+          -- configure rust language server
+          lspconfig["rust_analyzer"].setup({
+            capabilities = capabilities,
+            settings = {
+              ["rust-analyzer"] = {
+                checkOnSave = {
+                  command = "clippy",
+                },
+              },
+            },
+          })
+        end,
+        ["tsserver"] = function()
+          -- configure typescript language server
+          lspconfig["tsserver"].setup({
+            capabilities = capabilities,
+            settings = {
+              -- enable typescript server to use eslint for linting
+              eslintEnable = true,
+              -- enable typescript server to use prettier for formatting
+              formatOnSave = true,
+            },
+          })
+        end,
+        ["tailwindcss"] = function()
+          -- configure tailwindcss language server
+          lspconfig["tailwindcss"].setup({
+            capabilities = capabilities,
+          })
+        end,
         ["svelte"] = function()
           -- configure svelte server
           lspconfig["svelte"].setup({
