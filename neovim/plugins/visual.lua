@@ -17,7 +17,7 @@ return {
 		config = function()
 			require("lualine").setup({
 				option = {
-					theme = "iceberg",
+					theme = "auto",
 				},
 			})
 		end,
@@ -27,10 +27,10 @@ return {
 		dependencies = "nvim-tree/nvim-web-devicons",
 		config = function()
 			require("tabby").setup({
-				preset = "active_tab_with_wins",
+				preset = "active_wins_at_tail",
 				option = {
 					nerdfont = true,
-					lualine_theme = "iceberg",
+					lualine_theme = "auto",
 				},
 			})
 		end,
