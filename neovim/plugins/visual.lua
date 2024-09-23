@@ -1,4 +1,5 @@
 return {
+	{ "Mofiqul/vscode.nvim" },
 	{
 		"f-person/auto-dark-mode.nvim",
 		opts = {
@@ -17,7 +18,7 @@ return {
 		config = function()
 			require("lualine").setup({
 				option = {
-					theme = "auto",
+					theme = "vscode",
 				},
 			})
 		end,
@@ -30,7 +31,7 @@ return {
 				preset = "active_wins_at_tail",
 				option = {
 					nerdfont = true,
-					lualine_theme = "auto",
+					lualine_theme = "vscode",
 				},
 			})
 		end,
