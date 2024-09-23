@@ -1,10 +1,21 @@
+local jit = require("jit")
+local libgit2path = "libgit2.so.1.7"
+if jit.os == "OSX" then
+	if jit.arch == "x64" then
+		libgit2path = "/usr/local/opt/libgit2/lib/libgit2.dylib"
+	elseif jit.arch == "arm64" then
+		libgit2path = "/opt/homebrew/lib/libgit2.dylib"
+	end
+end
+
 return {
 	{ "tpope/vim-fugitive" },
 	{
-		"patrick330602/fugit2.nvim",
+		"SuperBo/fugit2.nvim",
 		opts = {
 			width = 70,
-			external_diffview = true, -- tell fugit2 to use diffview.nvim instead of builtin implementation.
+			external_diffview = true,
+			libgit2_path = libgit2path,
 		},
 		dependencies = {
 			"MunifTanjim/nui.nvim",
@@ -33,3 +44,4 @@ return {
 		},
 	},
 }
+
