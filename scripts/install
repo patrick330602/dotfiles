@@ -24,14 +24,25 @@ esac
 echo "Installing necessary packages..."
 case "$CURR_OS" in
     Darwin*)
-        brew install coreutils gnu-sed starship zsh-syntax-highlighting
+        brew install \
+			coreutils \
+			gnu-sed \
+			starship \
+			zsh-syntax-highlighting \
+			libgit2 \
+			neovim \
+			devpod \
+			luarocks \
+			bat
         ;;
     Linux*)
         # if fedora, install from dnf
-        if test "$(which dnf)"; then
+        if command -v dnf >/dev/null 2>&1; then
             sudo dnf copr enable atim/starship -y
-            sudo dnf install -y starship
-        else
+            sudo dnf install -y starship neovim libgit2 bat luarocks
+        # if ubuntu/debian, install from apt
+        elif command -v apt >/dev/null 2>&1; then
+            sudo apt install -y neovim
             curl -fsSL https://starship.rs/install.sh | sh -s -- -y
         fi
         ;;
@@ -89,8 +100,7 @@ ln -s "$HOME/.dotfiles/starship.toml" "$HOME/.config/starship.toml"
 
 
 # install neovim
-if ! test "$(which nvim)"; then
-    echo "Installing neovim..."
+if ! command -v nvim >/dev/null 2>&1; then
     case "$CURR_OS" in
         Darwin*)
             brew install neovim
