@@ -13,3 +13,6 @@ if vim.fn.filereadable(plug_path) == 1 then
 	os.remove(plug_path)
 	vim.api.nvim_echo({ { "Removed vim-plug from Neovim.\n", "WarningMsg" } }, true, {})
 end
+
+vim.g.mapleader = " "
+
