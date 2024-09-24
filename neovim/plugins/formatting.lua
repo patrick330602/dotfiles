@@ -88,7 +88,7 @@ return {
 			require("ibl").setup({
 				exclude = {
 					filetypes = {
-						"Dashboard",
+						"dashboard",
 						"lspinfo",
 						"packer",
 						"checkhealth",
