@@ -1,23 +1,9 @@
 -- shortcut settings
-vim.keymap.set("n", "<leader><F5>", vim.cmd.UndotreeToggle)
+vim.keymap.set("n", "<F2>", ":NvimTreeToggle<CR>")
+vim.keymap.set("n", "<F3>", vim.cmd.UndotreeToggle)
+vim.keymap.set("n", "<leader>S", ":Telescope live_grep<CR>")
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
-vim.api.nvim_set_keymap("n", "<F4>", ":bnext<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<F3>", ":bprev<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<C-Left>", ":tabprevious<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<C-Right>", ":tabnext<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap(
-	"n",
-	"<A-Left>",
-	':execute "silent! tabmove " . (tabpagenr()-2)<CR>',
-	{ noremap = true, silent = true }
-)
-vim.api.nvim_set_keymap(
-	"n",
-	"<A-Right>",
-	':execute "silent! tabmove " . (tabpagenr()+1)<CR>',
-	{ noremap = true, silent = true }
-)
 
 -- MacOS-specific settings
 if vim.fn.has("macunix") == 1 then
