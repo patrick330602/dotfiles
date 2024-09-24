@@ -1,6 +1,6 @@
 return {
-    { "mbbill/undotree" },
-    {
+	{ "mbbill/undotree" },
+	{
 		"nvim-tree/nvim-tree.lua",
 		version = "*",
 		lazy = false,
@@ -9,4 +9,28 @@ return {
 			require("nvim-tree").setup({})
 		end,
 	},
+	{
+		"nvimdev/dashboard-nvim",
+		event = "VimEnter",
+		config = function()
+			require("dashboard").setup({
+				shortcut = {
+					{
+						desc = "Remote",
+						group = "@property",
+						key = "R",
+						action = "RemoteStart",
+					},
+					{
+						desc = "Plugins",
+						group = "@property",
+						key = "P",
+						action = "Lazy",
+					},
+				},
+			})
+		end,
+		dependencies = { { "nvim-tree/nvim-web-devicons" } },
+	},
 }
+
