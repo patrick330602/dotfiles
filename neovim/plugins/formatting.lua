@@ -85,7 +85,22 @@ return {
 		---@type ibl.config
 		opts = {},
 		config = function()
-			require("ibl").setup({})
+			require("ibl").setup({
+				exclude = {
+					filetypes = {
+						"Dashboard",
+						"lspinfo",
+						"packer",
+						"checkhealth",
+						"help",
+						"man",
+						"gitcommit",
+						"TelescopePrompt",
+						"TelescopeResults",
+						"''",
+					},
+				},
+			})
 		end,
 	},
 	{

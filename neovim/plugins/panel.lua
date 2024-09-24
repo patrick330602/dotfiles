@@ -14,18 +14,21 @@ return {
 		event = "VimEnter",
 		config = function()
 			require("dashboard").setup({
-				shortcut = {
-					{
-						desc = "Remote",
-						group = "@property",
-						key = "R",
-						action = "RemoteStart",
-					},
-					{
-						desc = "Plugins",
-						group = "@property",
-						key = "P",
-						action = "Lazy",
+				theme = "hyper",
+				config = {
+					shortcut = {
+						{
+							desc = "Remote",
+							group = "@property",
+							key = "R",
+							action = "RemoteStart",
+						},
+						{
+							desc = "Plugins",
+							group = "@property",
+							key = "P",
+							action = "Lazy",
+						},
 					},
 				},
 			})
@@ -33,4 +36,3 @@ return {
 		dependencies = { { "nvim-tree/nvim-web-devicons" } },
 	},
 }
-
