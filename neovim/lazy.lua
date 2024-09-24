@@ -27,16 +27,18 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 require("lazy").setup({
-    spec = {
-        { import = "pdfs.plugins" },
+	spec = {
+		{ import = "pdfs.plugins" },
 		{ import = "pdfs.plugins.lsp" },
-    },
-	checker = { 
+	},
+	rocks = { enabled = false },
+	checker = {
 		enabled = true,
-		notify = false
-	}
+		notify = false,
+	},
 })
 
 -- nvim-tree settings
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
+
