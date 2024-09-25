@@ -45,7 +45,7 @@ return {
 					},
 					footer = {
 						"",
-						"Legends says this dude is still configuring this neovim to this day.",
+						"Legend says this dude is still configuring this neovim to this day.",
 					},
 				},
 			})
