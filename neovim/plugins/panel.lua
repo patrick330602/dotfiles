@@ -38,8 +38,8 @@ return {
 				preview = {
 					command = "lolcat",
 					file_path = "$HOME/.dotfiles/nvim-header.txt",
-					file_width = 39,
-					file_height = 6,
+					file_width = 78,
+					file_height = 17,
 				},
 			})
 		end,
