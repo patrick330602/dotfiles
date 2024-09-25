@@ -31,7 +31,8 @@ return {
 						},
 					},
 					footer = {
-						"Lengends says this dude is still configuring this neovim",
+						"",
+						"Lengends says this dude is still configuring this neovim to this day.",
 					},
 				},
 				preview = {
