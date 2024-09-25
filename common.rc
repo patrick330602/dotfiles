@@ -23,3 +23,5 @@ if command -v bat >/dev/null 2>&1; then
     alias cat="bat"
 fi
 
+# when using kitty, use kitty +kitten ssh
+[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
