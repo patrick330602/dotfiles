@@ -30,15 +30,15 @@ return {
 							action = "Lazy",
 						},
 					},
+					footer = {
+						"Lengends says this dude is still configuring this neovim",
+					},
 				},
 				preview = {
 					command = "lolcat",
 					file_path = "$HOME/.dotfiles/nvim-header.txt",
 					file_width = 39,
 					file_height = 6,
-				},
-				footer = {
-					"Lengends says this dude is still configuring this neovim",
 				},
 			})
 		end,
