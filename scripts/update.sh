@@ -15,6 +15,15 @@ else
     ln -s "$HOME/.dotfiles/starship.toml" "$HOME/.config/starship.toml"
 fi
 
+# instal kitty configuration to ~/.config/kitty/kitty.conf
+if test -f "$HOME/.config/kitty/kitty.conf"; then
+	echo "Backing up Kutty configuration..."
+	mv "$HOME/.config/kitty/kitty.conf" "$HOME/.config/kitty/kitty.conf.bak"
+fi
+echo "Installing Kitty Configuration..."
+mkdir -p "$HOME/.config/kitty/"
+ln -s "$HOME/.dotfiles/kitty.conf" "$HOME/.config/kitty/kitty.conf"
+
 
 # install configuration nvim-config.lua to ~/.config/nvim/init.lua
 # backup existing init.vim if it exists
