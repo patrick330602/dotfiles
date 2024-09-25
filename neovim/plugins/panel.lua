@@ -1,18 +1,12 @@
 return {
 	{ "mbbill/undotree" },
 	{
-		"stevearc/oil.nvim",
-		---@module 'oil'
-		---@type oil.SetupOpts
-		opts = {
-			offsets = {
-				filetype = "oil",
-				text = "File Explorer",
-			},
-		},
+		"nvim-tree/nvim-tree.lua",
+		version = "*",
+		lazy = false,
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		config = function()
-			require("oil").setup()
+			require("nvim-tree").setup({})
 		end,
 	},
 	{
