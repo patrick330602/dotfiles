@@ -45,11 +45,15 @@ return {
 					},
 					footer = {
 						"",
-						"Lengends says this dude is still configuring this neovim to this day.",
+						"Legends says this dude is still configuring this neovim to this day.",
 					},
 				},
 			})
 		end,
 		dependencies = { { "nvim-tree/nvim-web-devicons" } },
 	},
+	{ "akinsho/toggleterm.nvim", version = "*", opts = {
+		open_mapping = [[<c-\>]],
+		hide_numbers = true,
+	} },
 }
