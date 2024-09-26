@@ -15,4 +15,4 @@ if vim.fn.filereadable(plug_path) == 1 then
 end
 
 vim.g.mapleader = " "
-
+vim.opt.termguicolors = true

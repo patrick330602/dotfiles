@@ -16,6 +16,7 @@ return {
 			width = 70,
 			external_diffview = true,
 			libgit2_path = libgit2path,
+			colorscheme = "cyberdream",
 		},
 		dependencies = {
 			"MunifTanjim/nui.nvim",
