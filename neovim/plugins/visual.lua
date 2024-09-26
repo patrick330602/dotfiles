@@ -39,22 +39,15 @@ return {
 		end,
 	},
 	{
-		"akinsho/bufferline.nvim",
-		version = "*",
+		"nanozuki/tabby.nvim",
+		-- event = 'VimEnter', -- if you want lazy load, see below
 		dependencies = "nvim-tree/nvim-web-devicons",
 		config = function()
-			require("bufferline").setup({
-				options = {
-					separator_style = "slant",
-					auto_toggle_bufferline = true,
-					offsets = {
-						{
-							filetype = "NvimTree",
-							text = "File Explorer",
-							text_align = "center",
-							separator = true
-						}
-					},
+			-- configs...
+			require("tabby").setup({
+				option = {
+					nerdfont = true, -- whether use nerdfont
+					lualine_theme = "auto",
 				},
 			})
 		end,
