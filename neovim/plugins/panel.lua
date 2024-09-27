@@ -1,3 +1,33 @@
+local shortcut = {
+	{
+		desc = "Remote",
+		group = "@property",
+		key = "R",
+		action = "RemoteStart",
+	},
+	{
+		desc = "Plugins",
+		group = "@property",
+		key = "P",
+		action = "Lazy",
+	},
+}
+-- if find it is a git@git.wedotstud.io url in .git/config, then add the following:
+local file = io.open(os.getenv("HOME") .. "/.dotfiles/.git/config", "r")
+if file then
+	for line in file:lines() do
+		if string.find(line, "git@git.wedotstud.io") then
+			table.insert(shortcut, {
+				desc = "Dotfiles",
+				group = "@property",
+				key = "D",
+				action = "NvimTreeOpen " .. os.getenv("HOME") .. "/.dotfiles",
+			})
+			break
+		end
+	end
+end
+
 return {
 	{ "mbbill/undotree" },
 	{
@@ -29,20 +59,7 @@ return {
 				theme = "hyper",
 				config = {
 					header = vim.split(logo, "\n"),
-					shortcut = {
-						{
-							desc = "Remote",
-							group = "@property",
-							key = "R",
-							action = "RemoteStart",
-						},
-						{
-							desc = "Plugins",
-							group = "@property",
-							key = "P",
-							action = "Lazy",
-						},
-					},
+					shortcut = shortcut,
 					footer = {
 						"",
 						"Legend says this dude is still configuring this neovim to this day.",
