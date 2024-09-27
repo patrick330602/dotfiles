@@ -4,7 +4,7 @@
 # load only if running in bash
 if [ -n "${BASH_VERSINFO}" ]; then
     # load starship prompt if it is installed, else warn the user to install it
-    if [ -f /usr/local/bin/starship ]; then
+    if [ -f /usr/bin/starship ]; then
             eval "$(starship init bash)"
     else
         if command -v dnf >/dev/null 2>&1; then
