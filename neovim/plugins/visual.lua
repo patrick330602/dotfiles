@@ -56,16 +56,10 @@ return {
 		version = "*", -- optional: only update when a new 1.x version is released
 	},
 	{
-		"kevinhwang91/nvim-hlslens",
-		config = function()
-			require("hlslens").setup()
-		end,
-	},
-	{
 		"Bekaboo/dropbar.nvim",
-		-- optional, but required for fuzzy finder support
 		dependencies = {
 			"nvim-telescope/telescope-fzf-native.nvim",
 		},
 	},
+	{ "rcarriga/nvim-notify" },
 }
