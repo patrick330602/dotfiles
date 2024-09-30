@@ -11,3 +11,5 @@ if vim.fn.has("macunix") == 1 then
 	vim.api.nvim_set_keymap("i", "<D-v>", "<C-r>+", { noremap = true })
 	vim.api.nvim_set_keymap("c", "<D-v>", "<C-r>+", { noremap = true })
 end
+
+vim.keymap.set("", "<Leader>L", require("lsp_lines").toggle, { desc = "Toggle lsp_lines" })

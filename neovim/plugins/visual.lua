@@ -3,8 +3,39 @@ return {
 		"rebelot/kanagawa.nvim",
 		config = function()
 			require("kanagawa").setup({
-				-- Enable transparent background
-				-- transparent = true,
+				transparent = true,
+				theme = "dragon",
+				background = {
+					dark = "dragon",
+					light = "lotus",
+				},
+				colors = {
+					theme = {
+						all = {
+							ui = {
+								bg_gutter = "none",
+							},
+						},
+					},
+				},
+				overrides = function(colors)
+					local theme = colors.theme
+					return {
+						NormalFloat = { bg = "none" },
+						FloatBorder = { bg = "none" },
+						FloatTitle = { bg = "none" },
+						NormalDark = { fg = theme.ui.fg_dim, bg = theme.ui.bg_m3 },
+						LazyNormal = { bg = theme.ui.bg_m3, fg = theme.ui.fg_dim },
+						MasonNormal = { bg = theme.ui.bg_m3, fg = theme.ui.fg_dim },
+						TelescopeTitle = { fg = theme.ui.special, bold = true },
+						TelescopePromptNormal = { bg = theme.ui.bg_p1 },
+						TelescopePromptBorder = { fg = theme.ui.bg_p1, bg = theme.ui.bg_p1 },
+						TelescopeResultsNormal = { fg = theme.ui.fg_dim, bg = theme.ui.bg_m1 },
+						TelescopeResultsBorder = { fg = theme.ui.bg_m1, bg = theme.ui.bg_m1 },
+						TelescopePreviewNormal = { bg = theme.ui.bg_dim },
+						TelescopePreviewBorder = { bg = theme.ui.bg_dim, fg = theme.ui.bg_dim },
+					}
+				end,
 			})
 		end,
 	},
@@ -17,7 +48,7 @@ return {
 				vim.cmd("colorscheme kanagawa")
 			end,
 			set_light_mode = function()
-				vim.api.nvim_set_option_value("background", "dark", {})
+				vim.api.nvim_set_option_value("background", "light", {})
 				vim.cmd("colorscheme kanagawa")
 			end,
 		},
