@@ -19,11 +19,9 @@ return {
 		},
 	},
 	{
-		"rachartier/tiny-inline-diagnostic.nvim",
-		event = "VeryLazy", -- Or `LspAttach`
+		"https://git.sr.ht/~whynothugo/lsp_lines.nvim",
 		config = function()
-			require("tiny-inline-diagnostic").setup()
+			require("lsp_lines").setup()
 		end,
 	},
 }
-
