@@ -16,7 +16,7 @@ local shortcut = {
 local file = io.open(os.getenv("HOME") .. "/.dotfiles/.git/config", "r")
 if file then
 	for line in file:lines() do
-		if string.find(line, "git@git.wedotstud.io") then
+		if string.find(line, "git@code.wedotstud.io") then
 			table.insert(shortcut, {
 				desc = "Dotfiles",
 				group = "@property",
