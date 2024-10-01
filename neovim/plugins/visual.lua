@@ -3,21 +3,11 @@ return {
 		"rebelot/kanagawa.nvim",
 		config = function()
 			require("kanagawa").setup({
-				transparent = true,
 				theme = "dragon",
-				background = {
-					dark = "dragon",
-					light = "lotus",
-				},
-				colors = {
-					theme = {
-						all = {
-							ui = {
-								bg_gutter = "none",
-							},
-						},
-					},
-				},
+				-- background = {
+				-- 	dark = "dragon",
+				-- 	light = "lotus",
+				-- },
 				overrides = function(colors)
 					local theme = colors.theme
 					return {
@@ -39,20 +29,20 @@ return {
 			})
 		end,
 	},
-	{
-		"f-person/auto-dark-mode.nvim",
-		opts = {
-			update_interval = 1000,
-			set_dark_mode = function()
-				vim.api.nvim_set_option_value("background", "dark", {})
-				vim.cmd("colorscheme kanagawa")
-			end,
-			set_light_mode = function()
-				vim.api.nvim_set_option_value("background", "light", {})
-				vim.cmd("colorscheme kanagawa")
-			end,
-		},
-	},
+	-- {
+	-- 	"f-person/auto-dark-mode.nvim",
+	-- 	opts = {
+	-- 		update_interval = 1000,
+	-- 		set_dark_mode = function()
+	-- 			vim.api.nvim_set_option_value("background", "dark", {})
+	-- 			vim.cmd("colorscheme kanagawa")
+	-- 		end,
+	-- 		set_light_mode = function()
+	-- 			vim.api.nvim_set_option_value("background", "light", {})
+	-- 			vim.cmd("colorscheme kanagawa")
+	-- 		end,
+	-- 	},
+	-- },
 	{
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
