@@ -59,10 +59,10 @@ case "$CURR_OS" in
     ;;
 esac
 
-git clone "git@git.wedotstud.io:patrick/dotfiles.git" "$HOME/.dotfiles" || {
+git clone "git@code.wedotstud.io:patrick/dotfiles.git" "$HOME/.dotfiles" || {
     # If SSH clone fails, try HTTPS
     echo "SSH clone failed, trying with HTTPS..."
-    git clone "https://git.wedotstud.io/patrick/dotfiles.git" "$HOME/.dotfiles"
+    git clone "https://code.wedotstud.io/patrick/dotfiles.git" "$HOME/.dotfiles"
 }
 
 SOURCE_DOTFILES_RC=". $HOME/.dotfiles/.dotfiles.rc"
