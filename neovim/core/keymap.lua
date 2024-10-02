@@ -1,6 +1,7 @@
 -- shortcut settings
 vim.keymap.set("n", "<F2>", vim.cmd.NvimTreeToggle)
 vim.keymap.set("n", "<F3>", vim.cmd.UndotreeToggle)
+vim.keymap.set("", "<F7>", require("mini.map").toggle)
 vim.keymap.set("n", "<leader>S", ":Telescope live_grep<CR>")
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")

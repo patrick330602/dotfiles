@@ -29,6 +29,18 @@ if file then
 end
 
 return {
+	{
+		"echasnovski/mini.map",
+		version = "*",
+		config = function()
+			local MiniMap = require("mini.map")
+			MiniMap.setup({
+				symbols = {
+					encode = MiniMap.gen_encode_symbols.dot(),
+				},
+			})
+		end,
+	},
 	{ "mbbill/undotree" },
 	{
 		"nvim-tree/nvim-tree.lua",
