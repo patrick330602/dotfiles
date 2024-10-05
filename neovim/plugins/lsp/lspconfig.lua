@@ -84,6 +84,7 @@ return {
 					capabilities = capabilities,
 				})
 			end,
+
 			["rust_analyzer"] = function()
 				-- configure rust language server
 				lspconfig["rust_analyzer"].setup({
