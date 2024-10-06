@@ -6,10 +6,6 @@ export PATH="$HOME/go/bin:$PATH"
 alias dchdate="date +'%a, %d %b %Y %T %z'"
 alias sudocode='SUDO_EDITOR="$(which code) --wait" sudoedit'
 
-# if nvim is installed, alias vim to nvim
-if command -v nvim >/dev/null 2>&1; then
-    alias vim="nvim"
-fi
 
 # if neovide/gnvim is installed, alias them to gvim
 if command -v neovide >/dev/null 2>&1; then
