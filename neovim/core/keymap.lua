@@ -14,3 +14,16 @@ if vim.fn.has("macunix") == 1 then
 end
 
 vim.keymap.set("", "<Leader>L", require("lsp_lines").toggle, { desc = "Toggle lsp_lines" })
+
+-- Keyboard users
+vim.keymap.set("", "<C-t>", function()
+	require("menu").open("default")
+end, {})
+
+-- mouse users + nvimtree users!
+vim.keymap.set("", "<RightMouse>", function()
+	vim.cmd.exec('"normal! \\<RightMouse>"')
+
+	local options = vim.bo.ft == "NvimTree" and "nvimtree" or "default"
+	require("menu").open(options, { mouse = true })
+end, {})
