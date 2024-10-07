@@ -1,36 +1,17 @@
-local jit = require("jit")
-local libgit2path = "libgit2.so.1.7"
-if jit.os == "OSX" then
-	if jit.arch == "x64" then
-		libgit2path = "/usr/local/opt/libgit2/lib/libgit2.dylib"
-	elseif jit.arch == "arm64" then
-		libgit2path = "/opt/homebrew/lib/libgit2.dylib"
-	end
-end
-
 return {
 	{ "tpope/vim-fugitive" },
 	{
-		"SuperBo/fugit2.nvim",
-		opts = {
-			width = 70,
-			external_diffview = true,
-			libgit2_path = libgit2path,
-		},
+		"NeogitOrg/neogit",
 		dependencies = {
-			"MunifTanjim/nui.nvim",
-			"nvim-tree/nvim-web-devicons",
-			"nvim-lua/plenary.nvim",
-			{
-				"chrisgrieser/nvim-tinygit", -- optional: for Github PR view
-				dependencies = { "stevearc/dressing.nvim" },
-			},
+			"nvim-lua/plenary.nvim", -- required
+			"sindrets/diffview.nvim", -- optional - Diff integration
+
+			-- Only one of these is needed.
+			"nvim-telescope/telescope.nvim", -- optional
 		},
-		cmd = { "Fugit2", "Fugit2Blame", "Fugit2Diff", "Fugit2Graph" },
-		keys = {
-			{ "<leader>F", mode = "n", "<cmd>Fugit2<cr>" },
-		},
+		config = true,
 	},
+	{ "lewis6991/gitsigns.nvim" },
 	{
 		"sindrets/diffview.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -47,19 +28,47 @@ return {
 		"isakbm/gitgraph.nvim",
 		opts = {
 			symbols = {
-				merge_commit = "M",
-				commit = "*",
+				merge_commit = "",
+				commit = "",
+				merge_commit_end = "",
+				commit_end = "",
+
+				-- Advanced symbols
+				GVER = "",
+				GHOR = "",
+				GCLD = "",
+				GCRD = "╭",
+				GCLU = "",
+				GCRU = "",
+				GLRU = "",
+				GLRD = "",
+				GLUD = "",
+				GRUD = "",
+				GFORKU = "",
+				GFORKD = "",
+				GRUDCD = "",
+				GRUDCU = "",
+				GLUDCD = "",
+				GLUDCU = "",
+				GLRDCL = "",
+				GLRDCR = "",
+				GLRUCL = "",
+				GLRUCR = "",
 			},
 			format = {
 				timestamp = "%H:%M:%S %d-%m-%Y",
 				fields = { "hash", "timestamp", "author", "branch_name", "tag" },
 			},
 			hooks = {
+				-- Check diff of a commit
 				on_select_commit = function(commit)
-					print("selected commit:", commit.hash)
+					vim.notify("DiffviewOpen " .. commit.hash .. "^!")
+					vim.cmd(":DiffviewOpen " .. commit.hash .. "^!")
 				end,
+				-- Check diff from commit a -> commit b
 				on_select_range_commit = function(from, to)
-					print("selected range:", from.hash, to.hash)
+					vim.notify("DiffviewOpen " .. from.hash .. "~1.." .. to.hash)
+					vim.cmd(":DiffviewOpen " .. from.hash .. "~1.." .. to.hash)
 				end,
 			},
 		},
