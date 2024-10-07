@@ -2,7 +2,7 @@
 vim.keymap.set("n", "<F2>", vim.cmd.NvimTreeToggle)
 vim.keymap.set("n", "<F3>", vim.cmd.UndotreeToggle)
 vim.keymap.set("", "<F7>", require("mini.map").toggle)
-vim.keymap.set("", "<leader>S", ":Telescope live_grep<CR>")
+vim.keymap.set("", "<leader>S", ":Telescope live_grep<CR>", { desc = "Search within Working Directory" })
 vim.keymap.set("", "<Leader>L", require("lsp_lines").toggle, { desc = "Toggle inline Diagnostic" })
 vim.keymap.set("", "<Leader>G", require("neogit").open, { desc = "Toggle Neogit" })
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")

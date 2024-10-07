@@ -6,9 +6,7 @@ vim.cmd("syntax on")
 vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.laststatus = 2
-vim.opt.mouse = "a"
 vim.opt.scrolloff = 4
-vim.opt.colorcolumn = "80"
 
 -- tab settings
 vim.opt.showtabline = 2
