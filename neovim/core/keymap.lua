@@ -1,10 +1,20 @@
 -- shortcut settings
-vim.keymap.set("n", "<F2>", vim.cmd.NvimTreeToggle)
-vim.keymap.set("n", "<F3>", vim.cmd.UndotreeToggle)
-vim.keymap.set("", "<F7>", require("mini.map").toggle)
-vim.keymap.set("", "<leader>S", ":Telescope live_grep<CR>", { desc = "Search within Working Directory" })
-vim.keymap.set("", "<Leader>L", require("lsp_lines").toggle, { desc = "Toggle inline Diagnostic" })
+vim.keymap.set("", "<Leader>U", vim.cmd.UndotreeToggle, { desc = "Toggle Undo Tree" })
+vim.keymap.set(
+	"",
+	"<leader>S",
+	require("telescope.builtin").live_grep,
+	{ desc = "Search Texts within Working Directory" }
+)
+vim.keymap.set("", "<Leader>L", require("lsp_lines").toggle, { desc = "Toggle Inline Diagnostic" })
 vim.keymap.set("", "<Leader>G", require("neogit").open, { desc = "Toggle Neogit" })
+vim.keymap.set(
+	"",
+	"<Leader>F",
+	require("telescope.builtin").find_files,
+	{ desc = "Find Files within Working Directory" }
+)
+vim.keymap.set("", "<Leader>B", require("telescope.builtin").buffers, { desc = "Show Current Opened Buffer" })
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
