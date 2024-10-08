@@ -56,7 +56,13 @@ return {
 			},
 		})
 
-		lspconfig.gopls.setup({})
+		require("go").setup({
+			lsp_cfg = false,
+			-- other setups...
+		})
+		local go_cfg = require("go.lsp").config() -- config() return the go.nvim gopls setup
+
+		lspconfig.gopls.setup(go_cfg)
 
 		mason_lspconfig.setup_handlers({
 			-- default handler for installed servers
