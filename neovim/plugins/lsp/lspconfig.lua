@@ -10,7 +10,6 @@ return {
 	dependencies = {
 		"hrsh7th/cmp-nvim-lsp",
 		{ "antosha417/nvim-lsp-file-operations", config = true },
-		{ "folke/neodev.nvim", opts = {} },
 	},
 	config = function()
 		local lspconfig = require("lspconfig")
@@ -58,7 +57,6 @@ return {
 
 		require("go").setup({
 			lsp_cfg = false,
-			-- other setups...
 		})
 		local go_cfg = require("go.lsp").config() -- config() return the go.nvim gopls setup
 
@@ -68,25 +66,6 @@ return {
 			-- default handler for installed servers
 			function(server_name)
 				lspconfig[server_name].setup({
-					capabilities = capabilities,
-				})
-			end,
-			["rust_analyzer"] = function()
-				-- configure rust language server
-				lspconfig["rust_analyzer"].setup({
-					capabilities = capabilities,
-					settings = {
-						["rust-analyzer"] = {
-							checkOnSave = {
-								command = "clippy",
-							},
-						},
-					},
-				})
-			end,
-			["tailwindcss"] = function()
-				-- configure tailwindcss language server
-				lspconfig["tailwindcss"].setup({
 					capabilities = capabilities,
 				})
 			end,
@@ -125,23 +104,6 @@ return {
 						"scss",
 						"less",
 						"svelte",
-					},
-				})
-			end,
-			["lua_ls"] = function()
-				-- configure lua server (with special settings)
-				lspconfig["lua_ls"].setup({
-					capabilities = capabilities,
-					settings = {
-						Lua = {
-							-- make the language server recognize "vim" global
-							diagnostics = {
-								globals = { "vim" },
-							},
-							completion = {
-								callSnippet = "Replace",
-							},
-						},
 					},
 				})
 			end,

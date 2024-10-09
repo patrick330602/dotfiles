@@ -9,7 +9,7 @@ vim.opt.laststatus = 2
 vim.opt.scrolloff = 4
 
 -- tab settings
--- vim.opt.showtabline = 2
+vim.opt.showtabline = 0
 
 -- indent settings
 vim.opt.tabstop = 4
@@ -27,3 +27,6 @@ vim.opt.undofile = true
 -- search settings
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
+
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1

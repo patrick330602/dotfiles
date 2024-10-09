@@ -29,14 +29,12 @@ return {
 			ensure_installed = {
 				"html",
 				"cssls",
-				"tailwindcss",
 				"svelte",
 				"lua_ls",
 				"graphql",
 				"emmet_ls",
 				"prismals",
 				"pyright",
-				"rust_analyzer",
 				"clangd",
 			},
 		})
