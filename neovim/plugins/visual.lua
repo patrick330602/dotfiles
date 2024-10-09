@@ -8,7 +8,12 @@ local function diff_source()
 		}
 	end
 end
+local telescopeConfig = require("telescope.config")
+local vimgrep_arguments = { unpack(telescopeConfig.values.vimgrep_arguments) }
 
+table.insert(vimgrep_arguments, "--hidden")
+table.insert(vimgrep_arguments, "--glob")
+table.insert(vimgrep_arguments, "!**/.git/*")
 return {
 	{
 		"comfysage/evergarden",
@@ -88,7 +93,6 @@ return {
 			"nvim-telescope/telescope-fzf-native.nvim",
 		},
 	},
-	{ "rcarriga/nvim-notify" },
 	{ "brenoprata10/nvim-highlight-colors", config = true, opts = { render = "virtual" } },
 	{
 		"folke/noice.nvim",
@@ -111,7 +115,64 @@ return {
 		},
 		dependencies = {
 			"MunifTanjim/nui.nvim",
-			"rcarriga/nvim-notify",
+		},
+	},
+
+	{ "mbbill/undotree" },
+	{
+		"stevearc/oil.nvim",
+		---@module 'oil'
+		---@type oil.SetupOpts
+		opts = {},
+		dependencies = { { "echasnovski/mini.icons", opts = {} } },
+	},
+	{
+		"folke/which-key.nvim",
+		event = "VeryLazy",
+		opts = {
+			preset = "helix",
+		},
+		keys = {
+			{
+				"<leader>?",
+				function()
+					require("which-key").show({ global = false })
+				end,
+				desc = "Buffer Local Keymaps (which-key)",
+			},
+		},
+	},
+	{
+		"nvim-telescope/telescope.nvim",
+		dependencies = { "nvim-lua/plenary.nvim" },
+		config = true,
+		opts = {
+			defaults = {
+				-- `hidden = true` is not supported in text grep commands.
+				vimgrep_arguments = vimgrep_arguments,
+			},
+			pickers = {
+				find_files = {
+					-- `hidden = true` will still show the inside of `.git/` as it's not `.gitignore`d.
+					find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" },
+				},
+				buffers = {
+					previewer = false,
+					layout_strategy = "center",
+					layout_config = {
+						width = function(_, max_columns)
+							local percentage = 0.5
+							local max = 50
+							return math.min(math.floor(percentage * max_columns), max)
+						end,
+						height = function(_, _, max_lines)
+							local percentage = 0.5
+							local max = 30
+							return math.min(math.floor(percentage * max_lines), max)
+						end,
+					},
+				},
+			},
 		},
 	},
 }

@@ -6,7 +6,6 @@ vim.keymap.set(
 	require("telescope.builtin").live_grep,
 	{ desc = "Search Texts within Working Directory" }
 )
-vim.keymap.set("", "<leader>G", require("neogit").open, { desc = "Toggle Neogit" })
 vim.keymap.set(
 	"",
 	"<leader>F",
