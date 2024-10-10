@@ -1,5 +1,4 @@
 vim.diagnostic.config({ virtual_text = false })
-vim.cmd("colorscheme evergarden")
 
 local format_sync_grp = vim.api.nvim_create_augroup("GoFormat", {})
 vim.api.nvim_create_autocmd("BufWritePre", {

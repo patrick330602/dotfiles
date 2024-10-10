@@ -16,35 +16,33 @@ table.insert(vimgrep_arguments, "--glob")
 table.insert(vimgrep_arguments, "!**/.git/*")
 return {
 	{
-		"comfysage/evergarden",
+		"scottmckendry/cyberdream.nvim",
+		lazy = false,
 		priority = 1000,
+		config = true,
 		opts = {
-			transparent_background = true,
-			contrast_dark = "medium",
-			style = {
-				tabline = { reverse = true, color = "green" },
-				search = { reverse = false, inc_reverse = true },
-				types = { italic = true },
-				keyword = { italic = true },
-				comment = { italic = true },
-				sign = { highlight = false },
+			transparent = true,
+
+			italic_comments = true,
+			theme = {
+				variant = "auto",
 			},
-			overrides = {}, -- add custom overrides
 		},
-	}, -- {
-	-- 	"f-person/auto-dark-mode.nvim",
-	-- 	opts = {
-	-- 		update_interval = 1000,
-	-- 		set_dark_mode = function()
-	-- 			vim.api.nvim_set_option_value("background", "dark", {})
-	-- 			vim.cmd("colorscheme kanagawa")
-	-- 		end,
-	-- 		set_light_mode = function()
-	-- 			vim.api.nvim_set_option_value("background", "light", {})
-	-- 			vim.cmd("colorscheme kanagawa")
-	-- 		end,
-	-- 	},
-	-- },
+	},
+	{
+		"f-person/auto-dark-mode.nvim",
+		opts = {
+			update_interval = 1000,
+			set_dark_mode = function()
+				vim.api.nvim_set_option_value("background", "dark", {})
+				vim.cmd("colorscheme cyberdream")
+			end,
+			set_light_mode = function()
+				vim.api.nvim_set_option_value("background", "light", {})
+				vim.cmd("colorscheme cyberdream")
+			end,
+		},
+	},
 	{
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons", "AndreM222/copilot-lualine", "arkav/lualine-lsp-progress" },
