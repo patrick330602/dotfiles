@@ -13,4 +13,16 @@ return {
 			"DiffviewRefresh",
 		},
 	},
+	{
+		"NeogitOrg/neogit",
+		keys = {
+			{ "<leader>G", "<cmd>Neogit<cr>", desc = "Open Neogit" },
+		},
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+			"sindrets/diffview.nvim",
+			"nvim-telescope/telescope.nvim",
+		},
+		config = true,
+	},
 }
