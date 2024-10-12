@@ -5,9 +5,15 @@ vim.opt.encoding = "utf-8"
 vim.cmd("syntax on")
 vim.opt.nu = true
 vim.opt.relativenumber = true
-vim.opt.laststatus = 2
-vim.opt.scrolloff = 4
+vim.opt.mouse = "a"
+vim.opt.laststatus = 3
+vim.opt.scrolloff = 10
 vim.opt.cmdheight = 0
+
+vim.schedule(function()
+	vim.opt.clipboard = "unnamedplus"
+end)
+vim.opt.updatetime = 250
 
 -- tab settings
 vim.opt.showtabline = 0

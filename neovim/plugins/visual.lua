@@ -45,7 +45,7 @@ return {
 	},
 	{
 		"nvim-lualine/lualine.nvim",
-		dependencies = { "nvim-tree/nvim-web-devicons", "AndreM222/copilot-lualine", "arkav/lualine-lsp-progress" },
+		dependencies = { "nvim-tree/nvim-web-devicons", "arkav/lualine-lsp-progress" },
 		opts = {
 			options = {
 				theme = "auto",
@@ -65,7 +65,6 @@ return {
 					},
 				},
 				lualine_x = {
-					"copilot",
 					"encoding",
 					{
 						"fileformat",
@@ -124,7 +123,9 @@ return {
 		},
 	},
 
-	{ "mbbill/undotree" },
+	{ "mbbill/undotree", keys = {
+		{ "<leader>U", vim.cmd.UndotreeToggle, desc = "Toggle UndoTree" },
+	} },
 	{
 		"stevearc/oil.nvim",
 		---@module 'oil'

@@ -1,5 +1,4 @@
 -- shortcut settings
-vim.keymap.set("", "<leader>U", vim.cmd.UndotreeToggle, { desc = "Toggle Undo Tree" })
 vim.keymap.set(
 	"",
 	"<leader>S",

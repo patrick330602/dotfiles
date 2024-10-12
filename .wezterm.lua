@@ -17,14 +17,13 @@ config.font = wezterm.font_with_fallback({
 	{ family = "Noto Sans Mono CJK TC", scale = 1.2 },
 	{ family = "Symbols Nerd Font Mono", scale = 0.75 },
 })
+config.font_size = 16.0
 
 config.use_fancy_tab_bar = false
 config.window_frame = {
 	font = wezterm.font({ family = "0xProto", weight = "Bold" }),
 	font_size = 14,
 }
-
-config.font_size = 16.0
 
 config.window_decorations = "RESIZE"
 config.window_background_opacity = 0.8
@@ -74,5 +73,4 @@ end
 
 config.colors["tab_bar"] = { background = "transparent" }
 
--- and finally, return the configuration to wezterm
 return config
