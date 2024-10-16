@@ -29,7 +29,6 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
 	spec = {
 		{ import = "pdfs.plugins" },
-		{ import = "pdfs.plugins.lsp" },
 	},
 	rocks = { enabled = false },
 	checker = {
@@ -37,5 +36,3 @@ require("lazy").setup({
 		notify = false,
 	},
 })
-
--- nvim-tree settings
