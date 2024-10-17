@@ -14,7 +14,6 @@ vim.keymap.set(
 vim.keymap.set("", "<leader>B", require("telescope.builtin").buffers, { desc = "Show Current Opened Buffer" })
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move line(s) up" })
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move line(s) down" })
-vim.keymap.set("", "<leader>O", "<cmd>Oil<cr>", {desc = "Open Oil"})
 
 -- MacOS-specific settings
 if vim.fn.has("macunix") == 1 then
