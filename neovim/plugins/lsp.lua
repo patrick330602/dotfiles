@@ -9,6 +9,7 @@ return {
 		--notifications
 		"j-hui/fidget.nvim",
 		--cmp
+		"b0o/schemastore.nvim",
 		{
 			"saghen/blink.cmp",
 			lazy = false,

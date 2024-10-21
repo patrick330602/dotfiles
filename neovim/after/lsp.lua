@@ -61,11 +61,37 @@ mason_lspconfig.setup({
 		"bashls",
 		"clangd",
 		"eslint",
+		"jsonls",
 	},
 	handlers = {
 		function(server_name) -- default handler (optional)
 			lspconfig[server_name].setup({
 				capabilities = capabilities,
+			})
+		end,
+		["jsonls"] = function()
+			lspconfig.jsonls.setup({
+				capabilities = capabilities,
+				settings = {
+					json = {
+						schemas = require("schemastore").json.schemas(),
+						validate = { enable = true },
+					},
+				},
+			})
+		end,
+		["yamlls"] = function()
+			lspconfig.yamlls.setup({
+				capabilities = capabilities,
+				settings = {
+					yaml = {
+						schemaStore = {
+							enable = false,
+							url = "",
+						},
+						schemas = require("schemastore").yaml.schemas(),
+					},
+				},
 			})
 		end,
 		["gopls"] = function()
