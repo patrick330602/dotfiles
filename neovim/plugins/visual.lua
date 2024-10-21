@@ -44,7 +44,7 @@ return {
 	},
 	{
 		"nvim-lualine/lualine.nvim",
-		dependencies = { "nvim-tree/nvim-web-devicons", "arkav/lualine-lsp-progress" },
+		dependencies = { "nvim-tree/nvim-web-devicons" },
 		opts = {
 			options = {
 				theme = "auto",
@@ -57,11 +57,6 @@ return {
 				lualine_c = {
 					"tabs",
 					"filename",
-					{
-						"lsp_progress",
-						display_components = { "lsp_client_name", "spinner" },
-						spinner_symbols = { "⣷", "⣯", "⣟", "⡿", "⢿", "⣻", "⣽", "⣾" },
-					},
 				},
 				lualine_x = {
 					"encoding",
@@ -86,37 +81,6 @@ return {
 		"Bekaboo/dropbar.nvim",
 		dependencies = {
 			"nvim-telescope/telescope-fzf-native.nvim",
-		},
-	},
-	{
-		"folke/noice.nvim",
-		event = "VeryLazy",
-		opts = {
-			lsp = {
-				override = {
-					["vim.lsp.util.convert_input_to_markdown_lines"] = true,
-					["vim.lsp.util.stylize_markdown"] = true,
-					["cmp.entry.get_documentation"] = true,
-				},
-			},
-			presets = {
-				bottom_search = true,
-				command_palette = true,
-				long_message_to_split = true,
-				inc_rename = false,
-				lsp_doc_border = false,
-			},
-			messages = {
-				view = "mini",
-				view_error = "mini",
-				view_warn = "mini",
-			},
-			notify = {
-				view = "mini",
-			},
-		},
-		dependencies = {
-			"MunifTanjim/nui.nvim",
 		},
 	},
 

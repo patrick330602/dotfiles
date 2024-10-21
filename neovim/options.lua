@@ -8,7 +8,7 @@ vim.opt.relativenumber = true
 vim.opt.mouse = "a"
 vim.opt.laststatus = 3
 vim.opt.scrolloff = 10
-vim.opt.cmdheight = 0
+-- vim.opt.cmdheight = 0
 
 vim.schedule(function()
 	vim.opt.clipboard = "unnamedplus"

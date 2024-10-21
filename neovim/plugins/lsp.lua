@@ -6,6 +6,8 @@ return {
 		"williamboman/mason.nvim",
 		"williamboman/mason-lspconfig.nvim",
 		"jay-babu/mason-null-ls.nvim",
+		--notifications
+		"j-hui/fidget.nvim",
 		--cmp
 		{
 			"saghen/blink.cmp",
