@@ -28,7 +28,7 @@ vim.opt.smartindent = true
 -- temp file settings
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undodir = vim.fn.stdpath("data") .. "/undodir"
 vim.opt.undofile = true
 
 -- search settings
