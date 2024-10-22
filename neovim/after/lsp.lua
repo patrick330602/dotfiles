@@ -56,6 +56,7 @@ mason_lspconfig.setup({
 		"rust_analyzer",
 		"gopls",
 		"pyright",
+		"dockerls",
 		"yamlls",
 		"nim_langserver",
 		"bashls",
@@ -174,7 +175,7 @@ require("mason-null-ls").setup({
 
 require("blink.cmp").setup({
 	highlight = {
-		use_nvim_cmp_as_default = true,
+		use_nvim_cmp_as_default = false,
 	},
 	sources = {
 		providers = {
@@ -187,4 +188,15 @@ require("blink.cmp").setup({
 	nerd_font_variant = "mono",
 	accept = { auto_brackets = { enabled = true } },
 	trigger = { signature_help = { enabled = true } },
+	windows = {
+		autocomplete = {
+			border = "rounded",
+		},
+		documentation = {
+			border = "rounded",
+		},
+		signature_help = {
+			border = "rounded",
+		},
+	},
 })
