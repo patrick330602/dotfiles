@@ -39,7 +39,7 @@ if ! test -d "$HOME/.config/nvim/lua/pdfs"; then
     mkdir -p "$HOME/.config/nvim/lua"
     ln -s "$HOME/.dotfiles/neovim" "$HOME/.config/nvim/lua/pdfs"
 fi
-ln -s "$HOME/.dotfiles/nvim-config.lua" "$HOME/.config/nvim/init.lua"
+ln -s "$HOME/.dotfiles/init.lua" "$HOME/.config/nvim/init.lua"
 nvim --headless "+Lazy! sync" +qa
 
 echo "::Done! Please restart your shell."
