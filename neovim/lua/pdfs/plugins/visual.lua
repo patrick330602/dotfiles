@@ -15,30 +15,30 @@ table.insert(vimgrep_arguments, "--hidden")
 table.insert(vimgrep_arguments, "--glob")
 table.insert(vimgrep_arguments, "!**/.git/*")
 return {
-	{
-		"patrick330602/cyberdream.nvim",
-		lazy = false,
-		priority = 1000,
-		opts = {
-			transparent = true,
-			borderless_telescope = false,
-			italic_comments = true,
-			theme = {
-				variant = "auto",
-			},
-		},
-	},
+	-- {
+	-- 	"patrick330602/cyberdream.nvim",
+	-- 	lazy = false,
+	-- 	priority = 1000,
+	-- 	opts = {
+	-- 		transparent = true,
+	-- 		borderless_telescope = false,
+	-- 		italic_comments = true,
+	-- 		theme = {
+	-- 			variant = "auto",
+	-- 		},
+	-- 	},
+	-- },
 	{
 		"f-person/auto-dark-mode.nvim",
 		opts = {
 			update_interval = 1000,
 			set_dark_mode = function()
 				vim.api.nvim_set_option_value("background", "dark", {})
-				vim.cmd("colorscheme cyberdream")
+				require("pdfs.colors").load()
 			end,
 			set_light_mode = function()
 				vim.api.nvim_set_option_value("background", "light", {})
-				vim.cmd("colorscheme cyberdream")
+				require("pdfs.colors").load()
 			end,
 		},
 	},

@@ -187,7 +187,7 @@ M.git = function()
 		or ""
 	local branch_name = "%#StGitBranch#  " .. git_status.head
 
-	return branch_name .. added .. changed .. removed .. " %#StFileSep# "
+	return branch_name .. added .. changed .. removed .. " %#StFileSep#| "
 end
 
 M.lsp_diagnostics = function()
