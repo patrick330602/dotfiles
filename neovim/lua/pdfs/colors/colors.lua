@@ -1,8 +1,8 @@
 -- a fork of cyberdream's color pallete
----@class CyberdreamColors
+---@class DaydreamColors
 local M = {}
 
----@class CyberdreamColorLight
+---@class DaydreamColorLight
 ---@field bg "#ffffff"|string
 ---@field bgAlt "#f7f8f9"|string
 ---@field bgHighlight "#e9eef2"|string
@@ -21,7 +21,7 @@ local M = {}
 ---@field white "#f7f8f9"|string
 ---@field black "#16181a"|string
 
----@class CyberdreamColorDefault
+---@class DaydreamColorDefault
 ---@field bg "#16181a"|string
 ---@field bgAlt "#1e2124"|string
 ---@field bgHighlight "#3c4048"|string
@@ -40,8 +40,8 @@ local M = {}
 ---@field white "#f7f8f9"|string
 ---@field black "#16181a"|string
 
----@class CyberdreamColors
----@field default CyberdreamColorDefault
+---@class DaydreamColors
+---@field default DaydreamColorDefault
 M.default = {
 	bg = "#16181a",
 	bgAlt = "#1e2124",
@@ -61,8 +61,8 @@ M.default = {
 	black = "#16181a",
 }
 
----@class CyberdreamColors
----@field light CyberdreamColorLight
+---@class DaydreamColors
+---@field light DaydreamColorLight
 M.light = {
 	bg = "#ffffff",
 	bgAlt = "#eaeaea",
@@ -81,5 +81,8 @@ M.light = {
 	white = "#f7f8f9",
 	black = "#16181a",
 }
+
+---@alias Colors table<DaydreamColorDefault|DaydreamColorLight|string, string>
+---@alias DaydreamPalette DaydreamColorLight|DaydreamColorDefault|Colors
 
 return M
