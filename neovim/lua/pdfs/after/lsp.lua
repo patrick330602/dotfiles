@@ -55,7 +55,7 @@ mason_lspconfig.setup({
 		"lua_ls",
 		"rust_analyzer",
 		"gopls",
-		"pyright",
+		"basedpyright",
 		"dockerls",
 		"yamlls",
 		"nim_langserver",

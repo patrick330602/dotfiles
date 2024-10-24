@@ -1,13 +1,3 @@
-local function diff_source()
-	local gitsigns = vim.b.gitsigns_status_dict
-	if gitsigns then
-		return {
-			added = gitsigns.added,
-			modified = gitsigns.changed,
-			removed = gitsigns.removed,
-		}
-	end
-end
 local telescopeConfig = require("telescope.config")
 local vimgrep_arguments = { unpack(telescopeConfig.values.vimgrep_arguments) }
 
@@ -15,19 +5,6 @@ table.insert(vimgrep_arguments, "--hidden")
 table.insert(vimgrep_arguments, "--glob")
 table.insert(vimgrep_arguments, "!**/.git/*")
 return {
-	-- {
-	-- 	"patrick330602/cyberdream.nvim",
-	-- 	lazy = false,
-	-- 	priority = 1000,
-	-- 	opts = {
-	-- 		transparent = true,
-	-- 		borderless_telescope = false,
-	-- 		italic_comments = true,
-	-- 		theme = {
-	-- 			variant = "auto",
-	-- 		},
-	-- 	},
-	-- },
 	{
 		"f-person/auto-dark-mode.nvim",
 		opts = {
@@ -42,48 +19,12 @@ return {
 			end,
 		},
 	},
-	-- {
-	-- 	"nvim-lualine/lualine.nvim",
-	-- 	dependencies = { "nvim-tree/nvim-web-devicons" },
-	-- 	opts = {
-	-- 		options = {
-	-- 			theme = "auto",
-	-- 			component_separators = { left = "|", right = "|" },
-	-- 			section_separators = { left = "", right = "" },
-	-- 		},
-	-- 		sections = {
-	-- 			lualine_a = { "mode" },
-	-- 			lualine_b = { { "b:gitsigns_head", icon = "" }, { "diff", source = diff_source }, "diagnostics" },
-	-- 			lualine_c = {
-	-- 				"tabs",
-	-- 				"filename",
-	-- 			},
-	-- 			lualine_x = {
-	-- 				"encoding",
-	-- 				{
-	-- 					"fileformat",
-	-- 					icons_enabled = true,
-	-- 					symbols = {
-	-- 						unix = "LF",
-	-- 						dos = "CRLF",
-	-- 						mac = "CR",
-	-- 					},
-	-- 				},
-	-- 				"filetype",
-	-- 			},
-	-- 			lualine_y = { "progress" },
-	-- 			lualine_z = { "location" },
-	-- 		},
-	-- 		extensions = { "nvim-tree", "lazy", "mason", "toggleterm", "trouble" },
-	-- 	},
-	-- },
 	{
 		"Bekaboo/dropbar.nvim",
 		dependencies = {
 			"nvim-telescope/telescope-fzf-native.nvim",
 		},
 	},
-
 	{
 		"mbbill/undotree",
 		keys = {

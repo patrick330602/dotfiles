@@ -6,7 +6,7 @@ vim.cmd("syntax on")
 vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.mouse = "a"
-vim.opt.laststatus = 3
+vim.opt.laststatus = 2
 vim.opt.scrolloff = 10
 -- vim.opt.cmdheight = 0
 
