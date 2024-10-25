@@ -183,14 +183,6 @@ require("blink.cmp").setup({
 	highlight = {
 		use_nvim_cmp_as_default = false,
 	},
-	sources = {
-		providers = {
-			{ "blink.cmp.sources.lsp",      name = "LSP" },
-			{ "blink.cmp.sources.path",     name = "Path",     score_offset = 3 },
-			{ "blink.cmp.sources.snippets", name = "Snippets", score_offset = -3 },
-			{ "blink.cmp.sources.buffer",   name = "Buffer",   fallback_for = { "LSP" } },
-		},
-	},
 	nerd_font_variant = "mono",
 	accept = { auto_brackets = { enabled = true } },
 	trigger = { signature_help = { enabled = true } },
