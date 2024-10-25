@@ -8,7 +8,13 @@ local mason = require("mason")
 local lspconfig = require("lspconfig")
 local mason_lspconfig = require("mason-lspconfig")
 local null_ls = require("null-ls")
-require("fidget").setup({})
+require("fidget").setup({
+	notification = {
+		window = {
+			winblend = 0,
+		},
+	},
+})
 
 vim.api.nvim_create_autocmd("LspAttach", {
 	group = vim.api.nvim_create_augroup("UserLspConfig", {}),

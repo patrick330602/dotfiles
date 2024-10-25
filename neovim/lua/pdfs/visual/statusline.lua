@@ -3,6 +3,37 @@ local autocmd = vim.api.nvim_create_autocmd
 
 local M = {}
 
+local function findValueByKeyPrefix(prefix)
+	local filetypes = {
+		undotree = {
+			icon = "%#StUndoTree#  ",
+			label = "UNDOTREE",
+		},
+		oil = {
+			icon = "%#StOil# 󰼙 ",
+			label = "Oil",
+		},
+		trouble = {
+			icon = "%#StTrouble#  ",
+			label = "Trouble",
+		},
+		["copilot%-chat"] = {
+			icon = "%#StCopilotChat#  ",
+			label = "Copilot Chat",
+		},
+		Neogit = {
+			icon = "%#StGit#  ",
+			label = "Git",
+		},
+	}
+	for key, value in pairs(filetypes) do
+		if type(key) == "string" and string.sub(prefix, 1, #key) == key then
+			return value
+		end
+	end
+	return nil
+end
+
 local modes = {
 	-- Normal
 	["n"] = "StNormalMode",
@@ -94,7 +125,7 @@ local function truncate_filename(filename, max_length)
 end
 
 M.file_info = function()
-	local icon = " 󰈚 "
+	local icon = "󰈚"
 	local path = vim.fn.expand("%F")
 	local name = (path == "" and "Empty ") or path:match("([^/\\]+)[/\\]*$")
 
@@ -113,48 +144,20 @@ M.file_info = function()
 		name = " " .. name .. " "
 	end
 
-	local filetypes = {
-		mason = {
-			icon = "%#StMason# 󱌣 ",
-			label = "MASON",
-		},
-		undotree = {
-			icon = "%#StUndoTree#  ",
-			label = "UNDOTREE",
-		},
-		lazy = {
-			icon = "%#StLazy# 󰒲 ",
-			label = "LAZY",
-		},
-		oil = {
-			icon = "%#StOil# 󰼙 ",
-			label = "Oil",
-		},
-		trouble = {
-			icon = "%#StTrouble#  ",
-			label = "Trouble",
-		},
-		TelescopePrompt = {
-			icon = "%#StTelescope#  ",
-			label = "TELESCOPE",
-		},
-		["copilot%-chat"] = {
-			icon = "%#StCopilotChat#  ",
-			label = "Copilot Chat",
-		},
-	}
-
-	local ft = vim.bo.ft
-	if #ft >= 6 and string.sub(ft, 1, 6) == "Neogit" then
-		return " %#StGit#  Git %#None# "
-	end
-	for k, v in pairs(filetypes) do
-		if string.find(ft, k) ~= nil then
-			return " " .. v.icon .. v.label .. " %#None# "
-		end
+	local r = findValueByKeyPrefix(vim.bo.ft)
+	if r ~= nil then
+		return " " .. r.icon .. r.label .. " %#None# "
 	end
 
 	return " %#StFileName# " .. icon .. name .. "%#None# "
+end
+
+M.oil_info = function()
+	if vim.bo.ft == "oil" then
+		return "%#StFileName# " .. require("oil").get_current_dir() .. " %#None#"
+	else
+		return ""
+	end
 end
 
 M.git = function()
@@ -195,6 +198,11 @@ M.lsp_diagnostics = function()
 end
 
 M.cursor_position = function()
+	local r = findValueByKeyPrefix(vim.bo.ft)
+	if r ~= nil then
+		return ""
+	end
+
 	local current_mode = vim.fn.mode(true)
 
 	local v_line, v_col = vim.fn.line("v"), vim.fn.col("v")
@@ -270,6 +278,7 @@ M.generate_statusline = function()
 		M.mode(),
 		M.tabs(),
 		M.file_info(),
+		M.oil_info(),
 		M.git(),
 		M.lsp_diagnostics(),
 		"%=",

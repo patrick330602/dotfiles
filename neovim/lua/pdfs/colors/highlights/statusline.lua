@@ -17,7 +17,7 @@ function M.get(t)
 		StConfirmMode = { fg = t.black, bg = t.white },
 
 		StFileName = { fg = t.white, bg = t.grey },
-		StOil = { fg = t.white, bg = "#ebb403" },
+		StOil = { fg = t.bgAlt, bg = "#ebb403" },
 		StGit = { fg = t.white, bg = "#F1502F" },
 		StTelescope = { fg = t.white, bg = "#2b2f77" },
 		StCopilotChat = { fg = t.white, bg = "#a371f7" },
