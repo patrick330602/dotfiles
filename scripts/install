@@ -124,20 +124,13 @@ echo "::Installing Wezterm Configuration..."
 ln -s "$HOME/.dotfiles/.wezterm.lua" "$HOME/.wezterm.lua" 
 
 
-# install configuration nvim-config.lua to ~/.config/nvim/init.lua
-# backup existing init.vim/init.lua if it exists
-if test -f "$HOME/.config/nvim/init.vim"; then
-    echo "Backing up existing nvim configuration in vim format..."
-    mv "$HOME/.config/nvim/init.vim" "$HOME/.config/nvim/init.vim.bak"
+if test -d "$HOME/.config/nvim" && test ! -L "$HOME/.config/nvim"; then
+    echo "::Backing up existing nvim configuration..."
+    mv "$HOME/.config/nvim" "$HOME/.config/nvim.bak"
 fi
-if test -f "$HOME/.config/nvim/init.lua"; then
-    echo "Backing up existing nvim configuration in lua format..."
-    mv "$HOME/.config/nvim/init.lua" "$HOME/.config/nvim/init.lua.bak"
-fi
-echo "Installing nvim configuration..."
-mkdir -p "$HOME/.config/nvim/lua"
-ln -s "$HOME/.dotfiles/init.lua" "$HOME/.config/nvim/init.lua"
-ln -s "$HOME/.dotfiles/neovim" "$HOME/.config/nvim/lua/pdfs"
+
+echo "::Installing nvim configuration..."
+ln -sfn "$HOME/.dotfiles/neovim" "$HOME/.config/nvim" && \
 nvim --headless "+Lazy! sync" +qa
 
 sleep 10
