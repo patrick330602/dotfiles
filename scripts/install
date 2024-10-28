@@ -130,7 +130,7 @@ if test -f "$HOME/.wezterm.lua"; then
 	mv "$HOME/.wezterm.lua" "$HOME/.wezterm.lua.bak"
 fi
 echo "::Installing Wezterm Configuration..."
-ln -s "$HOME/.dotifles/.wezterm.lua" "$HOME/.wezterm.lua" 
+ln -s "$HOME/.dotfiles/.wezterm.lua" "$HOME/.wezterm.lua" 
 
 
 # install configuration nvim-config.lua to ~/.config/nvim/init.lua
