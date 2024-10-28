@@ -1,14 +1,15 @@
 return {
 	{
-		"comfysage/evergarden",
-		priority = 1000, -- Colorscheme plugin is loaded first before any other plugins
-		opts = {
-			transparent_background = true,
-			contrast_dark = "medium", -- 'hard'|'medium'|'soft'
-			overrides = {}, -- add custom overrides
-		},
+		"scottmckendry/cyberdream.nvim",
+		lazy = false,
+		priority = 1000,
+		config = function()
+			require("cyberdream").setup({
+				-- Enable transparent background
+				transparent = true,
+			})
+		end,
 	},
-	--[[
 	{
 		"f-person/auto-dark-mode.nvim",
 		opts = {
@@ -18,12 +19,11 @@ return {
 				vim.cmd("colorscheme cyberdream")
 			end,
 			set_light_mode = function()
-				vim.api.nvim_set_option_value("background", "light", {})
+				vim.api.nvim_set_option_value("background", "dark", {})
 				vim.cmd("colorscheme cyberdream")
 			end,
 		},
 	},
-	--]]
 	{
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
