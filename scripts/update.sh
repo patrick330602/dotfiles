@@ -17,12 +17,19 @@ fi
 
 # instal kitty configuration to ~/.config/kitty/kitty.conf
 if test -f "$HOME/.config/kitty/kitty.conf"; then
-	echo "Backing up Kutty configuration..."
+	echo "::Backing up Kitty configuration..."
 	mv "$HOME/.config/kitty/kitty.conf" "$HOME/.config/kitty/kitty.conf.bak"
 fi
-echo "Installing Kitty Configuration..."
+echo "::Installing Kitty Configuration..."
 mkdir -p "$HOME/.config/kitty/"
 ln -s "$HOME/.dotfiles/kitty.conf" "$HOME/.config/kitty/kitty.conf"
+
+if test -f "$HOME/.wezterm.lua"; then
+	echo "::Backing up Wezterm configuration..."
+	mv "$HOME/.wezterm.lua" "$HOME/.wezterm.lua.bak"
+fi
+echo "::Installing Wezterm Configuration..."
+ln -s "$HOME/.dotifles/.wezterm.lua" "$HOME/.wezterm.lua" 
 
 
 # install configuration nvim-config.lua to ~/.config/nvim/init.lua
