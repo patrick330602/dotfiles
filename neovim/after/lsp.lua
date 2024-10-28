@@ -56,12 +56,47 @@ mason_lspconfig.setup({
 		"rust_analyzer",
 		"gopls",
 		"pyright",
+		"yamlls",
+		"nim_langserver",
+		"bashls",
 		"clangd",
+		"eslint",
 	},
 	handlers = {
 		function(server_name) -- default handler (optional)
 			lspconfig[server_name].setup({
 				capabilities = capabilities,
+			})
+		end,
+		["gopls"] = function()
+			lspconfig.gopls.setup({
+				capabilities = capabilities,
+				settings = {
+					gopls = {
+						analyses = {
+							unusedparams = true,
+						},
+						staticcheck = true,
+						gofumpt = true,
+					},
+				},
+			})
+		end,
+		["bashls"] = function()
+			lspconfig.bashls.setup({
+				capabilities = capabilities,
+				filetypes = { "sh", "bash", "rc" },
+			})
+		end,
+		["eslint"] = function()
+			lspconfig.eslint.setup({
+				capabilities = capabilities,
+				on_attach = function(client, bufnr)
+					vim.api.nvim_create_autocmd("BufWritePre", {
+						buffer = bufnr,
+						command = "EslintFixAll",
+					})
+				end,
 			})
 		end,
 		["rust_analyzer"] = function()
@@ -101,9 +136,8 @@ null_ls.setup({
 		null_ls.builtins.formatting.gofmt,
 		null_ls.builtins.formatting.goimports,
 		null_ls.builtins.formatting.isort,
-		null_ls.builtins.formatting.prettier,
-		null_ls.builtins.diagnostics.pylint,
 		null_ls.builtins.diagnostics.rpmspec,
+		null_ls.builtins.completion.spell,
 	},
 })
 
@@ -116,10 +150,15 @@ require("blink.cmp").setup({
 	highlight = {
 		use_nvim_cmp_as_default = true,
 	},
-	nerd_font_variant = "normal",
-	keymap = {
-		accept = "<CR>",
+	sources = {
+		providers = {
+			{ "blink.cmp.sources.lsp",      name = "LSP" },
+			{ "blink.cmp.sources.path",     name = "Path",     score_offset = 3 },
+			{ "blink.cmp.sources.snippets", name = "Snippets", score_offset = -3 },
+			{ "blink.cmp.sources.buffer",   name = "Buffer",   fallback_for = { "LSP" } },
+		},
 	},
+	nerd_font_variant = "mono",
 	accept = { auto_brackets = { enabled = true } },
 	trigger = { signature_help = { enabled = true } },
 })

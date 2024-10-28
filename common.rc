@@ -12,3 +12,5 @@ fi
 
 # when using kitty, use kitty +kitten ssh
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
+
+# vim:ft=sh
