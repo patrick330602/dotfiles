@@ -112,6 +112,14 @@ return {
 				inc_rename = false,
 				lsp_doc_border = false,
 			},
+			messages = {
+				view = "mini",
+				view_error = "mini",
+				view_warn = "mini",
+			},
+			notify = {
+				view = "mini",
+			},
 		},
 		dependencies = {
 			"MunifTanjim/nui.nvim",
@@ -124,7 +132,7 @@ return {
 		---@module 'oil'
 		---@type oil.SetupOpts
 		opts = {},
-		dependencies = { { "echasnovski/mini.icons", opts = {} } },
+		dependencies = { "nvim-tree/nvim-web-devicons" },
 	},
 	{
 		"folke/which-key.nvim",

@@ -7,6 +7,7 @@ vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.laststatus = 2
 vim.opt.scrolloff = 4
+vim.opt.cmdheight = 0
 
 -- tab settings
 vim.opt.showtabline = 0

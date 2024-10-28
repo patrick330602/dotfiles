@@ -69,6 +69,7 @@ return {
 					"javascript",
 					"html",
 					"diff",
+					"regex",
 				},
 				sync_install = false,
 				highlight = { enable = true },
