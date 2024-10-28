@@ -17,6 +17,7 @@ return {
 		keys = {
 			{ "<leader>G", "<cmd>Neogit<cr>", desc = "Open Neogit" },
 		},
+		opts = { graph_style = "kitty", disable_hint = true },
 		dependencies = {
 			"nvim-lua/plenary.nvim",
 			"sindrets/diffview.nvim",

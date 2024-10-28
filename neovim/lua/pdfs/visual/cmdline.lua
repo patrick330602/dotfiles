@@ -39,12 +39,9 @@ cmd.conf = {
 	default = {
 		winopts = {
 			title = {
-				{ "", "CmdBlue" },
-				{ "  ", "CmdBlueBg" },
-				{ "v" .. vim.version().major .. "." .. vim.version().minor .. " ", "CmdBlueBg" },
-				{ "", "CmdBlue" },
+				{ " Cmdline ", "CmdBlueBg" },
 			},
-			title_pos = "right",
+			title_pos = "left",
 		},
 
 		icon = { { " 󰣖 ", "CmdBlue" } },
@@ -192,7 +189,7 @@ cmd.conf = {
 					{ " 󰍉 Search ", "CmdOrangeBg" },
 					{ "", "CmdOrange" },
 				},
-				title_pos = "right",
+				title_pos = "left",
 			},
 			icon = { { "  ", "CmdOrange" } },
 			winhl = "FloatBorder:CmdOrange,Normal:Normal",
@@ -205,7 +202,7 @@ cmd.conf = {
 					{ " 󰍉 Search ", "CmdYellowBg" },
 					{ "", "CmdYellow" },
 				},
-				title_pos = "right",
+				title_pos = "left",
 			},
 			icon = { { "  ", "CmdYellow" } },
 			winhl = "FloatBorder:CmdYellow,Normal:Normal",
@@ -218,7 +215,7 @@ cmd.conf = {
 					{ "  Calculate ", "CmdGreenBg" },
 					{ "", "CmdGreen" },
 				},
-				title_pos = "right",
+				title_pos = "left",
 			},
 			icon = { { " 󰇼 ", "CmdGreen" } },
 			winhl = "FloatBorder:CmdGreen,Normal:Normal",

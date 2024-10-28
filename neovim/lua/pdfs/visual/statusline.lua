@@ -17,7 +17,7 @@ local function findValueByKeyPrefix(prefix)
 			icon = "%#StTrouble#  ",
 			label = "Trouble",
 		},
-		["copilot%-chat"] = {
+		["copilot-chat"] = {
 			icon = "%#StCopilotChat#  ",
 			label = "Copilot Chat",
 		},

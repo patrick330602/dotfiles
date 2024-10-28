@@ -13,8 +13,9 @@ config.font = wezterm.font_with_fallback({
 		family = "0xProto",
 		harfbuzz_features = { "ss01" },
 	},
-	{ family = "Noto Sans Mono CJK HK", scale = 1.2 },
-	{ family = "Noto Sans Mono CJK TC", scale = 1.2 },
+	"Flog Symbols",
+	{ family = "Noto Sans Mono CJK HK",  scale = 1.2 },
+	{ family = "Noto Sans Mono CJK TC",  scale = 1.2 },
 	{ family = "Symbols Nerd Font Mono", scale = 0.75 },
 })
 config.font_size = 16.0
