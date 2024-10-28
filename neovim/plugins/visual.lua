@@ -21,10 +21,21 @@ return {
 		priority = 1000,
 		opts = {
 			transparent = true,
-
+			borderless_telescope = false,
 			italic_comments = true,
 			theme = {
 				variant = "auto",
+			},
+			extensions = {
+				blinkcmp = true,
+				gitsigns = true,
+				indentblankline = true,
+				lazy = true,
+				neogit = true,
+				telescope = true,
+				treesitter = true,
+				trouble = true,
+				whichkey = true,
 			},
 		},
 	},
