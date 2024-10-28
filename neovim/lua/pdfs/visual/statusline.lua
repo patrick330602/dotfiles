@@ -1,17 +1,6 @@
 -- inspired by https://gist.githubusercontent.com/roycrippen4/86d3a69fc7d28e406a2e883132c6ea81/raw/af4c111b2c60eb296024d99b8d1446302dd3eb42/statusline.lua
 local autocmd = vim.api.nvim_create_autocmd
 
-local clock_timer = vim.uv.new_timer()
-
---- WARNING: DONT CHANGE THIS
-local function redraw()
-	vim.cmd("redrawstatus")
-end
-
-if clock_timer then
-	clock_timer:start(1000, 1000, vim.schedule_wrap(redraw))
-end
-
 local M = {}
 
 local modes = {
@@ -73,14 +62,14 @@ local modes = {
 M.mode = function()
 	local mode = vim.api.nvim_get_mode().mode
 	local hl_group = modes[mode] or "StUnknownMode"
-	local current_mode = "%#" .. hl_group .. "# %#StSep#"
+	local current_mode = "%#" .. hl_group .. "# %#None#"
 
 	local recording_register = vim.fn.reg_recording()
 
 	if recording_register == "" then
 		return current_mode
 	else
-		return "%#STMacro# 󰑊 " .. recording_register .. "%#StSep#"
+		return "%#STMacro# 󰑊 " .. recording_register .. "%#None#"
 	end
 end
 
@@ -106,7 +95,7 @@ end
 
 M.file_info = function()
 	local icon = " 󰈚 "
-	local path = vim.api.nvim_buf_get_name(vim.api.nvim_win_get_buf(0))
+	local path = vim.fn.expand("%F")
 	local name = (path == "" and "Empty ") or path:match("([^/\\]+)[/\\]*$")
 
 	if name == "[Command Line]" then
@@ -125,14 +114,6 @@ M.file_info = function()
 	end
 
 	local filetypes = {
-		DressingInput = {
-			icon = "  ",
-			label = "INPUT BOX",
-		},
-		lspinfo = {
-			icon = "  ",
-			label = "LSP INFO",
-		},
 		mason = {
 			icon = "%#StMason# 󱌣 ",
 			label = "MASON",
@@ -142,40 +123,44 @@ M.file_info = function()
 			label = "UNDOTREE",
 		},
 		lazy = {
-			icon = "%#StLazy# 💤 ",
+			icon = "%#StLazy# 󰒲 ",
 			label = "LAZY",
 		},
 		oil = {
 			icon = "%#StOil# 󰼙 ",
 			label = "Oil",
 		},
-		Trouble = {
+		trouble = {
 			icon = "%#StTrouble#  ",
-			label = "TROUBLE",
+			label = "Trouble",
 		},
 		TelescopePrompt = {
 			icon = "%#StTelescope#  ",
 			label = "TELESCOPE",
 		},
+		["copilot%-chat"] = {
+			icon = "%#StCopilotChat#  ",
+			label = "Copilot Chat",
+		},
 	}
 
 	local ft = vim.bo.ft
 	if #ft >= 6 and string.sub(ft, 1, 6) == "Neogit" then
-		return "%#StGit#  Git %#StSep# "
+		return " %#StGit#  Git %#None# "
 	end
 	for k, v in pairs(filetypes) do
 		if string.find(ft, k) ~= nil then
-			return v.icon .. v.label .. "%#StSep# "
+			return " " .. v.icon .. v.label .. " %#None# "
 		end
 	end
 
-	return " %#StFileName# " .. icon .. name .. "%#StSep# "
+	return " %#StFileName# " .. icon .. name .. "%#None# "
 end
 
 M.git = function()
 	local bufnr = vim.api.nvim_win_get_buf(0)
 	if not vim.b[bufnr].gitsigns_head or vim.b[bufnr].gitsigns_git_status then
-		return "%#StEmptySpace#"
+		return "%#None#"
 	end
 
 	local git_status = vim.b[bufnr].gitsigns_status_dict
@@ -187,7 +172,7 @@ M.git = function()
 		or ""
 	local branch_name = "%#StGitBranch#  " .. git_status.head
 
-	return branch_name .. added .. changed .. removed .. " %#StFileSep#| "
+	return branch_name .. added .. changed .. removed .. " %#None# "
 end
 
 M.lsp_diagnostics = function()
@@ -243,40 +228,47 @@ M.cursor_position = function()
 		end
 	end
 
-	return vim.o.columns > 140 and "%#StPos# Ln %l, Col %c " or ""
+	return "%#StPos# Ln %l, Col %c "
 end
 
--- -- Dynamically changes the highlight group of the statusline mode segment based on the current mode
--- autocmd('ModeChanged', {
---   group = vim.api.nvim_create_augroup('StatusLineMode', { clear = true }),
---   callback = function()
---     local entry = modes[vim.api.nvim_get_mode().mode]
---     local hl = vim.api.nvim_get_hl(0, { name = entry.hl })
---     vim.api.nvim_set_hl(0, 'StNvimTree', { fg = hl.fg, bg = hl.bg, italic = true })
---     vim.api.nvim_set_hl(0, 'StHarpoon', { fg = hl.fg, bg = hl.bg, italic = true })
---   end,
--- })
+M.tabs = function()
+	local tabpages = vim.api.nvim_list_tabpages()
+	if #tabpages == 1 then
+		return ""
+	end
+
+	local s = ""
+	for nr, _ in ipairs(tabpages) do
+		local n = " " .. tostring(nr) .. " "
+		if nr == vim.fn.tabpagenr() then
+			n = "%#StTabActive#" .. n .. "%#StNonthing#"
+		end
+		s = s .. n
+	end
+	return " %#StTabs#" .. s .. "%#StNothing#"
+end
 
 -- Dynamically changes the highlight group of the statusline filetype icon based on the current file
--- autocmd("BufEnter", {
--- 	group = vim.api.nvim_create_augroup("StatusLineFiletype", { clear = true }),
--- 	callback = function()
--- 		local _, hl_group = require("nvim-web-devicons").get_icon(vim.fn.expand("%:e"))
---
--- 		if hl_group == nil then
--- 			return
--- 		end
---
--- 		local hl = vim.api.nvim_get_hl(0, { name = hl_group })
--- 		vim.api.nvim_set_hl(0, "StFtIcon", { fg = hl.fg, bg = "#21252b" })
--- 	end,
--- })
---
-vim.opt.statusline = "%!v:lua.require('pdfs.visual.statusline').generate_statusline()"
+autocmd("BufEnter", {
+	group = vim.api.nvim_create_augroup("StatusLineFiletype", { clear = true }),
+	callback = function()
+		local _, hl_group = require("nvim-web-devicons").get_icon(vim.fn.expand("%:e"))
+
+		if hl_group == nil then
+			return
+		end
+
+		local hl = vim.api.nvim_get_hl(0, { name = hl_group })
+		vim.api.nvim_set_hl(0, "StFtIcon", { fg = hl.fg })
+	end,
+})
+
+vim.opt.statusline = "%{%v:lua.require('pdfs.visual.statusline').generate_statusline()%}"
 
 M.generate_statusline = function()
 	local statusline = {
 		M.mode(),
+		M.tabs(),
 		M.file_info(),
 		M.git(),
 		M.lsp_diagnostics(),
