@@ -1,2 +1,3 @@
 .common.private.rc
 .private
+neovim/lazy-lock.json
