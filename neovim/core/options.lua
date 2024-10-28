@@ -9,7 +9,7 @@ vim.opt.laststatus = 2
 vim.opt.scrolloff = 4
 
 -- tab settings
-vim.opt.showtabline = 2
+-- vim.opt.showtabline = 2
 
 -- indent settings
 vim.opt.tabstop = 4
