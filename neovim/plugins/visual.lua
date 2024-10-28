@@ -19,7 +19,6 @@ return {
 		"scottmckendry/cyberdream.nvim",
 		lazy = false,
 		priority = 1000,
-		config = true,
 		opts = {
 			transparent = true,
 
@@ -82,7 +81,6 @@ return {
 			},
 			extensions = { "nvim-tree", "lazy", "mason", "toggleterm", "trouble" },
 		},
-		config = true,
 	},
 	{
 		"Bekaboo/dropbar.nvim",
@@ -90,7 +88,6 @@ return {
 			"nvim-telescope/telescope-fzf-native.nvim",
 		},
 	},
-	{ "brenoprata10/nvim-highlight-colors", config = true, opts = { render = "virtual" } },
 	{
 		"folke/noice.nvim",
 		event = "VeryLazy",
@@ -123,13 +120,23 @@ return {
 		},
 	},
 
-	{ "mbbill/undotree", keys = {
-		{ "<leader>U", vim.cmd.UndotreeToggle, desc = "Toggle UndoTree" },
-	} },
+	{
+		"mbbill/undotree",
+		keys = {
+			{ "<leader>U", vim.cmd.UndotreeToggle, desc = "Toggle UndoTree" },
+		},
+	},
 	{
 		"stevearc/oil.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
-		opts = {},
+		keys = { {
+			"<leader>O",
+			function()
+				require("oil").toggle_float()
+			end,
+			desc = "Open Oil",
+		} },
+		opts = { default_file_explorer = true, delete_to_trash = true, view_options = { show_hidden = true } },
 	},
 	{
 		"folke/which-key.nvim",
@@ -150,18 +157,16 @@ return {
 	{
 		"nvim-telescope/telescope.nvim",
 		dependencies = { "nvim-lua/plenary.nvim" },
-		config = true,
 		opts = {
 			defaults = {
-				-- `hidden = true` is not supported in text grep commands.
 				vimgrep_arguments = vimgrep_arguments,
 			},
 			pickers = {
 				find_files = {
-					-- `hidden = true` will still show the inside of `.git/` as it's not `.gitignore`d.
 					find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" },
 				},
 				buffers = {
+					initial_mode = "normal",
 					previewer = false,
 					layout_strategy = "center",
 					layout_config = {

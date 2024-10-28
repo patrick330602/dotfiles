@@ -4,21 +4,9 @@ local function set_keymap(mode, lhs, rhs, desc, opts)
 	vim.keymap.set(mode, lhs, rhs, opts)
 end
 
-require("nvim-autopairs").setup()
-require("crates").setup({
-	completion = {
-		cmp = {
-			enabled = true,
-		},
-	},
-})
-
-local cmp = require("cmp")
-local lspkind = require("lspkind")
 local mason = require("mason")
 local lspconfig = require("lspconfig")
 local mason_lspconfig = require("mason-lspconfig")
-local cmp_nvim_lsp = require("cmp_nvim_lsp")
 local null_ls = require("null-ls")
 
 vim.api.nvim_create_autocmd("LspAttach", {
@@ -42,8 +30,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 
 -- used to enable autocompletion (assign to every lsp server config)
-local capabilities =
-	vim.tbl_deep_extend("force", {}, vim.lsp.protocol.make_client_capabilities(), cmp_nvim_lsp.default_capabilities())
+local capabilities = vim.lsp.protocol.make_client_capabilities()
 
 local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
 for type, icon in pairs(signs) do
@@ -124,37 +111,14 @@ require("mason-null-ls").setup({
 	automatic_installation = true,
 })
 
-cmp.setup({
-	completion = {
-		completeopt = "menu,menuone,preview,noselect",
+require("blink.cmp").setup({
+	highlight = {
+		use_nvim_cmp_as_default = true,
 	},
-	mapping = cmp.mapping.preset.insert({
-		["<C-k>"] = cmp.mapping.select_prev_item(), -- previous suggestion
-		["<C-j>"] = cmp.mapping.select_next_item(), -- next suggestion
-		["<C-b>"] = cmp.mapping.scroll_docs(-4),
-		["<C-f>"] = cmp.mapping.scroll_docs(4),
-		["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
-		["<C-e>"] = cmp.mapping.abort(), -- close completion window
-		["<CR>"] = cmp.mapping.confirm({ select = false }),
-	}),
-	-- sources for autocompletion
-	sources = cmp.config.sources({
-		{ name = "nvim_lsp" },
-		{ name = "buffer" }, -- text within current buffer
-		{ name = "path" }, -- file system paths
-		{ name = "crates" },
-	}),
-
-	-- configure lspkind for vs-code like pictograms in completion menu
-	formatting = {
-		format = lspkind.cmp_format({
-			maxwidth = 50,
-			ellipsis_char = "...",
-			before = function(entry, item)
-				return require("nvim-highlight-colors").format(entry, item)
-			end,
-		}),
+	nerd_font_variant = "normal",
+	keymap = {
+		accept = "<CR>",
 	},
+	accept = { auto_brackets = { enabled = true } },
+	trigger = { signature_help = { enabled = true } },
 })
-local cmp_autopairs = require("nvim-autopairs.completion.cmp")
-cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())

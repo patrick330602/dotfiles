@@ -1,3 +1,4 @@
+-- tails of the configuration
 vim.diagnostic.config({ virtual_text = false })
 
 vim.api.nvim_create_autocmd("BufWritePre", {

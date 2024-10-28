@@ -14,5 +14,8 @@ if vim.fn.filereadable(plug_path) == 1 then
 	vim.api.nvim_echo({ { "Removed vim-plug from Neovim.\n", "WarningMsg" } }, true, {})
 end
 
+--configurations to set at head
 vim.g.mapleader = " "
 vim.opt.termguicolors = true
+
+vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
