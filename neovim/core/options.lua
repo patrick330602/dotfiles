@@ -13,7 +13,7 @@ vim.opt.cmdheight = 0
 vim.schedule(function()
 	vim.opt.clipboard = "unnamedplus"
 end)
-vim.opt.updatetime = 250
+vim.opt.updatetime = 100
 
 -- tab settings
 vim.opt.showtabline = 0
