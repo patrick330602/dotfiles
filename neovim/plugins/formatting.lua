@@ -2,44 +2,33 @@ return {
 	{
 		"stevearc/conform.nvim",
 		event = { "BufReadPre", "BufNewFile" },
-		config = function()
-			local conform = require("conform")
-
-			conform.setup({
-				formatters_by_ft = {
-					javascript = { "prettier" },
-					typescript = { "prettier" },
-					javascriptreact = { "prettier" },
-					typescriptreact = { "prettier" },
-					svelte = { "prettier" },
-					css = { "prettier" },
-					html = { "prettier" },
-					json = { "prettier" },
-					yaml = { "prettier" },
-					markdown = { "prettier" },
-					graphql = { "prettier" },
-					liquid = { "prettier" },
-					lua = { "stylua" },
-					python = { "isort", "black" },
-					rust = { "rustfmt" },
-					c = { "clang-format" },
-					go = { "goimports", "gofmt" },
-				},
-				format_on_save = {
-					lsp_fallback = true,
-					async = false,
-					timeout_ms = 1000,
-				},
-			})
-
-			vim.keymap.set({ "n", "v" }, "<leader>mp", function()
-				conform.format({
-					lsp_fallback = true,
-					async = false,
-					timeout_ms = 1000,
-				})
-			end, { desc = "Format file or range (in visual mode)" })
-		end,
+		opts = {
+			formatters_by_ft = {
+				javascript = { "prettier" },
+				typescript = { "prettier" },
+				javascriptreact = { "prettier" },
+				typescriptreact = { "prettier" },
+				svelte = { "prettier" },
+				css = { "prettier" },
+				html = { "prettier" },
+				json = { "prettier" },
+				yaml = { "prettier" },
+				markdown = { "prettier" },
+				graphql = { "prettier" },
+				liquid = { "prettier" },
+				lua = { "stylua" },
+				python = { "isort", "black" },
+				rust = { "rustfmt" },
+				c = { "clang-format" },
+				go = { "goimports", "gofmt" },
+			},
+			format_on_save = {
+				lsp_fallback = true,
+				async = false,
+				timeout_ms = 1000,
+			},
+		},
+		config = true,
 	},
 	{
 		"nvim-treesitter/nvim-treesitter",
@@ -47,8 +36,9 @@ return {
 		build = ":TSUpdate",
 		config = function()
 			local configs = require("nvim-treesitter.configs")
-
 			configs.setup({
+				ignore_install = {},
+				auto_install = true,
 				ensure_installed = {
 					"bash",
 					"c",
@@ -157,25 +147,23 @@ return {
 		main = "ibl",
 		---@module "ibl"
 		---@type ibl.config
-		opts = {},
-		config = function()
-			require("ibl").setup({
-				exclude = {
-					filetypes = {
-						"dashboard",
-						"lspinfo",
-						"packer",
-						"checkhealth",
-						"help",
-						"man",
-						"gitcommit",
-						"TelescopePrompt",
-						"TelescopeResults",
-						"''",
-					},
+		opts = {
+			exclude = {
+				filetypes = {
+					"dashboard",
+					"lspinfo",
+					"packer",
+					"checkhealth",
+					"help",
+					"man",
+					"gitcommit",
+					"TelescopePrompt",
+					"TelescopeResults",
+					"''",
 				},
-			})
-		end,
+			},
+		},
+		config = true,
 	},
 	{
 		"kylechui/nvim-surround",
