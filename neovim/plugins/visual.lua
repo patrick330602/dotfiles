@@ -1,3 +1,14 @@
+local function diff_source()
+	local gitsigns = vim.b.gitsigns_status_dict
+	if gitsigns then
+		return {
+			added = gitsigns.added,
+			modified = gitsigns.changed,
+			removed = gitsigns.removed,
+		}
+	end
+end
+
 return {
 	{
 		"rebelot/kanagawa.nvim",
@@ -44,17 +55,39 @@ return {
 	-- },
 	{
 		"nvim-lualine/lualine.nvim",
-		dependencies = { "nvim-tree/nvim-web-devicons", "AndreM222/copilot-lualine" },
+		dependencies = { "nvim-tree/nvim-web-devicons", "AndreM222/copilot-lualine", "arkav/lualine-lsp-progress" },
 		config = function()
 			require("lualine").setup({
-				option = {
+				options = {
 					theme = "auto",
+					component_separators = { left = "|", right = "|" },
+					section_separators = { left = "", right = "" },
 				},
 				sections = {
 					lualine_a = { "mode" },
-					lualine_b = { "branch", "diff", "diagnostics" },
-					lualine_c = { "filename" },
-					lualine_x = { "copilot", "encoding", "fileformat", "filetype" },
+					lualine_b = { { "b:gitsigns_head", icon = "" }, { "diff", source = diff_source }, "diagnostics" },
+					lualine_c = {
+						"filename",
+						{
+							"lsp_progress",
+							display_components = { "lsp_client_name", "spinner" },
+							spinner_symbols = { "⣷", "⣯", "⣟", "⡿", "⢿", "⣻", "⣽", "⣾" },
+						},
+					},
+					lualine_x = {
+						"copilot",
+						"encoding",
+						{
+							"fileformat",
+							icons_enabled = true,
+							symbols = {
+								unix = "LF",
+								dos = "CRLF",
+								mac = "CR",
+							},
+						},
+						"filetype",
+					},
 					lualine_y = { "progress" },
 					lualine_z = { "location" },
 				},
@@ -88,8 +121,6 @@ return {
 			"nvim-telescope/telescope-fzf-native.nvim",
 		},
 	},
-	{ "j-hui/fidget.nvim", version = "*" },
-	{ "nvchad/volt", lazy = true },
-	{ "nvchad/menu", lazy = true },
-	{ "nvchad/minty", lazy = true },
+	{ "rcarriga/nvim-notify" },
+	{ "brenoprata10/nvim-highlight-colors", config = true, opts = { render = "virtual" } },
 }

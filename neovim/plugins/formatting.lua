@@ -23,6 +23,7 @@ return {
 					python = { "isort", "black" },
 					rust = { "rustfmt" },
 					c = { "clang-format" },
+					go = { "goimports", "gofmt" },
 				},
 				format_on_save = {
 					lsp_fallback = true,
@@ -57,6 +58,8 @@ return {
 					"dockerfile",
 					"git_config",
 					"go",
+					"gosum",
+					"gomod",
 					"json",
 					"make",
 					"nim",
@@ -110,10 +113,11 @@ return {
 		"kylechui/nvim-surround",
 		version = "*", -- Use for stability; omit to use `main` branch for the latest features
 		event = "VeryLazy",
-		config = function()
-			require("nvim-surround").setup({
-				-- Configuration here, or leave empty to use defaults
-			})
-		end,
+		config = true,
+	},
+	{
+		"windwp/nvim-autopairs",
+		event = "InsertEnter",
+		config = true,
 	},
 }

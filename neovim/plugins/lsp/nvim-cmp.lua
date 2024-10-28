@@ -14,6 +14,7 @@ return {
 		"saadparwaiz1/cmp_luasnip", -- for autocompletion
 		"rafamadriz/friendly-snippets", -- useful snippets
 		"onsails/lspkind.nvim", -- vs-code like pictograms
+		"brenoprata10/nvim-highlight-colors",
 	},
 	config = function()
 		local cmp = require("cmp")
@@ -46,6 +47,7 @@ return {
 				{ name = "luasnip" }, -- snippets
 				{ name = "buffer" }, -- text within current buffer
 				{ name = "path" }, -- file system paths
+				{ name = "crates" },
 			}),
 
 			-- configure lspkind for vs-code like pictograms in completion menu
@@ -53,9 +55,13 @@ return {
 				format = lspkind.cmp_format({
 					maxwidth = 50,
 					ellipsis_char = "...",
+					before = function(entry, item)
+						return require("nvim-highlight-colors").format(entry, item)
+					end,
 				}),
 			},
 		})
+		local cmp_autopairs = require("nvim-autopairs.completion.cmp")
+		cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
 	end,
 }
-

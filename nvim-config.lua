@@ -1,7 +1,7 @@
 require("pdfs.preload")
 require("pdfs.lazy")
+require("pdfs.after")
 require("pdfs.core.options")
 require("pdfs.core.keymap")
 require("pdfs.core.gui")
 require("pdfs.postload")
-
