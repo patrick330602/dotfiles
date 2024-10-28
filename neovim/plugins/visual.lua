@@ -1,12 +1,10 @@
 return {
 	{
-		"scottmckendry/cyberdream.nvim",
-		lazy = false,
-		priority = 1000,
+		"rebelot/kanagawa.nvim",
 		config = function()
-			require("cyberdream").setup({
+			require("kanagawa").setup({
 				-- Enable transparent background
-				transparent = true,
+				-- transparent = true,
 			})
 		end,
 	},
@@ -16,11 +14,11 @@ return {
 			update_interval = 1000,
 			set_dark_mode = function()
 				vim.api.nvim_set_option_value("background", "dark", {})
-				vim.cmd("colorscheme cyberdream")
+				vim.cmd("colorscheme kanagawa")
 			end,
 			set_light_mode = function()
 				vim.api.nvim_set_option_value("background", "dark", {})
-				vim.cmd("colorscheme cyberdream")
+				vim.cmd("colorscheme kanagawa")
 			end,
 		},
 	},
