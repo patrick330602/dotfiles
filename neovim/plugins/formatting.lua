@@ -66,6 +66,8 @@ return {
 					"typescript",
 					"xml",
 					"yaml",
+					"markdown",
+					"markdown_inline",
 					"lua",
 					"vim",
 					"vimdoc",

@@ -45,12 +45,21 @@ return {
 	-- },
 	{
 		"nvim-lualine/lualine.nvim",
-		dependencies = { "nvim-tree/nvim-web-devicons" },
+		dependencies = { "nvim-tree/nvim-web-devicons", "AndreM222/copilot-lualine" },
 		config = function()
 			require("lualine").setup({
 				option = {
 					theme = "auto",
 				},
+				sections = {
+					lualine_a = { "mode" },
+					lualine_b = { "branch", "diff", "diagnostics" },
+					lualine_c = { "filename" },
+					lualine_x = { "copilot", "encoding", "fileformat", "filetype" },
+					lualine_y = { "progress" },
+					lualine_z = { "location" },
+				},
+				extensions = { "nvim-tree", "lazy", "mason", "toggleterm", "trouble" },
 			})
 		end,
 	},
@@ -80,5 +89,5 @@ return {
 			"nvim-telescope/telescope-fzf-native.nvim",
 		},
 	},
-	{ "rcarriga/nvim-notify" },
+	{ "j-hui/fidget.nvim", version = "*" },
 }
