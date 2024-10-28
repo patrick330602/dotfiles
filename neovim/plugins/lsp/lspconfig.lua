@@ -10,6 +10,10 @@ return {
 	dependencies = {
 		"hrsh7th/cmp-nvim-lsp",
 		{ "antosha417/nvim-lsp-file-operations", config = true },
+		{
+			"stevearc/dressing.nvim",
+			opts = {},
+		},
 	},
 	config = function()
 		local lspconfig = require("lspconfig")
