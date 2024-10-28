@@ -4,15 +4,6 @@ export PATH="$HOME/go/bin:$PATH"
 
 # alias
 alias dchdate="date +'%a, %d %b %Y %T %z'"
-alias sudocode='SUDO_EDITOR="$(which code) --wait" sudoedit'
-
-
-# if neovide/gnvim is installed, alias them to gvim
-if command -v neovide >/dev/null 2>&1; then
-    alias gvim="neovide"
-elif command -v gnvim >/dev/null 2>&1; then
-    alias gvim="gnvim"
-fi
 
 # if bat is installed, alias cat to bat
 if command -v bat >/dev/null 2>&1; then
