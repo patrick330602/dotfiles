@@ -12,7 +12,10 @@ function M.setup()
 	end
 
 	t.bg_solid = t.bg ~= "NONE" and t.bg or t.bgAlt
-	t.bg = "NONE"
+
+	if not vim.g.remote_neovim_host then
+		t.bg = "NONE"
+	end
 
 	vim.g.terminal_color_0 = t.bg
 	vim.g.terminal_color_8 = t.bgAlt
@@ -42,7 +45,7 @@ function M.setup()
 	theme.highlights = require("pdfs.colors.highlights.base").get(t)
 
 	-- Load extensions dynamically from the pdfs.colors.highlights folder
-	local highlights_path = os.getenv("HOME") .. "/.dotfiles/neovim/lua/pdfs/colors/highlights"
+	local highlights_path = vim.fn.stdpath("config") .. "/lua/pdfs/colors/highlights"
 	local files = vim.fn.readdir(highlights_path)
 	for _, file in ipairs(files) do
 		if file ~= "." and file ~= ".." and file ~= "base.lua" then

@@ -125,7 +125,7 @@ local function truncate_filename(filename, max_length)
 end
 
 M.file_info = function()
-	local icon = "󰈚"
+	local icon = "󰈚 "
 	local path = vim.fn.expand("%F")
 	local name = (path == "" and "Empty ") or path:match("([^/\\]+)[/\\]*$")
 
@@ -150,6 +150,10 @@ M.file_info = function()
 	end
 
 	return " %#StFileName# " .. icon .. name .. "%#None# "
+end
+
+M.remote_info = function()
+	return vim.g.remote_neovim_host and " %#StRemote# Remote " .. vim.uv.os_gethostname() .. " %#None#" or ""
 end
 
 M.oil_info = function()
@@ -276,6 +280,7 @@ vim.opt.statusline = "%{%v:lua.require('pdfs.visual.statusline').generate_status
 M.generate_statusline = function()
 	local statusline = {
 		M.mode(),
+		M.remote_info(),
 		M.tabs(),
 		M.file_info(),
 		M.oil_info(),

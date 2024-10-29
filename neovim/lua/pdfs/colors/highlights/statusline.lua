@@ -26,6 +26,8 @@ function M.get(t)
 		StLazy = { fg = t.white, bg = "#2875E1" },
 		StTrouble = { fg = t.bgAlt, bg = t.fg },
 
+		StRemote = { fg = t.fg, bg = t.red },
+
 		StLspError = { fg = t.red },
 		StLspWarning = { fg = t.orange },
 		StLspHints = { fg = t.cyan },
