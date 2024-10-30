@@ -25,6 +25,14 @@ local function findValueByKeyPrefix(prefix)
 			icon = "%#StGit#  ",
 			label = "Git",
 		},
+		AvanteInput = {
+			icon = "",
+			label = "",
+		},
+		Avante = {
+			icon = "",
+			label = "",
+		},
 	}
 	for key, value in pairs(filetypes) do
 		if type(key) == "string" and string.sub(prefix, 1, #key) == key then

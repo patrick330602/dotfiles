@@ -16,6 +16,9 @@ require("fidget").setup({
 	},
 })
 
+-- I like hint inlay
+vim.lsp.inlay_hint.enable()
+
 vim.api.nvim_create_autocmd("LspAttach", {
 	group = vim.api.nvim_create_augroup("UserLspConfig", {}),
 	callback = function(ev)

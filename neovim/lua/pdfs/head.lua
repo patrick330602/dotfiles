@@ -17,5 +17,3 @@ end
 --configurations to set at head
 vim.g.mapleader = " "
 vim.opt.termguicolors = true
-
-vim.filetype.add({ extensions = { rc = "sh" } })

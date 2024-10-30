@@ -140,7 +140,7 @@ function M.get(t)
 
 		LspSignatureActiveParameter = { fg = t.orange },
 		LspCodeLens = { fg = t.grey },
-		LspInlayHint = { fg = t.grey },
+		LspInlayHint = { fg = t.grey, bg = t.bgAlt },
 		LspInfoBorder = { fg = t.bg },
 	}
 
