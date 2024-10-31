@@ -191,13 +191,13 @@ require("blink.cmp").setup({
 	trigger = { signature_help = { enabled = true } },
 	windows = {
 		autocomplete = {
-			border = "rounded",
+			border = "single",
 		},
 		documentation = {
-			border = "rounded",
+			border = "single",
 		},
 		signature_help = {
-			border = "rounded",
+			border = "single",
 		},
 	},
 })

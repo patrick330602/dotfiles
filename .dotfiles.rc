@@ -5,7 +5,7 @@ PATH="$HOME/.dotfiles/bin:$PATH"
 
 # source common.rc
 # shellcheck disable=SC1091
-. "$HOME/.dotfiles/common.rc"
+. "$HOME/.dotfiles/rc/common.sh"
 
 # source .private.rc if it exists
 if [ -f "$HOME/.private.rc" ]; then
@@ -16,13 +16,13 @@ fi
 # source mac.rc if it is a mac
 if [[ "$OSTYPE" == "darwin"* ]]; then
   # shellcheck disable=SC1091
-  . "$HOME/.dotfiles/mac.rc"
+  . "$HOME/.dotfiles/rc/mac.sh"
 fi
 
 # source linux.rc if it is linux
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   # shellcheck disable=SC1091
-  . "$HOME/.dotfiles/linux.rc"
+  . "$HOME/.dotfiles/rc/linux.sh"
 fi
 
 # vim:ft=sh

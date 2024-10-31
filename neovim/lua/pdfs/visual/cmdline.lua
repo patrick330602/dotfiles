@@ -155,11 +155,9 @@ cmd.conf = {
 
 			winopts = {
 				title = {
-					{ "", "CmdViolet" },
-					{ "  " .. _VERSION .. " ", "CmdVioletBg" },
-					{ "", "CmdViolet" },
+					{ " Lua ", "CmdVioletBg" },
 				},
-				title_pos = "right",
+				title_pos = "left",
 			},
 
 			winhl = "FloatBorder:CmdViolet,Normal:Normal",
@@ -379,7 +377,7 @@ cmd.open = function()
 			height = math.max(1, h - 2),
 			zindex = 500,
 
-			border = "rounded",
+			border = "single",
 		}, cmd.current_conf.winopts or {})
 	)
 
