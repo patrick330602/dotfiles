@@ -15,7 +15,7 @@ if [ -n "${BASH_VERSINFO}" ]; then
         echo "starship is not installed. Install it with '$instructions'"
     fi
 
-    source $HOME/.dotfiles/bash-preexec.sh
+    source $HOME/.dotfiles/rc/bash-preexec.sh
     eval "$(atuin init bash)"
 fi
 

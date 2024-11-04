@@ -37,14 +37,9 @@ cmd.conf = {
 	cmp_height = 7,
 
 	default = {
-		winopts = {
-			title = {
-				{ " Cmdline ", "CmdBlueBg" },
-			},
-			title_pos = "left",
-		},
+		winopts = {},
 
-		icon = { { " 󰣖 ", "CmdBlue" } },
+		icon = { { "  ", "CmdBlue" } },
 		winhl = "FloatBorder:CmdBlue,Normal:Normal",
 		ft = "vim",
 	},
@@ -136,6 +131,11 @@ cmd.conf = {
 		},
 		{
 			firstc = ":",
+			match = "^\\%s/",
+			icon = { { "  ", "CmdOrange" } },
+		},
+		{
+			firstc = ":",
 			match = "^%d+,%d+s/",
 			icon = { { "  ", "CmdOrange" } },
 		},
@@ -152,13 +152,6 @@ cmd.conf = {
 		{
 			firstc = ":",
 			match = "^lua%s",
-
-			winopts = {
-				title = {
-					{ " Lua ", "CmdVioletBg" },
-				},
-				title_pos = "left",
-			},
 
 			winhl = "FloatBorder:CmdViolet,Normal:Normal",
 			icon = { { "  ", "CmdViolet" } },
@@ -183,9 +176,7 @@ cmd.conf = {
 			firstc = "?",
 			winopts = {
 				title = {
-					{ "", "CmdOrange" },
 					{ " 󰍉 Search ", "CmdOrangeBg" },
-					{ "", "CmdOrange" },
 				},
 				title_pos = "left",
 			},
@@ -196,9 +187,7 @@ cmd.conf = {
 			firstc = "/",
 			winopts = {
 				title = {
-					{ "", "CmdYellow" },
 					{ " 󰍉 Search ", "CmdYellowBg" },
-					{ "", "CmdYellow" },
 				},
 				title_pos = "left",
 			},
@@ -209,9 +198,7 @@ cmd.conf = {
 			firstc = "=",
 			winopts = {
 				title = {
-					{ "", "CmdGreen" },
 					{ "  Calculate ", "CmdGreenBg" },
-					{ "", "CmdGreen" },
 				},
 				title_pos = "left",
 			},
@@ -332,9 +319,10 @@ cmd.open = function()
 			vim.tbl_extend("force", {
 				relative = "editor",
 
-				row = cmd.comp_enable == true and math.floor((vim.o.lines - (h + cmp_h)) / 2)
-					or math.floor((vim.o.lines - h) / 2),
-				col = math.floor((vim.o.columns - w) / 2),
+				--row = cmd.comp_enable == true and math.floor((vim.o.lines - (h + cmp_h)) / 2)	or math.floor((vim.o.lines - h) / 2),
+				--col = math.floor((vim.o.columns - w) / 2),
+				row = vim.o.lines - h - 1,
+				col = 0,
 
 				width = w,
 				height = math.max(1, h - 2),
@@ -355,9 +343,10 @@ cmd.open = function()
 
 		vim.api.nvim_win_set_config(cmd.comp_win, {
 			relative = "editor",
-
-			row = math.floor((vim.o.lines - (h + cmp_h)) / 2) + h,
-			col = math.floor((vim.o.columns - w) / 2),
+			row = vim.o.lines - h - 3 - cmp_h,
+			col = 0,
+			-- row = math.floor((vim.o.lines - (h + cmp_h)) / 2) + h,
+			-- col = math.floor((vim.o.columns - w) / 2),
 		})
 
 		return
@@ -369,9 +358,8 @@ cmd.open = function()
 		vim.tbl_extend("force", {
 			relative = "editor",
 
-			row = cmd.comp_enable == true and math.floor((vim.o.lines - (h + cmp_h)) / 2)
-				or math.floor((vim.o.lines - h) / 2),
-			col = math.floor((vim.o.columns - w) / 2),
+			row = vim.o.lines - h - 1,
+			col = 0,
 
 			width = w,
 			height = math.max(1, h - 2),
@@ -436,8 +424,10 @@ cmd.open_completion = function()
 			vim.tbl_extend("force", {
 				relative = "editor",
 
-				row = math.floor((vim.o.lines - (h + cmp_h)) / 2),
-				col = math.floor((vim.o.columns - w) / 2),
+				-- row = math.floor((vim.o.lines - (h + cmp_h)) / 2),
+				-- col = math.floor((vim.o.columns - w) / 2),
+				row = vim.o.lines - h - 1,
+				col = 0,
 
 				width = w,
 				height = math.max(1, h - 2),
@@ -446,9 +436,10 @@ cmd.open_completion = function()
 
 		vim.api.nvim_win_set_config(cmd.comp_win, {
 			relative = "editor",
-
-			row = math.floor((vim.o.lines - cmp_h) / 2),
-			col = math.floor((vim.o.columns - w) / 2),
+			row = vim.o.lines - h - 3 - cmp_h,
+			col = 0,
+			-- row = math.floor((vim.o.lines - cmp_h) / 2),
+			-- col = math.floor((vim.o.columns - w) / 2),
 
 			width = w,
 			height = math.max(1, h - 2),
@@ -470,8 +461,8 @@ cmd.open_completion = function()
 		vim.tbl_extend("force", {
 			relative = "editor",
 
-			row = math.floor((vim.o.lines - (h + cmp_h)) / 2),
-			col = math.floor((vim.o.columns - w) / 2),
+			row = vim.o.lines - h - 1,
+			col = 0,
 
 			width = w,
 			height = math.max(1, h - 2),
@@ -481,8 +472,10 @@ cmd.open_completion = function()
 	cmd.comp_win = vim.api.nvim_open_win(cmd.comp_buf, false, {
 		relative = "editor",
 
-		row = math.floor((vim.o.lines - (h + cmp_h)) / 2) + h,
-		col = math.floor((vim.o.columns - w) / 2),
+		-- row = math.floor((vim.o.lines - (h + cmp_h)) / 2) + h,
+		-- col = math.floor((vim.o.columns - w) / 2),
+		row = vim.o.lines - h - 3 - cmp_h,
+		col = 0,
 
 		width = w,
 		height = math.max(1, cmp_h - 0),
