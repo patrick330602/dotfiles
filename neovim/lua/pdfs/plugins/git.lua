@@ -3,7 +3,7 @@ return {
 	{
 		"sindrets/diffview.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
-		-- lazy, only load diffview by these commands
+		opts = { enhanced_diff_hl = true },
 		cmd = {
 			"DiffviewFileHistory",
 			"DiffviewOpen",

@@ -25,13 +25,13 @@ local function findValueByKeyPrefix(prefix)
 			icon = "%#StGit#  ",
 			label = "Git",
 		},
-		AvanteInput = {
-			icon = "",
-			label = "",
+		toggleterm = {
+			icon = "%#StTerm#  ",
+			label = "Terminal",
 		},
-		Avante = {
-			icon = "",
-			label = "",
+		DiffviewFiles = {
+			icon = "%#StDiffFile#  ",
+			label = "Diff",
 		},
 	}
 	for key, value in pairs(filetypes) do
@@ -158,6 +158,14 @@ M.file_info = function()
 	end
 
 	return " %#StFileName# " .. icon .. name .. "%#None# "
+end
+
+M.term_info = function()
+	if vim.bo.ft == "toggleterm" then
+		return "%#StTermNum# " .. vim.b.toggle_number .. " %#None#"
+	else
+		return ""
+	end
 end
 
 M.remote_info = function()
@@ -292,6 +300,7 @@ M.generate_statusline = function()
 		M.tabs(),
 		M.file_info(),
 		M.oil_info(),
+		M.term_info(),
 		M.git(),
 		M.lsp_diagnostics(),
 		"%=",

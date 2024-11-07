@@ -183,12 +183,12 @@ require("mason-null-ls").setup({
 })
 
 require("blink.cmp").setup({
+	keymap = "super-tab",
 	highlight = {
 		use_nvim_cmp_as_default = false,
 	},
 	nerd_font_variant = "mono",
-	accept = { auto_brackets = { enabled = true } },
-	trigger = { signature_help = { enabled = true } },
+	trigger = { signature_help = { enabled = true }, completion = { show_in_snippet = false } },
 	windows = {
 		autocomplete = {
 			border = "single",

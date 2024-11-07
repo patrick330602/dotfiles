@@ -25,6 +25,9 @@ function M.get(t)
 		StUndoTree = { fg = t.green, bg = t.black },
 		StLazy = { fg = t.white, bg = "#2875E1" },
 		StTrouble = { fg = t.bgAlt, bg = t.fg },
+		StTerm = { link = "StTerminalMode" },
+		StTermNum = { fg = t.bgAlt, bg = t.fg },
+		StDiffFile = { link = "StGit" },
 
 		StRemote = { fg = t.fg, bg = t.red },
 
