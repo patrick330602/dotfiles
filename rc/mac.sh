@@ -40,6 +40,9 @@ if [ -n "${BASH_VERSINFO}" ]; then
     eval "$(atuin init bash)"
 fi
 
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 #alias
 alias unlock="xattr -cr"
 alias unlock-librewolf="xattr -cr /Applications/LibreWolf.app"
