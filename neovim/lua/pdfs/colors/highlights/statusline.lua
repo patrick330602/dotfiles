@@ -45,6 +45,8 @@ function M.get(t)
 
 		StTabs = { fg = t.white, bg = t.orange },
 		StTabActive = { fg = t.orange, bg = t.white, bold = true },
+		StTabModified = { fg = t.white, bg = t.red },
+		StTabActiveModified = { fg = t.red, bg = t.white, bold = true }
 	}
 
 	return highlights

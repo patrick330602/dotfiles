@@ -259,23 +259,78 @@ M.cursor_position = function()
 	return "%#StPos# Ln %l, Col %c "
 end
 
-M.tabs = function()
-	local tabpages = vim.api.nvim_list_tabpages()
-	if #tabpages == 1 then
-		return ""
-	end
+-- Enhanced tab click handler
+local function tab_click(minwid, clicks, button, mods)
+  if button == "l" then
+    vim.api.nvim_set_current_tabpage(minwid)
+  elseif button == "r" then
+    local tab_nr = vim.api.nvim_tabpage_get_number(minwid)
+    local choice = vim.fn.confirm("Tab " .. tab_nr .. " operations:",
+      "&Close\n&New\n&Move Left\n&Move Right", 1)
 
-	local s = ""
-	for nr, _ in ipairs(tabpages) do
-		local n = " " .. tostring(nr) .. " "
-		if nr == vim.fn.tabpagenr() then
-			n = "%#StTabActive#" .. n .. "%#StNothing#"
-		else
-			n = "%#StTabs#" .. n .. "%#StNothing#"
-		end
-		s = s .. n
-	end
-	return " %#StTabs#" .. s .. "%#StNothing#"
+    if choice == 1 then
+      vim.cmd("tabclose " .. tab_nr)
+    elseif choice == 2 then
+      vim.cmd("tabnew")
+    elseif choice == 3 then
+      vim.cmd("tabmove -1")
+    elseif choice == 4 then
+      vim.cmd("tabmove +1")
+    end
+  end
+end
+
+local function make_clickable(text, id)
+  return "%".. id .. "@v:lua.tab_click@" .. text .. "%X"
+end
+
+local function is_tab_modified(tab)
+  for _, win in ipairs(vim.api.nvim_tabpage_list_wins(tab)) do
+    local buf = vim.api.nvim_win_get_buf(win)
+    if vim.api.nvim_buf_get_option(buf, 'modified') then
+      return true
+    end
+  end
+  return false
+end
+
+M.tabs = function()
+  local tabpages = vim.api.nvim_list_tabpages()
+
+  if #tabpages == 1 then
+    return ""
+  end
+
+  local sections = {}
+  local current_tab_nr = vim.fn.tabpagenr()
+
+  table.insert(sections, "%#StTabs#")
+
+  for nr, tab in ipairs(tabpages) do
+    local tab_text = " " .. tostring(nr)
+    local is_modified = is_tab_modified(tab)
+
+    if nr == current_tab_nr then
+      if is_modified then
+        table.insert(sections, "%#StTabActiveModified#")
+        table.insert(sections, make_clickable(tab_text .. "* ", tab))
+      else
+        table.insert(sections, "%#StTabActive#")
+        table.insert(sections, make_clickable(tab_text .. " ", tab))
+      end
+    else
+      if is_modified then
+        table.insert(sections, "%#StTabModified#")
+        table.insert(sections, make_clickable(tab_text .. "* ", tab))
+      else
+        table.insert(sections, "%#StTabs#")
+        table.insert(sections, make_clickable(tab_text .. " ", tab))
+      end
+    end
+    table.insert(sections, "%#StNothing#")
+  end
+
+  return " " .. table.concat(sections, '')
 end
 
 -- Dynamically changes the highlight group of the statusline filetype icon based on the current file
@@ -310,5 +365,7 @@ M.generate_statusline = function()
 	}
 	return table.concat(statusline)
 end
+
+_G.tab_click = tab_click
 
 return M
