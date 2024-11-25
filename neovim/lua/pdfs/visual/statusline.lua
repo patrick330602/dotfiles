@@ -269,7 +269,9 @@ M.tabs = function()
 	for nr, _ in ipairs(tabpages) do
 		local n = " " .. tostring(nr) .. " "
 		if nr == vim.fn.tabpagenr() then
-			n = "%#StTabActive#" .. n .. "%#StNonthing#"
+			n = "%#StTabActive#" .. n .. "%#StNothing#"
+		else
+			n = "%#StTabs#" .. n .. "%#StNothing#"
 		end
 		s = s .. n
 	end
