@@ -168,10 +168,6 @@ M.term_info = function()
 	end
 end
 
-M.remote_info = function()
-	return vim.g.remote_neovim_host and " %#StRemote# Remote " .. vim.uv.os_gethostname() .. " %#None#" or ""
-end
-
 M.oil_info = function()
 	if vim.bo.ft == "oil" then
 		return "%#StFileName# " .. require("oil").get_current_dir() .. " %#None#"
@@ -261,76 +257,54 @@ end
 
 -- Enhanced tab click handler
 local function tab_click(minwid, clicks, button, mods)
-  if button == "l" then
-    vim.api.nvim_set_current_tabpage(minwid)
-  elseif button == "r" then
-    local tab_nr = vim.api.nvim_tabpage_get_number(minwid)
-    local choice = vim.fn.confirm("Tab " .. tab_nr .. " operations:",
-      "&Close\n&New\n&Move Left\n&Move Right", 1)
+	if button == "l" then
+		vim.api.nvim_set_current_tabpage(minwid)
+	elseif button == "r" then
+		local tab_nr = vim.api.nvim_tabpage_get_number(minwid)
+		local choice = vim.fn.confirm("Tab " .. tab_nr .. " operations:", "&Close\n&New\n&Move Left\n&Move Right", 1)
 
-    if choice == 1 then
-      vim.cmd("tabclose " .. tab_nr)
-    elseif choice == 2 then
-      vim.cmd("tabnew")
-    elseif choice == 3 then
-      vim.cmd("tabmove -1")
-    elseif choice == 4 then
-      vim.cmd("tabmove +1")
-    end
-  end
+		if choice == 1 then
+			vim.cmd("tabclose " .. tab_nr)
+		elseif choice == 2 then
+			vim.cmd("tabnew")
+		elseif choice == 3 then
+			vim.cmd("tabmove -1")
+		elseif choice == 4 then
+			vim.cmd("tabmove +1")
+		end
+	end
 end
 
 local function make_clickable(text, id)
-  return "%".. id .. "@v:lua.tab_click@" .. text .. "%X"
-end
-
-local function is_tab_modified(tab)
-  for _, win in ipairs(vim.api.nvim_tabpage_list_wins(tab)) do
-    local buf = vim.api.nvim_win_get_buf(win)
-    if vim.api.nvim_buf_get_option(buf, 'modified') then
-      return true
-    end
-  end
-  return false
+	return "%" .. id .. "@v:lua.tab_click@" .. text .. "%X"
 end
 
 M.tabs = function()
-  local tabpages = vim.api.nvim_list_tabpages()
+	local tabpages = vim.api.nvim_list_tabpages()
 
-  if #tabpages == 1 then
-    return ""
-  end
+	if #tabpages == 1 then
+		return ""
+	end
 
-  local sections = {}
-  local current_tab_nr = vim.fn.tabpagenr()
+	local sections = {}
+	local current_tab_nr = vim.fn.tabpagenr()
 
-  table.insert(sections, "%#StTabs#")
+	table.insert(sections, "%#StTabs#")
 
-  for nr, tab in ipairs(tabpages) do
-    local tab_text = " " .. tostring(nr)
-    local is_modified = is_tab_modified(tab)
+	for nr, tab in ipairs(tabpages) do
+		local tab_text = " " .. tostring(nr)
 
-    if nr == current_tab_nr then
-      if is_modified then
-        table.insert(sections, "%#StTabActiveModified#")
-        table.insert(sections, make_clickable(tab_text .. "* ", tab))
-      else
-        table.insert(sections, "%#StTabActive#")
-        table.insert(sections, make_clickable(tab_text .. " ", tab))
-      end
-    else
-      if is_modified then
-        table.insert(sections, "%#StTabModified#")
-        table.insert(sections, make_clickable(tab_text .. "* ", tab))
-      else
-        table.insert(sections, "%#StTabs#")
-        table.insert(sections, make_clickable(tab_text .. " ", tab))
-      end
-    end
-    table.insert(sections, "%#StNothing#")
-  end
+		if nr == current_tab_nr then
+			table.insert(sections, "%#StTabActive#")
+			table.insert(sections, make_clickable(tab_text .. " ", tab))
+		else
+			table.insert(sections, "%#StTabs#")
+			table.insert(sections, make_clickable(tab_text .. " ", tab))
+		end
+		table.insert(sections, "%#StNothing#")
+	end
 
-  return " " .. table.concat(sections, '')
+	return " " .. table.concat(sections, "")
 end
 
 -- Dynamically changes the highlight group of the statusline filetype icon based on the current file
@@ -353,7 +327,6 @@ vim.opt.statusline = "%{%v:lua.require('pdfs.visual.statusline').generate_status
 M.generate_statusline = function()
 	local statusline = {
 		M.mode(),
-		M.remote_info(),
 		M.tabs(),
 		M.file_info(),
 		M.oil_info(),

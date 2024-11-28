@@ -15,6 +15,7 @@ configs.setup({
 		"gosum",
 		"gomod",
 		"json",
+		"jsonc",
 		"make",
 		"nim",
 		"powershell",
