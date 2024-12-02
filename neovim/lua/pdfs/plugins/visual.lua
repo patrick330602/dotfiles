@@ -19,12 +19,7 @@ return {
 			end,
 		},
 	},
-	{
-		"Bekaboo/dropbar.nvim",
-		dependencies = {
-			"nvim-telescope/telescope-fzf-native.nvim",
-		},
-	},
+	{ "SmiteshP/nvim-navic", event = "VeryLazy" },
 	{
 		"mbbill/undotree",
 		keys = {
@@ -77,5 +72,11 @@ return {
 			open_mapping = [[<c-t>]],
 			shade_terminals = false,
 		},
+	},
+	{
+		"rachartier/tiny-inline-diagnostic.nvim",
+		event = "VeryLazy",
+		priority = 1000,
+		config = true,
 	},
 }
