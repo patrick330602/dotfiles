@@ -1,68 +1,42 @@
 local M = {}
 
+local navic = require("nvim-navic")
+
 M.info = function()
-	return " %#WbLocation# " .. require("nvim-navic").get_location() .. " %#None#"
+	return " %#WbLocation# " .. navic.get_location() .. " %#None#"
 end
-
--- Enhanced tab click handler
-local function tab_click(minwid, clicks, button, mods)
-	if button == "l" then
-		vim.api.nvim_set_current_tabpage(minwid)
-	elseif button == "r" then
-		local tab_nr = vim.api.nvim_tabpage_get_number(minwid)
-		local choice = vim.fn.confirm("Tab " .. tab_nr .. " operations:", "&Close\n&New\n&Move Left\n&Move Right", 1)
-
-		if choice == 1 then
-			vim.cmd("tabclose " .. tab_nr)
-		elseif choice == 2 then
-			vim.cmd("tabnew")
-		elseif choice == 3 then
-			vim.cmd("tabmove -1")
-		elseif choice == 4 then
-			vim.cmd("tabmove +1")
-		end
-	end
-end
-
-local function make_clickable(text, id)
-	return "%" .. id .. "@v:lua.tab_click@" .. text .. "%X"
-end
-
-M.tabs = function()
-	local tabpages = vim.api.nvim_list_tabpages()
-
-	local sections = {}
-	local current_tab_nr = vim.fn.tabpagenr()
-
-	table.insert(sections, "%#StTabs#")
-
-	for nr, tab in ipairs(tabpages) do
-		local tab_text = " " .. tostring(nr)
-
-		if nr == current_tab_nr then
-			table.insert(sections, "%#StTabActive#")
-			table.insert(sections, make_clickable(tab_text .. " ", tab))
-		else
-			table.insert(sections, "%#StTabs#")
-			table.insert(sections, make_clickable(tab_text .. " ", tab))
-		end
-		table.insert(sections, "%#StNothing#")
-	end
-
-	return " " .. table.concat(sections, "")
-end
-
-vim.opt.winbar = "%{%v:lua.require('pdfs.visual.winbar').generate_winbar()%}"
 
 M.generate_winbar = function()
+	local bufnr = vim.api.nvim_get_current_buf()
+	local clients = vim.lsp.get_active_clients({ bufnr = bufnr })
+
+	-- Check if there are any active LSP clients except Copilot and null-ls
+	local has_lsp = false
+	for _, client in ipairs(clients) do
+		if client.name ~= "copilot" and client.name ~= "null-ls" then
+			has_lsp = true
+			break
+		end
+	end
+
+	-- Return empty string if no valid LSP client or navic not available
+	if not has_lsp or not navic.is_available() then
+		return ""
+	end
+
 	local winbar = {
 		M.info(),
 		"%=",
-		M.tabs(),
 	}
 	return table.concat(winbar)
 end
 
-_G.tab_click = tab_click
+-- Set up autocommands to update winbar
+vim.api.nvim_create_autocmd({ "LspAttach" }, {
+	callback = function()
+		local value = "%{%v:lua.require('pdfs.visual.winbar').generate_winbar()%}"
+		vim.opt_local.winbar = value
+	end,
+})
 
 return M

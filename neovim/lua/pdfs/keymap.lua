@@ -6,7 +6,6 @@ vim.keymap.set(
 	{ desc = "Search Texts within Working Directory" }
 )
 vim.keymap.set("", "<leader>F", require("oil").open, { desc = "Find Files within Working Directory" })
-vim.keymap.set("", "<leader><leader>", require("telescope.builtin").buffers, { desc = "Show Current Opened Buffer" })
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move line(s) up" })
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move line(s) down" })
 

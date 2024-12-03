@@ -200,29 +200,8 @@ require("mason-null-ls").setup({
 require("blink.cmp").setup({
 	accept = {
 		auto_brackets = { enabled = true },
-		expand_snippet = function(snippet)
-			require("luasnip").lsp_expand(snippet)
-		end,
 	},
-	sources = {
-		completion = {
-			enabled_providers = { "luasnip", "lsp", "path", "snippets", "buffer" },
-		},
-		providers = {
-			luasnip = {
-				name = "luasnip",
-				module = "blink.compat.source",
-
-				score_offset = -3,
-
-				opts = {
-					use_show_condition = false,
-					show_autosnippets = true,
-				},
-			},
-		},
-	},
-	keymap = "super-tab",
+	keymap = { preset = "super-tab"},
 	highlight = {
 		use_nvim_cmp_as_default = false,
 	},

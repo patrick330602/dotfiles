@@ -16,7 +16,7 @@ end)
 vim.opt.updatetime = 100
 
 -- tab settings
-vim.opt.showtabline = 0
+vim.opt.showtabline = 2
 
 -- indent settings
 vim.opt.tabstop = 4
