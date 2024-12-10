@@ -1,5 +1,51 @@
 local M = {}
 
+local function switch_to_next_buffer()
+	local current_tab = vim.fn.tabpagenr()
+	local current_tabnr = vim.api.nvim_get_current_tabpage()
+	local all_buffers = vim.api.nvim_list_bufs()
+	local current_buf = vim.api.nvim_get_current_buf()
+
+	-- Get ordered list of buffers in current tab
+	local tab_buffers = {}
+	for _, buf in ipairs(all_buffers) do
+		if vim.fn.buflisted(buf) == 1 then
+			-- Check if buffer is loaded in current tab
+			local windows = vim.fn.win_findbuf(buf)
+			for _, win in ipairs(windows) do
+				local win_tab = vim.api.nvim_win_get_tabpage(win)
+				if win_tab == current_tabnr then
+					table.insert(tab_buffers, buf)
+					break
+				end
+			end
+			-- Include hidden buffers that were last accessed in this tab
+			local buf_tab = vim.fn.getbufvar(buf, "last_tab")
+			if buf_tab == "" or tonumber(buf_tab) == current_tab then
+				-- Only insert if not already in the list
+				if not vim.tbl_contains(tab_buffers, buf) then
+					table.insert(tab_buffers, buf)
+				end
+			end
+		end
+	end
+
+	-- Find current buffer index
+	local current_index = 0
+	for i, buf in ipairs(tab_buffers) do
+		if buf == current_buf then
+			current_index = i
+			break
+		end
+	end
+
+	-- Switch to next buffer or first if at end
+	if #tab_buffers > 0 then
+		local next_index = current_index % #tab_buffers + 1
+		vim.api.nvim_set_current_buf(tab_buffers[next_index])
+	end
+end
+
 -- Dropdown menu implementation
 local function create_dropdown(items, callback, opts)
 	opts = opts or {}
@@ -148,7 +194,7 @@ function M.tabline()
 	local all_buffers = vim.api.nvim_list_bufs()
 	local current_tabnr = vim.api.nvim_get_current_tabpage()
 
-	table.insert(tabline, "%#TabLineLogo#  %#TabLineFill# ")
+	table.insert(tabline, "%#TabLineLogo#  %#TabLineFill# ")
 
 	-- Get buffers in current tab
 	local tab_buffers = {}
@@ -216,7 +262,7 @@ function M.tabline()
 	return table.concat(tabline, "")
 end
 
--- Add autocmd to track buffer tab association
+-- Update autocmd to track buffer history
 vim.api.nvim_create_autocmd("BufEnter", {
 	callback = function()
 		local buf = vim.api.nvim_get_current_buf()
@@ -224,6 +270,9 @@ vim.api.nvim_create_autocmd("BufEnter", {
 		vim.api.nvim_buf_set_var(buf, "last_tab", tab)
 	end,
 })
+
+-- Set up Alt-Tab keybinding
+vim.keymap.set("n", "<A-Tab>", switch_to_next_buffer, { noremap = true, silent = true })
 
 -- Expose click handlers globally
 _G.tab_click = tab_click

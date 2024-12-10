@@ -5,21 +5,38 @@ return {
 		--mason
 		"williamboman/mason.nvim",
 		"williamboman/mason-lspconfig.nvim",
-		"jay-babu/mason-null-ls.nvim",
+		"WhoIsSethDaniel/mason-tool-installer.nvim",
 		--notifications
 		"j-hui/fidget.nvim",
 		--cmp
+		"hrsh7th/cmp-nvim-lsp",
+		"hrsh7th/cmp-buffer",
+		"hrsh7th/cmp-path",
+		"hrsh7th/nvim-cmp",
+		-- extensions
+		--- luasnip cmp extension
+		"saadparwaiz1/cmp_luasnip",
+		"L3MON4D3/LuaSnip",
+		"rafamadriz/friendly-snippets",
+		--- vscode cmp extension
+		"onsails/lspkind.nvim",
 		"b0o/schemastore.nvim",
 		{
-			"saghen/blink.cmp",
-			lazy = false,
-			version = "v0.*",
+			"windwp/nvim-autopairs",
+			event = "InsertEnter",
+			config = true,
 		},
 		{ "brenoprata10/nvim-highlight-colors", opts = { render = "virtual" } },
 		{
 			"saecki/crates.nvim",
+			event = { "BufRead Cargo.toml" },
 			tag = "stable",
 			opts = {
+				completion = {
+					cmp = {
+						enabled = true,
+					},
+				},
 				lsp = {
 					enabled = true,
 					actions = true,

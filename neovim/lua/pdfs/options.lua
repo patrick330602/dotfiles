@@ -6,7 +6,7 @@ vim.cmd("syntax on")
 vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.mouse = "a"
-vim.opt.laststatus = 2
+vim.opt.laststatus = 3
 vim.opt.scrolloff = 10
 vim.opt.cmdheight = 0
 
@@ -32,8 +32,8 @@ vim.opt.undodir = vim.fn.stdpath("data") .. "/undodir"
 vim.opt.undofile = true
 
 -- search settings
-vim.opt.hlsearch = false
-vim.opt.incsearch = true
+-- vim.opt.hlsearch = false
+-- vim.opt.incsearch = true
 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1

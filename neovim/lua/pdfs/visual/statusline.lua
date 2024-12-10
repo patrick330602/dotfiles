@@ -255,7 +255,6 @@ M.cursor_position = function()
 	return "%#StPos# Ln %l, Col %c "
 end
 
-
 -- Dynamically changes the highlight group of the statusline filetype icon based on the current file
 autocmd("BufEnter", {
 	group = vim.api.nvim_create_augroup("StatusLineFiletype", { clear = true }),

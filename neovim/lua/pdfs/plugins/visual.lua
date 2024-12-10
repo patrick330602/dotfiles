@@ -6,6 +6,15 @@ table.insert(vimgrep_arguments, "--glob")
 table.insert(vimgrep_arguments, "!**/.git/*")
 return {
 	{
+		"folke/snacks.nvim",
+		priority = 1000,
+		lazy = false,
+		opts = {
+			statuscolumn = { enabled = true },
+			terminal = { enabled = true },
+		},
+	},
+	{
 		"f-person/auto-dark-mode.nvim",
 		opts = {
 			update_interval = 1000,
@@ -23,7 +32,7 @@ return {
 		"SmiteshP/nvim-navic",
 		event = "VeryLazy",
 		opts = {
-			highlights = true,
+			highlight = true,
 			click = true,
 			icons = {
 				File = " ",
@@ -62,6 +71,28 @@ return {
 		},
 	},
 	{
+		"kevinhwang91/nvim-hlslens",
+		config = function()
+			require("hlslens").setup()
+
+			local kopts = { noremap = true, silent = true }
+
+			local maps = {
+				{ "n", "n", [[<Cmd>execute('normal! ' . v:count1 . 'n')<CR><Cmd>lua require('hlslens').start()<CR>]] },
+				{ "n", "N", [[<Cmd>execute('normal! ' . v:count1 . 'N')<CR><Cmd>lua require('hlslens').start()<CR>]] },
+				{ "n", "*", [[*<Cmd>lua require('hlslens').start()<CR>]] },
+				{ "n", "#", [[#<Cmd>lua require('hlslens').start()<CR>]] },
+				{ "n", "g*", [[g*<Cmd>lua require('hlslens').start()<CR>]] },
+				{ "n", "g#", [[g#<Cmd>lua require('hlslens').start()<CR>]] },
+				{ "n", "<Leader>l", "<Cmd>noh<CR>" },
+			}
+
+			for _, map in ipairs(maps) do
+				vim.keymap.set(map[1], map[2], map[3], kopts)
+			end
+		end,
+	},
+	{
 		"stevearc/oil.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		opts = { default_file_explorer = true, delete_to_trash = true, view_options = { show_hidden = true } },
@@ -76,23 +107,6 @@ return {
 			pickers = {
 				find_files = {
 					find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" },
-				},
-				buffers = {
-					initial_mode = "normal",
-					previewer = false,
-					layout_strategy = "center",
-					layout_config = {
-						width = function(_, max_columns)
-							local percentage = 0.5
-							local max = 50
-							return math.min(math.floor(percentage * max_columns), max)
-						end,
-						height = function(_, _, max_lines)
-							local percentage = 0.5
-							local max = 30
-							return math.min(math.floor(percentage * max_lines), max)
-						end,
-					},
 				},
 			},
 		},
@@ -112,6 +126,8 @@ return {
 		"rachartier/tiny-inline-diagnostic.nvim",
 		event = "VeryLazy",
 		priority = 1000,
-		config = true,
+		opts = {
+			preset = "nonerdfont",
+		},
 	},
 }

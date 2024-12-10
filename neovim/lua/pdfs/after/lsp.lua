@@ -4,11 +4,15 @@ local function set_keymap(mode, lhs, rhs, desc, opts)
 	vim.keymap.set(mode, lhs, rhs, opts)
 end
 
+local cmp = require("cmp")
+local lspkind = require("lspkind")
 local mason = require("mason")
 local lspconfig = require("lspconfig")
 local mason_lspconfig = require("mason-lspconfig")
-local null_ls = require("null-ls")
+local mason_tool_installer = require("mason-tool-installer")
+local cmp_nvim_lsp = require("cmp_nvim_lsp")
 local navic = require("nvim-navic")
+
 require("fidget").setup({
 	notification = {
 		window = {
@@ -41,7 +45,8 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 
 -- used to enable autocompletion (assign to every lsp server config)
-local capabilities = vim.lsp.protocol.make_client_capabilities()
+local capabilities =
+	vim.tbl_deep_extend("force", {}, vim.lsp.protocol.make_client_capabilities(), cmp_nvim_lsp.default_capabilities())
 local on_attach = function(client, bufnr)
 	if client.server_capabilities.documentSymbolProvider then
 		navic.attach(client, bufnr)
@@ -65,8 +70,9 @@ mason.setup({
 	},
 })
 
-mason_lspconfig.setup({
+mason_tool_installer.setup({
 	ensure_installed = {
+		-- lsp
 		"lua_ls",
 		"rust_analyzer",
 		"gopls",
@@ -78,7 +84,19 @@ mason_lspconfig.setup({
 		"clangd",
 		"eslint",
 		"jsonls",
+		-- formatting
+		"prettier",
+		"stylua",
+		"isort",
+		"black",
+		"clang-format",
+		"goimports",
+		"gofumpt",
 	},
+	auto_update = true,
+})
+
+mason_lspconfig.setup({
 	handlers = {
 		function(server_name) -- default handler (optional)
 			lspconfig[server_name].setup({
@@ -180,42 +198,57 @@ mason_lspconfig.setup({
 	},
 })
 
-null_ls.setup({
-	sources = {
-		null_ls.builtins.formatting.stylua,
-		null_ls.builtins.formatting.black,
-		null_ls.builtins.formatting.clang_format,
-		null_ls.builtins.formatting.gofmt,
-		null_ls.builtins.formatting.goimports,
-		null_ls.builtins.formatting.isort,
-		null_ls.builtins.diagnostics.rpmspec,
-	},
-})
-
-require("mason-null-ls").setup({
-	ensure_installed = nil,
-	automatic_installation = true,
-})
-
-require("blink.cmp").setup({
-	accept = {
-		auto_brackets = { enabled = true },
-	},
-	keymap = { preset = "super-tab"},
-	highlight = {
-		use_nvim_cmp_as_default = false,
-	},
-	nerd_font_variant = "mono",
-	trigger = { signature_help = { enabled = true }, completion = { show_in_snippet = false } },
-	windows = {
-		autocomplete = {
+cmp.setup({
+	window = {
+		completion = {
 			border = "single",
+			winhighlight = "Normal:Normal,FloatBorder:FloatBorder,CursorLine:Visual,Search:None",
 		},
 		documentation = {
 			border = "single",
-		},
-		signature_help = {
-			border = "single",
+			winhighlight = "Normal:Normal,FloatBorder:FloatBorder,CursorLine:Visual,Search:None",
 		},
 	},
+	completion = {
+		completeopt = "menu,menuone,preview,noselect",
+	},
+	mapping = cmp.mapping.preset.insert({
+		["<C-k>"] = cmp.mapping.select_prev_item(), -- previous suggestion
+		["<C-j>"] = cmp.mapping.select_next_item(), -- next suggestion
+		["<C-b>"] = cmp.mapping.scroll_docs(-4),
+		["<C-f>"] = cmp.mapping.scroll_docs(4),
+		["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
+		["<C-e>"] = cmp.mapping.abort(), -- close completion window
+		["<CR>"] = cmp.mapping.confirm({ select = false }),
+	}),
+	-- sources for autocompletion
+	sources = cmp.config.sources({
+		{ name = "nvim_lsp" },
+		{ name = "luasnip" },
+		{ name = "buffer" },
+		{ name = "path" },
+		{ name = "crates" },
+	}),
+	snippet = {
+		expand = function(args)
+			require("luasnip").lsp_expand(args.body)
+		end,
+	},
+
+	formatting = {
+		format = lspkind.cmp_format({
+			symbol = "symbol",
+			maxwidth = {
+				menu = 50,
+				bar = 50,
+			},
+			ellipsis_char = "...",
+			show_labelDetails = true,
+			before = function(entry, item)
+				return require("nvim-highlight-colors").format(entry, item)
+			end,
+		}),
+	},
 })
+local cmp_autopairs = require("nvim-autopairs.completion.cmp")
+cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
