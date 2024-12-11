@@ -16,7 +16,6 @@ function M.get(t)
 		StCommandMode = { fg = t.white, bg = t.black },
 		StConfirmMode = { fg = t.black, bg = t.white },
 
-		StFileName = { fg = t.white, bg = t.grey },
 		StOil = { fg = t.bgAlt, bg = "#ebb403" },
 		StGit = { fg = t.white, bg = "#F1502F" },
 		StTelescope = { fg = t.white, bg = "#2b2f77" },

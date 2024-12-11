@@ -1,3 +1,5 @@
+local devicons = require("nvim-web-devicons")
+
 local M = {}
 
 local function switch_to_next_buffer()
@@ -175,10 +177,34 @@ end
 -- Get buffer name with optional modifications
 local function get_buf_name(buf)
 	local name = vim.fn.bufname(buf)
-	if name == "" then
-		return "[No Name]"
+	local icon = ""
+	local icon_highlight = ""
+	local icon_hlg = {}
+
+	local filename = name ~= "" and vim.fn.fnamemodify(name, ":t") or "No Name"
+	local extension = vim.fn.fnamemodify(filename, ":e")
+	icon, icon_highlight = devicons.get_icon(filename, extension, { default = true })
+
+	if icon_highlight and icon_highlight ~= "" then
+		local fg = vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID(icon_highlight)), "fg")
+
+		-- Create highlight groups for normal and selected states
+		local normal_hl = icon_highlight .. "TabLine"
+		local sel_hl = icon_highlight .. "TabLineSel"
+
+		vim.api.nvim_set_hl(0, normal_hl, {
+			fg = fg,
+			bg = vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID("TabLine")), "bg"),
+		})
+		vim.api.nvim_set_hl(0, sel_hl, {
+			fg = fg,
+			bg = vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID("TabLineSel")), "bg"),
+		})
+
+		icon_hlg = { normal = normal_hl, selected = sel_hl }
 	end
-	return vim.fn.fnamemodify(name, ":t")
+
+	return icon, icon_hlg, filename
 end
 
 -- Check if buffer is modified
@@ -219,12 +245,20 @@ function M.tabline()
 
 	-- Show buffers in current tab
 	for buf, _ in pairs(tab_buffers) do
-		local buf_name = get_buf_name(buf)
+		local icon, icon_hl, buf_name = get_buf_name(buf)
+		local is_current = vim.api.nvim_get_current_buf() == buf
 
-		if vim.api.nvim_get_current_buf() == buf then
+		if is_current then
 			table.insert(tabline, "%#TabLineGraphSel#%#TabLineSel#")
 		else
 			table.insert(tabline, "%#TabLineGraph#%#TabLine#")
+		end
+
+		if icon_hl and type(icon_hl) == "table" then
+			local hl_group = is_current and icon_hl.selected or icon_hl.normal
+			table.insert(tabline, "%" .. "#" .. hl_group .. "# " .. icon .. " ")
+		else
+			table.insert(tabline, " " .. icon .. " ")
 		end
 
 		local buf_text = " " .. buf_name

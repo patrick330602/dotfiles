@@ -1,13 +1,19 @@
 -- inspired by https://gist.githubusercontent.com/roycrippen4/86d3a69fc7d28e406a2e883132c6ea81/raw/af4c111b2c60eb296024d99b8d1446302dd3eb42/statusline.lua
-local autocmd = vim.api.nvim_create_autocmd
-
 local M = {}
+local left_extension = { "undotree", "copilot-chat" }
+local left_extension_hidden = { "diff" }
+local right_extension = { "oil", "DiffviewFiles" }
+local right_extension_hidden = {}
 
 local function findValueByKeyPrefix(prefix)
 	local filetypes = {
 		undotree = {
 			icon = "%#StUndoTree#  ",
-			label = "UNDOTREE",
+			label = "Undotree",
+		},
+		diff = {
+			icon = "",
+			label = "",
 		},
 		oil = {
 			icon = "%#StOil# 󰼙 ",
@@ -101,14 +107,14 @@ local modes = {
 M.mode = function()
 	local mode = vim.api.nvim_get_mode().mode
 	local hl_group = modes[mode] or "StUnknownMode"
-	local current_mode = "%#" .. hl_group .. "# %#None#"
+	local current_mode = "%#" .. hl_group .. "# %#None# "
 
 	local recording_register = vim.fn.reg_recording()
 
 	if recording_register == "" then
 		return current_mode
 	else
-		return "%#STMacro# 󰑊 " .. recording_register .. "%#None#"
+		return "%#STMacro# 󰑊 " .. recording_register .. "%#None# "
 	end
 end
 
@@ -132,32 +138,120 @@ local function truncate_filename(filename, max_length)
 	return base_name:sub(1, partial_len) .. "…" .. base_name:sub(-partial_len) .. "." .. extension
 end
 
-M.file_info = function()
-	local icon = "󰈚 "
-	local path = vim.fn.expand("%F")
-	local name = (path == "" and "Empty ") or path:match("([^/\\]+)[/\\]*$")
+local function get_window_info()
+	local windows = {}
+	local current_tab = vim.api.nvim_get_current_tabpage()
+	local wins = vim.api.nvim_tabpage_list_wins(current_tab)
 
-	if name == "[Command Line]" then
-		return "  CmdHistory "
+	-- Sort windows by their position (top to bottom, left to right)
+	table.sort(wins, function(a, b)
+		local a_row = vim.api.nvim_win_get_position(a)[1]
+		local b_row = vim.api.nvim_win_get_position(b)[1]
+		if a_row == b_row then
+			return vim.api.nvim_win_get_position(a)[2] < vim.api.nvim_win_get_position(b)[2]
+		end
+		return a_row < b_row
+	end)
+
+	for _, win in ipairs(wins) do
+		local buf = vim.api.nvim_win_get_buf(win)
+		local name = vim.api.nvim_buf_get_name(buf)
+		local filename = name ~= "" and vim.fn.fnamemodify(name, ":t") or "Empty"
+		local ft = vim.bo[buf].ft
+		local special_window = findValueByKeyPrefix(ft)
+		local is_floating = vim.api.nvim_win_get_config(win).relative ~= ""
+
+		if filename ~= "Empty" and name ~= "" then
+			if #filename > 25 then
+				filename = truncate_filename(filename)
+			end
+
+			local is_current = win == vim.api.nvim_get_current_win()
+			table.insert(windows, {
+				win = win,
+				filename = filename,
+				is_current = is_current,
+				is_floating = is_floating,
+				filetype = ft,
+				special_window = special_window,
+			})
+		end
+	end
+	return windows
+end
+
+M.files = function()
+	local windows = get_window_info()
+	local result = {}
+	local center_items = {}
+
+	for _, win_info in ipairs(windows) do
+		local filename_display = win_info.filename
+		if win_info.is_floating then
+			filename_display = "[" .. filename_display .. "]"
+		end
+
+		local hl_group = win_info.is_current and "StFileNameCurrent" or "StFileName"
+		local entry = string.format("%%#%s# %s %%#None#", hl_group, filename_display)
+
+		if win_info.special_window then
+			local ft = win_info.filetype
+			if
+				vim.tbl_contains(left_extension, ft)
+				or vim.tbl_contains(left_extension_hidden, ft)
+				or vim.tbl_contains(right_extension, ft)
+				or vim.tbl_contains(right_extension_hidden, ft)
+			then
+				goto continue
+			else
+				table.insert(center_items, "[" .. win_info.special_window.label .. "]")
+			end
+		else
+			table.insert(result, entry)
+		end
+		::continue::
 	end
 
-	if #name > 25 then
-		name = truncate_filename(name)
+	local final_result = table.concat(result, " | ")
+	if #center_items > 0 then
+		if #result > 0 then
+			final_result = final_result .. " | " .. table.concat(center_items, " | ")
+		else
+			final_result = table.concat(center_items, " | ")
+		end
+	end
+	return final_result
+end
+
+local function get_extensions(filetypes, hidden)
+	local result = {}
+	local current_win = vim.api.nvim_get_current_win()
+	local wins = vim.api.nvim_tabpage_list_wins(vim.api.nvim_get_current_tabpage())
+
+	for _, win in ipairs(wins) do
+		local buf = vim.api.nvim_win_get_buf(win)
+		local ft = vim.bo[buf].ft
+
+		if vim.tbl_contains(filetypes, ft) and not vim.tbl_contains(hidden, ft) then
+			local r = findValueByKeyPrefix(ft)
+			if r then
+				table.insert(
+					result,
+					string.format("%s%s%s", r.icon, win == current_win and r.label .. " " or "", "%#None#")
+				)
+			end
+		end
 	end
 
-	if name ~= "Empty " then
-		local ft_icon, _ = require("nvim-web-devicons").get_icon(name)
-		icon = ((ft_icon ~= nil) and ft_icon) or icon
+	return table.concat(result, "")
+end
 
-		name = " " .. name .. " "
-	end
+M.left_extensions = function()
+	return get_extensions(left_extension, left_extension_hidden)
+end
 
-	local r = findValueByKeyPrefix(vim.bo.ft)
-	if r ~= nil then
-		return " " .. r.icon .. r.label .. " %#None# "
-	end
-
-	return " %#StFileName# " .. icon .. name .. " %#None# "
+M.right_extensions = function()
+	return get_extensions(right_extension, right_extension_hidden)
 end
 
 M.term_info = function()
@@ -255,33 +349,21 @@ M.cursor_position = function()
 	return "%#StPos# Ln %l, Col %c "
 end
 
--- Dynamically changes the highlight group of the statusline filetype icon based on the current file
-autocmd("BufEnter", {
-	group = vim.api.nvim_create_augroup("StatusLineFiletype", { clear = true }),
-	callback = function()
-		local _, hl_group = require("nvim-web-devicons").get_icon(vim.fn.expand("%:e"))
-
-		if hl_group == nil then
-			return
-		end
-
-		local hl = vim.api.nvim_get_hl(0, { name = hl_group })
-		vim.api.nvim_set_hl(0, "StFtIcon", { fg = hl.fg })
-	end,
-})
-
 vim.opt.statusline = "%{%v:lua.require('pdfs.visual.statusline').generate_statusline()%}"
 
 M.generate_statusline = function()
 	local statusline = {
 		M.mode(),
-		M.file_info(),
-		M.oil_info(),
-		M.term_info(),
+		M.left_extensions(),
 		M.git(),
-		M.lsp_diagnostics(),
 		"%=",
+		M.files(),
+		M.term_info(),
+		"%=",
+		M.oil_info(),
+		M.lsp_diagnostics(),
 		M.cursor_position(),
+		M.right_extensions(),
 	}
 	return table.concat(statusline)
 end
