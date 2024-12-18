@@ -2,8 +2,21 @@
 local M = {}
 local left_extension = { "undotree", "copilot-chat" }
 local left_extension_hidden = { "diff" }
-local right_extension = { "oil", "DiffviewFiles" }
+local right_extension = { "DiffviewFiles", "Neogit" }
 local right_extension_hidden = {}
+
+local function startsWith(str, key)
+	return string.sub(str, 1, #key) == key
+end
+
+local function findValueByPrefix(tbl, prefix)
+	for _, value in ipairs(tbl) do
+		if startsWith(prefix, value) then
+			return value
+		end
+	end
+	return nil
+end
 
 local function findValueByKeyPrefix(prefix)
 	local filetypes = {
@@ -39,9 +52,21 @@ local function findValueByKeyPrefix(prefix)
 			icon = "%#StDiffFile#  ",
 			label = "Diff",
 		},
+		TelescopePrompt = {
+			icon = "%#StTelescope#  ",
+			label = "Telescope",
+		},
+		lazy = {
+			icon = "%#StLazy# 󰒲 ",
+			label = "Lazy",
+		},
+		mason = {
+			icon = "%#StMason# 󱌣 ",
+			label = "Mason",
+		},
 	}
 	for key, value in pairs(filetypes) do
-		if type(key) == "string" and string.sub(prefix, 1, #key) == key then
+		if type(key) == "string" and startsWith(prefix, key) then
 			return value
 		end
 	end
@@ -161,21 +186,19 @@ local function get_window_info()
 		local special_window = findValueByKeyPrefix(ft)
 		local is_floating = vim.api.nvim_win_get_config(win).relative ~= ""
 
-		if filename ~= "Empty" and name ~= "" then
-			if #filename > 25 then
-				filename = truncate_filename(filename)
-			end
-
-			local is_current = win == vim.api.nvim_get_current_win()
-			table.insert(windows, {
-				win = win,
-				filename = filename,
-				is_current = is_current,
-				is_floating = is_floating,
-				filetype = ft,
-				special_window = special_window,
-			})
+		if #filename > 25 then
+			filename = truncate_filename(filename)
 		end
+
+		local is_current = win == vim.api.nvim_get_current_win()
+		table.insert(windows, {
+			win = win,
+			filename = filename,
+			is_current = is_current,
+			is_floating = is_floating,
+			filetype = ft,
+			special_window = special_window,
+		})
 	end
 	return windows
 end
@@ -187,39 +210,47 @@ M.files = function()
 
 	for _, win_info in ipairs(windows) do
 		local filename_display = win_info.filename
-		if win_info.is_floating then
-			filename_display = "[" .. filename_display .. "]"
-		end
 
 		local hl_group = win_info.is_current and "StFileNameCurrent" or "StFileName"
+
+		if win_info.is_floating then
+			hl_group = "StFileNameFloating"
+		end
 		local entry = string.format("%%#%s# %s %%#None#", hl_group, filename_display)
 
 		if win_info.special_window then
 			local ft = win_info.filetype
 			if
-				vim.tbl_contains(left_extension, ft)
-				or vim.tbl_contains(left_extension_hidden, ft)
-				or vim.tbl_contains(right_extension, ft)
-				or vim.tbl_contains(right_extension_hidden, ft)
+				findValueByPrefix(left_extension, ft)
+				or findValueByPrefix(left_extension_hidden, ft)
+				or findValueByPrefix(right_extension, ft)
+				or findValueByPrefix(right_extension_hidden, ft)
 			then
 				goto continue
 			else
-				table.insert(center_items, "[" .. win_info.special_window.label .. "]")
+				table.insert(center_items, win_info.special_window.icon .. win_info.special_window.label .. " %#None#")
 			end
-		else
+		elseif filename_display ~= "" and filename_display ~= "Empty" then
 			table.insert(result, entry)
+		else
+			goto continue
 		end
 		::continue::
 	end
 
-	local final_result = table.concat(result, " | ")
-	if #center_items > 0 then
-		if #result > 0 then
-			final_result = final_result .. " | " .. table.concat(center_items, " | ")
-		else
-			final_result = table.concat(center_items, " | ")
+	local final_result = ""
+	if #result > 0 then
+		local mid_point = math.ceil((#result + 1) / 2)
+
+		-- Insert center_items in the middle of result
+		for i = #center_items, 1, -1 do
+			table.insert(result, mid_point, center_items[i])
 		end
+		final_result = table.concat(result, "")
+	else
+		final_result = table.concat(center_items, "")
 	end
+
 	return final_result
 end
 
@@ -232,7 +263,7 @@ local function get_extensions(filetypes, hidden)
 		local buf = vim.api.nvim_win_get_buf(win)
 		local ft = vim.bo[buf].ft
 
-		if vim.tbl_contains(filetypes, ft) and not vim.tbl_contains(hidden, ft) then
+		if findValueByPrefix(filetypes, ft) and not findValueByPrefix(hidden, ft) then
 			local r = findValueByKeyPrefix(ft)
 			if r then
 				table.insert(
@@ -254,22 +285,6 @@ M.right_extensions = function()
 	return get_extensions(right_extension, right_extension_hidden)
 end
 
-M.term_info = function()
-	if vim.bo.ft == "toggleterm" then
-		return "%#StTermNum# " .. vim.b.toggle_number .. " %#None#"
-	else
-		return ""
-	end
-end
-
-M.oil_info = function()
-	if vim.bo.ft == "oil" then
-		return "%#StFileName# " .. require("oil").get_current_dir() .. " %#None#"
-	else
-		return ""
-	end
-end
-
 M.git = function()
 	local bufnr = vim.api.nvim_win_get_buf(0)
 	if not vim.b[bufnr].gitsigns_head or vim.b[bufnr].gitsigns_git_status then
@@ -283,7 +298,7 @@ M.git = function()
 		or ""
 	local removed = (git_status.removed and git_status.removed ~= 0) and ("%#StGitRemove# -" .. git_status.removed)
 		or ""
-	local branch_name = "%#StGitBranch#  " .. git_status.head
+	local branch_name = git_status.head and "%#StGitBranch#  " .. git_status.head or ""
 
 	return branch_name .. added .. changed .. removed .. " %#None# "
 end
@@ -349,8 +364,6 @@ M.cursor_position = function()
 	return "%#StPos# Ln %l, Col %c "
 end
 
-vim.opt.statusline = "%{%v:lua.require('pdfs.visual.statusline').generate_statusline()%}"
-
 M.generate_statusline = function()
 	local statusline = {
 		M.mode(),
@@ -358,9 +371,7 @@ M.generate_statusline = function()
 		M.git(),
 		"%=",
 		M.files(),
-		M.term_info(),
 		"%=",
-		M.oil_info(),
 		M.lsp_diagnostics(),
 		M.cursor_position(),
 		M.right_extensions(),

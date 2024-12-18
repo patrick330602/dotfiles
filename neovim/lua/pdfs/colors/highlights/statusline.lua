@@ -16,6 +16,10 @@ function M.get(t)
 		StCommandMode = { fg = t.white, bg = t.black },
 		StConfirmMode = { fg = t.black, bg = t.white },
 
+		StFileName = { fg = t.white, bg = t.grey },
+		StFileNameCurrent = { fg = t.white, bg = t.grey, bold = true },
+		StFileNameFloating = { fg = t.white, bg = t.cyan },
+
 		StOil = { fg = t.bgAlt, bg = "#ebb403" },
 		StGit = { fg = t.white, bg = "#F1502F" },
 		StTelescope = { fg = t.white, bg = "#2b2f77" },
@@ -39,9 +43,6 @@ function M.get(t)
 		StGitRemove = { fg = t.red },
 
 		StPos = { fg = t.black, bg = "#d3d3d3" },
-
-		StTabs = { fg = t.white, bg = t.orange },
-		StTabActive = { fg = t.orange, bg = t.white, bold = true },
 	}
 
 	return highlights

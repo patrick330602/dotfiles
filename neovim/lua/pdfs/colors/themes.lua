@@ -11,12 +11,6 @@ function M.setup()
 		t = colors.light
 	end
 
-	t.bg_solid = t.bg ~= "NONE" and t.bg or t.bgAlt
-
-	if not vim.g.remote_neovim_host then
-		t.bg = "NONE"
-	end
-
 	vim.g.terminal_color_0 = t.bg
 	vim.g.terminal_color_8 = t.bgAlt
 

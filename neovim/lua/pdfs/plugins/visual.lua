@@ -11,7 +11,6 @@ return {
 		lazy = false,
 		opts = {
 			statuscolumn = { enabled = true },
-			terminal = { enabled = true },
 		},
 	},
 	{
@@ -109,17 +108,6 @@ return {
 					find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" },
 				},
 			},
-		},
-	},
-	{
-		"akinsho/toggleterm.nvim",
-		version = "*",
-		opts = {
-			highlights = {
-				Normal = { guibg = "NONE", ctermbg = "NONE" },
-			},
-			open_mapping = [[<c-t>]],
-			shade_terminals = false,
 		},
 	},
 	{

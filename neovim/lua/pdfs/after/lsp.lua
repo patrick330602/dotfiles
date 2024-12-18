@@ -75,7 +75,7 @@ mason_tool_installer.setup({
 		-- lsp
 		"lua_ls",
 		"rust_analyzer",
-		"gopls",
+		-- "gopls",
 		"basedpyright",
 		"dockerls",
 		"yamlls",
@@ -199,19 +199,6 @@ mason_lspconfig.setup({
 })
 
 cmp.setup({
-	window = {
-		completion = {
-			border = "single",
-			winhighlight = "Normal:Normal,FloatBorder:FloatBorder,CursorLine:Visual,Search:None",
-		},
-		documentation = {
-			border = "single",
-			winhighlight = "Normal:Normal,FloatBorder:FloatBorder,CursorLine:Visual,Search:None",
-		},
-	},
-	completion = {
-		completeopt = "menu,menuone,preview,noselect",
-	},
 	mapping = cmp.mapping.preset.insert({
 		["<C-k>"] = cmp.mapping.select_prev_item(), -- previous suggestion
 		["<C-j>"] = cmp.mapping.select_next_item(), -- next suggestion
@@ -237,18 +224,24 @@ cmp.setup({
 
 	formatting = {
 		format = lspkind.cmp_format({
-			symbol = "symbol",
 			maxwidth = {
 				menu = 50,
 				bar = 50,
 			},
+			symbol = "symbol_text",
 			ellipsis_char = "...",
 			show_labelDetails = true,
-			before = function(entry, item)
-				return require("nvim-highlight-colors").format(entry, item)
-			end,
 		}),
 	},
 })
+
 local cmp_autopairs = require("nvim-autopairs.completion.cmp")
 cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
+
+cmp.event:on("menu_opened", function()
+	vim.b.copilot_suggestion_hidden = true
+end)
+
+cmp.event:on("menu_closed", function()
+	vim.b.copilot_suggestion_hidden = false
+end)

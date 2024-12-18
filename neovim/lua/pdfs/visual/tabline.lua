@@ -313,7 +313,4 @@ _G.tab_click = tab_click
 _G.buffer_click = buffer_click
 _G.close_buffer_click = close_buffer_click
 
-vim.o.showtabline = 2 -- Always show tabline
-vim.o.tabline = '%!v:lua.require("pdfs.visual.tabline").tabline()'
-
 return M

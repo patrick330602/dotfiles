@@ -1,20 +1,27 @@
 return {
 	{
+		"sourcegraph/sg.nvim",
+		dependencies = { "nvim-lua/plenary.nvim" },
+		config = true,
+	},
+	{
 		"zbirenbaum/copilot.lua",
 		cmd = "Copilot",
 		event = "InsertEnter",
-		config = true,
 	},
 	{
 		"CopilotC-Nvim/CopilotChat.nvim",
 		version = "*",
 		dependencies = {
-			{ "zbirenbaum/copilot.lua" },
 			{ "nvim-lua/plenary.nvim" },
 		},
 		build = "make tiktoken",
 		opts = {
+			model = "claude-3.5-sonnet",
 			debug = false,
+			window = {
+				width = 0.3,
+			},
 		},
 	},
 }

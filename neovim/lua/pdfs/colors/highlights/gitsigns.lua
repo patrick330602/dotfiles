@@ -13,9 +13,9 @@ function M.get(t)
 		GitSignsChangeLn = { link = "DiffChange" },
 		GitSignsDeleteLn = { link = "DiffDelete" },
 
-		GitSignsAddInline = { bg = util.blend(t.bg_solid, t.green, 0.9) },
-		GitSignsChangeInline = { bg = util.blend(t.bg_solid, t.blue, 0.9) },
-		GitSignsDeleteInline = { bg = util.blend(t.bg_solid, t.red, 0.9) },
+		GitSignsAddInline = { bg = util.blend(t.bg, t.green, 0.9) },
+		GitSignsChangeInline = { bg = util.blend(t.bg, t.blue, 0.9) },
+		GitSignsDeleteInline = { bg = util.blend(t.bg, t.red, 0.9) },
 
 		GitSignsCurrentLineBlame = { link = "LineNr" },
 	}
