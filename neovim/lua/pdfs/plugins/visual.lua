@@ -6,14 +6,6 @@ table.insert(vimgrep_arguments, "--glob")
 table.insert(vimgrep_arguments, "!**/.git/*")
 return {
 	{
-		"folke/snacks.nvim",
-		priority = 1000,
-		lazy = false,
-		opts = {
-			statuscolumn = { enabled = true },
-		},
-	},
-	{
 		"f-person/auto-dark-mode.nvim",
 		opts = {
 			update_interval = 1000,

@@ -1,5 +1,4 @@
 local devicons = require("nvim-web-devicons")
-
 local M = {}
 
 local function switch_to_next_buffer()

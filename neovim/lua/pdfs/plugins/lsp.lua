@@ -20,6 +20,12 @@ return {
 		"rafamadriz/friendly-snippets",
 		--- vscode cmp extension
 		"onsails/lspkind.nvim",
+		--- others
+		{
+			"kevinhwang91/nvim-ufo",
+			dependencies = "kevinhwang91/promise-async",
+			event = "BufRead",
+		},
 		"b0o/schemastore.nvim",
 		{
 			"windwp/nvim-autopairs",

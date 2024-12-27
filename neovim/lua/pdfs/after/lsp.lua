@@ -12,6 +12,7 @@ local mason_lspconfig = require("mason-lspconfig")
 local mason_tool_installer = require("mason-tool-installer")
 local cmp_nvim_lsp = require("cmp_nvim_lsp")
 local navic = require("nvim-navic")
+local cmp_autopairs = require("nvim-autopairs.completion.cmp")
 
 require("fidget").setup({
 	notification = {
@@ -47,6 +48,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 -- used to enable autocompletion (assign to every lsp server config)
 local capabilities =
 	vim.tbl_deep_extend("force", {}, vim.lsp.protocol.make_client_capabilities(), cmp_nvim_lsp.default_capabilities())
+
 local on_attach = function(client, bufnr)
 	if client.server_capabilities.documentSymbolProvider then
 		navic.attach(client, bufnr)
@@ -82,6 +84,7 @@ mason_tool_installer.setup({
 		"nim_langserver",
 		"bashls",
 		"clangd",
+		"ts_ls",
 		"eslint",
 		"jsonls",
 		-- formatting
@@ -235,7 +238,6 @@ cmp.setup({
 	},
 })
 
-local cmp_autopairs = require("nvim-autopairs.completion.cmp")
 cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
 
 cmp.event:on("menu_opened", function()

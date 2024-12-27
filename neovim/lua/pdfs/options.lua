@@ -41,3 +41,10 @@ vim.g.loaded_netrwPlugin = 1
 -- visual
 vim.opt.statusline = "%{%v:lua.require('pdfs.visual.statusline').generate_statusline()%}"
 vim.o.tabline = '%!v:lua.require("pdfs.visual.tabline").tabline()'
+vim.o.statuscolumn = "%!v:lua.require('pdfs.visual.statuscolumn').get()"
+
+-- folding
+vim.o.foldcolumn = "1"
+vim.o.foldlevel = 99
+vim.o.foldlevelstart = 99
+vim.o.foldenable = true

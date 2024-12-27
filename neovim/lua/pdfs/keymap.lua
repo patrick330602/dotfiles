@@ -10,20 +10,45 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move line(s) up" })
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move line(s) down" })
 vim.keymap.set({ "n", "t" }, "<C-t>", require("pdfs.visual.term").toggle, { desc = "Toggle Terminal" })
 
---- AI
-vim.keymap.set(
-	"n",
-	"<leader>Ct",
-	require("copilot.suggestion").toggle_auto_trigger,
-	{ desc = "Toggle Copilot Auto Trigger" }
-)
-vim.keymap.set("n", "<leader>Cc", require("CopilotChat").toggle, { desc = "Toggle Copilot Chat" })
-vim.keymap.set("v", "<leader>Cc", function()
-	require("CopilotChat").toggle({
-		selection = require("CopilotChat.select").visual,
-	})
-end, { desc = "Toggle Copilot Chat" })
+-- vim-ufo
+vim.keymap.set("n", "zR", require("ufo").openAllFolds)
+vim.keymap.set("n", "zM", require("ufo").closeAllFolds)
+vim.keymap.set("n", "zr", require("ufo").openFoldsExceptKinds)
+vim.keymap.set("n", "zm", require("ufo").closeFoldsWith) -- closeAllFolds == closeFoldsWith(0)
+vim.keymap.set("n", "K", function()
+	local winid = require("ufo").peekFoldedLinesUnderCursor()
+	if not winid then
+		-- choose one of coc.nvim and nvim lsp
+		vim.fn.CocActionAsync("definitionHover") -- coc.nvim
+		vim.lsp.buf.hover()
+	end
+end)
 
+-- hlslens
+local kopts = { noremap = true, silent = true }
+
+local function nN(char)
+	local ok, winid = require("hlslens").nNPeekWithUFO(char)
+	if ok and winid then
+		vim.keymap.set("n", "<CR>", function()
+			return "<Tab><CR>"
+		end, { buffer = true, remap = true, expr = true })
+	end
+end
+
+vim.keymap.set({ "n", "x" }, "n", function()
+	nN("n")
+end)
+vim.keymap.set({ "n", "x" }, "N", function()
+	nN("N")
+end)
+vim.keymap.set("n", "*", [[*<Cmd>lua require('hlslens').start()<CR>]], kopts)
+vim.keymap.set("n", "#", [[#<Cmd>lua require('hlslens').start()<CR>]], kopts)
+vim.keymap.set("n", "g*", [[g*<Cmd>lua require('hlslens').start()<CR>]], kopts)
+vim.keymap.set("n", "g#", [[g#<Cmd>lua require('hlslens').start()<CR>]], kopts)
+vim.keymap.set("n", "<Leader>l", "<Cmd>noh<CR>", kopts)
+
+-- MacOS
 if vim.fn.has("macunix") == 1 then
 	vim.api.nvim_set_keymap("n", "<D-v>", "a<C-r>+<Esc>", { noremap = true })
 	vim.api.nvim_set_keymap("i", "<D-v>", "<C-r>+", { noremap = true })

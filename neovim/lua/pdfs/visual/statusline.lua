@@ -1,75 +1,73 @@
--- inspired by https://gist.githubusercontent.com/roycrippen4/86d3a69fc7d28e406a2e883132c6ea81/raw/af4c111b2c60eb296024d99b8d1446302dd3eb42/statusline.lua
+local devicons = require("nvim-web-devicons")
+
 local M = {}
-local left_extension = { "undotree", "copilot-chat" }
-local left_extension_hidden = { "diff" }
-local right_extension = { "DiffviewFiles", "Neogit" }
-local right_extension_hidden = {}
+
+local extensions_hidden = { "diff" }
+
+local extensions = {
+	undotree = {
+		hl_group = "StUndoTree",
+		icon = "",
+	},
+	diff = {
+		hl_group = "",
+		icon = "",
+	},
+	oil = {
+		hl_group = "StOil",
+		icon = "󰼙",
+	},
+	trouble = {
+		hl_group = "StTrouble",
+		icon = "",
+	},
+	Neogit = {
+		hl_group = "StGit",
+		icon = "",
+	},
+	toggleterm = {
+		hl_group = "StTerm",
+		icon = "",
+	},
+	DiffviewFiles = {
+		hl_group = "StDiffFile",
+		icon = "",
+	},
+	TelescopePrompt = {
+		hl_group = "StTelescope",
+		icon = "",
+	},
+	lazy = {
+		hl_group = "StLazy",
+		icon = "󰒲",
+	},
+	mason = {
+		hl_group = "StMason",
+		icon = "󱌣",
+	},
+}
 
 local function startsWith(str, key)
 	return string.sub(str, 1, #key) == key
 end
 
 local function findValueByPrefix(tbl, prefix)
-	for _, value in ipairs(tbl) do
-		if startsWith(prefix, value) then
-			return value
+	-- Handle array-like tables (ipairs)
+	if #tbl > 0 then
+		for _, value in ipairs(tbl) do
+			if startsWith(prefix, value) then
+				return value
+			end
 		end
 	end
-	return nil
-end
 
-local function findValueByKeyPrefix(prefix)
-	local filetypes = {
-		undotree = {
-			icon = "%#StUndoTree#  ",
-			label = "Undotree",
-		},
-		diff = {
-			icon = "",
-			label = "",
-		},
-		oil = {
-			icon = "%#StOil# 󰼙 ",
-			label = "Oil",
-		},
-		trouble = {
-			icon = "%#StTrouble#  ",
-			label = "Trouble",
-		},
-		["copilot-chat"] = {
-			icon = "%#StCopilotChat#  ",
-			label = "Copilot Chat",
-		},
-		Neogit = {
-			icon = "%#StGit#  ",
-			label = "Git",
-		},
-		toggleterm = {
-			icon = "%#StTerm#  ",
-			label = "Terminal",
-		},
-		DiffviewFiles = {
-			icon = "%#StDiffFile#  ",
-			label = "Diff",
-		},
-		TelescopePrompt = {
-			icon = "%#StTelescope#  ",
-			label = "Telescope",
-		},
-		lazy = {
-			icon = "%#StLazy# 󰒲 ",
-			label = "Lazy",
-		},
-		mason = {
-			icon = "%#StMason# 󱌣 ",
-			label = "Mason",
-		},
-	}
-	for key, value in pairs(filetypes) do
+	-- Handle key-value tables (pairs)
+	for key, value in pairs(tbl) do
 		if type(key) == "string" and startsWith(prefix, key) then
 			return value
 		end
 	end
+
 	return nil
 end
 
@@ -183,7 +181,7 @@ local function get_window_info()
 		local name = vim.api.nvim_buf_get_name(buf)
 		local filename = name ~= "" and vim.fn.fnamemodify(name, ":t") or "Empty"
 		local ft = vim.bo[buf].ft
-		local special_window = findValueByKeyPrefix(ft)
+		local special_window = findValueByPrefix(extensions, ft)
 		local is_floating = vim.api.nvim_win_get_config(win).relative ~= ""
 
 		if #filename > 25 then
@@ -206,7 +204,6 @@ end
 M.files = function()
 	local windows = get_window_info()
 	local result = {}
-	local center_items = {}
 
 	for _, win_info in ipairs(windows) do
 		local filename_display = win_info.filename
@@ -219,17 +216,7 @@ M.files = function()
 		local entry = string.format("%%#%s# %s %%#None#", hl_group, filename_display)
 
 		if win_info.special_window then
-			local ft = win_info.filetype
-			if
-				findValueByPrefix(left_extension, ft)
-				or findValueByPrefix(left_extension_hidden, ft)
-				or findValueByPrefix(right_extension, ft)
-				or findValueByPrefix(right_extension_hidden, ft)
-			then
-				goto continue
-			else
-				table.insert(center_items, win_info.special_window.icon .. win_info.special_window.label .. " %#None#")
-			end
+			goto continue
 		elseif filename_display ~= "" and filename_display ~= "Empty" then
 			table.insert(result, entry)
 		else
@@ -238,23 +225,10 @@ M.files = function()
 		::continue::
 	end
 
-	local final_result = ""
-	if #result > 0 then
-		local mid_point = math.ceil((#result + 1) / 2)
-
-		-- Insert center_items in the middle of result
-		for i = #center_items, 1, -1 do
-			table.insert(result, mid_point, center_items[i])
-		end
-		final_result = table.concat(result, "")
-	else
-		final_result = table.concat(center_items, "")
-	end
-
-	return final_result
+	return table.concat(result, "|")
 end
 
-local function get_extensions(filetypes, hidden)
+M.extensions = function()
 	local result = {}
 	local current_win = vim.api.nvim_get_current_win()
 	local wins = vim.api.nvim_tabpage_list_wins(vim.api.nvim_get_current_tabpage())
@@ -263,26 +237,16 @@ local function get_extensions(filetypes, hidden)
 		local buf = vim.api.nvim_win_get_buf(win)
 		local ft = vim.bo[buf].ft
 
-		if findValueByPrefix(filetypes, ft) and not findValueByPrefix(hidden, ft) then
-			local r = findValueByKeyPrefix(ft)
+		if findValueByPrefix(extensions, ft) and not findValueByPrefix(extensions_hidden, ft) then
+			local r = findValueByPrefix(extensions, ft)
 			if r then
-				table.insert(
-					result,
-					string.format("%s%s%s", r.icon, win == current_win and r.label .. " " or "", "%#None#")
-				)
+				local hl = current_win == win and "%#" .. r.hl_group .. "#" or "%#StExtInactive#"
+				table.insert(result, hl .. " " .. r.icon .. " %#None#")
 			end
 		end
 	end
 
 	return table.concat(result, "")
-end
-
-M.left_extensions = function()
-	return get_extensions(left_extension, left_extension_hidden)
-end
-
-M.right_extensions = function()
-	return get_extensions(right_extension, right_extension_hidden)
 end
 
 M.git = function()
@@ -323,11 +287,6 @@ M.lsp_diagnostics = function()
 end
 
 M.cursor_position = function()
-	local r = findValueByKeyPrefix(vim.bo.ft)
-	if r ~= nil then
-		return ""
-	end
-
 	local current_mode = vim.fn.mode(true)
 
 	local v_line, v_col = vim.fn.line("v"), vim.fn.col("v")
@@ -367,14 +326,13 @@ end
 M.generate_statusline = function()
 	local statusline = {
 		M.mode(),
-		M.left_extensions(),
 		M.git(),
 		"%=",
 		M.files(),
 		"%=",
 		M.lsp_diagnostics(),
+		M.extensions(),
 		M.cursor_position(),
-		M.right_extensions(),
 	}
 	return table.concat(statusline)
 end
