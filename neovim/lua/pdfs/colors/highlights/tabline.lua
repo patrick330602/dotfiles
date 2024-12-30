@@ -28,6 +28,15 @@ function M.get(t)
 		TabLineFill = {
 			bg = t.bgHighlight,
 		},
+		TabLineTab = {
+			fg = t.white,
+			bg = t.orange,
+		},
+		TabLineTabSel = {
+			fg = t.white,
+			bg = t.orange,
+			bold = true,
+		},
 	}
 
 	return highlights

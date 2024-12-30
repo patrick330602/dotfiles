@@ -34,7 +34,7 @@ local extensions = {
 		icon = "",
 	},
 	TelescopePrompt = {
-		hl_group = "StTelescope",
+		hl_group = "StFzfLua",
 		icon = "",
 	},
 	lazy = {

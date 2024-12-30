@@ -64,8 +64,6 @@ return {
 					"help",
 					"man",
 					"gitcommit",
-					"TelescopePrompt",
-					"TelescopeResults",
 					"''",
 				},
 			},

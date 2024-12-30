@@ -169,7 +169,7 @@ cmd.conf = {
 		},
 		{
 			firstc = ":",
-			match = "^Telescope",
+			match = "^FzfLua",
 			icon = { { " 󰭎 ", "CmdYellow" } },
 		},
 		{
@@ -223,7 +223,7 @@ cmd.conf = {
 			icon = { { " 💤 " } },
 		},
 		{
-			cmd = "^Telescope",
+			cmd = "^FzfLua",
 			hl = "CmdGreen",
 			icon = { { " 󰺮 ", "CmdGreen" } },
 		},
@@ -591,9 +591,9 @@ cmd.draw = function()
 			0,
 			cmd.state.position - diff,
 			#vim.fn.strcharpart(txt, 0, vim.fn.strchars(before) + 1)
-		--- Doing "(cmd.state.position - diff) + 1" doesn't
-		--- work on multi-byte characters(e.g. emojis, nerd font
-		--- characters)
+			--- Doing "(cmd.state.position - diff) + 1" doesn't
+			--- work on multi-byte characters(e.g. emojis, nerd font
+			--- characters)
 		)
 	end
 end

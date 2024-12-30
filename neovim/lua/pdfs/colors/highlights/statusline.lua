@@ -20,15 +20,15 @@ function M.get(t)
 		StFileNameCurrent = { fg = t.fg, bold = true },
 		StFileNameFloating = { fg = t.white, bg = t.cyan },
 
-		StExtInactive = { fg = "#bbbbbb", bg = "#d3d3d3" },
-		StOil = { fg = "#ebb403", bg = "#d3d3d3" },
-		StGit = { fg = "#F1502F", bg = "#d3d3d3" },
-		StTelescope = { fg = "#2b2f77", bg = "#d3d3d3" },
-		StMason = { fg = "#C1944A", bg = "#d3d3d3" },
-		StUndoTree = { fg = t.black, bg = "#d3d3d3" },
-		StLazy = { fg = "#2875E1", bg = "#d3d3d3" },
-		StTrouble = { fg = t.black, bg = "#d3d3d3" },
-		StTerm = { fg = t.orange, bg = "#d3d3d3" },
+		StExtInactive = { fg = "#bbbbbb", bg = t.bgHighlight },
+		StOil = { fg = "#ebb403", bg = t.bgHighlight },
+		StGit = { fg = "#F1502F", bg = t.bgHighlight },
+		StFzfLua = { fg = "#2b2f77", bg = t.bgHighlight },
+		StMason = { fg = "#C1944A", bg = t.bgHighlight },
+		StUndoTree = { fg = t.fg, bg = t.bgHighlight },
+		StLazy = { fg = "#2875E1", bg = t.bgHighlight },
+		StTrouble = { fg = t.fg, bg = t.bgHighlight },
+		StTerm = { fg = t.orange, bg = t.bgHighlight },
 		StDiffFile = { link = "StGit" },
 
 		StLspError = { fg = t.red },
@@ -41,7 +41,7 @@ function M.get(t)
 		StGitChange = { fg = t.orange },
 		StGitRemove = { fg = t.red },
 
-		StPos = { fg = t.black, bg = "#d3d3d3" },
+		StPos = { fg = t.fg, bg = t.bgHighlight },
 	}
 
 	return highlights

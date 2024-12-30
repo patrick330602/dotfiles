@@ -1,9 +1,3 @@
-local telescopeConfig = require("telescope.config")
-local vimgrep_arguments = { unpack(telescopeConfig.values.vimgrep_arguments) }
-
-table.insert(vimgrep_arguments, "--hidden")
-table.insert(vimgrep_arguments, "--glob")
-table.insert(vimgrep_arguments, "!**/.git/*")
 return {
 	{
 		"f-person/auto-dark-mode.nvim",
@@ -89,18 +83,9 @@ return {
 		opts = { default_file_explorer = true, delete_to_trash = true, view_options = { show_hidden = true } },
 	},
 	{
-		"nvim-telescope/telescope.nvim",
-		dependencies = { "nvim-lua/plenary.nvim" },
-		opts = {
-			defaults = {
-				vimgrep_arguments = vimgrep_arguments,
-			},
-			pickers = {
-				find_files = {
-					find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" },
-				},
-			},
-		},
+		"ibhagwan/fzf-lua",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+		opts = {},
 	},
 	{
 		"rachartier/tiny-inline-diagnostic.nvim",

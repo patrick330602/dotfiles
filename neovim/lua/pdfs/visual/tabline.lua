@@ -1,6 +1,65 @@
 local devicons = require("nvim-web-devicons")
 local M = {}
 
+local function get_unique_path(buf, tab_buffers)
+	local full_path = vim.fn.bufname(buf)
+	if full_path == "" then
+		return "No Name"
+	end
+
+	local filename = vim.fn.fnamemodify(full_path, ":t")
+	local path = vim.fn.fnamemodify(full_path, ":h")
+
+	-- Check if there are other buffers with the same filename
+	local duplicates = {}
+	for other_buf, _ in pairs(tab_buffers) do
+		if other_buf ~= buf then
+			local other_path = vim.fn.bufname(other_buf)
+			local other_filename = vim.fn.fnamemodify(other_path, ":t")
+			if other_filename == filename then
+				table.insert(duplicates, other_path)
+			end
+		end
+	end
+
+	if #duplicates == 0 then
+		return filename
+	end
+
+	-- Find the distinguishing directory
+	local parts = vim.split(path, "/")
+	local other_parts = {}
+	for _, dup_path in ipairs(duplicates) do
+		table.insert(other_parts, vim.split(vim.fn.fnamemodify(dup_path, ":h"), "/"))
+	end
+
+	local diff_index = #parts
+	for i = #parts, 1, -1 do
+		local all_same = true
+		for _, op in ipairs(other_parts) do
+			if i > #op or parts[i] ~= op[i] then
+				all_same = false
+				break
+			end
+		end
+		if not all_same then
+			diff_index = i
+			break
+		end
+	end
+
+	-- Construct the path from the distinguishing directory onwards
+	local result_parts = {}
+	for i = diff_index, #parts do
+		table.insert(result_parts, parts[i])
+	end
+
+	if #result_parts > 0 then
+		return table.concat(result_parts, "/") .. "/" .. filename
+	end
+	return filename
+end
+
 local function switch_to_next_buffer()
 	local current_tab = vim.fn.tabpagenr()
 	local current_tabnr = vim.api.nvim_get_current_tabpage()
@@ -174,20 +233,19 @@ local function make_clickable(text, id, handler)
 end
 
 -- Get buffer name with optional modifications
-local function get_buf_name(buf)
-	local name = vim.fn.bufname(buf)
+local function get_buf_name(buf, tab_buffers)
+	local name = get_unique_path(buf, tab_buffers)
 	local icon = ""
 	local icon_highlight = ""
 	local icon_hlg = {}
 
-	local filename = name ~= "" and vim.fn.fnamemodify(name, ":t") or "No Name"
+	local filename = vim.fn.fnamemodify(name, ":t")
 	local extension = vim.fn.fnamemodify(filename, ":e")
 	icon, icon_highlight = devicons.get_icon(filename, extension, { default = true })
 
 	if icon_highlight and icon_highlight ~= "" then
 		local fg = vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID(icon_highlight)), "fg")
 
-		-- Create highlight groups for normal and selected states
 		local normal_hl = icon_highlight .. "TabLine"
 		local sel_hl = icon_highlight .. "TabLineSel"
 
@@ -203,7 +261,7 @@ local function get_buf_name(buf)
 		icon_hlg = { normal = normal_hl, selected = sel_hl }
 	end
 
-	return icon, icon_hlg, filename
+	return icon, icon_hlg, name
 end
 
 -- Check if buffer is modified
@@ -244,7 +302,7 @@ function M.tabline()
 
 	-- Show buffers in current tab
 	for buf, _ in pairs(tab_buffers) do
-		local icon, icon_hl, buf_name = get_buf_name(buf)
+		local icon, icon_hl, buf_name = get_buf_name(buf, tab_buffers)
 		local is_current = vim.api.nvim_get_current_buf() == buf
 
 		if is_current then
@@ -270,9 +328,9 @@ function M.tabline()
 		table.insert(tabline, make_clickable(buf_text, buf, "v:lua.buffer_click"))
 		table.insert(tabline, make_clickable("✕ ", buf, "v:lua.close_buffer_click"))
 		if vim.api.nvim_get_current_buf() == buf then
-			table.insert(tabline, "%#TablineGraphSel#")
+			table.insert(tabline, "%#TabLineGraphSel#")
 		else
-			table.insert(tabline, "%#TablineGraph#")
+			table.insert(tabline, "%#TabLineGraph#")
 		end
 	end
 
@@ -284,9 +342,9 @@ function M.tabline()
 		local tab_nr = vim.api.nvim_tabpage_get_number(tab)
 
 		if tab_nr == current_tab then
-			table.insert(tabline, "%#TabLineSel#")
+			table.insert(tabline, "%#TablineTabSel#")
 		else
-			table.insert(tabline, "%#TabLine#")
+			table.insert(tabline, "%#TablineTab#")
 		end
 
 		table.insert(tabline, make_clickable(" " .. tab_nr .. " ", tab, "v:lua.tab_click"))

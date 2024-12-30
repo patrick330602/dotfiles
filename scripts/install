@@ -31,8 +31,11 @@ case "$CURR_OS" in
 			zsh-syntax-highlighting \
 			libgit2 \
 			neovim \
-			devpod \
-			luarocks \
+			fzf \
+			fd \
+			rg \
+			delta \
+			chafa \
 			bat \
 			atuin
         ;;
@@ -42,7 +45,7 @@ case "$CURR_OS" in
 			sudo dnf update -y
 			sudo dnf install 'dnf-command(copr)' -y
             sudo dnf copr enable atim/starship -y
-            sudo dnf install -y curl git starship neovim libgit2 bat luarocks
+            sudo dnf install -y curl git starship neovim libgit2 bat fzf fd rg delta chafa
 			curl --proto '=https' --tlsv1.2 -LsSf https://github.com/atuinsh/atuin/releases/latest/download/atuin-installer.sh | sh
         # if ubuntu/debian, install from apt
         elif command -v apt >/dev/null 2>&1; then
@@ -70,14 +73,14 @@ BASHRC_PATH="$HOME/.bashrc"
 ZSHRC_PATH="$HOME/.zshrc"
 
 insert_source() {
-    local rc_file=$1
+    rc_file=$1
     if ! grep -q "$SOURCE_DOTFILES_RC" "$rc_file"; then
         if grep -q "# Fig post block" "$rc_file"; then
-            sed -i "/# Fig post block/i $SOURCE_DOTFILES_RC" "$rc_file"
+            $SED -i "/# Fig post block/i $SOURCE_DOTFILES_RC" "$rc_file"
         elif grep -q "# CodeWhisperer post block" "$rc_file"; then
-            sed -i "/# CodeWhisperer post block/i $SOURCE_DOTFILES_RC" "$rc_file"
+            $SED -i "/# CodeWhisperer post block/i $SOURCE_DOTFILES_RC" "$rc_file"
         elif grep -q "# Q post block" "$rc_file"; then
-            sed -i "/# Q post block/i $SOURCE_DOTFILES_RC" "$rc_file"
+            $SED -i "/# Q post block/i $SOURCE_DOTFILES_RC" "$rc_file"
         else
             echo "$SOURCE_DOTFILES_RC" >> "$rc_file"
         fi
@@ -96,25 +99,6 @@ fi
 echo "Installing starship configuration..."
 mkdir -p "$HOME/.config"
 ln -s "$HOME/.dotfiles/starship.toml" "$HOME/.config/starship.toml"
-
-
-# install neovim
-if ! command -v nvim >/dev/null 2>&1; then
-    case "$CURR_OS" in
-        Darwin*)
-            brew install neovim
-            ;;
-        Linux*)
-            # if fedora, install from dnf
-            if command -v dnf >/dev/null 2>&1; then
-                sudo dnf install -y neovim
-            # if ubuntu/debian, install from apt
-            elif command -v apt >/dev/null 2>&1; then
-                sudo apt install -y neovim
-            fi
-            ;;
-    esac
-fi
 
 if test -f "$HOME/.wezterm.lua"; then
 	echo "::Backing up Wezterm configuration..."
