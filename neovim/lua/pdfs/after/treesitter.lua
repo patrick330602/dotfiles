@@ -32,6 +32,7 @@ configs.setup({
 		"vimdoc",
 		"javascript",
 		"html",
+		"http",
 		"diff",
 		"regex",
 	},

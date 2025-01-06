@@ -27,11 +27,13 @@ local M = {}
 ---@field signAdd "#586935"|string
 ---@field signChange "#51657B"|string
 ---@field signDelete "#984936"|string
----@field cursorFg "#151515"|string
----@field cursorBg "#D0D0D0"|string
+---@field cursorBg "#151515"|string
+---@field cursorFg "#D0D0D0"|string
 ---@field accentBlue "#191a20"|string
 ---@field accentGreen "#1c2019"|string
 ---@field accentRed "#201919"|string
+---@field winShadeLighter "#f9fbfc"|string
+---@field winShadeDarker "#e8f0f4"|string
 
 ---@class DaydreamColorDefault
 ---@field bg "#151515"|string
@@ -63,6 +65,8 @@ local M = {}
 ---@field accentBlue "#191a20"|string
 ---@field accentGreen "#1c2019"|string
 ---@field accentRed "#201919"|string
+---@field winShadeLighter "#1e2326"|string
+---@field winShadeDarker "#141719"|string
 
 ---@class DaydreamColors
 ---@field default DaydreamColorDefault
@@ -92,11 +96,13 @@ M.default = {
 	signAdd = "#586935",
 	signChange = "#51657B",
 	signDelete = "#984936",
-	cursorFg = "#151515",
-	cursorBg = "#D0D0D0",
+	cursorBg = "#151515",
+	cursorFg = "#D0D0D0",
 	accentBlue = "#191a20",
 	accentGreen = "#1c2019",
 	accentRed = "#201919",
+	winShadeLighter = "#1e2326",
+	winShadeDarker = "#141719",
 }
 
 ---@class DaydreamColors
@@ -132,6 +138,8 @@ M.light = {
 	accentBlue = "#191a20",
 	accentGreen = "#1c2019",
 	accentRed = "#201919",
+	winShadeLighter = "#f9fbfc",
+	winShadeDarker = "#e8f0f4",
 }
 
 ---@alias Colors table<DaydreamColorDefault|DaydreamColorLight|string, string>

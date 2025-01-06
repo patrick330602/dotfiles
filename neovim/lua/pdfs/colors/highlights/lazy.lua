@@ -5,6 +5,7 @@ local util = require("pdfs.colors.util")
 --- @param t DaydreamPalette
 function M.get(t)
 	local highlights = {
+		LazyNormal = { bg = t.winShadeDarker },
 		LazyH1 = { fg = t.blue, bold = true },
 		LazyH2 = { fg = t.fg, bold = true },
 		LazyButton = { fg = t.fg, bg = t.bgHighlight },

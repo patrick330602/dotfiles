@@ -5,7 +5,6 @@ local function set_keymap(mode, lhs, rhs, desc, opts)
 end
 
 local cmp = require("cmp")
-local lspkind = require("lspkind")
 local mason = require("mason")
 local lspconfig = require("lspconfig")
 local mason_lspconfig = require("mason-lspconfig")
@@ -88,6 +87,7 @@ mason_tool_installer.setup({
 		"eslint",
 		"jsonls",
 		-- formatting
+		"beautysh",
 		"prettier",
 		"stylua",
 		"isort",
@@ -99,14 +99,31 @@ mason_tool_installer.setup({
 	auto_update = true,
 })
 
+vim.g.rustaceanvim = {
+	server = {
+		capabilities = capabilities,
+		on_attach = on_attach,
+		settings = {
+			["rust-analyzer"] = {
+				diagnostics = {
+					styleLints = {
+						enable = true,
+					},
+				},
+			},
+		},
+	},
+}
+
 mason_lspconfig.setup({
 	handlers = {
-		function(server_name) -- default handler (optional)
+		function(server_name)
 			lspconfig[server_name].setup({
 				capabilities = capabilities,
 				on_attach = on_attach,
 			})
 		end,
+		["rust_analyzer"] = function() end,
 		["jsonls"] = function()
 			lspconfig.jsonls.setup({
 				capabilities = capabilities,
@@ -170,21 +187,6 @@ mason_lspconfig.setup({
 				end,
 			})
 		end,
-		["rust_analyzer"] = function()
-			lspconfig.rust_analyzer.setup({
-				capabilities = capabilities,
-				on_attach = on_attach,
-				settings = {
-					["rust-analyzer"] = {
-						diagnostics = {
-							styleLints = {
-								enable = true,
-							},
-						},
-					},
-				},
-			})
-		end,
 		["lua_ls"] = function()
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
@@ -213,6 +215,7 @@ cmp.setup({
 	}),
 	-- sources for autocompletion
 	sources = cmp.config.sources({
+		{ name = "lazydev", group_index = 0 },
 		{ name = "nvim_lsp" },
 		{ name = "luasnip" },
 		{ name = "buffer" },
@@ -226,15 +229,18 @@ cmp.setup({
 	},
 
 	formatting = {
-		format = lspkind.cmp_format({
-			maxwidth = {
-				menu = 50,
-				bar = 50,
-			},
-			symbol = "symbol_text",
-			ellipsis_char = "...",
-			show_labelDetails = true,
-		}),
+		fields = { "kind", "abbr", "menu" },
+		expandable_indicator = "...",
+		format = function(entry, vim_item)
+			local highlights_info = require("colorful-menu").cmp_highlights(entry)
+
+			if highlights_info ~= nil then
+				vim_item.abbr_hl_group = highlights_info.highlights
+				vim_item.abbr = highlights_info.text
+			end
+
+			return vim_item
+		end,
 	},
 })
 

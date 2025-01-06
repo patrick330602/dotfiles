@@ -1,9 +1,15 @@
 -- shortcut settings
-vim.keymap.set("", "<leader>S", require("fzf-lua").live_grep, { desc = "Search Texts within Working Directory" })
 vim.keymap.set("", "<leader>F", require("oil").toggle_float, { desc = "Find Files within Working Directory" })
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move line(s) up" })
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move line(s) down" })
 vim.keymap.set({ "n", "t" }, "<C-t>", require("pdfs.visual.term").toggle, { desc = "Toggle Terminal" })
+
+-- fzf-lua
+vim.keymap.set("", "<leader>S", require("fzf-lua").live_grep, { desc = "Search Texts within Working Directory" })
+vim.keymap.set("", "<leader>xw", require("fzf-lua").diagnostics_workspace, { desc = "Show workspace diagnostics" })
+vim.keymap.set("", "<leader>xd", require("fzf-lua").diagnostics_document, { desc = "Show document diagnostics" })
+vim.keymap.set("", "<leader>xq", require("fzf-lua").quickfix, { desc = "Show quickfix list" })
+vim.keymap.set("", "<leader>xl", require("fzf-lua").loclist, { desc = "Show location list" })
 
 -- vim-ufo
 vim.keymap.set("n", "zR", require("ufo").openAllFolds)
