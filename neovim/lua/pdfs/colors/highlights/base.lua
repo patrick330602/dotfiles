@@ -8,7 +8,7 @@ function M.get(t)
 		Comment = { fg = t.grey, italic = true },
 		ColorColumn = { bg = t.bgHighlight },
 		Conceal = { fg = t.grey },
-		Cursor = { fg = t.cursor_fg, bg = t.cursor_bg },
+		Cursor = { fg = t.cursorFg, bg = t.cursorBg },
 		ICursor = { link = "Cursor" },
 		CursorIM = { link = "Cursor" },
 		CursorColumn = { bg = t.bgHighlight },

@@ -27,8 +27,8 @@ local M = {}
 ---@field signAdd "#586935"|string
 ---@field signChange "#51657B"|string
 ---@field signDelete "#984936"|string
----@field cursorBg "#151515"|string
----@field cursorFg "#D0D0D0"|string
+---@field cursorFg "#151515"|string
+---@field cursorBg "#D0D0D0"|string
 ---@field accentBlue "#191a20"|string
 ---@field accentGreen "#1c2019"|string
 ---@field accentRed "#201919"|string
@@ -60,8 +60,8 @@ local M = {}
 ---@field signAdd "#586935"|string
 ---@field signChange "#51657B"|string
 ---@field signDelete "#984936"|string
----@field cursorFg "#151515"|string
----@field cursorBg "#D0D0D0"|string
+---@field cursorBg "#151515"|string
+---@field cursorFg "#D0D0D0"|string
 ---@field accentBlue "#191a20"|string
 ---@field accentGreen "#1c2019"|string
 ---@field accentRed "#201919"|string
@@ -96,8 +96,8 @@ M.default = {
 	signAdd = "#586935",
 	signChange = "#51657B",
 	signDelete = "#984936",
-	cursorBg = "#151515",
-	cursorFg = "#D0D0D0",
+	cursorFg = "#151515",
+	cursorBg = "#D0D0D0",
 	accentBlue = "#191a20",
 	accentGreen = "#1c2019",
 	accentRed = "#201919",
@@ -133,8 +133,8 @@ M.light = {
 	signAdd = "#586935",
 	signChange = "#51657B",
 	signDelete = "#984936",
-	cursorFg = "#151515",
-	cursorBg = "#D0D0D0",
+	cursorBg = "#151515",
+	cursorFg = "#D0D0D0",
 	accentBlue = "#191a20",
 	accentGreen = "#1c2019",
 	accentRed = "#201919",

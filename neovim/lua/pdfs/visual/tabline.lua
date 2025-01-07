@@ -258,10 +258,18 @@ local function get_buf_name(buf, tab_buffers)
 			bg = vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID("TabLineSel")), "bg"),
 		})
 
-		icon_hlg = { normal = normal_hl, selected = sel_hl }
+		return {
+			icon = icon,
+			icon_hl = { normal = normal_hl, selected = sel_hl },
+			name = name,
+		}
 	end
 
-	return icon, icon_hlg, name
+	return {
+		icon = icon,
+		icon_hl = nil,
+		name = name,
+	}
 end
 
 -- Check if buffer is modified
@@ -302,7 +310,7 @@ function M.tabline()
 
 	-- Show buffers in current tab
 	for buf, _ in pairs(tab_buffers) do
-		local icon, icon_hl, buf_name = get_buf_name(buf, tab_buffers)
+		local buf_info = get_buf_name(buf, tab_buffers)
 		local is_current = vim.api.nvim_get_current_buf() == buf
 
 		if is_current then
@@ -311,16 +319,26 @@ function M.tabline()
 			table.insert(tabline, "%#TabLineGraph#%#TabLine#")
 		end
 
-		if icon_hl and type(icon_hl) == "table" then
-			local hl_group = is_current and icon_hl.selected or icon_hl.normal
-			table.insert(tabline, "%" .. "#" .. hl_group .. "# " .. icon .. " ")
+		if buf_info.icon_hl then
+			local hl_group = is_current and buf_info.icon_hl.selected or buf_info.icon_hl.normal
+			table.insert(
+				tabline,
+				"%"
+					.. "#"
+					.. hl_group
+					.. "#"
+					.. buf_info.icon
+					.. "%#"
+					.. (is_current and "TabLineSel" or "TabLine")
+					.. "#"
+			)
 		else
-			table.insert(tabline, " " .. icon .. " ")
+			table.insert(tabline, " " .. buf_info.icon)
 		end
 
-		local buf_text = " " .. buf_name
+		local buf_text = " " .. buf_info.name
 		if is_modified(buf) then
-			buf_text = buf_text .. "+ "
+			buf_text = buf_text .. " ● "
 		else
 			buf_text = buf_text .. " "
 		end
@@ -354,7 +372,7 @@ function M.tabline()
 end
 
 -- Update autocmd to track buffer history
-vim.api.nvim_create_autocmd("BufEnter", {
+vim.api.nvim_create_autocmd({ "BufEnter", "Bufadd", "BufDelete", "BufFilePost" }, {
 	callback = function()
 		local buf = vim.api.nvim_get_current_buf()
 		local tab = vim.fn.tabpagenr()
