@@ -112,14 +112,14 @@ execute_commands() {
 # Main installation logic
 case "$DEPS_TYPE" in
     fedora)
-		sudo dnf update
+		sudo dnf update -y
 		enable_copr "$fedora_copr"
         ;;
     ubuntu)
         echo "$ubuntu_ppa" | while IFS= read -r ppa; do
             sudo add-apt-repository -y "ppa:$ppa"
         done
-        sudo apt-get update
+        sudo apt-get update -y
         ;;
 esac
 
