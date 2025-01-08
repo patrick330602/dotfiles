@@ -69,7 +69,9 @@ fi
 
 echo "::Installing nvim configuration..."
 ln -sfn "$HOME/.dotfiles/neovim" "$HOME/.config/nvim" && \
-    nvim --headless "+Lazy! sync" +qa
+    nvim --headless "+Lazy! sync" +qa && \
+    nvim --headless "+TSUpdateSync" +qa && \
+    nvim --headless "+MasonToolsUpdateSync" +qa
 
 sleep 10
 echo "Done! Please restart your shell."
