@@ -1,10 +1,14 @@
 #!/bin/sh
 
+SOURCE_DOTFILES_RC=". $HOME/.dotfiles/.dotfiles.rc"
+BASHRC_PATH="$HOME/.bashrc"
+ZSHRC_PATH="$HOME/.zshrc"
+
 CURR_OS=$(uname -s)
+
 echo "Please enter your password to pre-authorize sudo:"
 sudo -v
 
-# install brew if it is on mac and not installed
 case "$CURR_OS" in
     Darwin*)
         if test ! "$(which brew)"; then
@@ -20,70 +24,18 @@ case "$CURR_OS" in
         ;;
 esac
 
-# install necessary packages
-echo "Installing necessary packages..."
-case "$CURR_OS" in
-    Darwin*)
-        brew install \
-			coreutils \
-			gnu-sed \
-			starship \
-			zsh-syntax-highlighting \
-			libgit2 \
-			neovim \
-			fzf \
-			fd \
-			rg \
-			delta \
-			chafa \
-			bat \
-			atuin
-        ;;
-    Linux*)
-        # if fedora, install from dnf
-        if command -v dnf >/dev/null 2>&1; then
-			sudo dnf update -y
-			sudo dnf install 'dnf-command(copr)' -y
-            sudo dnf copr enable atim/starship -y
-            sudo dnf install -y curl git starship neovim libgit2 bat fzf fd rg delta chafa
-			curl --proto '=https' --tlsv1.2 -LsSf https://github.com/atuinsh/atuin/releases/latest/download/atuin-installer.sh | sh
-        # if ubuntu/debian, install from apt
-        elif command -v apt >/dev/null 2>&1; then
-            sudo apt install -y neovim
-            curl -fsSL https://starship.rs/install.sh | sh -s -- -y
-        fi
-        ;;
-esac
+echo "Install Depedencies..."
+curl -fsSL https://code.wedotstud.io/patrick/dotfiles/raw/branch/main/scripts/deps.sh | sh
 
-SED=$(which sed)
-case "$CURR_OS" in
-    Darwin*)
-        SED=$(which gsed)
-    ;;
-esac
 
 git clone "git@code.wedotstud.io:patrick/dotfiles.git" "$HOME/.dotfiles" || {
-    # If SSH clone fails, try HTTPS
-    echo "SSH clone failed, trying with HTTPS..."
     git clone "https://code.wedotstud.io/patrick/dotfiles.git" "$HOME/.dotfiles"
 }
-
-SOURCE_DOTFILES_RC=". $HOME/.dotfiles/.dotfiles.rc"
-BASHRC_PATH="$HOME/.bashrc"
-ZSHRC_PATH="$HOME/.zshrc"
 
 insert_source() {
     rc_file=$1
     if ! grep -q "$SOURCE_DOTFILES_RC" "$rc_file"; then
-        if grep -q "# Fig post block" "$rc_file"; then
-            $SED -i "/# Fig post block/i $SOURCE_DOTFILES_RC" "$rc_file"
-        elif grep -q "# CodeWhisperer post block" "$rc_file"; then
-            $SED -i "/# CodeWhisperer post block/i $SOURCE_DOTFILES_RC" "$rc_file"
-        elif grep -q "# Q post block" "$rc_file"; then
-            $SED -i "/# Q post block/i $SOURCE_DOTFILES_RC" "$rc_file"
-        else
-            echo "$SOURCE_DOTFILES_RC" >> "$rc_file"
-        fi
+        echo "$SOURCE_DOTFILES_RC" >> "$rc_file"
     fi
 }
 
@@ -101,11 +53,11 @@ mkdir -p "$HOME/.config"
 ln -s "$HOME/.dotfiles/starship.toml" "$HOME/.config/starship.toml"
 
 if test -f "$HOME/.wezterm.lua"; then
-	echo "::Backing up Wezterm configuration..."
-	mv "$HOME/.wezterm.lua" "$HOME/.wezterm.lua.bak"
+    echo "::Backing up Wezterm configuration..."
+    mv "$HOME/.wezterm.lua" "$HOME/.wezterm.lua.bak"
 fi
 echo "::Installing Wezterm Configuration..."
-ln -s "$HOME/.dotfiles/.wezterm.lua" "$HOME/.wezterm.lua" 
+ln -s "$HOME/.dotfiles/.wezterm.lua" "$HOME/.wezterm.lua"
 
 
 if test -d "$HOME/.config/nvim" && test ! -L "$HOME/.config/nvim"; then
@@ -115,7 +67,7 @@ fi
 
 echo "::Installing nvim configuration..."
 ln -sfn "$HOME/.dotfiles/neovim" "$HOME/.config/nvim" && \
-nvim --headless "+Lazy! sync" +qa
+    nvim --headless "+Lazy! sync" +qa
 
 sleep 10
 echo "Done! Please restart your shell."
