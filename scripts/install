@@ -29,7 +29,7 @@ esac
 echo "Install Depedencies..."
 curl -fsSL https://code.wedotstud.io/patrick/dotfiles/raw/branch/main/scripts/deps.sh | sh
 
-
+ssh-keyscan code.wedotstud.io >> ~/.ssh/known_hosts
 git clone "git@code.wedotstud.io:patrick/dotfiles.git" "$HOME/.dotfiles" || {
     git clone "https://code.wedotstud.io/patrick/dotfiles.git" "$HOME/.dotfiles"
 }
