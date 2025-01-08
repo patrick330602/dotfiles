@@ -78,22 +78,16 @@ enable_copr() {
 
 
 install_packages() {
-    packages="$1"
-    tmp_pkg=""
-
-    echo "$packages" | while IFS= read -r package; do
-        tmp_pkg="$tmp_pkg $package"
-    done
-
+	packages=$(printf '%s' "$1" | sed -e '/^[[:space:]]*$/d' | tr '\n' ' ')
     case "$DEPS_TYPE" in
         mac)
-            brew install $tmp_pkg
+            brew install $packages
             ;;
         fedora)
-            sudo dnf install -y $tmp_pkg
+            sudo dnf install -y $packages
             ;;
         ubuntu|debian)
-            sudo apt-get install -y $tmp_pkg
+            sudo apt-get install -y $packages
             ;;
     esac
 }
