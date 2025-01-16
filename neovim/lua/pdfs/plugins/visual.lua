@@ -179,4 +179,8 @@ return {
 			},
 		},
 	},
+	{
+		"wurli/visimatch.nvim",
+		config = true,
+	},
 }

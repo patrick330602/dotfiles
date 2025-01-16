@@ -81,12 +81,15 @@ install_packages() {
 	packages=$(printf '%s' "$1" | sed -e '/^[[:space:]]*$/d' | tr '\n' ' ')
     case "$DEPS_TYPE" in
         mac)
-            brew install $packages
+			echo "::Homebrew::Installing the following packages: $packages "
+            brew install --quiet $packages
             ;;
         fedora)
+			echo "::DNF::Installing the following packages: $packages "
             sudo dnf install -y $packages
             ;;
         ubuntu|debian)
+			echo "::Homebrew::Installing the following packages: $packages "
             sudo apt-get install -y $packages
             ;;
     esac
@@ -105,6 +108,10 @@ execute_commands() {
 
 # Main installation logic
 case "$DEPS_TYPE" in
+	mac)
+		brew update --quiet
+		brew upgrade --quiet
+		;;
     fedora)
 		sudo dnf update -y
 		enable_copr "$fedora_copr"
