@@ -1,5 +1,6 @@
-local devicons = require("nvim-web-devicons")
 local M = {}
+
+local scroll_offset = 0
 
 local function get_unique_path(buf, tab_buffers)
 	local full_path = vim.fn.bufname(buf)
@@ -135,9 +136,11 @@ local function create_dropdown(items, callback, opts)
 	})
 
 	-- Set window options
-	vim.api.nvim_win_set_option(win, "cursorline", true)
-	vim.api.nvim_buf_set_option(buf, "modifiable", false)
-	vim.api.nvim_buf_set_option(buf, "bufhidden", "delete")
+	vim.api.nvim_set_option_value("cursorline", true, { win = win })
+	vim.api.nvim_set_option_value("modifiable", false, { buf = buf })
+	vim.api.nvim_set_option_value("bufhidden", "delete", { buf = buf })
+
+	vim.opt_local.winbar = nil
 
 	-- Set keymaps and functions
 	local function close_menu()
@@ -232,46 +235,6 @@ local function make_clickable(text, id, handler)
 	return "%" .. id .. "@" .. handler .. "@" .. text .. "%X"
 end
 
--- Get buffer name with optional modifications
-local function get_buf_name(buf, tab_buffers)
-	local name = get_unique_path(buf, tab_buffers)
-	local icon = ""
-	local icon_highlight = ""
-	local icon_hlg = {}
-
-	local filename = vim.fn.fnamemodify(name, ":t")
-	local extension = vim.fn.fnamemodify(filename, ":e")
-	icon, icon_highlight = devicons.get_icon(filename, extension, { default = true })
-
-	if icon_highlight and icon_highlight ~= "" then
-		local fg = vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID(icon_highlight)), "fg")
-
-		local normal_hl = icon_highlight .. "TabLine"
-		local sel_hl = icon_highlight .. "TabLineSel"
-
-		vim.api.nvim_set_hl(0, normal_hl, {
-			fg = fg,
-			bg = vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID("TabLine")), "bg"),
-		})
-		vim.api.nvim_set_hl(0, sel_hl, {
-			fg = fg,
-			bg = vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID("TabLineSel")), "bg"),
-		})
-
-		return {
-			icon = icon,
-			icon_hl = { normal = normal_hl, selected = sel_hl },
-			name = name,
-		}
-	end
-
-	return {
-		icon = icon,
-		icon_hl = nil,
-		name = name,
-	}
-end
-
 -- Check if buffer is modified
 local function is_modified(buf)
 	return vim.fn.getbufvar(buf, "&modified") == 1
@@ -285,7 +248,7 @@ function M.tabline()
 	local all_buffers = vim.api.nvim_list_bufs()
 	local current_tabnr = vim.api.nvim_get_current_tabpage()
 
-	table.insert(tabline, "%#TabLineLogo#  %#TabLineFill# ")
+	table.insert(tabline, "%#TabLineLogo#  %#TabLineFill#%< ")
 
 	-- Get buffers in current tab
 	local tab_buffers = {}
@@ -310,7 +273,7 @@ function M.tabline()
 
 	-- Show buffers in current tab
 	for buf, _ in pairs(tab_buffers) do
-		local buf_info = get_buf_name(buf, tab_buffers)
+		local buf_name = get_unique_path(buf, tab_buffers)
 		local is_current = vim.api.nvim_get_current_buf() == buf
 
 		if is_current then
@@ -319,24 +282,7 @@ function M.tabline()
 			table.insert(tabline, "%#TabLineGraph#%#TabLine#")
 		end
 
-		if buf_info.icon_hl then
-			local hl_group = is_current and buf_info.icon_hl.selected or buf_info.icon_hl.normal
-			table.insert(
-				tabline,
-				"%"
-					.. "#"
-					.. hl_group
-					.. "#"
-					.. buf_info.icon
-					.. "%#"
-					.. (is_current and "TabLineSel" or "TabLine")
-					.. "#"
-			)
-		else
-			table.insert(tabline, " " .. buf_info.icon)
-		end
-
-		local buf_text = " " .. buf_info.name
+		local buf_text = " " .. buf_name
 		if is_modified(buf) then
 			buf_text = buf_text .. " ● "
 		else
@@ -352,8 +298,7 @@ function M.tabline()
 		end
 	end
 
-	table.insert(tabline, "%#TabLineFill#")
-	table.insert(tabline, "%=")
+	table.insert(tabline, "%#TabLineFill#%=")
 
 	-- Add tabs
 	for _, tab in ipairs(tabs) do

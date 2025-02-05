@@ -22,7 +22,7 @@ function M.tiktok()
 		" stop configuring neovim and go touch grass lol. ",
 		"Or you can just use vim.",
 		"",
-		string.rep("─", width), -- Separator line
+		string.rep("─", width),
 		"[Learn More]" .. string.rep(" ", width - 11 - 12) .. "[Close App]",
 	}
 

@@ -2,6 +2,10 @@ local M = {}
 M.extensions_hidden = { "diff" }
 
 M.extensions = {
+	typr = {
+		hl_group = "StTypr",
+		icon = "󰌌",
+	},
 	undotree = {
 		hl_group = "StUndoTree",
 		icon = "",
