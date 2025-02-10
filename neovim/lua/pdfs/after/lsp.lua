@@ -95,6 +95,7 @@ mason_tool_installer.setup({
 		"clang-format",
 		"goimports",
 		"gofumpt",
+		"xmlformatter",
 	},
 	auto_update = true,
 })
