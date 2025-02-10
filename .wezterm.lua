@@ -21,21 +21,20 @@ config.font = wezterm.font_with_fallback({
 config.font_size = 16.0
 
 config.use_fancy_tab_bar = false
+config.window_decorations = "RESIZE|INTEGRATED_BUTTONS"
 config.window_frame = {
+	border_bottom_height = "0.25cell",
+	border_top_height = "0.25cell",
+	border_top_color = "#333333",
 	font = wezterm.font({ family = "0xProto", weight = "Bold" }),
 	font_size = 14,
 }
-
-config.window_decorations = "RESIZE"
--- config.window_background_opacity = 0.8
--- config.macos_window_background_blur = 20
-config.tab_bar_at_bottom = true
 
 local appearance = get_appearance()
 if appearance:find("Dark") then
 	config.colors = {
 		foreground = "#E1E1E1", -- from default.fg
-		background = "#151515", -- from default.bg
+		background = "#151515",
 
 		cursor_bg = "#D0D0D0", -- from default.cursorBg
 		cursor_fg = "#151515", -- from default.cursorFg
@@ -67,7 +66,7 @@ if appearance:find("Dark") then
 			"#88afa2", -- bright cyan (same as normal)
 			"#E1E1E1", -- bright white (default.white)
 		},
-		indexed = { [16] = "#FFA557", [17] = "#b46958" }, -- using orange and red
+		indexed = { [16] = "#FFA557", [17] = "#b46958" },
 	}
 else
 	config.colors = {
@@ -107,7 +106,5 @@ else
 		indexed = { [16] = "#FFA557", [17] = "#b46958" }, -- using orange and red
 	}
 end
-
-config.colors["tab_bar"] = { background = "transparent" }
 
 return config
