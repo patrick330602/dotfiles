@@ -5,6 +5,10 @@ return {
 		cmd = { "Typr", "TyprStats" },
 	},
 	{
+		"nvzone/timerly",
+		cmd = "TimerlyToggle",
+	},
+	{
 		"steveslatky/vimcino",
 		--- optional custom options
 		---@field vimcino.Config
