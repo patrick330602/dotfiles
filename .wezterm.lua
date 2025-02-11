@@ -24,7 +24,7 @@ config.use_fancy_tab_bar = false
 config.window_decorations = "RESIZE|INTEGRATED_BUTTONS"
 config.window_frame = {
 	border_bottom_height = "0.25cell",
-	border_top_height = "0.25cell",
+	border_top_height = "0.4cell",
 	border_top_color = "#333333",
 	font = wezterm.font({ family = "0xProto", weight = "Bold" }),
 	font_size = 14,

@@ -161,7 +161,6 @@ return {
 			preset = "nonerdfont",
 		},
 	},
-	{ "dmmulroy/ts-error-translator.nvim", config = true },
 	{ "brenoprata10/nvim-highlight-colors", opts = { render = "virtual" } },
 	{
 		"folke/which-key.nvim",

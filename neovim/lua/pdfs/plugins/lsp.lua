@@ -84,5 +84,6 @@ return {
 				},
 			},
 		},
+		{ "soulis-1256/eagle.nvim", config = true },
 	},
 }

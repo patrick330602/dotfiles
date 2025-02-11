@@ -76,7 +76,7 @@ mason_tool_installer.setup({
 		-- lsp
 		"lua_ls",
 		"rust_analyzer",
-		-- "gopls",
+		"gopls",
 		"basedpyright",
 		"dockerls",
 		"yamlls",
