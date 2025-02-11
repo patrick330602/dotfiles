@@ -10,7 +10,6 @@ local lspconfig = require("lspconfig")
 local mason_lspconfig = require("mason-lspconfig")
 local mason_tool_installer = require("mason-tool-installer")
 local cmp_nvim_lsp = require("cmp_nvim_lsp")
-local navic = require("nvim-navic")
 local cmp_autopairs = require("nvim-autopairs.completion.cmp")
 
 require("fidget").setup({
@@ -47,12 +46,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
 -- used to enable autocompletion (assign to every lsp server config)
 local capabilities =
 	vim.tbl_deep_extend("force", {}, vim.lsp.protocol.make_client_capabilities(), cmp_nvim_lsp.default_capabilities())
-
-local on_attach = function(client, bufnr)
-	if client.server_capabilities.documentSymbolProvider then
-		navic.attach(client, bufnr)
-	end
-end
 
 local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
 for type, icon in pairs(signs) do
@@ -103,7 +96,6 @@ mason_tool_installer.setup({
 vim.g.rustaceanvim = {
 	server = {
 		capabilities = capabilities,
-		on_attach = on_attach,
 		settings = {
 			["rust-analyzer"] = {
 				diagnostics = {
@@ -121,14 +113,12 @@ mason_lspconfig.setup({
 		function(server_name)
 			lspconfig[server_name].setup({
 				capabilities = capabilities,
-				on_attach = on_attach,
 			})
 		end,
 		["rust_analyzer"] = function() end,
 		["jsonls"] = function()
 			lspconfig.jsonls.setup({
 				capabilities = capabilities,
-				on_attach = on_attach,
 				settings = {
 					json = {
 						schemas = require("schemastore").json.schemas(),
@@ -140,7 +130,6 @@ mason_lspconfig.setup({
 		["yamlls"] = function()
 			lspconfig.yamlls.setup({
 				capabilities = capabilities,
-				on_attach = on_attach,
 				settings = {
 					yaml = {
 						schemaStore = {
@@ -155,7 +144,6 @@ mason_lspconfig.setup({
 		["gopls"] = function()
 			lspconfig.gopls.setup({
 				capabilities = capabilities,
-				on_attach = on_attach,
 				settings = {
 					gopls = {
 						analyses = {
@@ -170,7 +158,6 @@ mason_lspconfig.setup({
 		["bashls"] = function()
 			lspconfig.bashls.setup({
 				capabilities = capabilities,
-				on_attach = on_attach,
 				filetypes = { "sh", "bash", "rc" },
 			})
 		end,
@@ -178,9 +165,6 @@ mason_lspconfig.setup({
 			lspconfig.eslint.setup({
 				capabilities = capabilities,
 				on_attach = function(client, bufnr)
-					if client.server_capabilities.documentSymbolProvider then
-						navic.attach(client, bufnr)
-					end
 					vim.api.nvim_create_autocmd("BufWritePre", {
 						buffer = bufnr,
 						command = "EslintFixAll",
@@ -191,7 +175,6 @@ mason_lspconfig.setup({
 		["lua_ls"] = function()
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
-				on_attach = on_attach,
 				settings = {
 					Lua = {
 						diagnostics = {

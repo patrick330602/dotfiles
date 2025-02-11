@@ -140,8 +140,6 @@ local function create_dropdown(items, callback, opts)
 	vim.api.nvim_set_option_value("modifiable", false, { buf = buf })
 	vim.api.nvim_set_option_value("bufhidden", "delete", { buf = buf })
 
-	vim.opt_local.winbar = nil
-
 	-- Set keymaps and functions
 	local function close_menu()
 		if vim.api.nvim_win_is_valid(win) then
