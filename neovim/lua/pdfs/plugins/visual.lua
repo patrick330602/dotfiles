@@ -14,18 +14,23 @@ return {
 		},
 	},
 	{
-		"Bekaboo/dropbar.nvim",
-		-- optional, but required for fuzzy finder support
-		dependencies = {
-			"nvim-telescope/telescope-fzf-native.nvim",
-			build = "make",
+		"stevearc/aerial.nvim",
+		opts = {
+			on_attach = function(bufnr)
+				-- Jump forwards/backwards with '{' and '}'
+				vim.keymap.set("n", "{", "<cmd>AerialPrev<CR>", { buffer = bufnr })
+				vim.keymap.set("n", "}", "<cmd>AerialNext<CR>", { buffer = bufnr })
+			end,
 		},
-		config = function()
-			local dropbar_api = require("dropbar.api")
-			vim.keymap.set("n", "<Leader>;", dropbar_api.pick, { desc = "Pick symbols in winbar" })
-			vim.keymap.set("n", "[;", dropbar_api.goto_context_start, { desc = "Go to start of current context" })
-			vim.keymap.set("n", "];", dropbar_api.select_next_context, { desc = "Select next context" })
-		end,
+		-- Optional dependencies
+		dependencies = {
+			"nvim-treesitter/nvim-treesitter",
+			"nvim-tree/nvim-web-devicons",
+		},
+	},
+	{
+		"stevearc/stickybuf.nvim",
+		opts = {},
 	},
 	{
 		"mbbill/undotree",
@@ -58,7 +63,38 @@ return {
 	{
 		"stevearc/oil.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
-		opts = { default_file_explorer = true, delete_to_trash = true, view_options = { show_hidden = true } },
+		config = function()
+			local oil = require("oil")
+			oil.setup({
+				default_file_explorer = true,
+				delete_to_trash = true,
+				view_options = { show_hidden = true },
+				keymaps = {
+					-- create a new mapping, gs, to search and replace in the current directory
+					gs = {
+						callback = function()
+							-- get the current directory
+							local prefills = { paths = oil.get_current_dir() }
+
+							local grug_far = require("grug-far")
+							-- instance check
+							if not grug_far.has_instance("explorer") then
+								grug_far.open({
+									instanceName = "explorer",
+									prefills = prefills,
+									staticTitle = "Find and Replace from Explorer",
+								})
+							else
+								grug_far.open_instance("explorer")
+								-- updating the prefills without clearing the search and other fields
+								grug_far.update_instance_prefills("explorer", prefills, false)
+							end
+						end,
+						desc = "oil: Search in directory",
+					},
+				},
+			})
+		end,
 	},
 	{
 		"ibhagwan/fzf-lua",

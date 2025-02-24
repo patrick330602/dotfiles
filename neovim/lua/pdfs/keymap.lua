@@ -15,7 +15,7 @@ vim.keymap.set("", "<leader>xl", require("fzf-lua").loclist, { desc = "Show loca
 vim.keymap.set("n", "zR", require("ufo").openAllFolds, { desc = "Open all folds" })
 vim.keymap.set("n", "zM", require("ufo").closeAllFolds, { desc = "Close all folds" })
 vim.keymap.set("n", "zr", require("ufo").openFoldsExceptKinds, { desc = "Open folds except specified kinds" })
-vim.keymap.set("n", "zm", require("ufo").closeFoldsWith, { desc = "Close folds with specified level" }) -- closeAllFolds == closeFoldsWith(0)
+vim.keymap.set("n", "zm", require("ufo").closeFoldsWith, { desc = "Close folds with specified level" })
 vim.keymap.set("n", "K", function()
 	local winid = require("ufo").peekFoldedLinesUnderCursor()
 	if not winid then
@@ -70,6 +70,9 @@ vim.keymap.set(
 	vim.tbl_extend("force", kopts, { desc = "Search word under cursor backward (partial)" })
 )
 vim.keymap.set("n", "<Leader>l", "<Cmd>noh<CR>", vim.tbl_extend("force", kopts, { desc = "Clear search highlights" }))
+
+-- aerial.nvim
+vim.keymap.set("n", "<leader>L", "<cmd>AerialToggle!<CR>", { desc = "Open Symbols" })
 
 -- MacOS
 if vim.fn.has("macunix") == 1 then
