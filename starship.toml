@@ -11,6 +11,8 @@ ${shell}\
 ${custom.system_info}\
 \n$character"""
 
+command_timeout = 1000
+
 [shell]
 bash_indicator = "bash"
 zsh_indicator = "zsh"

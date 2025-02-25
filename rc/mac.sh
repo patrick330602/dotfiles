@@ -40,6 +40,8 @@ if [ -n "${BASH_VERSINFO}" ]; then
     eval "$(atuin init bash)"
 fi
 
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 

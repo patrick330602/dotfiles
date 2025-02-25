@@ -1,26 +1,31 @@
+local set = vim.keymap.set
+
 -- shortcut settings
-vim.keymap.set("", "<leader>F", require("oil").toggle_float, { desc = "Find Files within Working Directory" })
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move line(s) up" })
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move line(s) down" })
-vim.keymap.set({ "n", "t" }, "<C-t>", require("pdfs.visual.term").toggle, { desc = "Toggle Terminal" })
+set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move line(s) up" })
+set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move line(s) down" })
+set({ "n", "t" }, "<C-t>", require("pdfs.visual.term").toggle, { desc = "Toggle Terminal" })
+
+-- oil.nvim
+set("", "<leader>F", require("oil").toggle_float, { desc = "Find Files within Working Directory" })
 
 -- fzf-lua
-vim.keymap.set("", "<leader>S", require("fzf-lua").live_grep, { desc = "Search Texts within Working Directory" })
-vim.keymap.set("", "<leader>xw", require("fzf-lua").diagnostics_workspace, { desc = "Show workspace diagnostics" })
-vim.keymap.set("", "<leader>xd", require("fzf-lua").diagnostics_document, { desc = "Show document diagnostics" })
-vim.keymap.set("", "<leader>xq", require("fzf-lua").quickfix, { desc = "Show quickfix list" })
-vim.keymap.set("", "<leader>xl", require("fzf-lua").loclist, { desc = "Show location list" })
+local fl = require("fzf-lua")
+set("", "<leader>S", fl.live_grep, { desc = "Search Texts within Working Directory" })
+set("", "<leader>xw", fl.diagnostics_workspace, { desc = "Show workspace diagnostics" })
+set("", "<leader>xd", fl.diagnostics_document, { desc = "Show document diagnostics" })
+set("", "<leader>xq", fl.quickfix, { desc = "Show quickfix list" })
+set("", "<leader>xl", fl.loclist, { desc = "Show location list" })
 
 -- vim-ufo
-vim.keymap.set("n", "zR", require("ufo").openAllFolds, { desc = "Open all folds" })
-vim.keymap.set("n", "zM", require("ufo").closeAllFolds, { desc = "Close all folds" })
-vim.keymap.set("n", "zr", require("ufo").openFoldsExceptKinds, { desc = "Open folds except specified kinds" })
-vim.keymap.set("n", "zm", require("ufo").closeFoldsWith, { desc = "Close folds with specified level" })
-vim.keymap.set("n", "K", function()
-	local winid = require("ufo").peekFoldedLinesUnderCursor()
+local ufo = require("ufo")
+set("n", "zR", ufo.openAllFolds, { desc = "Open all folds" })
+set("n", "zM", ufo.closeAllFolds, { desc = "Close all folds" })
+set("n", "zr", ufo.openFoldsExceptKinds, { desc = "Open folds except specified kinds" })
+set("n", "zm", ufo.closeFoldsWith, { desc = "Close folds with specified level" })
+set("n", "K", function()
+	local winid = ufo.peekFoldedLinesUnderCursor()
 	if not winid then
-		-- choose one of coc.nvim and nvim lsp
-		vim.fn.CocActionAsync("definitionHover") -- coc.nvim
+		vim.fn.CocActionAsync("definitionHover")
 		vim.lsp.buf.hover()
 	end
 end, { desc = "Peek fold or show hover" })
@@ -31,48 +36,134 @@ local kopts = { noremap = true, silent = true }
 local function nN(char)
 	local ok, winid = require("hlslens").nNPeekWithUFO(char)
 	if ok and winid then
-		vim.keymap.set("n", "<CR>", function()
+		set("n", "<CR>", function()
 			return "<Tab><CR>"
 		end, { buffer = true, remap = true, expr = true })
 	end
 end
 
-vim.keymap.set({ "n", "x" }, "n", function()
+set({ "n", "x" }, "n", function()
 	nN("n")
 end, { desc = "Next search result with lens" })
 
-vim.keymap.set({ "n", "x" }, "N", function()
+set({ "n", "x" }, "N", function()
 	nN("N")
 end, { desc = "Previous search result with lens" })
 
-vim.keymap.set(
+set(
 	"n",
 	"*",
 	[[*<Cmd>lua require('hlslens').start()<CR>]],
 	vim.tbl_extend("force", kopts, { desc = "Search word under cursor forward" })
 )
-vim.keymap.set(
+set(
 	"n",
 	"#",
 	[[#<Cmd>lua require('hlslens').start()<CR>]],
 	vim.tbl_extend("force", kopts, { desc = "Search word under cursor backward" })
 )
-vim.keymap.set(
+set(
 	"n",
 	"g*",
 	[[g*<Cmd>lua require('hlslens').start()<CR>]],
 	vim.tbl_extend("force", kopts, { desc = "Search word under cursor forward (partial)" })
 )
-vim.keymap.set(
+set(
 	"n",
 	"g#",
 	[[g#<Cmd>lua require('hlslens').start()<CR>]],
 	vim.tbl_extend("force", kopts, { desc = "Search word under cursor backward (partial)" })
 )
-vim.keymap.set("n", "<Leader>l", "<Cmd>noh<CR>", vim.tbl_extend("force", kopts, { desc = "Clear search highlights" }))
+set("n", "<Leader>l", "<Cmd>noh<CR>", vim.tbl_extend("force", kopts, { desc = "Clear search highlights" }))
 
 -- aerial.nvim
-vim.keymap.set("n", "<leader>L", "<cmd>AerialToggle!<CR>", { desc = "Open Symbols" })
+set("n", "<leader>L", "<cmd>AerialToggle!<CR>", { desc = "Open Symbols" })
+
+-- multicursor.nvim
+local mc = require("multicursor-nvim")
+-- Add or skip cursor above/below the main cursor.
+set({ "n", "v" }, "<up>", function()
+	mc.lineAddCursor(-1)
+end)
+set({ "n", "v" }, "<down>", function()
+	mc.lineAddCursor(1)
+end)
+set({ "n", "v" }, "<leader><up>", function()
+	mc.lineSkipCursor(-1)
+end)
+set({ "n", "v" }, "<leader><down>", function()
+	mc.lineSkipCursor(1)
+end)
+
+-- Add or skip adding a new cursor by matching word/selection
+set({ "n", "v" }, "<leader>n", function()
+	mc.matchAddCursor(1)
+end)
+set({ "n", "v" }, "<leader>s", function()
+	mc.matchSkipCursor(1)
+end)
+set({ "n", "v" }, "<leader>N", function()
+	mc.matchAddCursor(-1)
+end)
+set({ "n", "v" }, "<leader>S", function()
+	mc.matchSkipCursor(-1)
+end)
+-- Add all matches in the document
+set({ "n", "v" }, "<leader>A", mc.matchAllAddCursors)
+
+-- Rotate the main cursor.
+set({ "n", "v" }, "<left>", mc.nextCursor)
+set({ "n", "v" }, "<right>", mc.prevCursor)
+
+-- Delete the main cursor.
+set({ "n", "v" }, "<leader>x", mc.deleteCursor)
+
+-- Add and remove cursors with control + left click.
+set("n", "<c-leftmouse>", mc.handleMouse)
+
+-- Easy way to add and remove cursors using the main cursor.
+set({ "n", "v" }, "<c-q>", mc.toggleCursor)
+
+-- Clone every cursor and disable the originals.
+set({ "n", "v" }, "<leader><c-q>", mc.duplicateCursors)
+
+set("n", "<esc>", function()
+	if not mc.cursorsEnabled() then
+		mc.enableCursors()
+	elseif mc.hasCursors() then
+		mc.clearCursors()
+	else
+		-- Default <esc> handler.
+	end
+end)
+
+-- bring back cursors if you accidentally clear them
+set("n", "<leader>gv", mc.restoreCursors)
+
+-- Align cursor columns.
+set("n", "<leader>a", mc.alignCursors)
+
+-- Split visual selections by regex.
+set("v", "S", mc.splitCursors)
+
+-- Append/insert for each line of visual selections.
+set("v", "I", mc.insertVisual)
+set("v", "A", mc.appendVisual)
+
+-- match new cursors within visual selections by regex.
+set("v", "M", mc.matchCursors)
+
+-- Rotate visual selection contents.
+set("v", "<leader>t", function()
+	mc.transposeCursors(1)
+end)
+set("v", "<leader>T", function()
+	mc.transposeCursors(-1)
+end)
+
+-- Jumplist support
+set({ "v", "n" }, "<c-i>", mc.jumpForward)
+set({ "v", "n" }, "<c-o>", mc.jumpBackward)
 
 -- MacOS
 if vim.fn.has("macunix") == 1 then
