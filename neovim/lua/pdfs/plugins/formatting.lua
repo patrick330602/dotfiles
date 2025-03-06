@@ -32,7 +32,6 @@ return {
 				c = { "clang-format" },
 				go = { "goimports", "gofumpt" },
 				sh = { "beautysh" },
-				xml = { "xmlformatter" },
 			},
 			-- Set default options
 			default_format_opts = {

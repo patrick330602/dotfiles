@@ -79,6 +79,7 @@ mason_tool_installer.setup({
 		"ts_ls",
 		"eslint",
 		"jsonls",
+		"lemminx",
 		-- formatting
 		"beautysh",
 		"prettier",
@@ -88,7 +89,6 @@ mason_tool_installer.setup({
 		"clang-format",
 		"goimports",
 		"gofumpt",
-		"xmlformatter",
 	},
 	auto_update = true,
 })
