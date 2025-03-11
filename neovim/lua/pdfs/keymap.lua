@@ -6,15 +6,12 @@ set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move line(s) down" })
 set({ "n", "t" }, "<C-t>", require("pdfs.visual.term").toggle, { desc = "Toggle Terminal" })
 
 -- oil.nvim
-set("", "<leader>F", require("oil").toggle_float, { desc = "Find Files within Working Directory" })
+set("", "<leader>E", require("oil").toggle_float, { desc = "Find Files within Working Directory" })
 
 -- fzf-lua
-local fl = require("fzf-lua")
-set("", "<leader>S", fl.live_grep, { desc = "Search Texts within Working Directory" })
-set("", "<leader>xw", fl.diagnostics_workspace, { desc = "Show workspace diagnostics" })
-set("", "<leader>xd", fl.diagnostics_document, { desc = "Show document diagnostics" })
-set("", "<leader>xq", fl.quickfix, { desc = "Show quickfix list" })
-set("", "<leader>xl", fl.loclist, { desc = "Show location list" })
+local fl = require("trouble")
+set("", "<leader>xq", "<cmd>Trouble qflist toggle<cr>", { desc = "Show quickfix list" })
+set("", "<leader>xl", "<cmd>Trouble loclist toggle<cr>", { desc = "Show location list" })
 
 -- vim-ufo
 local ufo = require("ufo")
@@ -171,3 +168,28 @@ if vim.fn.has("macunix") == 1 then
 	vim.api.nvim_set_keymap("i", "<D-v>", "<C-r>+", { noremap = true, desc = "Paste in insert mode (MacOS)" })
 	vim.api.nvim_set_keymap("c", "<D-v>", "<C-r>+", { noremap = true, desc = "Paste in command mode (MacOS)" })
 end
+
+local function set_keymap(mode, lhs, rhs, desc, opts)
+	opts = opts or {}
+	opts.desc = desc
+	vim.keymap.set(mode, lhs, rhs, opts)
+end
+
+vim.api.nvim_create_autocmd("LspAttach", {
+	group = vim.api.nvim_create_augroup("UserLspConfig", {}),
+	callback = function(ev)
+		local opts = { buffer = ev.buf, silent = true }
+		set_keymap("n", "gR", "<cmd>Trouble lsp_references toggle<CR>", "Show LSP references", opts)
+		set_keymap("n", "gD", vim.lsp.buf.declaration, "Go to declaration", opts)
+		set_keymap("n", "gd", "<cmd>Trouble lsp_definitions toggle<CR>", "Show LSP definitions", opts)
+		set_keymap("n", "gi", "<cmd>Trouble lsp_implementations toggle<CR>", "Show LSP implementations", opts)
+		set_keymap("n", "gt", "<cmd>Trouble lsp_type_definitions toggle<CR>", "Show LSP type definitions", opts)
+		set_keymap("n", "<leader>rn", vim.lsp.buf.rename, "Smart rename", opts)
+		set_keymap("n", "<leader>D", "<cmd>Trouble diagnostics toggle<CR>", "Show buffer diagnostics", opts)
+		set_keymap("n", "<leader>d", vim.diagnostic.open_float, "Show line diagnostics", opts)
+		set_keymap("n", "[d", vim.diagnostic.goto_prev, "Go to previous diagnostic", opts)
+		set_keymap("n", "]d", vim.diagnostic.goto_next, "Go to next diagnostic", opts)
+		set_keymap("n", "K", vim.lsp.buf.hover, "Show documentation for what is under cursor", opts)
+		set_keymap("n", "<leader>rs", ":LspRestart<CR>", "Restart LSP", opts)
+	end,
+})

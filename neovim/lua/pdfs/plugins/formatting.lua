@@ -56,22 +56,6 @@ return {
 		dependencies = { "nvim-treesitter/nvim-treesitter-textobjects" },
 	},
 	{
-		"lukas-reineke/indent-blankline.nvim",
-		main = "ibl",
-		opts = {
-			exclude = {
-				filetypes = {
-					"lspinfo",
-					"checkhealth",
-					"help",
-					"man",
-					"gitcommit",
-					"''",
-				},
-			},
-		},
-	},
-	{
 		"kylechui/nvim-surround",
 		version = "*",
 		event = "VeryLazy",

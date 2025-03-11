@@ -75,74 +75,11 @@ return {
 		end,
 	},
 	{
-		"ibhagwan/fzf-lua",
+		"folke/trouble.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		opts = {
-			winopts = {
-				backdrop = 100,
-			},
-			files = {
-				prompt = "󰱼 ",
-			},
-			git = {
-				files = {
-					prompt = " ",
-				},
-				status = {
-					prompt = " ",
-				},
-				commits = {
-					prompt = " ",
-				},
-				bcommits = {
-					prompt = " ",
-				},
-				blame = {
-					prompt = " ",
-				},
-			},
-			grep = {
-				prompt = "󰱼 ",
-				input_prompt = "󰱼 ",
-				no_header = true,
-				no_header_i = true,
-			},
-			oldfiles = {
-				prompt = " ",
-				include_current_session = true,
-				previewer = false,
-				fzf_opts = {
-					-- Show full file paths
-					["--with-nth"] = "-1",
-					-- No line wrapping
-					["--no-wrap"] = "",
-				},
-				hls = {
-					normal = "FzfLuaTransparentNormal",
-					border = "FzfLuaTransparentBorder",
-				},
-				winopts = {
-					height = 0.4,
-					width = 0.6,
-					border = "rounded",
-				},
-			},
-			diagnostics = {
-				prompt = "",
-				hls = {
-					normal = "FzfLuaTransparentNormal",
-					border = "FzfLuaTransparentBorder",
-				},
-				winopts = {
-					split = "belowright new",
-					backdrop = 0,
-					height = 0.3,
-					width = 1,
-					preview = {
-						hidden = "hidden",
-					},
-				},
-			},
+			-- your configuration comes here
+			-- or leave it empty to use the default settings
 		},
 	},
 	{

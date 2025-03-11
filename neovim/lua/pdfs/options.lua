@@ -26,6 +26,18 @@ vim.opt.shiftwidth = 4
 vim.expandtab = true
 vim.opt.smartindent = true
 
+-- character visual
+vim.opt.list = true
+vim.opt.listchars = {
+	space = "·",
+	tab = "→ ",
+	trail = "·",
+	extends = "▶",
+	precedes = "◀",
+	nbsp = "␣",
+	eol = "↴",
+}
+
 -- temp file settings
 vim.opt.swapfile = false
 vim.opt.backup = false

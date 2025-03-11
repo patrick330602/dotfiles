@@ -1,9 +1,3 @@
-local function set_keymap(mode, lhs, rhs, desc, opts)
-	opts = opts or {}
-	opts.desc = desc
-	vim.keymap.set(mode, lhs, rhs, opts)
-end
-
 local cmp = require("cmp")
 local mason = require("mason")
 local lspconfig = require("lspconfig")
@@ -22,26 +16,6 @@ require("fidget").setup({
 
 -- I like hint inlay
 vim.lsp.inlay_hint.enable()
-
-vim.api.nvim_create_autocmd("LspAttach", {
-	group = vim.api.nvim_create_augroup("UserLspConfig", {}),
-	callback = function(ev)
-		local opts = { buffer = ev.buf, silent = true }
-		set_keymap("n", "gR", "<cmd>FzfLua lsp_references<CR>", "Show LSP references", opts)
-		set_keymap("n", "gD", vim.lsp.buf.declaration, "Go to declaration", opts)
-		set_keymap("n", "gd", "<cmd>FzfLua lsp_definitions<CR>", "Show LSP definitions", opts)
-		set_keymap("n", "gi", "<cmd>FzfLua lsp_implementations<CR>", "Show LSP implementations", opts)
-		set_keymap("n", "gt", "<cmd>FzfLua lsp_typedefs<CR>", "Show LSP type definitions", opts)
-		set_keymap({ "n", "v" }, "<leader>ca", "<cmd>FzfLua lsp_code_actions<CR>", "See available code actions", opts)
-		set_keymap("n", "<leader>rn", vim.lsp.buf.rename, "Smart rename", opts)
-		set_keymap("n", "<leader>D", "<cmd>FzfLua diagnostics_document<CR>", "Show buffer diagnostics", opts)
-		set_keymap("n", "<leader>d", vim.diagnostic.open_float, "Show line diagnostics", opts)
-		set_keymap("n", "[d", vim.diagnostic.goto_prev, "Go to previous diagnostic", opts)
-		set_keymap("n", "]d", vim.diagnostic.goto_next, "Go to next diagnostic", opts)
-		set_keymap("n", "K", vim.lsp.buf.hover, "Show documentation for what is under cursor", opts)
-		set_keymap("n", "<leader>rs", ":LspRestart<CR>", "Restart LSP", opts)
-	end,
-})
 
 -- used to enable autocompletion (assign to every lsp server config)
 local capabilities =
@@ -229,11 +203,3 @@ cmp.setup({
 })
 
 cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
-
-cmp.event:on("menu_opened", function()
-	vim.b.copilot_suggestion_hidden = true
-end)
-
-cmp.event:on("menu_closed", function()
-	vim.b.copilot_suggestion_hidden = false
-end)
