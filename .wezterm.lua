@@ -21,14 +21,12 @@ config.font = wezterm.font_with_fallback({
 config.font_size = 16.0
 
 config.use_fancy_tab_bar = false
-config.window_decorations = "RESIZE|INTEGRATED_BUTTONS"
+config.window_decorations = "TITLE | RESIZE | MACOS_USE_BACKGROUND_COLOR_AS_TITLEBAR_COLOR"
 config.window_frame = {
-	border_bottom_height = "0.25cell",
-	border_top_height = "0.4cell",
-	border_top_color = "#333333",
 	font = wezterm.font({ family = "0xProto", weight = "Bold" }),
 	font_size = 14,
 }
+config.tab_bar_at_bottom = true
 
 local appearance = get_appearance()
 if appearance:find("Dark") then

@@ -34,7 +34,7 @@ M.extensions = {
 		hl_group = "StDiffFile",
 		icon = "",
 	},
-	TelescopePrompt = {
+	["grug-far"] = {
 		hl_group = "StFzfLua",
 		icon = "",
 	},
