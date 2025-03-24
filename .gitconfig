@@ -1,0 +1,65 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[alias]
+	yolo = !git add -A && git commit -m \"$(curl -s whatthecommit.com/index.txt)\"
+	cb = checkout -b
+	bd = branch -d
+	c = checkout
+	m = merge
+	s = status -s
+	p = push
+	ps = push --set-upstream origin
+	l = pull
+	io = pull origin master
+	f = fetch
+	repo = remote -v
+	rr = remote rm origin
+	ra = remote add origin
+	ca = !git add -A && git commit
+	cas = !git add -A && git commit -S
+	resign = "!re() { git rebase --exec 'git commit --amend --no-edit -n -S' -i $1; }; re"
+	append = commit --amend --no-edit
+	do-nothing = !git commit --amend --no-edit && git push -f
+	oh-shit = !git add -A && git commit --amend --no-edit && git push -f
+	retag = "!rt() { git tag --delete $1; git oh-shit; git tag $1; git push -f --tags; }; rt"
+[core]
+	editor = nvim
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[push]
+	default = simple
+	autoSetupRemote = true
+	followTags = true
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+[help]
+	autocorrect = prompt
+[commit]
+	verbose = true
+[rerere]
+	enabled = true
+	autoupdate = true
+[rebase]
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
+[include]
+	path = ~/.gitconfig-private

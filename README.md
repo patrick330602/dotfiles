@@ -3,15 +3,16 @@
 This repository contains my dotfiles and can be installed automatically with `curl -sL https://pkwl.ink/dotfiles | bash`. it will:
 
 - install the dotfiles to `~/.dotfiles`;
+- install the Git Config;
 - install starship and the configuration;
-- install nvim, its depedencies and the configuration;
+- install neovim, its depedencies and the configuration;
 - install wezterm, and the configuration;
 - development dependencies.
 
 ## Commands
 
-- to update, run `update-dotfiles`;
-- to uninstall, run `uninstall-dotfiles`.
+- `update-dotfiles`: update dotfiles;
+- `update-deps`: update the system packages and dotfile dependencies only.
 
 ## `master` Branch
 

@@ -3,38 +3,31 @@
 echo "updating dependencies..."
 sh "$HOME/.dotfiles/scripts/deps.sh"
 
-# install starship config
-# if starship config already exists and not symlinked, back it up
-if test -f "$HOME/.config/starship.toml"; then
-    if ! test -L "$HOME/.config/starship.toml"; then
-        echo "::Not symlinked Starship Config; Backing up existing starship configuration..."
-        mv "$HOME/.config/starship.toml" "$HOME/.config/starship.toml.bak"
-        echo "::Installing starship configuration..."
-        mkdir -p "$HOME/.config"
-        ln -s "$HOME/.dotfiles/starship.toml" "$HOME/.config/starship.toml"
+echo "::Ensure ~/.config exists..."
+mkdir -p "$HOME/.config"
+
+if [ -f "$HOME/.config/starship.toml" ] && [ ! -L "$HOME/.config/starship.toml" ]; then
+    echo "::Found existing starship configuration, backup and symlink the config..."
+    mv "$HOME/.config/starship.toml" "$HOME/.config/starship.toml.backup.$(date +%Y%m%d%H%M%S)"
+    ln -sf "$HOME/.dotfiles/starship.toml" "$HOME/.config/starship.toml"
+fi
+
+
+if test -f "$HOME/.config/.gitconfig" && ! test -L "$HOME/.config/.gitconfig"; then
+    echo ":: .gitconfig not installed, Setting up .gitconfig..."
+    if test -f "$HOME/.gitconfig" && ! test -f "$HOME/.gitconfig-private"; then
+        mv "$HOME/.gitconfig" "$HOME/.gitconfig-private"
+    elif ! test -f "$HOME/.gitconfig-private"; then
+        echo "::: .gitconfig-private not found, Creating an empty one..."
+        touch "$HOME/.gitconfig-private"
     fi
-else
-    echo "::Starship Config not found; Installing starship configuration..."
-    mkdir -p "$HOME/.config"
-    ln -s "$HOME/.dotfiles/starship.toml" "$HOME/.config/starship.toml"
+
+    ln -s "$HOME/.dotfiles/.gitconfig" "$HOME/.gitconfig"
 fi
 
-if test -f "$HOME/.wezterm.lua"; then
-    echo "::Backing up Wezterm configuration..."
-    mv "$HOME/.wezterm.lua" "$HOME/.wezterm.lua.bak"
-fi
-echo "::Installing Wezterm Configuration..."
-ln -s "$HOME/.dotfiles/.wezterm.lua" "$HOME/.wezterm.lua"
-
-if test -d "$HOME/.config/nvim" && test ! -L "$HOME/.config/nvim"; then
-    echo "::Backing up existing nvim configuration..."
-    mv "$HOME/.config/nvim" "$HOME/.config/nvim.bak"
-fi
-
-echo "::Installing nvim configuration..."
-ln -sfn "$HOME/.dotfiles/neovim" "$HOME/.config/nvim" && \
-    nvim --headless "+Lazy! sync" +qa && \
-    nvim --headless "+TSUpdateSync" +qa && \
-    nvim --headless "+MasonToolsUpdateSync" +qa
+echo "::Update neovim configuration..."
+nvim --headless "+Lazy! sync" +qa
+nvim --headless "+TSUpdateSync" +qa
+nvim --headless "+MasonToolsUpdateSync" +qa
 
 echo "::Done! Please restart your shell/terminal if needed."

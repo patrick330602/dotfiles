@@ -34,6 +34,19 @@ git clone "git@code.wedotstud.io:patrick/dotfiles.git" "$HOME/.dotfiles" || {
     git clone "https://code.wedotstud.io/patrick/dotfiles.git" "$HOME/.dotfiles"
 }
 
+echo ":: Setting up .gitconfig..."
+if test -f "$HOME/.config/.gitconfig" && ! test -L "$HOME/.config/.gitconfig"; then
+    if test -f "$HOME/.gitconfig" && ! test -f "$HOME/.gitconfig-private"; then
+        echo "::: Found existing .gitconfig, convert to .gitconfig-private..."
+        mv "$HOME/.gitconfig" "$HOME/.gitconfig-private"
+    elif ! test -f "$HOME/.gitconfig-private"; then
+        echo "::: .gitconfig-private not found, Creating an empty one..."
+        touch "$HOME/.gitconfig-private"
+    fi
+fi
+
+ln -s "$HOME/.dotfiles/.gitconfig" "$HOME/.gitconfig"
+
 insert_source() {
     rc_file=$1
     if ! grep -q "$SOURCE_DOTFILES_RC" "$rc_file"; then
@@ -44,17 +57,18 @@ insert_source() {
 insert_source "$BASHRC_PATH"
 insert_source "$ZSHRC_PATH"
 
-# install starship config
-# if starship config already exists and not symlinked, back it up
-if test -f "$HOME/.config/starship.toml" && ! test -L "$HOME/.config/starship.toml"; then
-    echo "Backing up existing starship configuration..."
-    mv "$HOME/.config/starship.toml" "$HOME/.config/starship.toml.bak"
-fi
-echo "Installing starship configuration..."
+echo "::Ensure ~/.config exists..."
 mkdir -p "$HOME/.config"
-ln -s "$HOME/.dotfiles/starship.toml" "$HOME/.config/starship.toml"
 
-if test -f "$HOME/.wezterm.lua"; then
+if [ -f "$HOME/.config/starship.toml" ] && [ ! -L "$HOME/.config/starship.toml" ]; then
+    echo "::Backing up existing starship configuration..."
+    mv "$HOME/.config/starship.toml" "$HOME/.config/starship.toml.bak.$(date +%Y%m%d%H%M%S)"
+fi
+
+echo "Installing starship configuration..."
+ln -sf "$HOME/.dotfiles/starship.toml" "$HOME/.config/starship.toml"
+
+if test -f "$HOME/.wezterm.lua" && ! test -L "$HOME/.config/.wezterm.lua"; then
     echo "::Backing up Wezterm configuration..."
     mv "$HOME/.wezterm.lua" "$HOME/.wezterm.lua.bak"
 fi
