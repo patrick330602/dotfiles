@@ -22,7 +22,7 @@ if test -f "$HOME/.gitconfig" && ! test -L "$HOME/.gitconfig"; then
         touch "$HOME/.gitconfig-private"
     fi
 
-    ln -s "$HOME/.dotfiles/.gitconfig" "$HOME/.gitconfig"
+    ln -sf "$HOME/.dotfiles/.gitconfig" "$HOME/.gitconfig"
 fi
 
 echo "::Update neovim configuration..."
