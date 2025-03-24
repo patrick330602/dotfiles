@@ -35,7 +35,7 @@ git clone "git@code.wedotstud.io:patrick/dotfiles.git" "$HOME/.dotfiles" || {
 }
 
 echo ":: Setting up .gitconfig..."
-if test -f "$HOME/.config/.gitconfig" && ! test -L "$HOME/.config/.gitconfig"; then
+if test -f "$HOME/.gitconfig" && ! test -L "$HOME/.gitconfig"; then
     if test -f "$HOME/.gitconfig" && ! test -f "$HOME/.gitconfig-private"; then
         echo "::: Found existing .gitconfig, convert to .gitconfig-private..."
         mv "$HOME/.gitconfig" "$HOME/.gitconfig-private"

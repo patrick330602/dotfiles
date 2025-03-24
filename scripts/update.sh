@@ -13,7 +13,7 @@ if [ -f "$HOME/.config/starship.toml" ] && [ ! -L "$HOME/.config/starship.toml" 
 fi
 
 
-if test -f "$HOME/.config/.gitconfig" && ! test -L "$HOME/.config/.gitconfig"; then
+if test -f "$HOME/.gitconfig" && ! test -L "$HOME/.gitconfig"; then
     echo ":: .gitconfig not installed, Setting up .gitconfig..."
     if test -f "$HOME/.gitconfig" && ! test -f "$HOME/.gitconfig-private"; then
         mv "$HOME/.gitconfig" "$HOME/.gitconfig-private"
