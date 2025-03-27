@@ -1,6 +1,6 @@
 -- tails of the configuration
 vim.notify = require("fidget").notify
-vim.diagnostic.config({ virtual_text = false })
+vim.diagnostic.config({ virtual_text = false, virtual_lines = true })
 
 vim.api.nvim_create_user_command("Format", function(args)
 	local range = nil

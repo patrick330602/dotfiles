@@ -183,12 +183,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
 	callback = function(ev)
 		local opts = { buffer = ev.buf, silent = true }
 
-		set(
-			"n",
-			"gR",
-			"<cmd>Trouble lsp_references toggle<CR>",
-			vim.tbl_extend("force", opts, { desc = "Show LSP references" })
-		)
 		set("n", "gD", vim.lsp.buf.declaration, vim.tbl_extend("force", opts, { desc = "Go to declaration" }))
 		set(
 			"n",
@@ -198,17 +192,10 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		)
 		set(
 			"n",
-			"gi",
-			"<cmd>Trouble lsp_implementations toggle<CR>",
-			vim.tbl_extend("force", opts, { desc = "Show LSP implementations" })
-		)
-		set(
-			"n",
 			"gt",
 			"<cmd>Trouble lsp_type_definitions toggle<CR>",
 			vim.tbl_extend("force", opts, { desc = "Show LSP type definitions" })
 		)
-		set("n", "<leader>rn", vim.lsp.buf.rename, vim.tbl_extend("force", opts, { desc = "Smart rename" }))
 		set(
 			"n",
 			"<leader>D",
@@ -221,8 +208,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
 			vim.diagnostic.open_float,
 			vim.tbl_extend("force", opts, { desc = "Show line diagnostics" })
 		)
-		set("n", "[d", vim.diagnostic.goto_prev, vim.tbl_extend("force", opts, { desc = "Go to previous diagnostic" }))
-		set("n", "]d", vim.diagnostic.goto_next, vim.tbl_extend("force", opts, { desc = "Go to next diagnostic" }))
 		set(
 			"n",
 			"K",

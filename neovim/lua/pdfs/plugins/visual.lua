@@ -14,21 +14,6 @@ return {
 		},
 	},
 	{
-		"stevearc/aerial.nvim",
-		opts = {
-			on_attach = function(bufnr)
-				-- Jump forwards/backwards with '{' and '}'
-				vim.keymap.set("n", "{", "<cmd>AerialPrev<CR>", { buffer = bufnr, desc = "Jump to Previous Symbol" })
-				vim.keymap.set("n", "}", "<cmd>AerialNext<CR>", { buffer = bufnr, desc = "Jump to Next Symbol" })
-			end,
-		},
-		-- Optional dependencies
-		dependencies = {
-			"nvim-treesitter/nvim-treesitter",
-			"nvim-tree/nvim-web-devicons",
-		},
-	},
-	{
 		"stevearc/stickybuf.nvim",
 		opts = {},
 	},
@@ -80,14 +65,6 @@ return {
 		opts = {
 			-- your configuration comes here
 			-- or leave it empty to use the default settings
-		},
-	},
-	{
-		"rachartier/tiny-inline-diagnostic.nvim",
-		event = "VeryLazy",
-		priority = 1000,
-		opts = {
-			preset = "nonerdfont",
 		},
 	},
 	{ "brenoprata10/nvim-highlight-colors", opts = { render = "virtual" } },

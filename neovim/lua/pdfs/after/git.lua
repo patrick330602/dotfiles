@@ -83,9 +83,9 @@ require("gitsigns").setup({
 			gitsigns.reset_hunk({ vim.fn.line("."), vim.fn.line("v") })
 		end)
 		map("n", "<leader>hS", gitsigns.stage_buffer)
-		map("n", "<leader>hu", gitsigns.undo_stage_hunk)
 		map("n", "<leader>hR", gitsigns.reset_buffer)
-		map("n", "<leader>hp", gitsigns.preview_hunk)
+		map("n", "<leader>hp", gitsigns.preview_hunk_inline)
+		map("n", "<leader>hP", gitsigns.preview_hunk)
 		map("n", "<leader>hb", function()
 			gitsigns.blame_line({ full = true })
 		end)
@@ -94,7 +94,6 @@ require("gitsigns").setup({
 		map("n", "<leader>hD", function()
 			gitsigns.diffthis("~")
 		end)
-		map("n", "<leader>td", gitsigns.toggle_deleted)
 
 		-- Text object
 		map({ "o", "x" }, "ih", ":<C-U>Gitsigns select_hunk<CR>")
