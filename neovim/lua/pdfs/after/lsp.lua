@@ -89,6 +89,22 @@ mason_lspconfig.setup({
 				capabilities = capabilities,
 			})
 		end,
+		["lemminx"] = function()
+			lspconfig.lemminx.setup({
+				capabilities = capabilities,
+				settings = {
+					xml = {
+						format = {
+							splitAttributes = false,
+							joinContentLines = false,
+							joinCommentLines = false,
+							preserveEmptyContent = true,
+							preservedNewlines = 0,
+						},
+					},
+				},
+			})
+		end,
 		["rust_analyzer"] = function() end,
 		["jsonls"] = function()
 			lspconfig.jsonls.setup({
