@@ -52,9 +52,9 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 -- visual
-vim.opt.statusline = "%{%v:lua.require('pdfs.visual.statusline').generate_statusline()%}"
-vim.o.tabline = '%!v:lua.require("pdfs.visual.tabline").tabline()'
-vim.o.statuscolumn = "%!v:lua.require('pdfs.visual.statuscolumn').get()"
+vim.opt.statusline = "%{%v:lua.require('visual.statusline').generate_statusline()%}"
+vim.o.tabline = '%!v:lua.require("visual.tabline").tabline()'
+vim.o.statuscolumn = "%!v:lua.require('visual.statuscolumn').get()"
 
 -- folding
 vim.o.foldcolumn = "1"

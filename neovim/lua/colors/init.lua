@@ -1,5 +1,5 @@
-local theme = require("pdfs.colors.themes")
-local util = require("pdfs.colors.util")
+local theme = require("colors.themes")
+local util = require("colors.util")
 
 local M = {}
 

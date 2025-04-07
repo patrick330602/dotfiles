@@ -1,5 +1,5 @@
-local constants = require("pdfs.visual.constants")
-local utils = require("pdfs.visual.utils")
+local constants = require("visual.constants")
+local utils = require("visual.utils")
 
 local M = {}
 

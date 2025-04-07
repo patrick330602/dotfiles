@@ -1,4 +1,4 @@
-local colors = require("pdfs.colors.colors")
+local colors = require("colors.colors")
 
 local M = {}
 function M.setup()
@@ -36,16 +36,16 @@ function M.setup()
 	vim.g.terminal_color_14 = t.cyan
 
 	-- Load base theme
-	theme.highlights = require("pdfs.colors.highlights.base").get(t)
+	theme.highlights = require("colors.highlights.base").get(t)
 
-	-- Load extensions dynamically from the pdfs.colors.highlights folder
-	local highlights_path = vim.fn.stdpath("config") .. "/lua/pdfs/colors/highlights"
+	-- Load extensions dynamically from the colors.highlights folder
+	local highlights_path = vim.fn.stdpath("config") .. "/lua/colors/highlights"
 	local files = vim.fn.readdir(highlights_path)
 	for _, file in ipairs(files) do
 		if file ~= "." and file ~= ".." and file ~= "base.lua" then
 			local extension = file:match("(.+)%..+$")
 			if extension then
-				local ext = require("pdfs.colors.highlights." .. extension)
+				local ext = require("colors.highlights." .. extension)
 				theme.highlights = vim.tbl_deep_extend("force", theme.highlights, ext.get(t))
 			end
 		end

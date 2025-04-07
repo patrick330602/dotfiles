@@ -5,11 +5,11 @@ return {
 			update_interval = 1000,
 			set_dark_mode = function()
 				vim.api.nvim_set_option_value("background", "dark", {})
-				require("pdfs.colors").load()
+				require("colors").load()
 			end,
 			set_light_mode = function()
 				vim.api.nvim_set_option_value("background", "light", {})
-				require("pdfs.colors").load()
+				require("colors").load()
 			end,
 		},
 	},
@@ -86,11 +86,6 @@ return {
 	},
 	{
 		"wurli/visimatch.nvim",
-		config = true,
-	},
-	{
-		"jake-stewart/multicursor.nvim",
-		branch = "1.0",
 		config = true,
 	},
 }

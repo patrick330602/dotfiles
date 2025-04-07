@@ -13,7 +13,7 @@ set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move line(s) up" })
 set("n", "<Leader>l", "<Cmd>noh<CR>", { noremap = true, silent = true, desc = "Clear search highlights" })
 
 -- Terminal toggle
-set({ "n", "t" }, "<C-t>", require("pdfs.visual.term").toggle, { desc = "Toggle Terminal" })
+set({ "n", "t" }, "<C-t>", require("visual.term").toggle, { desc = "Toggle Terminal" })
 
 ------------------------------------------
 -- FILE NAVIGATION
@@ -101,78 +101,6 @@ set("n", "K", function()
 		vim.lsp.buf.hover()
 	end
 end, { desc = "Peek fold or show hover" })
-
-------------------------------------------
--- MULTI-CURSOR OPERATIONS
-------------------------------------------
-
-local mc = require("multicursor-nvim")
-
--- Add or skip cursor above/below the main cursor
-set({ "n", "v" }, "<up>", function()
-	mc.lineAddCursor(-1)
-end, { desc = "Add cursor above" })
-set({ "n", "v" }, "<down>", function()
-	mc.lineAddCursor(1)
-end, { desc = "Add cursor below" })
-set({ "n", "v" }, "<leader><up>", function()
-	mc.lineSkipCursor(-1)
-end, { desc = "Skip cursor above" })
-set({ "n", "v" }, "<leader><down>", function()
-	mc.lineSkipCursor(1)
-end, { desc = "Skip cursor below" })
-
--- Add or skip adding a new cursor by matching word/selection
-set({ "n", "v" }, "<leader>n", function()
-	mc.matchAddCursor(1)
-end, { desc = "Add cursor at next match" })
-set({ "n", "v" }, "<leader>s", function()
-	mc.matchSkipCursor(1)
-end, { desc = "Skip cursor at next match" })
-set({ "n", "v" }, "<leader>N", function()
-	mc.matchAddCursor(-1)
-end, { desc = "Add cursor at previous match" })
-set({ "n", "v" }, "<leader>S", function()
-	mc.matchSkipCursor(-1)
-end, { desc = "Skip cursor at previous match" })
-set({ "n", "v" }, "<leader>A", mc.matchAllAddCursors, { desc = "Add cursors at all matches" })
-
--- Cursor navigation and management
-set({ "n", "v" }, "<left>", mc.nextCursor, { desc = "Go to next cursor" })
-set({ "n", "v" }, "<right>", mc.prevCursor, { desc = "Go to previous cursor" })
-set({ "n", "v" }, "<leader>x", mc.deleteCursor, { desc = "Delete current cursor" })
-set("n", "<c-leftmouse>", mc.handleMouse, { desc = "Add/remove cursor with mouse" })
-set({ "n", "v" }, "<c-q>", mc.toggleCursor, { desc = "Toggle cursor at position" })
-set({ "n", "v" }, "<leader><c-q>", mc.duplicateCursors, { desc = "Duplicate all cursors" })
-set("n", "<leader>gv", mc.restoreCursors, { desc = "Restore cleared cursors" })
-set("n", "<leader>a", mc.alignCursors, { desc = "Align all cursors" })
-
--- Multi-cursor escape handling
-set("n", "<esc>", function()
-	if not mc.cursorsEnabled() then
-		mc.enableCursors()
-	elseif mc.hasCursors() then
-		mc.clearCursors()
-	else
-		-- Default <esc> handler
-	end
-end, { desc = "Enable/clear cursors or default escape" })
-
--- Visual selection multi-cursor operations
-set("v", "S", mc.splitCursors, { desc = "Split selection into multiple cursors" })
-set("v", "I", mc.insertVisual, { desc = "Insert at start of each selected line" })
-set("v", "A", mc.appendVisual, { desc = "Append at end of each selected line" })
-set("v", "M", mc.matchCursors, { desc = "Match cursors in visual selection" })
-set("v", "<leader>t", function()
-	mc.transposeCursors(1)
-end, { desc = "Transpose selections forward" })
-set("v", "<leader>T", function()
-	mc.transposeCursors(-1)
-end, { desc = "Transpose selections backward" })
-
--- Jumplist support
-set({ "v", "n" }, "<c-i>", mc.jumpForward, { desc = "Jump forward in cursor history" })
-set({ "v", "n" }, "<c-o>", mc.jumpBackward, { desc = "Jump backward in cursor history" })
 
 ------------------------------------------
 -- LSP CONFIGURATION

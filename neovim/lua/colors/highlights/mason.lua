@@ -1,5 +1,5 @@
 local M = {}
-local util = require("pdfs.colors.util")
+local util = require("colors.util")
 
 --- Get extension configuration
 --- @param t DaydreamPalette

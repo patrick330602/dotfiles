@@ -5,7 +5,7 @@ SED=$(which sed)
 case "$(uname -s)" in
     Darwin*)
         SED=$(which gsed)
-    ;;
+        ;;
 esac
 
 # Remove cloned repository
@@ -56,11 +56,7 @@ if test -f "$HOME/.config/nvim/lazy-lock.json"; then
 fi
 
 # Remove nvim configuration
-if test -d "$HOME/.config/nvim/lua/pdfs"; then
+if test -d "$HOME/.config/nvim/"; then
     echo "Removing nvim configuration..."
-    rm -rf "$HOME/.config/nvim/lua/pdfs"
-fi
-if test -f "$HOME/.config/nvim/init.lua"; then
-    echo "Removing nvim configuration..."
-    rm "$HOME/.config/nvim/init.lua"
+    rm -rf "$HOME/.config/nvim/"
 fi
