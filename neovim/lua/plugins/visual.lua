@@ -59,14 +59,6 @@ return {
 			})
 		end,
 	},
-	{
-		"folke/trouble.nvim",
-		dependencies = { "nvim-tree/nvim-web-devicons" },
-		opts = {
-			-- your configuration comes here
-			-- or leave it empty to use the default settings
-		},
-	},
 	{ "brenoprata10/nvim-highlight-colors", opts = { render = "virtual" } },
 	{
 		"folke/which-key.nvim",

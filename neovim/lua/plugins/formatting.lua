@@ -53,10 +53,9 @@ return {
 		build = ":TSUpdate",
 		dependencies = { "nvim-treesitter/nvim-treesitter-textobjects" },
 	},
+	{ 'echasnovski/mini.surround', version = '*' },
 	{
-		"kylechui/nvim-surround",
-		version = "*",
-		event = "VeryLazy",
+		"MagicDuck/grug-far.nvim",
 		config = true,
 	},
 }

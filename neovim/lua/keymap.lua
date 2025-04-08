@@ -22,9 +22,6 @@ set({ "n", "t" }, "<C-t>", require("visual.term").toggle, { desc = "Toggle Termi
 -- Oil file explorer
 set("", "<leader>e", require("oil").toggle_float, { desc = "Toggle file explorer in float window" })
 
--- Aerial symbol navigator
-set("n", "<leader>L", "<cmd>AerialToggle!<CR>", { desc = "Toggle symbol outline" })
-
 ------------------------------------------
 -- SEARCH AND DIAGNOSTICS
 ------------------------------------------
@@ -145,14 +142,3 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		set("n", "<leader>rs", ":LspRestart<CR>", vim.tbl_extend("force", opts, { desc = "Restart LSP" }))
 	end,
 })
-
-------------------------------------------
--- PLATFORM-SPECIFIC KEYMAPS
-------------------------------------------
-
--- MacOS clipboard integration
-if vim.fn.has("macunix") == 1 then
-	set("n", "<D-v>", "a<C-r>+<Esc>", { noremap = true, desc = "Paste in normal mode (MacOS)" })
-	set("i", "<D-v>", "<C-r>+", { noremap = true, desc = "Paste in insert mode (MacOS)" })
-	set("c", "<D-v>", "<C-r>+", { noremap = true, desc = "Paste in command mode (MacOS)" })
-end
