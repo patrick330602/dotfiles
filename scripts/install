@@ -82,10 +82,9 @@ if test -d "$HOME/.config/nvim" && test ! -L "$HOME/.config/nvim"; then
 fi
 
 echo "::Installing nvim configuration..."
-ln -sfn "$HOME/.dotfiles/neovim" "$HOME/.config/nvim" && \
-    nvim --headless "+Lazy! sync" +qa && \
-    nvim --headless "+TSUpdateSync" +qa && \
-    nvim --headless "+MasonToolsUpdateSync" +qa
+ln -sfn "$HOME/.dotfiles/neovim" "$HOME/.config/nvim"
+nvim --headless "+Lazy! sync" +qa
+nvim --headless "+TSUpdateSync" +qa
 
 sleep 10
 echo "Done! Please restart your shell."

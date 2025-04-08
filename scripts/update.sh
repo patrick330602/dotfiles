@@ -28,6 +28,5 @@ fi
 echo "::Update neovim configuration..."
 nvim --headless "+Lazy! sync" +qa
 nvim --headless "+TSUpdateSync" +qa
-nvim --headless "+MasonToolsUpdateSync" +qa
 
 echo "::Done! Please restart your shell/terminal if needed."
