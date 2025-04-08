@@ -1,7 +1,7 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
-function get_appearance()
+local function get_appearance()
 	if wezterm.gui then
 		return wezterm.gui.get_appearance()
 	end
@@ -14,8 +14,8 @@ config.font = wezterm.font_with_fallback({
 		harfbuzz_features = { "ss01" },
 	},
 	"Flog Symbols",
-	{ family = "Noto Sans Mono CJK HK", scale = 1.2 },
-	{ family = "Noto Sans Mono CJK TC", scale = 1.2 },
+	{ family = "Noto Sans Mono CJK HK",  scale = 1.2 },
+	{ family = "Noto Sans Mono CJK TC",  scale = 1.2 },
 	{ family = "Symbols Nerd Font Mono", scale = 0.75 },
 })
 config.font_size = 16.0
@@ -42,7 +42,7 @@ if appearance:find("Dark") then
 		selection_bg = "#202020", -- from default.bgHighlight
 
 		scrollbar_thumb = "#171717", -- from default.bgAlt
-		split = "#171717", -- from default.bgAlt
+		split = "#171717",     -- from default.bgAlt
 
 		ansi = {
 			"#151515", -- black (default.black)
@@ -79,7 +79,7 @@ else
 		selection_bg = "#acacac", -- from light.bgHighlight
 
 		scrollbar_thumb = "#eaeaea", -- from light.bgAlt
-		split = "#eaeaea", -- from light.bgAlt
+		split = "#eaeaea",     -- from light.bgAlt
 
 		ansi = {
 			"#151515", -- black (light.black)
@@ -92,14 +92,14 @@ else
 			"#E1E1E1", -- white (light.white)
 		},
 		brights = {
-			"#727272", -- bright black (light.grey)
-			"#984936", -- bright red (light.error)
-			"#586935", -- bright green (light.signAdd)
-			"#ab8550", -- bright yellow (light.warning)
-			"#576f82", -- bright blue (light.hint)
-			"#AA749F", -- bright magenta (light.purple)
-			"#88afa2", -- bright cyan (same as normal)
-			"#E1E1E1", -- bright white (light.white)
+			"#727272",                              -- bright black (light.grey)
+			"#984936",                              -- bright red (light.error)
+			"#586935",                              -- bright green (light.signAdd)
+			"#ab8550",                              -- bright yellow (light.warning)
+			"#576f82",                              -- bright blue (light.hint)
+			"#AA749F",                              -- bright magenta (light.purple)
+			"#88afa2",                              -- bright cyan (same as normal)
+			"#E1E1E1",                              -- bright white (light.white)
 		},
 		indexed = { [16] = "#FFA557", [17] = "#b46958" }, -- using orange and red
 	}
