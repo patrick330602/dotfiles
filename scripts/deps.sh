@@ -41,6 +41,17 @@ gnu-sed
 zsh-syntax-highlighting
 atuin
 starship
+lua-language-server
+dockerfile-language-server
+bash-language-server
+vscode-langservers-extracted
+typescript-language-server
+basedpyright
+clang-format
+beautysh
+isort
+black
+prettier
 "
 
 fedora_copr="

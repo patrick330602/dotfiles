@@ -27,10 +27,8 @@ return {
 				markdown = { "prettier" },
 				graphql = { "prettier" },
 				liquid = { "prettier" },
-				lua = { "stylua" },
 				python = { "isort", "black" },
 				c = { "clang-format" },
-				go = { "goimports", "gofumpt" },
 				sh = { "beautysh" },
 			},
 			-- Set default options
