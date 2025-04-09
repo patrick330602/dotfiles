@@ -1,3 +1,5 @@
+local constants = require("visual.constants")
+local utils = require("visual.utils")
 local M = {}
 
 local scroll_offset = 0
@@ -252,6 +254,13 @@ function M.tabline()
 	local tab_buffers = {}
 	for _, buf in ipairs(all_buffers) do
 		if vim.fn.buflisted(buf) == 1 then
+			-- Check if the buffer is on the extension list
+			local ft = vim.bo[buf].ft
+			if utils.findValueByPrefix(constants.extensions, ft)
+			then
+				break
+			end
+
 			-- Check if buffer is loaded in current tab
 			local windows = vim.fn.win_findbuf(buf)
 			for _, win in ipairs(windows) do

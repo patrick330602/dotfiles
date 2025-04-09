@@ -2,10 +2,6 @@ local M = {}
 M.extensions_hidden = { "diff" }
 
 M.extensions = {
-	typr = {
-		hl_group = "StTypr",
-		icon = "󰌌",
-	},
 	undotree = {
 		hl_group = "StUndoTree",
 		icon = "",
@@ -22,7 +18,11 @@ M.extensions = {
 		hl_group = "StTrouble",
 		icon = "",
 	},
-	Neogit = {
+	fugitive = {
+		hl_group = "StGit",
+		icon = "",
+	},
+	flog = {
 		hl_group = "StGit",
 		icon = "",
 	},
@@ -34,7 +34,7 @@ M.extensions = {
 		hl_group = "StDiffFile",
 		icon = "",
 	},
-	["grug-far"] = {
+	grug = {
 		hl_group = "StFzfLua",
 		icon = "",
 	},

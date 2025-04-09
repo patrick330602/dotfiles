@@ -48,8 +48,8 @@ vim.opt.undofile = true
 -- vim.opt.hlsearch = false
 -- vim.opt.incsearch = true
 
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+-- vim.g.loaded_netrw = 1
+-- vim.g.loaded_netrwPlugin = 1
 
 -- visual
 vim.opt.statusline = "%{%v:lua.require('visual.statusline').generate_statusline()%}"

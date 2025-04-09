@@ -13,3 +13,7 @@ vim.api.nvim_create_user_command("Format", function(args)
 	end
 	require("conform").format({ async = true, lsp_format = "fallback", range = range })
 end, { range = true })
+
+
+vim.api.nvim_create_user_command("TikTok", require("visual.shitposting").tiktok, {})
+vim.api.nvim_create_user_command("Ass", require("visual.shitposting").ass, {})

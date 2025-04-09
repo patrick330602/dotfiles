@@ -504,7 +504,7 @@ end
 --- 3. Show the cursor(by setting the `guicursor` again)
 --- 4. Return.
 cmd.close = function()
-	if cmd.state.level > 1 then
+	if cmd.state.level ~= nil and cmd.state.level > 1 then
 		return
 	end
 
@@ -591,9 +591,9 @@ cmd.draw = function()
 			0,
 			cmd.state.position - diff,
 			#vim.fn.strcharpart(txt, 0, vim.fn.strchars(before) + 1)
-			--- Doing "(cmd.state.position - diff) + 1" doesn't
-			--- work on multi-byte characters(e.g. emojis, nerd font
-			--- characters)
+		--- Doing "(cmd.state.position - diff) + 1" doesn't
+		--- work on multi-byte characters(e.g. emojis, nerd font
+		--- characters)
 		)
 	end
 end
