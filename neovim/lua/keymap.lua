@@ -27,8 +27,29 @@ set("", "<leader>e", require("oil").toggle_float, { desc = "Toggle file explorer
 ------------------------------------------
 
 -- Trouble integration for lists
-set("", "<leader>xq", "<cmd>Trouble qflist toggle<cr>", { desc = "Toggle quickfix list" })
-set("", "<leader>xl", "<cmd>Trouble loclist toggle<cr>", { desc = "Toggle location list" })
+local function toggle_quickfix()
+	local windows = vim.fn.getwininfo()
+	for _, win in pairs(windows) do
+		if win["quickfix"] == 1 then
+			vim.cmd.cclose()
+			return
+		end
+	end
+	vim.cmd.copen()
+end
+
+local function toggle_loclist()
+	local winid = vim.fn.getloclist(0, { winid = 0 }).winid
+
+	if winid == 0 then
+		vim.cmd.lopen()
+	else
+		vim.cmd.lclose()
+	end
+end
+
+set("", "<leader>xq", toggle_quickfix, { desc = "Toggle quickfix list" })
+set("", "<leader>xl", toggle_loclist, { desc = "Toggle location list" })
 
 -- GrugFar search and replace
 set("n", "<leader>F", function()
@@ -108,37 +129,10 @@ vim.api.nvim_create_autocmd("LspAttach", {
 	callback = function(ev)
 		local opts = { buffer = ev.buf, silent = true }
 
-		set("n", "gD", vim.lsp.buf.declaration, vim.tbl_extend("force", opts, { desc = "Go to declaration" }))
-		set(
-			"n",
-			"gd",
-			"<cmd>Trouble lsp_definitions toggle<CR>",
-			vim.tbl_extend("force", opts, { desc = "Show LSP definitions" })
-		)
-		set(
-			"n",
-			"gt",
-			"<cmd>Trouble lsp_type_definitions toggle<CR>",
-			vim.tbl_extend("force", opts, { desc = "Show LSP type definitions" })
-		)
-		set(
-			"n",
-			"<leader>D",
-			"<cmd>Trouble diagnostics toggle<CR>",
-			vim.tbl_extend("force", opts, { desc = "Show buffer diagnostics" })
-		)
-		set(
-			"n",
-			"<leader>d",
-			vim.diagnostic.open_float,
-			vim.tbl_extend("force", opts, { desc = "Show line diagnostics" })
-		)
-		set(
-			"n",
-			"K",
-			vim.lsp.buf.hover,
-			vim.tbl_extend("force", opts, { desc = "Show documentation for what is under cursor" })
-		)
-		set("n", "<leader>rs", ":LspRestart<CR>", vim.tbl_extend("force", opts, { desc = "Restart LSP" }))
+		set("n", "grd", vim.lsp.buf.definition, vim.tbl_extend("force", opts, { desc = "Go to definition" }))
+		set("n", "grt", vim.lsp.buf.type_definition, vim.tbl_extend("force", opts, { desc = "Go to type definitions" }))
+		set("n", "gD", vim.diagnostic.show, vim.tbl_extend("force", opts, { desc = "Show buffer diagnostics" }))
+		set("n", "gd", vim.diagnostic.open_float, vim.tbl_extend("force", opts, { desc = "Show line diagnostics" }))
+		set("n", "K", vim.lsp.buf.hover, vim.tbl_extend("force", opts, { desc = "Show hover LSP Info" }))
 	end,
 })

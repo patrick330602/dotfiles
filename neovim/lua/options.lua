@@ -53,13 +53,14 @@ vim.g.loaded_netrwPlugin = 1
 
 -- visual
 vim.opt.statusline = "%{%v:lua.require('visual.statusline').generate_statusline()%}"
-vim.o.tabline = '%!v:lua.require("visual.tabline").tabline()'
-vim.o.statuscolumn = "%!v:lua.require('visual.statuscolumn').get()"
+vim.opt.tabline = '%!v:lua.require("visual.tabline").tabline()'
+vim.opt.statuscolumn = "%!v:lua.require('visual.statuscolumn').get()"
 
 -- folding
-vim.o.foldcolumn = "1"
-vim.o.foldlevel = 99
-vim.o.foldlevelstart = 99
-vim.o.foldenable = true
+vim.opt.foldcolumn = "1"
+vim.opt.foldlevel = 99
+vim.opt.foldlevelstart = 99
+vim.opt.foldenable = true
 
+-- Flog
 vim.g.flog_enable_extended_chars = true
