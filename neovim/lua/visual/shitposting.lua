@@ -82,7 +82,7 @@ function M.ass()
 	local padding = math.floor((width - #title - 2) / 2)
 	local title_line = string.rep(" ", padding) .. title .. string.rep(" ", width - #title - padding)
 
-	local button = "OK"
+	local button = "OK: <CR>"
 	local button_padding = math.floor((width - #button - 2) / 2)
 	local button_line = string.rep(" ", button_padding) .. button
 
@@ -145,7 +145,6 @@ function M.ass()
 
 		step = step % #analysis_steps + 1
 		timestep = timestep + 1
-		vim.notify(tostring(step))
 
 		-- After a few iterations, show the final message
 		if timestep == 20 then
@@ -170,7 +169,7 @@ function M.ass()
 					vim.api.nvim_buf_add_highlight(buf, ns_id, "Special", i, 0, -1)
 				elseif i == 2 then
 					vim.api.nvim_buf_add_highlight(buf, ns_id, "String", i, 0, -1)
-				elseif i == 4 then
+				elseif i == 5 then
 					vim.api.nvim_buf_add_highlight(buf, ns_id, "Comment", i, 0, -1)
 				else
 					vim.api.nvim_buf_add_highlight(buf, ns_id, "Comment", i, 0, -1)
