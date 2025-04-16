@@ -85,6 +85,9 @@ parser_config.opensips = {
 	install_info = {
 		url = "https://code.wedotstud.io/patrick/tree-sitter-opensips",
 		files = { "src/parser.c" },
+		branch = "main",
+		generate_requires_npm = false,
+		requires_generate_from_grammar = false,
 	},
 	filetype = "opensips",
 }
