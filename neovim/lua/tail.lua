@@ -16,4 +16,4 @@ end, { range = true })
 
 
 vim.api.nvim_create_user_command("TikTok", require("visual.shitposting").tiktok, {})
-vim.api.nvim_create_user_command("Ass", require("visual.shitposting").ass, {})
+vim.api.nvim_create_user_command("AnalyzeCode", require("visual.shitposting").ass, {})
