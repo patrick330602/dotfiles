@@ -79,3 +79,12 @@ require("ufo").setup({
 		return { "treesitter", "indent" }
 	end,
 })
+
+local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
+parser_config.opensips = {
+	install_info = {
+		url = "https://code.wedotstud.io/patrick/tree-sitter-opensips",
+		files = { "src/parser.c" },
+	},
+	filetype = "opensips",
+}
