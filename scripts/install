@@ -24,6 +24,15 @@ case "$CURR_OS" in
             eval "$(${BASE_HOMEBREW_FOLDER}/bin/brew shellenv)"
         fi
         ;;
+    Linux)
+        if test ! "$(which brew)"; then
+            echo "Installing Linuxbrew..."
+            /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+            BASE_HOMEBREW_FOLDER=/home/linuxbrew/.linuxbrew/
+            eval "$(${BASE_HOMEBREW_FOLDER}/bin/brew shellenv)"
+        fi
+        ;;
 esac
 
 echo "Install Depedencies..."
