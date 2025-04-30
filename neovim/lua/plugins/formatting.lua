@@ -29,7 +29,6 @@ return {
 				liquid = { "prettier" },
 				python = { "isort", "black" },
 				c = { "clang-format" },
-				sh = { "beautysh" },
 			},
 			-- Set default options
 			default_format_opts = {
