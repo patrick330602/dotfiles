@@ -91,13 +91,17 @@ cmp.setup({
 	},
 
 	sources = {
-		default = { "lazydev", "lsp", "path", "snippets", "buffer" },
+		default = { "lazydev", "lsp", "path", "snippets", "buffer", "html-css" },
 		providers = {
 			lazydev = {
 				name = "LazyDev",
 				module = "lazydev.integrations.blink",
 				score_offset = 100,
 			},
+			["html-css"] = {
+				name = "html-css",
+				module = "blink.compat.source"
+			}
 		},
 	},
 
