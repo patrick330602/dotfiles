@@ -1,3 +1,4 @@
+local utils = require("utils")
 -- font settings
 vim.opt.encoding = "utf-8"
 
@@ -11,6 +12,10 @@ vim.opt.laststatus = 3
 vim.opt.scrolloff = 10
 vim.opt.cmdheight = 0
 
+-- clipboard
+if utils.IsWayland() then
+	vim.g.clipboard = "wl-copy"
+end
 vim.schedule(function()
 	vim.opt.clipboard = "unnamedplus"
 end)
