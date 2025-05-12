@@ -8,6 +8,8 @@ local function get_appearance()
 	return "Dark"
 end
 
+config.enable_wayland = false
+
 config.font = wezterm.font_with_fallback({
 	{
 		family = "0xProto",
