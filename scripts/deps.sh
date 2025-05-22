@@ -1,14 +1,12 @@
 #!/bin/sh
 
 DEPS_TYPE=""
-BREW_TYPE="Homebrew"
 
 case "$(uname -s)" in
 Darwin*)
 	DEPS_TYPE="mac"
 	;;
 Linux*)
-	BREW_TYPE="Linuxbrew"
 	if [ -f /etc/fedora-release ]; then
 		DEPS_TYPE="fedora"
 	elif [ -f /etc/debian_version ]; then
@@ -28,6 +26,7 @@ esac
 
 common_packages="
 git
+neovim
 libgit2
 fzf
 fd
@@ -41,38 +40,32 @@ coreutils
 gnu-sed
 zsh-syntax-highlighting
 atuin
-"
-
-brew_packages="
-atuin
 starship
-neovim
-lua-language-server
-dockerfile-language-server
-bash-language-server
-vscode-langservers-extracted
-typescript-language-server
-basedpyright
-clang-format
-shfmt
-isort
-black
-prettier
 "
 
 fedora_copr="
+atim/starship
 "
 
 fedora_packages="
+starship
+python3-neovim
+"
+
+fedora_commands="
+autin:curl --proto '=https' --tlsv1.2 -LsSf https://github.com/atuinsh/atuin/releases/latest/download/atuin-installer.sh | sh
 "
 
 ubuntu_ppa="
+neovim-ppa/stable
 "
 
 ubuntu_packages="
+python3-neovim
 "
 
 ubuntu_commands="
+starship:curl -fsSL https://starship.rs/install.sh | sh -s -- -y
 "
 
 enable_copr() {
@@ -84,15 +77,9 @@ enable_copr() {
 
 install_packages() {
 	packages=$(printf '%s' "$1" | sed -e '/^[[:space:]]*$/d' | tr '\n' ' ')
-
-	if [ -z "$packages" ]; then
-		echo "No packages specified, skipping installation."
-		return 0
-	fi
-
 	case "$DEPS_TYPE" in
 	mac)
-		echo "::MacOS::Installing the following packages: $packages "
+		echo "::Homebrew::Installing the following packages: $packages "
 		brew install --quiet $packages
 		;;
 	fedora)
@@ -100,16 +87,10 @@ install_packages() {
 		sudo dnf install -y $packages
 		;;
 	ubuntu | debian)
-		echo "::APT::Installing the following packages: $packages "
+		echo "::Homebrew::Installing the following packages: $packages "
 		sudo apt-get install -y $packages
 		;;
 	esac
-}
-
-install_brew_packages() {
-	packages=$(printf '%s' "$brew_packages" | sed -e '/^[[:space:]]*$/d' | tr '\n' ' ')
-	echo "Installing the common $BREW_TYPE packages: $packages "
-	brew install --quiet $packages
 }
 
 execute_commands() {
@@ -123,11 +104,11 @@ execute_commands() {
 }
 
 # Main installation logic
-brew update --quiet
-brew upgrade --quiet
-
 case "$DEPS_TYPE" in
-mac) ;;
+mac)
+	brew update --quiet
+	brew upgrade --quiet
+	;;
 fedora)
 	sudo dnf update -y
 	enable_copr "$fedora_copr"
@@ -141,6 +122,5 @@ ubuntu)
 esac
 
 install_packages "$common_packages"
-install_brew_packages
 install_packages "$(eval echo \$"${DEPS_TYPE}_packages")"
 execute_commands

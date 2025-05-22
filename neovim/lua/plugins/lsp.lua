@@ -1,6 +1,39 @@
 return {
 	--notifications
 	"j-hui/fidget.nvim",
+	--definitions
+	"neovim/nvim-lspconfig",
+	--
+	{
+		"mason-org/mason.nvim",
+		opts = {
+			ui = {
+				icons = {
+					package_installed = "✓",
+					package_pending = "➜",
+					package_uninstalled = "✗"
+				}
+			}
+		}
+	},
+	{
+		"mason-org/mason-lspconfig.nvim",
+		opts = {
+			ensure_installed = {
+				'basedpyright',
+				'bashls',
+				'dockerls',
+				'eslint',
+				'gopls',
+				'jsonls',
+				'lua_ls',
+				'ts_ls',
+				'lemminx',
+				'yamlls',
+				'rust_analyzer'
+			}
+		},
+	},
 	--cmp
 	{
 		"saghen/blink.cmp",
@@ -52,6 +85,15 @@ return {
 			},
 			style_sheets = {
 			},
+		},
+	},
+	{
+		'nvim-java/nvim-java',
+		commit = 'd25bc1c55b4cea53f6174b2e2171ed8519113bc5',
+		opt = {
+			jdk = {
+				version = "21.0.2",
+			}
 		},
 	},
 	{

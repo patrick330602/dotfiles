@@ -7,60 +7,52 @@ ZSHRC_PATH="$HOME/.zshrc"
 CURR_OS=$(uname -s)
 
 if [ "$(id -u)" -ne 0 ]; then
-    echo "Please enter your password to pre-authorize sudo:"
-    sudo -v
+	echo "Please enter your password to pre-authorize sudo:"
+	sudo -v
 fi
 
 case "$CURR_OS" in
-    Darwin*)
-        if test ! "$(which brew)"; then
-            echo "Installing Homebrew..."
-            /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+Darwin*)
+	if test ! "$(which brew)"; then
+		echo "Installing Homebrew..."
+		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-            BASE_HOMEBREW_FOLDER=/usr/local
-            if [ "$(arch)" = "arm64" ]; then
-                BASE_HOMEBREW_FOLDER=/opt/homebrew
-            fi
-            eval "$(${BASE_HOMEBREW_FOLDER}/bin/brew shellenv)"
-        fi
-        ;;
-    Linux)
-        if test ! "$(which brew)"; then
-            echo "Installing Linuxbrew..."
-            /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+		BASE_HOMEBREW_FOLDER=/usr/local
+		if [ "$(arch)" = "arm64" ]; then
+			BASE_HOMEBREW_FOLDER=/opt/homebrew
+		fi
+		eval "$(${BASE_HOMEBREW_FOLDER}/bin/brew shellenv)"
+	fi
+	;;
 
-            BASE_HOMEBREW_FOLDER=/home/linuxbrew/.linuxbrew/
-            eval "$(${BASE_HOMEBREW_FOLDER}/bin/brew shellenv)"
-        fi
-        ;;
 esac
 
 echo "Install Depedencies..."
 curl -fsSL https://code.wedotstud.io/patrick/dotfiles/raw/branch/main/scripts/deps.sh | sh
 
-ssh-keyscan code.wedotstud.io >> ~/.ssh/known_hosts
+ssh-keyscan code.wedotstud.io >>~/.ssh/known_hosts
 git clone "git@code.wedotstud.io:patrick/dotfiles.git" "$HOME/.dotfiles" || {
-    git clone "https://code.wedotstud.io/patrick/dotfiles.git" "$HOME/.dotfiles"
+	git clone "https://code.wedotstud.io/patrick/dotfiles.git" "$HOME/.dotfiles"
 }
 
 echo ":: Setting up .gitconfig..."
 if test -f "$HOME/.gitconfig" && ! test -L "$HOME/.gitconfig"; then
-    if test -f "$HOME/.gitconfig" && ! test -f "$HOME/.gitconfig-private"; then
-        echo "::: Found existing .gitconfig, convert to .gitconfig-private..."
-        mv "$HOME/.gitconfig" "$HOME/.gitconfig-private"
-    elif ! test -f "$HOME/.gitconfig-private"; then
-        echo "::: .gitconfig-private not found, Creating an empty one..."
-        touch "$HOME/.gitconfig-private"
-    fi
+	if test -f "$HOME/.gitconfig" && ! test -f "$HOME/.gitconfig-private"; then
+		echo "::: Found existing .gitconfig, convert to .gitconfig-private..."
+		mv "$HOME/.gitconfig" "$HOME/.gitconfig-private"
+	elif ! test -f "$HOME/.gitconfig-private"; then
+		echo "::: .gitconfig-private not found, Creating an empty one..."
+		touch "$HOME/.gitconfig-private"
+	fi
 fi
 
 ln -s "$HOME/.dotfiles/.gitconfig" "$HOME/.gitconfig"
 
 insert_source() {
-    rc_file=$1
-    if ! grep -q "$SOURCE_DOTFILES_RC" "$rc_file"; then
-        echo "$SOURCE_DOTFILES_RC" >> "$rc_file"
-    fi
+	rc_file=$1
+	if ! grep -q "$SOURCE_DOTFILES_RC" "$rc_file"; then
+		echo "$SOURCE_DOTFILES_RC" >>"$rc_file"
+	fi
 }
 
 insert_source "$BASHRC_PATH"
@@ -70,30 +62,30 @@ echo "::Ensure ~/.config exists..."
 mkdir -p "$HOME/.config"
 
 if [ -f "$HOME/.config/starship.toml" ] && [ ! -L "$HOME/.config/starship.toml" ]; then
-    echo "::Backing up existing starship configuration..."
-    mv "$HOME/.config/starship.toml" "$HOME/.config/starship.toml.bak.$(date +%Y%m%d%H%M%S)"
+	echo "::Backing up existing starship configuration..."
+	mv "$HOME/.config/starship.toml" "$HOME/.config/starship.toml.bak.$(date +%Y%m%d%H%M%S)"
 fi
 
 echo "Installing starship configuration..."
 ln -sf "$HOME/.dotfiles/starship.toml" "$HOME/.config/starship.toml"
 
 if test -f "$HOME/.wezterm.lua" && ! test -L "$HOME/.config/.wezterm.lua"; then
-    echo "::Backing up Wezterm configuration..."
-    mv "$HOME/.wezterm.lua" "$HOME/.wezterm.lua.bak"
+	echo "::Backing up Wezterm configuration..."
+	mv "$HOME/.wezterm.lua" "$HOME/.wezterm.lua.bak"
 fi
 echo "::Installing Wezterm Configuration..."
 ln -s "$HOME/.dotfiles/.wezterm.lua" "$HOME/.wezterm.lua"
 
-
 if test -d "$HOME/.config/nvim" && test ! -L "$HOME/.config/nvim"; then
-    echo "::Backing up existing nvim configuration..."
-    mv "$HOME/.config/nvim" "$HOME/.config/nvim.bak"
+	echo "::Backing up existing nvim configuration..."
+	mv "$HOME/.config/nvim" "$HOME/.config/nvim.bak"
 fi
 
 echo "::Installing nvim configuration..."
 ln -sfn "$HOME/.dotfiles/neovim" "$HOME/.config/nvim"
 nvim --headless "+Lazy! sync" +qa
 nvim --headless "+TSUpdateSync" +qa
+nvim --headless "+MasonUpdate" +qa
 
 sleep 10
 echo "Done! Please restart your shell."

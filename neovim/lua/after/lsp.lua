@@ -19,6 +19,41 @@ end
 -- I like hint inlay
 vim.lsp.inlay_hint.enable()
 
+vim.lsp.config('jsonls', {
+	settings = {
+		json = {
+			schemas = require("schemastore").json.schemas(),
+			validate = { enable = true },
+		},
+	},
+})
+
+vim.lsp.config('yamlls', {
+	settings = {
+		redhat = { telemetry = { enabled = false } },
+		yaml = {
+			schemaStore = {
+				enable = false,
+				url = "",
+			},
+			schemas = require("schemastore").yaml.schemas(),
+		},
+	},
+
+})
+
+vim.lsp.config('lemminx', {
+	settings = {
+		xml = {
+			format = {
+				emptyElements = "collapse",
+			},
+		},
+	},
+})
+
+
+
 -- Rust is handled separately by rustaceanvim
 vim.g.rustaceanvim = {
 	server = {
