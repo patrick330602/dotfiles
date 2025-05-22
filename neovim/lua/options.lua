@@ -32,7 +32,7 @@ vim.expandtab = true
 vim.opt.smartindent = true
 
 -- character visual
-vim.opt.list = true
+vim.opt.list = false
 vim.opt.listchars = {
 	space = "·",
 	tab = "→ ",
