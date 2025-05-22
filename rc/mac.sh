@@ -3,41 +3,44 @@
 
 BASE_HOMEBREW_FOLDER=/usr/local
 if [ "$(arch)" = "arm64" ]; then
-    BASE_HOMEBREW_FOLDER=/opt/homebrew
+	BASE_HOMEBREW_FOLDER=/opt/homebrew
 fi
 
 eval "$(${BASE_HOMEBREW_FOLDER}/bin/brew shellenv)"
 
 # load only if running in zsh
 if [ -n "$ZSH_VERSION" ]; then
-  # load starship prompt if it is installed, else warn the user to install it
-    if [ -f ${BASE_HOMEBREW_FOLDER}/bin/starship ]; then
-        eval "$(starship init zsh)"
-    else
-        echo "starship is not installed. Install it with 'brew install starship'"
-    fi
+	# load starship prompt if it is installed, else warn the user to install it
+	if [ -f ${BASE_HOMEBREW_FOLDER}/bin/starship ]; then
+		eval "$(starship init zsh)"
+	else
+		echo "starship is not installed. Install it with 'brew install starship'"
+	fi
 
-    # load zsh-syntax highlighting if it is installed, else warn the user to install it
-    if [ -f ${BASE_HOMEBREW_FOLDER}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
-        source "${BASE_HOMEBREW_FOLDER}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-    else
-        echo "zsh-syntax-highlighting is not installed. Install it with 'brew install zsh-syntax-highlighting'"
-    fi
+	# load zsh-syntax highlighting if it is installed, else warn the user to install it
+	if [ -f ${BASE_HOMEBREW_FOLDER}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
+		#shellcheck disable=SC1091
+		source "${BASE_HOMEBREW_FOLDER}/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+	else
+		echo "zsh-syntax-highlighting is not installed. Install it with 'brew install zsh-syntax-highlighting'"
+	fi
 
-    eval "$(atuin init zsh)"
+	eval "$(atuin init zsh)"
 fi
 
 # load only if running in bash
+# shellcheck disable=SC2128
 if [ -n "${BASH_VERSINFO}" ]; then
-  # load starship prompt if it is installed, else warn the user to install it
-    if [ -f ${BASE_HOMEBREW_FOLDER}/bin/starship ]; then
-        eval "$(starship init bash)"
-    else
-        echo "starship is not installed. Install it with 'brew install starship'"
-    fi
+	# load starship prompt if it is installed, else warn the user to install it
+	if [ -f ${BASE_HOMEBREW_FOLDER}/bin/starship ]; then
+		eval "$(starship init bash)"
+	else
+		echo "starship is not installed. Install it with 'brew install starship'"
+	fi
 
-    source $HOME/.dotfiles/bash-preexec.sh
-    eval "$(atuin init bash)"
+	# shellcheck source=bash-preexec.sh
+	source "$HOME/.dotfiles/bash-preexec.sh"
+	eval "$(atuin init bash)"
 fi
 
 export PYENV_ROOT="$HOME/.pyenv"
