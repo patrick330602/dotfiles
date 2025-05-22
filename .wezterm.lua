@@ -30,80 +30,80 @@ config.window_frame = {
 }
 config.tab_bar_at_bottom = true
 
+config.force_reverse_video_cursor = true
+
 local appearance = get_appearance()
 if appearance:find("Dark") then
 	config.colors = {
-		foreground = "#E1E1E1", -- from default.fg
-		background = "#151515",
+		foreground = "#C5C9C7",
+		background = "#14171d",
 
-		cursor_bg = "#D0D0D0", -- from default.cursorBg
-		cursor_fg = "#151515", -- from default.cursorFg
-		cursor_border = "#D0D0D0", -- matching cursor_bg
+		cursor_bg = "#C5C9C7",
+		cursor_fg = "#14171d",
+		cursor_border = "#C5C9C7",
 
-		selection_fg = "#E1E1E1", -- from default.fg
-		selection_bg = "#202020", -- from default.bgHighlight
+		selection_fg = "#C5C9C7",
+		selection_bg = "#393B42",
 
-		scrollbar_thumb = "#171717", -- from default.bgAlt
-		split = "#171717",     -- from default.bgAlt
+		scrollbar_thumb = "#393B42",
+		split = "#393B42",
 
 		ansi = {
-			"#151515", -- black (default.black)
-			"#b46958", -- red (default.red)
-			"#90A959", -- green (default.green)
-			"#F4BF75", -- yellow (default.yellow)
-			"#BAD7FF", -- blue (default.blue)
-			"#AA759F", -- magenta (default.magenta)
-			"#88afa2", -- cyan (default.cyan)
-			"#E1E1E1", -- white (default.white)
+			"#14171d",
+			"#C4746E",
+			"#8A9A7B",
+			"#C4B28A",
+			"#8BA4B0",
+			"#A292A3",
+			"#8EA4A2",
+			"#A4A7A4",
 		},
 		brights = {
-			"#727272", -- bright black (default.grey)
-			"#984936", -- bright red (default.error)
-			"#586935", -- bright green (default.signAdd)
-			"#ab8550", -- bright yellow (default.warning)
-			"#576f82", -- bright blue (default.hint)
-			"#AA749F", -- bright magenta (default.purple)
-			"#88afa2", -- bright cyan (same as normal)
-			"#E1E1E1", -- bright white (default.white)
-		},
-		indexed = { [16] = "#FFA557", [17] = "#b46958" },
+			"#A4A7A4",
+			"#E46876",
+			"#87A987",
+			"#E6C384",
+			"#7FB4CA",
+			"#938AA9",
+			"#7AA89F",
+			"#C5C9C7",
+		}
 	}
 else
 	config.colors = {
-		foreground = "#151515", -- from light.fg
-		background = "#F5F5DC", -- from light.bg
+		foreground = "#24262D",
+		background = "#f2f1ef",
 
-		cursor_bg = "#151515", -- from light.cursorFg
-		cursor_fg = "#D0D0D0", -- from light.cursorBg
-		cursor_border = "#151515", -- matching cursor_bg
+		cursor_bg = "#24262D",
+		cursor_fg = "#f2f1ef",
+		cursor_border = "#24262D",
 
-		selection_fg = "#151515", -- from light.fg
-		selection_bg = "#acacac", -- from light.bgHighlight
+		selection_fg = "#24262D",
+		selection_bg = "#e2e1df",
 
-		scrollbar_thumb = "#eaeaea", -- from light.bgAlt
-		split = "#eaeaea",     -- from light.bgAlt
+		scrollbar_thumb = "#6d6f6e",
+		split = "#6d6f6e",
 
 		ansi = {
-			"#151515", -- black (light.black)
-			"#b46958", -- red (light.red)
-			"#90A959", -- green (light.green)
-			"#F4BF75", -- yellow (light.yellow)
-			"#7E97AB", -- blue (light.blue)
-			"#AA759F", -- magenta (light.magenta)
-			"#88afa2", -- cyan (light.cyan)
-			"#E1E1E1", -- white (light.white)
+			"#24262D",
+			"#c84053",
+			"#6f894e",
+			"#77713f",
+			"#4d699b",
+			"#b35b79",
+			"#597b75",
+			"#545464",
 		},
 		brights = {
-			"#727272",                              -- bright black (light.grey)
-			"#984936",                              -- bright red (light.error)
-			"#586935",                              -- bright green (light.signAdd)
-			"#ab8550",                              -- bright yellow (light.warning)
-			"#576f82",                              -- bright blue (light.hint)
-			"#AA749F",                              -- bright magenta (light.purple)
-			"#88afa2",                              -- bright cyan (same as normal)
-			"#E1E1E1",                              -- bright white (light.white)
-		},
-		indexed = { [16] = "#FFA557", [17] = "#b46958" }, -- using orange and red
+			"#6d6f6e",
+			"#d7474b",
+			"#6e915f",
+			"#836f4a",
+			"#6693bf",
+			"#624c83",
+			"#5e857a",
+			"#43436c",
+		}
 	}
 end
 
