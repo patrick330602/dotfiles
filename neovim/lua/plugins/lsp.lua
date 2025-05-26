@@ -31,6 +31,11 @@ return {
 				'lemminx',
 				'yamlls',
 				'rust_analyzer'
+			},
+			automatic_enable = {
+				exclude = {
+					"rust_analyzer",
+				}
 			}
 		},
 	},
