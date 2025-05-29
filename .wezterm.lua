@@ -35,57 +35,57 @@ config.force_reverse_video_cursor = true
 local appearance = get_appearance()
 if appearance:find("Dark") then
 	config.colors = {
-		foreground = "#C5C9C7",
-		background = "#14171d",
+		foreground = "#c5c9c5",
+		background = "#181616",
 
-		cursor_bg = "#C5C9C7",
-		cursor_fg = "#14171d",
-		cursor_border = "#C5C9C7",
+		cursor_bg = "#C8C093",
+		cursor_fg = "#C8C093",
+		cursor_border = "#C8C093",
 
-		selection_fg = "#C5C9C7",
-		selection_bg = "#393B42",
+		selection_fg = "#C8C093",
+		selection_bg = "#2D4F67",
 
-		scrollbar_thumb = "#393B42",
-		split = "#393B42",
+		scrollbar_thumb = "#16161D",
+		split = "#16161D",
 
 		ansi = {
-			"#14171d",
+			"#0D0C0C",
 			"#C4746E",
 			"#8A9A7B",
 			"#C4B28A",
 			"#8BA4B0",
 			"#A292A3",
 			"#8EA4A2",
-			"#A4A7A4",
+			"#C8C093",
 		},
 		brights = {
-			"#A4A7A4",
+			"#A6A69C",
 			"#E46876",
 			"#87A987",
 			"#E6C384",
 			"#7FB4CA",
 			"#938AA9",
 			"#7AA89F",
-			"#C5C9C7",
-		}
+			"#C5C9C5",
+		},
 	}
 else
 	config.colors = {
-		foreground = "#24262D",
-		background = "#f2f1ef",
+		foreground = "#545464",
+		background = "#f2ecbc",
 
-		cursor_bg = "#24262D",
-		cursor_fg = "#f2f1ef",
-		cursor_border = "#24262D",
+		cursor_bg = "#43436c",
+		cursor_fg = "#f2ecbc",
+		cursor_border = "#43436c",
 
-		selection_fg = "#24262D",
-		selection_bg = "#e2e1df",
+		selection_fg = "#43436c",
+		selection_bg = "#c9cbd1",
 
-		scrollbar_thumb = "#6d6f6e",
-		split = "#6d6f6e",
+		scrollbar_thumb = "#d5cea3",
+		split = "#d5cea3",
 
 		ansi = {
-			"#24262D",
+			"#1F1F28",
 			"#c84053",
 			"#6f894e",
 			"#77713f",
@@ -95,7 +95,7 @@ else
 			"#545464",
 		},
 		brights = {
-			"#6d6f6e",
+			"#8a8980",
 			"#d7474b",
 			"#6e915f",
 			"#836f4a",
@@ -103,7 +103,7 @@ else
 			"#624c83",
 			"#5e857a",
 			"#43436c",
-		}
+		},
 	}
 end
 
