@@ -11,6 +11,15 @@ return {
 			overrides = function(colors)
 				local t = colors.theme
 				return {
+					NormalFloat = { bg = "none" },
+					FloatBorder = { bg = "none" },
+					FloatTitle = { bg = "none" },
+
+					NormalDark = { fg = t.ui.fg_dim, bg = t.ui.bg_m3 },
+
+					LazyNormal = { bg = t.ui.bg_m3, fg = t.ui.fg_dim },
+					MasonNormal = { bg = t.ui.bg_m3, fg = t.ui.fg_dim },
+
 					CmdBlue = { fg = t.term[5] },
 					CmdViolet = { fg = t.term[6] },
 					CmdBlueBg = { fg = t.term[8], bg = t.term[5] },
