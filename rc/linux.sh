@@ -4,8 +4,13 @@
 # load only if running in bash
 # shellcheck disable=SC2128
 if [ -n "${BASH_VERSINFO}" ]; then
+	if [ -n "$KONSOLE_DBUS_SERVICE" ]; then
+		PS1='C:${PWD//\//\\\\}> '
+
+		echo -e "Microsoft Windows [Version 6.1.7600]\nCopyright (c) 2009 Microsoft Corporation.  All rights reserved.\n"
+
 	# load starship prompt if it is installed, else warn the user to install it
-	if command -v starship >/dev/null 2>&1; then
+	elif command -v starship >/dev/null 2>&1; then
 		eval "$(starship init bash)"
 	else
 		if command -v dnf >/dev/null 2>&1; then
