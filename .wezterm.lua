@@ -21,6 +21,9 @@ config.font = wezterm.font_with_fallback({
 	{ family = "Symbols Nerd Font Mono", scale = 0.75 },
 })
 config.font_size = 16.0
+if wezterm.target_triple == 'x86_64-unknown-linux-gnu' then
+	config.font_size = 12.0
+end
 
 config.use_fancy_tab_bar = false
 config.window_decorations = "TITLE | RESIZE | MACOS_USE_BACKGROUND_COLOR_AS_TITLEBAR_COLOR"
