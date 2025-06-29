@@ -24,6 +24,8 @@ if [ -n "${BASH_VERSINFO}" ]; then
 	# shellcheck source=bash-preexec.sh
 	source "$HOME/.dotfiles/rc/bash-preexec.sh"
 	eval "$(atuin init bash)"
+
+	[ -s "/opt/adguard-cli/bash-completion.sh" ] && \. "/opt/adguard-cli/bash-completion.sh"
 fi
 
 #alias
