@@ -7,6 +7,4 @@ function M.load()
 	util.load(theme.setup())
 end
 
-M.colorscheme = M.load
-
 return M

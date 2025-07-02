@@ -6,11 +6,6 @@ function M.setup()
 	---@type DaydreamPalette
 	local t = colors.default
 
-	if vim.o.background == "light" then
-		---@type DaydreamPalette
-		t = colors.light
-	end
-
 	vim.g.terminal_color_0 = t.bg
 	vim.g.terminal_color_8 = t.bgAlt
 
