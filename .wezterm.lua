@@ -19,7 +19,7 @@ if wezterm.target_triple == 'x86_64-unknown-linux-gnu' then
 end
 
 config.use_fancy_tab_bar = false
-config.window_decorations = "TITLE | RESIZE | MACOS_USE_BACKGROUND_COLOR_AS_TITLEBAR_COLOR"
+config.window_decorations = "INTEGRATED_BUTTONS | RESIZE | MACOS_USE_BACKGROUND_COLOR_AS_TITLEBAR_COLOR"
 config.window_frame = {
 	font = wezterm.font({ family = "0xProto", weight = "Bold" }),
 	font_size = 14,
