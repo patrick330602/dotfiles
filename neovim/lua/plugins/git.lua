@@ -22,7 +22,7 @@ return {
 			signcolumn = true,
 			numhl = false,
 			linehl = false,
-			word_diff = false,
+			word_diff = true,
 			watch_gitdir = {
 				follow_files = true,
 			},

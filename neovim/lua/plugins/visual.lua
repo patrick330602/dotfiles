@@ -16,7 +16,6 @@ return {
 	{
 		"benomahony/oil-git.nvim",
 		dependencies = { "stevearc/oil.nvim" },
-		-- No opts or config needed! Works automatically
 	},
 	{
 		"stevearc/oil.nvim",
@@ -46,9 +45,5 @@ return {
 				desc = "Buffer Local Keymaps (which-key)",
 			},
 		},
-	},
-	{
-		"wurli/visimatch.nvim",
-		config = true,
-	},
+	}
 }
