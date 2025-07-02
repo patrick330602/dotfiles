@@ -27,42 +27,41 @@ config.window_frame = {
 config.tab_bar_at_bottom = true
 
 
-	config.colors = {
-		foreground = "#E1E1E1", -- from default.fg
-		background = "#151515",
+config.colors = {
+	foreground = "#d4dce6",
+	background = "#0f1419",
 
-		cursor_bg = "#D0D0D0", -- from default.cursorBg
-		cursor_fg = "#151515", -- from default.cursorFg
-		cursor_border = "#D0D0D0", -- matching cursor_bg
+	cursor_bg = "#c4d1dc",
+	cursor_fg = "#0f1419",
+	cursor_border = "#c4d1dc",
 
-		selection_fg = "#E1E1E1", -- from default.fg
-		selection_bg = "#202020", -- from default.bgHighlight
+	selection_fg = "#d4dce6",
+	selection_bg = "#1a2332",
 
-		scrollbar_thumb = "#171717", -- from default.bgAlt
-		split = "#171717",     -- from default.bgAlt
+	scrollbar_thumb = "#111823",
+	split = "#111823",
 
-		ansi = {
-			"#151515", -- black (default.black)
-			"#b46958", -- red (default.red)
-			"#90A959", -- green (default.green)
-			"#F4BF75", -- yellow (default.yellow)
-			"#BAD7FF", -- blue (default.blue)
-			"#AA759F", -- magenta (default.magenta)
-			"#88afa2", -- cyan (default.cyan)
-			"#E1E1E1", -- white (default.white)
-		},
-		brights = {
-			"#727272", -- bright black (default.grey)
-			"#984936", -- bright red (default.error)
-			"#586935", -- bright green (default.signAdd)
-			"#ab8550", -- bright yellow (default.warning)
-			"#576f82", -- bright blue (default.hint)
-			"#AA749F", -- bright magenta (default.purple)
-			"#88afa2", -- bright cyan (same as normal)
-			"#E1E1E1", -- bright white (default.white)
-		},
-		indexed = { [16] = "#FFA557", [17] = "#b46958" },
-	}
-
+	ansi = {
+		"#0f1419",
+		"#c17a6b",
+		"#5d8a72",
+		"#d4a574",
+		"#7fb3d3",
+		"#8b7ca6",
+		"#4a9b9b",
+		"#d4dce6",
+	},
+	brights = {
+		"#6b7d8f",
+		"#b85c4a",
+		"#4a6b3a",
+		"#c4965a",
+		"#5a7a8f",
+		"#8b7ca6",
+		"#4a9b9b",
+		"#d4dce6",
+	},
+	indexed = { [16] = "#d49c6b", [17] = "#a67c9a" },
+}
 
 return config

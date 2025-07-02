@@ -1,7 +1,5 @@
 local M = {}
 
---- Get extension configuration
---- @param t DaydreamPalette
 function M.get(t)
 	local highlights = {
 		WhichKey = { fg = t.cyan },

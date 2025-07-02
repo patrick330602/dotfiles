@@ -1,8 +1,6 @@
 local M = {}
 local util = require("colors.util")
 
---- Get extension configuration
---- @param t DaydreamPalette
 function M.get(t)
 	local highlights = {
 		CmdBlue = { fg = t.blue },
