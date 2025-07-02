@@ -1,13 +1,6 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
-local function get_appearance()
-	if wezterm.gui then
-		return wezterm.gui.get_appearance()
-	end
-	return "Dark"
-end
-
 config.enable_wayland = false
 
 config.font = wezterm.font_with_fallback({
@@ -33,27 +26,43 @@ config.window_frame = {
 }
 config.tab_bar_at_bottom = true
 
-config.force_reverse_video_cursor = true
 
--- local appearance = get_appearance()
--- if appearance:find("Dark") then
-config.colors = {
-	foreground = "#dcd7ba",
-	background = "#1f1f28",
+	config.colors = {
+		foreground = "#E1E1E1", -- from default.fg
+		background = "#151515",
 
-	cursor_bg = "#c8c093",
-	cursor_fg = "#c8c093",
-	cursor_border = "#c8c093",
+		cursor_bg = "#D0D0D0", -- from default.cursorBg
+		cursor_fg = "#151515", -- from default.cursorFg
+		cursor_border = "#D0D0D0", -- matching cursor_bg
 
-	selection_fg = "#c8c093",
-	selection_bg = "#2d4f67",
+		selection_fg = "#E1E1E1", -- from default.fg
+		selection_bg = "#202020", -- from default.bgHighlight
 
-	scrollbar_thumb = "#16161d",
-	split = "#16161d",
+		scrollbar_thumb = "#171717", -- from default.bgAlt
+		split = "#171717",     -- from default.bgAlt
 
-	ansi = { "#090618", "#c34043", "#76946a", "#c0a36e", "#7e9cd8", "#957fb8", "#6a9589", "#c8c093" },
-	brights = { "#727169", "#e82424", "#98bb6c", "#e6c384", "#7fb4ca", "#938aa9", "#7aa89f", "#dcd7ba" },
-	indexed = { [16] = "#ffa066", [17] = "#ff5d62" },
-}
+		ansi = {
+			"#151515", -- black (default.black)
+			"#b46958", -- red (default.red)
+			"#90A959", -- green (default.green)
+			"#F4BF75", -- yellow (default.yellow)
+			"#BAD7FF", -- blue (default.blue)
+			"#AA759F", -- magenta (default.magenta)
+			"#88afa2", -- cyan (default.cyan)
+			"#E1E1E1", -- white (default.white)
+		},
+		brights = {
+			"#727272", -- bright black (default.grey)
+			"#984936", -- bright red (default.error)
+			"#586935", -- bright green (default.signAdd)
+			"#ab8550", -- bright yellow (default.warning)
+			"#576f82", -- bright blue (default.hint)
+			"#AA749F", -- bright magenta (default.purple)
+			"#88afa2", -- bright cyan (same as normal)
+			"#E1E1E1", -- bright white (default.white)
+		},
+		indexed = { [16] = "#FFA557", [17] = "#b46958" },
+	}
+
 
 return config
