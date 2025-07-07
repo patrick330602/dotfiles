@@ -33,6 +33,7 @@ fd
 rg
 delta
 bat
+lsd
 "
 
 mac_packages="
