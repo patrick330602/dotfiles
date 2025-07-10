@@ -64,26 +64,8 @@ function M.get(t)
 		Whitespace = { fg = t.grey },
 		WildMenu = { fg = t.bg, bg = t.blue },
 
-		Constant = { fg = t.pink },
-		String = { fg = t.green },
-		Character = { fg = t.green },
-		Boolean = { fg = t.cyan },
-		Number = { fg = t.orange },
-
-		Identifier = { fg = t.fg },
-		Function = { fg = t.blue },
-		Statement = { fg = t.magenta },
-		Operator = { fg = t.purple },
-		Keyword = { fg = t.orange },
-		PreProc = { fg = t.cyan },
-		Label = { fg = t.orange },
 
 		Type = { fg = t.purple },
-
-		Special = { fg = t.pink },
-		Delimiter = { fg = t.fg },
-
-		Debug = { fg = t.orange },
 
 		Underlined = { underline = true },
 		Bold = { bold = true },
@@ -94,24 +76,6 @@ function M.get(t)
 
 		qfLineNr = { fg = t.grey },
 		qfFileName = { fg = t.blue },
-
-		htmlH1 = { fg = t.orange, bold = true },
-		htmlH2 = { fg = t.orange, bold = true },
-
-		mkdCodeDelimiter = { fg = t.grey },
-		mkdCodeStart = { fg = t.blue },
-		mkdCodeEnd = { fg = t.blue },
-
-		markdownHeadingDelimiter = { fg = t.grey },
-		markdownCode = { fg = t.cyan },
-		markdownCodeBlock = { fg = t.cyan },
-		markdownH1 = { fg = t.orange, bold = true },
-		markdownH2 = { fg = t.cyan, bold = true },
-		markdownH3 = { fg = t.blue, bold = true },
-		markdownH4 = { fg = t.purple, bold = true },
-		markdownH5 = { fg = t.magenta, bold = true },
-		markdownH6 = { fg = t.green, bold = true },
-		markdownLinkText = { fg = t.blue, underline = true },
 
 		LspReferenceText = { bg = t.bgHighlight },
 		LspReferenceRead = { bg = t.bgHighlight },
