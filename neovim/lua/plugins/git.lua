@@ -116,11 +116,15 @@ return {
 		},
 	},
 	{
-		"rbong/vim-flog",
-		lazy = true,
-		cmd = { "Flog", "Flogsplit", "Floggit" },
+		"NeogitOrg/neogit",
 		dependencies = {
-			"tpope/vim-fugitive"
+			"nvim-lua/plenary.nvim",
+			"sindrets/diffview.nvim",
+			"ibhagwan/fzf-lua",
 		},
-	},
+		opts = {
+			graph_style = "kitty",
+			process_spinner = true
+		}
+	}
 }

@@ -21,6 +21,7 @@ set({ "n", "t" }, "<C-t>", require("visual.term").toggle, { desc = "Toggle Termi
 
 -- Oil file explorer
 set("", "<leader>e", require("oil").toggle_float, { desc = "Toggle file explorer in float window" })
+set("", "<leader>G", require("neogit").open, { desc = "Open Neogit" })
 
 ------------------------------------------
 -- SEARCH AND DIAGNOSTICS
