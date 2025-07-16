@@ -6,10 +6,6 @@ function M.get(t)
 			bg = t.bgAlt,
 			fg = t.fg,
 		},
-		TabLineLogo = {
-			bg = "#69A33E",
-			fg = t.white,
-		},
 		TabLineSel = {
 			bg = t.bg,
 			fg = t.fg,

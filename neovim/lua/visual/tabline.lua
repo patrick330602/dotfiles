@@ -248,7 +248,7 @@ function M.tabline()
 	local all_buffers = vim.api.nvim_list_bufs()
 	local current_tabnr = vim.api.nvim_get_current_tabpage()
 
-	table.insert(tabline, "%#TabLineLogo#  %#TabLineFill#%< ")
+	table.insert(tabline, "%#TabLineFill#%< ")
 
 	-- Get buffers in current tab
 	local tab_buffers = {}
