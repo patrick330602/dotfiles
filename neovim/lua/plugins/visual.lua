@@ -18,17 +18,26 @@ return {
 		dependencies = { "stevearc/oil.nvim" },
 	},
 	{
-		"stevearc/oil.nvim",
+		"A7Lavinraj/fyler.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
-		config = function()
-			local oil = require("oil")
-			oil.setup({
-				default_file_explorer = true,
-				delete_to_trash = true,
-				view_options = { show_hidden = true },
-			})
-		end,
+		branch = "stable",
+		opts = {
+			icon_provider = "nvim-web-devicons",
+			default_explorer = true,
+		}
 	},
+	-- {
+	-- 	"stevearc/oil.nvim",
+	-- 	dependencies = { "nvim-tree/nvim-web-devicons" },
+	-- 	config = function()
+	-- 		local oil = require("oil")
+	-- 		oil.setup({
+	-- 			default_file_explorer = true,
+	-- 			delete_to_trash = true,
+	-- 			view_options = { show_hidden = true },
+	-- 		})
+	-- 	end,
+	-- },
 	{ "brenoprata10/nvim-highlight-colors", opts = { render = "virtual" } },
 	{
 		"folke/which-key.nvim",

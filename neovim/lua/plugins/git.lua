@@ -105,6 +105,7 @@ return {
 	},
 	{
 		"sindrets/diffview.nvim",
+		lazy = true,
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		opts = { enhanced_diff_hl = true },
 		cmd = {
@@ -117,6 +118,7 @@ return {
 	},
 	{
 		"NeogitOrg/neogit",
+		lazy = true,
 		dependencies = {
 			"nvim-lua/plenary.nvim",
 			"sindrets/diffview.nvim",
